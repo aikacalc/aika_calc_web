@@ -26,35 +26,35 @@ export class Character extends Unit {
     defMax: number = 0;
     goodAttr: AttrType[] = [];
     buffs: Buff[] = [];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear();
+    weaponClose: Gear = new Gear();
+    equipmentTop: Gear = new Gear();
+    equipmentBottom: Gear = new Gear();
 
     get gears(): Gear[] {
         return [
-            this.WeaponShot,
-            this.WeaponClose,
-            this.EquipmentTop,
-            this.EquipmentBottom
+            this.weaponShot,
+            this.weaponClose,
+            this.equipmentTop,
+            this.equipmentBottom
         ];
     }
     get allUnits(): Unit[] {
         return [
             this,
-            this.WeaponShot,
-            this.WeaponClose,
-            this.EquipmentTop,
-            this.EquipmentBottom
+            this.weaponShot,
+            this.weaponClose,
+            this.equipmentTop,
+            this.equipmentBottom
         ];
     }
     get allBuffs(): Buff[] {
         return [
             ...this.buffs,
-            ...this.WeaponShot.buffs,
-            ...this.WeaponClose.buffs,
-            ...this.EquipmentTop.buffs,
-            ...this.EquipmentBottom.buffs,
+            ...this.weaponShot.buffs,
+            ...this.weaponClose.buffs,
+            ...this.equipmentTop.buffs,
+            ...this.equipmentBottom.buffs,
         ];
     }
 
@@ -67,7 +67,7 @@ export class Character extends Unit {
         this.updateAtkClose();
         this.updateAttrClose();
 
-        this.spd = this.EquipmentBottom.spd;
+        this.spd = this.equipmentBottom.spd;
     }
     calcGrowthValue(minVal: number, maxVal: number): number {
         let gradeUpLv = 0;
@@ -96,7 +96,7 @@ export class Character extends Unit {
         this.hp = hpSum + buffHp;
     }
     updateAtkShot(): void {
-        const gear = this.WeaponShot;
+        const gear = this.weaponShot;
         const atk = this.calcGrowthValue(this.atkShotMin, this.atkShotMax);
         const atkSum = atk + gear.atk;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
@@ -106,14 +106,14 @@ export class Character extends Unit {
         this.atkShot = result;
     }
     updateAttrShot(): void {
-        const gear = this.WeaponShot;
+        const gear = this.weaponShot;
         const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
         const result = Math.floor(gear.attr * buffValuePct);
         this.attrShot = result;
     }
     updateAtkClose(): void {
-        const gear = this.WeaponClose;
+        const gear = this.weaponClose;
         const atk = this.calcGrowthValue(this.atkCloseMin, this.atkCloseMax);
         const atkSum = atk + gear.atk;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
@@ -123,7 +123,7 @@ export class Character extends Unit {
         this.atkClose = result;
     }
     updateAttrClose(): void {
-        const gear = this.WeaponClose;
+        const gear = this.weaponClose;
         const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
         const result = Math.floor(gear.attr * buffValuePct);

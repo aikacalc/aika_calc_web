@@ -27,18 +27,44 @@ class AgatsumaKaede01 extends Character {
     defMax: number = 255;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -65,18 +91,44 @@ class AgatsumaKaede02 extends Character {
     defMax: number = 408;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -103,18 +155,44 @@ class AgatsumaKaede04 extends Character {
     defMax: number = 714;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -141,18 +219,44 @@ class AgatsumaKaede05 extends Character {
     defMax: number = 918;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -179,20 +283,46 @@ class AgatsumaKaede70 extends Character {
     defMax: number = 918;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sword(0.3),
         AttrTypeDict.Rifle(0.1),
-        AttrTypeDict.Volt(0.5),
+        AttrTypeDict.Volt(0.5)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1),
-        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Volt, 0.5)
     ];
 }
 
@@ -218,12 +348,42 @@ class AgatsumaKaede71 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [AttrTypeDict.Volt(0.5)];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [new Buff(AttrTypeId.Volt, 0.5)];
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
+        AttrTypeDict.Volt(0.5)
+    ];
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5)
+    ];
 }
 
 class HimukaiRin01 extends Character {
@@ -249,18 +409,44 @@ class HimukaiRin01 extends Character {
     defMax: number = 258;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -287,18 +473,44 @@ class HimukaiRin02 extends Character {
     defMax: number = 412;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -325,18 +537,44 @@ class HimukaiRin04 extends Character {
     defMax: number = 721;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -363,18 +601,44 @@ class HimukaiRin05 extends Character {
     defMax: number = 927;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -401,18 +665,44 @@ class HimukaiRin70 extends Character {
     defMax: number = 927;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.1),
+        AttrTypeDict.Bazooka(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
-        new Buff(AttrTypeId.Bazooka, 0.1),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
 }
 
@@ -438,12 +728,42 @@ class HimukaiRin71 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [AttrTypeDict.Fire(0.5)];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [new Buff(AttrTypeId.Fire, 0.5)];
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
+        AttrTypeDict.Fire(0.5)
+    ];
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1921,
+        def: 584
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5)
+    ];
 }
 
 class TakanashiRei01 extends Character {
@@ -469,18 +789,44 @@ class TakanashiRei01 extends Character {
     defMax: number = 258;
     spd: number = 158;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -507,18 +853,44 @@ class TakanashiRei02 extends Character {
     defMax: number = 412;
     spd: number = 158;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -545,18 +917,44 @@ class TakanashiRei04 extends Character {
     defMax: number = 721;
     spd: number = 158;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -583,18 +981,44 @@ class TakanashiRei05 extends Character {
     defMax: number = 927;
     spd: number = 158;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -621,18 +1045,44 @@ class TakanashiRei70 extends Character {
     defMax: number = 927;
     spd: number = 158;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -658,12 +1108,42 @@ class TakanashiRei71 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 158;
-    goodAttr: AttrType[] = [AttrTypeDict.Ice(0.96)];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [new Buff(AttrTypeId.Ice, 0.96)];
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96)
+    ];
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96)
+    ];
 }
 
 class KaneshiyaSitara01 extends Character {
@@ -689,18 +1169,44 @@ class KaneshiyaSitara01 extends Character {
     defMax: number = 255;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2000,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -727,18 +1233,44 @@ class KaneshiyaSitara02 extends Character {
     defMax: number = 408;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2000,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -765,18 +1297,44 @@ class KaneshiyaSitara04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2000,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -803,18 +1361,44 @@ class KaneshiyaSitara05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2000,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -841,18 +1425,44 @@ class KaneshiyaSitara70 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Spear(0.1),
+        AttrTypeDict.Spear(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2000,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Sniper, 0.3),
-        new Buff(AttrTypeId.Spear, 0.1),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
 }
 
@@ -879,18 +1489,44 @@ class HirasakaYotsuyu01 extends Character {
     defMax: number = 255;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 491,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -917,18 +1553,44 @@ class HirasakaYotsuyu02 extends Character {
     defMax: number = 408;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 491,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -955,18 +1617,44 @@ class HirasakaYotsuyu04 extends Character {
     defMax: number = 714;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 491,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -993,18 +1681,44 @@ class HirasakaYotsuyu05 extends Character {
     defMax: number = 918;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 491,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1031,20 +1745,46 @@ class HirasakaYotsuyu70 extends Character {
     defMax: number = 918;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Rifle(0.3),
         AttrTypeDict.Sword(0.1),
-        AttrTypeDict.Volt(0.5),
+        AttrTypeDict.Volt(0.5)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 491,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 455,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Sword, 0.1),
-        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Volt, 0.5)
     ];
 }
 
@@ -1071,18 +1811,44 @@ class MomoshinaFumika01 extends Character {
     defMax: number = 255;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1109,18 +1875,44 @@ class MomoshinaFumika02 extends Character {
     defMax: number = 408;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1147,18 +1939,44 @@ class MomoshinaFumika04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1185,18 +2003,44 @@ class MomoshinaFumika05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1223,18 +2067,44 @@ class MomoshinaFumika70 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -1261,18 +2131,44 @@ class VirginiaGlynnberets01 extends Character {
     defMax: number = 250;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1299,18 +2195,44 @@ class VirginiaGlynnberets02 extends Character {
     defMax: number = 400;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1337,18 +2259,44 @@ class VirginiaGlynnberets04 extends Character {
     defMax: number = 700;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1375,18 +2323,44 @@ class VirginiaGlynnberets05 extends Character {
     defMax: number = 900;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -1413,20 +2387,46 @@ class VirginiaGlynnberets70 extends Character {
     defMax: number = 900;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Rifle(0.3),
         AttrTypeDict.Sword(0.1),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Sword, 0.1),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -1453,18 +2453,44 @@ class FujinoYayoi01 extends Character {
     defMax: number = 245;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 473,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 422,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 477,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -1491,18 +2517,44 @@ class FujinoYayoi02 extends Character {
     defMax: number = 392;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 473,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 422,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 477,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -1529,18 +2581,44 @@ class FujinoYayoi04 extends Character {
     defMax: number = 686;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 473,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 422,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 477,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -1567,20 +2645,48 @@ class FujinoYayoi05 extends Character {
     defMax: number = 882;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.25),
         AttrTypeDict.Spear(0.15),
         AttrTypeDict.Fire(0.5),
+        AttrTypeDict.ResistIce(1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 473,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 422,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 477,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15),
         new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.ResistIce, 1)
     ];
 }
 
@@ -1607,18 +2713,44 @@ class FujinoYayoi70 extends Character {
     defMax: number = 882;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Spear(0.1),
+        AttrTypeDict.Spear(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 473,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 422,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 477,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.3),
-        new Buff(AttrTypeId.Spear, 0.1),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
 }
 
@@ -1645,18 +2777,44 @@ class AikawaAika01 extends Character {
     defMax: number = 260;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -1683,18 +2841,44 @@ class AikawaAika02 extends Character {
     defMax: number = 416;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -1721,18 +2905,44 @@ class AikawaAika04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -1759,41 +2969,44 @@ class AikawaAika05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear({
+    weaponShot: Gear = new Gear({
         unitType: AttrTypeId.Rifle,
-        atk: 525,
+        atk: 459,
         atkTypeId: AttrTypeId.Shot,
         atkAmmoTypeId: AttrTypeId.Physical,
-        attr: 498,
+        attr: 464,
         attrTypeId: AttrTypeId.Volt
     });
-    WeaponClose: Gear = new Gear({
+    weaponClose: Gear = new Gear({
         unitType: AttrTypeId.Hammer,
-        atk: 548,
-        atkTypeId: AttrTypeId.Close,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
         atkAmmoTypeId: AttrTypeId.Impact,
-        attr: 498,
+        attr: 464,
         attrTypeId: AttrTypeId.Volt
     });
-    EquipmentTop: Gear = new Gear({
-        hp: 2437,
-        def: 540,
-        buffs: [new Buff(AttrTypeId.Volt, 0.1)]
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 540
     });
-    EquipmentBottom: Gear = new Gear({
+    equipmentBottom: Gear = new Gear({
         hp: 1361,
-        def: 459,
-        spd: 240,
-        buffs: [new Buff(AttrTypeId.HP, 0.15)]
+        def: 360
     });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -1820,18 +3033,44 @@ class AikawaAika70 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Hammer(0.1),
+        AttrTypeDict.Hammer(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Hammer, 0.1),
+        new Buff(AttrTypeId.Hammer, 0.1)
     ];
 }
 
@@ -1858,18 +3097,44 @@ class IchijoAyaka01 extends Character {
     defMax: number = 240;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -1896,18 +3161,44 @@ class IchijoAyaka02 extends Character {
     defMax: number = 384;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -1934,18 +3225,44 @@ class IchijoAyaka04 extends Character {
     defMax: number = 672;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -1972,18 +3289,44 @@ class IchijoAyaka05 extends Character {
     defMax: number = 864;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -2010,18 +3353,44 @@ class IchijoAyaka70 extends Character {
     defMax: number = 864;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Twin(0.1),
+        AttrTypeDict.Twin(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Twin, 0.1),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
 }
 
@@ -2048,18 +3417,44 @@ class YotsuyaYumi01 extends Character {
     defMax: number = 265;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1944,
+        def: 594
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1296,
+        def: 396
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -2086,18 +3481,44 @@ class YotsuyaYumi02 extends Character {
     defMax: number = 424;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1944,
+        def: 594
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1296,
+        def: 396
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -2124,18 +3545,44 @@ class YotsuyaYumi04 extends Character {
     defMax: number = 742;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1944,
+        def: 594
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1296,
+        def: 396
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -2162,18 +3609,44 @@ class YotsuyaYumi05 extends Character {
     defMax: number = 954;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1944,
+        def: 594
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1296,
+        def: 396
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -2200,18 +3673,44 @@ class YotsuyaYumi70 extends Character {
     defMax: number = 954;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Bazooka(0.1),
+        AttrTypeDict.Bazooka(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 459,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1944,
+        def: 594
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1296,
+        def: 396
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Sword, 0.3),
-        new Buff(AttrTypeId.Bazooka, 0.1),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
 }
 
@@ -2238,18 +3737,44 @@ class NikotamaMai01 extends Character {
     defMax: number = 255;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 643,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -2276,18 +3801,44 @@ class NikotamaMai02 extends Character {
     defMax: number = 408;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 643,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -2314,18 +3865,44 @@ class NikotamaMai04 extends Character {
     defMax: number = 714;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 643,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -2352,18 +3929,44 @@ class NikotamaMai05 extends Character {
     defMax: number = 918;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 643,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -2390,18 +3993,44 @@ class NikotamaMai70 extends Character {
     defMax: number = 918;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.9),
         AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Rifle(0.1),
+        AttrTypeDict.Rifle(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 643,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
 }
 
@@ -2428,18 +4057,44 @@ class KoashiMutsumi01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2466,18 +4121,44 @@ class KoashiMutsumi02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2504,18 +4185,44 @@ class KoashiMutsumi04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2542,18 +4249,44 @@ class KoashiMutsumi05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2580,18 +4313,44 @@ class KoashiMutsumi70 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Sniper(0.1),
+        AttrTypeDict.Sniper(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 668,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
-        new Buff(AttrTypeId.Sniper, 0.1),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
 }
 
@@ -2618,18 +4377,44 @@ class YamanoKaoruko01 extends Character {
     defMax: number = 258;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -2656,18 +4441,44 @@ class YamanoKaoruko02 extends Character {
     defMax: number = 412;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -2694,18 +4505,44 @@ class YamanoKaoruko04 extends Character {
     defMax: number = 721;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -2732,18 +4569,44 @@ class YamanoKaoruko05 extends Character {
     defMax: number = 927;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -2770,18 +4633,44 @@ class YorozubaMeika01 extends Character {
     defMax: number = 253;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2808,18 +4697,44 @@ class YorozubaMeika02 extends Character {
     defMax: number = 404;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2846,18 +4761,44 @@ class YorozubaMeika04 extends Character {
     defMax: number = 707;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2884,18 +4825,44 @@ class YorozubaMeika05 extends Character {
     defMax: number = 909;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -2922,18 +4889,44 @@ class YorozubaMeika70 extends Character {
     defMax: number = 909;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Hammer(0.1),
+        AttrTypeDict.Hammer(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
-        new Buff(AttrTypeId.Hammer, 0.1),
+        new Buff(AttrTypeId.Hammer, 0.1)
     ];
 }
 
@@ -2960,18 +4953,44 @@ class ShimoochiaiToka01 extends Character {
     defMax: number = 243;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 464,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 473,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1963,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1309,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -2998,18 +5017,44 @@ class ShimoochiaiToka02 extends Character {
     defMax: number = 388;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 464,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 473,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1963,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1309,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -3036,18 +5081,44 @@ class ShimoochiaiToka04 extends Character {
     defMax: number = 679;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 464,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 473,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1963,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1309,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -3074,20 +5145,46 @@ class ShimoochiaiToka05 extends Character {
     defMax: number = 873;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Twin(0.25),
         AttrTypeDict.Sword(0.15),
-        AttrTypeDict.Volt(0.5),
+        AttrTypeDict.Volt(0.5)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 464,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 473,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1963,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1309,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Sword, 0.15),
-        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Volt, 0.5)
     ];
 }
 
@@ -3114,18 +5211,44 @@ class ShimoochiaiToka70 extends Character {
     defMax: number = 873;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 464,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 473,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 464,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1963,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1309,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Twin, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -3152,18 +5275,44 @@ class YorishiroEri01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -3190,18 +5339,44 @@ class YorishiroEri02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -3228,18 +5403,44 @@ class YorishiroEri04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -3266,20 +5467,48 @@ class YorishiroEri05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Sniper(0.25),
         AttrTypeDict.Sword(0.15),
         AttrTypeDict.Ice(0.5),
+        AttrTypeDict.ResistFire(1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Sword, 0.15),
         new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.ResistFire, 1)
     ];
 }
 
@@ -3306,18 +5535,44 @@ class YorishiroEri70 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 477,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -3344,18 +5599,44 @@ class NiiyaSerina01 extends Character {
     defMax: number = 245;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -3382,18 +5663,44 @@ class NiiyaSerina02 extends Character {
     defMax: number = 392;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -3420,18 +5727,44 @@ class NiiyaSerina04 extends Character {
     defMax: number = 686;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -3458,18 +5791,44 @@ class NiiyaSerina05 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -3496,18 +5855,44 @@ class NiiyaSerina70 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Dagger(0.1),
+        AttrTypeDict.Dagger(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1307,
+        def: 382
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Dagger, 0.1),
+        new Buff(AttrTypeId.Dagger, 0.1)
     ];
 }
 
@@ -3534,18 +5919,44 @@ class FumishimaAsuka01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 380,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3572,18 +5983,44 @@ class FumishimaAsuka02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 380,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3610,18 +6047,44 @@ class FumishimaAsuka04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 380,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3648,18 +6111,44 @@ class FumishimaAsuka05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 380,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3686,18 +6175,44 @@ class FumishimaAsuka70 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Spear(0.1),
+        AttrTypeDict.Spear(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 380,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1334,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sniper, 0.3),
-        new Buff(AttrTypeId.Spear, 0.1),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
 }
 
@@ -3724,18 +6239,44 @@ class NikitohKanade01 extends Character {
     defMax: number = 245;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3762,18 +6303,44 @@ class NikitohKanade02 extends Character {
     defMax: number = 392;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3800,18 +6367,44 @@ class NikitohKanade04 extends Character {
     defMax: number = 686;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3838,18 +6431,44 @@ class NikitohKanade05 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 382,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -3876,18 +6495,44 @@ class SutegoroShiina01 extends Character {
     defMax: number = 260;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -3914,18 +6559,44 @@ class SutegoroShiina02 extends Character {
     defMax: number = 416;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -3952,18 +6623,44 @@ class SutegoroShiina04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -3990,18 +6687,44 @@ class SutegoroShiina05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -4028,18 +6751,44 @@ class KondohChieri01 extends Character {
     defMax: number = 253;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 477,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 473,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -4066,18 +6815,44 @@ class KondohChieri02 extends Character {
     defMax: number = 404;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 477,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 473,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -4104,18 +6879,44 @@ class KondohChieri04 extends Character {
     defMax: number = 707;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 477,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 473,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -4142,18 +6943,44 @@ class KondohChieri05 extends Character {
     defMax: number = 909;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 477,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 473,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -4180,18 +7007,44 @@ class KondohChieri70 extends Character {
     defMax: number = 909;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Spear(0.1),
+        AttrTypeDict.Spear(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 477,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 473,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Spear, 0.1),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
 }
 
@@ -4218,18 +7071,44 @@ class MuraoMira01 extends Character {
     defMax: number = 260;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.9),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2143,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -4256,18 +7135,44 @@ class MuraoMira02 extends Character {
     defMax: number = 416;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.9),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2143,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -4294,18 +7199,44 @@ class MuraoMira04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.9),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2143,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -4332,18 +7263,44 @@ class MuraoMira05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.9),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2143,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -4370,18 +7327,44 @@ class KimikageYui01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4408,18 +7391,44 @@ class KimikageYui02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4446,18 +7455,44 @@ class KimikageYui04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4484,170 +7519,44 @@ class KimikageYui05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 367,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
-    ];
-}
-
-class OhtoriKasumi01 extends Character {
-    name: string = '鳳 加純';
-    rare: number = 1;
-    level: number = 15;
-    levelMin: number = 15;
-    levelMax: number = 15;
-    gradeUpLimit: number = 0;
-    hp: number = 896;
-    hpMin: number = 371;
-    hpMax: number = 896;
-    atkClose: number = 219;
-    atkCloseMin: number = 88;
-    atkCloseMax: number = 219;
-    attrClose: number = 0;
-    atkShot: number = 219;
-    atkShotMin: number = 88;
-    atkShotMax: number = 219;
-    attrShot: number = 0;
-    def: number = 258;
-    defMin: number = 103;
-    defMax: number = 258;
-    spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Fire, 0.5),
-        new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-    ];
-}
-
-class OhtoriKasumi02 extends Character {
-    name: string = '鳳 加純';
-    rare: number = 2;
-    level: number = 30;
-    levelMin: number = 1;
-    levelMax: number = 30;
-    gradeUpLimit: number = 40;
-    hp: number = 1463;
-    hpMin: number = 525;
-    hpMax: number = 1463;
-    atkClose: number = 350;
-    atkCloseMin: number = 131;
-    atkCloseMax: number = 350;
-    attrClose: number = 0;
-    atkShot: number = 350;
-    atkShotMin: number = 131;
-    atkShotMax: number = 350;
-    attrShot: number = 0;
-    def: number = 412;
-    defMin: number = 155;
-    defMax: number = 412;
-    spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Fire, 0.5),
-        new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-    ];
-}
-
-class OhtoriKasumi04 extends Character {
-    name: string = '鳳 加純';
-    rare: number = 3;
-    level: number = 60;
-    levelMin: number = 1;
-    levelMax: number = 60;
-    gradeUpLimit: number = 20;
-    hp: number = 2585;
-    hpMin: number = 711;
-    hpMax: number = 2585;
-    atkClose: number = 613;
-    atkCloseMin: number = 175;
-    atkCloseMax: number = 613;
-    attrClose: number = 0;
-    atkShot: number = 613;
-    atkShotMin: number = 175;
-    atkShotMax: number = 613;
-    attrShot: number = 0;
-    def: number = 721;
-    defMin: number = 206;
-    defMax: number = 721;
-    spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Fire, 0.5),
-        new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-    ];
-}
-
-class OhtoriKasumi05 extends Character {
-    name: string = '鳳 加純';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    hp: number = 3337;
-    hpMin: number = 896;
-    hpMax: number = 3337;
-    atkClose: number = 788;
-    atkCloseMin: number = 219;
-    atkCloseMax: number = 788;
-    attrClose: number = 0;
-    atkShot: number = 788;
-    atkShotMin: number = 219;
-    atkShotMax: number = 788;
-    attrShot: number = 0;
-    def: number = 927;
-    defMin: number = 258;
-    defMax: number = 927;
-    spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Fire, 0.5),
-        new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4674,18 +7583,44 @@ class JingujiMari01 extends Character {
     defMax: number = 265;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1280,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4712,18 +7647,44 @@ class JingujiMari02 extends Character {
     defMax: number = 424;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1280,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4750,18 +7711,44 @@ class JingujiMari04 extends Character {
     defMax: number = 742;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1280,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4788,18 +7775,44 @@ class JingujiMari05 extends Character {
     defMax: number = 954;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1280,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -4826,18 +7839,44 @@ class JingujiMari70 extends Character {
     defMax: number = 954;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Dagger(0.1),
+        AttrTypeDict.Dagger(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1280,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.3),
-        new Buff(AttrTypeId.Dagger, 0.1),
+        new Buff(AttrTypeId.Dagger, 0.1)
     ];
 }
 
@@ -4864,18 +7903,44 @@ class OchanomizuMirie01 extends Character {
     defMax: number = 243;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 535,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 413,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 409,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -4902,18 +7967,44 @@ class OchanomizuMirie02 extends Character {
     defMax: number = 388;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 535,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 413,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 409,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -4940,18 +8031,44 @@ class OchanomizuMirie04 extends Character {
     defMax: number = 679;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 535,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 413,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 409,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -4978,18 +8095,44 @@ class OchanomizuMirie05 extends Character {
     defMax: number = 873;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 535,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 413,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 409,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -5016,18 +8159,44 @@ class KaeruzakaRaiya01 extends Character {
     defMax: number = 245;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 594,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2023,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -5054,18 +8223,44 @@ class KaeruzakaRaiya02 extends Character {
     defMax: number = 392;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 594,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2023,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -5092,18 +8287,44 @@ class KaeruzakaRaiya04 extends Character {
     defMax: number = 686;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 594,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2023,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -5130,18 +8351,44 @@ class KaeruzakaRaiya05 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
+        AttrTypeDict.Sword(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 594,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2023,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
 }
 
@@ -5168,18 +8415,44 @@ class KaeruzakaRaiya70 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 594,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2023,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -5206,18 +8479,44 @@ class UsamotoAnna01 extends Character {
     defMax: number = 260;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5244,18 +8543,44 @@ class UsamotoAnna02 extends Character {
     defMax: number = 416;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5282,18 +8607,44 @@ class UsamotoAnna04 extends Character {
     defMax: number = 728;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5320,20 +8671,48 @@ class UsamotoAnna05 extends Character {
     defMax: number = 936;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Hammer(0.25),
         AttrTypeDict.Bazooka(0.15),
         AttrTypeDict.Volt(0.5),
+        AttrTypeDict.ResistGravity(1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15),
         new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.ResistGravity, 1)
     ];
 }
 
@@ -5360,18 +8739,44 @@ class UsamotoAnna70 extends Character {
     defMax: number = 936;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.1),
+        AttrTypeDict.Bazooka(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Hammer, 0.3),
-        new Buff(AttrTypeId.Bazooka, 0.1),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
 }
 
@@ -5398,18 +8803,44 @@ class NinaKalinina01 extends Character {
     defMax: number = 265;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Hammer(0.25)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1942,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1281,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.25)
     ];
 }
 
@@ -5436,18 +8867,44 @@ class NinaKalinina02 extends Character {
     defMax: number = 424;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Hammer(0.25)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1942,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1281,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.25)
     ];
 }
 
@@ -5474,18 +8931,44 @@ class NinaKalinina04 extends Character {
     defMax: number = 742;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Hammer(0.25)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1942,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1281,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.25)
     ];
 }
 
@@ -5512,18 +8995,44 @@ class NinaKalinina05 extends Character {
     defMax: number = 954;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Hammer(0.25)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1942,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1281,
+        def: 389
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.25)
     ];
 }
 
@@ -5550,18 +9059,44 @@ class MikurazaAzuki01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.9),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1347,
+        def: 364
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -5588,18 +9123,44 @@ class MikurazaAzuki02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.9),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1347,
+        def: 364
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -5626,18 +9187,44 @@ class MikurazaAzuki04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.9),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1347,
+        def: 364
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -5664,18 +9251,44 @@ class MikurazaAzuki05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.9),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 500,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1347,
+        def: 364
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -5702,18 +9315,44 @@ class KotomuraAkane01 extends Character {
     defMax: number = 248;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -5740,18 +9379,44 @@ class KotomuraAkane02 extends Character {
     defMax: number = 396;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -5778,18 +9443,44 @@ class KotomuraAkane04 extends Character {
     defMax: number = 693;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -5816,20 +9507,46 @@ class KotomuraAkane05 extends Character {
     defMax: number = 891;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.8),
+        AttrTypeDict.ResistIce(-0.8),
+        AttrTypeDict.ResistVolt(-0.4),
         AttrTypeDict.Fire(0.96),
         AttrTypeDict.Sniper(0.25),
         AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Fire(0.5),
+        AttrTypeDict.Fire(0.5)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 459,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Fire, 0.5)
     ];
 }
 
@@ -5856,18 +9573,44 @@ class KotomuraAmane01 extends Character {
     defMax: number = 253;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1362,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5894,18 +9637,44 @@ class KotomuraAmane02 extends Character {
     defMax: number = 404;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1362,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5932,18 +9701,44 @@ class KotomuraAmane04 extends Character {
     defMax: number = 707;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1362,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -5970,18 +9765,44 @@ class KotomuraAmane05 extends Character {
     defMax: number = 909;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
         AttrTypeDict.Ice(0.96),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 473,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 482,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 459,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1362,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -6008,18 +9829,44 @@ class MiaVoisin01 extends Character {
     defMax: number = 260;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -6046,18 +9893,44 @@ class MiaVoisin02 extends Character {
     defMax: number = 416;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -6084,18 +9957,44 @@ class MiaVoisin04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -6122,18 +10021,44 @@ class MiaVoisin05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -6160,18 +10085,44 @@ class ChishimaMiyuki01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 520,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -6198,18 +10149,44 @@ class ChishimaMiyuki02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 520,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -6236,18 +10213,44 @@ class ChishimaMiyuki04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 520,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -6274,170 +10277,44 @@ class ChishimaMiyuki05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.9),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 520,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 525,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 417,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
-    ];
-}
-
-class ACTRESS01 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 1;
-    level: number = 15;
-    levelMin: number = 15;
-    levelMax: number = 15;
-    gradeUpLimit: number = 0;
-    hp: number = 827;
-    hpMin: number = 342;
-    hpMax: number = 827;
-    atkClose: number = 146;
-    atkCloseMin: number = 59;
-    atkCloseMax: number = 146;
-    attrClose: number = 0;
-    atkShot: number = 154;
-    atkShotMin: number = 61;
-    atkShotMax: number = 154;
-    attrShot: number = 0;
-    def: number = 258;
-    defMin: number = 103;
-    defMax: number = 258;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
-    ];
-}
-
-class ACTRESS02 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 2;
-    level: number = 30;
-    levelMin: number = 1;
-    levelMax: number = 30;
-    gradeUpLimit: number = 40;
-    hp: number = 1349;
-    hpMin: number = 485;
-    hpMax: number = 1349;
-    atkClose: number = 234;
-    atkCloseMin: number = 88;
-    atkCloseMax: number = 234;
-    attrClose: number = 0;
-    atkShot: number = 246;
-    atkShotMin: number = 92;
-    atkShotMax: number = 246;
-    attrShot: number = 0;
-    def: number = 412;
-    defMin: number = 155;
-    defMax: number = 412;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
-    ];
-}
-
-class ACTRESS04 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 3;
-    level: number = 60;
-    levelMin: number = 1;
-    levelMax: number = 60;
-    gradeUpLimit: number = 20;
-    hp: number = 2385;
-    hpMin: number = 656;
-    hpMax: number = 2385;
-    atkClose: number = 410;
-    atkCloseMin: number = 117;
-    atkCloseMax: number = 410;
-    attrClose: number = 0;
-    atkShot: number = 430;
-    atkShotMin: number = 123;
-    atkShotMax: number = 430;
-    attrShot: number = 0;
-    def: number = 721;
-    defMin: number = 206;
-    defMax: number = 721;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
-    ];
-}
-
-class ACTRESS05 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    hp: number = 3078;
-    hpMin: number = 827;
-    hpMax: number = 3078;
-    atkClose: number = 527;
-    atkCloseMin: number = 146;
-    atkCloseMax: number = 527;
-    attrClose: number = 0;
-    atkShot: number = 553;
-    atkShotMin: number = 154;
-    atkShotMax: number = 553;
-    attrShot: number = 0;
-    def: number = 927;
-    defMin: number = 258;
-    defMax: number = 927;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -6464,18 +10341,44 @@ class ShantiRana01 extends Character {
     defMax: number = 255;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1401,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -6502,18 +10405,44 @@ class ShantiRana02 extends Character {
     defMax: number = 408;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1401,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -6540,18 +10469,44 @@ class ShantiRana04 extends Character {
     defMax: number = 714;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1401,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -6578,18 +10533,44 @@ class ShantiRana05 extends Character {
     defMax: number = 918;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1401,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -6616,18 +10597,44 @@ class ShantiRana70 extends Character {
     defMax: number = 918;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Sword(0.1),
+        AttrTypeDict.Sword(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 556,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 371,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 573,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 375,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1401,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
 }
 
@@ -6654,18 +10661,44 @@ class OhzekiKoyui01 extends Character {
     defMax: number = 263;
     spd: number = 155;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -6692,18 +10725,44 @@ class OhzekiKoyui02 extends Character {
     defMax: number = 420;
     spd: number = 155;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -6730,18 +10789,44 @@ class OhzekiKoyui04 extends Character {
     defMax: number = 735;
     spd: number = 155;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -6768,18 +10853,44 @@ class OhzekiKoyui05 extends Character {
     defMax: number = 945;
     spd: number = 155;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -6806,18 +10917,44 @@ class OhzekiKoyui70 extends Character {
     defMax: number = 945;
     spd: number = 155;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Rifle(0.1),
+        AttrTypeDict.Rifle(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 540
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 360
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
 }
 
@@ -6844,18 +10981,44 @@ class WangHonghua01 extends Character {
     defMax: number = 250;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 606,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 321,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -6882,18 +11045,44 @@ class WangHonghua02 extends Character {
     defMax: number = 400;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 606,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 321,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -6920,18 +11109,44 @@ class WangHonghua04 extends Character {
     defMax: number = 700;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 606,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 321,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -6958,18 +11173,44 @@ class WangHonghua05 extends Character {
     defMax: number = 900;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 606,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 321,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -6996,18 +11237,44 @@ class WangHonghua70 extends Character {
     defMax: number = 900;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Spear(0.1),
+        AttrTypeDict.Spear(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 606,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 321,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 318,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Twin, 0.3),
-        new Buff(AttrTypeId.Spear, 0.1),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
 }
 
@@ -7034,18 +11301,44 @@ class ShirleyOakley01 extends Character {
     defMax: number = 260;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -7072,18 +11365,44 @@ class ShirleyOakley02 extends Character {
     defMax: number = 416;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -7110,18 +11429,44 @@ class ShirleyOakley04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -7148,18 +11493,44 @@ class ShirleyOakley05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 312,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1941,
+        def: 578
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -7186,18 +11557,44 @@ class ShinonomeChie01 extends Character {
     defMax: number = 240;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -7224,18 +11621,44 @@ class ShinonomeChie02 extends Character {
     defMax: number = 384;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -7262,18 +11685,44 @@ class ShinonomeChie04 extends Character {
     defMax: number = 672;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -7300,18 +11749,44 @@ class ShinonomeChie05 extends Character {
     defMax: number = 864;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
+        AttrTypeDict.Bazooka(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 636,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 315,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
 }
 
@@ -7338,18 +11813,44 @@ class RitaHenschel01 extends Character {
     defMax: number = 258;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1268,
+        def: 393
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -7376,18 +11877,44 @@ class RitaHenschel02 extends Character {
     defMax: number = 412;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1268,
+        def: 393
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -7414,18 +11941,44 @@ class RitaHenschel04 extends Character {
     defMax: number = 721;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1268,
+        def: 393
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -7452,18 +12005,44 @@ class RitaHenschel05 extends Character {
     defMax: number = 927;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15),
+        AttrTypeDict.Hammer(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 681,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 275,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1902,
+        def: 590
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1268,
+        def: 393
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Hammer, 0.15),
+        new Buff(AttrTypeId.Hammer, 0.15)
     ];
 }
 
@@ -7490,18 +12069,44 @@ class KagomeMisaki01 extends Character {
     defMax: number = 263;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 544
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7528,18 +12133,44 @@ class KagomeMisaki02 extends Character {
     defMax: number = 420;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 544
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7566,18 +12197,44 @@ class KagomeMisaki04 extends Character {
     defMax: number = 735;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 544
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7604,18 +12261,44 @@ class KagomeMisaki05 extends Character {
     defMax: number = 945;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
         AttrTypeDict.Gravity(0.96),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 544
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7642,18 +12325,44 @@ class KanagataSugumi01 extends Character {
     defMax: number = 253;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1429,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -7680,18 +12389,44 @@ class KanagataSugumi02 extends Character {
     defMax: number = 404;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1429,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -7718,18 +12453,44 @@ class KanagataSugumi04 extends Character {
     defMax: number = 707;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1429,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -7756,18 +12517,44 @@ class KanagataSugumi05 extends Character {
     defMax: number = 909;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
         AttrTypeDict.Volt(0.96),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 468,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 468,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1429,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -7794,18 +12581,44 @@ class NikaidohTsukasa01 extends Character {
     defMax: number = 250;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 550
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7832,18 +12645,44 @@ class NikaidohTsukasa02 extends Character {
     defMax: number = 400;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 550
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7870,18 +12709,44 @@ class NikaidohTsukasa04 extends Character {
     defMax: number = 700;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 550
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7908,18 +12773,44 @@ class NikaidohTsukasa05 extends Character {
     defMax: number = 900;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 630,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 315,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 550
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1375,
+        def: 363
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7946,18 +12837,44 @@ class SugaItsuri01 extends Character {
     defMax: number = 260;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -7984,18 +12901,44 @@ class SugaItsuri02 extends Character {
     defMax: number = 416;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8022,18 +12965,44 @@ class SugaItsuri04 extends Character {
     defMax: number = 728;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8060,170 +13029,44 @@ class SugaItsuri05 extends Character {
     defMax: number = 936;
     spd: number = 157;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 309,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2103,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-    ];
-}
-
-class AgatsumaKei01 extends Character {
-    name: string = '吾妻 京';
-    rare: number = 1;
-    level: number = 15;
-    levelMin: number = 15;
-    levelMax: number = 15;
-    gradeUpLimit: number = 0;
-    hp: number = 870;
-    hpMin: number = 360;
-    hpMax: number = 870;
-    atkClose: number = 227;
-    atkCloseMin: number = 91;
-    atkCloseMax: number = 227;
-    attrClose: number = 0;
-    atkShot: number = 217;
-    atkShotMin: number = 87;
-    atkShotMax: number = 217;
-    attrShot: number = 0;
-    def: number = 258;
-    defMin: number = 103;
-    defMax: number = 258;
-    spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Gravity, 0.5),
-        new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
-    ];
-}
-
-class AgatsumaKei02 extends Character {
-    name: string = '吾妻 京';
-    rare: number = 2;
-    level: number = 30;
-    levelMin: number = 1;
-    levelMax: number = 30;
-    gradeUpLimit: number = 40;
-    hp: number = 1420;
-    hpMin: number = 510;
-    hpMax: number = 1420;
-    atkClose: number = 364;
-    atkCloseMin: number = 136;
-    atkCloseMax: number = 364;
-    attrClose: number = 0;
-    atkShot: number = 347;
-    atkShotMin: number = 130;
-    atkShotMax: number = 347;
-    attrShot: number = 0;
-    def: number = 412;
-    defMin: number = 155;
-    defMax: number = 412;
-    spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Gravity, 0.5),
-        new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
-    ];
-}
-
-class AgatsumaKei04 extends Character {
-    name: string = '吾妻 京';
-    rare: number = 3;
-    level: number = 60;
-    levelMin: number = 1;
-    levelMax: number = 60;
-    gradeUpLimit: number = 20;
-    hp: number = 2510;
-    hpMin: number = 690;
-    hpMax: number = 2510;
-    atkClose: number = 637;
-    atkCloseMin: number = 182;
-    atkCloseMax: number = 637;
-    attrClose: number = 0;
-    atkShot: number = 607;
-    atkShotMin: number = 173;
-    atkShotMax: number = 607;
-    attrShot: number = 0;
-    def: number = 721;
-    defMin: number = 206;
-    defMax: number = 721;
-    spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Gravity, 0.5),
-        new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
-    ];
-}
-
-class AgatsumaKei05 extends Character {
-    name: string = '吾妻 京';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    hp: number = 3240;
-    hpMin: number = 870;
-    hpMax: number = 3240;
-    atkClose: number = 819;
-    atkCloseMin: number = 227;
-    atkCloseMax: number = 819;
-    attrClose: number = 0;
-    atkShot: number = 780;
-    atkShotMin: number = 217;
-    atkShotMax: number = 780;
-    attrShot: number = 0;
-    def: number = 927;
-    defMin: number = 258;
-    defMax: number = 927;
-    spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15),
-    ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.Gravity, 0.5),
-        new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8250,18 +13093,44 @@ class AraimeYasuri01 extends Character {
     defMax: number = 253;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8288,18 +13157,44 @@ class AraimeYasuri02 extends Character {
     defMax: number = 404;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8326,18 +13221,44 @@ class AraimeYasuri04 extends Character {
     defMax: number = 707;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8364,18 +13285,44 @@ class AraimeYasuri05 extends Character {
     defMax: number = 909;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.5),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 539
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8402,18 +13349,44 @@ class FatimaBetrorum01 extends Character {
     defMax: number = 258;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8440,18 +13413,44 @@ class FatimaBetrorum02 extends Character {
     defMax: number = 412;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8478,18 +13477,44 @@ class FatimaBetrorum04 extends Character {
     defMax: number = 721;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8516,18 +13541,44 @@ class FatimaBetrorum05 extends Character {
     defMax: number = 927;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
         AttrTypeDict.Fire(0.9),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 421,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1961,
+        def: 573
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1294,
+        def: 386
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8554,18 +13605,44 @@ class KuroganeYuto01 extends Character {
     defMax: number = 245;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8592,18 +13669,44 @@ class KuroganeYuto02 extends Character {
     defMax: number = 392;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8630,18 +13733,44 @@ class KuroganeYuto04 extends Character {
     defMax: number = 686;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8668,18 +13797,44 @@ class KuroganeYuto05 extends Character {
     defMax: number = 882;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 675,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 275,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 529
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 353
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8706,18 +13861,44 @@ class Gourai04 extends Character {
     defMax: number = 728;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 306,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 306,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -8744,18 +13925,44 @@ class Gourai05 extends Character {
     defMax: number = 936;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 306,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 306,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -8782,18 +13989,44 @@ class Stylet04 extends Character {
     defMax: number = 686;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 612,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 612,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8820,18 +14053,44 @@ class Stylet05 extends Character {
     defMax: number = 882;
     spd: number = 166;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 612,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 312,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 612,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2042,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -8858,18 +14117,44 @@ class Baselard04 extends Character {
     defMax: number = 693;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8896,18 +14181,44 @@ class Baselard05 extends Character {
     defMax: number = 891;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Spear(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2021,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
 }
 
@@ -8934,18 +14245,44 @@ class SolRaptor04 extends Character {
     defMax: number = 693;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
+        AttrTypeDict.Dagger(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 562
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
 }
 
@@ -8972,20 +14309,46 @@ class SolRaptor05 extends Character {
     defMax: number = 891;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Rifle(0.25),
         AttrTypeDict.Dagger(0.15),
-        AttrTypeDict.Fire(0.5),
+        AttrTypeDict.Fire(0.5)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 562
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15),
-        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Fire, 0.5)
     ];
 }
 
@@ -9012,18 +14375,44 @@ class SolRaptor70 extends Character {
     defMax: number = 891;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Rifle(0.1),
+        AttrTypeDict.Rifle(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 655,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 273,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2002,
+        def: 562
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
 }
 
@@ -9050,18 +14439,44 @@ class MiyafujiYoshika04 extends Character {
     defMax: number = 735;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9088,18 +14503,44 @@ class MiyafujiYoshika05 extends Character {
     defMax: number = 945;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 545,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 374,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2041,
+        def: 551
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1361,
+        def: 367
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9126,18 +14567,44 @@ class LynetteBishop04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 364,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 364,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9164,18 +14631,44 @@ class LynetteBishop05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 364,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 562,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 364,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9202,18 +14695,44 @@ class GertrudBarkhorn04 extends Character {
     defMax: number = 721;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 270,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 270,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9240,18 +14759,44 @@ class GertrudBarkhorn05 extends Character {
     defMax: number = 927;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 270,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 662,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 270,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1983,
+        def: 567
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1322,
+        def: 378
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9278,18 +14823,44 @@ class EricaHartmann04 extends Character {
     defMax: number = 693;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 540,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 540,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9316,20 +14887,48 @@ class EricaHartmann05 extends Character {
     defMax: number = 891;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
         AttrTypeDict.Ice(0.86),
         AttrTypeDict.Rifle(0.25),
         AttrTypeDict.HandGun(0.15),
         AttrTypeDict.Ice(0.5),
+        AttrTypeDict.ResistFire(1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 540,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Physical,
+        attr: 378,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 540,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 378,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15),
         new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.ResistFire, 1)
     ];
 }
 
@@ -9356,18 +14955,44 @@ class Hresvelgr04 extends Character {
     defMax: number = 686;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9394,18 +15019,44 @@ class Hresvelgr05 extends Character {
     defMax: number = 882;
     spd: number = 168;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 551,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1335,
+        def: 374
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9432,18 +15083,44 @@ class HoshitsukiMiki04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -9470,18 +15147,44 @@ class HoshitsukiMiki05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.6),
+        AttrTypeDict.ResistIce(-0.6),
+        AttrTypeDict.ResistVolt(-0.3),
         AttrTypeDict.Fire(0.56),
         AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 312,
+        attrTypeId: AttrTypeId.Fire
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Sword,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 312,
+        attrTypeId: AttrTypeId.Fire
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2082,
+        def: 523
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 349
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Sword, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -9508,18 +15211,44 @@ class TokiwaKurumi04 extends Character {
     defMax: number = 707;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15),
+        AttrTypeDict.Sniper(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Sniper, 0.15),
+        new Buff(AttrTypeId.Sniper, 0.15)
     ];
 }
 
@@ -9546,18 +15275,44 @@ class TokiwaKurumi05 extends Character {
     defMax: number = 909;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15),
+        AttrTypeDict.Sniper(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Sniper,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 273,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Hammer,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 273,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2022,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Sniper, 0.15),
+        new Buff(AttrTypeId.Sniper, 0.15)
     ];
 }
 
@@ -9584,18 +15339,44 @@ class WatagiMichelle04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9622,18 +15403,44 @@ class WatagiMichelle05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
         AttrTypeDict.Volt(0.86),
         AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.HandGun(0.15),
+        AttrTypeDict.HandGun(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Bazooka,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 430,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.HandGun,
+        atk: 515,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 430,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 1982,
+        def: 556
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1388,
+        def: 359
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
 }
 
@@ -9660,18 +15467,44 @@ class Sadone04 extends Character {
     defMax: number = 686;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9698,18 +15531,44 @@ class Sadone05 extends Character {
     defMax: number = 882;
     spd: number = 163;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Spear,
+        atk: 567,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Slash,
+        attr: 378,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9736,18 +15595,44 @@ class SylphyII04 extends Character {
     defMax: number = 728;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9774,18 +15659,44 @@ class SylphyII05 extends Character {
     defMax: number = 936;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
         AttrTypeDict.Volt(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9812,18 +15723,44 @@ class SylphyII70 extends Character {
     defMax: number = 936;
     spd: number = 162;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
         AttrTypeDict.Gravity(0.86),
         AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Twin(0.1),
+        AttrTypeDict.Twin(0.1)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 624,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 321,
+        attrTypeId: AttrTypeId.Volt
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2062,
+        def: 545
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1348,
+        def: 371
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Twin, 0.1),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
 }
 
@@ -9850,18 +15787,44 @@ class Kasumi04 extends Character {
     defMax: number = 707;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -9888,18 +15851,44 @@ class Kasumi05 extends Character {
     defMax: number = 909;
     spd: number = 165;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
         AttrTypeDict.Ice(0.5),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15),
+        AttrTypeDict.Rifle(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Rifle,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 688,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 278,
+        attrTypeId: AttrTypeId.Ice
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2102,
+        def: 534
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1402,
+        def: 356
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Rifle, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.15)
     ];
 }
 
@@ -9926,18 +15915,44 @@ class MarieRose04 extends Character {
     defMax: number = 714;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 318,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -9964,18 +15979,44 @@ class MarieRose05 extends Character {
     defMax: number = 918;
     spd: number = 160;
     goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
         AttrTypeDict.Gravity(0.56),
         AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15),
+        AttrTypeDict.Twin(0.15)
     ];
-    WeaponShot: Gear = new Gear();
-    WeaponClose: Gear = new Gear();
-    EquipmentTop: Gear = new Gear();
-    EquipmentBottom: Gear = new Gear();
+    weaponShot: Gear = new Gear({
+        unitType: AttrTypeId.Twin,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Energy,
+        attr: 318,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    weaponClose: Gear = new Gear({
+        unitType: AttrTypeId.Dagger,
+        atk: 642,
+        atkTypeId: AttrTypeId.Shot,
+        atkAmmoTypeId: AttrTypeId.Impact,
+        attr: 318,
+        attrTypeId: AttrTypeId.Gravity
+    });
+    equipmentTop: Gear = new Gear({
+        hp: 2123,
+        def: 528
+    });
+    equipmentBottom: Gear = new Gear({
+        hp: 1415,
+        def: 352
+    });
     buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15),
+        new Buff(AttrTypeId.Twin, 0.15)
     ];
 }
 
@@ -10098,10 +16139,10 @@ export const CharacterModels = {
     KimikageYui02: new KimikageYui02(),
     KimikageYui04: new KimikageYui04(),
     KimikageYui05: new KimikageYui05(),
-    OhtoriKasumi01: new OhtoriKasumi01(),
-    OhtoriKasumi02: new OhtoriKasumi02(),
-    OhtoriKasumi04: new OhtoriKasumi04(),
-    OhtoriKasumi05: new OhtoriKasumi05(),
+    // OhtoriKasumi01: new OhtoriKasumi01(),
+    // OhtoriKasumi02: new OhtoriKasumi02(),
+    // OhtoriKasumi04: new OhtoriKasumi04(),
+    // OhtoriKasumi05: new OhtoriKasumi05(),
     JingujiMari01: new JingujiMari01(),
     JingujiMari02: new JingujiMari02(),
     JingujiMari04: new JingujiMari04(),
@@ -10145,10 +16186,10 @@ export const CharacterModels = {
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
     ChishimaMiyuki05: new ChishimaMiyuki05(),
-    ACTRESS01: new ACTRESS01(),
-    ACTRESS02: new ACTRESS02(),
-    ACTRESS04: new ACTRESS04(),
-    ACTRESS05: new ACTRESS05(),
+    // ACTRESS01: new ACTRESS01(),
+    // ACTRESS02: new ACTRESS02(),
+    // ACTRESS04: new ACTRESS04(),
+    // ACTRESS05: new ACTRESS05(),
     ShantiRana01: new ShantiRana01(),
     ShantiRana02: new ShantiRana02(),
     ShantiRana04: new ShantiRana04(),
@@ -10192,10 +16233,10 @@ export const CharacterModels = {
     SugaItsuri02: new SugaItsuri02(),
     SugaItsuri04: new SugaItsuri04(),
     SugaItsuri05: new SugaItsuri05(),
-    AgatsumaKei01: new AgatsumaKei01(),
-    AgatsumaKei02: new AgatsumaKei02(),
-    AgatsumaKei04: new AgatsumaKei04(),
-    AgatsumaKei05: new AgatsumaKei05(),
+    // AgatsumaKei01: new AgatsumaKei01(),
+    // AgatsumaKei02: new AgatsumaKei02(),
+    // AgatsumaKei04: new AgatsumaKei04(),
+    // AgatsumaKei05: new AgatsumaKei05(),
     AraimeYasuri01: new AraimeYasuri01(),
     AraimeYasuri02: new AraimeYasuri02(),
     AraimeYasuri04: new AraimeYasuri04(),

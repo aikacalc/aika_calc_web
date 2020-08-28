@@ -21,4 +21,8 @@ export enum AttrTypeId {
     HP = 20,
     DEF = 21,
     None = 22,
+    ResistVolt = 23,
+    ResistGravity = 24,
+    ResistFire = 25,
+    ResistIce = 26,
 }

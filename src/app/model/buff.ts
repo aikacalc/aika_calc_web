@@ -1,5 +1,5 @@
 import { AttrTypeId } from './attr-type-id.enum';
-import { AttrTypeName } from './attr-type';
+import { AttrTypeName, AttrTypeColor } from './attr-type';
 
 export class Buff {
     isUnitOnly: boolean;
@@ -23,7 +23,11 @@ export class Buff {
     get attrTypeName(): string {
         return AttrTypeName[AttrTypeId[this.type]];
     }
-
+    get attrColor(): string {
+        const color = AttrTypeColor[AttrTypeId[this.type]];
+        return color;
+    }
+    
     constructor(type: AttrTypeId, value: number) {
         this.type = type;
         this.value = value;
