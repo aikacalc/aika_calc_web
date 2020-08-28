@@ -1,0 +1,247 @@
+.root {
+
+    button,
+    select,
+    input {
+        border: 1px solid #000;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    >.input-json {
+        height: 30px;
+        display: flex;
+        align-items: flex-start;
+
+        >button {
+            width: 60px;
+            // height: 24px;
+            font-size: 16px;
+        }
+
+        >input {
+            margin-left: 5px;
+            flex: 1;
+        }
+    }
+
+    >.character-template-select {
+        height: 30px;
+        display: flex;
+        align-items: flex-start;
+
+        >span {
+            width: 60px;
+        }
+
+        >select {
+            margin-left: 5px;
+        }
+
+        >button {
+            margin-left: 5px;
+        }
+    }
+
+    >.character {
+        >.row {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+            >table {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border-collapse: collapse;
+
+                input {
+                    font-size: 16px;
+                }
+
+                .wrapper {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .calc {
+                    border-bottom: 1px dashed #aaa;
+                }
+
+                >tbody {
+                    >tr {
+                        >td {
+                            border: 1px solid #000;
+                        }
+                    }
+
+                    >.level>td>.wrapper {
+                        input[type=number] {
+                            margin-right: 5px;
+                            width: 50px;
+                        }
+
+                        input[type=range] {
+                            margin-left: 5px;
+                            border: 1px solid #000;
+                        }
+                    }
+
+                    >.buff-list>td>.wrapper {
+                        >.buff-list {
+                            flex: 1;
+
+                            >.buff {
+                                display: flex;
+                                align-items: center;
+
+                                >select {
+                                    width: 70px;
+                                    font-size: 16px;
+                                }
+
+                                >.value {
+                                    margin-left: 5px;
+                                    width: 50px;
+                                    font-size: 16px;
+                                }
+
+                                >button {
+                                    margin-left: auto;
+                                    width: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #f00;
+                                    background-color: #fff;
+                                }
+                            }
+
+                            >.buff+.buff {
+                                border-top: 2px solid #aaa;
+                            }
+                        }
+                    }
+                }
+            }
+
+            >.buff-list {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #000;
+
+                >.title {
+                    border-bottom: 1px solid #000;
+                }
+
+
+            }
+
+            >.unit {
+                input {
+                    width: 70px;
+                    font-size: 16px;
+                    user-select: all;
+                }
+
+                select {
+                    width: 70px;
+                    font-size: 16px;
+                }
+
+                >tbody {
+                    >.buff-list>td>.wrapper {
+                        >.buff-list {
+                            flex: 1;
+
+                            >.buff {
+                                display: flex;
+                                align-items: center;
+
+                                >select {
+                                    width: 70px;
+                                    font-size: 16px;
+                                }
+
+                                >.value {
+                                    margin-left: 5px;
+                                    width: 50px;
+                                    font-size: 16px;
+                                }
+
+                                >button {
+                                    margin-left: auto;
+                                    width: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #f00;
+                                    background-color: #fff;
+                                }
+                            }
+
+                            >.buff+.buff {
+                                border-top: 2px solid #aaa;
+                            }
+                        }
+                    }
+
+                    >.tune-list>td>.wrapper {
+                        >.buff-list {
+                            flex: 1;
+
+                            >.buff {
+                                display: flex;
+                                align-items: center;
+
+                                >select {
+                                    width: 70px;
+                                    font-size: 16px;
+                                }
+
+                                >.value {
+                                    margin-left: 5px;
+                                    width: 50px;
+                                    font-size: 16px;
+                                }
+
+                                >button {
+                                    margin-left: auto;
+                                    width: 20px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #f00;
+                                    background-color: #fff;
+                                }
+                            }
+
+                            >.buff+.buff {
+                                border-top: 2px solid #aaa;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button.new-buff {
+                margin-top: 10px;
+                width: 100%;
+                padding: 5px;
+                // height: 35px;
+                font-size: 20px;
+                font-weight: bold;
+                // line-height: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
