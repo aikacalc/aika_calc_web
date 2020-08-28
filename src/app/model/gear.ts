@@ -24,7 +24,7 @@ export class Gear extends Unit {
     updateStatus(): void {
         this.hp = this.calcTuneValue(this.base.hp, [AttrTypeId.HP]);
         this.def = this.calcTuneValue(this.base.def, [AttrTypeId.DEF]);
-        this.atk = this.calcTuneValue(this.base.atk, [this.base.atkTypeId, this.base.atkAmmoTypeId, this.base.unitType]);
+        this.atk = this.calcTuneValue(this.base.atk, [this.base.unitType, this.base.atkTypeId, this.base.atkAmmoTypeId]);
         this.attr = this.calcTuneValue(this.base.attr, [this.base.attrTypeId]);
     }
     calcTuneValue(baseVal: number, attrTypeIds: AttrTypeId[]): number {

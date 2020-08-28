@@ -1774,7 +1774,7 @@ class AikawaAika05 extends Character {
     WeaponClose: Gear = new Gear({
         unitType: AttrTypeId.Hammer,
         atk: 548,
-        atkTypeId: AttrTypeId.Impact,
+        atkTypeId: AttrTypeId.Close,
         atkAmmoTypeId: AttrTypeId.Impact,
         attr: 498,
         attrTypeId: AttrTypeId.Volt

@@ -12,12 +12,11 @@
         <button (click)="setCharacterTemplateToCharacter()">SET</button>
     </div>
     <div class="character" *ngIf="character">
-        <div class="row">
+        <div class="row character">
             <table class="status-table">
                 <tbody>
                     <tr>
-                        <td>{{character.name+' ★'+character.rare}}</td>
-                        <td></td>
+                        <td colspan="2">{{character.name+' ★'+character.rare}}</td>
                     </tr>
                     <tr class="level">
                         <td>Lv</td>
@@ -91,7 +90,7 @@
                             <div class="warpper">{{character.def}}</div>
                         </td>
                     </tr>
-                    <tr class="buff-list">
+                    <tr class="buff-list-tr">
                         <td>Buff</td>
                         <td>
                             <div class="wrapper">
@@ -104,7 +103,8 @@
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.buffs,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.buffs,buff);
                                             character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.buffs);
@@ -116,12 +116,11 @@
                 </tbody>
             </table>
         </div>
-        <div class="row">
+        <div class="row weapon">
             <table class="unit weapon-shot">
                 <tbody>
                     <tr>
-                        <td>射擊</td>
-                        <td></td>
+                        <td colspan="2">射擊</td>
                     </tr>
                     <tr class="atk">
                         <td>ATK</td>
@@ -163,20 +162,21 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="buff-list">
+                    <tr class="buff-list-tr">
                         <td>Buff</td>
                         <td>
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.WeaponShot.buffs">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.WeaponShot.buffs,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.WeaponShot.buffs,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.WeaponShot.buffs);
@@ -191,14 +191,15 @@
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.WeaponShot.tunes">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.WeaponShot.tunes,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.WeaponShot.tunes,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.WeaponShot.tunes);
@@ -212,8 +213,7 @@
             <table class="unit weapon-close">
                 <tbody>
                     <tr>
-                        <td>近身</td>
-                        <td></td>
+                        <td colspan="2">近身</td>
                     </tr>
                     <tr class="atk">
                         <td>ATK</td>
@@ -255,20 +255,21 @@
                             </div>
                         </td>
                     </tr>
-                    <tr class="buff-list">
+                    <tr class="buff-list-tr">
                         <td>Buff</td>
                         <td>
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.WeaponClose.buffs">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.WeaponClose.buffs,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.WeaponClose.buffs,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.WeaponClose.buffs);
@@ -283,14 +284,15 @@
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.WeaponClose.tunes">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.WeaponClose.tunes,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.WeaponClose.tunes,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.WeaponClose.tunes);
@@ -301,17 +303,19 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+        <div class="row equipment">
             <table class="unit equipment-top">
                 <tbody>
                     <tr>
-                        <td>上身</td>
-                        <td></td>
+                        <td colspan="2">上身</td>
                     </tr>
                     <tr class="hp">
                         <td>HP</td>
                         <td>
                             <div class="wrapper">
-                                <input type="number" [(ngModel)]="character.EquipmentTop.base.hp">
+                                <input type="number" [(ngModel)]="character.EquipmentTop.base.hp"
+                                    (ngModelChange)="character.updateStatus()">
                                 <span>(Tune: {{character.EquipmentTop.hp}})</span>
                             </div>
                         </td>
@@ -320,25 +324,27 @@
                         <td>DEF</td>
                         <td>
                             <div class="wrapper">
-                                <input type="number" [(ngModel)]="character.EquipmentTop.base.def">
+                                <input type="number" [(ngModel)]="character.EquipmentTop.base.def"
+                                    (ngModelChange)="character.updateStatus()">
                                 <span>(Tune: {{character.EquipmentTop.def}})</span>
                             </div>
                         </td>
                     </tr>
-                    <tr class="buff-list">
+                    <tr class="buff-list-tr">
                         <td>Buff</td>
                         <td>
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.EquipmentTop.buffs">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.EquipmentTop.buffs,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.EquipmentTop.buffs,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.EquipmentTop.buffs);
@@ -353,14 +359,15 @@
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.EquipmentTop.tunes">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.EquipmentTop.tunes,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.EquipmentTop.tunes,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.EquipmentTop.tunes);
@@ -374,14 +381,14 @@
             <table class="unit equipment-bottom">
                 <tbody>
                     <tr>
-                        <td>下身</td>
-                        <td></td>
+                        <td colspan="2">下身</td>
                     </tr>
                     <tr class="hp">
                         <td>HP</td>
                         <td>
                             <div class="wrapper">
-                                <input type="number" [(ngModel)]="character.EquipmentBottom.base.hp">
+                                <input type="number" [(ngModel)]="character.EquipmentBottom.base.hp"
+                                    (ngModelChange)="character.updateStatus()">
                                 <span>(Tune: {{character.EquipmentBottom.hp}})</span>
                             </div>
                         </td>
@@ -390,25 +397,27 @@
                         <td>DEF</td>
                         <td>
                             <div class="wrapper">
-                                <input type="number" [(ngModel)]="character.EquipmentBottom.base.def">
+                                <input type="number" [(ngModel)]="character.EquipmentBottom.base.def"
+                                    (ngModelChange)="character.updateStatus()">
                                 <span>(Tune: {{character.EquipmentBottom.def}})</span>
                             </div>
                         </td>
                     </tr>
-                    <tr class="buff-list">
+                    <tr class="buff-list-tr">
                         <td>Buff</td>
                         <td>
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.EquipmentBottom.buffs">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.EquipmentBottom.buffs,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.EquipmentBottom.buffs,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.EquipmentBottom.buffs);
@@ -423,14 +432,15 @@
                             <div class="wrapper">
                                 <div class="buff-list">
                                     <div class="buff" *ngFor="let buff of character.EquipmentBottom.tunes">
-                                        <select [(ngModel)]="buff.type">
+                                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                             (ngModelChange)="character.updateStatus()">%
-                                        <button (click)="deleteBuff(character.EquipmentBottom.tunes,buff);
+                                        <hr class="line">
+                                        <button class="delete" (click)="deleteBuff(character.EquipmentBottom.tunes,buff);
                                         character.updateStatus()">X</button>
                                     </div>
                                     <button class="new-buff" (click)="addBuff(character.EquipmentBottom.tunes);

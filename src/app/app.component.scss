@@ -3,7 +3,7 @@
     button,
     select,
     input {
-        border: 1px solid #000;
+        // border: 1px solid #000;
 
         &:hover {
             cursor: pointer;
@@ -50,6 +50,45 @@
     }
 
     >.character {
+
+        input:not([type="range"]),
+        select {
+            // appearance: none;
+            box-sizing: border-box;
+            margin: 2px;
+            width: 70px;
+            height: 24px;
+            padding: 0;
+            font-size: 16px;
+        }
+
+
+        .buff-list {
+            width: 100%;
+        }
+
+        .buff {
+            display: flex;
+            align-items: center;
+
+            >hr.line {
+                flex: 1;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                border-bottom: 1px dashed #aaa;
+            }
+
+            >button.delete {
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #f00;
+                background-color: #fff;
+            }
+        }
+
         >.row {
             margin-right: 10px;
             margin-bottom: 10px;
@@ -59,11 +98,8 @@
             >table {
                 margin-right: 10px;
                 margin-bottom: 10px;
-                border-collapse: collapse;
-
-                input {
-                    font-size: 16px;
-                }
+                width: 420px;
+                // border-collapse: collapse;
 
                 .wrapper {
                     display: flex;
@@ -77,8 +113,17 @@
                 >tbody {
                     >tr {
                         >td {
-                            border: 1px solid #000;
+                            border: 1px solid #aaa;
                         }
+                    }
+                    >tr:nth-child(1)>td:nth-child(1) {
+                        padding: 4px;
+                        background-color: #cccccc;
+                    }
+
+                    >tr:nth-child(n+2)>td:nth-child(1) {
+                        width: 80px;
+                        padding: 4px;
                     }
 
                     >.level>td>.wrapper {
@@ -92,141 +137,14 @@
                             border: 1px solid #000;
                         }
                     }
-
-                    >.buff-list>td>.wrapper {
-                        >.buff-list {
-                            flex: 1;
-
-                            >.buff {
-                                display: flex;
-                                align-items: center;
-
-                                >select {
-                                    width: 70px;
-                                    font-size: 16px;
-                                }
-
-                                >.value {
-                                    margin-left: 5px;
-                                    width: 50px;
-                                    font-size: 16px;
-                                }
-
-                                >button {
-                                    margin-left: auto;
-                                    width: 20px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: #f00;
-                                    background-color: #fff;
-                                }
-                            }
-
-                            >.buff+.buff {
-                                border-top: 2px solid #aaa;
-                            }
-                        }
-                    }
-                }
-            }
-
-            >.buff-list {
-                margin-right: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #000;
-
-                >.title {
-                    border-bottom: 1px solid #000;
                 }
 
 
             }
 
             >.unit {
-                input {
-                    width: 70px;
-                    font-size: 16px;
-                    user-select: all;
-                }
-
-                select {
-                    width: 70px;
-                    font-size: 16px;
-                }
-
-                >tbody {
-                    >.buff-list>td>.wrapper {
-                        >.buff-list {
-                            flex: 1;
-
-                            >.buff {
-                                display: flex;
-                                align-items: center;
-
-                                >select {
-                                    width: 70px;
-                                    font-size: 16px;
-                                }
-
-                                >.value {
-                                    margin-left: 5px;
-                                    width: 50px;
-                                    font-size: 16px;
-                                }
-
-                                >button {
-                                    margin-left: auto;
-                                    width: 20px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: #f00;
-                                    background-color: #fff;
-                                }
-                            }
-
-                            >.buff+.buff {
-                                border-top: 2px solid #aaa;
-                            }
-                        }
-                    }
-
-                    >.tune-list>td>.wrapper {
-                        >.buff-list {
-                            flex: 1;
-
-                            >.buff {
-                                display: flex;
-                                align-items: center;
-
-                                >select {
-                                    width: 70px;
-                                    font-size: 16px;
-                                }
-
-                                >.value {
-                                    margin-left: 5px;
-                                    width: 50px;
-                                    font-size: 16px;
-                                }
-
-                                >button {
-                                    margin-left: auto;
-                                    width: 20px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    color: #f00;
-                                    background-color: #fff;
-                                }
-                            }
-
-                            >.buff+.buff {
-                                border-top: 2px solid #aaa;
-                            }
-                        }
-                    }
+                span {
+                    margin-left: 5px;
                 }
             }
 
@@ -234,14 +152,18 @@
                 margin-top: 10px;
                 width: 100%;
                 padding: 5px;
-                // height: 35px;
                 font-size: 20px;
                 font-weight: bold;
-                // line-height: 10px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
         }
+
+        >.row.character {}
+
+        >.row.weapon {}
+
+        >.row.equipment {}
     }
 }
