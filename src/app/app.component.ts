@@ -65,10 +65,10 @@ export class AppComponent implements OnInit {
         this.onCharacterTemplateChange();
         this.setCharacterTemplateToCharacter();
 
-        this.character.weaponShot.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        this.character.weaponClose.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        this.character.equipmentTop.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        this.character.equipmentBottom.buffs.push(new Buff(AttrTypeId.HP, 0.07));
+        // this.character.weaponShot.buffs.push(new Buff(AttrTypeId.HP, 0.07));
+        // this.character.weaponClose.buffs.push(new Buff(AttrTypeId.HP, 0.07));
+        // this.character.equipmentTop.buffs.push(new Buff(AttrTypeId.HP, 0.07));
+        // this.character.equipmentBottom.buffs.push(new Buff(AttrTypeId.HP, 0.07));
         // // this.character.EquipmentBottom.buffs.push(new Buff(AttrTypeId.HP, 0.15));
 
         // // this.character.EquipmentTop.base.hp = 2041 + (99 * 4);
