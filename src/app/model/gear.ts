@@ -19,6 +19,11 @@ export class Gear extends Unit {
             Object.assign(this.base, baseData);
             this.buffs = this.base.buffs;
         }
+
+        Object.defineProperty(this, 'unitType', { get() { return this.base.unitType; } });
+        Object.defineProperty(this, 'atkTypeId', { get() { return this.base.atkTypeId; } });
+        Object.defineProperty(this, 'atkAmmoTypeId', { get() { return this.base.atkAmmoTypeId; } });
+        Object.defineProperty(this, 'attrTypeId', { get() { return this.base.attrTypeId; } });
     }
 
     updateStatus(): void {

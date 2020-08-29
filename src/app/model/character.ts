@@ -62,6 +62,7 @@ export class Character extends Unit {
         this.gears.forEach(g => g.updateStatus());
 
         this.updateHP();
+        this.updateDEF();
         this.updateAtkShot();
         this.updateAttrShot();
         this.updateAtkClose();
@@ -81,26 +82,44 @@ export class Character extends Unit {
         return growthValue;
     }
     updateHP(): void {
-        const characterHp = this.calcGrowthValue(this.hpMin, this.hpMax);
-        const hpSum = characterHp + this.gears.reduce((v, c) => v + c.hp, 0);
-        const buffHp = this.allUnits
+        const targetAttrTypeId = AttrTypeId.HP;
+        const charaValue = this.calcGrowthValue(this.hpMin, this.hpMax);
+        const valueSum = charaValue + this.gears.reduce((v, c) => v + c.hp, 0);
+        const allBuffResultValue = this.allUnits
             .map(v => {
-                const hpBuffs = v.buffs.filter(b => b.type === AttrTypeId.HP);
+                const hpBuffs = v.buffs.filter(b => b.type === targetAttrTypeId);
                 const hpBuffValues = hpBuffs.map(b => b.value);
                 const buffValue = hpBuffValues.reduce((p, c) => p + c, 0);
-                const unitResultHp = Math.floor(hpSum * buffValue);
-                return unitResultHp;
+                const unitResultValue = Math.floor(valueSum * buffValue);
+                return unitResultValue;
             })
             .reduce((p, c) => p + c, 0);
 
-        this.hp = hpSum + buffHp;
+        this.hp = valueSum + allBuffResultValue;
+    }
+    updateDEF(): void {
+        const targetAttrTypeId = AttrTypeId.DEF;
+        const charaValue = this.calcGrowthValue(this.defMin, this.defMax);
+        const valueSum = charaValue + this.gears.reduce((v, c) => v + c.def, 0);
+        const allBuffResultValue = this.allUnits
+            .map(v => {
+                const hpBuffs = v.buffs.filter(b => b.type === targetAttrTypeId);
+                const hpBuffValues = hpBuffs.map(b => b.value);
+                const buffValue = hpBuffValues.reduce((p, c) => p + c, 0);
+                const unitResultValue = Math.floor(valueSum * buffValue);
+                return unitResultValue;
+            })
+            .reduce((p, c) => p + c, 0);
+
+        this.def = valueSum + allBuffResultValue;
     }
     updateAtkShot(): void {
         const gear = this.weaponShot;
         const atk = this.calcGrowthValue(this.atkShotMin, this.atkShotMax);
         const atkSum = atk + gear.atk;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
-            || b.type === gear.atkAmmoTypeId);
+            || b.type === gear.atkAmmoTypeId
+            || b.type === gear.unitType);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
         const result = Math.floor(atkSum * buffValuePct);
         this.atkShot = result;
@@ -117,7 +136,8 @@ export class Character extends Unit {
         const atk = this.calcGrowthValue(this.atkCloseMin, this.atkCloseMax);
         const atkSum = atk + gear.atk;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
-            || b.type === gear.atkAmmoTypeId);
+            || b.type === gear.atkAmmoTypeId
+            || b.type === gear.unitType);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
         const result = Math.floor(atkSum * buffValuePct);
         this.atkClose = result;

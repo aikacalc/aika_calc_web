@@ -1,44 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from './model/character';
-import { CharacterModels } from './model/character_models';
 import { AttrTypeIdList, AttrTypeName } from './model/attr-type';
 import { AttrTypeId } from './model/attr-type-id.enum';
 import { Buff } from './model/buff';
+import { Character } from './model/character';
+import { CharacterModels } from './model/character_models';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    attrTypeList: { id: AttrTypeId; name: string }[] = [];
-    attrTypeAttrList: { id: AttrTypeId; name: string }[] = [];
-    attrTypeGearShotList: { id: AttrTypeId; name: string }[] = [];
-    attrTypeGearCloseList: { id: AttrTypeId; name: string }[] = [];
-    attrTypeShotAmmoTypeList: { id: AttrTypeId; name: string }[] = [];
-    attrTypeCloseHitTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeAttrList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeGearShotList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeGearCloseList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeShotAmmoTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeCloseHitTypeList: { id: AttrTypeId; name: string }[] = [];
 
-    characterTemplates: Character[] = [];
-    selectedCharacterTemplateIndex: number;
-    selectedCharacterTemplate: Character;
-    savedataJson: string = '';
-    character: Character;
+    public characterTemplates: Character[] = [];
+    public selectedCharacterTemplateIndex: number;
+    public selectedCharacterTemplate: Character;
+    public savedataJson: string = '';
+    public character: Character;
 
     constructor() { }
 
-    ngOnInit(): void {
-        const idToAttrType = (atid: AttrTypeId) => { return { id: atid, name: AttrTypeName[AttrTypeId[atid]] }; };
+    public ngOnInit(): void {
+        const idToAttrType = (atid: AttrTypeId) => ({ id: atid, name: AttrTypeName[AttrTypeId[atid]] });
         this.attrTypeList = AttrTypeIdList.map((atid) => idToAttrType(atid));
         this.attrTypeAttrList = [
             AttrTypeId.Volt,
             AttrTypeId.Gravity,
             AttrTypeId.Fire,
-            AttrTypeId.Ice
+            AttrTypeId.Ice,
         ].map((atid) => idToAttrType(atid));
         this.attrTypeGearShotList = [
             AttrTypeId.Rifle,
             AttrTypeId.Bazooka,
             AttrTypeId.Twin,
-            AttrTypeId.Sniper
+            AttrTypeId.Sniper,
         ].map((atid) => idToAttrType(atid));
         this.attrTypeGearCloseList = [
             AttrTypeId.Sword,
@@ -49,18 +49,18 @@ export class AppComponent implements OnInit {
         ].map((atid) => idToAttrType(atid));
         this.attrTypeShotAmmoTypeList = [
             AttrTypeId.Physical,
-            AttrTypeId.Energy
+            AttrTypeId.Energy,
         ].map((atid) => idToAttrType(atid));
         this.attrTypeCloseHitTypeList = [
             AttrTypeId.Impact,
-            AttrTypeId.Slash
+            AttrTypeId.Slash,
         ].map((atid) => idToAttrType(atid));
         this.characterTemplates = Object.keys(CharacterModels)
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
 
         this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(
-            CharacterModels.AikawaAika05
+            CharacterModels.AikawaAika05,
         );
         this.onCharacterTemplateChange();
         this.setCharacterTemplateToCharacter();
@@ -86,7 +86,7 @@ export class AppComponent implements OnInit {
         this.character.updateStatus();
     }
 
-    onCharacterTemplateChange(): void {
+    public onCharacterTemplateChange(): void {
         // console.log(this.selectedCharacterTemplateIndex);
         // console.log(this.characterTemplates[this.selectedCharacterTemplateIndex]);
         const sc = this.characterTemplates[this.selectedCharacterTemplateIndex];
@@ -94,25 +94,25 @@ export class AppComponent implements OnInit {
             this.selectedCharacterTemplate = sc;
         }
     }
-    setCharacterTemplateToCharacter(): void {
+    public setCharacterTemplateToCharacter(): void {
         if (this.selectedCharacterTemplate) {
             if (this.character && !confirm('覆寫現在資料?')) {
                 return;
             }
             const newCharacter = Object.assign(
                 new Character(),
-                this.selectedCharacterTemplate
+                this.selectedCharacterTemplate,
             );
             this.character = newCharacter;
             // console.log(this.character);
             this.character.updateStatus();
         }
     }
-    addBuff(refList: Buff[]): void {
+    public addBuff(refList: Buff[]): void {
         const newBuff = new Buff(AttrTypeId.HP, 0);
         refList.push(newBuff);
     }
-    deleteBuff(refList: Buff[], buff: Buff): void {
+    public deleteBuff(refList: Buff[], buff: Buff): void {
         const index = refList.indexOf(buff);
         if (index > -1) {
             refList.splice(index, 1);
