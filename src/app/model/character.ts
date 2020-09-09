@@ -30,7 +30,12 @@ export class Character extends Unit {
     weaponClose: Gear = new Gear();
     equipmentTop: Gear = new Gear();
     equipmentBottom: Gear = new Gear();
+    weaponShots: Gear[] = [];
+    weaponCloses: Gear[] = [];
+    equipmentTops: Gear[] = [];
+    equipmentBottoms: Gear[] = [];
 
+    isApplyGears: boolean = false;
     get gears(): Gear[] {
         return [
             this.weaponShot,
@@ -59,6 +64,14 @@ export class Character extends Unit {
     }
 
     updateStatus(): void {
+        if (!this.isApplyGears) {
+            this.weaponShot = this.weaponShots[0];
+            this.weaponClose = this.weaponCloses[0];
+            this.equipmentTop = this.equipmentTops[0];
+            this.equipmentBottom = this.equipmentBottoms[0];
+            this.isApplyGears = true;
+        }
+
         this.gears.forEach(g => g.updateStatus());
 
         this.updateHP();
