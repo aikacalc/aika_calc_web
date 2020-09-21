@@ -15,25 +15,25 @@
     }
 
     >.input-json {
-        height     : 30px;
-        display    : flex;
+        height: 30px;
+        display: flex;
         align-items: flex-start;
 
         >button {
-            width    : 60px;
+            width: 60px;
             // height: 24px;
             font-size: 16px;
         }
 
         >input {
             margin-left: 5px;
-            flex       : 1;
+            flex: 1;
         }
     }
 
     >.character-template-select {
-        height     : 30px;
-        display    : flex;
+        height: 30px;
+        display: flex;
         align-items: flex-start;
 
         >span {
@@ -50,18 +50,18 @@
     }
 
     >.character {
-        display  : flex;
+        display: flex;
         flex-wrap: wrap;
 
         input:not([type="range"]),
         select {
             // appearance: none;
             box-sizing: border-box;
-            margin    : 2px;
-            width     : 75px;
-            height    : 24px;
-            padding   : 0;
-            font-size : 16px;
+            margin: 2px;
+            width: 75px;
+            height: 24px;
+            padding: 0;
+            font-size: 16px;
         }
 
 
@@ -70,48 +70,45 @@
         }
 
         .buff {
-            display    : flex;
+            display: flex;
             align-items: center;
 
             >hr.line {
-                flex         : 1;
-                border       : 0;
-                margin       : 0;
-                padding      : 0;
+                flex: 1;
+                border: 0;
+                margin: 0;
+                padding: 0;
                 border-bottom: 1px dashed #aaa;
             }
 
             >button.delete {
-                width           : 20px;
-                display         : flex;
-                justify-content : center;
-                align-items     : center;
-                color           : #f00;
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #f00;
                 background-color: #fff;
             }
         }
 
         >.block {
-            display       : flex;
+            display: flex;
             flex-direction: column;
-            flex-wrap     : wrap;
+            flex-wrap: wrap;
 
             >.row {
-                margin-right : 10px;
+                margin-right: 10px;
                 margin-bottom: 10px;
-                display      : flex;
-                flex-wrap    : wrap;
+                display: flex;
+                flex-wrap: wrap;
 
                 >table {
-                    margin-right      : 10px;
-                    margin-bottom     : 10px;
-                    width             : 450px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    width: 450px;
                     // border-collapse: collapse;
 
-                    .wrapper {
-                        display    : flex;
-                        align-items: center;
-                    }
+
 
                     .calc {
                         border-bottom: 1px dashed #aaa;
@@ -124,46 +121,67 @@
                             }
                         }
 
-                        >tr:nth-child(1)>td:nth-child(1) {
-                            padding         : 4px;
+                        >tr>td.title-cell {
+                            padding: 4px;
                             background-color: #cccccc;
                         }
 
-                        >tr:nth-child(n+2)>td:nth-child(1) {
-                            width  : 80px;
+                        >tr:nth-child(n+2)>td.name {
+                            width: 80px;
                             padding: 4px;
                         }
 
-                        >.level>td>.wrapper {
+                        >tr>td>.wrapper-row {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        >tr.level>td>.wrapper {
                             input[type=number] {
                                 margin-right: 5px;
-                                width       : 50px;
+                                width: 50px;
                             }
 
                             input[type=range] {
                                 margin-left: 5px;
-                                border     : 1px solid #000;
+                                border: 1px solid #000;
                             }
+                        }
+
+                        >tr>td.gear-custom-cell>.wrapper-col {
+                            >.row {
+                                display: flex;
+
+                                >select {
+                                    flex: 1;
+                                }
+
+                                >button>span.is-custom {
+                                    color: #0a0
+                                }
+
+                                >button+button {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        >tr>td .tune-text {
+                            margin-left: 5px;
                         }
                     }
 
 
                 }
 
-                >.unit {
-                    span {
-                        margin-left: 5px;
-                    }
-                }
-
                 button.new-buff {
-                    margin-top     : 10px;
-                    width          : 100%;
-                    padding        : 5px;
-                    font-size      : 20px;
-                    font-weight    : bold;
-                    display        : flex;
-                    align-items    : center;
+                    margin-top: 10px;
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
                     justify-content: center;
                 }
             }

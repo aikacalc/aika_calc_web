@@ -1,4 +1,7 @@
 export class AStatus {
     name: string;
-    value:any;
+    type: string;
+    value: any;
+    min: any;
+    max: any;
 }

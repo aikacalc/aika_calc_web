@@ -6,13 +6,13 @@ import { Gear } from './gear';
 
 export class Character extends Unit {
     rare: number = 1;
-    level: number = 1;
-    levelMin: number = 1;
-    levelMax: number = 1;
+    // level: number = 1;
+    // levelMin: number = 1;
+    // levelMax: number = 1;
     gradeUp: number = 0;
     gradeUpLimit: number = 0;
-    hpMin: number = 1;
-    hpMax: number = 1;
+    // hpMin: number = 1;
+    // hpMax: number = 1;
     atkShot: number = 0;
     atkShotMin: number = 0;
     atkShotMax: number = 0;
@@ -21,11 +21,11 @@ export class Character extends Unit {
     atkCloseMin: number = 0;
     atkCloseMax: number = 0;
     attrClose: number = 0;
-    def: number = 0;
-    defMin: number = 0;
-    defMax: number = 0;
+    // def: number = 0;
+    // defMin: number = 0;
+    // defMax: number = 0;
     goodAttr: AttrType[] = [];
-    buffs: Buff[] = [];
+    // buffs: Buff[] = [];
     weaponShot: Gear = new Gear();
     weaponClose: Gear = new Gear();
     equipmentTop: Gear = new Gear();

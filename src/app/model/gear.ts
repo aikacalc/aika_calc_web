@@ -4,7 +4,12 @@ import { Unit } from './unit';
 import { AttrTypeColor } from './attr-type';
 
 export class Gear extends Unit {
+    isCustom: boolean = false;
     base: Unit = new Unit();
+
+    gradeUp: number = 0;
+    gradeUpLimit: number = 99;
+
     tunes: Buff[] = [];
     get attrColor(): string {
         const color = AttrTypeColor[AttrTypeId[this.base.attrTypeId]];
