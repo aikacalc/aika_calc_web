@@ -6,6 +6,8 @@ export class Unit {
     level?: number = 1;
     levelMin?: number = 1;
     levelMax?: number = 1;
+    gradeUp?: number = 0;
+    gradeUpLimit?: number = 0;
     hp?: number = 0;
     hpMin?: number = 1;
     hpMax?: number = 1;
@@ -46,5 +48,52 @@ export class Unit {
             get() { return this._attrTypeId; },
             set(value) { this._attrTypeId = typeof value === 'string' ? Number(value) : value; }
         });
+    }
+
+    static calcGrowthValue(
+        unit: Unit,
+        minVal: number,
+        maxVal: number
+    ): number {
+        let gradeUpLv = 0;
+        if (unit.level === unit.levelMax) {
+            gradeUpLv = unit.gradeUp;
+        }
+        const levelPct = (unit.level + gradeUpLv - 1) / (unit.levelMax - 1);
+
+        const growthRange = maxVal - minVal;
+        const growthValue = Math.floor(minVal + (growthRange * levelPct));
+        return growthValue;
+    }
+    static cloneDeep(toObj, fromObj, currentDeepIndex: number): any {
+        if (currentDeepIndex > 10) {
+            console.error(`clone too deep! (max:${10})`);
+            return;
+        }
+        for (const key of Object.keys(fromObj)) {
+            const sourceValue = fromObj[key];
+            let type: string = typeof sourceValue;
+            if (type === 'object') {
+                if (sourceValue instanceof Array) {
+                    type = 'array';
+                }
+            }
+
+            if (type === 'object' && toObj == null) {
+                toObj = {};
+            } else if (type === 'array' && toObj == null) {
+                toObj = [];
+            }
+
+            if (type === 'object' || type === 'array') {
+                currentDeepIndex++;
+                toObj[key] = this.cloneDeep(toObj[key], sourceValue, currentDeepIndex);
+            } else {
+                toObj[key] = sourceValue;
+            }
+        }
+
+        currentDeepIndex--;
+        return toObj;
     }
 }

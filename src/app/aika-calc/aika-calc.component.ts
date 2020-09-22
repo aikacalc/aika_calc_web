@@ -26,35 +26,35 @@ export class AikaCalcComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
-        const idToAttrType = (atid: AttrTypeId) => ({ id: atid, name: AttrTypeName[AttrTypeId[atid]] });
-        this.attrTypeList = AttrTypeIdList.map((atid) => idToAttrType(atid));
+        // const idToAttrType = (atid: AttrTypeId) => ({ id: atid, name: AttrTypeName[AttrTypeId[atid]] });
+        this.attrTypeList = AttrTypeIdList.map((atid) => this.idToAttrType(atid));
         this.attrTypeAttrList = [
             AttrTypeId.Volt,
             AttrTypeId.Gravity,
             AttrTypeId.Fire,
             AttrTypeId.Ice,
-        ].map((atid) => idToAttrType(atid));
+        ].map((atid) => this.idToAttrType(atid));
         this.attrTypeGearShotList = [
             AttrTypeId.Rifle,
             AttrTypeId.Bazooka,
             AttrTypeId.Twin,
             AttrTypeId.Sniper,
-        ].map((atid) => idToAttrType(atid));
+        ].map((atid) => this.idToAttrType(atid));
         this.attrTypeGearCloseList = [
             AttrTypeId.Sword,
             AttrTypeId.Hammer,
             AttrTypeId.Spear,
             AttrTypeId.Dagger,
             AttrTypeId.HandGun,
-        ].map((atid) => idToAttrType(atid));
+        ].map((atid) => this.idToAttrType(atid));
         this.attrTypeShotAmmoTypeList = [
             AttrTypeId.Physical,
             AttrTypeId.Energy,
-        ].map((atid) => idToAttrType(atid));
+        ].map((atid) => this.idToAttrType(atid));
         this.attrTypeCloseHitTypeList = [
             AttrTypeId.Impact,
             AttrTypeId.Slash,
-        ].map((atid) => idToAttrType(atid));
+        ].map((atid) => this.idToAttrType(atid));
         this.characterTemplates = Object.keys(CharacterModels)
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
@@ -84,6 +84,9 @@ export class AikaCalcComponent implements OnInit {
         // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
 
         this.character.updateStatus();
+    }
+    public idToAttrType(atid: AttrTypeId): { id: AttrTypeId, name: string } {
+        return { id: atid, name: AttrTypeName[AttrTypeId[atid]] };
     }
     public onCharacterTemplateChange(): void {
         // console.log(this.selectedCharacterTemplateIndex);

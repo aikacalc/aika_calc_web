@@ -176,11 +176,24 @@
                             </ng-container>
                             <tr>
                                 <td class="name">ATK</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{idToAttrType(character.weaponShot.base.unitType).name}}</span>
+                                        <span> / {{idToAttrType(character.weaponShot.base.atkAmmoTypeId).name}}</span>
+                                        <span> / {{character.weaponShot.base.atk}}</span>
+                                        <span> (Tune:{{character.weaponShot.atk}})</span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="name">屬性值</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper" [style.color]="character.weaponShot.attrColor">
+                                        <span>{{idToAttrType(character.weaponShot.base.attrTypeId).name}}</span>
+                                        <span> / {{character.weaponShot.base.attr}}</span>
+                                        <span> (Tune:{{character.weaponShot.attr}})</span>
+                                    </div>
+                                </td>
                             </tr>
                         </ng-container>
                         <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.weaponShot}">
@@ -366,7 +379,7 @@
                 </div>
                 <div class="row">
                     <button>SET</button>
-                    <button (click)="data.gear.isCustom=!data.gear.isCustom">
+                    <button (click)="data.gear.toggleCustom()">
                         <span>CUSTOM:</span>
                         <span [ngClass]="{'is-custom': data.gear.isCustom}">{{data.gear.isCustom?'ON':'OFF'}}</span>
                     </button>
@@ -380,11 +393,11 @@
         <td class="name">Lv</td>
         <td>
             <div class="wrapper-row">
-                <input type="number" [(ngModel)]="gear.base.level" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax"
-                    (ngModelChange)="gear.updateStatus()">
+                <input type="number" [(ngModel)]="gear.base.level" [attr.min]="gear.base.levelMin"
+                    [attr.max]="gear.base.levelMax" (ngModelChange)="gear.updateStatus()">
                 <span>{{gear.base.levelMin}}</span>
-                <input type="range" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax" [(ngModel)]="gear.base.level"
-                    (ngModelChange)="gear.updateStatus()">
+                <input type="range" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax"
+                    [(ngModel)]="gear.base.level" (ngModelChange)="gear.updateStatus()">
                 <span>{{gear.base.levelMax}}</span>
             </div>
         </td>
@@ -393,12 +406,12 @@
         <td class="name">+</td>
         <td>
             <div class="wrapper-row">
-                <input type="number" [(ngModel)]="gear.gradeUp" [attr.min]="1" [attr.max]="gear.gradeUpLimit"
+                <input type="number" [(ngModel)]="gear.base.gradeUp" [attr.min]="1" [attr.max]="gear.base.gradeUpLimit"
                     (ngModelChange)="gear.updateStatus()">
                 <span>{{0}}</span>
-                <input type="range" [attr.min]="0" [attr.max]="gear.gradeUpLimit" [(ngModel)]="gear.gradeUp"
+                <input type="range" [attr.min]="0" [attr.max]="gear.base.gradeUpLimit" [(ngModel)]="gear.base.gradeUp"
                     (ngModelChange)="gear.updateStatus()">
-                <span>{{gear.gradeUpLimit}}</span>
+                <span>{{gear.base.gradeUpLimit}}</span>
             </div>
         </td>
     </tr>
