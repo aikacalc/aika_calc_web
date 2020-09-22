@@ -124,6 +124,11 @@
                         >tr>td.title-cell {
                             padding: 4px;
                             background-color: #cccccc;
+                            line-height: 20px;
+
+                            >span+span {
+                                margin-left: 10px;
+                            }
                         }
 
                         >tr:nth-child(n+2)>td.name {

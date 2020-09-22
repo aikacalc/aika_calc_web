@@ -35,7 +35,6 @@ export class Gear extends Unit {
     }
     toggleCustom(): void {
         this.isCustom = !this.isCustom;
-        this.updateStatus();
     }
     updateStatus(): void {
         if (!this.isCustom) {
@@ -86,25 +85,46 @@ export class Gear extends Unit {
 
         const growthRange = this.base.hpMax - this.base.hpMin;
         const value = Math.floor(this.base.hpMin + (growthRange * this.baseLevelPct));
-        const gradeValue = this.base.gradeUp * 4;
+        let gradeValue = 0;
+        if (this.base.unitType == AttrTypeId.EquipmentTop) {
+            gradeValue = this.base.gradeUp * 4;
+        }
         this.base.hp = value + gradeValue;
     }
     updateBaseDEF(): void {
         const growthRange = this.base.defMax - this.base.defMin;
         const value = Math.floor(this.base.defMin + (growthRange * this.baseLevelPct));
-        const gradeValue = this.base.gradeUp * 0;
+        let gradeValue = 0;
+        if (this.base.unitType == AttrTypeId.EquipmentBottom) {
+            gradeValue = this.base.gradeUp * 1;
+        }
         this.base.def = value + gradeValue;
     }
     updateBaseATK(): void {
         const growthRange = this.base.atkMax - this.base.atkMin;
-        const value = Math.floor(this.base.atkMin + (growthRange * this.baseLevelPct));
-        const gradeValue = this.base.gradeUp * 0;
-        this.base.atk = value + gradeValue;
+        // const value = Math.floor(this.base.atkMin + (growthRange * this.baseLevelPct));
+        // let gradeValue = 0;
+        // if (this.atkTypeId == AttrTypeId.Shot
+        //     || this.atkTypeId == AttrTypeId.Close) {
+        //     gradeValue = Math.floor(this.base.gradeUp / this.base.gradeUpLimit * 66);
+        // }
+        // this.base.atk = value + gradeValue;
+        const value = this.base.atkMin + (growthRange * this.baseLevelPct);
+        let gradeValue = 0;
+        if (this.atkTypeId == AttrTypeId.Shot
+            || this.atkTypeId == AttrTypeId.Close) {
+            gradeValue = (this.base.gradeUp) / (this.base.gradeUpLimit - 1) * 66;
+        }
+        this.base.atk = Math.floor(value + gradeValue);
     }
     updateBaseATTR(): void {
         const growthRange = this.base.attrMax - this.base.attrMin;
-        const value = Math.floor(this.base.attrMin + (growthRange * this.baseLevelPct));
-        const gradeValue = this.base.gradeUp * 0;
-        this.base.attr = value + gradeValue;
+        const value = this.base.attrMin + (growthRange * this.baseLevelPct);
+        let gradeValue = 0;
+        if (this.atkTypeId == AttrTypeId.Shot
+            || this.atkTypeId == AttrTypeId.Close) {
+                gradeValue = (this.base.gradeUp) / (this.base.gradeUpLimit - 1) * 34;
+        }
+        this.base.attr = Math.floor(value + gradeValue);
     }
 }

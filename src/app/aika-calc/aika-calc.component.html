@@ -121,10 +121,13 @@
                 <table class="unit weapon-shot">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="2">射擊</td>
+                            <td class="title-cell" colspan="2">
+                                <span>射擊</span>
+                                <span *ngIf="!character.weaponShot.isCustom">{{character.weaponShot.base.name}}</span>
+                            </td>
                         </tr>
                         <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponShots,gear:character.weaponShot}}">
+                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponShots,gear:character.weaponShot,gearIndex:character.weaponShotIndex}}">
                         </ng-container>
                         <ng-container *ngIf="character.weaponShot.isCustom">
                             <tr class="atk">
@@ -203,10 +206,13 @@
                 <table class="unit weapon-close">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="2">近身</td>
+                            <td class="title-cell" colspan="2">
+                                <span>近身</span>
+                                <span *ngIf="!character.weaponClose.isCustom">{{character.weaponClose.base.name}}</span>
+                            </td>
                         </tr>
                         <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponCloses,gear:character.weaponClose}}">
+                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponCloses,gear:character.weaponClose,gearIndex:character.weaponCloseIndex}}">
                         </ng-container>
                         <ng-container *ngIf="character.weaponClose.isCustom">
                             <tr class="atk">
@@ -258,11 +264,24 @@
                             </ng-container>
                             <tr>
                                 <td class="name">ATK</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{idToAttrType(character.weaponClose.base.unitType).name}}</span>
+                                        <span> / {{idToAttrType(character.weaponClose.base.atkAmmoTypeId).name}}</span>
+                                        <span> / {{character.weaponClose.base.atk}}</span>
+                                        <span> (Tune:{{character.weaponClose.atk}})</span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="name">屬性值</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper" [style.color]="character.weaponClose.attrColor">
+                                        <span>{{idToAttrType(character.weaponClose.base.attrTypeId).name}}</span>
+                                        <span> / {{character.weaponClose.base.attr}}</span>
+                                        <span> (Tune:{{character.weaponClose.attr}})</span>
+                                    </div>
+                                </td>
                             </tr>
                         </ng-container>
                         <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.weaponClose}">
@@ -274,10 +293,14 @@
                 <table class="unit equipment-top">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="2">上身</td>
+                            <td class="title-cell" colspan="2">
+                                <span>上身</span>
+                                <span
+                                    *ngIf="!character.equipmentTop.isCustom">{{character.equipmentTop.base.name}}</span>
+                            </td>
                         </tr>
                         <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentTops,gear:character.equipmentTop}}">
+                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentTops,gear:character.equipmentTop,gearIndex:character.equipmentTopIndex}}">
                         </ng-container>
                         <ng-container *ngIf="character.equipmentTop.isCustom">
                             <tr class="hp">
@@ -306,11 +329,21 @@
                             </ng-container>
                             <tr>
                                 <td class="name">HP</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentTop.base.hp}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentTop.hp}})</span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="name">DEF</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentTop.base.def}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentTop.def}})</span>
+                                    </div>
+                                </td>
                             </tr>
                         </ng-container>
                         <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.equipmentTop}">
@@ -320,10 +353,14 @@
                 <table class="unit equipment-bottom">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="2">下身</td>
+                            <td class="title-cell" colspan="2">
+                                <span>下身</span>
+                                <span
+                                    *ngIf="!character.equipmentBottom.isCustom">{{character.equipmentBottom.base.name}}</span>
+                            </td>
                         </tr>
                         <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentBottoms,gear:character.equipmentBottom}}">
+                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentBottoms,gear:character.equipmentBottom,gearIndex:character.equipmentBottomIndex}}">
                         </ng-container>
                         <ng-container *ngIf="character.equipmentBottom.isCustom">
                             <tr class="hp">
@@ -352,11 +389,21 @@
                             </ng-container>
                             <tr>
                                 <td class="name">HP</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.hp}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentBottom.hp}})</span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="name">DEF</td>
-                                <td></td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.def}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentBottom.def}})</span>
+                                    </div>
+                                </td>
                             </tr>
                         </ng-container>
                         <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.equipmentBottom}">
@@ -372,14 +419,15 @@
         <td class="gear-custom-cell" colspan="2">
             <div class="wrapper-col">
                 <div class="row">
-                    <select>
-                        <option *ngFor="let gear of data.gears">{{gear.base.name}}
-                        </option>
+                    <select [(ngModel)]="data.gearIndex"
+                        (ngModelChange)="setGear(data,$event);character.updateStatus()">
+                        <option *ngFor="let gear of data.gears;let i=index" [attr.value]="i">
+                            {{gear.base.name+' ('+gear.base.levelMax+')'}}</option>
                     </select>
                 </div>
                 <div class="row">
-                    <button>SET</button>
-                    <button (click)="data.gear.toggleCustom()">
+                    <!-- <button>SET</button> -->
+                    <button (click)="data.gear.toggleCustom();character.updateStatus()">
                         <span>CUSTOM:</span>
                         <span [ngClass]="{'is-custom': data.gear.isCustom}">{{data.gear.isCustom?'ON':'OFF'}}</span>
                     </button>
@@ -394,23 +442,23 @@
         <td>
             <div class="wrapper-row">
                 <input type="number" [(ngModel)]="gear.base.level" [attr.min]="gear.base.levelMin"
-                    [attr.max]="gear.base.levelMax" (ngModelChange)="gear.updateStatus()">
+                    [attr.max]="gear.base.levelMax" (ngModelChange)="character.updateStatus()">
                 <span>{{gear.base.levelMin}}</span>
                 <input type="range" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax"
-                    [(ngModel)]="gear.base.level" (ngModelChange)="gear.updateStatus()">
+                    [(ngModel)]="gear.base.level" (ngModelChange)="character.updateStatus()">
                 <span>{{gear.base.levelMax}}</span>
             </div>
         </td>
     </tr>
     <tr>
-        <td class="name">+</td>
+        <td class="name">品質</td>
         <td>
             <div class="wrapper-row">
-                <input type="number" [(ngModel)]="gear.base.gradeUp" [attr.min]="1" [attr.max]="gear.base.gradeUpLimit"
-                    (ngModelChange)="gear.updateStatus()">
+                <input type="number" [(ngModel)]="gear.base.gradeUp" [attr.min]="0" [attr.max]="gear.base.gradeUpLimit"
+                    (ngModelChange)="character.updateStatus()">
                 <span>{{0}}</span>
                 <input type="range" [attr.min]="0" [attr.max]="gear.base.gradeUpLimit" [(ngModel)]="gear.base.gradeUp"
-                    (ngModelChange)="gear.updateStatus()">
+                    (ngModelChange)="character.updateStatus()">
                 <span>{{gear.base.gradeUpLimit}}</span>
             </div>
         </td>

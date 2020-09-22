@@ -25,4 +25,7 @@ export enum AttrTypeId {
     ResistGravity = 24,
     ResistFire = 25,
     ResistIce = 26,
+    SPD = 27,
+    EquipmentTop = 28,
+    EquipmentBottom = 29,
 }

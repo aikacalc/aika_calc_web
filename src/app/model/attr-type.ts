@@ -46,6 +46,7 @@ export const AttrTypeIdList = [
     AttrTypeId.ResistGravity,
     AttrTypeId.ResistFire,
     AttrTypeId.ResistIce,
+    AttrTypeId.SPD
 ];
 export const AttrTypeName: { [key in keyof typeof AttrTypeId]: string } = {
     Impact: '打擊',
@@ -74,6 +75,9 @@ export const AttrTypeName: { [key in keyof typeof AttrTypeId]: string } = {
     ResistGravity: '耐重力',
     ResistFire: '耐焼夷',
     ResistIce: '耐冷撃',
+    SPD: 'SPD',
+    EquipmentTop: '上身',
+    EquipmentBottom: '下身',
 };
 export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     Impact: '#000000',
@@ -102,6 +106,9 @@ export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     ResistGravity: 'purple',
     ResistFire: 'red',
     ResistIce: '#107cdc',
+    SPD: '#000000',
+    EquipmentTop: '#000000',
+    EquipmentBottom: '#000000',
 }
 export const AttrTypeDict: {
     [key in keyof typeof AttrTypeId]: (value: number) => AttrType;
@@ -132,4 +139,7 @@ export const AttrTypeDict: {
     ResistGravity: (value: number) => new AttrType(AttrTypeId.ResistGravity, '', value),
     ResistFire: (value: number) => new AttrType(AttrTypeId.ResistFire, '', value),
     ResistIce: (value: number) => new AttrType(AttrTypeId.ResistIce, '', value),
+    SPD: (value: number) => new AttrType(AttrTypeId.SPD, '', value),
+    EquipmentTop: (value: number) => new AttrType(AttrTypeId.EquipmentTop, '', value),
+    EquipmentBottom: (value: number) => new AttrType(AttrTypeId.EquipmentBottom, '', value),
 };

@@ -4,6 +4,8 @@ import { AttrTypeId } from '../model/attr-type-id.enum';
 import { Buff } from '../model/buff';
 import { Character } from '../model/character';
 import { CharacterModels } from '../model/character_models';
+import { Unit } from '../model/unit';
+import { Gear } from '../model/gear';
 
 @Component({
     selector: 'app-aika-calc',
@@ -101,10 +103,11 @@ export class AikaCalcComponent implements OnInit {
             if (this.character && !confirm('覆寫現在資料?')) {
                 return;
             }
-            const newCharacter = Object.assign(
-                new Character(),
-                this.selectedCharacterTemplate,
-            );
+            const newCharacter = Unit.cloneDeep(new Character(), this.selectedCharacterTemplate, 0);
+            // const newCharacter = Object.assign(
+            //     new Character(),
+            //     this.selectedCharacterTemplate,
+            // );
             this.character = newCharacter;
             // console.log(this.character);
             this.character.updateStatus();
@@ -119,5 +122,10 @@ export class AikaCalcComponent implements OnInit {
         if (index > -1) {
             refList.splice(index, 1);
         }
+    }
+    setGear(data: { gear: Gear, gears: Gear[] }, gearIndexValue: string): void {
+        console.log(data, gearIndexValue);
+        const gearIndex = parseInt(gearIndexValue, 10);
+        Unit.cloneDeep(data.gear, data.gears[gearIndex], 0);
     }
 }

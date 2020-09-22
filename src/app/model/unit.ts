@@ -66,30 +66,33 @@ export class Unit {
         return growthValue;
     }
     static cloneDeep(toObj, fromObj, currentDeepIndex: number): any {
+        currentDeepIndex++;
         if (currentDeepIndex > 10) {
             console.error(`clone too deep! (max:${10})`);
             return;
         }
+
+        Object.assign(toObj, fromObj);
+
         for (const key of Object.keys(fromObj)) {
             const sourceValue = fromObj[key];
             let type: string = typeof sourceValue;
+            // if (type === 'object') {
+            //     if (sourceValue instanceof Array) {
+            //         type = 'array';
+            //     }
+            // }
+
+            // if (type === 'object' && toObj == null) {
+            //     toObj = {};
+            // } else if (type === 'array' && toObj == null) {
+            //     toObj = [];
+            // } else if (toObj == null) {
+            //     toObj = {};
+            // }
+
             if (type === 'object') {
-                if (sourceValue instanceof Array) {
-                    type = 'array';
-                }
-            }
-
-            if (type === 'object' && toObj == null) {
-                toObj = {};
-            } else if (type === 'array' && toObj == null) {
-                toObj = [];
-            }
-
-            if (type === 'object' || type === 'array') {
-                currentDeepIndex++;
                 toObj[key] = this.cloneDeep(toObj[key], sourceValue, currentDeepIndex);
-            } else {
-                toObj[key] = sourceValue;
             }
         }
 

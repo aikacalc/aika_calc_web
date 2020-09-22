@@ -34,6 +34,18 @@ export class Character extends Unit {
     weaponCloses: Gear[] = [];
     equipmentTops: Gear[] = [];
     equipmentBottoms: Gear[] = [];
+    _weaponShotIndex: number = 0;
+    _weaponCloseIndex: number = 0;
+    _equipmentTopIndex: number = 0;
+    _equipmentBottomIndex: number = 0;
+    get weaponShotIndex(): number { return this._weaponShotIndex; }
+    get weaponCloseIndex(): number { return this._weaponCloseIndex; }
+    get equipmentTopIndex(): number { return this._equipmentTopIndex; }
+    get equipmentBottomIndex(): number { return this._equipmentBottomIndex; }
+    set weaponShotIndex(value) { this._weaponShotIndex = Number(value); }
+    set weaponCloseIndex(value) { this._weaponCloseIndex = Number(value); }
+    set equipmentTopIndex(value) { this._equipmentTopIndex = Number(value); }
+    set equipmentBottomIndex(value) { this._equipmentBottomIndex = Number(value); }
 
     isApplyGears: boolean = false;
     get gears(): Gear[] {
@@ -65,10 +77,16 @@ export class Character extends Unit {
 
     updateStatus(): void {
         if (!this.isApplyGears) {
-            this.weaponShot = this.weaponShots[0];
-            this.weaponClose = this.weaponCloses[0];
-            this.equipmentTop = this.equipmentTops[0];
-            this.equipmentBottom = this.equipmentBottoms[0];
+            this.weaponShotIndex = this.weaponShots.findIndex(g => g.base.levelMax == 80);
+            this.weaponCloseIndex = this.weaponCloses.findIndex(g => g.base.levelMax == 80);
+            this.equipmentTopIndex = this.equipmentTops.findIndex(g => g.base.levelMax == 80);
+            this.equipmentBottomIndex = this.equipmentBottoms.findIndex(g => g.base.levelMax == 80);
+
+            Unit.cloneDeep(this.weaponShot, this.weaponShots[this.weaponShotIndex], 0);
+            Unit.cloneDeep(this.weaponClose, this.weaponCloses[this.weaponCloseIndex], 0);
+            Unit.cloneDeep(this.equipmentTop, this.equipmentTops[this.equipmentTopIndex], 0);
+            Unit.cloneDeep(this.equipmentBottom, this.equipmentBottoms[this.equipmentBottomIndex], 0);
+
             this.isApplyGears = true;
         }
 
