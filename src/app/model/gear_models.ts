@@ -6737,10 +6737,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'US-AG1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1737,
+                hpMin: 527,
+                hpMax: 1737,
+                def: 509,
+                defMin: 159,
+                defMax: 509,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'US-AG1Gen.2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1852,
+                hpMin: 968,
+                hpMax: 1852,
+                def: 541,
+                defMin: 286,
+                defMax: 541,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'US-AG1-SSS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1961,
+                hpMin: 1077,
+                hpMax: 1961,
+                def: 573,
+                defMin: 318,
+                defMax: 573,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1077,
+                hpMin: 418,
+                hpMax: 1077,
+                def: 318,
+                defMin: 127,
+                defMax: 318,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGsG1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1301,
+                hpMin: 642,
+                hpMax: 1301,
+                def: 382,
+                defMin: 191,
+                defMax: 382,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGsG2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1519,
+                hpMin: 859,
+                hpMax: 1519,
+                def: 446,
+                defMin: 255,
+                defMax: 446,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'US-AG1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1158,
+                hpMin: 351,
+                hpMax: 1158,
+                def: 339,
+                defMin: 106,
+                defMax: 339,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'US-AG1Gen.2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1235,
+                hpMin: 646,
+                hpMax: 1235,
+                def: 361,
+                defMin: 191,
+                defMax: 361,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'US-AG1-SSS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1307,
+                hpMin: 718,
+                hpMax: 1307,
+                def: 382,
+                defMin: 212,
+                defMax: 382,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 718,
+                hpMin: 278,
+                hpMax: 718,
+                def: 212,
+                defMin: 85,
+                defMax: 212,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGsG1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 868,
+                hpMin: 428,
+                hpMax: 868,
+                def: 255,
+                defMin: 127,
+                defMax: 255,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN710VGsG2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1013,
+                hpMin: 573,
+                hpMax: 1013,
+                def: 297,
+                defMin: 170,
+                defMax: 297,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            })
         ]
     },
     FujinoYayoi: {
@@ -17711,10 +17955,260 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'ミーシャ/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1720,
+                hpMin: 522,
+                hpMax: 1720,
+                def: 514,
+                defMin: 161,
+                defMax: 514,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ミーシャM/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1834,
+                hpMin: 959,
+                hpMax: 1834,
+                def: 546,
+                defMin: 289,
+                defMax: 546,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'バルシャヤ・ミーシャ/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1942,
+                hpMin: 1067,
+                hpMax: 1942,
+                def: 578,
+                defMin: 321,
+                defMax: 578,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型NKs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1067,
+                hpMin: 414,
+                hpMax: 1067,
+                def: 321,
+                defMin: 129,
+                defMax: 321,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.05)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型NKsM1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1289,
+                hpMin: 635,
+                hpMax: 1289,
+                def: 386,
+                defMin: 193,
+                defMax: 386,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型NKsM2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1505,
+                hpMin: 851,
+                hpMax: 1505,
+                def: 450,
+                defMin: 257,
+                defMax: 450,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'ミーシャ/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1135,
+                hpMin: 344,
+                hpMax: 1135,
+                def: 346,
+                defMin: 108,
+                defMax: 346,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.2)
+                ]
+            }),
+            new Gear({
+                name: 'ミーシャM/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1210,
+                hpMin: 633,
+                hpMax: 1210,
+                def: 368,
+                defMin: 195,
+                defMax: 368,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.25)
+                ]
+            }),
+            new Gear({
+                name: 'バルシャヤ・ミーシャ/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1281,
+                hpMin: 704,
+                hpMax: 1281,
+                def: 389,
+                defMin: 216,
+                defMax: 389,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.25)
+                ]
+            }),
+            new Gear({
+                name: '七四式強化型NKs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 704,
+                hpMin: 273,
+                hpMax: 704,
+                def: 216,
+                defMin: 87,
+                defMax: 216,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: '七四式強化型NKsM1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 850,
+                hpMin: 419,
+                hpMax: 850,
+                def: 260,
+                defMin: 130,
+                defMax: 260,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.2)
+                ]
+            }),
+            new Gear({
+                name: '七四式強化型NKsM2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 993,
+                hpMin: 562,
+                hpMax: 993,
+                def: 303,
+                defMin: 173,
+                defMax: 303,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1),
+                    new Buff(AttrTypeId.HP, 0.2)
+                ]
+            })
         ]
     },
     MikurazaAzuki: {
@@ -19343,10 +19837,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'ジュストコール/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1719,
+                hpMin: 521,
+                hpMax: 1719,
+                def: 514,
+                defMin: 161,
+                defMax: 514,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ジュストコールMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1833,
+                hpMin: 958,
+                hpMax: 1833,
+                def: 546,
+                defMin: 289,
+                defMax: 546,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ジュストコールMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1941,
+                hpMin: 1066,
+                hpMax: 1941,
+                def: 578,
+                defMin: 321,
+                defMax: 578,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN404MVs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1066,
+                hpMin: 413,
+                hpMax: 1066,
+                def: 321,
+                defMin: 129,
+                defMax: 321,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'MN404MVsG1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1288,
+                hpMin: 635,
+                hpMax: 1288,
+                def: 386,
+                defMin: 193,
+                defMax: 386,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'MN404MVsG2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1504,
+                hpMin: 851,
+                hpMax: 1504,
+                def: 450,
+                defMin: 257,
+                defMax: 450,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'ジュストコール/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1146,
+                hpMin: 347,
+                hpMax: 1146,
+                def: 343,
+                defMin: 107,
+                defMax: 343,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ジュストコールMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1222,
+                hpMin: 639,
+                hpMax: 1222,
+                def: 364,
+                defMin: 193,
+                defMax: 364,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: 'ジュストコールMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1294,
+                hpMin: 711,
+                hpMax: 1294,
+                def: 386,
+                defMin: 214,
+                defMax: 386,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: 'MN201MVs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 711,
+                hpMin: 276,
+                hpMax: 711,
+                def: 214,
+                defMin: 86,
+                defMax: 214,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'MN201MVsG1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 859,
+                hpMin: 423,
+                hpMax: 859,
+                def: 257,
+                defMin: 129,
+                defMax: 257,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'MN201MVsG2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1002,
+                hpMin: 567,
+                hpMax: 1002,
+                def: 300,
+                defMin: 171,
+                defMax: 300,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            })
         ]
     },
     ChishimaMiyuki: {
@@ -20079,10 +20817,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'カーマドゥフ/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1862,
+                hpMin: 564,
+                hpMax: 1862,
+                def: 475,
+                defMin: 148,
+                defMax: 475,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'カーマドゥフMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1985,
+                hpMin: 1038,
+                hpMax: 1985,
+                def: 505,
+                defMin: 267,
+                defMax: 505,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'カーマドゥフMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2102,
+                hpMin: 1155,
+                hpMax: 2102,
+                def: 534,
+                defMin: 297,
+                defMax: 534,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1155,
+                hpMin: 448,
+                hpMax: 1155,
+                def: 297,
+                defMin: 119,
+                defMax: 297,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRsMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1395,
+                hpMin: 688,
+                hpMax: 1395,
+                def: 356,
+                defMin: 178,
+                defMax: 356,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRsMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1628,
+                hpMin: 921,
+                hpMax: 1628,
+                def: 416,
+                defMin: 238,
+                defMax: 416,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'カーマドゥフ/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1241,
+                hpMin: 376,
+                hpMax: 1241,
+                def: 317,
+                defMin: 99,
+                defMax: 317,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'カーマドゥフMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1323,
+                hpMin: 692,
+                hpMax: 1323,
+                def: 337,
+                defMin: 178,
+                defMax: 337,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'カーマドゥフMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1401,
+                hpMin: 770,
+                hpMax: 1401,
+                def: 356,
+                defMin: 198,
+                defMax: 356,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 770,
+                hpMin: 298,
+                hpMax: 770,
+                def: 198,
+                defMin: 79,
+                defMax: 198,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRsMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 930,
+                hpMin: 458,
+                hpMax: 930,
+                def: 238,
+                defMin: 119,
+                defMax: 238,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネSRsMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1086,
+                hpMin: 614,
+                hpMax: 1086,
+                def: 277,
+                defMin: 158,
+                defMax: 277,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            })
         ]
     },
     OhzekiKoyui: {
@@ -21359,10 +22341,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'ワイルドチャップス/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1719,
+                hpMin: 521,
+                hpMax: 1719,
+                def: 514,
+                defMin: 161,
+                defMax: 514,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ワイルドチャップスG2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1833,
+                hpMin: 958,
+                hpMax: 1833,
+                def: 546,
+                defMin: 289,
+                defMax: 546,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'フロンティアチャップス/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1941,
+                hpMin: 1066,
+                hpMax: 1941,
+                def: 578,
+                defMin: 321,
+                defMax: 578,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1066,
+                hpMin: 413,
+                hpMax: 1066,
+                def: 321,
+                defMin: 129,
+                defMax: 321,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.05)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs甲/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1288,
+                hpMin: 635,
+                hpMax: 1288,
+                def: 386,
+                defMin: 193,
+                defMax: 386,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs乙/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1504,
+                hpMin: 851,
+                hpMax: 1504,
+                def: 450,
+                defMin: 257,
+                defMax: 450,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'ワイルドチャップス/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1146,
+                hpMin: 347,
+                hpMax: 1146,
+                def: 343,
+                defMin: 107,
+                defMax: 343,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ワイルドチャップスG2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1222,
+                hpMin: 639,
+                hpMax: 1222,
+                def: 364,
+                defMin: 193,
+                defMax: 364,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: 'フロンティアチャップス/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1294,
+                hpMin: 711,
+                hpMax: 1294,
+                def: 386,
+                defMin: 214,
+                defMax: 386,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 711,
+                hpMin: 276,
+                hpMax: 711,
+                def: 214,
+                defMin: 86,
+                defMax: 214,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.07)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs甲/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 859,
+                hpMin: 423,
+                hpMax: 859,
+                def: 257,
+                defMin: 129,
+                defMax: 257,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '一〇式SOs乙/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1002,
+                hpMin: 567,
+                hpMax: 1002,
+                def: 300,
+                defMin: 171,
+                defMax: 300,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            })
         ]
     },
     ShinonomeChie: {
@@ -22059,10 +23285,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'HG-パンツァーAV/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1685,
+                hpMin: 511,
+                hpMax: 1685,
+                def: 524,
+                defMin: 164,
+                defMax: 524,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'HG-パンツァーA2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1797,
+                hpMin: 939,
+                hpMax: 1797,
+                def: 557,
+                defMin: 295,
+                defMax: 557,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'HG-パンツァーKWS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1902,
+                hpMin: 1045,
+                hpMax: 1902,
+                def: 590,
+                defMin: 328,
+                defMax: 590,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1045,
+                hpMin: 405,
+                hpMax: 1045,
+                def: 328,
+                defMin: 131,
+                defMax: 328,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.05)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHsA1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1262,
+                hpMin: 622,
+                hpMax: 1262,
+                def: 393,
+                defMin: 197,
+                defMax: 393,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHsA2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1474,
+                hpMin: 834,
+                hpMax: 1474,
+                def: 459,
+                defMin: 262,
+                defMax: 459,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'HG-パンツァーAV/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1123,
+                hpMin: 341,
+                hpMax: 1123,
+                def: 349,
+                defMin: 109,
+                defMax: 349,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'HG-パンツァーA2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1198,
+                hpMin: 626,
+                hpMax: 1198,
+                def: 371,
+                defMin: 197,
+                defMax: 371,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'HG-パンツァーKWS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1268,
+                hpMin: 697,
+                hpMax: 1268,
+                def: 393,
+                defMin: 218,
+                defMax: 393,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 697,
+                hpMin: 270,
+                hpMax: 697,
+                def: 218,
+                defMin: 87,
+                defMax: 218,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHsA1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 842,
+                hpMin: 415,
+                hpMax: 842,
+                def: 262,
+                defMin: 131,
+                defMax: 262,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '七七式重装型RHsA2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 982,
+                hpMin: 556,
+                hpMax: 982,
+                def: 306,
+                defMin: 175,
+                defMax: 306,
+                spd: 200,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.1),
+                    new Buff(AttrTypeId.ResistGravity, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            })
         ]
     },
     KagomeMisaki: {
@@ -24635,10 +26105,248 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'チャムロシュ/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1737,
+                hpMin: 527,
+                hpMax: 1737,
+                def: 509,
+                defMin: 159,
+                defMax: 509,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'チャムロシュMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1852,
+                hpMin: 968,
+                hpMax: 1852,
+                def: 541,
+                defMin: 286,
+                defMax: 541,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'チャムロシュMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1961,
+                hpMin: 1077,
+                hpMax: 1961,
+                def: 573,
+                defMin: 318,
+                defMax: 573,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1077,
+                hpMin: 418,
+                hpMax: 1077,
+                def: 318,
+                defMin: 127,
+                defMax: 318,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBsMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1301,
+                hpMin: 642,
+                hpMax: 1301,
+                def: 382,
+                defMin: 191,
+                defMax: 382,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBsMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1519,
+                hpMin: 859,
+                hpMax: 1519,
+                def: 446,
+                defMin: 255,
+                defMax: 446,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'チャムロシュ/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1146,
+                hpMin: 347,
+                hpMax: 1146,
+                def: 343,
+                defMin: 107,
+                defMax: 343,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'チャムロシュMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1222,
+                hpMin: 639,
+                hpMax: 1222,
+                def: 364,
+                defMin: 193,
+                defMax: 364,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'チャムロシュMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1294,
+                hpMin: 711,
+                hpMax: 1294,
+                def: 386,
+                defMin: 214,
+                defMax: 386,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 711,
+                hpMin: 276,
+                hpMax: 711,
+                def: 214,
+                defMin: 86,
+                defMax: 214,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBsMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 859,
+                hpMin: 423,
+                hpMax: 859,
+                def: 257,
+                defMin: 129,
+                defMax: 257,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'ペレグリーネFBsMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1002,
+                hpMin: 567,
+                hpMax: 1002,
+                def: 300,
+                defMin: 171,
+                defMax: 300,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.15),
+                    new Buff(AttrTypeId.ResistIce, -0.15)
+                ]
+            })
         ]
     },
     KuroganeYuto: {
@@ -27771,68 +29479,439 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: 'Fユニット2-パチ組/T',
+                name: 'フライングユニット2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1774,
+                hpMin: 538,
+                hpMax: 1774,
+                def: 499,
+                defMin: 156,
+                defMax: 499,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'Fユニット2-SG/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1891,
+                hpMin: 989,
+                hpMax: 1891,
+                def: 530,
+                defMin: 281,
+                defMax: 530,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Fユニット2-UG/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2002,
+                hpMin: 1100,
+                hpMax: 2002,
+                def: 562,
+                defMin: 312,
+                defMax: 562,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'フライングユニット2改/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1791,
+                hpMin: 543,
+                hpMax: 1791,
+                def: 494,
+                defMin: 154,
+                defMax: 494,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'Fユニット2改-SG/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1910,
+                hpMin: 999,
+                hpMax: 1910,
+                def: 525,
+                defMin: 278,
+                defMax: 525,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Fユニット2改-UG/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2022,
+                hpMin: 1111,
+                hpMax: 2022,
+                def: 556,
+                defMin: 309,
+                defMax: 556,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Fユニット2改-パチ組/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                hp: 1100,
-                hpMin: 426,
-                hpMax: 1100,
-                def: 312,
-                defMin: 125,
-                defMax: 312,
+                hp: 1111,
+                hpMin: 431,
+                hpMax: 1111,
+                def: 309,
+                defMin: 124,
+                defMax: 309,
                 buffs:[
-                    new Buff(AttrTypeId.ResistFire, 0.1),
-                    new Buff(AttrTypeId.ResistIce, -0.1),
-                    new Buff(AttrTypeId.Fire, 0.05)
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.05)
                 ]
             }),
             new Gear({
-                name: 'Fユニット2-接着/T',
+                name: 'Fユニット2改-接着/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                hp: 1329,
-                hpMin: 655,
-                hpMax: 1329,
-                def: 374,
-                defMin: 187,
-                defMax: 374,
+                hp: 1342,
+                hpMin: 662,
+                hpMax: 1342,
+                def: 371,
+                defMin: 185,
+                defMax: 371,
                 buffs:[
-                    new Buff(AttrTypeId.ResistFire, 0.1),
-                    new Buff(AttrTypeId.ResistIce, -0.1),
-                    new Buff(AttrTypeId.Fire, 0.07)
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
                 ]
             }),
             new Gear({
-                name: 'Fユニット2-塗装/T',
+                name: 'Fユニット2改-塗装/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                hp: 1551,
-                hpMin: 878,
-                hpMax: 1551,
-                def: 437,
-                defMin: 250,
-                defMax: 437,
+                hp: 1567,
+                hpMin: 886,
+                hpMax: 1567,
+                def: 432,
+                defMin: 247,
+                defMax: 432,
                 buffs:[
-                    new Buff(AttrTypeId.ResistFire, 0.1),
-                    new Buff(AttrTypeId.ResistIce, -0.1),
-                    new Buff(AttrTypeId.Fire, 0.07)
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
                 ]
             })
         ],
         bottom: [
-
+            new Gear({
+                name: 'Rダッシュユニット2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1182,
+                hpMin: 358,
+                hpMax: 1182,
+                def: 333,
+                defMin: 104,
+                defMax: 333,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2-SG/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1261,
+                hpMin: 659,
+                hpMax: 1261,
+                def: 354,
+                defMin: 187,
+                defMax: 354,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2-UG/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1335,
+                hpMin: 733,
+                hpMax: 1335,
+                def: 374,
+                defMin: 208,
+                defMax: 374,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2-パチ組/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 733,
+                hpMin: 284,
+                hpMax: 733,
+                def: 208,
+                defMin: 83,
+                defMax: 208,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2-接着/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 886,
+                hpMin: 437,
+                hpMax: 886,
+                def: 250,
+                defMin: 125,
+                defMax: 250,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2-塗装/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1034,
+                hpMin: 585,
+                hpMax: 1034,
+                def: 291,
+                defMin: 166,
+                defMax: 291,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Rダッシュユニット2改/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1182,
+                hpMin: 358,
+                hpMax: 1182,
+                def: 333,
+                defMin: 104,
+                defMax: 333,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2改-SG/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1261,
+                hpMin: 659,
+                hpMax: 1261,
+                def: 354,
+                defMin: 187,
+                defMax: 354,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2改-UG/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1335,
+                hpMin: 733,
+                hpMax: 1335,
+                def: 374,
+                defMin: 208,
+                defMax: 374,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2改-パチ組/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 733,
+                hpMin: 284,
+                hpMax: 733,
+                def: 208,
+                defMin: 83,
+                defMax: 208,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2改-接着/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 886,
+                hpMin: 437,
+                hpMax: 886,
+                def: 250,
+                defMin: 125,
+                defMax: 250,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'RDユニット2改-塗装/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1034,
+                hpMin: 585,
+                hpMax: 1034,
+                def: 291,
+                defMin: 166,
+                defMax: 291,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            })
         ]
     },
     MiyafujiYoshika: {
@@ -28601,10 +30680,248 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1791,
+                hpMin: 543,
+                hpMax: 1791,
+                def: 494,
+                defMin: 155,
+                defMax: 494,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1909,
+                hpMin: 998,
+                hpMax: 1909,
+                def: 525,
+                defMin: 278,
+                defMax: 525,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2022,
+                hpMin: 1111,
+                hpMax: 2022,
+                def: 556,
+                defMin: 309,
+                defMax: 556,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1111,
+                hpMin: 431,
+                hpMax: 1111,
+                def: 309,
+                defMin: 124,
+                defMax: 309,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1342,
+                hpMin: 661,
+                hpMax: 1342,
+                def: 371,
+                defMin: 185,
+                defMax: 371,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'コンセルティナ章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1566,
+                hpMin: 886,
+                hpMax: 1566,
+                def: 433,
+                defMin: 247,
+                defMax: 433,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15),
+                    new Buff(AttrTypeId.Gravity, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1194,
+                hpMin: 362,
+                hpMax: 1194,
+                def: 330,
+                defMin: 103,
+                defMax: 330,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1273,
+                hpMin: 666,
+                hpMax: 1273,
+                def: 350,
+                defMin: 185,
+                defMax: 350,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1348,
+                hpMin: 740,
+                hpMax: 1348,
+                def: 371,
+                defMin: 206,
+                defMax: 371,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 740,
+                hpMin: 287,
+                hpMax: 740,
+                def: 206,
+                defMin: 82,
+                defMax: 206,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 894,
+                hpMin: 441,
+                hpMax: 894,
+                def: 247,
+                defMin: 124,
+                defMax: 247,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'スピットファイアIX',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1044,
+                hpMin: 591,
+                hpMax: 1044,
+                def: 288,
+                defMin: 165,
+                defMax: 288,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistGravity, 0.15),
+                    new Buff(AttrTypeId.ResistVolt, -0.15)
+                ]
+            })
         ]
     },
     GertrudBarkhorn: {
@@ -28865,10 +31182,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1756,
+                hpMin: 532,
+                hpMax: 1756,
+                def: 504,
+                defMin: 158,
+                defMax: 504,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1873,
+                hpMin: 979,
+                hpMax: 1873,
+                def: 536,
+                defMin: 284,
+                defMax: 536,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1983,
+                hpMin: 1089,
+                hpMax: 1983,
+                def: 567,
+                defMin: 315,
+                defMax: 567,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1089,
+                hpMin: 422,
+                hpMax: 1089,
+                def: 315,
+                defMin: 126,
+                defMax: 315,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1316,
+                hpMin: 649,
+                hpMax: 1316,
+                def: 378,
+                defMin: 189,
+                defMax: 378,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ジャーマンポインター章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1536,
+                hpMin: 869,
+                hpMax: 1536,
+                def: 441,
+                defMin: 252,
+                defMax: 441,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.Fire, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1171,
+                hpMin: 355,
+                hpMax: 1171,
+                def: 336,
+                defMin: 105,
+                defMax: 336,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1248,
+                hpMin: 653,
+                hpMax: 1248,
+                def: 357,
+                defMin: 189,
+                defMax: 357,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1322,
+                hpMin: 726,
+                hpMax: 1322,
+                def: 378,
+                defMin: 210,
+                defMax: 378,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.15)
+                ]
+            }),
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 726,
+                hpMin: 282,
+                hpMax: 726,
+                def: 210,
+                defMin: 84,
+                defMax: 210,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 877,
+                hpMin: 432,
+                hpMax: 877,
+                def: 252,
+                defMin: 126,
+                defMax: 252,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Fw190D-6P',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1024,
+                hpMin: 579,
+                hpMax: 1024,
+                def: 294,
+                defMin: 168,
+                defMax: 294,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistFire, 0.1),
+                    new Buff(AttrTypeId.ResistIce, -0.1),
+                    new Buff(AttrTypeId.HP, 0.1)
+                ]
+            })
         ]
     },
     EricaHartmann: {
@@ -29129,10 +31690,254 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1791,
+                hpMin: 543,
+                hpMax: 1791,
+                def: 494,
+                defMin: 154,
+                defMax: 494,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1910,
+                hpMin: 999,
+                hpMax: 1910,
+                def: 525,
+                defMin: 278,
+                defMax: 525,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2022,
+                hpMin: 1111,
+                hpMax: 2022,
+                def: 556,
+                defMin: 309,
+                defMax: 556,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1111,
+                hpMin: 431,
+                hpMax: 1111,
+                def: 309,
+                defMin: 124,
+                defMax: 309,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1342,
+                hpMin: 662,
+                hpMax: 1342,
+                def: 371,
+                defMin: 185,
+                defMax: 371,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'ダックスフント章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1567,
+                hpMin: 886,
+                hpMax: 1567,
+                def: 432,
+                defMin: 247,
+                defMax: 432,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1182,
+                hpMin: 358,
+                hpMax: 1182,
+                def: 333,
+                defMin: 104,
+                defMax: 333,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1261,
+                hpMin: 659,
+                hpMax: 1261,
+                def: 354,
+                defMin: 187,
+                defMax: 354,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1335,
+                hpMin: 733,
+                hpMax: 1335,
+                def: 374,
+                defMin: 208,
+                defMax: 374,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 733,
+                hpMin: 284,
+                hpMax: 733,
+                def: 208,
+                defMin: 83,
+                defMax: 208,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 886,
+                hpMin: 437,
+                hpMax: 886,
+                def: 250,
+                defMin: 125,
+                defMax: 250,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            }),
+            new Gear({
+                name: 'Bf109G-6',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1034,
+                hpMin: 585,
+                hpMax: 1034,
+                def: 291,
+                defMin: 166,
+                defMax: 291,
+                spd: 280,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.HP, -0.1)
+                ]
+            })
         ]
     },
     Hresvelgr: {
