@@ -92,8 +92,22 @@ export class Unit {
             // }
 
             if (type === 'object') {
-                toObj[key] = this.cloneDeep(toObj[key], sourceValue, currentDeepIndex);
+                if (toObj[key] == null) {
+                    toObj[key] = {};
+                }
+
+                // const _target = Object.getPrototypeOf(toObj[key]).constructor.call();
+                toObj[key] = this.cloneDeep(
+                    toObj[key],
+                    sourceValue,
+                    currentDeepIndex);
             }
+            // else if (type === 'string'
+            //     || type === 'number') {
+            //     toObj[key] = sourceValue;
+            // } else {
+
+            // }
         }
 
         currentDeepIndex--;

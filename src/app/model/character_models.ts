@@ -9563,6 +9563,188 @@ class KuroganeYuto05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
 }
 
+class ItokuraNeo01 extends Character {
+    name: string = '伊戸倉 音緒';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 6;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 861;
+    hpMin: number = 356;
+    hpMax: number = 861;
+    atkClose: number = 175;
+    atkCloseMin: number = 70;
+    atkCloseMax: number = 175;
+    attrClose: number = 0;
+    atkShot: number = 179;
+    atkShotMin: number = 71;
+    atkShotMax: number = 179;
+    attrShot: number = 0;
+    def: number = 248;
+    defMin: number = 99;
+    defMax: number = 248;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Twin(0.25),
+        AttrTypeDict.Spear(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo02 extends Character {
+    name: string = '伊戸倉 音緒';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1406;
+    hpMin: number = 505;
+    hpMax: number = 1406;
+    atkClose: number = 280;
+    atkCloseMin: number = 105;
+    atkCloseMax: number = 280;
+    attrClose: number = 0;
+    atkShot: number = 286;
+    atkShotMin: number = 107;
+    atkShotMax: number = 286;
+    attrShot: number = 0;
+    def: number = 396;
+    defMin: number = 149;
+    defMax: number = 396;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Twin(0.25),
+        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Rifle(0.25)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.25)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo04 extends Character {
+    name: string = '伊戸倉 音緒';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 490;
+    atkCloseMin: number = 140;
+    atkCloseMax: number = 490;
+    attrClose: number = 0;
+    atkShot: number = 500;
+    atkShotMin: number = 143;
+    atkShotMax: number = 500;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Twin(0.25),
+        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Rifle(0.25)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.25)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo05 extends Character {
+    name: string = '伊戸倉 音緒';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Twin(0.25),
+        AttrTypeDict.Spear(0.15),
+        AttrTypeDict.Rifle(0.25)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15),
+        new Buff(AttrTypeId.Rifle, 0.25)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
 class Gourai04 extends Character {
     name: string = '轟雷';
     rare: number = 3;
@@ -11289,6 +11471,7 @@ export const ActressNames: string[] = [
     'AraimeYasuri',
     'FatimaBetrorum',
     'KuroganeYuto',
+    'ItokuraNeo',
     'Gourai',
     'Stylet',
     'Baselard',
@@ -11527,6 +11710,10 @@ export const CharacterModels = {
     KuroganeYuto02: new KuroganeYuto02(),
     KuroganeYuto04: new KuroganeYuto04(),
     KuroganeYuto05: new KuroganeYuto05(),
+    ItokuraNeo01: new ItokuraNeo01(),
+    ItokuraNeo02: new ItokuraNeo02(),
+    ItokuraNeo04: new ItokuraNeo04(),
+    ItokuraNeo05: new ItokuraNeo05(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),

@@ -1,11 +1,12 @@
 <div class="root">
     <div class="character-template-select">
         <span class="actress">Actress:</span>
-        <select [(ngModel)]="selectedCharacterTemplateIndex" (ngModelChange)="onCharacterTemplateChange()">
+        <select [(ngModel)]="selectedCharacterTemplateIndex"
+            (ngModelChange)="onCharacterTemplateChange();setCharacterTemplateToCharacter()">
             <option *ngFor="let characterTemplate of characterTemplates;let i=index;" [value]="i">
                 {{characterTemplate.name+'★'+characterTemplate.rare}}</option>
         </select>
-        <button (click)="setCharacterTemplateToCharacter()">SET</button>
+        <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
     </div>
     <div class="character" *ngIf="character">
         <div class="block character">
@@ -126,8 +127,7 @@
                                 <span *ngIf="!character.weaponShot.isCustom">{{character.weaponShot.base.name}}</span>
                             </td>
                         </tr>
-                        <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponShots,gear:character.weaponShot,gearIndex:character.weaponShotIndex}}">
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'weaponShot'}}">
                         </ng-container>
                         <ng-container *ngIf="character.weaponShot.isCustom">
                             <tr class="atk">
@@ -211,8 +211,7 @@
                                 <span *ngIf="!character.weaponClose.isCustom">{{character.weaponClose.base.name}}</span>
                             </td>
                         </tr>
-                        <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.weaponCloses,gear:character.weaponClose,gearIndex:character.weaponCloseIndex}}">
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'weaponClose'}}">
                         </ng-container>
                         <ng-container *ngIf="character.weaponClose.isCustom">
                             <tr class="atk">
@@ -299,8 +298,7 @@
                                     *ngIf="!character.equipmentTop.isCustom">{{character.equipmentTop.base.name}}</span>
                             </td>
                         </tr>
-                        <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentTops,gear:character.equipmentTop,gearIndex:character.equipmentTopIndex}}">
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'equipmentTop'}}">
                         </ng-container>
                         <ng-container *ngIf="character.equipmentTop.isCustom">
                             <tr class="hp">
@@ -359,8 +357,7 @@
                                     *ngIf="!character.equipmentBottom.isCustom">{{character.equipmentBottom.base.name}}</span>
                             </td>
                         </tr>
-                        <ng-container
-                            *ngTemplateOutlet="gearCustomRow; context:{data:{gears:character.equipmentBottoms,gear:character.equipmentBottom,gearIndex:character.equipmentBottomIndex}}">
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'equipmentBottom'}}">
                         </ng-container>
                         <ng-container *ngIf="character.equipmentBottom.isCustom">
                             <tr class="hp">
@@ -419,17 +416,18 @@
         <td class="gear-custom-cell" colspan="2">
             <div class="wrapper-col">
                 <div class="row">
-                    <select [(ngModel)]="data.gearIndex"
-                        (ngModelChange)="setGear(data,$event);character.updateStatus()">
-                        <option *ngFor="let gear of data.gears;let i=index" [attr.value]="i">
-                            {{gear.base.name+' ('+gear.base.levelMax+')'}}</option>
+                    <select [(ngModel)]="character[data.gearName+'Index']"
+                        (ngModelChange)="setGear(character[data.gearName],character[data.gearName+'s'],$event);character.updateStatus()">
+                        <option *ngFor="let gear_ of character[data.gearName+'s'];let i=index" [attr.value]="i">
+                            {{gear_.base.name+' ('+gear_.base.levelMax+')'}}</option>
                     </select>
                 </div>
                 <div class="row">
                     <!-- <button>SET</button> -->
-                    <button (click)="data.gear.toggleCustom();character.updateStatus()">
+                    <button (click)="character[data.gearName].toggleCustom();character.updateStatus()">
                         <span>CUSTOM:</span>
-                        <span [ngClass]="{'is-custom': data.gear.isCustom}">{{data.gear.isCustom?'ON':'OFF'}}</span>
+                        <span
+                            [ngClass]="{'is-custom': character[data.gearName].isCustom}">{{character[data.gearName].isCustom?'ON':'OFF'}}</span>
                     </button>
                 </div>
             </div>

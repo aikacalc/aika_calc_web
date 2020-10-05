@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { AttrTypeName, AttrTypeIdList } from '../model/attr-type';
 import { AttrTypeId } from '../model/attr-type-id.enum';
 import { Buff } from '../model/buff';
@@ -25,7 +25,9 @@ export class AikaCalcComponent implements OnInit {
     public selectedCharacterTemplate: Character;
     public savedataJson: string = '';
     public character: Character;
-    constructor() { }
+    constructor(
+        private cdRef:ChangeDetectorRef
+    ) { }
 
     ngOnInit(): void {
         // const idToAttrType = (atid: AttrTypeId) => ({ id: atid, name: AttrTypeName[AttrTypeId[atid]] });
@@ -61,9 +63,7 @@ export class AikaCalcComponent implements OnInit {
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
 
-        this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(
-            CharacterModels.AikawaAika05,
-        );
+        this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(CharacterModels.AikawaAika05);
         this.onCharacterTemplateChange();
         this.setCharacterTemplateToCharacter();
 
@@ -85,7 +85,7 @@ export class AikaCalcComponent implements OnInit {
         // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
         // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
 
-        this.character.updateStatus();
+        // this.character.updateStatus();
     }
     public idToAttrType(atid: AttrTypeId): { id: AttrTypeId, name: string } {
         return { id: atid, name: AttrTypeName[AttrTypeId[atid]] };
@@ -100,17 +100,31 @@ export class AikaCalcComponent implements OnInit {
     }
     public setCharacterTemplateToCharacter(): void {
         if (this.selectedCharacterTemplate) {
-            if (this.character && !confirm('覆寫現在資料?')) {
-                return;
-            }
-            const newCharacter = Unit.cloneDeep(new Character(), this.selectedCharacterTemplate, 0);
+            // if (this.character && !confirm('覆寫現在資料?')) {
+            //     return;
+            // }
+
+            // const jsonClone = JSON.parse(JSON.stringify(this.selectedCharacterTemplate));
+            // const newCharacter = Unit.cloneDeep(new Character(), jsonClone, 0);
             // const newCharacter = Object.assign(
             //     new Character(),
             //     this.selectedCharacterTemplate,
             // );
-            this.character = newCharacter;
-            // console.log(this.character);
+            // this.character = newCharacter;
+            // this.selectedCharacterTemplate.updateStatus();
+            // this.character = null;
+            const character = this.selectedCharacterTemplate;
+
+            // character.updateStatus();
+            // this.setGear(character.weaponShot, character.weaponShots, character.weaponShotIndex.toString());
+            // this.setGear(character.weaponClose, character.weaponCloses, character.weaponCloseIndex.toString());
+            // this.setGear(character.equipmentTop, character.equipmentTops, character.equipmentTopIndex.toString());
+            // this.setGear(character.equipmentBottom, character.equipmentBottoms, character.equipmentBottomIndex.toString());
+            // character.updateStatus();
+
+            this.character = character;
             this.character.updateStatus();
+            // this.cdRef.detectChanges();
         }
     }
     public addBuff(refList: Buff[]): void {
@@ -123,9 +137,9 @@ export class AikaCalcComponent implements OnInit {
             refList.splice(index, 1);
         }
     }
-    setGear(data: { gear: Gear, gears: Gear[] }, gearIndexValue: string): void {
-        console.log(data, gearIndexValue);
+    setGear(gear: Gear, gears: Gear[], gearIndexValue: string): void {
+        // console.log(data, gearIndexValue);
         const gearIndex = parseInt(gearIndexValue, 10);
-        Unit.cloneDeep(data.gear, data.gears[gearIndex], 0);
+        Unit.cloneDeep(gear, gears[gearIndex], 0);
     }
 }
