@@ -6,10 +6,10 @@
             <option *ngFor="let characterTemplate of characterTemplates;let i=index;" [value]="i">
                 {{characterTemplate.name+'★'+characterTemplate.rare}}</option>
         </select>
-        <a href="/afrc" class="fan-calc">
-            <span>AikaFanCalc</span>
+        <button class="fan-calc" (click)="service.pageIndex=1">
+            <span>-> AikaFanCalc</span>
             <img src="/favicon.ico" width="16" height="16">
-        </a>
+        </button>
         <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
     </div>
     <div class="character" *ngIf="character">

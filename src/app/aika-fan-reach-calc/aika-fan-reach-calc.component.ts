@@ -3,6 +3,7 @@ import { StageReward } from '../model/stage-reward';
 import { Actress } from '../model/actress';
 import { StageRewardFan } from '../model/stage-reward-fan';
 import { FanRoad } from '../model/fan-road';
+import { AppService } from '../app.service';
 
 @Component({
     selector: 'app-aika-fan-reach-calc',
@@ -56,7 +57,9 @@ export class AikaFanReachCalcComponent implements OnInit {
     inputTargetFan: number = 1999999;
     resultRoads: FanRoad[][] = [];
 
-    constructor() { }
+    constructor(
+        public service: AppService
+    ) { }
 
     ngOnInit(): void {
         // const _lf = 123456 - Math.floor(Math.random() * 123456);

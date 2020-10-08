@@ -6,6 +6,7 @@ import { Character } from '../model/character';
 import { CharacterModels } from '../model/character_models';
 import { Unit } from '../model/unit';
 import { Gear } from '../model/gear';
+import { AppService } from '../app.service';
 
 @Component({
     selector: 'app-aika-calc',
@@ -25,8 +26,9 @@ export class AikaCalcComponent implements OnInit {
     public selectedCharacterTemplate: Character;
     public savedataJson: string = '';
     public character: Character;
+    
     constructor(
-        private cdRef:ChangeDetectorRef
+        public service: AppService
     ) { }
 
     ngOnInit(): void {

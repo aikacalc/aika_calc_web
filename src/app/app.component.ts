@@ -4,6 +4,7 @@ import { AttrTypeId } from './model/attr-type-id.enum';
 import { Buff } from './model/buff';
 import { Character } from './model/character';
 import { CharacterModels } from './model/character_models';
+import { AppService } from './app.service';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -11,8 +12,9 @@ import { CharacterModels } from './model/character_models';
 })
 export class AppComponent implements OnInit {
 
-
-    constructor() { }
+    constructor(
+        public service: AppService
+    ) { }
 
     public ngOnInit(): void {
 
