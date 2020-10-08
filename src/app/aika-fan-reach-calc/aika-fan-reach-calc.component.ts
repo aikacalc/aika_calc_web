@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StageReward } from '../model/stage-reward';
 import { Actress } from '../model/actress';
 import { StageRewardFan } from '../model/stage-reward-fan';
+import { FanRoad } from '../model/fan-road';
 
 @Component({
     selector: 'app-aika-fan-reach-calc',
@@ -21,15 +22,15 @@ export class AikaFanReachCalcComponent implements OnInit {
         Object.assign(new StageRewardFan(), { fan: 188, characterRare: 3, stageName: 'lv20' }),
         Object.assign(new StageRewardFan(), { fan: 225, characterRare: 4, stageName: 'lv20' }),
 
-        Object.assign(new StageRewardFan(), { fan: 115, characterRare: 1, stageName: 'lv30-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 153, characterRare: 2, stageName: 'lv30-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 192, characterRare: 3, stageName: 'lv30-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 230, characterRare: 4, stageName: 'lv30-VW' }),
+        Object.assign(new StageRewardFan(), { fan: 115, characterRare: 1, stageName: 'lv30-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 153, characterRare: 2, stageName: 'lv30-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 192, characterRare: 3, stageName: 'lv30-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 230, characterRare: 4, stageName: 'lv30-vw' }),
 
-        Object.assign(new StageRewardFan(), { fan: 117, characterRare: 1, stageName: 'lv40-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 156, characterRare: 2, stageName: 'lv40-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 196, characterRare: 3, stageName: 'lv40-VW' }),
-        Object.assign(new StageRewardFan(), { fan: 235, characterRare: 4, stageName: 'lv40-VW' }),
+        Object.assign(new StageRewardFan(), { fan: 117, characterRare: 1, stageName: 'lv40-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 156, characterRare: 2, stageName: 'lv40-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 196, characterRare: 3, stageName: 'lv40-vw' }),
+        Object.assign(new StageRewardFan(), { fan: 235, characterRare: 4, stageName: 'lv40-vw' }),
 
         Object.assign(new StageRewardFan(), { fan: 150, characterRare: 1, stageName: 'lv30-蛇' }),
         Object.assign(new StageRewardFan(), { fan: 200, characterRare: 2, stageName: 'lv30-蛇' }),
@@ -41,46 +42,79 @@ export class AikaFanReachCalcComponent implements OnInit {
         Object.assign(new StageRewardFan(), { fan: 255, characterRare: 3, stageName: 'lv40-蛇' }),
         Object.assign(new StageRewardFan(), { fan: 306, characterRare: 4, stageName: 'lv40-蛇' }),
     ];
+    stageSelected: StageRewardFan[] = [];
+    enableActressRare: { [key: number]: boolean } = {
+        1: true,
+        2: true,
+        3: true,
+        4: true,
+    };
+
     maxCalcDeep: number = 1;
     maxSingleTaskCount: number = 10;
     inputCurrentFan: number = 12345;
     inputTargetFan: number = 1999999;
-    resultRoads: { stage: StageRewardFan, count: number }[][] = [];
+    resultRoads: FanRoad[][] = [];
 
     constructor() { }
 
     ngOnInit(): void {
-        const _lf = 123456 - Math.floor(Math.random() * 123456);
-        const result = this.calcRoad(this.stageRewardFans, 0, _lf, 0);
-        result.sort((a, b) => {
-            const countA = a.reduce((p, c) => p + c.count, 0);
-            const countB = b.reduce((p, c) => p + c.count, 0);
-            // return countB - countA;
-            return countA - countB;
-        });
-        console.log(result);
+        // const _lf = 123456 - Math.floor(Math.random() * 123456);
+        // const result = this.calcRoad(this.stageRewardFans, 0, _lf, 0);
+        // result.sort((a, b) => {
+        //     const countA = a.reduce((p, c) => p + c.count, 0);
+        //     const countB = b.reduce((p, c) => p + c.count, 0);
+        //     // return countB - countA;
+        //     return countA - countB;
+        // });
+        // console.log(result);
+        // this.actress.push(new Actress());
+        this.stageSelected.push(...this.stageRewardFans);
+
+        this.addActress();
+        this.runCalc(this.actress[0]);
     }
-    runCalc(): void {
-        const leftFans = this.inputTargetFan - this.inputCurrentFan;
+
+    addActress(): void {
+        this.actress.push(new Actress());
+    }
+    removeActress(a: Actress): void {
+        const i = this.actress.indexOf(a);
+        this.actress = this.actress.splice(i, 1);
+    }
+    updateStageCharacterRare(): void {
+        this.stageSelected = this.stageRewardFans.filter(s => this.enableActressRare[s.characterRare]);
+    }
+
+
+
+    runCalc(a: Actress): void {
+        const leftFans = a.fanTarget - a.fan;
         if (leftFans < 0) {
             this.resultRoads = [];
             return;
         }
 
-        const result = this.calcRoad(this.stageRewardFans, 0, leftFans, 0);
+        const useStages = this.stageSelected;
+        // if (useStages.length < 2) {
+        //     alert('至少選2個關卡');
+        //     return;
+        // }
+        const result = this.calcRoad(useStages, 0, a.fan, leftFans, 0);
         result.sort((a, b) => {
             const countA = a.reduce((p, c) => p + c.count, 0);
             const countB = b.reduce((p, c) => p + c.count, 0);
             return countA - countB;
         });
-        this.resultRoads = result;
+        a.fanReachRoads = result;
     }
     calcRoad(
         stages: StageRewardFan[],
         stageStartIndex: number,
+        currentFans: number,
         leftFans: number,
         deepIndex: number
-    ): { stage: StageRewardFan, count: number }[][] {
+    ): FanRoad[][] {
         if (leftFans == 0) {
             return [];
         }
@@ -91,8 +125,8 @@ export class AikaFanReachCalcComponent implements OnInit {
             throw new Error("calc too deep " + deepIndex + ', max:' + this.maxCalcDeep);
         }
 
-        const result: { stage: StageRewardFan, count: number }[][] = [];
-        let road: { stage: StageRewardFan, count: number }[] = []
+        const result: FanRoad[][] = [];
+        let road: FanRoad[] = []
 
         for (let i = stageStartIndex; i < stages.length; i++) {
             const stage = stages[i];
@@ -105,6 +139,7 @@ export class AikaFanReachCalcComponent implements OnInit {
                 road.push({
                     stage: stage,
                     count: stageCount,
+                    fanChange: `${currentFans} -> ${currentFans + leftFans}`
                 });
                 result.push(road);
                 road = [];
@@ -121,6 +156,7 @@ export class AikaFanReachCalcComponent implements OnInit {
                     road.push({
                         stage: stage,
                         count: count,
+                        fanChange: `${currentFans} -> ${currentFans + subFans}`
                     });
                     result.push(road);
                     road = [];
@@ -135,13 +171,15 @@ export class AikaFanReachCalcComponent implements OnInit {
                 if ((deepIndex + 1) <= this.maxCalcDeep) {
                     const nextStageIndex = stageStartIndex + 1;
                     const nextDeepIndex = deepIndex + 1;
-                    const deepResult = this.calcRoad(stages, nextStageIndex, leftFans1, nextDeepIndex);
+                    const nextCurrentFans = currentFans + subFans;
+                    const deepResult = this.calcRoad(stages, nextStageIndex, nextCurrentFans, leftFans1, nextDeepIndex);
                     if (deepResult.length == 0) {
                         continue;
                     } else {
                         road.push({
                             stage: stage,
                             count: count,
+                            fanChange: `${currentFans} -> ${currentFans + subFans}`
                         });
                         deepResult.forEach(roads => {
                             roads.splice(0, 0, ...road);
