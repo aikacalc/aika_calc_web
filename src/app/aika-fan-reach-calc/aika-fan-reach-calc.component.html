@@ -1,0 +1,14 @@
+<p>aika-fan-reach-calc works!</p>
+<div>當前fan<input type="text" [(ngModel)]="inputCurrentFan"></div>
+<div>目標fan<input type="text" [(ngModel)]="inputTargetFan"></div>
+<button (click)="runCalc()">RUN</button>
+<div>
+    <div>每日任務方案 ({{resultRoads.length}})</div>
+    <div class="road-lists">
+        <div class="road-block" *ngFor="let roads of resultRoads">
+            <div class="road" *ngFor="let road of roads">
+                {{road.stage.stageName+', 用 '+road.stage.characterRare+' 星角色, 打 '+road.count+' 場'}}</div>
+            <hr>
+        </div>
+    </div>
+</div>

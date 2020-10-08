@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AikaCalcModule } from './aika-calc/aika-calc.module';
 import { AliceAutoModule } from './alice-auto/alice-auto.module';
+import { AikaFanReachCalcModule } from './aika-fan-reach-calc/aika-fan-reach-calc.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -12,6 +13,7 @@ import { AliceAutoModule } from './alice-auto/alice-auto.module';
         , AppRoutingModule
         , AikaCalcModule
         , AliceAutoModule
+        , AikaFanReachCalcModule
     ],
     providers: [],
     bootstrap: [AppComponent],
