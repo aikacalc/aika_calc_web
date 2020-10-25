@@ -4453,6 +4453,50 @@ class NikitohKanade05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
 }
 
+class NikitohKanade70 extends Character {
+    name: string = '仁紀藤 奏_雲耀';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 522;
+    atkCloseMin: number = 145;
+    atkCloseMax: number = 522;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Twin(0.3),
+        AttrTypeDict.Spear(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NikitohKanade.long;
+    weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
+    equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
+    equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+}
+
 class SutegoroShiina01 extends Character {
     name: string = '州天頃 椎奈';
     rare: number = 1;
@@ -11594,6 +11638,7 @@ export const CharacterModels = {
     NikitohKanade02: new NikitohKanade02(),
     NikitohKanade04: new NikitohKanade04(),
     NikitohKanade05: new NikitohKanade05(),
+    NikitohKanade70: new NikitohKanade70(),
     SutegoroShiina01: new SutegoroShiina01(),
     SutegoroShiina02: new SutegoroShiina02(),
     SutegoroShiina04: new SutegoroShiina04(),

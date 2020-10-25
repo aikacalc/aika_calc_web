@@ -3878,9 +3878,9 @@ export const ActressGears = {
             new Gear({
                 name: '試作ガネーシャKA/T',
                 unitType: AttrTypeId.EquipmentTop,
-                level: 70,
+                level: 40,
                 levelMin: 1,
-                levelMax: 70,
+                levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 1121,
@@ -3892,15 +3892,15 @@ export const ActressGears = {
                 buffs:[
                     new Buff(AttrTypeId.ResistGravity, 0.1),
                     new Buff(AttrTypeId.ResistVolt, -0.1),
-                    new Buff(AttrTypeId.Gravity, 0.07)
+                    new Buff(AttrTypeId.Gravity, 0.05)
                 ]
             }),
             new Gear({
                 name: '試作ガネーシャKAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
-                level: 75,
+                level: 50,
                 levelMin: 1,
-                levelMax: 75,
+                levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 1355,
@@ -3912,15 +3912,15 @@ export const ActressGears = {
                 buffs:[
                     new Buff(AttrTypeId.ResistGravity, 0.1),
                     new Buff(AttrTypeId.ResistVolt, -0.1),
-                    new Buff(AttrTypeId.Gravity, 0.1)
+                    new Buff(AttrTypeId.Gravity, 0.07)
                 ]
             }),
             new Gear({
                 name: '試作ガネーシャKAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
-                level: 80,
+                level: 60,
                 levelMin: 1,
-                levelMax: 80,
+                levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 1581,
@@ -3932,7 +3932,7 @@ export const ActressGears = {
                 buffs:[
                     new Buff(AttrTypeId.ResistGravity, 0.1),
                     new Buff(AttrTypeId.ResistVolt, -0.1),
-                    new Buff(AttrTypeId.Gravity, 0.1)
+                    new Buff(AttrTypeId.Gravity, 0.07)
                 ]
             })
         ],
@@ -4154,9 +4154,9 @@ export const ActressGears = {
             new Gear({
                 name: '試作ガネーシャKA/B',
                 unitType: AttrTypeId.EquipmentBottom,
-                level: 70,
+                level: 40,
                 levelMin: 1,
-                levelMax: 70,
+                levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 748,
@@ -4176,9 +4176,9 @@ export const ActressGears = {
             new Gear({
                 name: '試作ガネーシャKAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
-                level: 75,
+                level: 50,
                 levelMin: 1,
-                levelMax: 75,
+                levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 903,
@@ -4198,9 +4198,9 @@ export const ActressGears = {
             new Gear({
                 name: '試作ガネーシャKAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
-                level: 80,
+                level: 60,
                 levelMin: 1,
-                levelMax: 80,
+                levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
                 hp: 1054,
