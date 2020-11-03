@@ -7847,6 +7847,182 @@ class WangHonghua70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
 }
 
+class TenkoSora01 extends Character {
+    name: string = '天狐 天';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 2;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 861;
+    hpMin: number = 356;
+    hpMax: number = 861;
+    atkClose: number = 207;
+    atkCloseMin: number = 83;
+    atkCloseMax: number = 207;
+    attrClose: number = 0;
+    atkShot: number = 203;
+    atkShotMin: number = 81;
+    atkShotMax: number = 203;
+    attrShot: number = 0;
+    def: number = 253;
+    defMin: number = 101;
+    defMax: number = 253;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Spear(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
+class TenkoSora02 extends Character {
+    name: string = '天狐 天';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1406;
+    hpMin: number = 505;
+    hpMax: number = 1406;
+    atkClose: number = 330;
+    atkCloseMin: number = 124;
+    atkCloseMax: number = 330;
+    attrClose: number = 0;
+    atkShot: number = 324;
+    atkShotMin: number = 122;
+    atkShotMax: number = 324;
+    attrShot: number = 0;
+    def: number = 404;
+    defMin: number = 152;
+    defMax: number = 404;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Spear(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
+class TenkoSora04 extends Character {
+    name: string = '天狐 天';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 578;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 162;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Spear(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
+class TenkoSora05 extends Character {
+    name: string = '天狐 天';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 744;
+    atkCloseMin: number = 207;
+    atkCloseMax: number = 744;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Spear(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
 class ShirleyOakley01 extends Character {
     name: string = 'シャーリー・O';
     rare: number = 1;
@@ -11505,6 +11681,7 @@ export const ActressNames: string[] = [
     'ShantiRana',
     'OhzekiKoyui',
     'WangHonghua',
+    'TenkoSora',
     'ShirleyOakley',
     'ShinonomeChie',
     'RitaHenschel',
@@ -11715,6 +11892,10 @@ export const CharacterModels = {
     WangHonghua04: new WangHonghua04(),
     WangHonghua05: new WangHonghua05(),
     WangHonghua70: new WangHonghua70(),
+    TenkoSora01: new TenkoSora01(),
+    TenkoSora02: new TenkoSora02(),
+    TenkoSora04: new TenkoSora04(),
+    TenkoSora05: new TenkoSora05(),
     ShirleyOakley01: new ShirleyOakley01(),
     ShirleyOakley02: new ShirleyOakley02(),
     ShirleyOakley04: new ShirleyOakley04(),
