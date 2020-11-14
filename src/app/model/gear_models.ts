@@ -5352,7 +5352,7 @@ export const ActressGears = {
                 ]
             }),
             new Gear({
-                name: '試作加武呂A【花菱】/T',
+                name: '試作加武呂A【花菱】/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -5372,7 +5372,7 @@ export const ActressGears = {
                 ]
             }),
             new Gear({
-                name: '試作加武呂A【剣花菱】/T',
+                name: '試作加武呂A【剣花菱】/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,

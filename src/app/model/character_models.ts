@@ -3171,6 +3171,50 @@ class YamanoKaoruko05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
 }
 
+class YamanoKaoruko70 extends Character {
+    name: string = '山野 薫子_玄妙';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 527;
+    atkShotMin: number = 146;
+    atkShotMax: number = 527;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Rifle(0.3),
+        AttrTypeDict.Spear(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.YamanoKaoruko.long;
+    weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
+    equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
+    equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+}
+
 class YorozubaMeika01 extends Character {
     name: string = '萬場 盟華';
     rare: number = 1;
@@ -11786,6 +11830,7 @@ export const CharacterModels = {
     YamanoKaoruko02: new YamanoKaoruko02(),
     YamanoKaoruko04: new YamanoKaoruko04(),
     YamanoKaoruko05: new YamanoKaoruko05(),
+    YamanoKaoruko70: new YamanoKaoruko70(),
     YorozubaMeika01: new YorozubaMeika01(),
     YorozubaMeika02: new YorozubaMeika02(),
     YorozubaMeika04: new YorozubaMeika04(),
