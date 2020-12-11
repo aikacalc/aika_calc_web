@@ -11687,6 +11687,270 @@ class MarieRose05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MarieRose.bottom;
 }
 
+class Aya04 extends Character {
+    name: string = 'アヤ';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 486;
+    atkCloseMin: number = 139;
+    atkCloseMax: number = 486;
+    attrClose: number = 0;
+    atkShot: number = 495;
+    atkShotMin: number = 141;
+    atkShotMax: number = 495;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Aya.long;
+    weaponCloses: Gear[] = ActressGears.Aya.short;
+    equipmentTops: Gear[] = ActressGears.Aya.top;
+    equipmentBottoms: Gear[] = ActressGears.Aya.bottom;
+}
+
+class Aya05 extends Character {
+    name: string = 'アヤ';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 624;
+    atkCloseMin: number = 173;
+    atkCloseMax: number = 624;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Aya.long;
+    weaponCloses: Gear[] = ActressGears.Aya.short;
+    equipmentTops: Gear[] = ActressGears.Aya.top;
+    equipmentBottoms: Gear[] = ActressGears.Aya.bottom;
+}
+
+class Yuki04 extends Character {
+    name: string = 'ユキ';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 584;
+    atkCloseMin: number = 167;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 165;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Bazooka(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yuki.long;
+    weaponCloses: Gear[] = ActressGears.Yuki.short;
+    equipmentTops: Gear[] = ActressGears.Yuki.top;
+    equipmentBottoms: Gear[] = ActressGears.Yuki.bottom;
+}
+
+class Yuki05 extends Character {
+    name: string = 'ユキ';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 751;
+    atkCloseMin: number = 209;
+    atkCloseMax: number = 751;
+    attrClose: number = 0;
+    atkShot: number = 744;
+    atkShotMin: number = 207;
+    atkShotMax: number = 744;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Bazooka(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yuki.long;
+    weaponCloses: Gear[] = ActressGears.Yuki.short;
+    equipmentTops: Gear[] = ActressGears.Yuki.top;
+    equipmentBottoms: Gear[] = ActressGears.Yuki.bottom;
+}
+
+class Yamada04 extends Character {
+    name: string = 'ヤマダ';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2610;
+    hpMin: number = 718;
+    hpMax: number = 2610;
+    atkClose: number = 459;
+    atkCloseMin: number = 131;
+    atkCloseMax: number = 459;
+    attrClose: number = 0;
+    atkShot: number = 445;
+    atkShotMin: number = 127;
+    atkShotMax: number = 445;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.9),
+        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yamada.long;
+    weaponCloses: Gear[] = ActressGears.Yamada.short;
+    equipmentTops: Gear[] = ActressGears.Yamada.top;
+    equipmentBottoms: Gear[] = ActressGears.Yamada.bottom;
+}
+
+class Yamada05 extends Character {
+    name: string = 'ヤマダ';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 590;
+    atkCloseMin: number = 164;
+    atkCloseMax: number = 590;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.9),
+        AttrTypeDict.Hammer(0.25),
+        AttrTypeDict.Twin(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yamada.long;
+    weaponCloses: Gear[] = ActressGears.Yamada.short;
+    equipmentTops: Gear[] = ActressGears.Yamada.top;
+    equipmentBottoms: Gear[] = ActressGears.Yamada.bottom;
+}
+
 export const ActressNames: string[] = [
     'AgatsumaKaede',
     'HimukaiRin',
@@ -11754,7 +12018,10 @@ export const ActressNames: string[] = [
     'KuniedaShiho',
     'SylphyII',
     'Kasumi',
-    'MarieRose'
+    'MarieRose',
+    'Aya',
+    'Yuki',
+    'Yamada'
 ];
 
 export const CharacterModels = {
@@ -12022,5 +12289,11 @@ export const CharacterModels = {
     Kasumi04: new Kasumi04(),
     Kasumi05: new Kasumi05(),
     MarieRose04: new MarieRose04(),
-    MarieRose05: new MarieRose05()
+    MarieRose05: new MarieRose05(),
+    Aya04: new Aya04(),
+    Aya05: new Aya05(),
+    Yuki04: new Yuki04(),
+    Yuki05: new Yuki05(),
+    Yamada04: new Yamada04(),
+    Yamada05: new Yamada05()
 };
