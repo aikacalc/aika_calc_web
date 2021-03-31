@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 import { AikaCalcModule } from './aika-calc/aika-calc.module';
 import { AikaFanReachCalcModule } from './aika-fan-reach-calc/aika-fan-reach-calc.module';
 import { AppService } from './app.service';
-import { AikaBattleSimulatorModule } from './aika-battle-simulator/aika-battle-simulator.module';
-import { AppRoutingModule } from './app-routing.module';
+// import { AikaBattleSimulatorModule } from './aika-battle-simulator/aika-battle-simulator.module';
+// import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -13,8 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
         BrowserModule
         , AikaCalcModule
         , AikaFanReachCalcModule
-        , AikaBattleSimulatorModule,
-        , AppRoutingModule
+        // , AikaBattleSimulatorModule,
+        // , AppRoutingModule
     ],
     providers: [
         AppService
