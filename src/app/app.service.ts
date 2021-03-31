@@ -5,5 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
     pageIndex: number = 0;
+    hasNewUpdate: boolean = false;
     constructor() { }
 }

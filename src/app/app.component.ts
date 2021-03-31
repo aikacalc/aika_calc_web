@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AttrTypeIdList, AttrTypeName } from './model/attr-type';
-import { AttrTypeId } from './model/attr-type-id.enum';
-import { Buff } from './model/buff';
-import { Character } from './model/character';
-import { CharacterModels } from './model/character_models';
 import { AppService } from './app.service';
+import { SwUpdate } from '@angular/service-worker';
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -13,11 +10,14 @@ import { AppService } from './app.service';
 export class AppComponent implements OnInit {
 
     constructor(
-        public service: AppService
+        public service: AppService,
+        private swUpdate: SwUpdate
     ) { }
 
     public ngOnInit(): void {
-
+        this.swUpdate.available.subscribe(() => {
+            this.service.hasNewUpdate = true;
+        });
     }
 
 

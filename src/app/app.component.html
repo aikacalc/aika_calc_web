@@ -1,3 +1,12 @@
-<!-- <router-outlet></router-outlet> -->
+<div class="top">
+    <img src="/favicon.ico" width="16" height="16">
+    <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
+    <button class="calc" (click)="service.pageIndex=0">
+        <span>AikaCalc</span>
+    </button>
+    <button class="fan-calc" (click)="service.pageIndex=1">
+        <span>AikaFanCalc</span>
+    </button>
+</div>
 <app-aika-calc *ngIf="service.pageIndex==0"></app-aika-calc>
 <app-aika-fan-reach-calc *ngIf="service.pageIndex==1"></app-aika-fan-reach-calc>

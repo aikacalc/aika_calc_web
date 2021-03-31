@@ -1,0 +1,17 @@
+{
+  "name": "AikaCalc",
+  "short_name": "AikaCalc",
+  "theme_color": "#ec9294", 
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
