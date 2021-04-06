@@ -10493,6 +10493,358 @@ class ItokuraNeo05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
 }
 
+class ArugaNana01 extends Character {
+    name: string = '在賀 奈々';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 4;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 896;
+    hpMin: number = 371;
+    hpMax: number = 896;
+    atkClose: number = 168;
+    atkCloseMin: number = 67;
+    atkCloseMax: number = 168;
+    attrClose: number = 0;
+    atkShot: number = 177;
+    atkShotMin: number = 71;
+    atkShotMax: number = 177;
+    attrShot: number = 0;
+    def: number = 248;
+    defMin: number = 99;
+    defMax: number = 248;
+    spd: number = 158;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
+class ArugaNana02 extends Character {
+    name: string = '在賀 奈々';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1463;
+    hpMin: number = 525;
+    hpMax: number = 1463;
+    atkClose: number = 269;
+    atkCloseMin: number = 101;
+    atkCloseMax: number = 269;
+    attrClose: number = 0;
+    atkShot: number = 283;
+    atkShotMin: number = 106;
+    atkShotMax: number = 283;
+    attrShot: number = 0;
+    def: number = 396;
+    defMin: number = 149;
+    defMax: number = 396;
+    spd: number = 158;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
+class ArugaNana04 extends Character {
+    name: string = '在賀 奈々';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 471;
+    atkCloseMin: number = 135;
+    atkCloseMax: number = 471;
+    attrClose: number = 0;
+    atkShot: number = 495;
+    atkShotMin: number = 141;
+    atkShotMax: number = 495;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 158;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
+class ArugaNana05 extends Character {
+    name: string = '在賀 奈々';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 606;
+    atkCloseMin: number = 168;
+    atkCloseMax: number = 606;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 158;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
+class MatobaAoi01 extends Character {
+    name: string = '的場 アオイ';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 5;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 861;
+    hpMin: number = 356;
+    hpMax: number = 861;
+    atkClose: number = 198;
+    atkCloseMin: number = 79;
+    atkCloseMax: number = 198;
+    attrClose: number = 0;
+    atkShot: number = 215;
+    atkShotMin: number = 86;
+    atkShotMax: number = 215;
+    attrShot: number = 0;
+    def: number = 253;
+    defMin: number = 101;
+    defMax: number = 253;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.HandGun(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
+class MatobaAoi02 extends Character {
+    name: string = '的場 アオイ';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1406;
+    hpMin: number = 505;
+    hpMax: number = 1406;
+    atkClose: number = 318;
+    atkCloseMin: number = 119;
+    atkCloseMax: number = 318;
+    attrClose: number = 0;
+    atkShot: number = 343;
+    atkShotMin: number = 129;
+    atkShotMax: number = 343;
+    attrShot: number = 0;
+    def: number = 404;
+    defMin: number = 152;
+    defMax: number = 404;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.HandGun(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
+class MatobaAoi04 extends Character {
+    name: string = '的場 アオイ';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 556;
+    atkCloseMin: number = 159;
+    atkCloseMax: number = 556;
+    attrClose: number = 0;
+    atkShot: number = 601;
+    atkShotMin: number = 172;
+    atkShotMax: number = 601;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.HandGun(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
+class MatobaAoi05 extends Character {
+    name: string = '的場 アオイ';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 714;
+    atkCloseMin: number = 198;
+    atkCloseMax: number = 714;
+    attrClose: number = 0;
+    atkShot: number = 773;
+    atkShotMin: number = 215;
+    atkShotMax: number = 773;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.HandGun(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
 class Gourai04 extends Character {
     name: string = '轟雷';
     rare: number = 3;
@@ -12619,6 +12971,8 @@ export const ActressNames: string[] = [
     'FatimaBetrorum',
     'KuroganeYuto',
     'ItokuraNeo',
+    'ArugaNana',
+    'MatobaAoi',
     'Gourai',
     'Stylet',
     'Baselard',
@@ -12882,6 +13236,14 @@ export const CharacterModels = {
     ItokuraNeo02: new ItokuraNeo02(),
     ItokuraNeo04: new ItokuraNeo04(),
     ItokuraNeo05: new ItokuraNeo05(),
+    ArugaNana01: new ArugaNana01(),
+    ArugaNana02: new ArugaNana02(),
+    ArugaNana04: new ArugaNana04(),
+    ArugaNana05: new ArugaNana05(),
+    // MatobaAoi01: new MatobaAoi01(),
+    // MatobaAoi02: new MatobaAoi02(),
+    // MatobaAoi04: new MatobaAoi04(),
+    // MatobaAoi05: new MatobaAoi05(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),
