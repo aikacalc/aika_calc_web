@@ -9,8 +9,8 @@ export class Unit {
     gradeUp?: number = 0;
     gradeUpLimit?: number = 0;
     hp?: number = 0;
-    hpMin?: number = 1;
-    hpMax?: number = 1;
+    hpMin?: number = 0;
+    hpMax?: number = 0;
     atk?: number = 0;
     atkMin?: number = 0;
     atkMax?: number = 0;
