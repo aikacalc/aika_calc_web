@@ -9431,6 +9431,50 @@ class KanagataSugumi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
 }
 
+class KanagataSugumi70 extends Character {
+    name: string = '金潟 すぐみ_臥薪';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 751;
+    atkCloseMin: number = 209;
+    atkCloseMax: number = 751;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
+        AttrTypeDict.Volt(0.56),
+        AttrTypeDict.Rifle(0.3),
+        AttrTypeDict.Dagger(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KanagataSugumi.long;
+    weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
+    equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
+    equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+}
+
 class NikaidohTsukasa01 extends Character {
     name: string = '二階堂 司';
     rare: number = 1;
@@ -13212,6 +13256,7 @@ export const CharacterModels = {
     KanagataSugumi02: new KanagataSugumi02(),
     KanagataSugumi04: new KanagataSugumi04(),
     KanagataSugumi05: new KanagataSugumi05(),
+    KanagataSugumi70: new KanagataSugumi70(),
     NikaidohTsukasa01: new NikaidohTsukasa01(),
     NikaidohTsukasa02: new NikaidohTsukasa02(),
     NikaidohTsukasa04: new NikaidohTsukasa04(),
