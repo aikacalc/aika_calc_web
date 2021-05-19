@@ -5729,6 +5729,50 @@ class OchanomizuMirie05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
 }
 
+class OchanomizuMirie70 extends Character {
+    name: string = '御茶ノ水 美里江_無辜';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 796;
+    atkCloseMin: number = 221;
+    atkCloseMax: number = 796;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 873;
+    defMin: number = 243;
+    defMax: number = 873;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.6),
+        AttrTypeDict.ResistGravity(-0.6),
+        AttrTypeDict.ResistFire(-0.3),
+        AttrTypeDict.Volt(0.5),
+        AttrTypeDict.Sniper(0.3),
+        AttrTypeDict.Hammer(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.OchanomizuMirie.long;
+    weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
+    equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
+    equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+}
+
 class KaeruzakaRaiya01 extends Character {
     name: string = '蛙坂 来弥';
     rare: number = 1;
@@ -13172,6 +13216,7 @@ export const CharacterModels = {
     OchanomizuMirie02: new OchanomizuMirie02(),
     OchanomizuMirie04: new OchanomizuMirie04(),
     OchanomizuMirie05: new OchanomizuMirie05(),
+    OchanomizuMirie70: new OchanomizuMirie70(),
     KaeruzakaRaiya01: new KaeruzakaRaiya01(),
     KaeruzakaRaiya02: new KaeruzakaRaiya02(),
     KaeruzakaRaiya04: new KaeruzakaRaiya04(),
