@@ -9871,6 +9871,50 @@ class SugaItsuri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
 }
 
+class SugaItsuri70 extends Character {
+    name: string = '須賀 乙莉_仰望';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 544;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 544;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 161;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 157;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.9),
+        AttrTypeDict.Spear(0.3),
+        AttrTypeDict.Bazooka(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.SugaItsuri.long;
+    weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
+    equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
+    equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+}
+
 class AraimeYasuri01 extends Character {
     name: string = '新居目 安里';
     rare: number = 1;
@@ -10579,6 +10623,182 @@ class ItokuraNeo05 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class KasugaokaMoe01 extends Character {
+    name: string = '春日丘 もえ';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 2;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 887;
+    hpMin: number = 367;
+    hpMax: number = 887;
+    atkClose: number = 168;
+    atkCloseMin: number = 67;
+    atkCloseMax: number = 168;
+    attrClose: number = 0;
+    atkShot: number = 172;
+    atkShotMin: number = 69;
+    atkShotMax: number = 172;
+    attrShot: number = 0;
+    def: number = 255;
+    defMin: number = 102;
+    defMax: number = 255;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+}
+
+class KasugaokaMoe02 extends Character {
+    name: string = '春日丘 もえ';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1448;
+    hpMin: number = 520;
+    hpMax: number = 1448;
+    atkClose: number = 269;
+    atkCloseMin: number = 101;
+    atkCloseMax: number = 269;
+    attrClose: number = 0;
+    atkShot: number = 275;
+    atkShotMin: number = 103;
+    atkShotMax: number = 275;
+    attrShot: number = 0;
+    def: number = 408;
+    defMin: number = 153;
+    defMax: number = 408;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+}
+
+class KasugaokaMoe04 extends Character {
+    name: string = '春日丘 もえ';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 471;
+    atkCloseMin: number = 135;
+    atkCloseMax: number = 471;
+    attrClose: number = 0;
+    atkShot: number = 481;
+    atkShotMin: number = 137;
+    atkShotMax: number = 481;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+}
+
+class KasugaokaMoe05 extends Character {
+    name: string = '春日丘 もえ';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 606;
+    atkCloseMin: number = 168;
+    atkCloseMax: number = 606;
+    attrClose: number = 0;
+    atkShot: number = 618;
+    atkShotMin: number = 172;
+    atkShotMax: number = 618;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
 }
 
 class ArugaNana01 extends Character {
@@ -13059,6 +13279,7 @@ export const ActressNames: string[] = [
     'FatimaBetrorum',
     'KuroganeYuto',
     'ItokuraNeo',
+    'KasugaokaMoe',
     'ArugaNana',
     'MatobaAoi',
     'Gourai',
@@ -13310,6 +13531,7 @@ export const CharacterModels = {
     SugaItsuri02: new SugaItsuri02(),
     SugaItsuri04: new SugaItsuri04(),
     SugaItsuri05: new SugaItsuri05(),
+    SugaItsuri70: new SugaItsuri70(),
     AraimeYasuri01: new AraimeYasuri01(),
     AraimeYasuri02: new AraimeYasuri02(),
     AraimeYasuri04: new AraimeYasuri04(),
@@ -13326,6 +13548,10 @@ export const CharacterModels = {
     ItokuraNeo02: new ItokuraNeo02(),
     ItokuraNeo04: new ItokuraNeo04(),
     ItokuraNeo05: new ItokuraNeo05(),
+    KasugaokaMoe01: new KasugaokaMoe01(),
+    KasugaokaMoe02: new KasugaokaMoe02(),
+    KasugaokaMoe04: new KasugaokaMoe04(),
+    KasugaokaMoe05: new KasugaokaMoe05(),
     ArugaNana01: new ArugaNana01(),
     ArugaNana02: new ArugaNana02(),
     ArugaNana04: new ArugaNana04(),
