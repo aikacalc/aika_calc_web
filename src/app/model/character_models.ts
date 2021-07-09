@@ -6791,6 +6791,50 @@ class KotomuraAkane05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
 }
 
+class KotomuraAkane70 extends Character {
+    name: string = '琴村 朱音_炎天';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Spear(0.3),
+        AttrTypeDict.Sniper(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAkane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+}
+
 class KotomuraAmane01 extends Character {
     name: string = '琴村 天音';
     rare: number = 1;
@@ -6960,6 +7004,50 @@ class KotomuraAmane05 extends Character {
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAmane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+}
+
+class KotomuraAmane70 extends Character {
+    name: string = '琴村 天音_玄天';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 600;
+    atkShotMin: number = 167;
+    atkShotMax: number = 600;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
+        AttrTypeDict.Ice(0.86),
+        AttrTypeDict.Bazooka(0.3),
+        AttrTypeDict.Hammer(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KotomuraAmane.long;
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
@@ -13461,10 +13549,12 @@ export const CharacterModels = {
     KotomuraAkane02: new KotomuraAkane02(),
     KotomuraAkane04: new KotomuraAkane04(),
     KotomuraAkane05: new KotomuraAkane05(),
+    KotomuraAkane70: new KotomuraAkane70(),
     KotomuraAmane01: new KotomuraAmane01(),
     KotomuraAmane02: new KotomuraAmane02(),
     KotomuraAmane04: new KotomuraAmane04(),
     KotomuraAmane05: new KotomuraAmane05(),
+    KotomuraAmane70: new KotomuraAmane70(),
     MiaVoisin01: new MiaVoisin01(),
     MiaVoisin02: new MiaVoisin02(),
     MiaVoisin04: new MiaVoisin04(),
