@@ -9783,6 +9783,50 @@ class NikaidohTsukasa05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
 }
 
+class NikaidohTsukasa70 extends Character {
+    name: string = '二階堂 司_芝蘭';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96),
+        AttrTypeDict.Spear(0.3),
+        AttrTypeDict.Rifle(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NikaidohTsukasa.long;
+    weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
+    equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
+    equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+}
+
 class SugaItsuri01 extends Character {
     name: string = '須賀 乙莉';
     rare: number = 1;
@@ -13617,6 +13661,7 @@ export const CharacterModels = {
     NikaidohTsukasa02: new NikaidohTsukasa02(),
     NikaidohTsukasa04: new NikaidohTsukasa04(),
     NikaidohTsukasa05: new NikaidohTsukasa05(),
+    NikaidohTsukasa70: new NikaidohTsukasa70(),
     SugaItsuri01: new SugaItsuri01(),
     SugaItsuri02: new SugaItsuri02(),
     SugaItsuri04: new SugaItsuri04(),
