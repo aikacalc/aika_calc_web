@@ -13359,6 +13359,182 @@ class AIT70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AIT.bottom;
 }
 
+class SakamotoMio04 extends Character {
+    name: string = '坂本 美緒';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 463;
+    atkCloseMin: number = 132;
+    atkCloseMax: number = 463;
+    attrClose: number = 0;
+    atkShot: number = 445;
+    atkShotMin: number = 127;
+    atkShotMax: number = 445;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.9),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
+    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
+    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
+    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+}
+
+class SakamotoMio05 extends Character {
+    name: string = '坂本 美緒';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.9),
+        AttrTypeDict.Sword(0.25),
+        AttrTypeDict.Rifle(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
+    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
+    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
+    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+}
+
+class PierretteHClostermann04 extends Character {
+    name: string = 'ペリーヌ・C';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 490;
+    atkCloseMin: number = 140;
+    atkCloseMax: number = 490;
+    attrClose: number = 0;
+    atkShot: number = 495;
+    atkShotMin: number = 141;
+    atkShotMax: number = 495;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.PierretteHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PierretteHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PierretteHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PierretteHClostermann.bottom;
+}
+
+class PierretteHClostermann05 extends Character {
+    name: string = 'ペリーヌ・C';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.7),
+        AttrTypeDict.ResistGravity(-0.7),
+        AttrTypeDict.ResistFire(-0.35),
+        AttrTypeDict.Volt(0.86),
+        AttrTypeDict.Rifle(0.25),
+        AttrTypeDict.Dagger(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.PierretteHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PierretteHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PierretteHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PierretteHClostermann.bottom;
+}
+
 export const ActressNames: string[] = [
     'AgatsumaKaede',
     'HimukaiRin',
@@ -13435,7 +13611,9 @@ export const ActressNames: string[] = [
     'Aya',
     'Yuki',
     'Yamada',
-    'AIT'
+    'AIT',
+    'SakamotoMio',
+    'PierretteHClostermann'
 ];
 
 export const CharacterModels = {
@@ -13741,5 +13919,9 @@ export const CharacterModels = {
     Yamada05: new Yamada05(),
     AIT04: new AIT04(),
     AIT05: new AIT05(),
-    AIT70: new AIT70()
+    AIT70: new AIT70(),
+    SakamotoMio04: new SakamotoMio04(),
+    SakamotoMio05: new SakamotoMio05(),
+    PierretteHClostermann04: new PierretteHClostermann04(),
+    PierretteHClostermann05: new PierretteHClostermann05()
 };
