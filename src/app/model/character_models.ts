@@ -3881,6 +3881,182 @@ class YorishiroEri70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
 }
 
+class HasamiRika01 extends Character {
+    name: string = '波佐見 利佳';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 6;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 887;
+    hpMin: number = 367;
+    hpMax: number = 887;
+    atkClose: number = 151;
+    atkCloseMin: number = 60;
+    atkCloseMax: number = 151;
+    attrClose: number = 0;
+    atkShot: number = 144;
+    atkShotMin: number = 57;
+    atkShotMax: number = 144;
+    attrShot: number = 0;
+    def: number = 245;
+    defMin: number = 98;
+    defMax: number = 245;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
+class HasamiRika02 extends Character {
+    name: string = '波佐見 利佳';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1448;
+    hpMin: number = 520;
+    hpMax: number = 1448;
+    atkClose: number = 241;
+    atkCloseMin: number = 90;
+    atkCloseMax: number = 241;
+    attrClose: number = 0;
+    atkShot: number = 230;
+    atkShotMin: number = 86;
+    atkShotMax: number = 230;
+    attrShot: number = 0;
+    def: number = 392;
+    defMin: number = 147;
+    defMax: number = 392;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
+class HasamiRika04 extends Character {
+    name: string = '波佐見 利佳';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 422;
+    atkCloseMin: number = 121;
+    atkCloseMax: number = 422;
+    attrClose: number = 0;
+    atkShot: number = 402;
+    atkShotMin: number = 115;
+    atkShotMax: number = 402;
+    attrShot: number = 0;
+    def: number = 686;
+    defMin: number = 196;
+    defMax: number = 686;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
+class HasamiRika05 extends Character {
+    name: string = '波佐見 利佳';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 517;
+    atkShotMin: number = 144;
+    atkShotMax: number = 517;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 162;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.8),
+        AttrTypeDict.ResistVolt(-0.8),
+        AttrTypeDict.ResistIce(-0.4),
+        AttrTypeDict.Gravity(0.96),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
 class NiiyaSerina01 extends Character {
     name: string = '新谷 芹菜';
     rare: number = 1;
@@ -7407,6 +7583,182 @@ class ChishimaMiyuki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
 }
 
+class AngelicaGlazunova01 extends Character {
+    name: string = 'アンジェリカ・G';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 15;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 827;
+    hpMin: number = 342;
+    hpMax: number = 827;
+    atkClose: number = 146;
+    atkCloseMin: number = 59;
+    atkCloseMax: number = 146;
+    attrClose: number = 0;
+    atkShot: number = 154;
+    atkShotMin: number = 61;
+    atkShotMax: number = 154;
+    attrShot: number = 0;
+    def: number = 258;
+    defMin: number = 103;
+    defMax: number = 258;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Sword(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova02 extends Character {
+    name: string = 'アンジェリカ・G';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1349;
+    hpMin: number = 485;
+    hpMax: number = 1349;
+    atkClose: number = 234;
+    atkCloseMin: number = 88;
+    atkCloseMax: number = 234;
+    attrClose: number = 0;
+    atkShot: number = 246;
+    atkShotMin: number = 92;
+    atkShotMax: number = 246;
+    attrShot: number = 0;
+    def: number = 412;
+    defMin: number = 155;
+    defMax: number = 412;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Sword(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova04 extends Character {
+    name: string = 'アンジェリカ・G';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2385;
+    hpMin: number = 656;
+    hpMax: number = 2385;
+    atkClose: number = 410;
+    atkCloseMin: number = 117;
+    atkCloseMax: number = 410;
+    attrClose: number = 0;
+    atkShot: number = 430;
+    atkShotMin: number = 123;
+    atkShotMax: number = 430;
+    attrShot: number = 0;
+    def: number = 721;
+    defMin: number = 206;
+    defMax: number = 721;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Sword(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova05 extends Character {
+    name: string = 'アンジェリカ・G';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3078;
+    hpMin: number = 827;
+    hpMax: number = 3078;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 553;
+    atkShotMin: number = 154;
+    atkShotMax: number = 553;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 163;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.8),
+        AttrTypeDict.ResistFire(-0.8),
+        AttrTypeDict.ResistGravity(-0.4),
+        AttrTypeDict.Ice(0.96),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Sword(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
 class ShantiRana01 extends Character {
     name: string = 'サンティ・R';
     rare: number = 1;
@@ -8764,6 +9116,50 @@ class ShirleyOakley05 extends Character {
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ShirleyOakley.long;
+    weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
+    equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
+    equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+}
+
+class ShirleyOakley70 extends Character {
+    name: string = 'シャーリー_撃壌';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 506;
+    atkShotMin: number = 141;
+    atkShotMax: number = 506;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistVolt(0.8),
+        AttrTypeDict.ResistGravity(-0.8),
+        AttrTypeDict.ResistFire(-0.4),
+        AttrTypeDict.Volt(0.96),
+        AttrTypeDict.HandGun(0.3),
+        AttrTypeDict.Twin(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.HandGun, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.ShirleyOakley.long;
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
@@ -10223,6 +10619,50 @@ class AraimeYasuri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
 }
 
+class AraimeYasuri70 extends Character {
+    name: string = '新居目 安里_紺碧';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 630;
+    atkShotMin: number = 175;
+    atkShotMax: number = 630;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.7),
+        AttrTypeDict.ResistVolt(-0.7),
+        AttrTypeDict.ResistIce(-0.35),
+        AttrTypeDict.Gravity(0.86),
+        AttrTypeDict.Spear(0.3),
+        AttrTypeDict.Bazooka(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AraimeYasuri.long;
+    weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
+    equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+}
+
 class FatimaBetrorum01 extends Character {
     name: string = 'ファティマ・B';
     rare: number = 1;
@@ -11283,6 +11723,182 @@ class MatobaAoi05 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
+class AdelaideBluthausen01 extends Character {
+    name: string = 'アデライーデ・B';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 13;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 861;
+    hpMin: number = 356;
+    hpMax: number = 861;
+    atkClose: number = 173;
+    atkCloseMin: number = 69;
+    atkCloseMax: number = 173;
+    attrClose: number = 0;
+    atkShot: number = 179;
+    atkShotMin: number = 71;
+    atkShotMax: number = 179;
+    attrShot: number = 0;
+    def: number = 248;
+    defMin: number = 99;
+    defMax: number = 248;
+    spd: number = 165;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
+        AttrTypeDict.Ice(0.86),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Spear(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
+class AdelaideBluthausen02 extends Character {
+    name: string = 'アデライーデ・B';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1406;
+    hpMin: number = 505;
+    hpMax: number = 1406;
+    atkClose: number = 277;
+    atkCloseMin: number = 104;
+    atkCloseMax: number = 277;
+    attrClose: number = 0;
+    atkShot: number = 286;
+    atkShotMin: number = 107;
+    atkShotMax: number = 286;
+    attrShot: number = 0;
+    def: number = 396;
+    defMin: number = 149;
+    defMax: number = 396;
+    spd: number = 165;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
+        AttrTypeDict.Ice(0.86),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Spear(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
+class AdelaideBluthausen04 extends Character {
+    name: string = 'アデライーデ・B';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 486;
+    atkCloseMin: number = 139;
+    atkCloseMax: number = 486;
+    attrClose: number = 0;
+    atkShot: number = 500;
+    atkShotMin: number = 143;
+    atkShotMax: number = 500;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 165;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
+        AttrTypeDict.Ice(0.86),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Spear(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
+class AdelaideBluthausen05 extends Character {
+    name: string = 'アデライーデ・B';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 624;
+    atkCloseMin: number = 173;
+    atkCloseMax: number = 624;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 165;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.7),
+        AttrTypeDict.ResistFire(-0.7),
+        AttrTypeDict.ResistGravity(-0.35),
+        AttrTypeDict.Ice(0.86),
+        AttrTypeDict.Sniper(0.25),
+        AttrTypeDict.Spear(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
 class Gourai04 extends Character {
@@ -13447,7 +14063,7 @@ class SakamotoMio05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
 }
 
-class PierretteHClostermann04 extends Character {
+class PerrineHClostermann04 extends Character {
     name: string = 'ペリーヌ・C';
     rare: number = 3;
     level: number = 60;
@@ -13485,13 +14101,13 @@ class PierretteHClostermann04 extends Character {
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.PierretteHClostermann.long;
-    weaponCloses: Gear[] = ActressGears.PierretteHClostermann.short;
-    equipmentTops: Gear[] = ActressGears.PierretteHClostermann.top;
-    equipmentBottoms: Gear[] = ActressGears.PierretteHClostermann.bottom;
+    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
 }
 
-class PierretteHClostermann05 extends Character {
+class PerrineHClostermann05 extends Character {
     name: string = 'ペリーヌ・C';
     rare: number = 4;
     level: number = 80;
@@ -13529,10 +14145,10 @@ class PierretteHClostermann05 extends Character {
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.PierretteHClostermann.long;
-    weaponCloses: Gear[] = ActressGears.PierretteHClostermann.short;
-    equipmentTops: Gear[] = ActressGears.PierretteHClostermann.top;
-    equipmentBottoms: Gear[] = ActressGears.PierretteHClostermann.bottom;
+    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
 }
 
 export const ActressNames: string[] = [
@@ -13553,6 +14169,7 @@ export const ActressNames: string[] = [
     'YorozubaMeika',
     'ShimoochiaiToka',
     'YorishiroEri',
+    'HasamiRika',
     'NiiyaSerina',
     'FumishimaAsuka',
     'NikitohKanade',
@@ -13570,6 +14187,7 @@ export const ActressNames: string[] = [
     'KotomuraAmane',
     'MiaVoisin',
     'ChishimaMiyuki',
+    'AngelicaGlazunova',
     'ShantiRana',
     'OhzekiKoyui',
     'WangHonghua',
@@ -13590,6 +14208,7 @@ export const ActressNames: string[] = [
     'KasugaokaMoe',
     'ArugaNana',
     'MatobaAoi',
+    'AdelaideBluthausen',
     'Gourai',
     'Stylet',
     'Baselard',
@@ -13613,7 +14232,7 @@ export const ActressNames: string[] = [
     'Yamada',
     'AIT',
     'SakamotoMio',
-    'PierretteHClostermann'
+    'PerrineHClostermann'
 ];
 
 export const CharacterModels = {
@@ -13705,6 +14324,10 @@ export const CharacterModels = {
     YorishiroEri04: new YorishiroEri04(),
     YorishiroEri05: new YorishiroEri05(),
     YorishiroEri70: new YorishiroEri70(),
+    HasamiRika01: new HasamiRika01(),
+    HasamiRika02: new HasamiRika02(),
+    HasamiRika04: new HasamiRika04(),
+    HasamiRika05: new HasamiRika05(),
     NiiyaSerina01: new NiiyaSerina01(),
     NiiyaSerina02: new NiiyaSerina02(),
     NiiyaSerina04: new NiiyaSerina04(),
@@ -13785,6 +14408,10 @@ export const CharacterModels = {
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
     ChishimaMiyuki05: new ChishimaMiyuki05(),
+    AngelicaGlazunova01: new AngelicaGlazunova01(),
+    AngelicaGlazunova02: new AngelicaGlazunova02(),
+    AngelicaGlazunova04: new AngelicaGlazunova04(),
+    AngelicaGlazunova05: new AngelicaGlazunova05(),
     ShantiRana01: new ShantiRana01(),
     ShantiRana02: new ShantiRana02(),
     ShantiRana04: new ShantiRana04(),
@@ -13816,6 +14443,7 @@ export const CharacterModels = {
     ShirleyOakley02: new ShirleyOakley02(),
     ShirleyOakley04: new ShirleyOakley04(),
     ShirleyOakley05: new ShirleyOakley05(),
+    ShirleyOakley70: new ShirleyOakley70(),
     ShinonomeChie01: new ShinonomeChie01(),
     ShinonomeChie02: new ShinonomeChie02(),
     ShinonomeChie04: new ShinonomeChie04(),
@@ -13849,6 +14477,7 @@ export const CharacterModels = {
     AraimeYasuri02: new AraimeYasuri02(),
     AraimeYasuri04: new AraimeYasuri04(),
     AraimeYasuri05: new AraimeYasuri05(),
+    AraimeYasuri70: new AraimeYasuri70(),
     FatimaBetrorum01: new FatimaBetrorum01(),
     FatimaBetrorum02: new FatimaBetrorum02(),
     FatimaBetrorum04: new FatimaBetrorum04(),
@@ -13873,6 +14502,10 @@ export const CharacterModels = {
     MatobaAoi02: new MatobaAoi02(),
     MatobaAoi04: new MatobaAoi04(),
     MatobaAoi05: new MatobaAoi05(),
+    AdelaideBluthausen01: new AdelaideBluthausen01(),
+    AdelaideBluthausen02: new AdelaideBluthausen02(),
+    AdelaideBluthausen04: new AdelaideBluthausen04(),
+    AdelaideBluthausen05: new AdelaideBluthausen05(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),
@@ -13922,6 +14555,6 @@ export const CharacterModels = {
     AIT70: new AIT70(),
     SakamotoMio04: new SakamotoMio04(),
     SakamotoMio05: new SakamotoMio05(),
-    PierretteHClostermann04: new PierretteHClostermann04(),
-    PierretteHClostermann05: new PierretteHClostermann05()
+    PerrineHClostermann04: new PerrineHClostermann04(),
+    PerrineHClostermann05: new PerrineHClostermann05()
 };
