@@ -7583,182 +7583,6 @@ class ChishimaMiyuki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
 }
 
-class AngelicaGlazunova01 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 1;
-    level: number = 15;
-    levelMin: number = 15;
-    levelMax: number = 15;
-    gradeUpLimit: number = 0;
-    hp: number = 827;
-    hpMin: number = 342;
-    hpMax: number = 827;
-    atkClose: number = 146;
-    atkCloseMin: number = 59;
-    atkCloseMax: number = 146;
-    attrClose: number = 0;
-    atkShot: number = 154;
-    atkShotMin: number = 61;
-    atkShotMax: number = 154;
-    attrShot: number = 0;
-    def: number = 258;
-    defMin: number = 103;
-    defMax: number = 258;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistIce, 0.8),
-        new Buff(AttrTypeId.ResistFire, -0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.4),
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
-    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
-    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
-    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
-}
-
-class AngelicaGlazunova02 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 2;
-    level: number = 30;
-    levelMin: number = 1;
-    levelMax: number = 30;
-    gradeUpLimit: number = 40;
-    hp: number = 1349;
-    hpMin: number = 485;
-    hpMax: number = 1349;
-    atkClose: number = 234;
-    atkCloseMin: number = 88;
-    atkCloseMax: number = 234;
-    attrClose: number = 0;
-    atkShot: number = 246;
-    atkShotMin: number = 92;
-    atkShotMax: number = 246;
-    attrShot: number = 0;
-    def: number = 412;
-    defMin: number = 155;
-    defMax: number = 412;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistIce, 0.8),
-        new Buff(AttrTypeId.ResistFire, -0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.4),
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
-    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
-    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
-    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
-}
-
-class AngelicaGlazunova04 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 3;
-    level: number = 60;
-    levelMin: number = 1;
-    levelMax: number = 60;
-    gradeUpLimit: number = 20;
-    hp: number = 2385;
-    hpMin: number = 656;
-    hpMax: number = 2385;
-    atkClose: number = 410;
-    atkCloseMin: number = 117;
-    atkCloseMax: number = 410;
-    attrClose: number = 0;
-    atkShot: number = 430;
-    atkShotMin: number = 123;
-    atkShotMax: number = 430;
-    attrShot: number = 0;
-    def: number = 721;
-    defMin: number = 206;
-    defMax: number = 721;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistIce, 0.8),
-        new Buff(AttrTypeId.ResistFire, -0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.4),
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
-    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
-    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
-    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
-}
-
-class AngelicaGlazunova05 extends Character {
-    name: string = 'アンジェリカ・G';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    hp: number = 3078;
-    hpMin: number = 827;
-    hpMax: number = 3078;
-    atkClose: number = 527;
-    atkCloseMin: number = 146;
-    atkCloseMax: number = 527;
-    attrClose: number = 0;
-    atkShot: number = 553;
-    atkShotMin: number = 154;
-    atkShotMax: number = 553;
-    attrShot: number = 0;
-    def: number = 927;
-    defMin: number = 258;
-    defMax: number = 927;
-    spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistIce, 0.8),
-        new Buff(AttrTypeId.ResistFire, -0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.4),
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
-    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
-    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
-    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
-}
-
 class ShantiRana01 extends Character {
     name: string = 'サンティ・R';
     rare: number = 1;
@@ -14187,7 +14011,6 @@ export const ActressNames: string[] = [
     'KotomuraAmane',
     'MiaVoisin',
     'ChishimaMiyuki',
-    'AngelicaGlazunova',
     'ShantiRana',
     'OhzekiKoyui',
     'WangHonghua',
@@ -14408,10 +14231,6 @@ export const CharacterModels = {
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
     ChishimaMiyuki05: new ChishimaMiyuki05(),
-    AngelicaGlazunova01: new AngelicaGlazunova01(),
-    AngelicaGlazunova02: new AngelicaGlazunova02(),
-    AngelicaGlazunova04: new AngelicaGlazunova04(),
-    AngelicaGlazunova05: new AngelicaGlazunova05(),
     ShantiRana01: new ShantiRana01(),
     ShantiRana02: new ShantiRana02(),
     ShantiRana04: new ShantiRana04(),

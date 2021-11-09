@@ -25460,20 +25460,6 @@ export const ActressGears = {
             })
         ]
     },
-    AngelicaGlazunova: {
-        long: [
-
-        ],
-        short: [
-
-        ],
-        top: [
-
-        ],
-        bottom: [
-
-        ]
-    },
     ShantiRana: {
         long: [
             new Gear({
@@ -35534,10 +35520,248 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'カペラ/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1739,
+                hpMin: 527,
+                hpMax: 1739,
+                def: 509,
+                defMin: 159,
+                defMax: 509,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'カペラA1/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1854,
+                hpMin: 970,
+                hpMax: 1854,
+                def: 541,
+                defMin: 286,
+                defMax: 541,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'カペラA2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1963,
+                hpMin: 1079,
+                hpMax: 1963,
+                def: 572,
+                defMin: 318,
+                defMax: 572,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.1)
+                ]
+            }),
+            new Gear({
+                name: '一〇式ABs/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1079,
+                hpMin: 418,
+                hpMax: 1079,
+                def: 318,
+                defMin: 127,
+                defMax: 318,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.05)
+                ]
+            }),
+            new Gear({
+                name: '一〇式ABs甲/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1303,
+                hpMin: 642,
+                hpMax: 1303,
+                def: 382,
+                defMin: 191,
+                defMax: 382,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            }),
+            new Gear({
+                name: '一〇式ABs乙/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1521,
+                hpMin: 861,
+                hpMax: 1521,
+                def: 445,
+                defMin: 254,
+                defMax: 445,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15),
+                    new Buff(AttrTypeId.Ice, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'カペラ/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1159,
+                hpMin: 351,
+                hpMax: 1159,
+                def: 339,
+                defMin: 106,
+                defMax: 339,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'カペラA1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1236,
+                hpMin: 646,
+                hpMax: 1236,
+                def: 360,
+                defMin: 191,
+                defMax: 360,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'カペラA2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1309,
+                hpMin: 719,
+                hpMax: 1309,
+                def: 382,
+                defMin: 212,
+                defMax: 382,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'MN201ABs/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 719,
+                hpMin: 279,
+                hpMax: 719,
+                def: 212,
+                defMin: 85,
+                defMax: 212,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'MN201ABsG1/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 869,
+                hpMin: 428,
+                hpMax: 869,
+                def: 254,
+                defMin: 127,
+                defMax: 254,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'MN201ABsG2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1014,
+                hpMin: 574,
+                hpMax: 1014,
+                def: 297,
+                defMin: 170,
+                defMax: 297,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistIce, 0.15),
+                    new Buff(AttrTypeId.ResistFire, -0.15)
+                ]
+            })
         ]
     },
     Gourai: {
@@ -48768,10 +48992,248 @@ export const ActressGears = {
             })
         ],
         top: [
-
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1774,
+                hpMin: 538,
+                hpMax: 1774,
+                def: 499,
+                defMin: 156,
+                defMax: 499,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1891,
+                hpMin: 989,
+                hpMax: 1891,
+                def: 530,
+                defMin: 281,
+                defMax: 530,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2002,
+                hpMin: 1100,
+                hpMax: 2002,
+                def: 562,
+                defMin: 312,
+                defMax: 562,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.1)
+                ]
+            }),
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1100,
+                hpMin: 426,
+                hpMax: 1100,
+                def: 312,
+                defMin: 125,
+                defMax: 312,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.05)
+                ]
+            }),
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1329,
+                hpMin: 655,
+                hpMax: 1329,
+                def: 374,
+                defMin: 187,
+                defMax: 374,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            }),
+            new Gear({
+                name: 'シャルトリュー章',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1551,
+                hpMin: 878,
+                hpMax: 1551,
+                def: 437,
+                defMin: 250,
+                defMax: 437,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15),
+                    new Buff(AttrTypeId.Volt, 0.07)
+                ]
+            })
         ],
         bottom: [
-
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1182,
+                hpMin: 358,
+                hpMax: 1182,
+                def: 333,
+                defMin: 104,
+                defMax: 333,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1261,
+                hpMin: 659,
+                hpMax: 1261,
+                def: 354,
+                defMin: 187,
+                defMax: 354,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1335,
+                hpMin: 733,
+                hpMax: 1335,
+                def: 374,
+                defMin: 208,
+                defMax: 374,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 733,
+                hpMin: 284,
+                hpMax: 733,
+                def: 208,
+                defMin: 83,
+                defMax: 208,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 886,
+                hpMin: 437,
+                hpMax: 886,
+                def: 250,
+                defMin: 125,
+                defMax: 250,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            }),
+            new Gear({
+                name: 'VG.39',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1034,
+                hpMin: 585,
+                hpMax: 1034,
+                def: 291,
+                defMin: 166,
+                defMax: 291,
+                spd: 240,
+                buffs:[
+                    new Buff(AttrTypeId.ResistVolt, 0.15),
+                    new Buff(AttrTypeId.ResistGravity, -0.15)
+                ]
+            })
         ]
     }
 }
