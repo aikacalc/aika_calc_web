@@ -1,0 +1,85 @@
+:host>.root {
+
+    button,
+    select,
+    input {
+        font-size: 16px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    >.damage-rate-calc {
+        input {
+            margin: 0;
+            padding: 0;
+            min-width: 0;
+            width: 70px;
+            height: 24px;
+        }
+
+        >table {
+
+            td,
+            th {
+                border: 1px solid #000;
+            }
+
+            >tbody {
+                >tr {
+                    >td {}
+
+                    >.name {
+                        width: 200px;
+
+                        >input {
+                            box-sizing: border-box;
+                            width: 100%;
+                        }
+                    }
+
+                    >.addon-calc {
+                        >.addon {
+                            display: flex;
+
+                            >select {}
+
+                            >input {
+                                width: 50px;
+                            }
+                        }
+
+                        >.add {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                >.add-row>td>button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    >.damage-calc {
+        >table {
+
+            td,
+            th {
+                border: 1px solid #000;
+            }
+
+            >tbody {
+                >tr {
+                    >td {}
+                }
+
+                >.add-row>td>button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

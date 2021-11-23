@@ -5,16 +5,16 @@ import { AttrTypeId } from '../model/attr-type-id.enum';
 
 class DMGRateCase {
     name: string;
-    atk: number;
-    attr: number;
-    minDmg: number;
-    maxDmg: number;
-    addonCalc: { value: number, type: string }[];
+    atk: number = 0;
+    attr: number = 0;
+    minDmg: number = 0;
+    maxDmg: number = 0;
+    addonCalc: { value: number, type: string }[] = [];
     damageRate: number;
     // ----
-    avgDmg: number;
-    atkDmg: number;
-    attrDmg: number;
+    avgDmg: number = 0;
+    atkDmg: number = 0;
+    attrDmg: number = 0;
     // 訓練所的百級電鍋DEF
     enemyDef: number = 870;
 
@@ -25,18 +25,25 @@ class DMGRateCase {
         c.attr = 1105;
         c.minDmg = 1529;
         c.maxDmg = 1621;
+        c.addonCalc = [];
 
-        c.avgDmg = Math.floor((c.minDmg + c.maxDmg) / 2);
+        c.update();
+
+        // c.avgDmg = Math.floor((c.minDmg + c.maxDmg) / 2);
         // >1575
 
-        c.attrDmg = c.attr;
-        c.atkDmg = c.avgDmg - c.attr;
+        // c.attrDmg = c.attr;
+        // c.atkDmg = c.avgDmg - c.attr;
         // >470
 
-        c.enemyDef = c.atk - c.atkDmg;
-        // >870
-
         return c;
+    }
+    update(): void {
+        this.avgDmg = Math.floor((this.minDmg + this.maxDmg) / 2);
+        this.attrDmg = this.attr;
+        this.atkDmg = this.avgDmg - this.attr;
+        const expDmg = (this.atk - this.enemyDef) + this.attr;
+        this.damageRate = Number((this.avgDmg / expDmg).toFixed(4));
     }
 }
 
@@ -95,8 +102,28 @@ class DMGCalcPlan {
 })
 export class AikaDamageCalcComponent implements OnInit {
 
+    dmgrList: DMGRateCase[] = [];
+
     constructor() { }
 
-    ngOnInit(): void { }
+    ngOnInit(): void {
+        this.dmgrList.push(DMGRateCase.getAika());
+    }
+    removeRate(item: DMGRateCase): void {
+        const i = this.dmgrList.findIndex(v => v == item);
+        this.dmgrList.splice(i, 1);
+    }
+    addRate(): void {
+        if (this.dmgrList.length > 0) {
+            this.dmgrList.push(
+                Object.assign(
+                    new DMGRateCase(),
+                    this.dmgrList[this.dmgrList.length - 1]
+                )
+            );
+        } else {
+            this.dmgrList.push(new DMGRateCase());
+        }
+    }
 
 }
