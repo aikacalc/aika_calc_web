@@ -1,12 +1,14 @@
 <div class="top">
-    <img src="/favicon.ico" width="16" height="16">
+    <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
     <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-    <button class="calc" (click)="service.pageIndex=0">
+    <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
         <span>AikaCalc</span>
-    </button>
-    <button class="fan-calc" (click)="service.pageIndex=1">
+    </a>
+    <a class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" [routerLink]="['/afrc']">
         <span>AikaFanCalc</span>
-    </button>
+    </a>
+    <!-- <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
+        <span>AikaDamageCalc</span>
+    </a> -->
 </div>
-<app-aika-calc *ngIf="service.pageIndex==0"></app-aika-calc>
-<app-aika-fan-reach-calc *ngIf="service.pageIndex==1"></app-aika-fan-reach-calc>
+<router-outlet></router-outlet>

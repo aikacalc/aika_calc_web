@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AikaCalcComponent } from './aika-calc.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,8 +10,9 @@ import { FormsModule } from '@angular/forms';
     declarations: [AikaCalcComponent],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        RouterModule.forChild([{ path: '', component: AikaCalcComponent }])
     ],
-    exports: [AikaCalcComponent]
+    // exports: [AikaCalcComponent]
 })
 export class AikaCalcModule { }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppService } from './app.service';
 import { SwUpdate } from '@angular/service-worker';
 import { range } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -9,6 +10,10 @@ import { range } from 'rxjs';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+
+    get page(): string {
+        return location.pathname.replace(/^\//, '');
+    }
 
     constructor(
         public service: AppService,

@@ -26,7 +26,7 @@ export class AikaCalcComponent implements OnInit {
     public selectedCharacterTemplate: Character;
     public savedataJson: string = '';
     public character: Character;
-    
+
     constructor(
         public service: AppService
     ) { }

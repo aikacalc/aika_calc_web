@@ -6789,6 +6789,50 @@ class MikurazaAzuki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
 }
 
+class MikurazaAzuki70 extends Character {
+    name: string = '御蔵座 梓希_名称';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 722;
+    atkCloseMin: number = 200;
+    atkCloseMax: number = 722;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistIce(0.6),
+        AttrTypeDict.ResistFire(-0.6),
+        AttrTypeDict.ResistGravity(-0.3),
+        AttrTypeDict.Ice(0.56),
+        AttrTypeDict.Hammer(0.3),
+        AttrTypeDict.Twin(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MikurazaAzuki.long;
+    weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
+    equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
+    equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+}
+
 class KotomuraAkane01 extends Character {
     name: string = '琴村 朱音';
     rare: number = 1;
@@ -14213,6 +14257,7 @@ export const CharacterModels = {
     MikurazaAzuki02: new MikurazaAzuki02(),
     MikurazaAzuki04: new MikurazaAzuki04(),
     MikurazaAzuki05: new MikurazaAzuki05(),
+    MikurazaAzuki70: new MikurazaAzuki70(),
     KotomuraAkane01: new KotomuraAkane01(),
     KotomuraAkane02: new KotomuraAkane02(),
     KotomuraAkane04: new KotomuraAkane04(),
