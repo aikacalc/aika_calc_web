@@ -3,7 +3,11 @@
     button,
     select,
     input {
+        box-sizing: border-box;
+        height: 24px;
         font-size: 16px;
+        padding: 0;
+        margin: 0;
 
         &:hover {
             cursor: pointer;
@@ -18,84 +22,110 @@
         height: 24px;
     }
 
-    >.damage-rate-calc {
+    table {
 
+        td,
+        th {
+            min-width: 70px;
+            padding: 4px;
+            border: 1px solid #ccc;
+            white-space: nowrap;
 
-        >table {
-
-            td,
-            th {
-                border: 1px solid #000;
+            >.add {
+                width: 100%;
             }
+        }
 
-            >tbody {
-                >tr {
-                    >td {
-                        min-width: 70px;
-                    }
+        th {
+            font-size: 13px;
+        }
 
-                    >.name {
-                        min-width: 250px;
-                        width: 250px;
+        tr {
+            >.name {
+                min-width: 250px;
+                width: 250px;
+
+                >input {
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+            }
+        }
+
+        tr.add-row>td>button {
+            width: 100%;
+        }
+        tr>td.close>.wrapper>.delete{
+            margin-left: auto;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .hoz {
+            flex: 1;
+            // border-bottom: 1px dashed #aaa;
+        }
+
+        button.delete {
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f00;
+            background-color: #fff;
+        }
+
+        .phy {
+            background-color: #fcc;
+        }
+
+        .ene {
+            background-color: #ccf;
+        }
+    }
+
+
+    >.damage-rate-calc {
+        >table>tbody {
+            >tr {
+                >.addon-calc {
+                    >.addon {
+                        display: flex;
+
+                        >select {}
 
                         >input {
-                            box-sizing: border-box;
-                            width: 100%;
+                            width: 50px;
                         }
                     }
 
-                    >.addon-calc {
-                        >.addon {
-                            display: flex;
-
-                            >select {}
-
-                            >input {
-                                width: 50px;
-                            }
-                        }
-
-                        >.add {
-                            width: 100%;
-                        }
+                    >.add {
+                        width: 100%;
                     }
-                }
-
-                >.add-row>td>button {
-                    width: 100%;
-                    padding: 8px;
                 }
             }
+
+
         }
     }
 
     >.damage-calc {
-        >table {
-
-            td,
-            th {
-                border: 1px solid #000;
-            }
-
-            >tbody {
-                >tr {
-                    >td {}
-
-                    >.name {
-                        min-width: 250px;
-                        width: 250px;
-
-                        >input {
-                            box-sizing: border-box;
-                            width: 100%;
-                        }
+        >table>tbody>tr {
+            >.enemy-debuff{
+                min-width: 175px;
+                width: 175px;
+                >.wrapper{
+                    >.delete{
+                        margin-left: auto;
                     }
                 }
-
-                >.add-row>td>button {
-                    width: 100%;
-                    padding: 8px;
-                }
+            }
+            >.output-dmg {
+                min-width: 200px;
+                width: 200px;
             }
         }
     }

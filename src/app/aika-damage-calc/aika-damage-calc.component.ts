@@ -73,6 +73,7 @@ class DMGRateCase {
     static clone(dmgr: DMGRateCase): DMGRateCase {
         const n = Object.assign(new DMGRateCase(), dmgr);
         n.extraCalc = [];
+        dmgr.extraCalc.forEach(v => n.extraCalc.push(Object.assign({}, v)));
         return n;
     }
     update(): void {
@@ -92,23 +93,27 @@ class DMGRateCase {
     addExtraCalc(): void {
         this.extraCalc.push({ value: 0, type: '+' });
     }
+    deleteExtraCalc(item): void {
+        const i = this.extraCalc.findIndex(v => v == item);
+        this.extraCalc.splice(i, 1);
+    }
 }
 
 class DMGCalcPlan {
-    index: number;
-    name: string;
-    atk: number;
-    atkTypeId: AttrTypeId.None | AttrTypeId.Impact | AttrTypeId.Slash | AttrTypeId.Physical | AttrTypeId.Energy;
-    attr: number;
-    attrTypeId: AttrTypeId.None | AttrTypeId.Volt | AttrTypeId.Gravity | AttrTypeId.Fire | AttrTypeId.Ice;
-    damageRate: number;
+    name: string = '';
+    atk: number = 0;
+    atkTypeId: AttrTypeId.Impact | AttrTypeId.Slash | AttrTypeId.Physical | AttrTypeId.Energy = AttrTypeId.Physical;
+    attr: number = 0;
+    attrTypeId: AttrTypeId.Volt | AttrTypeId.Gravity | AttrTypeId.Fire | AttrTypeId.Ice = AttrTypeId.Volt;
+    damageRate: number = 1;
+    damageRatePercent: number;
 
-    enemyDef: number;
-    enemyAttrTypeId: AttrTypeId.None | AttrTypeId.Volt | AttrTypeId.Gravity | AttrTypeId.Fire | AttrTypeId.Ice;
-    enemyResist: AttrTypeId.None | AttrTypeId.Impact | AttrTypeId.Slash | AttrTypeId.Physical | AttrTypeId.Energy;
-    enemyDebuff: { attrTypeId: AttrTypeId, value: number }[];
+    enemyDef: number = 870;
+    enemyAttrTypeId: AttrTypeId.None | AttrTypeId.Volt | AttrTypeId.Gravity | AttrTypeId.Fire | AttrTypeId.Ice = AttrTypeId.None;
+    enemyResist: AttrTypeId.None | AttrTypeId.Impact | AttrTypeId.Slash | AttrTypeId.Physical | AttrTypeId.Energy = AttrTypeId.None;
+    enemyDebuff: { attrTypeId: AttrTypeId, value: number }[] = [];
 
-    finalDamageBuff: number;
+    finalDamageBuff: number = 0;
 
     outputAtkDamage: number;
     outputAttrDamage: number;
@@ -123,44 +128,69 @@ class DMGCalcPlan {
         p.atkTypeId = AttrTypeId.Physical;
         p.attr = 1105;
         p.attrTypeId = AttrTypeId.Volt;
-        p.damageRate = 1;
+        p.damageRatePercent = 100;
+        p.damageRate = p.damageRatePercent / 100;
         p.enemyDef = 870;
         p.enemyAttrTypeId = AttrTypeId.None;
         p.enemyResist = AttrTypeId.None;
         p.enemyDebuff = [];
         p.finalDamageBuff = 0;
-
-
-        // p.enemyDef = 
-
-        // 1579, 494
-        // ~470~
-        // 1530, 445
-        // 870
         p.update();
 
         return p;
     }
-    clone(dmgc: DMGCalcPlan): DMGCalcPlan {
+    static clone(dmgc: DMGCalcPlan): DMGCalcPlan {
         const n = Object.assign(new DMGCalcPlan(), dmgc);
         n.enemyDebuff = [];
+        dmgc.enemyDebuff.forEach(v => { n.enemyDebuff.push(Object.assign({}, v)) });
         return n;
     }
     update(): void {
+        this.damageRate = this.damageRatePercent / 100;
+
         this.outputAtkDamage = this.atk - this.enemyDef;
         if (this.outputAtkDamage <= 0) {
             this.outputAtkDamage = 1;
         }
+        this.outputAtkDamage *= this.damageRate;
+        this.outputAtkDamage = Math.floor(this.outputAtkDamage);
+        if (this.enemyResist == this.atkTypeId) {
+            this.outputAtkDamage = 0;
+        }
+
+
         const attrName = AttrTypeId[this.attrTypeId];
         const enemyAttrName = AttrTypeId[this.enemyAttrTypeId];
-        const attrDamageRate_ = attrDamageRate[attrName][enemyAttrName];
-        this.outputAttrDamage = Math.floor(this.attr * attrDamageRate_);
+        let attrDamageRate_ = attrDamageRate[attrName][enemyAttrName];
+        this.enemyDebuff
+            .filter(v => v.attrTypeId == this.attrTypeId)
+            .forEach(v => {
+                attrDamageRate_ += (v.value / 100);
+            });
 
-        this.outputDamage = (this.outputAtkDamage + this.outputAttrDamage) * (1 + this.finalDamageBuff);
-        this.outputDamageMin = this.outputDamage * 0.97;
-        this.outputDamageMax = this.outputDamage * 1.03;
+        this.outputAttrDamage = Math.floor(this.attr * attrDamageRate_);
+        this.outputAttrDamage *= this.damageRate;
+        this.outputAttrDamage = Math.floor(this.outputAttrDamage);
+
+        this.outputDamage = Math.floor((this.outputAtkDamage + this.outputAttrDamage) * (1 + (this.finalDamageBuff/100)));
+        this.outputDamageMin = Math.floor(this.outputDamage * 0.97);
+        this.outputDamageMax = Math.floor(this.outputDamage * 1.03);
     }
 
+    // addEnemyResist(): void {
+    //     this.enemyResist.push(AttrTypeId.None);
+    // }
+    // deleteEnemyResist(item: AttrTypeId): void {
+    //     const i = this.enemyResist.findIndex(v => v == item);
+    //     this.enemyResist.splice(i, 1);
+    // }
+    addEnemyDebuff(): void {
+        this.enemyDebuff.push({ attrTypeId: AttrTypeId.Volt, value: 0 });
+    }
+    deleteEnemyDebuff(item: any): void {
+        const i = this.enemyDebuff.findIndex(v => v == item);
+        this.enemyDebuff.splice(i, 1);
+    }
 }
 
 @Component({
@@ -190,6 +220,20 @@ export class AikaDamageCalcComponent implements OnInit {
             );
         } else {
             this.dmgrList.push(new DMGRateCase());
+        }
+    }
+
+    removeCalc(item: DMGCalcPlan): void {
+        const i = this.dmgcList.findIndex(v => v == item);
+        this.dmgcList.splice(i, 1);
+    }
+    addCalc(): void {
+        if (this.dmgcList.length > 0) {
+            this.dmgcList.push(
+                DMGCalcPlan.clone(this.dmgcList[this.dmgcList.length - 1])
+            );
+        } else {
+            this.dmgcList.push(new DMGCalcPlan());
         }
     }
 

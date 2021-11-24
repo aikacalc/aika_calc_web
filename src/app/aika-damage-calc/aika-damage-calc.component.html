@@ -1,6 +1,6 @@
 <div class="root">
     <div class="damage-rate-calc">
-        <div class="title">weapon rate calc</div>
+        <div class="title">攻擊傷害比率計算 要打訓練場的靶子來計算</div>
         <table>
             <thead>
                 <tr>
@@ -11,7 +11,7 @@
                     <th class="max-dmg">最大傷害</th>
                     <th class="addon-calc">附加計算</th>
                     <th class="output-dmg-rate">傷害比率</th>
-                    <th class="close"></th>
+                    <!-- <th class="close"></th> -->
                 </tr>
             </thead>
             <tbody>
@@ -40,96 +40,166 @@
                                 <option value="÷">÷</option>
                             </select>
                             <input type="number" [(ngModel)]="extraItem.value" (ngModelChange)="item.update()">
-                            <div class="hoz"></div>
-                            <button>X</button>
+                            <button class="delete" (click)="item.deleteExtraCalc(extraItem);item.update()">X</button>
                         </div>
                         <button class="add" (click)="item.addExtraCalc()">[+]</button>
                     </td>
-                    <td class="output-dmg-rate">{{item.damageRate}}</td>
+                    <td class="output-dmg-rate">{{(item.damageRate*100)}}%</td>
                     <td class="close">
-                        <div class="hoz"></div>
-                        <button (click)="removeRate(item)">X</button>
+                        <div class="wrapper">
+                            <button class="delete" (click)="removeRate(item)">X</button>
+                        </div>
                     </td>
                 </tr>
                 <tr class="add-row">
-                    <td colspan="8">
+                    <td colspan="7">
                         <button class="add" (click)="addRate()">[+]</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="damage-calc">
-        <div class="title">damage-calc</div>
+    <!-- <div class="enemy-def-calc">
+        <div class="title">敵人DEF計算</div>
         <table>
             <thead>
                 <tr>
                     <th class="name">名稱</th>
-                    <th class="attack-atk">ATK</th>
-                    <th class="attack-attr">屬性</th>
-                    <th class="attack-rate">比率</th>
-                    <th class="final-dmg-buff">傷害buff</th>
-                    <th class="enemy-def">目標DEF</th>
-                    <th class="enemy-attr">目標屬性</th>
-                    <th class="enemy-resist">目標耐性</th>
-                    <th class="enemy-debuff">目標debuff</th>
-                    <th class="calc-dmg-atk">物理傷害</th>
-                    <th class="calc-dmg-attr">屬性傷害</th>
-                    <th class="output-dmg">輸出傷害</th>
+                    <th class="attack-atk phy">ATK</th>
+                    <th class="attack-attr ene">屬性</th>
+                    <th class="attack-rate">傷害比率</th>
+                    <th class="enemy-attr ene">敵人屬性</th>
+                    <th class="enemy-resist phy">敵人耐性</th>
+                    <th class="enemy-def phy">敵人DEF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <!-- <div class="debuff-calc">
+        <div class="title">DEBUFF計算</div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="name">名稱</th>
+                    <th class="attack-atk phy">ATK</th>
+                    <th class="attack-attr ene">屬性</th>
+                    <th class="attack-rate">傷害比率</th>
+                    <th class="enemy-attr ene">敵人屬性</th>
+                    <th class="enemy-resist phy">敵人耐性</th>
+                    <th class="enemy-def phy">敵人DEF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <div class="damage-calc">
+        <div class="title">輸出傷害計算</div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="name">名稱</th>
+                    <th class="attack-atk phy">ATK</th>
+                    <th class="attack-attr ene">屬性</th>
+                    <th class="attack-rate">傷害比率</th>
+                    <th class="final-dmg-buff">最終傷害<br>加成</th>
+                    <th class="enemy-def phy">敵人DEF</th>
+                    <th class="enemy-attr ene">敵人屬性</th>
+                    <th class="enemy-resist phy">敵人耐性</th>
+                    <th class="enemy-debuff ene">敵人debuff</th>
+                    <th class="calc-dmg-atk phy">物理傷害</th>
+                    <th class="calc-dmg-attr ene">屬性傷害</th>
+                    <th class="output-dmg">輸出傷害<br>最低~理論~最高</th>
+                    <!-- <th></th> -->
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let item of dmgcList">
-                    <td class="name">{{item.name}}</td>
-                    <td class="attack-atk">
-                        <select [(ngModel)]="item.atkTypeId" (ngModelChange)="item.update()">
-                            <option value="1">打擊</option>
-                            <option value="2">斬擊</option>
-                            <option value="3" selected>實彈</option>
-                            <option value="4">能量</option>
-                        </select>
-                        <input type="text" [(ngModel)]="item.atk" (ngModelChange)="item.update()">
+                    <td class="name">
+                        <input type="text" [(ngModel)]="item.name" (ngModelChange)="item.update()">
                     </td>
-                    <td class="attack-attr">
-                        <select [(ngModel)]="item.attrTypeId" (ngModelChange)="item.update()">
-                            <option value="5" selected>電擊</option>
-                            <option value="6">重力</option>
-                            <option value="7">燒夷</option>
-                            <option value="8">冷擊</option>
-                        </select>
-                        <input type="text" [(ngModel)]="item.attr" (ngModelChange)="item.update()">
+                    <td class="attack-atk phy">
+                        <div class="wrapper">
+                            <select [(ngModel)]="item.atkTypeId" (ngModelChange)="item.update()">
+                                <option value="1">打擊</option>
+                                <option value="2">斬擊</option>
+                                <option value="3">實彈</option>
+                                <option value="4">能量</option>
+                            </select>
+                            <input type="number" [(ngModel)]="item.atk" (ngModelChange)="item.update()">
+                        </div>
+                    </td>
+                    <td class="attack-attr ene">
+                        <div class="wrapper">
+                            <select [(ngModel)]="item.attrTypeId" (ngModelChange)="item.update()">
+                                <option value="5">電擊</option>
+                                <option value="6">重力</option>
+                                <option value="7">燒夷</option>
+                                <option value="8">冷擊</option>
+                            </select>
+                            <input type="number" [(ngModel)]="item.attr" (ngModelChange)="item.update()">
+                        </div>
                     </td>
                     <td class="attack-rate">
-                        <input type="text" [(ngModel)]="item.damageRate" (ngModelChange)="item.update()">
+                        <input type="number" [(ngModel)]="item.damageRatePercent" (ngModelChange)="item.update()">%
                     </td>
                     <td class="final-dmg-buff">
-                        <button class="add">[+]</button>
+                        <input type="number" [(ngModel)]="item.finalDamageBuff" (ngModelChange)="item.update()">%
                     </td>
-                    <td class="enemy-def">
-                        <input type="text" [(ngModel)]="item.enemyDef" (ngModelChange)="item.update()">
+                    <td class="enemy-def phy">
+                        <input type="number" [(ngModel)]="item.enemyDef" (ngModelChange)="item.update()">
                     </td>
-                    <td class="enemy-attr">
+                    <td class="enemy-attr ene">
                         <select [(ngModel)]="item.enemyAttrTypeId" (ngModelChange)="item.update()">
-                            <option value="22" selected>無</option>
+                            <option value="22">無</option>
                             <option value="5">電擊</option>
                             <option value="6">重力</option>
                             <option value="7">燒夷</option>
                             <option value="8">冷擊</option>
                         </select>
                     </td>
-                    <td class="enemy-resist">
-                        <button class="add">[+]</button>
+                    <td class="enemy-resist phy">
+                        <select [(ngModel)]="item.enemyResist" (ngModelChange)="item.update()">
+                            <option value="22">無</option>
+                            <option value="1">打擊</option>
+                            <option value="2">斬擊</option>
+                            <option value="3">實彈</option>
+                            <option value="4">能量</option>
+                        </select>
                     </td>
-                    <td class="enemy-debuff">
-                        <button class="add">[+]</button>
+                    <td class="enemy-debuff ene">
+                        <div class="wrapper" *ngFor="let item2 of item.enemyDebuff">
+                            <select [(ngModel)]="item2.attrTypeId" (ngModelChange)="item.update()">
+                                <option value="5">電擊</option>
+                                <option value="6">重力</option>
+                                <option value="7">燒夷</option>
+                                <option value="8">冷擊</option>
+                            </select>
+                            <input type="number" [(ngModel)]="item2.value" (ngModelChange)="item.update()">%
+                            <button class="delete" (click)="item.deleteEnemyDebuff(item2);item.update()">X</button>
+                        </div>
+                        <button class="add" (click)="item.addEnemyDebuff()">[+]</button>
                     </td>
-                    <td class="calc-dmg-atk">{{item.outputAtkDamage}}</td>
-                    <td class="calc-dmg-attr">{{item.outputAttrDamage}}</td>
-                    <td class="output-dmg">{{item.outputDamage}}</td>
+                    <td class="calc-dmg-atk phy">{{item.outputAtkDamage}}</td>
+                    <td class="calc-dmg-attr ene">{{item.outputAttrDamage}}</td>
+                    <td class="output-dmg">{{item.outputDamageMin}}~{{item.outputDamage}}~{{item.outputDamageMax}}</td>
+                    <td class="close">
+                        <div class="wrapper">
+                            <button class="delete" (click)="removeCalc(item)">X</button>
+                        </div>
+                    </td>
                 </tr>
                 <tr class="add-row">
                     <td colspan="12">
-                        <button class="add">[+]</button>
+                        <button class="add" (click)="addCalc()">[+]</button>
                     </td>
                 </tr>
             </tbody>
