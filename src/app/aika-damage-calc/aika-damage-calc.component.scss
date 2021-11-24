@@ -10,14 +10,16 @@
         }
     }
 
+    input {
+        margin: 0;
+        padding: 0;
+        min-width: 0;
+        width: 70px;
+        height: 24px;
+    }
+
     >.damage-rate-calc {
-        input {
-            margin: 0;
-            padding: 0;
-            min-width: 0;
-            width: 70px;
-            height: 24px;
-        }
+
 
         >table {
 
@@ -28,10 +30,13 @@
 
             >tbody {
                 >tr {
-                    >td {}
+                    >td {
+                        min-width: 70px;
+                    }
 
                     >.name {
-                        width: 200px;
+                        min-width: 250px;
+                        width: 250px;
 
                         >input {
                             box-sizing: border-box;
@@ -58,6 +63,7 @@
 
                 >.add-row>td>button {
                     width: 100%;
+                    padding: 8px;
                 }
             }
         }
@@ -74,10 +80,21 @@
             >tbody {
                 >tr {
                     >td {}
+
+                    >.name {
+                        min-width: 250px;
+                        width: 250px;
+
+                        >input {
+                            box-sizing: border-box;
+                            width: 100%;
+                        }
+                    }
                 }
 
                 >.add-row>td>button {
                     width: 100%;
+                    padding: 8px;
                 }
             }
         }

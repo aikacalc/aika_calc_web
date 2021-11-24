@@ -32,18 +32,18 @@
                         <input type="number" [(ngModel)]="item.maxDmg" (ngModelChange)="item.update()">
                     </td>
                     <td class="addon-calc">
-                        <div class="addon" *ngFor="let addon of item.addonCalc">
-                            <select>
-                                <option selected>+</option>
-                                <option>-</option>
-                                <option>×</option>
-                                <option>÷</option>
+                        <div class="addon" *ngFor="let extraItem of item.extraCalc">
+                            <select [(ngModel)]="extraItem.type" (ngModelChange)="item.update()">
+                                <option value="+" selected>+</option>
+                                <option value="-">-</option>
+                                <option value="×">×</option>
+                                <option value="÷">÷</option>
                             </select>
-                            <input type="number">
+                            <input type="number" [(ngModel)]="extraItem.value" (ngModelChange)="item.update()">
                             <div class="hoz"></div>
                             <button>X</button>
                         </div>
-                        <button class="add">[+]</button>
+                        <button class="add" (click)="item.addExtraCalc()">[+]</button>
                     </td>
                     <td class="output-dmg-rate">{{item.damageRate}}</td>
                     <td class="close">
@@ -68,30 +68,64 @@
                     <th class="attack-atk">ATK</th>
                     <th class="attack-attr">屬性</th>
                     <th class="attack-rate">比率</th>
+                    <th class="final-dmg-buff">傷害buff</th>
                     <th class="enemy-def">目標DEF</th>
                     <th class="enemy-attr">目標屬性</th>
                     <th class="enemy-resist">目標耐性</th>
                     <th class="enemy-debuff">目標debuff</th>
                     <th class="calc-dmg-atk">物理傷害</th>
                     <th class="calc-dmg-attr">屬性傷害</th>
-                    <th class="calc-dmg-final">傷害buff</th>
                     <th class="output-dmg">輸出傷害</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="name"></td>
-                    <td class="attack-atk"></td>
-                    <td class="attack-attr"></td>
-                    <td class="attack-rate"></td>
-                    <td class="enemy-def"></td>
-                    <td class="enemy-attr"></td>
-                    <td class="enemy-resist"></td>
-                    <td class="enemy-debuff"></td>
-                    <td class="calc-dmg-atk"></td>
-                    <td class="calc-dmg-attr"></td>
-                    <td class="calc-dmg-final"></td>
-                    <td class="output-dmg"></td>
+                <tr *ngFor="let item of dmgcList">
+                    <td class="name">{{item.name}}</td>
+                    <td class="attack-atk">
+                        <select [(ngModel)]="item.atkTypeId" (ngModelChange)="item.update()">
+                            <option value="1">打擊</option>
+                            <option value="2">斬擊</option>
+                            <option value="3" selected>實彈</option>
+                            <option value="4">能量</option>
+                        </select>
+                        <input type="text" [(ngModel)]="item.atk" (ngModelChange)="item.update()">
+                    </td>
+                    <td class="attack-attr">
+                        <select [(ngModel)]="item.attrTypeId" (ngModelChange)="item.update()">
+                            <option value="5" selected>電擊</option>
+                            <option value="6">重力</option>
+                            <option value="7">燒夷</option>
+                            <option value="8">冷擊</option>
+                        </select>
+                        <input type="text" [(ngModel)]="item.attr" (ngModelChange)="item.update()">
+                    </td>
+                    <td class="attack-rate">
+                        <input type="text" [(ngModel)]="item.damageRate" (ngModelChange)="item.update()">
+                    </td>
+                    <td class="final-dmg-buff">
+                        <button class="add">[+]</button>
+                    </td>
+                    <td class="enemy-def">
+                        <input type="text" [(ngModel)]="item.enemyDef" (ngModelChange)="item.update()">
+                    </td>
+                    <td class="enemy-attr">
+                        <select [(ngModel)]="item.enemyAttrTypeId" (ngModelChange)="item.update()">
+                            <option value="22" selected>無</option>
+                            <option value="5">電擊</option>
+                            <option value="6">重力</option>
+                            <option value="7">燒夷</option>
+                            <option value="8">冷擊</option>
+                        </select>
+                    </td>
+                    <td class="enemy-resist">
+                        <button class="add">[+]</button>
+                    </td>
+                    <td class="enemy-debuff">
+                        <button class="add">[+]</button>
+                    </td>
+                    <td class="calc-dmg-atk">{{item.outputAtkDamage}}</td>
+                    <td class="calc-dmg-attr">{{item.outputAttrDamage}}</td>
+                    <td class="output-dmg">{{item.outputDamage}}</td>
                 </tr>
                 <tr class="add-row">
                     <td colspan="12">
@@ -100,39 +134,5 @@
                 </tr>
             </tbody>
         </table>
-        <div class="title">
-            <div class="name"></div>
-            <div class="attack-atk"></div>
-            <div class="attack-attr"></div>
-            <div class="attack-rate"></div>
-            <div class="enemy-def"></div>
-            <div class="enemy-attr"></div>
-            <div class="enemy-resist"></div>
-            <div class="enemy-debuff"></div>
-            <div class="calc-dmg-atk"></div>
-            <div class="calc-dmg-attr"></div>
-            <div class="calc-dmg-final"></div>
-            <div class="output-dmg"></div>
-        </div>
-        <div class="list">
-            <div class="plan">
-                <div class="drag-move"></div>
-                <div class="name"></div>
-                <div class="attack-atk"></div>
-                <div class="attack-attr"></div>
-                <div class="attack-dmg-rate"></div>
-                <div class="attack-dmg-buff"></div>
-                <div class="enemy-def"></div>
-                <div class="enemy-attr"></div>
-                <div class="enemy-resist"></div>
-                <div class="enemy-debuff"></div>
-                <div class="calc-dmg-atk"></div>
-                <div class="calc-dmg-attr"></div>
-                <div class="calc-dmg-final"></div>
-                <div class="output-dmg"></div>
-                <div class="close"></div>
-            </div>
-            <button class="add">[+]</button>
-        </div>
     </div>
 </div>
