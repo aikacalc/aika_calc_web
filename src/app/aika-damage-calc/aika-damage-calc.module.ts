@@ -11,8 +11,8 @@ import { FormsModule } from '@angular/forms';
     imports: [
         CommonModule,
         FormsModule,
-        RouterModule.forChild([{ path: '', component: AikaDamageCalcComponent }])
+        // RouterModule.forChild([{ path: '', component: AikaDamageCalcComponent }])
     ],
-    // exports: [AikaDamageCalcComponent]
+    exports: [AikaDamageCalcComponent]
 })
 export class AikaDamageCalcModule { }

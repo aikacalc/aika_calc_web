@@ -15,9 +15,9 @@ import { RouterModule } from '@angular/router';
     declarations: [AppComponent],
     imports: [
         BrowserModule,
+        AikaCalcModule,
         AikaFanReachCalcModule,
         AikaDamageCalcModule,
-        AikaCalcModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
         // RouterModule.forRoot([
         //     { path: 'abs', loadChildren: () => import('./aika-battle-simulator/aika-battle-simulator.module').then(m => m.AikaBattleSimulatorModule) },

@@ -11,8 +11,8 @@ import { RouterModule } from '@angular/router';
     imports: [
         CommonModule,
         FormsModule,
-        RouterModule.forChild([{ path: '', component: AikaFanReachCalcComponent }])
+        // RouterModule.forChild([{ path: '', component: AikaFanReachCalcComponent }])
     ],
-    // exports: [AikaFanReachCalcComponent]
+    exports: [AikaFanReachCalcComponent]
 })
 export class AikaFanReachCalcModule { }
