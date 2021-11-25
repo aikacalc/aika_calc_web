@@ -217,7 +217,13 @@ export class AikaDamageCalcComponent implements OnInit {
 蓄力-榴彈頭:   100%
 蓄力-榴彈爆炸: 150%`,
         finalDmgBuff: `愛花AN槍的KISS3詞條是最終傷害+10%`,
-        enemyDef: `訓練場的100級靶子DEF是870`,
+        enemyDef: `訓練場的100級靶子DEF是870
+其他BOSS的DEF簡單參照
+Lv50: 450
+Lv60: 530
+Lv70: 640
+Lv80: 720
+Lv90: 800`,
         enemyResist: ``,
         enemyDebuff: `愛花ANSP是降電防100%`,
         calcDmgAtk: ``,
