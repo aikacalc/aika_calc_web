@@ -38,6 +38,10 @@
 
         th {
             font-size: 13px;
+
+            &[title] {
+                text-decoration: underline dotted #000;
+            }
         }
 
         tr {
@@ -55,7 +59,8 @@
         tr.add-row>td>button {
             width: 100%;
         }
-        tr>td.close>.wrapper>.delete{
+
+        tr>td.close>.wrapper>.delete {
             margin-left: auto;
         }
 
@@ -114,15 +119,17 @@
 
     >.damage-calc {
         >table>tbody>tr {
-            >.enemy-debuff{
+            >.enemy-debuff {
                 min-width: 175px;
                 width: 175px;
-                >.wrapper{
-                    >.delete{
+
+                >.wrapper {
+                    >.delete {
                         margin-left: auto;
                     }
                 }
             }
+
             >.output-dmg {
                 min-width: 200px;
                 width: 200px;

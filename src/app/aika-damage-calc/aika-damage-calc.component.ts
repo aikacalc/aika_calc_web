@@ -172,7 +172,7 @@ class DMGCalcPlan {
         this.outputAttrDamage *= this.damageRate;
         this.outputAttrDamage = Math.floor(this.outputAttrDamage);
 
-        this.outputDamage = Math.floor((this.outputAtkDamage + this.outputAttrDamage) * (1 + (this.finalDamageBuff/100)));
+        this.outputDamage = Math.floor((this.outputAtkDamage + this.outputAttrDamage) * (1 + (this.finalDamageBuff / 100)));
         this.outputDamageMin = Math.floor(this.outputDamage * 0.97);
         this.outputDamageMax = Math.floor(this.outputDamage * 1.03);
     }
@@ -202,6 +202,31 @@ export class AikaDamageCalcComponent implements OnInit {
 
     dmgrList: DMGRateCase[] = [];
     dmgcList: DMGCalcPlan[] = [];
+
+    help = {
+        atk: `角色版面atk`,
+        attr: `角色版面屬性`,
+        dmgRate: `單一攻擊的傷害比率, 可以用上面的比率計算器算
+用愛花原版步槍做個栗子：
+一般子彈
+  站立:    100%
+  衝刺-前: 65%
+  衝刺-後: 65% 
+  衝刺-側: 90%
+蓄力-子彈: 57.5%
+蓄力-榴彈頭:   100%
+蓄力-榴彈爆炸: 150%`,
+        finalDmgBuff: `愛花AN槍的KISS3詞條是最終傷害+10%`,
+        enemyDef: `訓練場的100級靶子DEF是870`,
+        enemyResist: ``,
+        enemyDebuff: `愛花ANSP是降電防100%`,
+        calcDmgAtk: ``,
+        calcDmgAttr: ``,
+        outputDmg: ``,
+    }
+
+
+
 
     constructor() { }
 

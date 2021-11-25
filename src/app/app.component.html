@@ -2,13 +2,13 @@
     <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
     <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
     <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
-        <span>AikaCalc</span>
+        <span>愛花版面計算</span>
     </a>
     <a class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" [routerLink]="['/afrc']">
-        <span>AikaFanCalc</span>
+        <span>愛花粉絲計算</span>
     </a>
     <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
-        <span>AikaDamageCalc</span>
+        <span>愛花輸出計算</span>
     </a>
 </div>
 <router-outlet></router-outlet>
