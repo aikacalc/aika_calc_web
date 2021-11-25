@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AikaCalcModule } from './aika-calc/aika-calc.module';
 import { AikaFanReachCalcModule } from './aika-fan-reach-calc/aika-fan-reach-calc.module';
+import { AikaDamageCalcModule } from "./aika-damage-calc/aika-damage-calc.module";
 import { AppService } from './app.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -14,14 +15,17 @@ import { RouterModule } from '@angular/router';
     declarations: [AppComponent],
     imports: [
         BrowserModule,
+        AikaFanReachCalcModule,
+        AikaDamageCalcModule,
+        AikaCalcModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-        RouterModule.forRoot([
-            { path: 'abs', loadChildren: () => import('./aika-battle-simulator/aika-battle-simulator.module').then(m => m.AikaBattleSimulatorModule) },
-            { path: 'afrc', loadChildren: () => import('./aika-fan-reach-calc/aika-fan-reach-calc.module').then(m => m.AikaFanReachCalcModule) },
-            { path: 'adc', loadChildren: () => import('./aika-damage-calc/aika-damage-calc.module').then(m => m.AikaDamageCalcModule) },
-            { path: '', loadChildren: () => import('./aika-calc/aika-calc.module').then(m => m.AikaCalcModule) },
-            { path: '**', redirectTo: '' }
-        ])
+        // RouterModule.forRoot([
+        //     { path: 'abs', loadChildren: () => import('./aika-battle-simulator/aika-battle-simulator.module').then(m => m.AikaBattleSimulatorModule) },
+        //     { path: 'afrc', loadChildren: () => import('./aika-fan-reach-calc/aika-fan-reach-calc.module').then(m => m.AikaFanReachCalcModule) },
+        //     { path: 'adc', loadChildren: () => import('./aika-damage-calc/aika-damage-calc.module').then(m => m.AikaDamageCalcModule) },
+        //     { path: '', loadChildren: () => import('./aika-calc/aika-calc.module').then(m => m.AikaCalcModule) },
+        //     { path: '**', redirectTo: '' }
+        // ])
     ],
     providers: [
         AppService

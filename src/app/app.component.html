@@ -1,7 +1,7 @@
 <div class="top">
     <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
     <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-    <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
+    <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
         <span>愛花版面計算</span>
     </a>
     <a class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" [routerLink]="['/afrc']">
@@ -9,6 +9,18 @@
     </a>
     <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
         <span>愛花輸出計算</span>
-    </a>
+    </a> -->
+    <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="page=''">
+        <span>愛花版面計算</span>
+    </button>
+    <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="page='afrc'">
+        <span>愛花粉絲計算</span>
+    </button>
+    <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="page='adc'">
+        <span>愛花輸出計算</span>
+    </button>
 </div>
-<router-outlet></router-outlet>
+<app-aika-calc *ngIf="page==''"></app-aika-calc>
+<app-aika-fan-reach-calc *ngIf="page=='afrc'"></app-aika-fan-reach-calc>
+<app-aika-damage-calc *ngIf="page=='adc'"></app-aika-damage-calc>
+<!-- <router-outlet></router-outlet> -->

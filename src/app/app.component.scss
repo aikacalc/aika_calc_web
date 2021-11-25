@@ -1,20 +1,24 @@
 :host {
     >.top {
         margin-bottom: 8px;
+        width: 100%;
+        display: flex;
 
         >.aika {
             margin-right: 8px;
         }
 
-        >a.selected {
+        >button.selected {
             position: relative;
             padding-left: 20px;
+            display: flex;
+            align-items: center;
 
             &::after {
                 content: '';
                 position: absolute;
                 left: 0;
-                bottom: 0;
+                bottom: 1px;
                 width: 16px;
                 height: 16px;
                 background-position: center;
@@ -24,7 +28,7 @@
             }
         }
 
-        >a+a {
+        >button+button {
             margin-left: 10px;
         }
 

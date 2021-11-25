@@ -11,9 +11,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-    get page(): string {
-        return location.pathname.replace(/^\//, '');
-    }
+    // get page(): string {
+    //     return location.pathname.replace(/^\//, '');
+    // }
+    page: string = '';
 
     constructor(
         public service: AppService,
