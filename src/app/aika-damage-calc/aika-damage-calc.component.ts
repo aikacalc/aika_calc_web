@@ -223,9 +223,14 @@ Lv50: 450
 Lv60: 530
 Lv70: 640
 Lv80: 720
-Lv90: 800`,
+Lv90: 800
+Lv100:880
+Lv150:1280
+Lv200:1680`,
         enemyResist: ``,
-        enemyDebuff: `愛花ANSP是降電防100%`,
+        enemyDebuff: `愛花ANSP是降電防100%
+綾香火炷降火防80%
+睦海冰柱降冷防80%`,
         calcDmgAtk: ``,
         calcDmgAttr: ``,
         outputDmg: ``,
