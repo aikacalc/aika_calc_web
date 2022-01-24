@@ -62,7 +62,15 @@
         display: flex;
         flex-wrap: wrap;
 
-        input:not([type="range"]),
+        input:not([type="range"]) {
+            box-sizing: border-box;
+            margin: 2px;
+            width: 75px;
+            height: 24px;
+            padding: 0 0 0 5px;
+            font-size: 16px;
+        }
+
         select {
             // appearance: none;
             box-sizing: border-box;
@@ -140,6 +148,11 @@
                             }
                         }
 
+                        >tr>td.enigma {
+                            width: 0px;
+                            text-align: center;
+                        }
+
                         >tr:nth-child(n+2)>td.name {
                             width: 80px;
                             padding: 4px;
@@ -153,7 +166,6 @@
                         >tr.level>td>.wrapper {
                             input[type=number] {
                                 margin-right: 5px;
-                                width: 50px;
                             }
 
                             input[type=range] {

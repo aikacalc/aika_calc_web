@@ -14,11 +14,11 @@
                 <table class="status-table">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="2">{{character.name+' ★'+character.rare}}</td>
+                            <td class="title-cell" colspan="3">{{character.name+' ★'+character.rare}}</td>
                         </tr>
                         <tr class="level">
                             <td class="name">Lv</td>
-                            <td>
+                            <td colspan="2">
                                 <div class="wrapper-row">
                                     <input type="number" [(ngModel)]="character.level" [attr.min]="character.levelMin"
                                         [attr.max]="character.levelMax" (ngModelChange)="character.updateStatus()">
@@ -31,7 +31,7 @@
                         </tr>
                         <tr class="level">
                             <td class="name">上限解放</td>
-                            <td>
+                            <td colspan="2">
                                 <div class="wrapper-row">
                                     <input type="number" [disabled]="character.level!=character.levelMax" [attr.min]="0"
                                         [attr.max]="character.gradeUpLimit" [(ngModel)]="character.gradeUp"
@@ -44,39 +44,99 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr class="level">
+                            <td class="name">熟練等級</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" min="1" max="30" [(ngModel)]="character.masterLevel"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>1</span>
+                                    <input type="range" min="1" max="30" [(ngModel)]="character.masterLevel"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>MAX(30)</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="level">
+                            <td class="name" title="熟練等級到MAX(30)之後才會啟用">熟練等級+</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" min="0" max="999" 
+                                    [disabled]="character.masterLevel!=30"
+                                    [(ngModel)]="character.masterPlus"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>0</span>
+                                    <input type="range" min="0" max="999" 
+                                    [disabled]="character.masterLevel!=30"
+                                    [(ngModel)]="character.masterPlus"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>999</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="enigma">ENIGMA</td>
+                            <td>結果</td>
+                        </tr>
                         <tr class="hp">
                             <td class="name">HP</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.hpEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc">(角色:{{character.hp}})</div> -->
                                 <div class="warpper">{{character.hp}}</div>
                             </td>
                         </tr>
                         <tr class="shot-atk">
                             <td class="name">射擊ATK</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.atkShotEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc"></div> -->
                                 <div class="warpper">{{character.atkShot}}</div>
                             </td>
                         </tr>
                         <tr class="shot-attr">
                             <td class="name">屬性值</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.attrShotEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc"></div> -->
                                 <div class="warpper" [style.color]="character.weaponShot.attrColor">
                                     {{character.attrShot}}</div>
                             </td>
                         </tr>
                         <tr class="close-atk">
                             <td class="name">近身ATK</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.atkCloseEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc"></div> -->
                                 <div class="warpper">{{character.atkClose}}</div>
                             </td>
                         </tr>
                         <tr class="close-attr">
                             <td class="name">屬性值</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.attrCloseEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc"></div> -->
                                 <div class="warpper" [style.color]="character.weaponClose.attrColor">
                                     {{character.attrClose}}
                                 </div>
@@ -84,14 +144,19 @@
                         </tr>
                         <tr class="close-attr">
                             <td class="name">DEF</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.defEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
                             <td>
-                                <!-- <div class="calc"></div> -->
                                 <div class="warpper">{{character.def}}</div>
                             </td>
                         </tr>
                         <tr class="buff-list-tr">
                             <td class="name">Buff</td>
-                            <td>
+                            <td colspan="2">
                                 <div class="wrapper-row">
                                     <div class="buff-list">
                                         <div class="buff" *ngFor="let buff of character.buffs">
