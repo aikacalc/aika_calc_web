@@ -61,22 +61,18 @@
                             <td class="name" title="熟練等級到MAX(30)之後才會啟用">熟練等級+</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
-                                    <input type="number" min="0" max="999" 
-                                    [disabled]="character.masterLevel!=30"
-                                    [(ngModel)]="character.masterPlus"
-                                        (ngModelChange)="character.updateStatus()">
+                                    <input type="number" min="0" max="999" [disabled]="character.masterLevel!=30"
+                                        [(ngModel)]="character.masterPlus" (ngModelChange)="character.updateStatus()">
                                     <span>0</span>
-                                    <input type="range" min="0" max="999" 
-                                    [disabled]="character.masterLevel!=30"
-                                    [(ngModel)]="character.masterPlus"
-                                        (ngModelChange)="character.updateStatus()">
+                                    <input type="range" min="0" max="999" [disabled]="character.masterLevel!=30"
+                                        [(ngModel)]="character.masterPlus" (ngModelChange)="character.updateStatus()">
                                     <span>999</span>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="enigma">ENIGMA</td>
+                            <td class="enigma help" [title]="help.enigma">enigma</td>
                             <td>結果</td>
                         </tr>
                         <tr class="hp">
@@ -155,7 +151,7 @@
                             </td>
                         </tr>
                         <tr class="buff-list-tr">
-                            <td class="name">Buff</td>
+                            <td class="name help" [title]="help.charabuff">Buff</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <div class="buff-list">
@@ -529,7 +525,7 @@
 </ng-template>
 <ng-template #gearBuffRow let-gear="gear">
     <tr class="buff-list-tr">
-        <td class="name">Buff</td>
+        <td class="name help" [title]="help.gearbuff">Buff</td>
         <td>
             <div class="wrapper-row">
                 <div class="buff-list">
@@ -552,7 +548,7 @@
         </td>
     </tr>
     <tr class="tune-list">
-        <td class="name">Tune</td>
+        <td class="name help" [title]="help.tune">Tune</td>
         <td>
             <div class="wrapper-row">
                 <div class="buff-list">

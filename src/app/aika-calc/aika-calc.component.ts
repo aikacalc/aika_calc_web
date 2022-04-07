@@ -27,6 +27,22 @@ export class AikaCalcComponent implements OnInit {
     public savedataJson: string = '';
     public character: Character;
 
+
+    help = {
+        enigma: `角色技能樹的加點
+每個角色的提昇量都不一樣，參照下面這表：
+\t\t射擊\t\t近戰
+\t\tATK\t屬性\tATK\t屬性
+放出特化(96%)    0\t50\t 0\t50
+特質放出(90%)   15\t45\t15\t45
+変質放出(86%)   25\t40\t25\t40
+出力変性(56%)   45\t35\t45\t35
+出力特性(50%)   55\t30\t55\t30`,
+        charabuff: `角色自身被動`,
+        gearbuff:`裝備自帶被動，或是插件效果`,
+        tune:`AN裝備詞條效果，只會作用在當前裝備上`,
+    }
+
     constructor(
         public service: AppService
     ) { }

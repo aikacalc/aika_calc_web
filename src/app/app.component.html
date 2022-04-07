@@ -20,7 +20,16 @@
         <span>愛花輸出計算</span>
     </button>
 </div>
-<app-aika-calc *ngIf="page==''"></app-aika-calc>
-<app-aika-fan-reach-calc *ngIf="page=='afrc'"></app-aika-fan-reach-calc>
-<app-aika-damage-calc *ngIf="page=='adc'"></app-aika-damage-calc>
+<div class="aika-calc-container" [hidden]="page!=''">
+    <app-aika-calc></app-aika-calc>
+</div>
+<div class="aika-fan-reach-calc" [hidden]="page!='afrc'">
+    <app-aika-fan-reach-calc></app-aika-fan-reach-calc>
+</div>
+<div class="aika-damage-calc" [hidden]="page!='adc'">
+    <app-aika-damage-calc></app-aika-damage-calc>
+</div>
+
+
+
 <!-- <router-outlet></router-outlet> -->
