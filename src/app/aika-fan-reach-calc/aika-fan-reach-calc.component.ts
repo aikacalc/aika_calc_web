@@ -12,36 +12,39 @@ import { AppService } from '../app.service';
 })
 export class AikaFanReachCalcComponent implements OnInit {
     actress: Actress[] = [];
+    stageReward = {
+        lv10s1: Object.assign(new StageRewardFan(), { fan: 110, characterRare: 1, stageName: 'lv10' }),
+        lv10s2: Object.assign(new StageRewardFan(), { fan: 147, characterRare: 2, stageName: 'lv10' }),
+        lv10s3: Object.assign(new StageRewardFan(), { fan: 184, characterRare: 3, stageName: 'lv10' }),
+        lv10s4: Object.assign(new StageRewardFan(), { fan: 220, characterRare: 4, stageName: 'lv10' }),
+        lv20s1: Object.assign(new StageRewardFan(), { fan: 112, characterRare: 1, stageName: 'lv20' }),
+        lv20s2: Object.assign(new StageRewardFan(), { fan: 150, characterRare: 2, stageName: 'lv20' }),
+        lv20s3: Object.assign(new StageRewardFan(), { fan: 188, characterRare: 3, stageName: 'lv20' }),
+        lv20s4: Object.assign(new StageRewardFan(), { fan: 225, characterRare: 4, stageName: 'lv20' }),
+        lv30vws1: Object.assign(new StageRewardFan(), { fan: 115, characterRare: 1, stageName: 'lv30-vw' }),
+        lv30vws2: Object.assign(new StageRewardFan(), { fan: 153, characterRare: 2, stageName: 'lv30-vw' }),
+        lv30vws3: Object.assign(new StageRewardFan(), { fan: 192, characterRare: 3, stageName: 'lv30-vw' }),
+        lv30vws4: Object.assign(new StageRewardFan(), { fan: 230, characterRare: 4, stageName: 'lv30-vw' }),
+        lv40vws1: Object.assign(new StageRewardFan(), { fan: 117, characterRare: 1, stageName: 'lv40-vw' }),
+        lv40vws2: Object.assign(new StageRewardFan(), { fan: 156, characterRare: 2, stageName: 'lv40-vw' }),
+        lv40vws3: Object.assign(new StageRewardFan(), { fan: 196, characterRare: 3, stageName: 'lv40-vw' }),
+        lv40vws4: Object.assign(new StageRewardFan(), { fan: 235, characterRare: 4, stageName: 'lv40-vw' }),
+        lv30hbs1: Object.assign(new StageRewardFan(), { fan: 150, characterRare: 1, stageName: 'lv30-蛇' }),
+        lv30hbs2: Object.assign(new StageRewardFan(), { fan: 200, characterRare: 2, stageName: 'lv30-蛇' }),
+        lv30hbs3: Object.assign(new StageRewardFan(), { fan: 250, characterRare: 3, stageName: 'lv30-蛇' }),
+        lv30hbs4: Object.assign(new StageRewardFan(), { fan: 300, characterRare: 4, stageName: 'lv30-蛇' }),
+        lv40hbs1: Object.assign(new StageRewardFan(), { fan: 153, characterRare: 1, stageName: 'lv40-蛇' }),
+        lv40hbs2: Object.assign(new StageRewardFan(), { fan: 204, characterRare: 2, stageName: 'lv40-蛇' }),
+        lv40hbs3: Object.assign(new StageRewardFan(), { fan: 255, characterRare: 3, stageName: 'lv40-蛇' }),
+        lv40hbs4: Object.assign(new StageRewardFan(), { fan: 306, characterRare: 4, stageName: 'lv40-蛇' }),
+    }
     stageRewardFans: StageRewardFan[] = [
-        Object.assign(new StageRewardFan(), { fan: 110, characterRare: 1, stageName: 'lv10' }),
-        Object.assign(new StageRewardFan(), { fan: 147, characterRare: 2, stageName: 'lv10' }),
-        Object.assign(new StageRewardFan(), { fan: 184, characterRare: 3, stageName: 'lv10' }),
-        Object.assign(new StageRewardFan(), { fan: 220, characterRare: 4, stageName: 'lv10' }),
-
-        Object.assign(new StageRewardFan(), { fan: 112, characterRare: 1, stageName: 'lv20' }),
-        Object.assign(new StageRewardFan(), { fan: 150, characterRare: 2, stageName: 'lv20' }),
-        Object.assign(new StageRewardFan(), { fan: 188, characterRare: 3, stageName: 'lv20' }),
-        Object.assign(new StageRewardFan(), { fan: 225, characterRare: 4, stageName: 'lv20' }),
-
-        Object.assign(new StageRewardFan(), { fan: 115, characterRare: 1, stageName: 'lv30-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 153, characterRare: 2, stageName: 'lv30-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 192, characterRare: 3, stageName: 'lv30-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 230, characterRare: 4, stageName: 'lv30-vw' }),
-
-        Object.assign(new StageRewardFan(), { fan: 117, characterRare: 1, stageName: 'lv40-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 156, characterRare: 2, stageName: 'lv40-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 196, characterRare: 3, stageName: 'lv40-vw' }),
-        Object.assign(new StageRewardFan(), { fan: 235, characterRare: 4, stageName: 'lv40-vw' }),
-
-        Object.assign(new StageRewardFan(), { fan: 150, characterRare: 1, stageName: 'lv30-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 200, characterRare: 2, stageName: 'lv30-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 250, characterRare: 3, stageName: 'lv30-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 300, characterRare: 4, stageName: 'lv30-蛇' }),
-
-        Object.assign(new StageRewardFan(), { fan: 153, characterRare: 1, stageName: 'lv40-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 204, characterRare: 2, stageName: 'lv40-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 255, characterRare: 3, stageName: 'lv40-蛇' }),
-        Object.assign(new StageRewardFan(), { fan: 306, characterRare: 4, stageName: 'lv40-蛇' }),
+        this.stageReward.lv10s1, this.stageReward.lv10s2, this.stageReward.lv10s3, this.stageReward.lv10s4,
+        this.stageReward.lv20s1, this.stageReward.lv20s2, this.stageReward.lv20s3, this.stageReward.lv20s4,
+        this.stageReward.lv30vws1, this.stageReward.lv30vws2, this.stageReward.lv30vws3, this.stageReward.lv30vws4,
+        this.stageReward.lv40vws1, this.stageReward.lv40vws2, this.stageReward.lv40vws3, this.stageReward.lv40vws4,
+        this.stageReward.lv30hbs1, this.stageReward.lv30hbs2, this.stageReward.lv30hbs3, this.stageReward.lv30hbs4,
+        this.stageReward.lv40hbs1, this.stageReward.lv40hbs2, this.stageReward.lv40hbs3, this.stageReward.lv40hbs4,
     ];
     stageSelected: StageRewardFan[] = [];
     enableActressRare: { [key: number]: boolean } = {
@@ -51,6 +54,12 @@ export class AikaFanReachCalcComponent implements OnInit {
         4: true,
     };
 
+
+
+    tipClacDeep = `計算深度
+1 已經很足夠
+2 開始瀏覽器可能會有點卡頓
+3 這數字以上會嚴重卡死 甚至當機`;
     maxCalcDeep: number = 1;
     maxSingleTaskCount: number = 10;
     inputCurrentFan: number = 12345;
@@ -72,7 +81,12 @@ export class AikaFanReachCalcComponent implements OnInit {
         // });
         // console.log(result);
         // this.actress.push(new Actress());
-        this.stageSelected.push(...this.stageRewardFans);
+        this.stageSelected = [
+            this.stageReward.lv10s1, this.stageReward.lv10s2, this.stageReward.lv10s3, this.stageReward.lv10s4,
+            this.stageReward.lv20s1, this.stageReward.lv20s2, this.stageReward.lv20s3, this.stageReward.lv20s4,
+            this.stageReward.lv30vws1, this.stageReward.lv30vws2, this.stageReward.lv30vws3, this.stageReward.lv30vws4,
+            this.stageReward.lv40vws1, this.stageReward.lv40vws2, this.stageReward.lv40vws3, this.stageReward.lv40vws4
+        ];
 
         this.addActress();
         this.runCalc(this.actress[0]);
