@@ -148,25 +148,42 @@ class DMGCalcPlan {
     update(): void {
         this.damageRate = this.damageRatePercent / 100;
 
+        let baseAtkDamgeRate_ = this.damageRate;
+        let atkDamgeRate_ = baseAtkDamgeRate_;
+        this.enemyDebuff
+            .filter(v => v.attrTypeId == this.atkTypeId)
+            .forEach(v => {
+                atkDamgeRate_ -= (v.value / 100);
+            });
+        if (atkDamgeRate_ < 0) {
+            atkDamgeRate_ = 0;
+        }
+
         this.outputAtkDamage = this.atk - this.enemyDef;
         if (this.outputAtkDamage <= 0) {
             this.outputAtkDamage = 1;
         }
-        this.outputAtkDamage *= this.damageRate;
+        this.outputAtkDamage *= atkDamgeRate_;
         this.outputAtkDamage = Math.floor(this.outputAtkDamage);
-        if (this.enemyResist == this.atkTypeId) {
-            this.outputAtkDamage = 0;
-        }
+
+
 
 
         const attrName = AttrTypeId[this.attrTypeId];
         const enemyAttrName = AttrTypeId[this.enemyAttrTypeId];
-        let attrDamageRate_ = attrDamageRate[attrName][enemyAttrName];
+        let baseAttrDamageRate_ = attrDamageRate[attrName][enemyAttrName];
+        let attrDamageRate_ = baseAttrDamageRate_;
         this.enemyDebuff
             .filter(v => v.attrTypeId == this.attrTypeId)
             .forEach(v => {
-                attrDamageRate_ += (v.value / 100);
+                attrDamageRate_ -= (v.value / 100);
             });
+        if (attrDamageRate_ < 0) {
+            attrDamageRate_ = 0;
+        }
+
+
+
 
         this.outputAttrDamage = Math.floor(this.attr * attrDamageRate_);
         this.outputAttrDamage *= this.damageRate;
@@ -185,7 +202,14 @@ class DMGCalcPlan {
     //     this.enemyResist.splice(i, 1);
     // }
     addEnemyDebuff(): void {
-        this.enemyDebuff.push({ attrTypeId: AttrTypeId.Volt, value: 0 });
+        let attrTypeId = AttrTypeId.Volt;
+        let value = 0;
+        if (this.enemyDebuff.length > 0) {
+            const debuff_ = this.enemyDebuff[this.enemyDebuff.length - 1];
+            attrTypeId = debuff_.attrTypeId;
+            value = debuff_.value;
+        }
+        this.enemyDebuff.push({ attrTypeId: attrTypeId, value: value });
     }
     deleteEnemyDebuff(item: any): void {
         const i = this.enemyDebuff.findIndex(v => v == item);
@@ -233,9 +257,27 @@ Lv100:880
 Lv150:1280
 Lv200:1680`,
         enemyResist: ``,
-        enemyDebuff: `愛花ANSP是降電防100%
-綾香火炷降火防80%
-睦海冰柱降冷防80%`,
+        enemyDebuff: `ATK耐性：
+皮皮蛇身體：近戰-80% 射擊-50% 全屬性-80%
+蠍子：近戰+50% 射擊-50%
+9頭蛇：射擊-100%
+土偶：近戰-15%
+王八頭：近戰+50%
+王八身體：打擊實彈-30% 斬擊光彈-50% 全屬性-80%
+普通、屬性鱟正面：打擊實彈-30% 斬擊光彈-50% 全屬性-80%
+特異鱟：打擊實彈-30% 斬擊光彈-50% 全屬性-90%
+大VW：近戰-30% 射擊+30%
+3筒子：近戰-40% 射擊+30%
+豬籠草：近戰-40% 射擊+30%
+刺蝟核心：所有ATK傷害+100%
+花園本體：射擊-90%
+花園種子：近戰+30% 射擊-30%
+
+屬性debuff：
+愛花ANSP 電屬性 -100%
+綾香火炷 火屬性 -80%
+睦海冰柱 冷屬性 -80%
+...應該除了愛花以外的屬性debuff都是80%`,
         calcDmgAtk: ``,
         calcDmgAttr: ``,
         outputDmg: ``,

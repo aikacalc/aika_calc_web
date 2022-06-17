@@ -92,6 +92,16 @@
         }
     }
 
+    >.block {
+        >.title {
+            // font-size: 24px;
+            font-weight: bold;
+        }
+
+        &+.block {
+            margin-top: 50px;
+        }
+    }
 
     >.damage-rate-calc {
         >table>tbody {

@@ -1,5 +1,5 @@
 <div class="root">
-    <div class="damage-rate-calc">
+    <div class="damage-rate-calc block">
         <div class="title">攻擊傷害比率計算 要打訓練場的靶子來計算</div>
         <table>
             <thead>
@@ -101,7 +101,7 @@
             </tbody>
         </table>
     </div> -->
-    <div class="damage-calc">
+    <div class="damage-calc block">
         <div class="title">輸出傷害計算</div>
         <table>
             <thead>
@@ -113,8 +113,7 @@
                     <th class="final-dmg-buff" [title]="help.finalDmgBuff">最終傷害<br>加成</th>
                     <th class="enemy-def phy" [title]="help.enemyDef">敵人DEF</th>
                     <th class="enemy-attr ene" [title]="help.attr">敵人屬性</th>
-                    <th class="enemy-resist phy" >敵人耐性</th>
-                    <th class="enemy-debuff ene" [title]="help.enemyDebuff">敵人debuff</th>
+                    <th class="enemy-resist" [title]="help.enemyDebuff">敵人耐性<br>debuff</th>
                     <th class="calc-dmg-atk phy">物理傷害</th>
                     <th class="calc-dmg-attr ene">屬性傷害</th>
                     <th class="output-dmg">輸出傷害<br>最低~理論~最高</th>
@@ -166,18 +165,14 @@
                             <option value="8">冷擊</option>
                         </select>
                     </td>
-                    <td class="enemy-resist phy">
-                        <select [(ngModel)]="item.enemyResist" (ngModelChange)="item.update()">
-                            <option value="22">無</option>
-                            <option value="1">打擊</option>
-                            <option value="2">斬擊</option>
-                            <option value="3">實彈</option>
-                            <option value="4">能量</option>
-                        </select>
-                    </td>
-                    <td class="enemy-debuff ene">
+                    <td class="enemy-resist">
                         <div class="wrapper" *ngFor="let item2 of item.enemyDebuff">
                             <select [(ngModel)]="item2.attrTypeId" (ngModelChange)="item.update()">
+                                <option value="22">無</option>
+                                <option value="1">打擊</option>
+                                <option value="2">斬擊</option>
+                                <option value="3">實彈</option>
+                                <option value="4">能量</option>
                                 <option value="5">電擊</option>
                                 <option value="6">重力</option>
                                 <option value="7">燒夷</option>
