@@ -6677,6 +6677,50 @@ class MuraoMira05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
 }
 
+class MuraoMira70 extends Character {
+    name: string = '村尾 未羅_至純';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3434;
+    hpMin: number = 922;
+    hpMax: number = 3434;
+    atkClose: number = 729;
+    atkCloseMin: number = 203;
+    atkCloseMax: number = 729;
+    attrClose: number = 0;
+    atkShot: number = 700;
+    atkShotMin: number = 194;
+    atkShotMax: number = 700;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistGravity(0.6),
+        AttrTypeDict.ResistVolt(-0.6),
+        AttrTypeDict.ResistIce(-0.3),
+        AttrTypeDict.Gravity(0.56),
+        AttrTypeDict.Bazooka(0.3),
+        AttrTypeDict.Sword(0.1)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MuraoMira.long;
+    weaponCloses: Gear[] = ActressGears.MuraoMira.short;
+    equipmentTops: Gear[] = ActressGears.MuraoMira.top;
+    equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+}
+
 class KimikageYui01 extends Character {
     name: string = '君影 唯';
     rare: number = 1;
@@ -7736,7 +7780,7 @@ class KotomuraAkane70 extends Character {
 }
 
 class KotomuraAkane80 extends Character {
-    name: string = '琴村 朱音_名称';
+    name: string = '琴村 朱音_ライブ';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7745,13 +7789,13 @@ class KotomuraAkane80 extends Character {
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
-    atkClose: number = 612;
-    atkCloseMin: number = 170;
-    atkCloseMax: number = 612;
+    atkClose: number = 729;
+    atkCloseMin: number = 203;
+    atkCloseMax: number = 729;
     attrClose: number = 0;
-    atkShot: number = 643;
-    atkShotMin: number = 179;
-    atkShotMax: number = 643;
+    atkShot: number = 765;
+    atkShotMin: number = 213;
+    atkShotMax: number = 765;
     attrShot: number = 0;
     def: number = 891;
     defMin: number = 248;
@@ -8000,7 +8044,7 @@ class KotomuraAmane70 extends Character {
 }
 
 class KotomuraAmane80 extends Character {
-    name: string = '琴村 天音_名称';
+    name: string = '琴村 天音_ライブ';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8009,13 +8053,13 @@ class KotomuraAmane80 extends Character {
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
-    atkClose: number = 630;
-    atkCloseMin: number = 175;
-    atkCloseMax: number = 630;
+    atkClose: number = 751;
+    atkCloseMin: number = 209;
+    atkCloseMax: number = 751;
     attrClose: number = 0;
-    atkShot: number = 600;
-    atkShotMin: number = 167;
-    atkShotMax: number = 600;
+    atkShot: number = 714;
+    atkShotMin: number = 198;
+    atkShotMax: number = 714;
     attrShot: number = 0;
     def: number = 909;
     defMin: number = 253;
@@ -14385,6 +14429,94 @@ class MarieRose05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MarieRose.bottom;
 }
 
+class Nyotengu04 extends Character {
+    name: string = '女天狗';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 500;
+    atkCloseMin: number = 143;
+    atkCloseMax: number = 500;
+    attrClose: number = 0;
+    atkShot: number = 486;
+    atkShotMin: number = 139;
+    atkShotMax: number = 486;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Nyotengu.long;
+    weaponCloses: Gear[] = ActressGears.Nyotengu.short;
+    equipmentTops: Gear[] = ActressGears.Nyotengu.top;
+    equipmentBottoms: Gear[] = ActressGears.Nyotengu.bottom;
+}
+
+class Nyotengu05 extends Character {
+    name: string = '女天狗';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 643;
+    atkCloseMin: number = 179;
+    atkCloseMax: number = 643;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    goodAttr: AttrType[] = [
+        AttrTypeDict.ResistFire(0.7),
+        AttrTypeDict.ResistIce(-0.7),
+        AttrTypeDict.ResistVolt(-0.35),
+        AttrTypeDict.Fire(0.86),
+        AttrTypeDict.Dagger(0.25),
+        AttrTypeDict.Sniper(0.15)
+    ];
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Nyotengu.long;
+    weaponCloses: Gear[] = ActressGears.Nyotengu.short;
+    equipmentTops: Gear[] = ActressGears.Nyotengu.top;
+    equipmentBottoms: Gear[] = ActressGears.Nyotengu.bottom;
+}
+
 class SylphyII04 extends Character {
     name: string = 'シルフィーII';
     rare: number = 3;
@@ -15168,6 +15300,7 @@ export const ActressNames: string[] = [
     'KuniedaShiho',
     'Kasumi',
     'MarieRose',
+    'Nyotengu',
     'SylphyII',
     'Aya',
     'Yuki',
@@ -15329,6 +15462,7 @@ export const CharacterModels = {
     MuraoMira02: new MuraoMira02(),
     MuraoMira04: new MuraoMira04(),
     MuraoMira05: new MuraoMira05(),
+    MuraoMira70: new MuraoMira70(),
     KimikageYui01: new KimikageYui01(),
     KimikageYui02: new KimikageYui02(),
     KimikageYui04: new KimikageYui04(),
@@ -15504,6 +15638,8 @@ export const CharacterModels = {
     Kasumi05: new Kasumi05(),
     MarieRose04: new MarieRose04(),
     MarieRose05: new MarieRose05(),
+    Nyotengu04: new Nyotengu04(),
+    Nyotengu05: new Nyotengu05(),
     SylphyII04: new SylphyII04(),
     SylphyII05: new SylphyII05(),
     SylphyII70: new SylphyII70(),
