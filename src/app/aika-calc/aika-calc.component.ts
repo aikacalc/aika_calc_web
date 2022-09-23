@@ -39,8 +39,8 @@ export class AikaCalcComponent implements OnInit {
 出力変性(56%)   45\t35\t45\t35
 出力特性(50%)   55\t30\t55\t30`,
         charabuff: `角色自身被動`,
-        gearbuff:`裝備自帶被動，或是插件效果`,
-        tune:`AN裝備詞條效果，只會作用在當前裝備上`,
+        gearbuff: `裝備自帶被動，或是插件效果`,
+        tune: `AN裝備詞條效果，只會作用在當前裝備上`,
     }
 
     constructor(
@@ -81,9 +81,31 @@ export class AikaCalcComponent implements OnInit {
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
 
-        this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(CharacterModels.AikawaAika05);
+        const aika = CharacterModels.AikawaAika05;
+        this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(aika);
         this.onCharacterTemplateChange();
         this.setCharacterTemplateToCharacter();
+
+        aika.weaponShotIndex = aika.weaponShots.findIndex(g => g.base.name == 'フラワーポットMk3');
+        this.setGear(aika.weaponShot, aika.weaponShots, aika.weaponShotIndex.toString());
+        aika.weaponCloseIndex = aika.weaponCloses.findIndex(g => g.base.name == 'ポティスティリ');
+        this.setGear(aika.weaponClose, aika.weaponCloses, aika.weaponCloseIndex.toString());
+        aika.equipmentTopIndex = aika.equipmentTops.findIndex(g => g.base.name == 'シープソングMk3/T');
+        this.setGear(aika.equipmentTop, aika.equipmentTops, aika.equipmentTopIndex.toString());
+        aika.equipmentBottomIndex = aika.equipmentBottoms.findIndex(g => g.base.name == 'シープソングMk3/B');
+        this.setGear(aika.equipmentBottom, aika.equipmentBottoms, aika.equipmentBottomIndex.toString());
+
+        aika.masterLevel = 30;
+        aika.attrShotEnigma = 50;
+        aika.attrCloseEnigma = 50;
+        aika.weaponShot.base.gradeUp = 99;
+        aika.weaponClose.base.gradeUp = 99;
+        aika.equipmentTop.base.gradeUp = 99;
+        aika.equipmentBottom.base.gradeUp = 99;
+
+        this.character.updateStatus();
+        console.log(this.character);
+
 
         // this.character.weaponShot.buffs.push(new Buff(AttrTypeId.HP, 0.07));
         // this.character.weaponClose.buffs.push(new Buff(AttrTypeId.HP, 0.07));
@@ -118,27 +140,7 @@ export class AikaCalcComponent implements OnInit {
     }
     public setCharacterTemplateToCharacter(): void {
         if (this.selectedCharacterTemplate) {
-            // if (this.character && !confirm('覆寫現在資料?')) {
-            //     return;
-            // }
-
-            // const jsonClone = JSON.parse(JSON.stringify(this.selectedCharacterTemplate));
-            // const newCharacter = Unit.cloneDeep(new Character(), jsonClone, 0);
-            // const newCharacter = Object.assign(
-            //     new Character(),
-            //     this.selectedCharacterTemplate,
-            // );
-            // this.character = newCharacter;
-            // this.selectedCharacterTemplate.updateStatus();
-            // this.character = null;
             const character = this.selectedCharacterTemplate;
-
-            // character.updateStatus();
-            // this.setGear(character.weaponShot, character.weaponShots, character.weaponShotIndex.toString());
-            // this.setGear(character.weaponClose, character.weaponCloses, character.weaponCloseIndex.toString());
-            // this.setGear(character.equipmentTop, character.equipmentTops, character.equipmentTopIndex.toString());
-            // this.setGear(character.equipmentBottom, character.equipmentBottoms, character.equipmentBottomIndex.toString());
-            // character.updateStatus();
 
             this.character = character;
             this.character.updateStatus();

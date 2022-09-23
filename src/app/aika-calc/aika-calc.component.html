@@ -4,7 +4,7 @@
         <select [(ngModel)]="selectedCharacterTemplateIndex"
             (ngModelChange)="onCharacterTemplateChange();setCharacterTemplateToCharacter()">
             <option *ngFor="let characterTemplate of characterTemplates;let i=index;" [value]="i">
-                {{characterTemplate.name+'★'+characterTemplate.rare}}</option>
+                {{characterTemplate.name}}</option>
         </select>
         <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
     </div>

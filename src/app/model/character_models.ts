@@ -6,7 +6,7 @@ import { Gear } from './gear';
 import { ActressGears } from './gear_models';
 
 class HirasakaYotsuyu01 extends Character {
-    name: string = '比良坂 夜露';
+    name: string = '比良坂 夜露 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 1;
@@ -27,18 +27,11 @@ class HirasakaYotsuyu01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -50,7 +43,7 @@ class HirasakaYotsuyu01 extends Character {
 }
 
 class HirasakaYotsuyu02 extends Character {
-    name: string = '比良坂 夜露';
+    name: string = '比良坂 夜露 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -71,18 +64,11 @@ class HirasakaYotsuyu02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -94,7 +80,7 @@ class HirasakaYotsuyu02 extends Character {
 }
 
 class HirasakaYotsuyu04 extends Character {
-    name: string = '比良坂 夜露';
+    name: string = '比良坂 夜露 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -115,18 +101,11 @@ class HirasakaYotsuyu04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -138,7 +117,7 @@ class HirasakaYotsuyu04 extends Character {
 }
 
 class HirasakaYotsuyu05 extends Character {
-    name: string = '比良坂 夜露';
+    name: string = '比良坂 夜露 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -159,18 +138,11 @@ class HirasakaYotsuyu05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -182,7 +154,7 @@ class HirasakaYotsuyu05 extends Character {
 }
 
 class HirasakaYotsuyu70 extends Character {
-    name: string = '比良坂 夜露_勇躍';
+    name: string = '比良坂 夜露 / 勇躍 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -203,23 +175,14 @@ class HirasakaYotsuyu70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Sword(0.1),
-        AttrTypeDict.Volt(0.5)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
-        new Buff(AttrTypeId.Volt, 0.5)
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.HirasakaYotsuyu.long;
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
@@ -228,7 +191,7 @@ class HirasakaYotsuyu70 extends Character {
 }
 
 class HirasakaYotsuyu80 extends Character {
-    name: string = '比良坂 夜露_コネクト';
+    name: string = '比良坂 夜露 / コネクト ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -249,18 +212,11 @@ class HirasakaYotsuyu80 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sword, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -272,7 +228,7 @@ class HirasakaYotsuyu80 extends Character {
 }
 
 class KaneshiyaSitara01 extends Character {
-    name: string = '兼志谷 シタラ';
+    name: string = '兼志谷 シタラ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 1;
@@ -293,18 +249,11 @@ class KaneshiyaSitara01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -316,7 +265,7 @@ class KaneshiyaSitara01 extends Character {
 }
 
 class KaneshiyaSitara02 extends Character {
-    name: string = '兼志谷 シタラ';
+    name: string = '兼志谷 シタラ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -337,18 +286,11 @@ class KaneshiyaSitara02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -360,7 +302,7 @@ class KaneshiyaSitara02 extends Character {
 }
 
 class KaneshiyaSitara04 extends Character {
-    name: string = '兼志谷 シタラ';
+    name: string = '兼志谷 シタラ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -381,18 +323,11 @@ class KaneshiyaSitara04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -404,7 +339,7 @@ class KaneshiyaSitara04 extends Character {
 }
 
 class KaneshiyaSitara05 extends Character {
-    name: string = '兼志谷 シタラ';
+    name: string = '兼志谷 シタラ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -425,18 +360,11 @@ class KaneshiyaSitara05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -448,7 +376,7 @@ class KaneshiyaSitara05 extends Character {
 }
 
 class KaneshiyaSitara70 extends Character {
-    name: string = '兼志谷 シタラ_天機';
+    name: string = '兼志谷 シタラ / 天機 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -469,14 +397,6 @@ class KaneshiyaSitara70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -492,7 +412,7 @@ class KaneshiyaSitara70 extends Character {
 }
 
 class MomoshinaFumika01 extends Character {
-    name: string = '百科 文嘉';
+    name: string = '百科 文嘉 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 1;
@@ -513,14 +433,6 @@ class MomoshinaFumika01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -536,7 +448,7 @@ class MomoshinaFumika01 extends Character {
 }
 
 class MomoshinaFumika02 extends Character {
-    name: string = '百科 文嘉';
+    name: string = '百科 文嘉 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -557,14 +469,6 @@ class MomoshinaFumika02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -580,7 +484,7 @@ class MomoshinaFumika02 extends Character {
 }
 
 class MomoshinaFumika04 extends Character {
-    name: string = '百科 文嘉';
+    name: string = '百科 文嘉 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -601,14 +505,6 @@ class MomoshinaFumika04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -624,7 +520,7 @@ class MomoshinaFumika04 extends Character {
 }
 
 class MomoshinaFumika05 extends Character {
-    name: string = '百科 文嘉';
+    name: string = '百科 文嘉 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -645,14 +541,6 @@ class MomoshinaFumika05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -668,7 +556,7 @@ class MomoshinaFumika05 extends Character {
 }
 
 class MomoshinaFumika70 extends Character {
-    name: string = '百科 文嘉_智将';
+    name: string = '百科 文嘉 / 智将 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -689,18 +577,11 @@ class MomoshinaFumika70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Sword, 0.1)
@@ -712,7 +593,7 @@ class MomoshinaFumika70 extends Character {
 }
 
 class AgatsumaKaede01 extends Character {
-    name: string = '吾妻 楓';
+    name: string = '吾妻 楓 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 13;
@@ -733,14 +614,6 @@ class AgatsumaKaede01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -756,7 +629,7 @@ class AgatsumaKaede01 extends Character {
 }
 
 class AgatsumaKaede02 extends Character {
-    name: string = '吾妻 楓';
+    name: string = '吾妻 楓 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -777,14 +650,6 @@ class AgatsumaKaede02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -800,7 +665,7 @@ class AgatsumaKaede02 extends Character {
 }
 
 class AgatsumaKaede04 extends Character {
-    name: string = '吾妻 楓';
+    name: string = '吾妻 楓 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -821,14 +686,6 @@ class AgatsumaKaede04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -844,7 +701,7 @@ class AgatsumaKaede04 extends Character {
 }
 
 class AgatsumaKaede05 extends Character {
-    name: string = '吾妻 楓';
+    name: string = '吾妻 楓 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -865,14 +722,6 @@ class AgatsumaKaede05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -888,7 +737,7 @@ class AgatsumaKaede05 extends Character {
 }
 
 class AgatsumaKaede70 extends Character {
-    name: string = '吾妻 楓_皆伝';
+    name: string = '吾妻 楓 / 皆伝 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -909,23 +758,14 @@ class AgatsumaKaede70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Rifle(0.1),
-        AttrTypeDict.Volt(0.5)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1),
-        new Buff(AttrTypeId.Volt, 0.5)
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AgatsumaKaede.long;
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
@@ -934,7 +774,7 @@ class AgatsumaKaede70 extends Character {
 }
 
 class AgatsumaKaede80 extends Character {
-    name: string = '吾妻 楓_ネクスト';
+    name: string = '吾妻 楓 / ネクスト ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -955,14 +795,6 @@ class AgatsumaKaede80 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -978,7 +810,7 @@ class AgatsumaKaede80 extends Character {
 }
 
 class HimukaiRin01 extends Character {
-    name: string = '日向 リン';
+    name: string = '日向 リン ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 12;
@@ -999,14 +831,6 @@ class HimukaiRin01 extends Character {
     defMin: number = 103;
     defMax: number = 258;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1022,7 +846,7 @@ class HimukaiRin01 extends Character {
 }
 
 class HimukaiRin02 extends Character {
-    name: string = '日向 リン';
+    name: string = '日向 リン ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -1043,14 +867,6 @@ class HimukaiRin02 extends Character {
     defMin: number = 155;
     defMax: number = 412;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1066,7 +882,7 @@ class HimukaiRin02 extends Character {
 }
 
 class HimukaiRin04 extends Character {
-    name: string = '日向 リン';
+    name: string = '日向 リン ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -1087,14 +903,6 @@ class HimukaiRin04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1110,7 +918,7 @@ class HimukaiRin04 extends Character {
 }
 
 class HimukaiRin05 extends Character {
-    name: string = '日向 リン';
+    name: string = '日向 リン ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1131,14 +939,6 @@ class HimukaiRin05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1154,7 +954,7 @@ class HimukaiRin05 extends Character {
 }
 
 class HimukaiRin70 extends Character {
-    name: string = '日向 リン_奔放';
+    name: string = '日向 リン / 奔放 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1175,18 +975,11 @@ class HimukaiRin70 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
@@ -1198,7 +991,7 @@ class HimukaiRin70 extends Character {
 }
 
 class HimukaiRin80 extends Character {
-    name: string = '日向 リン_ネクスト';
+    name: string = '日向 リン / ネクスト ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1219,18 +1012,11 @@ class HimukaiRin80 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Hammer, 0.1)
@@ -1242,7 +1028,7 @@ class HimukaiRin80 extends Character {
 }
 
 class TakanashiRei01 extends Character {
-    name: string = '小鳥遊 怜';
+    name: string = '小鳥遊 怜 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 11;
@@ -1263,18 +1049,11 @@ class TakanashiRei01 extends Character {
     defMin: number = 103;
     defMax: number = 258;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -1286,7 +1065,7 @@ class TakanashiRei01 extends Character {
 }
 
 class TakanashiRei02 extends Character {
-    name: string = '小鳥遊 怜';
+    name: string = '小鳥遊 怜 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -1307,18 +1086,11 @@ class TakanashiRei02 extends Character {
     defMin: number = 155;
     defMax: number = 412;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -1330,7 +1102,7 @@ class TakanashiRei02 extends Character {
 }
 
 class TakanashiRei04 extends Character {
-    name: string = '小鳥遊 怜';
+    name: string = '小鳥遊 怜 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -1351,18 +1123,11 @@ class TakanashiRei04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -1374,7 +1139,7 @@ class TakanashiRei04 extends Character {
 }
 
 class TakanashiRei05 extends Character {
-    name: string = '小鳥遊 怜';
+    name: string = '小鳥遊 怜 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1395,18 +1160,11 @@ class TakanashiRei05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -1418,7 +1176,7 @@ class TakanashiRei05 extends Character {
 }
 
 class TakanashiRei70 extends Character {
-    name: string = '小鳥遊 怜_蒼穹';
+    name: string = '小鳥遊 怜 / 蒼穹 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1439,14 +1197,6 @@ class TakanashiRei70 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1462,7 +1212,7 @@ class TakanashiRei70 extends Character {
 }
 
 class IchijoAyaka01 extends Character {
-    name: string = '一条 綾香';
+    name: string = '一条 綾香 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 7;
@@ -1483,14 +1233,6 @@ class IchijoAyaka01 extends Character {
     defMin: number = 96;
     defMax: number = 240;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1506,7 +1248,7 @@ class IchijoAyaka01 extends Character {
 }
 
 class IchijoAyaka02 extends Character {
-    name: string = '一条 綾香';
+    name: string = '一条 綾香 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -1527,14 +1269,6 @@ class IchijoAyaka02 extends Character {
     defMin: number = 144;
     defMax: number = 384;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1550,7 +1284,7 @@ class IchijoAyaka02 extends Character {
 }
 
 class IchijoAyaka04 extends Character {
-    name: string = '一条 綾香';
+    name: string = '一条 綾香 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -1571,14 +1305,6 @@ class IchijoAyaka04 extends Character {
     defMin: number = 192;
     defMax: number = 672;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1594,7 +1320,7 @@ class IchijoAyaka04 extends Character {
 }
 
 class IchijoAyaka05 extends Character {
-    name: string = '一条 綾香';
+    name: string = '一条 綾香 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1615,14 +1341,6 @@ class IchijoAyaka05 extends Character {
     defMin: number = 240;
     defMax: number = 864;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1638,7 +1356,7 @@ class IchijoAyaka05 extends Character {
 }
 
 class IchijoAyaka70 extends Character {
-    name: string = '一条 綾香_英俊';
+    name: string = '一条 綾香 / 英俊 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1659,18 +1377,11 @@ class IchijoAyaka70 extends Character {
     defMin: number = 240;
     defMax: number = 864;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -1682,7 +1393,7 @@ class IchijoAyaka70 extends Character {
 }
 
 class AikawaAika01 extends Character {
-    name: string = '相河 愛花';
+    name: string = '相河 愛花 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 7;
@@ -1703,18 +1414,11 @@ class AikawaAika01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -1726,7 +1430,7 @@ class AikawaAika01 extends Character {
 }
 
 class AikawaAika02 extends Character {
-    name: string = '相河 愛花';
+    name: string = '相河 愛花 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -1747,18 +1451,11 @@ class AikawaAika02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -1770,7 +1467,7 @@ class AikawaAika02 extends Character {
 }
 
 class AikawaAika04 extends Character {
-    name: string = '相河 愛花';
+    name: string = '相河 愛花 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -1791,18 +1488,11 @@ class AikawaAika04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -1814,7 +1504,7 @@ class AikawaAika04 extends Character {
 }
 
 class AikawaAika05 extends Character {
-    name: string = '相河 愛花';
+    name: string = '相河 愛花 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1835,18 +1525,11 @@ class AikawaAika05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -1858,7 +1541,7 @@ class AikawaAika05 extends Character {
 }
 
 class AikawaAika70 extends Character {
-    name: string = '相河 愛花_仁愛';
+    name: string = '相河 愛花 / 仁愛 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -1879,14 +1562,6 @@ class AikawaAika70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -1902,7 +1577,7 @@ class AikawaAika70 extends Character {
 }
 
 class KoashiMutsumi01 extends Character {
-    name: string = '小芦 睦海';
+    name: string = '小芦 睦海 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -1923,14 +1598,6 @@ class KoashiMutsumi01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1946,7 +1613,7 @@ class KoashiMutsumi01 extends Character {
 }
 
 class KoashiMutsumi02 extends Character {
-    name: string = '小芦 睦海';
+    name: string = '小芦 睦海 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -1967,14 +1634,6 @@ class KoashiMutsumi02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1990,7 +1649,7 @@ class KoashiMutsumi02 extends Character {
 }
 
 class KoashiMutsumi04 extends Character {
-    name: string = '小芦 睦海';
+    name: string = '小芦 睦海 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -2011,14 +1670,6 @@ class KoashiMutsumi04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2034,7 +1685,7 @@ class KoashiMutsumi04 extends Character {
 }
 
 class KoashiMutsumi05 extends Character {
-    name: string = '小芦 睦海';
+    name: string = '小芦 睦海 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2055,14 +1706,6 @@ class KoashiMutsumi05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2078,7 +1721,7 @@ class KoashiMutsumi05 extends Character {
 }
 
 class KoashiMutsumi70 extends Character {
-    name: string = '小芦 睦海_剛毅';
+    name: string = '小芦 睦海 / 剛毅 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2099,18 +1742,11 @@ class KoashiMutsumi70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Sniper(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Sniper, 0.1)
@@ -2122,7 +1758,7 @@ class KoashiMutsumi70 extends Character {
 }
 
 class NikotamaMai01 extends Character {
-    name: string = '二子玉 舞';
+    name: string = '二子玉 舞 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -2143,14 +1779,6 @@ class NikotamaMai01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2166,7 +1794,7 @@ class NikotamaMai01 extends Character {
 }
 
 class NikotamaMai02 extends Character {
-    name: string = '二子玉 舞';
+    name: string = '二子玉 舞 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -2187,14 +1815,6 @@ class NikotamaMai02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2210,7 +1830,7 @@ class NikotamaMai02 extends Character {
 }
 
 class NikotamaMai04 extends Character {
-    name: string = '二子玉 舞';
+    name: string = '二子玉 舞 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -2231,14 +1851,6 @@ class NikotamaMai04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2254,7 +1866,7 @@ class NikotamaMai04 extends Character {
 }
 
 class NikotamaMai05 extends Character {
-    name: string = '二子玉 舞';
+    name: string = '二子玉 舞 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2275,14 +1887,6 @@ class NikotamaMai05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2298,7 +1902,7 @@ class NikotamaMai05 extends Character {
 }
 
 class NikotamaMai70 extends Character {
-    name: string = '二子玉 舞_繊麗';
+    name: string = '二子玉 舞 / 繊麗 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2319,18 +1923,11 @@ class NikotamaMai70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -2342,7 +1939,7 @@ class NikotamaMai70 extends Character {
 }
 
 class NikotamaMai80 extends Character {
-    name: string = '二子玉 舞_ライブ';
+    name: string = '二子玉 舞 / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2363,18 +1960,11 @@ class NikotamaMai80 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
@@ -2386,7 +1976,7 @@ class NikotamaMai80 extends Character {
 }
 
 class VirginiaGlynnberets01 extends Character {
-    name: string = 'バージニア・G';
+    name: string = 'バージニア・G ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 14;
@@ -2407,14 +1997,6 @@ class VirginiaGlynnberets01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2430,7 +2012,7 @@ class VirginiaGlynnberets01 extends Character {
 }
 
 class VirginiaGlynnberets02 extends Character {
-    name: string = 'バージニア・G';
+    name: string = 'バージニア・G ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -2451,14 +2033,6 @@ class VirginiaGlynnberets02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2474,7 +2048,7 @@ class VirginiaGlynnberets02 extends Character {
 }
 
 class VirginiaGlynnberets04 extends Character {
-    name: string = 'バージニア・G';
+    name: string = 'バージニア・G ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -2495,14 +2069,6 @@ class VirginiaGlynnberets04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2518,7 +2084,7 @@ class VirginiaGlynnberets04 extends Character {
 }
 
 class VirginiaGlynnberets05 extends Character {
-    name: string = 'バージニア・G';
+    name: string = 'バージニア・G ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2539,14 +2105,6 @@ class VirginiaGlynnberets05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2562,7 +2120,7 @@ class VirginiaGlynnberets05 extends Character {
 }
 
 class VirginiaGlynnberets70 extends Character {
-    name: string = 'バージニア_MOBIUS';
+    name: string = 'バージニア / MOBIUS ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2583,23 +2141,14 @@ class VirginiaGlynnberets70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Sword(0.1),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.3),
-        new Buff(AttrTypeId.Sword, 0.1),
-        new Buff(AttrTypeId.HandGun, 0.15)
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.VirginiaGlynnberets.long;
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
@@ -2608,7 +2157,7 @@ class VirginiaGlynnberets70 extends Character {
 }
 
 class VirginiaGlynnberets80 extends Character {
-    name: string = 'バージニア_ライブ';
+    name: string = 'バージニア / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2629,23 +2178,14 @@ class VirginiaGlynnberets80 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Rifle(0.1),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1),
-        new Buff(AttrTypeId.HandGun, 0.15)
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.VirginiaGlynnberets.long;
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
@@ -2654,7 +2194,7 @@ class VirginiaGlynnberets80 extends Character {
 }
 
 class FatimaBetrorum01 extends Character {
-    name: string = 'ファティマ・B';
+    name: string = 'ファティマ・B ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 3;
@@ -2675,18 +2215,11 @@ class FatimaBetrorum01 extends Character {
     defMin: number = 103;
     defMax: number = 258;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -2698,7 +2231,7 @@ class FatimaBetrorum01 extends Character {
 }
 
 class FatimaBetrorum02 extends Character {
-    name: string = 'ファティマ・B';
+    name: string = 'ファティマ・B ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -2719,18 +2252,11 @@ class FatimaBetrorum02 extends Character {
     defMin: number = 155;
     defMax: number = 412;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -2742,7 +2268,7 @@ class FatimaBetrorum02 extends Character {
 }
 
 class FatimaBetrorum04 extends Character {
-    name: string = 'ファティマ・B';
+    name: string = 'ファティマ・B ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -2763,18 +2289,11 @@ class FatimaBetrorum04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -2786,7 +2305,7 @@ class FatimaBetrorum04 extends Character {
 }
 
 class FatimaBetrorum05 extends Character {
-    name: string = 'ファティマ・B';
+    name: string = 'ファティマ・B ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2807,18 +2326,11 @@ class FatimaBetrorum05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -2830,7 +2342,7 @@ class FatimaBetrorum05 extends Character {
 }
 
 class FatimaBetrorum70 extends Character {
-    name: string = 'ファティマ_Miθra';
+    name: string = 'ファティマ / Miθra ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -2851,14 +2363,6 @@ class FatimaBetrorum70 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2874,7 +2378,7 @@ class FatimaBetrorum70 extends Character {
 }
 
 class YotsuyaYumi01 extends Character {
-    name: string = '四谷 ゆみ';
+    name: string = '四谷 ゆみ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 9;
@@ -2895,18 +2399,11 @@ class YotsuyaYumi01 extends Character {
     defMin: number = 106;
     defMax: number = 265;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -2918,7 +2415,7 @@ class YotsuyaYumi01 extends Character {
 }
 
 class YotsuyaYumi02 extends Character {
-    name: string = '四谷 ゆみ';
+    name: string = '四谷 ゆみ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -2939,18 +2436,11 @@ class YotsuyaYumi02 extends Character {
     defMin: number = 159;
     defMax: number = 424;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -2962,7 +2452,7 @@ class YotsuyaYumi02 extends Character {
 }
 
 class YotsuyaYumi04 extends Character {
-    name: string = '四谷 ゆみ';
+    name: string = '四谷 ゆみ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -2983,18 +2473,11 @@ class YotsuyaYumi04 extends Character {
     defMin: number = 212;
     defMax: number = 742;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -3006,7 +2489,7 @@ class YotsuyaYumi04 extends Character {
 }
 
 class YotsuyaYumi05 extends Character {
-    name: string = '四谷 ゆみ';
+    name: string = '四谷 ゆみ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3027,18 +2510,11 @@ class YotsuyaYumi05 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -3050,7 +2526,7 @@ class YotsuyaYumi05 extends Character {
 }
 
 class YotsuyaYumi70 extends Character {
-    name: string = '四谷 ゆみ_絢爛';
+    name: string = '四谷 ゆみ / 絢爛 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3071,14 +2547,6 @@ class YotsuyaYumi70 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -3094,7 +2562,7 @@ class YotsuyaYumi70 extends Character {
 }
 
 class FujinoYayoi01 extends Character {
-    name: string = '藤野 やよい';
+    name: string = '藤野 やよい ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 8;
@@ -3115,18 +2583,11 @@ class FujinoYayoi01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -3138,7 +2599,7 @@ class FujinoYayoi01 extends Character {
 }
 
 class FujinoYayoi02 extends Character {
-    name: string = '藤野 やよい';
+    name: string = '藤野 やよい ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -3159,18 +2620,11 @@ class FujinoYayoi02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -3182,7 +2636,7 @@ class FujinoYayoi02 extends Character {
 }
 
 class FujinoYayoi04 extends Character {
-    name: string = '藤野 やよい';
+    name: string = '藤野 やよい ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -3203,18 +2657,11 @@ class FujinoYayoi04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -3226,7 +2673,7 @@ class FujinoYayoi04 extends Character {
 }
 
 class FujinoYayoi05 extends Character {
-    name: string = '藤野 やよい';
+    name: string = '藤野 やよい ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3247,25 +2694,14 @@ class FujinoYayoi05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.ResistIce(1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Fire, 0.5),
-        new Buff(AttrTypeId.ResistIce, 1)
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.FujinoYayoi.long;
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
@@ -3274,7 +2710,7 @@ class FujinoYayoi05 extends Character {
 }
 
 class FujinoYayoi70 extends Character {
-    name: string = '藤野 やよい_無常';
+    name: string = '藤野 やよい / 無常 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3295,14 +2731,6 @@ class FujinoYayoi70 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -3318,7 +2746,7 @@ class FujinoYayoi70 extends Character {
 }
 
 class FujinoYayoi80 extends Character {
-    name: string = '藤野 やよい_ライブ';
+    name: string = '藤野 やよい / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3339,18 +2767,11 @@ class FujinoYayoi80 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -3362,7 +2783,7 @@ class FujinoYayoi80 extends Character {
 }
 
 class ShimoochiaiToka01 extends Character {
-    name: string = '下落合 桃歌';
+    name: string = '下落合 桃歌 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 7;
@@ -3383,18 +2804,11 @@ class ShimoochiaiToka01 extends Character {
     defMin: number = 97;
     defMax: number = 243;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -3406,7 +2820,7 @@ class ShimoochiaiToka01 extends Character {
 }
 
 class ShimoochiaiToka02 extends Character {
-    name: string = '下落合 桃歌';
+    name: string = '下落合 桃歌 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -3427,18 +2841,11 @@ class ShimoochiaiToka02 extends Character {
     defMin: number = 146;
     defMax: number = 388;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -3450,7 +2857,7 @@ class ShimoochiaiToka02 extends Character {
 }
 
 class ShimoochiaiToka04 extends Character {
-    name: string = '下落合 桃歌';
+    name: string = '下落合 桃歌 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -3471,18 +2878,11 @@ class ShimoochiaiToka04 extends Character {
     defMin: number = 194;
     defMax: number = 679;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -3494,7 +2894,7 @@ class ShimoochiaiToka04 extends Character {
 }
 
 class ShimoochiaiToka05 extends Character {
-    name: string = '下落合 桃歌';
+    name: string = '下落合 桃歌 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3515,23 +2915,14 @@ class ShimoochiaiToka05 extends Character {
     defMin: number = 243;
     defMax: number = 873;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15),
-        AttrTypeDict.Volt(0.5)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
-        new Buff(AttrTypeId.Volt, 0.5)
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.ShimoochiaiToka.long;
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
@@ -3540,7 +2931,7 @@ class ShimoochiaiToka05 extends Character {
 }
 
 class ShimoochiaiToka70 extends Character {
-    name: string = '下落合 桃歌_明星';
+    name: string = '下落合 桃歌 / 明星 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3561,14 +2952,6 @@ class ShimoochiaiToka70 extends Character {
     defMin: number = 243;
     defMax: number = 873;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3584,7 +2967,7 @@ class ShimoochiaiToka70 extends Character {
 }
 
 class ShimoochiaiToka80 extends Character {
-    name: string = '下落合 桃歌_ライブ';
+    name: string = '下落合 桃歌 / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3605,18 +2988,11 @@ class ShimoochiaiToka80 extends Character {
     defMin: number = 243;
     defMax: number = 873;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -3628,7 +3004,7 @@ class ShimoochiaiToka80 extends Character {
 }
 
 class ShirleyOakley01 extends Character {
-    name: string = 'シャーリー・O';
+    name: string = 'シャーリー・O ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -3649,14 +3025,6 @@ class ShirleyOakley01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3672,7 +3040,7 @@ class ShirleyOakley01 extends Character {
 }
 
 class ShirleyOakley02 extends Character {
-    name: string = 'シャーリー・O';
+    name: string = 'シャーリー・O ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -3693,14 +3061,6 @@ class ShirleyOakley02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3716,7 +3076,7 @@ class ShirleyOakley02 extends Character {
 }
 
 class ShirleyOakley04 extends Character {
-    name: string = 'シャーリー・O';
+    name: string = 'シャーリー・O ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -3737,14 +3097,6 @@ class ShirleyOakley04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3760,7 +3112,7 @@ class ShirleyOakley04 extends Character {
 }
 
 class ShirleyOakley05 extends Character {
-    name: string = 'シャーリー・O';
+    name: string = 'シャーリー・O ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3781,14 +3133,6 @@ class ShirleyOakley05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3804,7 +3148,7 @@ class ShirleyOakley05 extends Character {
 }
 
 class ShirleyOakley70 extends Character {
-    name: string = 'シャーリー_撃壌';
+    name: string = 'シャーリー / 撃壌 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -3825,18 +3169,11 @@ class ShirleyOakley70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.HandGun(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.HandGun, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -3848,7 +3185,7 @@ class ShirleyOakley70 extends Character {
 }
 
 class ItokuraNeo01 extends Character {
-    name: string = '伊戸倉 音緒';
+    name: string = '伊戸倉 音緒 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -3869,18 +3206,11 @@ class ItokuraNeo01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -3892,7 +3222,7 @@ class ItokuraNeo01 extends Character {
 }
 
 class ItokuraNeo02 extends Character {
-    name: string = '伊戸倉 音緒';
+    name: string = '伊戸倉 音緒 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -3913,23 +3243,14 @@ class ItokuraNeo02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Rifle(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Rifle, 0.25)
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
@@ -3938,7 +3259,7 @@ class ItokuraNeo02 extends Character {
 }
 
 class ItokuraNeo04 extends Character {
-    name: string = '伊戸倉 音緒';
+    name: string = '伊戸倉 音緒 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -3959,23 +3280,14 @@ class ItokuraNeo04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Rifle(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Rifle, 0.25)
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
@@ -3984,7 +3296,7 @@ class ItokuraNeo04 extends Character {
 }
 
 class ItokuraNeo05 extends Character {
-    name: string = '伊戸倉 音緒';
+    name: string = '伊戸倉 音緒 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4005,23 +3317,51 @@ class ItokuraNeo05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Rifle(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Rifle, 0.25)
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo70 extends Character {
+    name: string = '伊戸倉 音緒 / 破手 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
@@ -4030,7 +3370,7 @@ class ItokuraNeo05 extends Character {
 }
 
 class YorishiroEri01 extends Character {
-    name: string = '依城 えり';
+    name: string = '依城 えり ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 7;
@@ -4051,18 +3391,11 @@ class YorishiroEri01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -4074,7 +3407,7 @@ class YorishiroEri01 extends Character {
 }
 
 class YorishiroEri02 extends Character {
-    name: string = '依城 えり';
+    name: string = '依城 えり ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -4095,18 +3428,11 @@ class YorishiroEri02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -4118,7 +3444,7 @@ class YorishiroEri02 extends Character {
 }
 
 class YorishiroEri04 extends Character {
-    name: string = '依城 えり';
+    name: string = '依城 えり ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -4139,18 +3465,11 @@ class YorishiroEri04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
@@ -4162,7 +3481,7 @@ class YorishiroEri04 extends Character {
 }
 
 class YorishiroEri05 extends Character {
-    name: string = '依城 えり';
+    name: string = '依城 えり ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4183,25 +3502,14 @@ class YorishiroEri05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Sword(0.15),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.ResistFire(1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Sword, 0.15),
-        new Buff(AttrTypeId.Ice, 0.5),
-        new Buff(AttrTypeId.ResistFire, 1)
+        new Buff(AttrTypeId.Sword, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.YorishiroEri.long;
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
@@ -4210,7 +3518,7 @@ class YorishiroEri05 extends Character {
 }
 
 class YorishiroEri70 extends Character {
-    name: string = '依城 えり_清廉';
+    name: string = '依城 えり / 清廉 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4231,18 +3539,11 @@ class YorishiroEri70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.3),
         new Buff(AttrTypeId.Sword, 0.1)
@@ -4254,7 +3555,7 @@ class YorishiroEri70 extends Character {
 }
 
 class FumishimaAsuka01 extends Character {
-    name: string = '文島 明日翔';
+    name: string = '文島 明日翔 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 3;
@@ -4275,18 +3576,11 @@ class FumishimaAsuka01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -4298,7 +3592,7 @@ class FumishimaAsuka01 extends Character {
 }
 
 class FumishimaAsuka02 extends Character {
-    name: string = '文島 明日翔';
+    name: string = '文島 明日翔 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -4319,18 +3613,11 @@ class FumishimaAsuka02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -4342,7 +3629,7 @@ class FumishimaAsuka02 extends Character {
 }
 
 class FumishimaAsuka04 extends Character {
-    name: string = '文島 明日翔';
+    name: string = '文島 明日翔 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -4363,18 +3650,11 @@ class FumishimaAsuka04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -4386,7 +3666,7 @@ class FumishimaAsuka04 extends Character {
 }
 
 class FumishimaAsuka05 extends Character {
-    name: string = '文島 明日翔';
+    name: string = '文島 明日翔 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4407,18 +3687,11 @@ class FumishimaAsuka05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -4430,7 +3703,7 @@ class FumishimaAsuka05 extends Character {
 }
 
 class FumishimaAsuka70 extends Character {
-    name: string = '文島 明日翔_福音';
+    name: string = '文島 明日翔 / 福音 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4451,14 +3724,6 @@ class FumishimaAsuka70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -4474,7 +3739,7 @@ class FumishimaAsuka70 extends Character {
 }
 
 class OhzekiKoyui01 extends Character {
-    name: string = '大関 小結';
+    name: string = '大関 小結 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 9;
@@ -4495,14 +3760,6 @@ class OhzekiKoyui01 extends Character {
     defMin: number = 105;
     defMax: number = 263;
     spd: number = 155;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4518,7 +3775,7 @@ class OhzekiKoyui01 extends Character {
 }
 
 class OhzekiKoyui02 extends Character {
-    name: string = '大関 小結';
+    name: string = '大関 小結 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -4539,14 +3796,6 @@ class OhzekiKoyui02 extends Character {
     defMin: number = 158;
     defMax: number = 420;
     spd: number = 155;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4562,7 +3811,7 @@ class OhzekiKoyui02 extends Character {
 }
 
 class OhzekiKoyui04 extends Character {
-    name: string = '大関 小結';
+    name: string = '大関 小結 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -4583,14 +3832,6 @@ class OhzekiKoyui04 extends Character {
     defMin: number = 210;
     defMax: number = 735;
     spd: number = 155;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4606,7 +3847,7 @@ class OhzekiKoyui04 extends Character {
 }
 
 class OhzekiKoyui05 extends Character {
-    name: string = '大関 小結';
+    name: string = '大関 小結 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4627,14 +3868,6 @@ class OhzekiKoyui05 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 155;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4650,7 +3883,7 @@ class OhzekiKoyui05 extends Character {
 }
 
 class OhzekiKoyui70 extends Character {
-    name: string = '大関 小結_豊潤';
+    name: string = '大関 小結 / 豊潤 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4671,18 +3904,11 @@ class OhzekiKoyui70 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 155;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -4694,7 +3920,7 @@ class OhzekiKoyui70 extends Character {
 }
 
 class UsamotoAnna01 extends Character {
-    name: string = '宇佐元 杏奈';
+    name: string = '宇佐元 杏奈 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 12;
@@ -4715,18 +3941,11 @@ class UsamotoAnna01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -4738,7 +3957,7 @@ class UsamotoAnna01 extends Character {
 }
 
 class UsamotoAnna02 extends Character {
-    name: string = '宇佐元 杏奈';
+    name: string = '宇佐元 杏奈 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -4759,18 +3978,11 @@ class UsamotoAnna02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -4782,7 +3994,7 @@ class UsamotoAnna02 extends Character {
 }
 
 class UsamotoAnna04 extends Character {
-    name: string = '宇佐元 杏奈';
+    name: string = '宇佐元 杏奈 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -4803,18 +4015,11 @@ class UsamotoAnna04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -4826,7 +4031,7 @@ class UsamotoAnna04 extends Character {
 }
 
 class UsamotoAnna05 extends Character {
-    name: string = '宇佐元 杏奈';
+    name: string = '宇佐元 杏奈 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4847,25 +4052,14 @@ class UsamotoAnna05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.ResistGravity(1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
-        new Buff(AttrTypeId.Bazooka, 0.15),
-        new Buff(AttrTypeId.Volt, 0.5),
-        new Buff(AttrTypeId.ResistGravity, 1)
+        new Buff(AttrTypeId.Bazooka, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.UsamotoAnna.long;
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
@@ -4874,7 +4068,7 @@ class UsamotoAnna05 extends Character {
 }
 
 class UsamotoAnna70 extends Character {
-    name: string = '宇佐元 杏奈_希求';
+    name: string = '宇佐元 杏奈 / 希求 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -4895,18 +4089,11 @@ class UsamotoAnna70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
@@ -4918,7 +4105,7 @@ class UsamotoAnna70 extends Character {
 }
 
 class JingujiMari01 extends Character {
-    name: string = '神宮寺 真理';
+    name: string = '神宮寺 真理 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 12;
@@ -4939,14 +4126,6 @@ class JingujiMari01 extends Character {
     defMin: number = 106;
     defMax: number = 265;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -4962,7 +4141,7 @@ class JingujiMari01 extends Character {
 }
 
 class JingujiMari02 extends Character {
-    name: string = '神宮寺 真理';
+    name: string = '神宮寺 真理 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -4983,14 +4162,6 @@ class JingujiMari02 extends Character {
     defMin: number = 159;
     defMax: number = 424;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5006,7 +4177,7 @@ class JingujiMari02 extends Character {
 }
 
 class JingujiMari04 extends Character {
-    name: string = '神宮寺 真理';
+    name: string = '神宮寺 真理 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -5027,14 +4198,6 @@ class JingujiMari04 extends Character {
     defMin: number = 212;
     defMax: number = 742;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5050,7 +4213,7 @@ class JingujiMari04 extends Character {
 }
 
 class JingujiMari05 extends Character {
-    name: string = '神宮寺 真理';
+    name: string = '神宮寺 真理 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5071,14 +4234,6 @@ class JingujiMari05 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5094,7 +4249,7 @@ class JingujiMari05 extends Character {
 }
 
 class JingujiMari70 extends Character {
-    name: string = '神宮寺 真理_孤影';
+    name: string = '神宮寺 真理 / 孤影 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5115,18 +4270,11 @@ class JingujiMari70 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
@@ -5138,7 +4286,7 @@ class JingujiMari70 extends Character {
 }
 
 class NiiyaSerina01 extends Character {
-    name: string = '新谷 芹菜';
+    name: string = '新谷 芹菜 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -5159,14 +4307,6 @@ class NiiyaSerina01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -5182,7 +4322,7 @@ class NiiyaSerina01 extends Character {
 }
 
 class NiiyaSerina02 extends Character {
-    name: string = '新谷 芹菜';
+    name: string = '新谷 芹菜 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -5203,14 +4343,6 @@ class NiiyaSerina02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -5226,7 +4358,7 @@ class NiiyaSerina02 extends Character {
 }
 
 class NiiyaSerina04 extends Character {
-    name: string = '新谷 芹菜';
+    name: string = '新谷 芹菜 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -5247,14 +4379,6 @@ class NiiyaSerina04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -5270,7 +4394,7 @@ class NiiyaSerina04 extends Character {
 }
 
 class NiiyaSerina05 extends Character {
-    name: string = '新谷 芹菜';
+    name: string = '新谷 芹菜 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5291,14 +4415,6 @@ class NiiyaSerina05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -5314,7 +4430,7 @@ class NiiyaSerina05 extends Character {
 }
 
 class NiiyaSerina70 extends Character {
-    name: string = '新谷 芹菜_燐光';
+    name: string = '新谷 芹菜 / 燐光 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5335,18 +4451,11 @@ class NiiyaSerina70 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
@@ -5358,7 +4467,7 @@ class NiiyaSerina70 extends Character {
 }
 
 class KaeruzakaRaiya01 extends Character {
-    name: string = '蛙坂 来弥';
+    name: string = '蛙坂 来弥 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 8;
@@ -5379,14 +4488,6 @@ class KaeruzakaRaiya01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5402,7 +4503,7 @@ class KaeruzakaRaiya01 extends Character {
 }
 
 class KaeruzakaRaiya02 extends Character {
-    name: string = '蛙坂 来弥';
+    name: string = '蛙坂 来弥 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -5423,14 +4524,6 @@ class KaeruzakaRaiya02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5446,7 +4539,7 @@ class KaeruzakaRaiya02 extends Character {
 }
 
 class KaeruzakaRaiya04 extends Character {
-    name: string = '蛙坂 来弥';
+    name: string = '蛙坂 来弥 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -5467,14 +4560,6 @@ class KaeruzakaRaiya04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5490,7 +4575,7 @@ class KaeruzakaRaiya04 extends Character {
 }
 
 class KaeruzakaRaiya05 extends Character {
-    name: string = '蛙坂 来弥';
+    name: string = '蛙坂 来弥 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5511,14 +4596,6 @@ class KaeruzakaRaiya05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Sword(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5534,7 +4611,7 @@ class KaeruzakaRaiya05 extends Character {
 }
 
 class KaeruzakaRaiya70 extends Character {
-    name: string = '蛙坂 来弥_残火';
+    name: string = '蛙坂 来弥 / 残火 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5555,18 +4632,11 @@ class KaeruzakaRaiya70 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Sword, 0.1)
@@ -5578,7 +4648,7 @@ class KaeruzakaRaiya70 extends Character {
 }
 
 class KaeruzakaRaiya80 extends Character {
-    name: string = '蛙坂 来弥_ネクスト';
+    name: string = '蛙坂 来弥 / ネクスト ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5599,18 +4669,11 @@ class KaeruzakaRaiya80 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -5622,7 +4685,7 @@ class KaeruzakaRaiya80 extends Character {
 }
 
 class KagomeMisaki01 extends Character {
-    name: string = '籠目 深沙希';
+    name: string = '籠目 深沙希 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -5643,18 +4706,11 @@ class KagomeMisaki01 extends Character {
     defMin: number = 105;
     defMax: number = 263;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5666,7 +4722,7 @@ class KagomeMisaki01 extends Character {
 }
 
 class KagomeMisaki02 extends Character {
-    name: string = '籠目 深沙希';
+    name: string = '籠目 深沙希 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -5687,18 +4743,11 @@ class KagomeMisaki02 extends Character {
     defMin: number = 158;
     defMax: number = 420;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5710,7 +4759,7 @@ class KagomeMisaki02 extends Character {
 }
 
 class KagomeMisaki04 extends Character {
-    name: string = '籠目 深沙希';
+    name: string = '籠目 深沙希 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -5731,18 +4780,11 @@ class KagomeMisaki04 extends Character {
     defMin: number = 210;
     defMax: number = 735;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5754,7 +4796,7 @@ class KagomeMisaki04 extends Character {
 }
 
 class KagomeMisaki05 extends Character {
-    name: string = '籠目 深沙希';
+    name: string = '籠目 深沙希 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5775,18 +4817,11 @@ class KagomeMisaki05 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5798,7 +4833,7 @@ class KagomeMisaki05 extends Character {
 }
 
 class KagomeMisaki70 extends Character {
-    name: string = '籠目 深沙希_泡影';
+    name: string = '籠目 深沙希 / 泡影 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5819,18 +4854,11 @@ class KagomeMisaki70 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -5842,7 +4870,7 @@ class KagomeMisaki70 extends Character {
 }
 
 class KondohChieri01 extends Character {
-    name: string = '紺堂 地衛理';
+    name: string = '紺堂 地衛理 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 13;
@@ -5863,18 +4891,11 @@ class KondohChieri01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5886,7 +4907,7 @@ class KondohChieri01 extends Character {
 }
 
 class KondohChieri02 extends Character {
-    name: string = '紺堂 地衛理';
+    name: string = '紺堂 地衛理 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -5907,18 +4928,11 @@ class KondohChieri02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5930,7 +4944,7 @@ class KondohChieri02 extends Character {
 }
 
 class KondohChieri04 extends Character {
-    name: string = '紺堂 地衛理';
+    name: string = '紺堂 地衛理 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -5951,18 +4965,11 @@ class KondohChieri04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -5974,7 +4981,7 @@ class KondohChieri04 extends Character {
 }
 
 class KondohChieri05 extends Character {
-    name: string = '紺堂 地衛理';
+    name: string = '紺堂 地衛理 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -5995,18 +5002,11 @@ class KondohChieri05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -6018,7 +5018,7 @@ class KondohChieri05 extends Character {
 }
 
 class KondohChieri70 extends Character {
-    name: string = '紺堂 地衛理_晨星';
+    name: string = '紺堂 地衛理 / 晨星 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6039,18 +5039,11 @@ class KondohChieri70 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
@@ -6062,7 +5055,7 @@ class KondohChieri70 extends Character {
 }
 
 class SutegoroShiina01 extends Character {
-    name: string = '州天頃 椎奈';
+    name: string = '州天頃 椎奈 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 12;
@@ -6083,14 +5076,6 @@ class SutegoroShiina01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -6106,7 +5091,7 @@ class SutegoroShiina01 extends Character {
 }
 
 class SutegoroShiina02 extends Character {
-    name: string = '州天頃 椎奈';
+    name: string = '州天頃 椎奈 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -6127,14 +5112,6 @@ class SutegoroShiina02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -6150,7 +5127,7 @@ class SutegoroShiina02 extends Character {
 }
 
 class SutegoroShiina04 extends Character {
-    name: string = '州天頃 椎奈';
+    name: string = '州天頃 椎奈 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -6171,14 +5148,6 @@ class SutegoroShiina04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -6194,7 +5163,7 @@ class SutegoroShiina04 extends Character {
 }
 
 class SutegoroShiina05 extends Character {
-    name: string = '州天頃 椎奈';
+    name: string = '州天頃 椎奈 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6215,14 +5184,6 @@ class SutegoroShiina05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -6238,7 +5199,7 @@ class SutegoroShiina05 extends Character {
 }
 
 class SutegoroShiina70 extends Character {
-    name: string = '州天頃 椎奈_玉響';
+    name: string = '州天頃 椎奈 / 玉響 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6259,18 +5220,11 @@ class SutegoroShiina70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -6282,7 +5236,7 @@ class SutegoroShiina70 extends Character {
 }
 
 class NikitohKanade01 extends Character {
-    name: string = '仁紀藤 奏';
+    name: string = '仁紀藤 奏 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 11;
@@ -6303,18 +5257,11 @@ class NikitohKanade01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -6326,7 +5273,7 @@ class NikitohKanade01 extends Character {
 }
 
 class NikitohKanade02 extends Character {
-    name: string = '仁紀藤 奏';
+    name: string = '仁紀藤 奏 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -6347,18 +5294,11 @@ class NikitohKanade02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -6370,7 +5310,7 @@ class NikitohKanade02 extends Character {
 }
 
 class NikitohKanade04 extends Character {
-    name: string = '仁紀藤 奏';
+    name: string = '仁紀藤 奏 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -6391,18 +5331,11 @@ class NikitohKanade04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -6414,7 +5347,7 @@ class NikitohKanade04 extends Character {
 }
 
 class NikitohKanade05 extends Character {
-    name: string = '仁紀藤 奏';
+    name: string = '仁紀藤 奏 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6435,18 +5368,11 @@ class NikitohKanade05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -6458,7 +5384,7 @@ class NikitohKanade05 extends Character {
 }
 
 class NikitohKanade70 extends Character {
-    name: string = '仁紀藤 奏_雲耀';
+    name: string = '仁紀藤 奏 / 雲耀 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6479,18 +5405,11 @@ class NikitohKanade70 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
@@ -6502,7 +5421,7 @@ class NikitohKanade70 extends Character {
 }
 
 class MuraoMira01 extends Character {
-    name: string = '村尾 未羅';
+    name: string = '村尾 未羅 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 10;
@@ -6523,18 +5442,11 @@ class MuraoMira01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -6546,7 +5458,7 @@ class MuraoMira01 extends Character {
 }
 
 class MuraoMira02 extends Character {
-    name: string = '村尾 未羅';
+    name: string = '村尾 未羅 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -6567,18 +5479,11 @@ class MuraoMira02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -6590,7 +5495,7 @@ class MuraoMira02 extends Character {
 }
 
 class MuraoMira04 extends Character {
-    name: string = '村尾 未羅';
+    name: string = '村尾 未羅 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -6611,18 +5516,11 @@ class MuraoMira04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -6634,7 +5532,7 @@ class MuraoMira04 extends Character {
 }
 
 class MuraoMira05 extends Character {
-    name: string = '村尾 未羅';
+    name: string = '村尾 未羅 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6655,18 +5553,11 @@ class MuraoMira05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -6678,7 +5569,7 @@ class MuraoMira05 extends Character {
 }
 
 class MuraoMira70 extends Character {
-    name: string = '村尾 未羅_至純';
+    name: string = '村尾 未羅 / 至純 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6699,14 +5590,6 @@ class MuraoMira70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6722,7 +5605,7 @@ class MuraoMira70 extends Character {
 }
 
 class KimikageYui01 extends Character {
-    name: string = '君影 唯';
+    name: string = '君影 唯 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -6743,18 +5626,11 @@ class KimikageYui01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -6766,7 +5642,7 @@ class KimikageYui01 extends Character {
 }
 
 class KimikageYui02 extends Character {
-    name: string = '君影 唯';
+    name: string = '君影 唯 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -6787,18 +5663,11 @@ class KimikageYui02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -6810,7 +5679,7 @@ class KimikageYui02 extends Character {
 }
 
 class KimikageYui04 extends Character {
-    name: string = '君影 唯';
+    name: string = '君影 唯 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -6831,18 +5700,11 @@ class KimikageYui04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -6854,7 +5716,7 @@ class KimikageYui04 extends Character {
 }
 
 class KimikageYui05 extends Character {
-    name: string = '君影 唯';
+    name: string = '君影 唯 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -6875,18 +5737,11 @@ class KimikageYui05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -6897,8 +5752,45 @@ class KimikageYui05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
 }
 
+class KimikageYui70 extends Character {
+    name: string = '君影 唯 / 連理 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 485;
+    atkCloseMin: number = 135;
+    atkCloseMax: number = 485;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KimikageYui.long;
+    weaponCloses: Gear[] = ActressGears.KimikageYui.short;
+    equipmentTops: Gear[] = ActressGears.KimikageYui.top;
+    equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+}
+
 class SugaItsuri01 extends Character {
-    name: string = '須賀 乙莉';
+    name: string = '須賀 乙莉 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -6919,14 +5811,6 @@ class SugaItsuri01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6942,7 +5826,7 @@ class SugaItsuri01 extends Character {
 }
 
 class SugaItsuri02 extends Character {
-    name: string = '須賀 乙莉';
+    name: string = '須賀 乙莉 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -6963,14 +5847,6 @@ class SugaItsuri02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6986,7 +5862,7 @@ class SugaItsuri02 extends Character {
 }
 
 class SugaItsuri04 extends Character {
-    name: string = '須賀 乙莉';
+    name: string = '須賀 乙莉 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -7007,14 +5883,6 @@ class SugaItsuri04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -7030,7 +5898,7 @@ class SugaItsuri04 extends Character {
 }
 
 class SugaItsuri05 extends Character {
-    name: string = '須賀 乙莉';
+    name: string = '須賀 乙莉 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7051,14 +5919,6 @@ class SugaItsuri05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -7074,7 +5934,7 @@ class SugaItsuri05 extends Character {
 }
 
 class SugaItsuri70 extends Character {
-    name: string = '須賀 乙莉_仰望';
+    name: string = '須賀 乙莉 / 仰望 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7095,18 +5955,11 @@ class SugaItsuri70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
@@ -7118,7 +5971,7 @@ class SugaItsuri70 extends Character {
 }
 
 class YorozubaMeika01 extends Character {
-    name: string = '萬場 盟華';
+    name: string = '萬場 盟華 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -7139,18 +5992,11 @@ class YorozubaMeika01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -7162,7 +6008,7 @@ class YorozubaMeika01 extends Character {
 }
 
 class YorozubaMeika02 extends Character {
-    name: string = '萬場 盟華';
+    name: string = '萬場 盟華 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -7183,18 +6029,11 @@ class YorozubaMeika02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -7206,7 +6045,7 @@ class YorozubaMeika02 extends Character {
 }
 
 class YorozubaMeika04 extends Character {
-    name: string = '萬場 盟華';
+    name: string = '萬場 盟華 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -7227,18 +6066,11 @@ class YorozubaMeika04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -7250,7 +6082,7 @@ class YorozubaMeika04 extends Character {
 }
 
 class YorozubaMeika05 extends Character {
-    name: string = '萬場 盟華';
+    name: string = '萬場 盟華 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7271,18 +6103,11 @@ class YorozubaMeika05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -7294,7 +6119,7 @@ class YorozubaMeika05 extends Character {
 }
 
 class YorozubaMeika70 extends Character {
-    name: string = '萬場 盟華_極彩';
+    name: string = '萬場 盟華 / 極彩 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7315,18 +6140,11 @@ class YorozubaMeika70 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Hammer, 0.1)
@@ -7338,7 +6156,7 @@ class YorozubaMeika70 extends Character {
 }
 
 class KuroganeYuto01 extends Character {
-    name: string = '九炉鉄 悠都';
+    name: string = '九炉鉄 悠都 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 8;
@@ -7359,14 +6177,6 @@ class KuroganeYuto01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7382,7 +6192,7 @@ class KuroganeYuto01 extends Character {
 }
 
 class KuroganeYuto02 extends Character {
-    name: string = '九炉鉄 悠都';
+    name: string = '九炉鉄 悠都 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -7403,14 +6213,6 @@ class KuroganeYuto02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7426,7 +6228,7 @@ class KuroganeYuto02 extends Character {
 }
 
 class KuroganeYuto04 extends Character {
-    name: string = '九炉鉄 悠都';
+    name: string = '九炉鉄 悠都 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -7447,14 +6249,6 @@ class KuroganeYuto04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7470,7 +6264,7 @@ class KuroganeYuto04 extends Character {
 }
 
 class KuroganeYuto05 extends Character {
-    name: string = '九炉鉄 悠都';
+    name: string = '九炉鉄 悠都 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7491,14 +6285,6 @@ class KuroganeYuto05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7514,7 +6300,7 @@ class KuroganeYuto05 extends Character {
 }
 
 class KuroganeYuto70 extends Character {
-    name: string = '九炉鉄 悠都_引導';
+    name: string = '九炉鉄 悠都 / 引導 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7535,18 +6321,11 @@ class KuroganeYuto70 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Sword(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Sword, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -7558,7 +6337,7 @@ class KuroganeYuto70 extends Character {
 }
 
 class KotomuraAkane01 extends Character {
-    name: string = '琴村 朱音';
+    name: string = '琴村 朱音 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 8;
@@ -7579,18 +6358,11 @@ class KotomuraAkane01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -7602,7 +6374,7 @@ class KotomuraAkane01 extends Character {
 }
 
 class KotomuraAkane02 extends Character {
-    name: string = '琴村 朱音';
+    name: string = '琴村 朱音 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -7623,18 +6395,11 @@ class KotomuraAkane02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -7646,7 +6411,7 @@ class KotomuraAkane02 extends Character {
 }
 
 class KotomuraAkane04 extends Character {
-    name: string = '琴村 朱音';
+    name: string = '琴村 朱音 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -7667,18 +6432,11 @@ class KotomuraAkane04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -7690,7 +6448,7 @@ class KotomuraAkane04 extends Character {
 }
 
 class KotomuraAkane05 extends Character {
-    name: string = '琴村 朱音';
+    name: string = '琴村 朱音 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7711,23 +6469,14 @@ class KotomuraAkane05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.8),
-        AttrTypeDict.ResistIce(-0.8),
-        AttrTypeDict.ResistVolt(-0.4),
-        AttrTypeDict.Fire(0.96),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15),
-        AttrTypeDict.Fire(0.5)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
         new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
-        new Buff(AttrTypeId.Spear, 0.15),
-        new Buff(AttrTypeId.Fire, 0.5)
+        new Buff(AttrTypeId.Spear, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.KotomuraAkane.long;
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
@@ -7736,7 +6485,7 @@ class KotomuraAkane05 extends Character {
 }
 
 class KotomuraAkane70 extends Character {
-    name: string = '琴村 朱音_炎天';
+    name: string = '琴村 朱音 / 炎天 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7757,18 +6506,11 @@ class KotomuraAkane70 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Sniper(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Sniper, 0.1)
@@ -7780,7 +6522,7 @@ class KotomuraAkane70 extends Character {
 }
 
 class KotomuraAkane80 extends Character {
-    name: string = '琴村 朱音_ライブ';
+    name: string = '琴村 朱音 / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7801,14 +6543,6 @@ class KotomuraAkane80 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7824,7 +6558,7 @@ class KotomuraAkane80 extends Character {
 }
 
 class KotomuraAmane01 extends Character {
-    name: string = '琴村 天音';
+    name: string = '琴村 天音 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 8;
@@ -7845,18 +6579,11 @@ class KotomuraAmane01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -7868,7 +6595,7 @@ class KotomuraAmane01 extends Character {
 }
 
 class KotomuraAmane02 extends Character {
-    name: string = '琴村 天音';
+    name: string = '琴村 天音 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -7889,18 +6616,11 @@ class KotomuraAmane02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -7912,7 +6632,7 @@ class KotomuraAmane02 extends Character {
 }
 
 class KotomuraAmane04 extends Character {
-    name: string = '琴村 天音';
+    name: string = '琴村 天音 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -7933,18 +6653,11 @@ class KotomuraAmane04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -7956,7 +6669,7 @@ class KotomuraAmane04 extends Character {
 }
 
 class KotomuraAmane05 extends Character {
-    name: string = '琴村 天音';
+    name: string = '琴村 天音 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -7977,18 +6690,11 @@ class KotomuraAmane05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -8000,7 +6706,7 @@ class KotomuraAmane05 extends Character {
 }
 
 class KotomuraAmane70 extends Character {
-    name: string = '琴村 天音_玄天';
+    name: string = '琴村 天音 / 玄天 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8021,18 +6727,11 @@ class KotomuraAmane70 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Hammer, 0.1)
@@ -8044,7 +6743,7 @@ class KotomuraAmane70 extends Character {
 }
 
 class KotomuraAmane80 extends Character {
-    name: string = '琴村 天音_ライブ';
+    name: string = '琴村 天音 / ライブ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8065,14 +6764,6 @@ class KotomuraAmane80 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -8088,7 +6779,7 @@ class KotomuraAmane80 extends Character {
 }
 
 class ShantiRana01 extends Character {
-    name: string = 'サンティ・R';
+    name: string = 'サンティ・R ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 13;
@@ -8109,18 +6800,11 @@ class ShantiRana01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -8132,7 +6816,7 @@ class ShantiRana01 extends Character {
 }
 
 class ShantiRana02 extends Character {
-    name: string = 'サンティ・R';
+    name: string = 'サンティ・R ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -8153,18 +6837,11 @@ class ShantiRana02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -8176,7 +6853,7 @@ class ShantiRana02 extends Character {
 }
 
 class ShantiRana04 extends Character {
-    name: string = 'サンティ・R';
+    name: string = 'サンティ・R ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -8197,18 +6874,11 @@ class ShantiRana04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -8220,7 +6890,7 @@ class ShantiRana04 extends Character {
 }
 
 class ShantiRana05 extends Character {
-    name: string = 'サンティ・R';
+    name: string = 'サンティ・R ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8241,18 +6911,11 @@ class ShantiRana05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -8264,7 +6927,7 @@ class ShantiRana05 extends Character {
 }
 
 class ShantiRana70 extends Character {
-    name: string = 'サンティ_雄渾';
+    name: string = 'サンティ / 雄渾 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8285,18 +6948,11 @@ class ShantiRana70 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Sword(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Sword, 0.1)
@@ -8308,7 +6964,7 @@ class ShantiRana70 extends Character {
 }
 
 class NinaKalinina01 extends Character {
-    name: string = 'ニーナ・K';
+    name: string = 'ニーナ・K ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -8329,18 +6985,11 @@ class NinaKalinina01 extends Character {
     defMin: number = 106;
     defMax: number = 265;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Hammer, 0.25)
@@ -8352,7 +7001,7 @@ class NinaKalinina01 extends Character {
 }
 
 class NinaKalinina02 extends Character {
-    name: string = 'ニーナ・K';
+    name: string = 'ニーナ・K ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -8373,18 +7022,11 @@ class NinaKalinina02 extends Character {
     defMin: number = 159;
     defMax: number = 424;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Hammer, 0.25)
@@ -8396,7 +7038,7 @@ class NinaKalinina02 extends Character {
 }
 
 class NinaKalinina04 extends Character {
-    name: string = 'ニーナ・K';
+    name: string = 'ニーナ・K ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -8417,18 +7059,11 @@ class NinaKalinina04 extends Character {
     defMin: number = 212;
     defMax: number = 742;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Hammer, 0.25)
@@ -8440,7 +7075,7 @@ class NinaKalinina04 extends Character {
 }
 
 class NinaKalinina05 extends Character {
-    name: string = 'ニーナ・K';
+    name: string = 'ニーナ・K ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8461,18 +7096,11 @@ class NinaKalinina05 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Hammer(0.25)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Hammer, 0.25)
@@ -8484,7 +7112,7 @@ class NinaKalinina05 extends Character {
 }
 
 class NinaKalinina70 extends Character {
-    name: string = 'ニーナ_破軍';
+    name: string = 'ニーナ / 破軍 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8505,18 +7133,11 @@ class NinaKalinina70 extends Character {
     defMin: number = 265;
     defMax: number = 954;
     spd: number = 157;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -8528,7 +7149,7 @@ class NinaKalinina70 extends Character {
 }
 
 class WangHonghua01 extends Character {
-    name: string = '王 紅花';
+    name: string = '王 紅花 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -8549,14 +7170,6 @@ class WangHonghua01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8572,7 +7185,7 @@ class WangHonghua01 extends Character {
 }
 
 class WangHonghua02 extends Character {
-    name: string = '王 紅花';
+    name: string = '王 紅花 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -8593,14 +7206,6 @@ class WangHonghua02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8616,7 +7221,7 @@ class WangHonghua02 extends Character {
 }
 
 class WangHonghua04 extends Character {
-    name: string = '王 紅花';
+    name: string = '王 紅花 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -8637,14 +7242,6 @@ class WangHonghua04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8660,7 +7257,7 @@ class WangHonghua04 extends Character {
 }
 
 class WangHonghua05 extends Character {
-    name: string = '王 紅花';
+    name: string = '王 紅花 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8681,14 +7278,6 @@ class WangHonghua05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8704,7 +7293,7 @@ class WangHonghua05 extends Character {
 }
 
 class WangHonghua70 extends Character {
-    name: string = '王 紅花_紅蓮';
+    name: string = '王 紅花 / 紅蓮 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8725,18 +7314,11 @@ class WangHonghua70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
@@ -8748,7 +7330,7 @@ class WangHonghua70 extends Character {
 }
 
 class MiaVoisin01 extends Character {
-    name: string = 'ミア・V';
+    name: string = 'ミア・V ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 11;
@@ -8769,18 +7351,11 @@ class MiaVoisin01 extends Character {
     defMin: number = 104;
     defMax: number = 260;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -8792,7 +7367,7 @@ class MiaVoisin01 extends Character {
 }
 
 class MiaVoisin02 extends Character {
-    name: string = 'ミア・V';
+    name: string = 'ミア・V ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -8813,18 +7388,11 @@ class MiaVoisin02 extends Character {
     defMin: number = 156;
     defMax: number = 416;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -8836,7 +7404,7 @@ class MiaVoisin02 extends Character {
 }
 
 class MiaVoisin04 extends Character {
-    name: string = 'ミア・V';
+    name: string = 'ミア・V ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -8857,18 +7425,11 @@ class MiaVoisin04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -8880,7 +7441,7 @@ class MiaVoisin04 extends Character {
 }
 
 class MiaVoisin05 extends Character {
-    name: string = 'ミア・V';
+    name: string = 'ミア・V ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -8901,18 +7462,11 @@ class MiaVoisin05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -8923,52 +7477,8 @@ class MiaVoisin05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
 }
 
-class MiaVoisin70 extends Character {
-    name: string = 'ミア_名称';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    hp: number = 3175;
-    hpMin: number = 853;
-    hpMax: number = 3175;
-    atkClose: number = 532;
-    atkCloseMin: number = 148;
-    atkCloseMax: number = 532;
-    attrClose: number = 0;
-    atkShot: number = 538;
-    atkShotMin: number = 149;
-    atkShotMax: number = 538;
-    attrShot: number = 0;
-    def: number = 936;
-    defMin: number = 260;
-    defMax: number = 936;
-    spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistIce, 0.8),
-        new Buff(AttrTypeId.ResistFire, -0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.4),
-        new Buff(AttrTypeId.Ice, 0.96),
-        new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1)
-    ];
-    weaponShots: Gear[] = ActressGears.MiaVoisin.long;
-    weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
-    equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
-    equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
-}
-
 class ChishimaMiyuki01 extends Character {
-    name: string = '千島 美幸';
+    name: string = '千島 美幸 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -8989,18 +7499,11 @@ class ChishimaMiyuki01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -9012,7 +7515,7 @@ class ChishimaMiyuki01 extends Character {
 }
 
 class ChishimaMiyuki02 extends Character {
-    name: string = '千島 美幸';
+    name: string = '千島 美幸 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -9033,18 +7536,11 @@ class ChishimaMiyuki02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -9056,7 +7552,7 @@ class ChishimaMiyuki02 extends Character {
 }
 
 class ChishimaMiyuki04 extends Character {
-    name: string = '千島 美幸';
+    name: string = '千島 美幸 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -9077,18 +7573,11 @@ class ChishimaMiyuki04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -9100,7 +7589,7 @@ class ChishimaMiyuki04 extends Character {
 }
 
 class ChishimaMiyuki05 extends Character {
-    name: string = '千島 美幸';
+    name: string = '千島 美幸 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9121,18 +7610,11 @@ class ChishimaMiyuki05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -9144,7 +7626,7 @@ class ChishimaMiyuki05 extends Character {
 }
 
 class ChishimaMiyuki70 extends Character {
-    name: string = '千島 美幸_幸魂';
+    name: string = '千島 美幸 / 幸魂 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9165,14 +7647,6 @@ class ChishimaMiyuki70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -9188,7 +7662,7 @@ class ChishimaMiyuki70 extends Character {
 }
 
 class ShinonomeChie01 extends Character {
-    name: string = '東雲 チヱ';
+    name: string = '東雲 チヱ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 15;
@@ -9209,14 +7683,6 @@ class ShinonomeChie01 extends Character {
     defMin: number = 96;
     defMax: number = 240;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9232,7 +7698,7 @@ class ShinonomeChie01 extends Character {
 }
 
 class ShinonomeChie02 extends Character {
-    name: string = '東雲 チヱ';
+    name: string = '東雲 チヱ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -9253,14 +7719,6 @@ class ShinonomeChie02 extends Character {
     defMin: number = 144;
     defMax: number = 384;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9276,7 +7734,7 @@ class ShinonomeChie02 extends Character {
 }
 
 class ShinonomeChie04 extends Character {
-    name: string = '東雲 チヱ';
+    name: string = '東雲 チヱ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -9297,14 +7755,6 @@ class ShinonomeChie04 extends Character {
     defMin: number = 192;
     defMax: number = 672;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9320,7 +7770,7 @@ class ShinonomeChie04 extends Character {
 }
 
 class ShinonomeChie05 extends Character {
-    name: string = '東雲 チヱ';
+    name: string = '東雲 チヱ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9341,14 +7791,6 @@ class ShinonomeChie05 extends Character {
     defMin: number = 240;
     defMax: number = 864;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9364,7 +7806,7 @@ class ShinonomeChie05 extends Character {
 }
 
 class ShinonomeChie70 extends Character {
-    name: string = '東雲 チヱ_流転';
+    name: string = '東雲 チヱ / 流転 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9385,18 +7827,11 @@ class ShinonomeChie70 extends Character {
     defMin: number = 240;
     defMax: number = 864;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Bazooka(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Hammer, 0.1)
@@ -9408,7 +7843,7 @@ class ShinonomeChie70 extends Character {
 }
 
 class MikurazaAzuki01 extends Character {
-    name: string = '御蔵座 梓希';
+    name: string = '御蔵座 梓希 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 5;
@@ -9429,18 +7864,11 @@ class MikurazaAzuki01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -9452,7 +7880,7 @@ class MikurazaAzuki01 extends Character {
 }
 
 class MikurazaAzuki02 extends Character {
-    name: string = '御蔵座 梓希';
+    name: string = '御蔵座 梓希 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -9473,18 +7901,11 @@ class MikurazaAzuki02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -9496,7 +7917,7 @@ class MikurazaAzuki02 extends Character {
 }
 
 class MikurazaAzuki04 extends Character {
-    name: string = '御蔵座 梓希';
+    name: string = '御蔵座 梓希 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -9517,18 +7938,11 @@ class MikurazaAzuki04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -9540,7 +7954,7 @@ class MikurazaAzuki04 extends Character {
 }
 
 class MikurazaAzuki05 extends Character {
-    name: string = '御蔵座 梓希';
+    name: string = '御蔵座 梓希 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9561,18 +7975,11 @@ class MikurazaAzuki05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -9584,7 +7991,7 @@ class MikurazaAzuki05 extends Character {
 }
 
 class MikurazaAzuki70 extends Character {
-    name: string = '御蔵座 梓希_招福';
+    name: string = '御蔵座 梓希 / 招福 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9605,14 +8012,6 @@ class MikurazaAzuki70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Hammer(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9628,7 +8027,7 @@ class MikurazaAzuki70 extends Character {
 }
 
 class YamanoKaoruko01 extends Character {
-    name: string = '山野 薫子';
+    name: string = '山野 薫子 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -9649,18 +8048,11 @@ class YamanoKaoruko01 extends Character {
     defMin: number = 103;
     defMax: number = 258;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -9672,7 +8064,7 @@ class YamanoKaoruko01 extends Character {
 }
 
 class YamanoKaoruko02 extends Character {
-    name: string = '山野 薫子';
+    name: string = '山野 薫子 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -9693,18 +8085,11 @@ class YamanoKaoruko02 extends Character {
     defMin: number = 155;
     defMax: number = 412;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -9716,7 +8101,7 @@ class YamanoKaoruko02 extends Character {
 }
 
 class YamanoKaoruko04 extends Character {
-    name: string = '山野 薫子';
+    name: string = '山野 薫子 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -9737,18 +8122,11 @@ class YamanoKaoruko04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -9760,7 +8138,7 @@ class YamanoKaoruko04 extends Character {
 }
 
 class YamanoKaoruko05 extends Character {
-    name: string = '山野 薫子';
+    name: string = '山野 薫子 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9781,18 +8159,11 @@ class YamanoKaoruko05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -9804,7 +8175,7 @@ class YamanoKaoruko05 extends Character {
 }
 
 class YamanoKaoruko70 extends Character {
-    name: string = '山野 薫子_玄妙';
+    name: string = '山野 薫子 / 玄妙 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -9825,18 +8196,11 @@ class YamanoKaoruko70 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Spear(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
@@ -9848,7 +8212,7 @@ class YamanoKaoruko70 extends Character {
 }
 
 class NikaidohTsukasa01 extends Character {
-    name: string = '二階堂 司';
+    name: string = '二階堂 司 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 4;
@@ -9869,14 +8233,6 @@ class NikaidohTsukasa01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9892,7 +8248,7 @@ class NikaidohTsukasa01 extends Character {
 }
 
 class NikaidohTsukasa02 extends Character {
-    name: string = '二階堂 司';
+    name: string = '二階堂 司 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -9913,14 +8269,6 @@ class NikaidohTsukasa02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9936,7 +8284,7 @@ class NikaidohTsukasa02 extends Character {
 }
 
 class NikaidohTsukasa04 extends Character {
-    name: string = '二階堂 司';
+    name: string = '二階堂 司 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -9957,14 +8305,6 @@ class NikaidohTsukasa04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9980,7 +8320,7 @@ class NikaidohTsukasa04 extends Character {
 }
 
 class NikaidohTsukasa05 extends Character {
-    name: string = '二階堂 司';
+    name: string = '二階堂 司 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10001,14 +8341,6 @@ class NikaidohTsukasa05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -10024,7 +8356,7 @@ class NikaidohTsukasa05 extends Character {
 }
 
 class NikaidohTsukasa70 extends Character {
-    name: string = '二階堂 司_芝蘭';
+    name: string = '二階堂 司 / 芝蘭 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10045,18 +8377,11 @@ class NikaidohTsukasa70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.8),
-        AttrTypeDict.ResistFire(-0.8),
-        AttrTypeDict.ResistGravity(-0.4),
-        AttrTypeDict.Ice(0.96),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
         new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Ice, 0.96),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -10068,7 +8393,7 @@ class NikaidohTsukasa70 extends Character {
 }
 
 class OchanomizuMirie01 extends Character {
-    name: string = '御茶ノ水 美里江';
+    name: string = '御茶ノ水 美里江 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 4;
@@ -10089,18 +8414,11 @@ class OchanomizuMirie01 extends Character {
     defMin: number = 97;
     defMax: number = 243;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -10112,7 +8430,7 @@ class OchanomizuMirie01 extends Character {
 }
 
 class OchanomizuMirie02 extends Character {
-    name: string = '御茶ノ水 美里江';
+    name: string = '御茶ノ水 美里江 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -10133,18 +8451,11 @@ class OchanomizuMirie02 extends Character {
     defMin: number = 146;
     defMax: number = 388;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -10156,7 +8467,7 @@ class OchanomizuMirie02 extends Character {
 }
 
 class OchanomizuMirie04 extends Character {
-    name: string = '御茶ノ水 美里江';
+    name: string = '御茶ノ水 美里江 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -10177,18 +8488,11 @@ class OchanomizuMirie04 extends Character {
     defMin: number = 194;
     defMax: number = 679;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -10200,7 +8504,7 @@ class OchanomizuMirie04 extends Character {
 }
 
 class OchanomizuMirie05 extends Character {
-    name: string = '御茶ノ水 美里江';
+    name: string = '御茶ノ水 美里江 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10221,18 +8525,11 @@ class OchanomizuMirie05 extends Character {
     defMin: number = 243;
     defMax: number = 873;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -10244,7 +8541,7 @@ class OchanomizuMirie05 extends Character {
 }
 
 class OchanomizuMirie70 extends Character {
-    name: string = '御茶ノ水 美里江_無辜';
+    name: string = '御茶ノ水 美里江 / 無辜 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10265,14 +8562,6 @@ class OchanomizuMirie70 extends Character {
     defMin: number = 243;
     defMax: number = 873;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Sniper(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10288,7 +8577,7 @@ class OchanomizuMirie70 extends Character {
 }
 
 class MerabuchiKanami01 extends Character {
-    name: string = '米良渕 花浪';
+    name: string = '米良渕 花浪 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -10309,14 +8598,6 @@ class MerabuchiKanami01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -10332,7 +8613,7 @@ class MerabuchiKanami01 extends Character {
 }
 
 class MerabuchiKanami02 extends Character {
-    name: string = '米良渕 花浪';
+    name: string = '米良渕 花浪 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -10353,14 +8634,6 @@ class MerabuchiKanami02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -10376,7 +8649,7 @@ class MerabuchiKanami02 extends Character {
 }
 
 class MerabuchiKanami04 extends Character {
-    name: string = '米良渕 花浪';
+    name: string = '米良渕 花浪 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -10397,14 +8670,6 @@ class MerabuchiKanami04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -10420,7 +8685,7 @@ class MerabuchiKanami04 extends Character {
 }
 
 class MerabuchiKanami05 extends Character {
-    name: string = '米良渕 花浪';
+    name: string = '米良渕 花浪 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10441,14 +8706,6 @@ class MerabuchiKanami05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -10464,7 +8721,7 @@ class MerabuchiKanami05 extends Character {
 }
 
 class RitaHenschel01 extends Character {
-    name: string = 'リタ・H';
+    name: string = 'リタ・H ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -10485,14 +8742,6 @@ class RitaHenschel01 extends Character {
     defMin: number = 103;
     defMax: number = 258;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10508,7 +8757,7 @@ class RitaHenschel01 extends Character {
 }
 
 class RitaHenschel02 extends Character {
-    name: string = 'リタ・H';
+    name: string = 'リタ・H ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -10529,14 +8778,6 @@ class RitaHenschel02 extends Character {
     defMin: number = 155;
     defMax: number = 412;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10552,7 +8793,7 @@ class RitaHenschel02 extends Character {
 }
 
 class RitaHenschel04 extends Character {
-    name: string = 'リタ・H';
+    name: string = 'リタ・H ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -10573,14 +8814,6 @@ class RitaHenschel04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10596,7 +8829,7 @@ class RitaHenschel04 extends Character {
 }
 
 class RitaHenschel05 extends Character {
-    name: string = 'リタ・H';
+    name: string = 'リタ・H ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10617,14 +8850,6 @@ class RitaHenschel05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10640,7 +8865,7 @@ class RitaHenschel05 extends Character {
 }
 
 class RitaHenschel70 extends Character {
-    name: string = 'リタ_巧匠';
+    name: string = 'リタ / 巧匠 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10661,18 +8886,11 @@ class RitaHenschel70 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Hammer(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Rifle, 0.3),
         new Buff(AttrTypeId.Hammer, 0.1)
@@ -10683,8 +8901,156 @@ class RitaHenschel70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
 }
 
+class OnagaAkino01 extends Character {
+    name: string = '尾長 晶乃 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 12;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 879;
+    hpMin: number = 364;
+    hpMax: number = 879;
+    atkClose: number = 175;
+    atkCloseMin: number = 70;
+    atkCloseMax: number = 175;
+    attrClose: number = 0;
+    atkShot: number = 177;
+    atkShotMin: number = 71;
+    atkShotMax: number = 177;
+    attrShot: number = 0;
+    def: number = 253;
+    defMin: number = 101;
+    defMax: number = 253;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
+class OnagaAkino02 extends Character {
+    name: string = '尾長 晶乃 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1434;
+    hpMin: number = 515;
+    hpMax: number = 1434;
+    atkClose: number = 280;
+    atkCloseMin: number = 105;
+    atkCloseMax: number = 280;
+    attrClose: number = 0;
+    atkShot: number = 283;
+    atkShotMin: number = 106;
+    atkShotMax: number = 283;
+    attrShot: number = 0;
+    def: number = 404;
+    defMin: number = 152;
+    defMax: number = 404;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
+class OnagaAkino04 extends Character {
+    name: string = '尾長 晶乃 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 490;
+    atkCloseMin: number = 140;
+    atkCloseMax: number = 490;
+    attrClose: number = 0;
+    atkShot: number = 495;
+    atkShotMin: number = 141;
+    atkShotMax: number = 495;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
+class OnagaAkino05 extends Character {
+    name: string = '尾長 晶乃 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
 class KanagataSugumi01 extends Character {
-    name: string = '金潟 すぐみ';
+    name: string = '金潟 すぐみ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -10705,18 +9071,11 @@ class KanagataSugumi01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -10728,7 +9087,7 @@ class KanagataSugumi01 extends Character {
 }
 
 class KanagataSugumi02 extends Character {
-    name: string = '金潟 すぐみ';
+    name: string = '金潟 すぐみ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -10749,18 +9108,11 @@ class KanagataSugumi02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -10772,7 +9124,7 @@ class KanagataSugumi02 extends Character {
 }
 
 class KanagataSugumi04 extends Character {
-    name: string = '金潟 すぐみ';
+    name: string = '金潟 すぐみ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -10793,18 +9145,11 @@ class KanagataSugumi04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -10816,7 +9161,7 @@ class KanagataSugumi04 extends Character {
 }
 
 class KanagataSugumi05 extends Character {
-    name: string = '金潟 すぐみ';
+    name: string = '金潟 すぐみ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10837,18 +9182,11 @@ class KanagataSugumi05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.8),
-        AttrTypeDict.ResistGravity(-0.8),
-        AttrTypeDict.ResistFire(-0.4),
-        AttrTypeDict.Volt(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
         new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -10860,7 +9198,7 @@ class KanagataSugumi05 extends Character {
 }
 
 class KanagataSugumi70 extends Character {
-    name: string = '金潟 すぐみ_臥薪';
+    name: string = '金潟 すぐみ / 臥薪 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -10881,14 +9219,6 @@ class KanagataSugumi70 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Rifle(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10904,7 +9234,7 @@ class KanagataSugumi70 extends Character {
 }
 
 class AraimeYasuri01 extends Character {
-    name: string = '新居目 安里';
+    name: string = '新居目 安里 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -10925,14 +9255,6 @@ class AraimeYasuri01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10948,7 +9270,7 @@ class AraimeYasuri01 extends Character {
 }
 
 class AraimeYasuri02 extends Character {
-    name: string = '新居目 安里';
+    name: string = '新居目 安里 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -10969,14 +9291,6 @@ class AraimeYasuri02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10992,7 +9306,7 @@ class AraimeYasuri02 extends Character {
 }
 
 class AraimeYasuri04 extends Character {
-    name: string = '新居目 安里';
+    name: string = '新居目 安里 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11013,14 +9327,6 @@ class AraimeYasuri04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -11036,7 +9342,7 @@ class AraimeYasuri04 extends Character {
 }
 
 class AraimeYasuri05 extends Character {
-    name: string = '新居目 安里';
+    name: string = '新居目 安里 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11057,14 +9363,6 @@ class AraimeYasuri05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.5),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -11080,7 +9378,7 @@ class AraimeYasuri05 extends Character {
 }
 
 class AraimeYasuri70 extends Character {
-    name: string = '新居目 安里_紺碧';
+    name: string = '新居目 安里 / 紺碧 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11101,18 +9399,11 @@ class AraimeYasuri70 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Spear(0.3),
-        AttrTypeDict.Bazooka(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
@@ -11124,7 +9415,7 @@ class AraimeYasuri70 extends Character {
 }
 
 class MatobaAoi01 extends Character {
-    name: string = '的場 アオイ';
+    name: string = '的場 アオイ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 5;
@@ -11145,14 +9436,6 @@ class MatobaAoi01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11168,7 +9451,7 @@ class MatobaAoi01 extends Character {
 }
 
 class MatobaAoi02 extends Character {
-    name: string = '的場 アオイ';
+    name: string = '的場 アオイ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -11189,14 +9472,6 @@ class MatobaAoi02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11212,7 +9487,7 @@ class MatobaAoi02 extends Character {
 }
 
 class MatobaAoi04 extends Character {
-    name: string = '的場 アオイ';
+    name: string = '的場 アオイ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11233,14 +9508,6 @@ class MatobaAoi04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11256,7 +9523,7 @@ class MatobaAoi04 extends Character {
 }
 
 class MatobaAoi05 extends Character {
-    name: string = '的場 アオイ';
+    name: string = '的場 アオイ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11277,14 +9544,6 @@ class MatobaAoi05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11300,7 +9559,7 @@ class MatobaAoi05 extends Character {
 }
 
 class ArugaNana01 extends Character {
-    name: string = '在賀 奈々';
+    name: string = '在賀 奈々 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 4;
@@ -11321,18 +9580,11 @@ class ArugaNana01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -11344,7 +9596,7 @@ class ArugaNana01 extends Character {
 }
 
 class ArugaNana02 extends Character {
-    name: string = '在賀 奈々';
+    name: string = '在賀 奈々 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -11365,18 +9617,11 @@ class ArugaNana02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -11388,7 +9633,7 @@ class ArugaNana02 extends Character {
 }
 
 class ArugaNana04 extends Character {
-    name: string = '在賀 奈々';
+    name: string = '在賀 奈々 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11409,18 +9654,11 @@ class ArugaNana04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -11432,7 +9670,7 @@ class ArugaNana04 extends Character {
 }
 
 class ArugaNana05 extends Character {
-    name: string = '在賀 奈々';
+    name: string = '在賀 奈々 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11453,18 +9691,11 @@ class ArugaNana05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 158;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -11476,7 +9707,7 @@ class ArugaNana05 extends Character {
 }
 
 class MiyaminamiHikari01 extends Character {
-    name: string = '宮南 ひかり';
+    name: string = '宮南 ひかり ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -11497,18 +9728,11 @@ class MiyaminamiHikari01 extends Character {
     defMin: number = 100;
     defMax: number = 250;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -11520,7 +9744,7 @@ class MiyaminamiHikari01 extends Character {
 }
 
 class MiyaminamiHikari02 extends Character {
-    name: string = '宮南 ひかり';
+    name: string = '宮南 ひかり ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -11541,18 +9765,11 @@ class MiyaminamiHikari02 extends Character {
     defMin: number = 150;
     defMax: number = 400;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -11564,7 +9781,7 @@ class MiyaminamiHikari02 extends Character {
 }
 
 class MiyaminamiHikari04 extends Character {
-    name: string = '宮南 ひかり';
+    name: string = '宮南 ひかり ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11585,18 +9802,11 @@ class MiyaminamiHikari04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -11608,7 +9818,7 @@ class MiyaminamiHikari04 extends Character {
 }
 
 class MiyaminamiHikari05 extends Character {
-    name: string = '宮南 ひかり';
+    name: string = '宮南 ひかり ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11629,18 +9839,11 @@ class MiyaminamiHikari05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -11652,7 +9855,7 @@ class MiyaminamiHikari05 extends Character {
 }
 
 class GaryuEmi01 extends Character {
-    name: string = '我龍 絵美';
+    name: string = '我龍 絵美 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -11673,18 +9876,11 @@ class GaryuEmi01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -11696,7 +9892,7 @@ class GaryuEmi01 extends Character {
 }
 
 class GaryuEmi02 extends Character {
-    name: string = '我龍 絵美';
+    name: string = '我龍 絵美 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -11717,18 +9913,11 @@ class GaryuEmi02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -11740,7 +9929,7 @@ class GaryuEmi02 extends Character {
 }
 
 class GaryuEmi04 extends Character {
-    name: string = '我龍 絵美';
+    name: string = '我龍 絵美 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11761,18 +9950,11 @@ class GaryuEmi04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -11784,7 +9966,7 @@ class GaryuEmi04 extends Character {
 }
 
 class GaryuEmi05 extends Character {
-    name: string = '我龍 絵美';
+    name: string = '我龍 絵美 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11805,18 +9987,11 @@ class GaryuEmi05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -11828,7 +10003,7 @@ class GaryuEmi05 extends Character {
 }
 
 class TenkoSora01 extends Character {
-    name: string = '天狐 天';
+    name: string = '天狐 天 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -11849,14 +10024,6 @@ class TenkoSora01 extends Character {
     defMin: number = 101;
     defMax: number = 253;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11872,7 +10039,7 @@ class TenkoSora01 extends Character {
 }
 
 class TenkoSora02 extends Character {
-    name: string = '天狐 天';
+    name: string = '天狐 天 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -11893,14 +10060,6 @@ class TenkoSora02 extends Character {
     defMin: number = 152;
     defMax: number = 404;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11916,7 +10075,7 @@ class TenkoSora02 extends Character {
 }
 
 class TenkoSora04 extends Character {
-    name: string = '天狐 天';
+    name: string = '天狐 天 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11937,14 +10096,6 @@ class TenkoSora04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11960,7 +10111,7 @@ class TenkoSora04 extends Character {
 }
 
 class TenkoSora05 extends Character {
-    name: string = '天狐 天';
+    name: string = '天狐 天 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11981,14 +10132,6 @@ class TenkoSora05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -12004,7 +10147,7 @@ class TenkoSora05 extends Character {
 }
 
 class HasamiRika01 extends Character {
-    name: string = '波佐見 利佳';
+    name: string = '波佐見 利佳 ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 6;
@@ -12025,18 +10168,11 @@ class HasamiRika01 extends Character {
     defMin: number = 98;
     defMax: number = 245;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -12048,7 +10184,7 @@ class HasamiRika01 extends Character {
 }
 
 class HasamiRika02 extends Character {
-    name: string = '波佐見 利佳';
+    name: string = '波佐見 利佳 ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -12069,18 +10205,11 @@ class HasamiRika02 extends Character {
     defMin: number = 147;
     defMax: number = 392;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -12092,7 +10221,7 @@ class HasamiRika02 extends Character {
 }
 
 class HasamiRika04 extends Character {
-    name: string = '波佐見 利佳';
+    name: string = '波佐見 利佳 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12113,18 +10242,11 @@ class HasamiRika04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -12136,7 +10258,7 @@ class HasamiRika04 extends Character {
 }
 
 class HasamiRika05 extends Character {
-    name: string = '波佐見 利佳';
+    name: string = '波佐見 利佳 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12157,18 +10279,11 @@ class HasamiRika05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.8),
-        AttrTypeDict.ResistVolt(-0.8),
-        AttrTypeDict.ResistIce(-0.4),
-        AttrTypeDict.Gravity(0.96),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
         new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -12180,7 +10295,7 @@ class HasamiRika05 extends Character {
 }
 
 class KasugaokaMoe01 extends Character {
-    name: string = '春日丘 もえ';
+    name: string = '春日丘 もえ ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 2;
@@ -12201,18 +10316,11 @@ class KasugaokaMoe01 extends Character {
     defMin: number = 102;
     defMax: number = 255;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -12224,7 +10332,7 @@ class KasugaokaMoe01 extends Character {
 }
 
 class KasugaokaMoe02 extends Character {
-    name: string = '春日丘 もえ';
+    name: string = '春日丘 もえ ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -12245,18 +10353,11 @@ class KasugaokaMoe02 extends Character {
     defMin: number = 153;
     defMax: number = 408;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -12268,7 +10369,7 @@ class KasugaokaMoe02 extends Character {
 }
 
 class KasugaokaMoe04 extends Character {
-    name: string = '春日丘 もえ';
+    name: string = '春日丘 もえ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12289,18 +10390,11 @@ class KasugaokaMoe04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -12312,7 +10406,7 @@ class KasugaokaMoe04 extends Character {
 }
 
 class KasugaokaMoe05 extends Character {
-    name: string = '春日丘 もえ';
+    name: string = '春日丘 もえ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12333,18 +10427,11 @@ class KasugaokaMoe05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -12356,7 +10443,7 @@ class KasugaokaMoe05 extends Character {
 }
 
 class AdelaideBluthausen01 extends Character {
-    name: string = 'アデライーデ・B';
+    name: string = 'アデライーデ・B ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 13;
@@ -12377,18 +10464,11 @@ class AdelaideBluthausen01 extends Character {
     defMin: number = 99;
     defMax: number = 248;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12400,7 +10480,7 @@ class AdelaideBluthausen01 extends Character {
 }
 
 class AdelaideBluthausen02 extends Character {
-    name: string = 'アデライーデ・B';
+    name: string = 'アデライーデ・B ★2';
     rare: number = 2;
     level: number = 30;
     levelMin: number = 1;
@@ -12421,18 +10501,11 @@ class AdelaideBluthausen02 extends Character {
     defMin: number = 149;
     defMax: number = 396;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12444,7 +10517,7 @@ class AdelaideBluthausen02 extends Character {
 }
 
 class AdelaideBluthausen04 extends Character {
-    name: string = 'アデライーデ・B';
+    name: string = 'アデライーデ・B ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12465,18 +10538,11 @@ class AdelaideBluthausen04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12488,7 +10554,7 @@ class AdelaideBluthausen04 extends Character {
 }
 
 class AdelaideBluthausen05 extends Character {
-    name: string = 'アデライーデ・B';
+    name: string = 'アデライーデ・B ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12509,18 +10575,11 @@ class AdelaideBluthausen05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12532,7 +10591,7 @@ class AdelaideBluthausen05 extends Character {
 }
 
 class Gourai04 extends Character {
-    name: string = '轟雷';
+    name: string = '轟雷 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12553,14 +10612,6 @@ class Gourai04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -12576,7 +10627,7 @@ class Gourai04 extends Character {
 }
 
 class Gourai05 extends Character {
-    name: string = '轟雷';
+    name: string = '轟雷 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12597,14 +10648,6 @@ class Gourai05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -12620,7 +10663,7 @@ class Gourai05 extends Character {
 }
 
 class Stylet04 extends Character {
-    name: string = 'スティレット';
+    name: string = 'スティレット ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12641,14 +10684,6 @@ class Stylet04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -12664,7 +10699,7 @@ class Stylet04 extends Character {
 }
 
 class Stylet05 extends Character {
-    name: string = 'スティレット';
+    name: string = 'スティレット ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12685,14 +10720,6 @@ class Stylet05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 166;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -12708,7 +10735,7 @@ class Stylet05 extends Character {
 }
 
 class Baselard04 extends Character {
-    name: string = 'バーゼラルド';
+    name: string = 'バーゼラルド ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12729,18 +10756,11 @@ class Baselard04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12752,7 +10772,7 @@ class Baselard04 extends Character {
 }
 
 class Baselard05 extends Character {
-    name: string = 'バーゼラルド';
+    name: string = 'バーゼラルド ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12773,18 +10793,11 @@ class Baselard05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Spear(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
@@ -12796,7 +10809,7 @@ class Baselard05 extends Character {
 }
 
 class Hresvelgr04 extends Character {
-    name: string = 'フレズヴェルク';
+    name: string = 'フレズヴェルク ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12817,18 +10830,11 @@ class Hresvelgr04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -12840,7 +10846,7 @@ class Hresvelgr04 extends Character {
 }
 
 class Hresvelgr05 extends Character {
-    name: string = 'フレズヴェルク';
+    name: string = 'フレズヴェルク ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12861,18 +10867,11 @@ class Hresvelgr05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -12884,7 +10883,7 @@ class Hresvelgr05 extends Character {
 }
 
 class SolRaptor04 extends Character {
-    name: string = 'SOL ラプター';
+    name: string = 'SOL ラプター ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -12905,14 +10904,6 @@ class SolRaptor04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -12928,7 +10919,7 @@ class SolRaptor04 extends Character {
 }
 
 class SolRaptor05 extends Character {
-    name: string = 'SOL ラプター';
+    name: string = 'SOL ラプター ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12949,23 +10940,13 @@ class SolRaptor05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15),
-        AttrTypeDict.Fire(0.5)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
         new Buff(AttrTypeId.ResistVolt, -0.3),
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15),
-        new Buff(AttrTypeId.Fire, 0.5)
+        new Buff(AttrTypeId.Dagger, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.SolRaptor.long;
     weaponCloses: Gear[] = ActressGears.SolRaptor.short;
@@ -12974,7 +10955,7 @@ class SolRaptor05 extends Character {
 }
 
 class SolRaptor70 extends Character {
-    name: string = 'SOL ラプター_ストライク';
+    name: string = 'SOL ラプター / ストライク ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -12995,18 +10976,11 @@ class SolRaptor70 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Rifle(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Rifle, 0.1)
@@ -13018,7 +10992,7 @@ class SolRaptor70 extends Character {
 }
 
 class MiyafujiYoshika04 extends Character {
-    name: string = '宮藤 芳佳';
+    name: string = '宮藤 芳佳 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13039,18 +11013,11 @@ class MiyafujiYoshika04 extends Character {
     defMin: number = 210;
     defMax: number = 735;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13062,7 +11029,7 @@ class MiyafujiYoshika04 extends Character {
 }
 
 class MiyafujiYoshika05 extends Character {
-    name: string = '宮藤 芳佳';
+    name: string = '宮藤 芳佳 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13083,18 +11050,11 @@ class MiyafujiYoshika05 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13106,7 +11066,7 @@ class MiyafujiYoshika05 extends Character {
 }
 
 class LynetteBishop04 extends Character {
-    name: string = 'リネット・B';
+    name: string = 'リネット・B ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13127,18 +11087,11 @@ class LynetteBishop04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13150,7 +11103,7 @@ class LynetteBishop04 extends Character {
 }
 
 class LynetteBishop05 extends Character {
-    name: string = 'リネット・B';
+    name: string = 'リネット・B ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13171,18 +11124,11 @@ class LynetteBishop05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13194,7 +11140,7 @@ class LynetteBishop05 extends Character {
 }
 
 class GertrudBarkhorn04 extends Character {
-    name: string = 'ゲルトルート・B';
+    name: string = 'ゲルトルート・B ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13215,14 +11161,6 @@ class GertrudBarkhorn04 extends Character {
     defMin: number = 206;
     defMax: number = 721;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13238,7 +11176,7 @@ class GertrudBarkhorn04 extends Character {
 }
 
 class GertrudBarkhorn05 extends Character {
-    name: string = 'ゲルトルート・B';
+    name: string = 'ゲルトルート・B ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13259,14 +11197,6 @@ class GertrudBarkhorn05 extends Character {
     defMin: number = 258;
     defMax: number = 927;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13282,7 +11212,7 @@ class GertrudBarkhorn05 extends Character {
 }
 
 class EricaHartmann04 extends Character {
-    name: string = 'エーリカ・H';
+    name: string = 'エーリカ・H ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13303,18 +11233,11 @@ class EricaHartmann04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13326,7 +11249,7 @@ class EricaHartmann04 extends Character {
 }
 
 class EricaHartmann05 extends Character {
-    name: string = 'エーリカ・H';
+    name: string = 'エーリカ・H ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13347,25 +11270,14 @@ class EricaHartmann05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 168;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.HandGun(0.15),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.ResistFire(1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.HandGun, 0.15),
-        new Buff(AttrTypeId.Ice, 0.5),
-        new Buff(AttrTypeId.ResistFire, 1)
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.EricaHartmann.long;
     weaponCloses: Gear[] = ActressGears.EricaHartmann.short;
@@ -13374,7 +11286,7 @@ class EricaHartmann05 extends Character {
 }
 
 class SakamotoMio04 extends Character {
-    name: string = '坂本 美緒';
+    name: string = '坂本 美緒 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13395,18 +11307,11 @@ class SakamotoMio04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -13418,7 +11323,7 @@ class SakamotoMio04 extends Character {
 }
 
 class SakamotoMio05 extends Character {
-    name: string = '坂本 美緒';
+    name: string = '坂本 美緒 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13439,18 +11344,11 @@ class SakamotoMio05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -13462,7 +11360,7 @@ class SakamotoMio05 extends Character {
 }
 
 class PerrineHClostermann04 extends Character {
-    name: string = 'ペリーヌ・C';
+    name: string = 'ペリーヌ・C ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13483,18 +11381,11 @@ class PerrineHClostermann04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -13506,7 +11397,7 @@ class PerrineHClostermann04 extends Character {
 }
 
 class PerrineHClostermann05 extends Character {
-    name: string = 'ペリーヌ・C';
+    name: string = 'ペリーヌ・C ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13527,18 +11418,11 @@ class PerrineHClostermann05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -13550,7 +11434,7 @@ class PerrineHClostermann05 extends Character {
 }
 
 class HoshitsukiMiki04 extends Character {
-    name: string = '星月 みき';
+    name: string = '星月 みき ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13571,14 +11455,6 @@ class HoshitsukiMiki04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13594,7 +11470,7 @@ class HoshitsukiMiki04 extends Character {
 }
 
 class HoshitsukiMiki05 extends Character {
-    name: string = '星月 みき';
+    name: string = '星月 みき ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13615,14 +11491,6 @@ class HoshitsukiMiki05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.6),
-        AttrTypeDict.ResistIce(-0.6),
-        AttrTypeDict.ResistVolt(-0.3),
-        AttrTypeDict.Fire(0.56),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13638,7 +11506,7 @@ class HoshitsukiMiki05 extends Character {
 }
 
 class TokiwaKurumi04 extends Character {
-    name: string = '常磐 くるみ';
+    name: string = '常磐 くるみ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13659,14 +11527,6 @@ class TokiwaKurumi04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -13682,7 +11542,7 @@ class TokiwaKurumi04 extends Character {
 }
 
 class TokiwaKurumi05 extends Character {
-    name: string = '常磐 くるみ';
+    name: string = '常磐 くるみ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13703,14 +11563,6 @@ class TokiwaKurumi05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -13726,7 +11578,7 @@ class TokiwaKurumi05 extends Character {
 }
 
 class TsubuzakiAnko04 extends Character {
-    name: string = '粒咲 あんこ';
+    name: string = '粒咲 あんこ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13747,18 +11599,11 @@ class TsubuzakiAnko04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -13770,7 +11615,7 @@ class TsubuzakiAnko04 extends Character {
 }
 
 class TsubuzakiAnko05 extends Character {
-    name: string = '粒咲 あんこ';
+    name: string = '粒咲 あんこ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13791,18 +11636,11 @@ class TsubuzakiAnko05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Sniper(0.25),
-        AttrTypeDict.Hammer(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
@@ -13814,7 +11652,7 @@ class TsubuzakiAnko05 extends Character {
 }
 
 class KusunokiAsuha04 extends Character {
-    name: string = '楠 明日葉';
+    name: string = '楠 明日葉 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13835,18 +11673,11 @@ class KusunokiAsuha04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -13858,7 +11689,7 @@ class KusunokiAsuha04 extends Character {
 }
 
 class KusunokiAsuha05 extends Character {
-    name: string = '楠 明日葉';
+    name: string = '楠 明日葉 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13879,18 +11710,11 @@ class KusunokiAsuha05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
@@ -13902,7 +11726,7 @@ class KusunokiAsuha05 extends Character {
 }
 
 class WatagiMichelle04 extends Character {
-    name: string = '綿木 ミシェル';
+    name: string = '綿木 ミシェル ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -13923,18 +11747,11 @@ class WatagiMichelle04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13946,7 +11763,7 @@ class WatagiMichelle04 extends Character {
 }
 
 class WatagiMichelle05 extends Character {
-    name: string = '綿木 ミシェル';
+    name: string = '綿木 ミシェル ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -13967,18 +11784,11 @@ class WatagiMichelle05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.9),
-        AttrTypeDict.Bazooka(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -13990,7 +11800,7 @@ class WatagiMichelle05 extends Character {
 }
 
 class Sadone04 extends Character {
-    name: string = 'サドネ';
+    name: string = 'サドネ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14011,18 +11821,11 @@ class Sadone04 extends Character {
     defMin: number = 196;
     defMax: number = 686;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -14034,7 +11837,7 @@ class Sadone04 extends Character {
 }
 
 class Sadone05 extends Character {
-    name: string = 'サドネ';
+    name: string = 'サドネ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14055,18 +11858,11 @@ class Sadone05 extends Character {
     defMin: number = 245;
     defMax: number = 882;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Spear(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -14078,7 +11874,7 @@ class Sadone05 extends Character {
 }
 
 class KougamiKanon04 extends Character {
-    name: string = '煌上 花音';
+    name: string = '煌上 花音 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14099,18 +11895,11 @@ class KougamiKanon04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -14122,7 +11911,7 @@ class KougamiKanon04 extends Character {
 }
 
 class KougamiKanon05 extends Character {
-    name: string = '煌上 花音';
+    name: string = '煌上 花音 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14143,18 +11932,11 @@ class KougamiKanon05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -14166,7 +11948,7 @@ class KougamiKanon05 extends Character {
 }
 
 class KuniedaShiho04 extends Character {
-    name: string = '国枝 詩穂';
+    name: string = '国枝 詩穂 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14187,18 +11969,11 @@ class KuniedaShiho04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -14210,7 +11985,7 @@ class KuniedaShiho04 extends Character {
 }
 
 class KuniedaShiho05 extends Character {
-    name: string = '国枝 詩穂';
+    name: string = '国枝 詩穂 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14231,18 +12006,11 @@ class KuniedaShiho05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.86),
-        AttrTypeDict.HandGun(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
@@ -14254,7 +12022,7 @@ class KuniedaShiho05 extends Character {
 }
 
 class Kasumi04 extends Character {
-    name: string = 'かすみ';
+    name: string = 'かすみ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14275,14 +12043,6 @@ class Kasumi04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14298,7 +12058,7 @@ class Kasumi04 extends Character {
 }
 
 class Kasumi05 extends Character {
-    name: string = 'かすみ';
+    name: string = 'かすみ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14319,14 +12079,6 @@ class Kasumi05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 165;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.5),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14342,7 +12094,7 @@ class Kasumi05 extends Character {
 }
 
 class MarieRose04 extends Character {
-    name: string = 'マリー・ローズ';
+    name: string = 'マリー・ローズ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14363,14 +12115,6 @@ class MarieRose04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -14386,7 +12130,7 @@ class MarieRose04 extends Character {
 }
 
 class MarieRose05 extends Character {
-    name: string = 'マリー・ローズ';
+    name: string = 'マリー・ローズ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14407,14 +12151,6 @@ class MarieRose05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.6),
-        AttrTypeDict.ResistVolt(-0.6),
-        AttrTypeDict.ResistIce(-0.3),
-        AttrTypeDict.Gravity(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -14430,7 +12166,7 @@ class MarieRose05 extends Character {
 }
 
 class Nyotengu04 extends Character {
-    name: string = '女天狗';
+    name: string = '女天狗 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14451,18 +12187,11 @@ class Nyotengu04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -14474,7 +12203,7 @@ class Nyotengu04 extends Character {
 }
 
 class Nyotengu05 extends Character {
-    name: string = '女天狗';
+    name: string = '女天狗 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14495,18 +12224,11 @@ class Nyotengu05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Sniper(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
@@ -14518,7 +12240,7 @@ class Nyotengu05 extends Character {
 }
 
 class SylphyII04 extends Character {
-    name: string = 'シルフィーII';
+    name: string = 'シルフィーII ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14539,14 +12261,6 @@ class SylphyII04 extends Character {
     defMin: number = 208;
     defMax: number = 728;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -14562,7 +12276,7 @@ class SylphyII04 extends Character {
 }
 
 class SylphyII05 extends Character {
-    name: string = 'シルフィーII';
+    name: string = 'シルフィーII ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14583,14 +12297,6 @@ class SylphyII05 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -14606,7 +12312,7 @@ class SylphyII05 extends Character {
 }
 
 class SylphyII70 extends Character {
-    name: string = 'シルフィーII_Mode-B';
+    name: string = 'シルフィーII / Mode-B ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14627,18 +12333,11 @@ class SylphyII70 extends Character {
     defMin: number = 260;
     defMax: number = 936;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Dagger(0.3),
-        AttrTypeDict.Twin(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
@@ -14650,7 +12349,7 @@ class SylphyII70 extends Character {
 }
 
 class Aya04 extends Character {
-    name: string = 'アヤ';
+    name: string = 'アヤ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14671,18 +12370,11 @@ class Aya04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -14694,7 +12386,7 @@ class Aya04 extends Character {
 }
 
 class Aya05 extends Character {
-    name: string = 'アヤ';
+    name: string = 'アヤ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14715,18 +12407,11 @@ class Aya05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.7),
-        AttrTypeDict.ResistGravity(-0.7),
-        AttrTypeDict.ResistFire(-0.35),
-        AttrTypeDict.Volt(0.86),
-        AttrTypeDict.Rifle(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
         new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -14738,7 +12423,7 @@ class Aya05 extends Character {
 }
 
 class Yuki04 extends Character {
-    name: string = 'ユキ';
+    name: string = 'ユキ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14759,14 +12444,6 @@ class Yuki04 extends Character {
     defMin: number = 204;
     defMax: number = 714;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14782,7 +12459,7 @@ class Yuki04 extends Character {
 }
 
 class Yuki05 extends Character {
-    name: string = 'ユキ';
+    name: string = 'ユキ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14803,14 +12480,6 @@ class Yuki05 extends Character {
     defMin: number = 255;
     defMax: number = 918;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.6),
-        AttrTypeDict.ResistFire(-0.6),
-        AttrTypeDict.ResistGravity(-0.3),
-        AttrTypeDict.Ice(0.56),
-        AttrTypeDict.Sword(0.25),
-        AttrTypeDict.Bazooka(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14826,7 +12495,7 @@ class Yuki05 extends Character {
 }
 
 class Yamada04 extends Character {
-    name: string = 'ヤマダ';
+    name: string = 'ヤマダ ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14847,18 +12516,11 @@ class Yamada04 extends Character {
     defMin: number = 198;
     defMax: number = 693;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -14870,7 +12532,7 @@ class Yamada04 extends Character {
 }
 
 class Yamada05 extends Character {
-    name: string = 'ヤマダ';
+    name: string = 'ヤマダ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14891,18 +12553,11 @@ class Yamada05 extends Character {
     defMin: number = 248;
     defMax: number = 891;
     spd: number = 162;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.9),
-        AttrTypeDict.Hammer(0.25),
-        AttrTypeDict.Twin(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
@@ -14914,7 +12569,7 @@ class Yamada05 extends Character {
 }
 
 class AIT04 extends Character {
-    name: string = 'AIT Ti2';
+    name: string = 'AIT Ti2 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -14935,18 +12590,11 @@ class AIT04 extends Character {
     defMin: number = 200;
     defMax: number = 700;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -14958,7 +12606,7 @@ class AIT04 extends Character {
 }
 
 class AIT05 extends Character {
-    name: string = 'AIT Ti2';
+    name: string = 'AIT Ti2 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -14979,18 +12627,11 @@ class AIT05 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistFire(0.7),
-        AttrTypeDict.ResistIce(-0.7),
-        AttrTypeDict.ResistVolt(-0.35),
-        AttrTypeDict.Fire(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.Dagger(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
         new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
@@ -15002,7 +12643,7 @@ class AIT05 extends Character {
 }
 
 class AIT70 extends Character {
-    name: string = 'AIT_イア・レトナ';
+    name: string = 'AIT / イア・レトナ ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -15023,18 +12664,11 @@ class AIT70 extends Character {
     defMin: number = 250;
     defMax: number = 900;
     spd: number = 163;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistIce(0.7),
-        AttrTypeDict.ResistFire(-0.7),
-        AttrTypeDict.ResistGravity(-0.35),
-        AttrTypeDict.Ice(0.9),
-        AttrTypeDict.Twin(0.3),
-        AttrTypeDict.Dagger(0.1)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
         new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Ice, 0.9),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
@@ -15046,7 +12680,7 @@ class AIT70 extends Character {
 }
 
 class MakiseKurisu04 extends Character {
-    name: string = '牧瀬 紅莉栖';
+    name: string = '牧瀬 紅莉栖 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -15067,18 +12701,11 @@ class MakiseKurisu04 extends Character {
     defMin: number = 210;
     defMax: number = 735;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -15090,7 +12717,7 @@ class MakiseKurisu04 extends Character {
 }
 
 class MakiseKurisu05 extends Character {
-    name: string = '牧瀬 紅莉栖';
+    name: string = '牧瀬 紅莉栖 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -15111,18 +12738,11 @@ class MakiseKurisu05 extends Character {
     defMin: number = 263;
     defMax: number = 945;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistGravity(0.7),
-        AttrTypeDict.ResistVolt(-0.7),
-        AttrTypeDict.ResistIce(-0.35),
-        AttrTypeDict.Gravity(0.86),
-        AttrTypeDict.Twin(0.25),
-        AttrTypeDict.HandGun(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
         new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
@@ -15134,7 +12754,7 @@ class MakiseKurisu05 extends Character {
 }
 
 class AmaneSuzuha04 extends Character {
-    name: string = '阿万音 鈴羽';
+    name: string = '阿万音 鈴羽 ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -15155,14 +12775,6 @@ class AmaneSuzuha04 extends Character {
     defMin: number = 202;
     defMax: number = 707;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -15178,7 +12790,7 @@ class AmaneSuzuha04 extends Character {
 }
 
 class AmaneSuzuha05 extends Character {
-    name: string = '阿万音 鈴羽';
+    name: string = '阿万音 鈴羽 ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -15199,14 +12811,6 @@ class AmaneSuzuha05 extends Character {
     defMin: number = 253;
     defMax: number = 909;
     spd: number = 160;
-    goodAttr: AttrType[] = [
-        AttrTypeDict.ResistVolt(0.6),
-        AttrTypeDict.ResistGravity(-0.6),
-        AttrTypeDict.ResistFire(-0.3),
-        AttrTypeDict.Volt(0.56),
-        AttrTypeDict.Dagger(0.25),
-        AttrTypeDict.Rifle(0.15)
-    ];
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -15219,6 +12823,152 @@ class AmaneSuzuha05 extends Character {
     weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
     equipmentTops: Gear[] = ActressGears.AmaneSuzuha.top;
     equipmentBottoms: Gear[] = ActressGears.AmaneSuzuha.bottom;
+}
+
+class TanyaDegurechaff04 extends Character {
+    name: string = 'ターニャ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 463;
+    atkCloseMin: number = 132;
+    atkCloseMax: number = 463;
+    attrClose: number = 0;
+    atkShot: number = 467;
+    atkShotMin: number = 134;
+    atkShotMax: number = 467;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TanyaDegurechaff.long;
+    weaponCloses: Gear[] = ActressGears.TanyaDegurechaff.short;
+    equipmentTops: Gear[] = ActressGears.TanyaDegurechaff.top;
+    equipmentBottoms: Gear[] = ActressGears.TanyaDegurechaff.bottom;
+}
+
+class TanyaDegurechaff05 extends Character {
+    name: string = 'ターニャ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 601;
+    atkShotMin: number = 167;
+    atkShotMax: number = 601;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TanyaDegurechaff.long;
+    weaponCloses: Gear[] = ActressGears.TanyaDegurechaff.short;
+    equipmentTops: Gear[] = ActressGears.TanyaDegurechaff.top;
+    equipmentBottoms: Gear[] = ActressGears.TanyaDegurechaff.bottom;
+}
+
+class ViktoriyaIvanovnaSerebryakov04 extends Character {
+    name: string = 'ヴィーシャ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2636;
+    hpMin: number = 725;
+    hpMax: number = 2636;
+    atkClose: number = 567;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 567;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 164;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 728;
+    defMin: number = 208;
+    defMax: number = 728;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.long;
+    weaponCloses: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.short;
+    equipmentTops: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.top;
+    equipmentBottoms: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.bottom;
+}
+
+class ViktoriyaIvanovnaSerebryakov05 extends Character {
+    name: string = 'ヴィーシャ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 729;
+    atkCloseMin: number = 203;
+    atkCloseMax: number = 729;
+    attrClose: number = 0;
+    atkShot: number = 736;
+    atkShotMin: number = 205;
+    atkShotMax: number = 736;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.long;
+    weaponCloses: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.short;
+    equipmentTops: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.top;
+    equipmentBottoms: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.bottom;
 }
 
 export const ActressNames: string[] = [
@@ -15269,6 +13019,7 @@ export const ActressNames: string[] = [
     'OchanomizuMirie',
     'MerabuchiKanami',
     'RitaHenschel',
+    'OnagaAkino',
     'KanagataSugumi',
     'AraimeYasuri',
     'MatobaAoi',
@@ -15307,7 +13058,9 @@ export const ActressNames: string[] = [
     'Yamada',
     'AIT',
     'MakiseKurisu',
-    'AmaneSuzuha'
+    'AmaneSuzuha',
+    'TanyaDegurechaff',
+    'ViktoriyaIvanovnaSerebryakov'
 ];
 
 export const CharacterModels = {
@@ -15402,6 +13155,7 @@ export const CharacterModels = {
     ItokuraNeo02: new ItokuraNeo02(),
     ItokuraNeo04: new ItokuraNeo04(),
     ItokuraNeo05: new ItokuraNeo05(),
+    ItokuraNeo70: new ItokuraNeo70(),
     YorishiroEri01: new YorishiroEri01(),
     YorishiroEri02: new YorishiroEri02(),
     YorishiroEri04: new YorishiroEri04(),
@@ -15467,6 +13221,7 @@ export const CharacterModels = {
     KimikageYui02: new KimikageYui02(),
     KimikageYui04: new KimikageYui04(),
     KimikageYui05: new KimikageYui05(),
+    KimikageYui70: new KimikageYui70(),
     SugaItsuri01: new SugaItsuri01(),
     SugaItsuri02: new SugaItsuri02(),
     SugaItsuri04: new SugaItsuri04(),
@@ -15513,7 +13268,6 @@ export const CharacterModels = {
     MiaVoisin02: new MiaVoisin02(),
     MiaVoisin04: new MiaVoisin04(),
     MiaVoisin05: new MiaVoisin05(),
-    MiaVoisin70: new MiaVoisin70(),
     ChishimaMiyuki01: new ChishimaMiyuki01(),
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
@@ -15553,6 +13307,10 @@ export const CharacterModels = {
     RitaHenschel04: new RitaHenschel04(),
     RitaHenschel05: new RitaHenschel05(),
     RitaHenschel70: new RitaHenschel70(),
+    OnagaAkino01: new OnagaAkino01(),
+    OnagaAkino02: new OnagaAkino02(),
+    OnagaAkino04: new OnagaAkino04(),
+    OnagaAkino05: new OnagaAkino05(),
     KanagataSugumi01: new KanagataSugumi01(),
     KanagataSugumi02: new KanagataSugumi02(),
     KanagataSugumi04: new KanagataSugumi04(),
@@ -15655,5 +13413,9 @@ export const CharacterModels = {
     MakiseKurisu04: new MakiseKurisu04(),
     MakiseKurisu05: new MakiseKurisu05(),
     AmaneSuzuha04: new AmaneSuzuha04(),
-    AmaneSuzuha05: new AmaneSuzuha05()
+    AmaneSuzuha05: new AmaneSuzuha05(),
+    TanyaDegurechaff04: new TanyaDegurechaff04(),
+    TanyaDegurechaff05: new TanyaDegurechaff05(),
+    ViktoriyaIvanovnaSerebryakov04: new ViktoriyaIvanovnaSerebryakov04(),
+    ViktoriyaIvanovnaSerebryakov05: new ViktoriyaIvanovnaSerebryakov05()
 };
