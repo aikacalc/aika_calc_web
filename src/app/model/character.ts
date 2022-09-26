@@ -123,10 +123,10 @@ export class Character extends Unit {
 
     updateStatus(): void {
         if (!this.isApplyGears) {
-            // this.weaponShotIndex = this.weaponShots.findIndex(g => g.base.levelMax == 80);
-            // this.weaponCloseIndex = this.weaponCloses.findIndex(g => g.base.levelMax == 80);
-            // this.equipmentTopIndex = this.equipmentTops.findIndex(g => g.base.levelMax == 80);
-            // this.equipmentBottomIndex = this.equipmentBottoms.findIndex(g => g.base.levelMax == 80);
+            this.weaponShotIndex = this.weaponShots.findIndex(g => g.base.levelMax == 80);
+            this.weaponCloseIndex = this.weaponCloses.findIndex(g => g.base.levelMax == 80);
+            this.equipmentTopIndex = this.equipmentTops.findIndex(g => g.base.levelMax == 80);
+            this.equipmentBottomIndex = this.equipmentBottoms.findIndex(g => g.base.levelMax == 80);
 
             Unit.cloneDeep(this.weaponShot, this.weaponShots[this.weaponShotIndex], 0);
             Unit.cloneDeep(this.weaponClose, this.weaponCloses[this.weaponCloseIndex], 0);
