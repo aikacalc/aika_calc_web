@@ -12679,6 +12679,80 @@ class AIT70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AIT.bottom;
 }
 
+class IvryHadd04 extends Character {
+    name: string = 'イブリー・ハッド ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 500;
+    atkCloseMin: number = 143;
+    atkCloseMax: number = 500;
+    attrClose: number = 0;
+    atkShot: number = 486;
+    atkShotMin: number = 139;
+    atkShotMax: number = 486;
+    attrShot: number = 0;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 166;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.IvryHadd.long;
+    weaponCloses: Gear[] = ActressGears.IvryHadd.short;
+    equipmentTops: Gear[] = ActressGears.IvryHadd.top;
+    equipmentBottoms: Gear[] = ActressGears.IvryHadd.bottom;
+}
+
+class IvryHadd05 extends Character {
+    name: string = 'イブリー・ハッド ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 643;
+    atkCloseMin: number = 179;
+    atkCloseMax: number = 643;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 166;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.IvryHadd.long;
+    weaponCloses: Gear[] = ActressGears.IvryHadd.short;
+    equipmentTops: Gear[] = ActressGears.IvryHadd.top;
+    equipmentBottoms: Gear[] = ActressGears.IvryHadd.bottom;
+}
+
 class MakiseKurisu04 extends Character {
     name: string = '牧瀬 紅莉栖 ★3';
     rare: number = 3;
@@ -13057,6 +13131,7 @@ export const ActressNames: string[] = [
     'Yuki',
     'Yamada',
     'AIT',
+    'IvryHadd',
     'MakiseKurisu',
     'AmaneSuzuha',
     'TanyaDegurechaff',
@@ -13410,6 +13485,8 @@ export const CharacterModels = {
     AIT04: new AIT04(),
     AIT05: new AIT05(),
     AIT70: new AIT70(),
+    IvryHadd04: new IvryHadd04(),
+    IvryHadd05: new IvryHadd05(),
     MakiseKurisu04: new MakiseKurisu04(),
     MakiseKurisu05: new MakiseKurisu05(),
     AmaneSuzuha04: new AmaneSuzuha04(),

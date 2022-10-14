@@ -217,6 +217,26 @@ class DMGCalcPlan {
     }
 }
 
+class ViceAARCalcCase {
+    chrDef: number = 0;
+    chrAttrResist: number = 0;
+    minDamage: number = 0;
+    maxDamage: number = 0;
+    viceAttrType: number = 0;
+
+    outputAtk: number;
+    outputAttr: number;
+    outputRatio: number;
+
+    calc(): void {
+        const baseDamage = (this.maxDamage - this.minDamage) / 2 + this.minDamage;
+
+        if (this.chrAttrResist >= 100) {
+            baseDamage
+        }
+    }
+}
+
 @Component({
     selector: 'app-aika-damage-calc',
     templateUrl: './aika-damage-calc.component.html',
@@ -226,6 +246,7 @@ export class AikaDamageCalcComponent implements OnInit {
 
     dmgrList: DMGRateCase[] = [];
     dmgcList: DMGCalcPlan[] = [];
+    viceAARList: ViceAARCalcCase[] = [];
 
     help = {
         atk: `角色版面atk`,
@@ -319,5 +340,7 @@ Lv200:1680`,
             this.dmgcList.push(new DMGCalcPlan());
         }
     }
+
+
 
 }
