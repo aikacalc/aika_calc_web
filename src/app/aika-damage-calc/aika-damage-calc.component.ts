@@ -6,32 +6,32 @@ import { AttrTypeId } from '../model/attr-type-id.enum';
 
 const attrDamageRate = {
     Volt: {
-        Volt: 0,
-        Gravity: 2.2,
-        Fire: 1.6,
-        Ice: 1,
-        None: 1,
+        Volt: -1,
+        Gravity: 1.2,
+        Fire: 0.6,
+        Ice: 0,
+        None: 0,
     },
     Gravity: {
-        Volt: 2.2,
-        Gravity: 0,
-        Fire: 1,
-        Ice: 1.6,
-        None: 1,
+        Volt: 1.2,
+        Gravity: -1,
+        Fire: 0,
+        Ice: 0.6,
+        None: 0,
     },
     Fire: {
-        Volt: 1.6,
-        Gravity: 1,
-        Fire: 0,
-        Ice: 2.2,
-        None: 1,
+        Volt: 0.6,
+        Gravity: 0,
+        Fire: -1,
+        Ice: 1.2,
+        None: 0,
     },
     Ice: {
-        Volt: 1,
-        Gravity: 1.6,
-        Fire: 2.2,
-        Ice: 0,
-        None: 1,
+        Volt: 0,
+        Gravity: 0.6,
+        Fire: 1.2,
+        Ice: -1,
+        None: 0,
     },
 };
 
@@ -148,50 +148,53 @@ class DMGCalcPlan {
     update(): void {
         this.damageRate = this.damageRatePercent / 100;
 
-        let baseAtkDamgeRate_ = this.damageRate;
-        let atkDamgeRate_ = baseAtkDamgeRate_;
+
+        let baseAtkDmg = this.atk - this.enemyDef;
+        if (baseAtkDmg < 0) { baseAtkDmg = 1; }
+
+        let atkResist = 0;
         this.enemyDebuff
             .filter(v => v.attrTypeId == this.atkTypeId)
             .forEach(v => {
-                atkDamgeRate_ -= (v.value / 100);
+                atkResist += (v.value / 100);
             });
-        if (atkDamgeRate_ < 0) {
-            atkDamgeRate_ = 0;
-        }
 
-        this.outputAtkDamage = this.atk - this.enemyDef;
-        if (this.outputAtkDamage <= 0) {
-            this.outputAtkDamage = 1;
-        }
-        this.outputAtkDamage *= atkDamgeRate_;
-        this.outputAtkDamage = Math.floor(this.outputAtkDamage);
+        baseAtkDmg = baseAtkDmg * this.damageRate * (1 - atkResist);
+        let minAtkDmg = baseAtkDmg * 0.97;
+        let maxAtkDmg = baseAtkDmg * 1.03;
 
+        this.outputAtkDamage = Math.floor(baseAtkDmg);
 
 
 
         const attrName = AttrTypeId[this.attrTypeId];
         const enemyAttrName = AttrTypeId[this.enemyAttrTypeId];
-        let baseAttrDamageRate_ = attrDamageRate[attrName][enemyAttrName];
-        let attrDamageRate_ = baseAttrDamageRate_;
+        let attrResist = -attrDamageRate[attrName][enemyAttrName];
         this.enemyDebuff
             .filter(v => v.attrTypeId == this.attrTypeId)
             .forEach(v => {
-                attrDamageRate_ -= (v.value / 100);
+                attrResist += (v.value / 100);
             });
-        if (attrDamageRate_ < 0) {
-            attrDamageRate_ = 0;
-        }
+
+        let baseAttrDmg = this.attr;
+        baseAttrDmg = baseAttrDmg * this.damageRate * (1 - attrResist);
+        let minAttrDmg = baseAttrDmg * 0.97;
+        let maxAttrDmg = baseAttrDmg * 1.03;
+
+        this.outputAttrDamage = Math.floor(baseAttrDmg);
 
 
+        this.outputDamage = (baseAtkDmg + baseAttrDmg) * (1 + this.finalDamageBuff);
+        this.outputDamage = Math.max(0, this.outputDamage);
+        this.outputDamage = Math.floor(this.outputDamage);
 
+        this.outputDamageMin = (minAtkDmg + minAttrDmg) * (1 + this.finalDamageBuff);
+        this.outputDamageMin = Math.max(0, this.outputDamageMin);
+        this.outputDamageMin = Math.floor(this.outputDamageMin);
 
-        this.outputAttrDamage = Math.floor(this.attr * attrDamageRate_);
-        this.outputAttrDamage *= this.damageRate;
-        this.outputAttrDamage = Math.floor(this.outputAttrDamage);
-
-        this.outputDamage = Math.floor((this.outputAtkDamage + this.outputAttrDamage) * (1 + (this.finalDamageBuff / 100)));
-        this.outputDamageMin = Math.floor(this.outputDamage * 0.97);
-        this.outputDamageMax = Math.floor(this.outputDamage * 1.03);
+        this.outputDamageMax = (maxAtkDmg + maxAttrDmg) * (1 + this.finalDamageBuff);
+        this.outputDamageMax = Math.max(0, this.outputDamageMax);
+        this.outputDamageMax = Math.floor(this.outputDamageMax);
     }
 
     // addEnemyResist(): void {
@@ -278,7 +281,8 @@ Lv100:880
 Lv150:1280
 Lv200:1680`,
         enemyResist: ``,
-        enemyDebuff: `各種BOSS的傷害耐性、加成：
+        enemyDebuff: `各種BOSS的傷害加成：
+***例如:蠍子弱近戰50%，那斬擊、打擊傷害+50%***
 皮皮蛇身體：近戰-80% 射擊-50% 全屬性-80%
 蠍子：近戰+50% 射擊-50%
 9頭蛇：射擊-100%
