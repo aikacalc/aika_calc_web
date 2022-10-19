@@ -61,17 +61,8 @@ const copyBitbucket$ = new Observable((subsc) => {
 });
 const gitGithubAikaClac$ = new Observable((subsc) => {
     console.log('git aikacalc');
-    const cmd = 'cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -mu' + new Date().getTime();
+    const cmd = 'cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
     exec(cmd, (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-        console.log(`stdout: ${stdout}`);
         subsc.next();
         subsc.complete();
     });
@@ -79,13 +70,8 @@ const gitGithubAikaClac$ = new Observable((subsc) => {
 const gitGithub$ = new Observable((subsc) => {
     console.log('git aikacalc.github.io');
     const cmd = 'cd ../aikacalc.github.io'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" add --all'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m"u' + new Date().getTime() + '"';
+        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
     exec(cmd, (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
         subsc.next();
         subsc.complete();
     });
@@ -93,14 +79,8 @@ const gitGithub$ = new Observable((subsc) => {
 const gitBitbucket$ = new Observable((subsc) => {
     console.log('git aikacalc.bitbucket.io');
     const cmd = 'cd ../aikacalc.bitbucket.io'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" add --all'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m"u' + new Date().getTime() + '"';
+        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
     exec(cmd, (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        console.log(`stdout: ${stdout}`);
         subsc.next();
         subsc.complete();
     });
