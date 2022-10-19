@@ -61,8 +61,7 @@ const copyBitbucket$ = new Observable((subsc) => {
 });
 const gitGithubAikaClac$ = new Observable((subsc) => {
     console.log('git aikacalc');
-    const cmd = 'cmd /K "C:\Program Files\Git\bin\git.exe" add --all'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m"u' + new Date().getTime() + '"';
+    const cmd = 'cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -mu' + new Date().getTime();
     exec(cmd, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
