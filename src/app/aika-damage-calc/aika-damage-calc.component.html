@@ -67,6 +67,7 @@
                     <th class="name">名稱</th>
                     <th class="atk phy" [title]="help.atk" (click)="showMsg(help.atk)">ATK</th>
                     <th class="attr ene" [title]="help.attr" (click)="showMsg(help.attr)">屬性</th>
+                    <th class="chara-buff" [title]="help.charaBuff" (click)="showMsg(help.charaBuff)">角色buff</th>
                     <th class="dmg-rate" [title]="help.dmgRate" (click)="showMsg(help.dmgRate)">傷害比率</th>
                     <th class="final-dmg-buff" [title]="help.finalDmgBuff" (click)="showMsg(help.finalDmgBuff)">
                         最終傷害<br>加成</th>
@@ -108,6 +109,27 @@
                             <input type="number" [(ngModel)]="item.attr" (ngModelChange)="item.update()"
                                 [ngStyle]="{color:getTypeColor(item.attrTypeId)}">
                         </div>
+                    </td>
+                    <td class="chara-buff">
+                        <div class="wrapper" *ngFor="let item2 of item.charaBuff">
+                            <select [(ngModel)]="item2.attrTypeId" (ngModelChange)="item.update()">
+                                <option value="22" [ngStyle]="{color:getTypeColor(AttrTypeId.None)}">無</option>
+                                <option value="18" [ngStyle]="{color:getTypeColor(AttrTypeId.Close)}">近戰</option>
+                                <option value="19" [ngStyle]="{color:getTypeColor(AttrTypeId.Shot)}">射擊</option>
+                                <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
+                                <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
+                                <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
+                                <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
+                                <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
+                                <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
+                                <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
+                                <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                            </select>
+                            <input type="number" [(ngModel)]="item2.value" (ngModelChange)="item.update()"
+                                [ngStyle]="{color:getTypeColor(item2.attrTypeId)}">%
+                            <button class="delete" (click)="item.deleteCharaBuff(item2);item.update()">X</button>
+                        </div>
+                        <button class="add" (click)="item.addCharaBuff()">[+]</button>
                     </td>
                     <td class="attack-rate">
                         <input type="number" [(ngModel)]="item.damageRatePercent" (ngModelChange)="item.update()">%
@@ -165,6 +187,9 @@
                 </tr>
             </tbody>
         </table>
+        <div class="extra">
+            <a href="https://wikiwiki.jp/alicegear/%E7%B7%B4%E7%BF%92%E3%83%9A%E3%83%BC%E3%82%B8/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97?word=%E7%9B%B8%E6%B2%B3+%E6%84%9B%E8%8A%B1#n74756d3" target="_blank">日服wiki的傷害計算頁面</a>
+        </div>
     </div>
     <!-- <div class="enemy-atk-ratio-calc">
         <div class="title">vice攻擊傷害比率計算 讓傷害大於100以上才能算的準</div>

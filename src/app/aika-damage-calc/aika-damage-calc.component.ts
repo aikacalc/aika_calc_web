@@ -105,6 +105,9 @@ class DMGCalcPlan {
     atkTypeId: AttrTypeId.Impact | AttrTypeId.Slash | AttrTypeId.Physical | AttrTypeId.Energy = AttrTypeId.Physical;
     attr: number = 0;
     attrTypeId: AttrTypeId.Volt | AttrTypeId.Gravity | AttrTypeId.Fire | AttrTypeId.Ice = AttrTypeId.Volt;
+
+    charaBuff: { attrTypeId: AttrTypeId, value: number }[] = [];
+
     damageRate: number = 1;
     damageRatePercent: number;
 
@@ -149,7 +152,29 @@ class DMGCalcPlan {
         this.damageRate = this.damageRatePercent / 100;
 
 
-        let baseAtkDmg = this.atk - this.enemyDef;
+
+
+        const atkBuff = this.charaBuff
+            .filter(v => {
+                if (v.attrTypeId == this.atkTypeId) {
+                    return true;
+                }
+                else if (v.attrTypeId == AttrTypeId.Close) {
+                    return this.atkTypeId == AttrTypeId.Impact || this.atkTypeId == AttrTypeId.Slash;
+                }
+                else if (v.attrTypeId == AttrTypeId.Shot) {
+                    return this.atkTypeId == AttrTypeId.Physical || this.atkTypeId == AttrTypeId.Energy;
+                }
+                return false;
+            })
+            .reduce((p, v) => {
+                p += v.value / 100;
+                return p;
+            }, 0);
+
+        const atk = this.atk * (1 + atkBuff);
+
+        let baseAtkDmg = atk - this.enemyDef;
         if (baseAtkDmg < 0) { baseAtkDmg = 1; }
 
         let atkResist = 0;
@@ -187,7 +212,16 @@ class DMGCalcPlan {
                 attrResist += (v.value / 100);
             });
 
-        let baseAttrDmg = this.attr;
+
+        const attrBuff = this.charaBuff
+            .filter(v => v.attrTypeId == this.attrTypeId)
+            .reduce((p, v) => {
+                p += v.value / 100;
+                return p;
+            }, 0);
+        const attr = this.attr * (1 + attrBuff);
+
+        let baseAttrDmg = attr;
         baseAttrDmg = baseAttrDmg * this.damageRate * (1 - attrResist);
         let minAttrDmg = baseAttrDmg * 0.97;
         let maxAttrDmg = baseAttrDmg * 1.03;
@@ -217,6 +251,20 @@ class DMGCalcPlan {
     //     const i = this.enemyResist.findIndex(v => v == item);
     //     this.enemyResist.splice(i, 1);
     // }
+    addCharaBuff(): void {
+        let attrTypeId = AttrTypeId.Volt;
+        let value = 0;
+        if (this.charaBuff.length > 0) {
+            const debuff_ = this.charaBuff[this.charaBuff.length - 1];
+            attrTypeId = debuff_.attrTypeId;
+            value = debuff_.value;
+        }
+        this.charaBuff.push({ attrTypeId: attrTypeId, value: value });
+    }
+    deleteCharaBuff(item: any): void {
+        const i = this.charaBuff.findIndex(v => v == item);
+        this.charaBuff.splice(i, 1);
+    }
     addEnemyDebuff(): void {
         let attrTypeId = AttrTypeId.Volt;
         let value = 0;
@@ -275,6 +323,11 @@ export class AikaDamageCalcComponent implements OnInit {
 打電擊屬性(弱重力)，屬性傷害0%(沒有屬性傷害)
 打燒夷屬性(弱冷擊)，屬性傷害160%
 打冷擊屬性(弱燒夷)，屬性傷害100%(1:1)`,
+        charaBuff:`角色buff
+用法跟版面一樣，可以拿來算隊伍buff
+例如：
+愛花的被動，慈心の同調E1
+隊伍全員電擊屬性+30%`,
         dmgRate: `單一攻擊的傷害比率, 可以用上面的比率計算器算
 用愛花原版步槍做個栗子：
 一般子彈
