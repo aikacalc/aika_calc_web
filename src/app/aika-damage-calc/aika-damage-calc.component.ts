@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
-import { AttrType } from '../model/attr-type';
+import { AttrType, AttrTypeColor, getTypeColor } from '../model/attr-type';
 import { AttrTypeId } from '../model/attr-type-id.enum';
 
 
@@ -248,6 +248,9 @@ class ViceAARCalcCase {
     styleUrls: ['./aika-damage-calc.component.scss']
 })
 export class AikaDamageCalcComponent implements OnInit {
+    AttrTypeColor = AttrTypeColor;
+    AttrTypeId = AttrTypeId;
+    getTypeColor = getTypeColor;
 
     dmgrList: DMGRateCase[] = [];
     dmgcList: DMGCalcPlan[] = [];
@@ -271,34 +274,60 @@ export class AikaDamageCalcComponent implements OnInit {
 蓄力-子彈: 57.5%
 蓄力-榴彈頭:   100%
 蓄力-榴彈爆炸: 150%`,
-        finalDmgBuff: `愛花AN槍的KISS3詞條是最終傷害+10%`,
-        enemyDef: `訓練場的100級靶子DEF是870
-其他BOSS的DEF簡單參照
-Lv50: 450
-Lv60: 530
-Lv70: 640
-Lv80: 720
-Lv90: 800
-Lv100:880
-Lv150:1280
-Lv200:1680`,
+        finalDmgBuff: `例如：愛花AN槍的KISS3詞條是最終傷害+10%`,
+        enemyDef: `訓練場的100級靶子DEF是872
+其他怪DEF大約參照，不是每個怪的DEF都一樣
+Lv10: 152
+Lv50: 472
+Lv60: 552
+Lv70: 632
+Lv80: 712
+Lv90: 792
+Lv100:872
+Lv110:952
+Lv120:1032
+Lv150:1272
+Lv200:1672`,
         enemyResist: ``,
-        enemyDebuff: `各種BOSS的傷害加成：
-***例如:蠍子弱近戰50%，那斬擊、打擊傷害+50%***
-皮皮蛇身體：近戰-80% 射擊-50% 全屬性-80%
-蠍子：近戰+50% 射擊-50%
-9頭蛇：射擊-100%
-土偶：近戰-15%
-王八頭：近戰+50%
-王八身體：打擊實彈-30% 斬擊光彈-50% 全屬性-80%
-普通、屬性鱟正面：打擊實彈-30% 斬擊光彈-50% 全屬性-80%
-特異鱟：打擊實彈-30% 斬擊光彈-50% 全屬性-90%
-大型VW：近戰-30% 射擊+30%
-3筒子：近戰-40% 射擊+30%
-豬籠草：近戰-40% 射擊+30%
-刺蝟核心：所有ATK傷害+100%
-花園本體：射擊-90%
-花園種子：近戰+30% 射擊-30%
+        enemyDebuff: `各種BOSS的耐性/弱點：
+皮皮蛇身體
+    耐性：近戰80% 射擊50% 全屬性80%
+蠍子
+    耐性：射擊50%
+    弱點：近戰50％
+9頭蛇
+    耐性：射擊100%
+土偶：
+    耐性：近戰15%
+王八頭
+    弱點：近戰50%
+王八身體
+    耐性：打擊實彈30% 斬擊光彈50% 全屬性80%
+普通、屬性鱟正面
+    耐性：打擊實彈30% 斬擊光彈50% 全屬性80%
+特異鱟
+    耐性：打擊實彈30% 斬擊光彈50% 全屬性90%
+大型VW
+    耐性：近戰30%
+    弱點：射擊30%
+3筒子
+    耐性：近戰40%
+    弱點：射擊30%
+豬籠草
+    耐性：近戰40%
+    弱點：射擊30%
+刺蝟核心
+    弱點：近戰100% 射擊100%
+花園本體
+    耐性：射擊90%
+花園種子
+    耐性：射擊30%
+    弱點：近戰30%
+
+!--
+例如: 蠍子有射擊耐性50%、弱近戰50%，那麼在敵人弱點這邊填入
+射擊50%(射擊傷害少50%)，近戰-50%(近戰傷害多50%)
+!--
 
 屬性debuff：
 愛花ANSP 電屬性 -100%
@@ -313,7 +342,9 @@ Lv200:1680`,
 
 
 
-    constructor() { }
+    constructor(
+        public service: AppService,
+    ) { }
 
     ngOnInit(): void {
         this.dmgrList.push(DMGRateCase.getAika());
@@ -347,6 +378,8 @@ Lv200:1680`,
         }
     }
 
-
+    showMsg(msg): void {
+        this.service.message(msg);
+    }
 
 }

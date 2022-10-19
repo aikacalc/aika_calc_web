@@ -109,6 +109,10 @@
                 align-items: center;
                 color: #f00;
                 background-color: #fff;
+
+                &:hover {
+                    background-color: #eee;
+                }
             }
         }
 

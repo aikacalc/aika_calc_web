@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { AttrTypeName, AttrTypeIdList } from '../model/attr-type';
+import { AttrTypeName, AttrTypeIdList, getTypeColor } from '../model/attr-type';
 import { AttrTypeId } from '../model/attr-type-id.enum';
 import { Buff } from '../model/buff';
 import { Character } from '../model/character';
@@ -27,6 +27,7 @@ export class AikaCalcComponent implements OnInit {
     public savedataJson: string = '';
     public character: Character;
 
+    getTypeColor = getTypeColor;
 
     help = {
         enigma: `角色技能樹的加點
@@ -104,7 +105,7 @@ export class AikaCalcComponent implements OnInit {
         aika.equipmentBottom.base.gradeUp = 99;
 
         this.character.updateStatus();
-        console.log(this.character);
+        // console.log(this.character);
 
 
         // this.character.weaponShot.buffs.push(new Buff(AttrTypeId.HP, 0.07));
@@ -161,5 +162,11 @@ export class AikaCalcComponent implements OnInit {
         // console.log(data, gearIndexValue);
         const gearIndex = parseInt(gearIndexValue, 10);
         Unit.cloneDeep(gear, gears[gearIndex], 0);
+    }
+
+
+
+    showMsg(msg): void {
+        this.service.message(msg);
     }
 }

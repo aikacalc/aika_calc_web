@@ -1273,5 +1273,8 @@
     </table>
 </div>
 
-
+<div class="msg" *ngIf="service.showMessage">
+    <div class="mask" (click)="service.showMessage=false"></div>
+    <div class="message">{{service.messageWindowContent}}</div>
+</div>
 <!-- <router-outlet></router-outlet> -->

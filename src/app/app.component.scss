@@ -42,6 +42,34 @@
         }
     }
 
+    >.msg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        >.mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        >.message {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            max-height: 80vh;
+            overflow: auto;
+            color: #333;
+            background-color: #fafafa;
+            white-space: pre-wrap;
+            box-shadow: 0 0 0 1px #f00;
+        }
+    }
+
     .aika-exercise-cos {
         table {
             border-collapse: collapse;

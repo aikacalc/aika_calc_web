@@ -72,7 +72,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td class="enigma help" [title]="help.enigma">enigma</td>
+                            <td class="enigma help" [title]="help.enigma" (click)="showMsg(help.enigma)">enigma</td>
                             <td>結果</td>
                         </tr>
                         <tr class="hp">
@@ -151,13 +151,14 @@
                             </td>
                         </tr>
                         <tr class="buff-list-tr">
-                            <td class="name help" [title]="help.charabuff">Buff</td>
+                            <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">Buff</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <div class="buff-list">
                                         <div class="buff" *ngFor="let buff of character.buffs">
                                             <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                                                <option *ngFor="let attrType of attrTypeList" [value]="attrType.id">
+                                                <option *ngFor="let attrType of attrTypeList" [value]="attrType.id"
+                                                    [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                     {{attrType.name}}
                                                 </option>
                                             </select>
@@ -198,14 +199,16 @@
                                         <select [(ngModel)]="character.weaponShot.base.unitType"
                                             (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeGearShotList"
-                                                [attr.value]="attrType.id">
+                                                [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <select [(ngModel)]="character.weaponShot.base.atkAmmoTypeId"
                                             (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeShotAmmoTypeList"
-                                                [attr.value]="attrType.id">
+                                                [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
@@ -221,8 +224,8 @@
                                     <div class="wrapper-row">
                                         <select [(ngModel)]="character.weaponShot.base.attrTypeId"
                                             (ngModelChange)="character.updateStatus()">
-                                            <option *ngFor="let attrType of attrTypeAttrList"
-                                                [attr.value]="attrType.id">
+                                            <option *ngFor="let attrType of attrTypeAttrList" [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
@@ -282,14 +285,16 @@
                                         <select [(ngModel)]="character.weaponClose.base.unitType"
                                             (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeGearCloseList"
-                                                [attr.value]="attrType.id">
+                                                [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
                                         <select [(ngModel)]="character.weaponClose.base.atkAmmoTypeId"
                                             (ngModelChange)="character.updateStatus()">
                                             <option *ngFor="let attrType of attrTypeCloseHitTypeList"
-                                                [attr.value]="attrType.id">
+                                                [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
@@ -305,8 +310,8 @@
                                     <div class="wrapper-row">
                                         <select [(ngModel)]="character.weaponClose.base.attrTypeId"
                                             (ngModelChange)="character.updateStatus()">
-                                            <option *ngFor="let attrType of attrTypeAttrList"
-                                                [attr.value]="attrType.id">
+                                            <option *ngFor="let attrType of attrTypeAttrList" [attr.value]="attrType.id"
+                                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                                 {{attrType.name}}
                                             </option>
                                         </select>
@@ -525,13 +530,14 @@
 </ng-template>
 <ng-template #gearBuffRow let-gear="gear">
     <tr class="buff-list-tr">
-        <td class="name help" [title]="help.gearbuff">Buff</td>
+        <td class="name help" [title]="help.gearbuff" (click)="showMsg(help.gearbuff)">Buff</td>
         <td>
             <div class="wrapper-row">
                 <div class="buff-list">
                     <div class="buff" *ngFor="let buff of gear.buffs">
                         <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
+                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id"
+                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                 {{attrType.name}}
                             </option>
                         </select>
@@ -548,13 +554,14 @@
         </td>
     </tr>
     <tr class="tune-list">
-        <td class="name help" [title]="help.tune">Tune</td>
+        <td class="name help" [title]="help.tune" (click)="showMsg(help.tune)">Tune</td>
         <td>
             <div class="wrapper-row">
                 <div class="buff-list">
                     <div class="buff" *ngFor="let buff of gear.tunes">
                         <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id">
+                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id"
+                                [ngStyle]="{color:getTypeColor(attrType.id)}">
                                 {{attrType.name}}
                             </option>
                         </select>

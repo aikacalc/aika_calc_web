@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
     hasNewUpdate: boolean = false;
+
+    showMessage: boolean = false;
+    messageWindowContent: string = '';
+
     constructor() { }
+
+    message(msg: string): void {
+        this.showMessage = true;
+        this.messageWindowContent = msg;
+    }
+
 }

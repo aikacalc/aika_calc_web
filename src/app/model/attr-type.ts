@@ -143,3 +143,6 @@ export const AttrTypeDict: {
     EquipmentTop: (value: number) => new AttrType(AttrTypeId.EquipmentTop, '', value),
     EquipmentBottom: (value: number) => new AttrType(AttrTypeId.EquipmentBottom, '', value),
 };
+export function getTypeColor(typeId: AttrTypeId): string {
+    return AttrTypeColor[AttrTypeId[typeId]];
+}
