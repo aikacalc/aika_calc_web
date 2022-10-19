@@ -13,7 +13,6 @@ const build$ = new Observable((subsc) => {
         }
         // if (stderr) {
         //     console.log(`stderr: ${stderr}`);
-        //     reject(stderr);
         //     return;
         // }
         console.log(`stdout: ${stdout}`);
@@ -61,29 +60,39 @@ const copyBitbucket$ = new Observable((subsc) => {
 });
 const gitGithubAikaClac$ = new Observable((subsc) => {
     console.log('git aikacalc');
-    const cmd = 'cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
-    exec(cmd, (error, stdout, stderr) => {
-        subsc.next();
-        subsc.complete();
+    const cmd = 'cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+    // const cmd = 'cd';
+    execSync(cmd, (error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
     });
+    subsc.next();
+    subsc.complete();
 });
 const gitGithub$ = new Observable((subsc) => {
     console.log('git aikacalc.github.io');
     const cmd = 'cd ../aikacalc.github.io'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
-    exec(cmd, (error, stdout, stderr) => {
-        subsc.next();
-        subsc.complete();
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+    execSync(cmd, (error, stdout, stderr) => {
     });
+    subsc.next();
+    subsc.complete();
 });
 const gitBitbucket$ = new Observable((subsc) => {
     console.log('git aikacalc.bitbucket.io');
     const cmd = 'cd ../aikacalc.bitbucket.io'
-        + ' & cmd /K "C:\Program Files\Git\bin\git.exe" commit -a -m' + `u`;
-    exec(cmd, (error, stdout, stderr) => {
-        subsc.next();
-        subsc.complete();
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+    execSync(cmd, (error, stdout, stderr) => {
     });
+    subsc.next();
+    subsc.complete();
 });
 
 
