@@ -79,7 +79,8 @@ const gitGithubAikaClac$ = new Observable((subsc) => {
 const gitGithub$ = new Observable((subsc) => {
     console.log('git aikacalc.github.io');
     const cmd = 'cd ../aikacalc.github.io'
-        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" add --all'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -m' + `u`;
     execSync(cmd, (error, stdout, stderr) => {
     });
     subsc.next();
@@ -88,7 +89,8 @@ const gitGithub$ = new Observable((subsc) => {
 const gitBitbucket$ = new Observable((subsc) => {
     console.log('git aikacalc.bitbucket.io');
     const cmd = 'cd ../aikacalc.bitbucket.io'
-        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" add --all'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -m' + `u`;
     execSync(cmd, (error, stdout, stderr) => {
     });
     subsc.next();
