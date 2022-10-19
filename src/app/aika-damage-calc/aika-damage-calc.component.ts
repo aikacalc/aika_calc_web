@@ -184,15 +184,17 @@ class DMGCalcPlan {
         this.outputAttrDamage = Math.floor(baseAttrDmg);
 
 
-        this.outputDamage = (baseAtkDmg + baseAttrDmg) * (1 + this.finalDamageBuff);
+        const finalDmgPercent = this.finalDamageBuff / 100;
+
+        this.outputDamage = (baseAtkDmg + baseAttrDmg) * (1 + finalDmgPercent);
         this.outputDamage = Math.max(0, this.outputDamage);
         this.outputDamage = Math.floor(this.outputDamage);
 
-        this.outputDamageMin = (minAtkDmg + minAttrDmg) * (1 + this.finalDamageBuff);
+        this.outputDamageMin = (minAtkDmg + minAttrDmg) * (1 + finalDmgPercent);
         this.outputDamageMin = Math.max(0, this.outputDamageMin);
         this.outputDamageMin = Math.floor(this.outputDamageMin);
 
-        this.outputDamageMax = (maxAtkDmg + maxAttrDmg) * (1 + this.finalDamageBuff);
+        this.outputDamageMax = (maxAtkDmg + maxAttrDmg) * (1 + finalDmgPercent);
         this.outputDamageMax = Math.max(0, this.outputDamageMax);
         this.outputDamageMax = Math.floor(this.outputDamageMax);
     }
