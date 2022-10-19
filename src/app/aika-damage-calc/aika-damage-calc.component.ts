@@ -154,7 +154,18 @@ class DMGCalcPlan {
 
         let atkResist = 0;
         this.enemyDebuff
-            .filter(v => v.attrTypeId == this.atkTypeId)
+            .filter(v => {
+                if (v.attrTypeId == this.atkTypeId) {
+                    return true;
+                }
+                else if (v.attrTypeId == AttrTypeId.Close) {
+                    return this.atkTypeId == AttrTypeId.Impact || this.atkTypeId == AttrTypeId.Slash;
+                }
+                else if (v.attrTypeId == AttrTypeId.Shot) {
+                    return this.atkTypeId == AttrTypeId.Physical || this.atkTypeId == AttrTypeId.Energy;
+                }
+                return false;
+            })
             .forEach(v => {
                 atkResist += (v.value / 100);
             });
