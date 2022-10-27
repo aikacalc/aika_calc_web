@@ -10146,6 +10146,43 @@ class TenkoSora05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
 }
 
+class TenkoSora70 extends Character {
+    name: string = '天狐 天 / 御侠 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
 class HasamiRika01 extends Character {
     name: string = '波佐見 利佳 ★1';
     rare: number = 1;
@@ -13416,6 +13453,7 @@ export const CharacterModels = {
     TenkoSora02: new TenkoSora02(),
     TenkoSora04: new TenkoSora04(),
     TenkoSora05: new TenkoSora05(),
+    TenkoSora70: new TenkoSora70(),
     HasamiRika01: new HasamiRika01(),
     HasamiRika02: new HasamiRika02(),
     HasamiRika04: new HasamiRika04(),

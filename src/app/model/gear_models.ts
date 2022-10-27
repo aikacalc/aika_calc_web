@@ -7616,6 +7616,26 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, -0.15),
                 new Buff(AttrTypeId.Fire, 0.05)
             ]
+            }),
+            new Gear({
+                name: 'C010_SEC0607/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1791,
+                hpMin: 543,
+                hpMax: 1791,
+                def: 494,
+                defMin: 155,
+                defMax: 494,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.1),
+                new Buff(AttrTypeId.ResistIce, -0.1),
+                new Buff(AttrTypeId.Fire, 0.07)
+            ]
             })
         ],
         bottom: [
@@ -7868,6 +7888,27 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
+                new Buff(AttrTypeId.HP, -0.1)
+            ]
+            }),
+            new Gear({
+                name: 'C010_SEC0607/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1218,
+                hpMin: 369,
+                hpMax: 1218,
+                def: 323,
+                defMin: 101,
+                defMax: 323,
+                spd: 280,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.1),
+                new Buff(AttrTypeId.ResistIce, -0.1),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
             })
@@ -8662,6 +8703,26 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.Volt, 0.05)
             ]
+            }),
+            new Gear({
+                name: 'C009_SEC0607/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1808,
+                hpMin: 548,
+                hpMax: 1808,
+                def: 480,
+                defMin: 150,
+                defMax: 480,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
             })
         ],
         bottom: [
@@ -8915,6 +8976,27 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.HP, 0.07)
+            ]
+            }),
+            new Gear({
+                name: 'C009_SEC0607/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1205,
+                hpMin: 365,
+                hpMax: 1205,
+                def: 320,
+                defMin: 100,
+                defMax: 320,
+                spd: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
             ]
             })
         ]
@@ -9650,6 +9732,26 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistFire, -0.15),
                 new Buff(AttrTypeId.Ice, 0.05)
             ]
+            }),
+            new Gear({
+                name: 'C013_SEC0607/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1719,
+                hpMin: 521,
+                hpMax: 1719,
+                def: 514,
+                defMin: 161,
+                defMax: 514,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.1),
+                new Buff(AttrTypeId.ResistFire, -0.1),
+                new Buff(AttrTypeId.Ice, 0.07)
+            ]
             })
         ],
         bottom: [
@@ -9903,6 +10005,27 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
                 new Buff(AttrTypeId.HP, 0.07)
+            ]
+            }),
+            new Gear({
+                name: 'C013_SEC0607/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1146,
+                hpMin: 347,
+                hpMax: 1146,
+                def: 343,
+                defMin: 107,
+                defMax: 343,
+                spd: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.1),
+                new Buff(AttrTypeId.ResistFire, -0.1),
+                new Buff(AttrTypeId.HP, 0.1)
             ]
             })
         ]
@@ -36100,6 +36223,42 @@ export const ActressGears = {
     },
     TenkoSora: {
         long: [
+            new Gear({
+                name: 'ユミハリ【臥煙】',
+                unitType: AttrTypeId.Twin,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 636,
+                atkMin: 353,
+                atkMax: 636,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 309,
+                attrMin: 172,
+                attrMax: 309,
+                attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
+                name: 'ユミハリ破',
+                unitType: AttrTypeId.Twin,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 601,
+                atkMin: 318,
+                atkMax: 601,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 292,
+                attrMin: 155,
+                attrMax: 292,
+                attrTypeId: AttrTypeId.Ice
+            }),
             new Gear({
                 name: 'ユミハリ【火消】',
                 unitType: AttrTypeId.Twin,
