@@ -28307,6 +28307,42 @@ export const ActressGears = {
     MiaVoisin: {
         long: [
             new Gear({
+                name: 'テイエール・セルヴィMk3',
+                unitType: AttrTypeId.Rifle,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 567,
+                atkMin: 315,
+                atkMax: 567,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 375,
+                attrMin: 208,
+                attrMax: 375,
+                attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
+                name: 'テイエール・セルヴィMk2',
+                unitType: AttrTypeId.Rifle,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 536,
+                atkMin: 284,
+                atkMax: 536,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 354,
+                attrMin: 187,
+                attrMax: 354,
+                attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
                 name: 'テイエールMk3',
                 unitType: AttrTypeId.Rifle,
                 level: 80,

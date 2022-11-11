@@ -7477,6 +7477,43 @@ class MiaVoisin05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
 }
 
+class MiaVoisin70 extends Character {
+    name: string = 'ミア / 恭敬 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
+    attrClose: number = 0;
+    atkShot: number = 538;
+    atkShotMin: number = 149;
+    atkShotMax: number = 538;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MiaVoisin.long;
+    weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
+    equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
+    equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+}
+
 class ChishimaMiyuki01 extends Character {
     name: string = '千島 美幸 ★1';
     rare: number = 1;
@@ -13380,6 +13417,7 @@ export const CharacterModels = {
     MiaVoisin02: new MiaVoisin02(),
     MiaVoisin04: new MiaVoisin04(),
     MiaVoisin05: new MiaVoisin05(),
+    MiaVoisin70: new MiaVoisin70(),
     ChishimaMiyuki01: new ChishimaMiyuki01(),
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
