@@ -13119,6 +13119,154 @@ class ViktoriyaIvanovnaSerebryakov05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.bottom;
 }
 
+class Kei04 extends Character {
+    name: string = 'ケイ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 500;
+    atkCloseMin: number = 143;
+    atkCloseMax: number = 500;
+    attrClose: number = 0;
+    atkShot: number = 486;
+    atkShotMin: number = 139;
+    atkShotMax: number = 486;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.HandGun, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Kei.long;
+    weaponCloses: Gear[] = ActressGears.Kei.short;
+    equipmentTops: Gear[] = ActressGears.Kei.top;
+    equipmentBottoms: Gear[] = ActressGears.Kei.bottom;
+}
+
+class Kei05 extends Character {
+    name: string = 'ケイ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 643;
+    atkCloseMin: number = 179;
+    atkCloseMax: number = 643;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.HandGun, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Kei.long;
+    weaponCloses: Gear[] = ActressGears.Kei.short;
+    equipmentTops: Gear[] = ActressGears.Kei.top;
+    equipmentBottoms: Gear[] = ActressGears.Kei.bottom;
+}
+
+class Yuri04 extends Character {
+    name: string = 'ユリ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 486;
+    atkCloseMin: number = 139;
+    atkCloseMax: number = 486;
+    attrClose: number = 0;
+    atkShot: number = 500;
+    atkShotMin: number = 143;
+    atkShotMax: number = 500;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yuri.long;
+    weaponCloses: Gear[] = ActressGears.Yuri.short;
+    equipmentTops: Gear[] = ActressGears.Yuri.top;
+    equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
+}
+
+class Yuri05 extends Character {
+    name: string = 'ユリ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 624;
+    atkCloseMin: number = 173;
+    atkCloseMax: number = 624;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Yuri.long;
+    weaponCloses: Gear[] = ActressGears.Yuri.short;
+    equipmentTops: Gear[] = ActressGears.Yuri.top;
+    equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
+}
+
 export const ActressNames: string[] = [
     'HirasakaYotsuyu',
     'KaneshiyaSitara',
@@ -13209,7 +13357,9 @@ export const ActressNames: string[] = [
     'MakiseKurisu',
     'AmaneSuzuha',
     'TanyaDegurechaff',
-    'ViktoriyaIvanovnaSerebryakov'
+    'ViktoriyaIvanovnaSerebryakov',
+    'Kei',
+    'Yuri'
 ];
 
 export const CharacterModels = {
@@ -13570,5 +13720,9 @@ export const CharacterModels = {
     TanyaDegurechaff04: new TanyaDegurechaff04(),
     TanyaDegurechaff05: new TanyaDegurechaff05(),
     ViktoriyaIvanovnaSerebryakov04: new ViktoriyaIvanovnaSerebryakov04(),
-    ViktoriyaIvanovnaSerebryakov05: new ViktoriyaIvanovnaSerebryakov05()
+    ViktoriyaIvanovnaSerebryakov05: new ViktoriyaIvanovnaSerebryakov05(),
+    Kei04: new Kei04(),
+    Kei05: new Kei05(),
+    Yuri04: new Yuri04(),
+    Yuri05: new Yuri05()
 };
