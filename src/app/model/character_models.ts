@@ -5235,6 +5235,43 @@ class SutegoroShiina70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
 }
 
+class SutegoroShiina80 extends Character {
+    name: string = '州天頃 椎奈 / ブレイブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 501;
+    atkShotMin: number = 139;
+    atkShotMax: number = 501;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.SutegoroShiina.long;
+    weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
+    equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
+    equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+}
+
 class NikitohKanade01 extends Character {
     name: string = '仁紀藤 奏 ★1';
     rare: number = 1;
@@ -5413,6 +5450,42 @@ class NikitohKanade70 extends Character {
         new Buff(AttrTypeId.Gravity, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NikitohKanade.long;
+    weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
+    equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
+    equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+}
+
+class NikitohKanade80 extends Character {
+    name: string = '仁紀藤 奏 / ブレイブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 780;
+    atkShotMin: number = 217;
+    atkShotMax: number = 780;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.NikitohKanade.long;
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
@@ -13506,11 +13579,13 @@ export const CharacterModels = {
     SutegoroShiina04: new SutegoroShiina04(),
     SutegoroShiina05: new SutegoroShiina05(),
     SutegoroShiina70: new SutegoroShiina70(),
+    SutegoroShiina80: new SutegoroShiina80(),
     NikitohKanade01: new NikitohKanade01(),
     NikitohKanade02: new NikitohKanade02(),
     NikitohKanade04: new NikitohKanade04(),
     NikitohKanade05: new NikitohKanade05(),
     NikitohKanade70: new NikitohKanade70(),
+    NikitohKanade80: new NikitohKanade80(),
     MuraoMira01: new MuraoMira01(),
     MuraoMira02: new MuraoMira02(),
     MuraoMira04: new MuraoMira04(),
