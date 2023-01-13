@@ -6,7 +6,7 @@ const fs = require('fs');
 const build$ = new Observable((subsc) => {
     console.log('run ng build...');
 
-    exec("ng build --prod --build-optimizer", (error, stdout, stderr) => {
+    exec("ng build --build-optimizer --configuration production", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
