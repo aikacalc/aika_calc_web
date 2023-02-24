@@ -1,7 +1,6 @@
-import { AttrTypeId } from './attr-type-id.enum';
 import { Buff } from './buff';
 import { Unit } from './unit';
-import { AttrTypeColor } from './attr-type';
+import { AttrTypeColor, AttrTypeId } from './attr-type';
 import { gearQualityGrowth } from "./gear-quality";
 
 export class Gear extends Unit {

@@ -1,6 +1,7 @@
+import { AttrTypeId } from './../model/attr-type';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { AttrTypeName, AttrTypeIdList, getTypeColor } from '../model/attr-type';
-import { AttrTypeId } from '../model/attr-type-id.enum';
+// import { AttrTypeId } from '../model/attr-type-id.enum';
 import { Buff } from '../model/buff';
 import { Character } from '../model/character';
 import { CharacterModels } from '../model/character_models';

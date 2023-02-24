@@ -22,6 +22,9 @@
     <button class="aika-ex-cos" [ngClass]="{selected:page=='aec'}" (click)="page='aec'">
         <span>愛花運動衣</span>
     </button>
+    <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
+        <span>愛花技能</span>
+    </button> -->
 </div>
 <div class="aika-calc-container" [hidden]="page!=''">
     <app-aika-calc></app-aika-calc>
@@ -1271,6 +1274,9 @@
         </tr>
 
     </table>
+</div>
+<div class="aika-damage-calc" [hidden]="page!='ask'">
+    <app-aika-skill></app-aika-skill>
 </div>
 
 <div class="msg" *ngIf="service.showMessage">

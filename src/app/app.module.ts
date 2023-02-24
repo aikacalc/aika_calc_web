@@ -1,3 +1,4 @@
+import { AikaSkillModule } from './aika-skill/aika-skill.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
         AikaCalcModule,
         AikaFanReachCalcModule,
         AikaDamageCalcModule,
+        AikaSkillModule,
         ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
         // RouterModule.forRoot([
         //     { path: 'abs', loadChildren: () => import('./aika-battle-simulator/aika-battle-simulator.module').then(m => m.AikaBattleSimulatorModule) },

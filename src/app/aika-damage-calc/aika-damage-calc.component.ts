@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
-import { AttrType, AttrTypeColor, getTypeColor } from '../model/attr-type';
-import { AttrTypeId } from '../model/attr-type-id.enum';
+import { AttrType, AttrTypeColor, AttrTypeId, getTypeColor } from '../model/attr-type';
+// import { AttrTypeId } from '../model/attr-type-id.enum';
 
 
 const attrDamageRate = {

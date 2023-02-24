@@ -1,4 +1,3 @@
-import { StageReward } from './stage-reward';
 import { StageRewardFan } from './stage-reward-fan';
 
 export class Actress {

@@ -1,8 +1,8 @@
 import { Unit } from './unit';
-import { AttrTypeId } from './attr-type-id.enum';
 import { Buff } from './buff';
-import { AttrType } from './attr-type';
+import { AttrType, AttrTypeId } from './attr-type';
 import { Gear } from './gear';
+
 const masterLevelStatus = {
     1: { "hp": 0, "def": 0, "atkShot": 0, "atkClose": 0, },
     2: { "hp": 25, "def": 7, "atkShot": 4, "atkClose": 4, },
@@ -35,6 +35,7 @@ const masterLevelStatus = {
     29: { "hp": 700, "def": 194, "atkShot": 97, "atkClose": 97, },
     30: { "hp": 725, "def": 200, "atkShot": 100, "atkClose": 100, },
 }
+
 export class Character extends Unit {
     rare: number = 1;
     // level: number = 1;

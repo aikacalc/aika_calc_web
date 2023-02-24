@@ -1,4 +1,34 @@
-import { AttrTypeId } from './attr-type-id.enum';
+export enum AttrTypeId {
+    Impact = 1,
+    Slash = 2,
+    Physical = 3,
+    Energy = 4,
+    Volt = 5,
+    Gravity = 6,
+    Fire = 7,
+    Ice = 8,
+    Sword = 9,
+    Hammer = 10,
+    Spear = 11,
+    Dagger = 12,
+    HandGun = 13,
+    Rifle = 14,
+    Bazooka = 15,
+    Twin = 16,
+    Sniper = 17,
+    Close = 18,
+    Shot = 19,
+    HP = 20,
+    DEF = 21,
+    None = 22,
+    ResistVolt = 23,
+    ResistGravity = 24,
+    ResistFire = 25,
+    ResistIce = 26,
+    SPD = 27,
+    EquipmentTop = 28,
+    EquipmentBottom = 29,
+}
 
 export class AttrType {
     get name(): string {
@@ -20,6 +50,7 @@ export class AttrType {
         this.value = value;
     }
 }
+
 export const AttrTypeIdList = [
     AttrTypeId.Impact,
     AttrTypeId.Slash,
@@ -48,6 +79,7 @@ export const AttrTypeIdList = [
     AttrTypeId.ResistIce,
     AttrTypeId.SPD
 ];
+
 export const AttrTypeName: { [key in keyof typeof AttrTypeId]: string } = {
     Impact: '打擊',
     Slash: '斬擊',
@@ -79,6 +111,7 @@ export const AttrTypeName: { [key in keyof typeof AttrTypeId]: string } = {
     EquipmentTop: '上身',
     EquipmentBottom: '下身',
 };
+
 export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     Impact: '#000000',
     Slash: '#000000',
@@ -110,6 +143,7 @@ export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     EquipmentTop: '#000000',
     EquipmentBottom: '#000000',
 }
+
 export const AttrTypeDict: {
     [key in keyof typeof AttrTypeId]: (value: number) => AttrType;
 } = {

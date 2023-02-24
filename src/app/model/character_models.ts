@@ -1,7 +1,6 @@
-import { AttrType,AttrTypeDict } from './attr-type';
+import { AttrType,AttrTypeDict,AttrTypeId } from './attr-type';
 import { Character } from './character';
 import { Buff } from './buff';
-import { AttrTypeId } from './attr-type-id.enum';
 import { Gear } from './gear';
 import { ActressGears } from './gear_models';
 
@@ -1211,6 +1210,43 @@ class TakanashiRei70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
 }
 
+class TakanashiRei80 extends Character {
+    name: string = '小鳥遊 怜 / ネクスト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 561;
+    atkCloseMin: number = 156;
+    atkCloseMax: number = 561;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 164;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 158;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.TakanashiRei.long;
+    weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
+    equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
+    equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+}
+
 class IchijoAyaka01 extends Character {
     name: string = '一条 綾香 ★1';
     rare: number = 1;
@@ -1385,6 +1421,43 @@ class IchijoAyaka70 extends Character {
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Dagger, 0.3),
         new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.IchijoAyaka.long;
+    weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
+    equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
+    equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+}
+
+class IchijoAyaka80 extends Character {
+    name: string = '一条 綾香 / ネクスト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 522;
+    atkShotMin: number = 145;
+    atkShotMax: number = 522;
+    attrShot: number = 0;
+    def: number = 864;
+    defMin: number = 240;
+    defMax: number = 864;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.IchijoAyaka.long;
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
@@ -9159,6 +9232,298 @@ class OnagaAkino05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
 }
 
+class TatsumiRyuko01 extends Character {
+    name: string = '巽 竜子 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 14;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 879;
+    hpMin: number = 364;
+    hpMax: number = 879;
+    atkClose: number = 217;
+    atkCloseMin: number = 87;
+    atkCloseMax: number = 217;
+    attrClose: number = 0;
+    atkShot: number = 203;
+    atkShotMin: number = 81;
+    atkShotMax: number = 203;
+    attrShot: number = 0;
+    def: number = 258;
+    defMin: number = 103;
+    defMax: number = 258;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
+    weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
+    equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
+    equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+}
+
+class TatsumiRyuko02 extends Character {
+    name: string = '巽 竜子 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1434;
+    hpMin: number = 515;
+    hpMax: number = 1434;
+    atkClose: number = 347;
+    atkCloseMin: number = 130;
+    atkCloseMax: number = 347;
+    attrClose: number = 0;
+    atkShot: number = 324;
+    atkShotMin: number = 122;
+    atkShotMax: number = 324;
+    attrShot: number = 0;
+    def: number = 412;
+    defMin: number = 155;
+    defMax: number = 412;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
+    weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
+    equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
+    equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+}
+
+class TatsumiRyuko04 extends Character {
+    name: string = '巽 竜子 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 607;
+    atkCloseMin: number = 173;
+    atkCloseMax: number = 607;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 162;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 721;
+    defMin: number = 206;
+    defMax: number = 721;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
+    weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
+    equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
+    equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+}
+
+class TatsumiRyuko05 extends Character {
+    name: string = '巽 竜子 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 780;
+    atkCloseMin: number = 217;
+    atkCloseMax: number = 780;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
+    weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
+    equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
+    equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+}
+
+class OhtoriKasumi01 extends Character {
+    name: string = '鳳 加純 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 15;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 887;
+    hpMin: number = 367;
+    hpMax: number = 887;
+    atkClose: number = 149;
+    atkCloseMin: number = 60;
+    atkCloseMax: number = 149;
+    attrClose: number = 0;
+    atkShot: number = 151;
+    atkShotMin: number = 60;
+    atkShotMax: number = 151;
+    attrShot: number = 0;
+    def: number = 255;
+    defMin: number = 102;
+    defMax: number = 255;
+    spd: number = 165;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OhtoriKasumi.long;
+    weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
+    equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
+    equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+}
+
+class OhtoriKasumi02 extends Character {
+    name: string = '鳳 加純 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1448;
+    hpMin: number = 520;
+    hpMax: number = 1448;
+    atkClose: number = 239;
+    atkCloseMin: number = 90;
+    atkCloseMax: number = 239;
+    attrClose: number = 0;
+    atkShot: number = 241;
+    atkShotMin: number = 90;
+    atkShotMax: number = 241;
+    attrShot: number = 0;
+    def: number = 408;
+    defMin: number = 153;
+    defMax: number = 408;
+    spd: number = 165;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OhtoriKasumi.long;
+    weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
+    equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
+    equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+}
+
+class OhtoriKasumi04 extends Character {
+    name: string = '鳳 加純 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 418;
+    atkCloseMin: number = 119;
+    atkCloseMax: number = 418;
+    attrClose: number = 0;
+    atkShot: number = 422;
+    atkShotMin: number = 121;
+    atkShotMax: number = 422;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 165;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OhtoriKasumi.long;
+    weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
+    equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
+    equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+}
+
+class OhtoriKasumi05 extends Character {
+    name: string = '鳳 加純 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 543;
+    atkShotMin: number = 151;
+    atkShotMax: number = 543;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 165;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Spear, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OhtoriKasumi.long;
+    weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
+    equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
+    equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+}
+
 class KanagataSugumi01 extends Character {
     name: string = '金潟 すぐみ ★1';
     rare: number = 1;
@@ -9957,6 +10322,42 @@ class MiyaminamiHikari05 extends Character {
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MiyaminamiHikari.long;
+    weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
+    equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
+    equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+}
+
+class MiyaminamiHikari70 extends Character {
+    name: string = '宮南 ひかり / 爛漫 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 750;
+    atkCloseMin: number = 208;
+    atkCloseMax: number = 750;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 162;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MiyaminamiHikari.long;
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
@@ -13389,6 +13790,8 @@ export const ActressNames: string[] = [
     'MerabuchiKanami',
     'RitaHenschel',
     'OnagaAkino',
+    'TatsumiRyuko',
+    'OhtoriKasumi',
     'KanagataSugumi',
     'AraimeYasuri',
     'MatobaAoi',
@@ -13469,11 +13872,13 @@ export const CharacterModels = {
     TakanashiRei04: new TakanashiRei04(),
     TakanashiRei05: new TakanashiRei05(),
     TakanashiRei70: new TakanashiRei70(),
+    TakanashiRei80: new TakanashiRei80(),
     IchijoAyaka01: new IchijoAyaka01(),
     IchijoAyaka02: new IchijoAyaka02(),
     IchijoAyaka04: new IchijoAyaka04(),
     IchijoAyaka05: new IchijoAyaka05(),
     IchijoAyaka70: new IchijoAyaka70(),
+    IchijoAyaka80: new IchijoAyaka80(),
     AikawaAika01: new AikawaAika01(),
     AikawaAika02: new AikawaAika02(),
     AikawaAika04: new AikawaAika04(),
@@ -13686,6 +14091,14 @@ export const CharacterModels = {
     OnagaAkino02: new OnagaAkino02(),
     OnagaAkino04: new OnagaAkino04(),
     OnagaAkino05: new OnagaAkino05(),
+    TatsumiRyuko01: new TatsumiRyuko01(),
+    TatsumiRyuko02: new TatsumiRyuko02(),
+    TatsumiRyuko04: new TatsumiRyuko04(),
+    TatsumiRyuko05: new TatsumiRyuko05(),
+    OhtoriKasumi01: new OhtoriKasumi01(),
+    OhtoriKasumi02: new OhtoriKasumi02(),
+    OhtoriKasumi04: new OhtoriKasumi04(),
+    OhtoriKasumi05: new OhtoriKasumi05(),
     KanagataSugumi01: new KanagataSugumi01(),
     KanagataSugumi02: new KanagataSugumi02(),
     KanagataSugumi04: new KanagataSugumi04(),
@@ -13708,6 +14121,7 @@ export const CharacterModels = {
     MiyaminamiHikari02: new MiyaminamiHikari02(),
     MiyaminamiHikari04: new MiyaminamiHikari04(),
     MiyaminamiHikari05: new MiyaminamiHikari05(),
+    MiyaminamiHikari70: new MiyaminamiHikari70(),
     GaryuEmi01: new GaryuEmi01(),
     GaryuEmi02: new GaryuEmi02(),
     GaryuEmi04: new GaryuEmi04(),

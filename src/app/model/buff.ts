@@ -1,5 +1,4 @@
-import { AttrTypeId } from './attr-type-id.enum';
-import { AttrTypeName, AttrTypeColor } from './attr-type';
+import { AttrTypeName, AttrTypeColor, AttrTypeId } from './attr-type';
 
 export class Buff {
     isUnitOnly: boolean;

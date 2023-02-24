@@ -1,4 +1,4 @@
-import { AttrTypeId } from './attr-type-id.enum';
+import { AttrTypeId } from './attr-type';
 import { Buff } from './buff';
 
 export class Unit {
