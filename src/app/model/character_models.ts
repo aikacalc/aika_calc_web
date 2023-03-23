@@ -11430,6 +11430,80 @@ class Hresvelgr05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Hresvelgr.bottom;
 }
 
+class GennaiAo04 extends Character {
+    name: string = '源内 あお ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2636;
+    hpMin: number = 725;
+    hpMax: number = 2636;
+    atkClose: number = 463;
+    atkCloseMin: number = 132;
+    atkCloseMax: number = 463;
+    attrClose: number = 0;
+    atkShot: number = 441;
+    atkShotMin: number = 126;
+    atkShotMax: number = 441;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.GennaiAo.long;
+    weaponCloses: Gear[] = ActressGears.GennaiAo.short;
+    equipmentTops: Gear[] = ActressGears.GennaiAo.top;
+    equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+}
+
+class GennaiAo05 extends Character {
+    name: string = '源内 あお ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.GennaiAo.long;
+    weaponCloses: Gear[] = ActressGears.GennaiAo.short;
+    equipmentTops: Gear[] = ActressGears.GennaiAo.top;
+    equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+}
+
 class KotobukiBukiko04 extends Character {
     name: string = '寿 武希子 ★3';
     rare: number = 3;
@@ -13880,6 +13954,7 @@ export const ActressNames: string[] = [
     'Stylet',
     'Baselard',
     'Hresvelgr',
+    'GennaiAo',
     'KotobukiBukiko',
     'SolRaptor',
     'MiyafujiYoshika',
@@ -14226,6 +14301,8 @@ export const CharacterModels = {
     Baselard05: new Baselard05(),
     Hresvelgr04: new Hresvelgr04(),
     Hresvelgr05: new Hresvelgr05(),
+    GennaiAo04: new GennaiAo04(),
+    GennaiAo05: new GennaiAo05(),
     KotobukiBukiko04: new KotobukiBukiko04(),
     KotobukiBukiko05: new KotobukiBukiko05(),
     SolRaptor04: new SolRaptor04(),
