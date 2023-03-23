@@ -11430,6 +11430,80 @@ class Hresvelgr05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Hresvelgr.bottom;
 }
 
+class KotobukiBukiko04 extends Character {
+    name: string = '寿 武希子 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 454;
+    atkCloseMin: number = 130;
+    atkCloseMax: number = 454;
+    attrClose: number = 0;
+    atkShot: number = 454;
+    atkShotMin: number = 130;
+    atkShotMax: number = 454;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KotobukiBukiko.long;
+    weaponCloses: Gear[] = ActressGears.KotobukiBukiko.short;
+    equipmentTops: Gear[] = ActressGears.KotobukiBukiko.top;
+    equipmentBottoms: Gear[] = ActressGears.KotobukiBukiko.bottom;
+}
+
+class KotobukiBukiko05 extends Character {
+    name: string = '寿 武希子 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 584;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KotobukiBukiko.long;
+    weaponCloses: Gear[] = ActressGears.KotobukiBukiko.short;
+    equipmentTops: Gear[] = ActressGears.KotobukiBukiko.top;
+    equipmentBottoms: Gear[] = ActressGears.KotobukiBukiko.bottom;
+}
+
 class SolRaptor04 extends Character {
     name: string = 'SOL ラプター ★3';
     rare: number = 3;
@@ -13806,6 +13880,7 @@ export const ActressNames: string[] = [
     'Stylet',
     'Baselard',
     'Hresvelgr',
+    'KotobukiBukiko',
     'SolRaptor',
     'MiyafujiYoshika',
     'LynetteBishop',
@@ -14151,6 +14226,8 @@ export const CharacterModels = {
     Baselard05: new Baselard05(),
     Hresvelgr04: new Hresvelgr04(),
     Hresvelgr05: new Hresvelgr05(),
+    KotobukiBukiko04: new KotobukiBukiko04(),
+    KotobukiBukiko05: new KotobukiBukiko05(),
     SolRaptor04: new SolRaptor04(),
     SolRaptor05: new SolRaptor05(),
     SolRaptor70: new SolRaptor70(),
