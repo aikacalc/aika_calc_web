@@ -3,7 +3,7 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { AttrTypeName, AttrTypeIdList, getTypeColor } from '../model/attr-type';
 // import { AttrTypeId } from '../model/attr-type-id.enum';
 import { Buff } from '../model/buff';
-import { Character } from '../model/character';
+import { Character, attrTypeEnigmaStatus } from '../model/character';
 import { CharacterModels } from '../model/character_models';
 import { Unit } from '../model/unit';
 import { Gear } from '../model/gear';
@@ -43,6 +43,7 @@ export class AikaCalcComponent implements OnInit {
         charabuff: `角色自身被動`,
         gearbuff: `裝備自帶被動，或是插件效果`,
         tune: `AN裝備詞條效果，只會作用在當前裝備上`,
+        mastermax: `熟練等級到MAX(30)之後才會啟用`,
     }
 
     constructor(
@@ -83,6 +84,30 @@ export class AikaCalcComponent implements OnInit {
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
 
+        Object.values(CharacterModels)
+            .forEach(chara => {
+                const charaAttrOutputTypeBuff = chara.buffs.find(b => [
+                    AttrTypeId.Volt,
+                    AttrTypeId.Gravity,
+                    AttrTypeId.Fire,
+                    AttrTypeId.Ice
+                ].indexOf(b.type)>-1);
+                if (charaAttrOutputTypeBuff) {
+                    const outputValueString = charaAttrOutputTypeBuff.value + '';
+                    const upStatus = attrTypeEnigmaStatus[outputValueString];
+                    if (upStatus) {
+                        chara.atkShotEnigma = upStatus.atkShot;
+                        chara.attrShotEnigma = upStatus.attrShot;
+                        chara.atkCloseEnigma = upStatus.atkClose;
+                        chara.attrCloseEnigma = upStatus.attrClose;
+                        chara.atkShotEnigmaCustom = upStatus.atkShot;
+                        chara.attrShotEnigmaCustom = upStatus.attrShot;
+                        chara.atkCloseEnigmaCustom = upStatus.atkClose;
+                        chara.attrCloseEnigmaCustom = upStatus.attrClose;
+                    }
+                }
+            });
+
         const aika = CharacterModels.AikawaAika05;
         this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(aika);
         this.onCharacterTemplateChange();
@@ -98,8 +123,8 @@ export class AikaCalcComponent implements OnInit {
         this.setGear(aika.equipmentBottom, aika.equipmentBottoms, aika.equipmentBottomIndex.toString());
 
         aika.masterLevel = 30;
-        aika.attrShotEnigma = 50;
-        aika.attrCloseEnigma = 50;
+        // aika.attrShotEnigma = 50;
+        // aika.attrCloseEnigma = 50;
         aika.weaponShot.base.gradeUp = 99;
         aika.weaponClose.base.gradeUp = 99;
         aika.equipmentTop.base.gradeUp = 99;
@@ -169,5 +194,9 @@ export class AikaCalcComponent implements OnInit {
 
     showMsg(msg): void {
         this.service.message(msg);
+    }
+
+    autoInputEnigmaStatusUp(): void {
+
     }
 }

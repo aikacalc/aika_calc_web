@@ -214,4 +214,13 @@
             }
         }
     }
+
+    .chara-rare {
+        font-size: 24px;
+        background: -webkit-linear-gradient(90deg, hsl(55, 100%, 63%) 0, hsl(34, 86%, 48%) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgba(0,0,0,0.5);
+        // filter: drop-shadow(1px 1px black);
+    }
 }

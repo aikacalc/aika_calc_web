@@ -58,7 +58,7 @@
                             </td>
                         </tr>
                         <tr class="level">
-                            <td class="name" title="熟練等級到MAX(30)之後才會啟用">熟練等級+</td>
+                            <td class="name help" [title]="help.mastermax" (click)="showMsg(help.mastermax)">MAX+</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <input type="number" min="0" max="999" [disabled]="character.masterLevel!=30"
@@ -71,18 +71,25 @@
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td class="enigma help" [title]="help.enigma" (click)="showMsg(help.enigma)">enigma</td>
+                            <!-- <td></td> -->
+                            <td class="enigma" colspan="2">
+                                <div class="text help" [title]="help.enigma" (click)="showMsg(help.enigma)">
+                                    enigma 能力提升</div>
+                                <button
+                                    (click)="character.isCustomEnigmaStatus=!character.isCustomEnigmaStatus;character.updateStatus()">CUSTOM:{{character.isCustomEnigmaStatus?'ON':'OFF'}}</button>
+                            </td>
                             <td>結果</td>
                         </tr>
                         <tr class="hp">
                             <td class="name">HP</td>
-                            <td class="enigma">
+                            <!-- <td class="enigma">
                                 <div class="wrapper">
                                     <input type="number" [(ngModel)]="character.hpEnigma"
                                         (ngModelChange)="character.updateStatus()">
+
                                 </div>
-                            </td>
+                            </td> -->
+                            <td></td>
                             <td>
                                 <div class="warpper">{{character.hp}}</div>
                             </td>
@@ -91,7 +98,12 @@
                             <td class="name">射擊ATK</td>
                             <td class="enigma">
                                 <div class="wrapper">
-                                    <input type="number" [(ngModel)]="character.atkShotEnigma"
+                                    <!-- <div class="text" *ngIf="!character.isCustomEnigmaStatus">
+                                        {{character.atkShotEnigma}}</div> -->
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.atkShotEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.atkShotEnigmaCustom"
                                         (ngModelChange)="character.updateStatus()">
                                 </div>
                             </td>
@@ -103,7 +115,10 @@
                             <td class="name">屬性值</td>
                             <td class="enigma">
                                 <div class="wrapper">
-                                    <input type="number" [(ngModel)]="character.attrShotEnigma"
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.attrShotEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.attrShotEnigmaCustom"
                                         (ngModelChange)="character.updateStatus()">
                                 </div>
                             </td>
@@ -116,7 +131,10 @@
                             <td class="name">近身ATK</td>
                             <td class="enigma">
                                 <div class="wrapper">
-                                    <input type="number" [(ngModel)]="character.atkCloseEnigma"
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.atkCloseEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.atkCloseEnigmaCustom"
                                         (ngModelChange)="character.updateStatus()">
                                 </div>
                             </td>
@@ -128,7 +146,10 @@
                             <td class="name">屬性值</td>
                             <td class="enigma">
                                 <div class="wrapper">
-                                    <input type="number" [(ngModel)]="character.attrCloseEnigma"
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.attrCloseEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus"
+                                        [(ngModel)]="character.attrCloseEnigmaCustom"
                                         (ngModelChange)="character.updateStatus()">
                                 </div>
                             </td>
@@ -140,18 +161,20 @@
                         </tr>
                         <tr class="close-attr">
                             <td class="name">DEF</td>
-                            <td class="enigma">
+                            <!-- <td class="enigma">
                                 <div class="wrapper">
                                     <input type="number" [(ngModel)]="character.defEnigma"
                                         (ngModelChange)="character.updateStatus()">
                                 </div>
-                            </td>
+                            </td> -->
+                            <td></td>
                             <td>
                                 <div class="warpper">{{character.def}}</div>
                             </td>
                         </tr>
                         <tr class="buff-list-tr">
-                            <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">Buff</td>
+                            <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">
+                                被動<br />Buff</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <div class="buff-list">

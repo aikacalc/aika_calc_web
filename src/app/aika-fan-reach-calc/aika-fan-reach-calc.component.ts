@@ -65,6 +65,13 @@ export class AikaFanReachCalcComponent implements OnInit {
     inputCurrentFan: number = 12345;
     inputTargetFan: number = 1999999;
     resultRoads: FanRoad[][] = [];
+    charaRareStar = {
+        1:'★',
+        2:'★★',
+        3:'★★★',
+        4:'★★★★',
+    }
+
 
     constructor(
         public service: AppService

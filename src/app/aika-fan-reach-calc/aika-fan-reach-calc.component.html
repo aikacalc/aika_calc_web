@@ -67,7 +67,8 @@
                                         <span *ngIf="j==0">{{i+1}}</span>
                                     </td>
                                     <td>{{road.stage.stageName}}</td>
-                                    <td>{{road.stage.characterRare}}★</td>
+                                    <!-- <td class="chara-rare">{{road.stage.characterRare}}★</td> -->
+                                    <td class="chara-rare">{{charaRareStar[road.stage.characterRare]}}</td>
                                     <td>{{road.count}}</td>
                                     <td [ngClass]="{last: last}">{{road.fanChange}}</td>
                                 </tr>

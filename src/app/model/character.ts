@@ -35,6 +35,38 @@ const masterLevelStatus = {
     29: { "hp": 700, "def": 194, "atkShot": 97, "atkClose": 97, },
     30: { "hp": 725, "def": 200, "atkShot": 100, "atkClose": 100, },
 }
+export const attrTypeEnigmaStatus = {
+    '0.96': {
+        atkShot: 0,
+        attrShot: 50,
+        atkClose: 0,
+        attrClose: 50,
+    },
+    '0.9': {
+        atkShot: 15,
+        attrShot: 45,
+        atkClose: 15,
+        attrClose: 45,
+    },
+    '0.86': {
+        atkShot: 25,
+        attrShot: 40,
+        atkClose: 25,
+        attrClose: 40,
+    },
+    '0.56': {
+        atkShot: 45,
+        attrShot: 35,
+        atkClose: 45,
+        attrClose: 35,
+    },
+    '0.5': {
+        atkShot: 55,
+        attrShot: 30,
+        atkClose: 55,
+        attrClose: 30,
+    },
+}
 
 export class Character extends Unit {
     rare: number = 1;
@@ -49,6 +81,8 @@ export class Character extends Unit {
     // hpMin: number = 1;
     // hpMax: number = 1;
 
+    isCustomEnigmaStatus: boolean = false;
+
     hpEnigma: number = 0;
 
     atkShot: number = 0;
@@ -57,7 +91,8 @@ export class Character extends Unit {
     attrShot: number = 0;
     atkShotEnigma: number = 0;
     attrShotEnigma: number = 0;
-
+    atkShotEnigmaCustom: number = 0;
+    attrShotEnigmaCustom: number = 0;
 
     atkClose: number = 0;
     atkCloseMin: number = 0;
@@ -65,6 +100,8 @@ export class Character extends Unit {
     attrClose: number = 0;
     atkCloseEnigma: number = 0;
     attrCloseEnigma: number = 0;
+    atkCloseEnigmaCustom: number = 0;
+    attrCloseEnigmaCustom: number = 0;
 
     defEnigma: number = 0;
     // def: number = 0;
@@ -123,6 +160,13 @@ export class Character extends Unit {
     }
 
     updateStatus(): void {
+        if (!this.isCustomEnigmaStatus) {
+            this.atkShotEnigmaCustom;
+            this.attrShotEnigmaCustom;
+            this.atkCloseEnigmaCustom;
+            this.attrCloseEnigmaCustom;
+        }
+
         if (!this.isApplyGears) {
             this.weaponShotIndex = this.weaponShots.findIndex(g => g.base.levelMax == 80);
             this.weaponCloseIndex = this.weaponCloses.findIndex(g => g.base.levelMax == 80);
@@ -204,10 +248,16 @@ export class Character extends Unit {
     updateAtkShot(): void {
         const gear = this.weaponShot;
         const atk = Unit.calcGrowthValue(this, this.atkShotMin, this.atkShotMax);
+
+        let enigmaValue = this.atkShotEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaValue = this.atkShotEnigmaCustom;
+        }
+
         const atkSum = atk
             + gear.atk
             + masterLevelStatus[this.masterLevel].atkShot
-            + this.atkShotEnigma
+            + enigmaValue
             ;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
             || b.type === gear.atkAmmoTypeId
@@ -218,8 +268,14 @@ export class Character extends Unit {
     }
     updateAttrShot(): void {
         const gear = this.weaponShot;
+
+        let enigmaValue = this.attrShotEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaValue = this.attrShotEnigmaCustom;
+        }
+
         const attrSum = gear.attr
-            + this.attrShotEnigma
+            + enigmaValue
             ;
         const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
@@ -229,10 +285,16 @@ export class Character extends Unit {
     updateAtkClose(): void {
         const gear = this.weaponClose;
         const atk = Unit.calcGrowthValue(this, this.atkCloseMin, this.atkCloseMax);
+
+        let enigmaValue = this.atkCloseEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaValue = this.atkCloseEnigmaCustom;
+        }
+
         const atkSum = atk
             + gear.atk
             + masterLevelStatus[this.masterLevel].atkClose
-            + this.atkCloseEnigma
+            + enigmaValue
             ;
         const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
             || b.type === gear.atkAmmoTypeId
@@ -243,8 +305,14 @@ export class Character extends Unit {
     }
     updateAttrClose(): void {
         const gear = this.weaponClose;
+
+        let enigmaValue = this.attrCloseEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaValue = this.attrCloseEnigmaCustom;
+        }
+
         const attrSum = gear.attr
-            + this.attrCloseEnigma
+            + enigmaValue
             ;
         const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
