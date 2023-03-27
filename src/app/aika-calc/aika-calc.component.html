@@ -45,7 +45,7 @@
                             </td>
                         </tr>
                         <tr class="level">
-                            <td class="name">熟練等級</td>
+                            <td class="name help" [title]="help.masterlevel" (click)="showMsg(help.masterlevel)">熟練等級</td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <input type="number" min="1" max="30" [(ngModel)]="character.masterLevel"

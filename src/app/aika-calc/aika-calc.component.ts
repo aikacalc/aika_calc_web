@@ -44,6 +44,10 @@ export class AikaCalcComponent implements OnInit {
         gearbuff: `裝備自帶被動，或是插件效果`,
         tune: `AN裝備詞條效果，只會作用在當前裝備上`,
         mastermax: `熟練等級到MAX(30)之後才會啟用`,
+        masterlevel:`熟練等級MAX
+HP+725
+DEF+200
+射擊/近戰+100`
     }
 
     constructor(
@@ -100,10 +104,10 @@ export class AikaCalcComponent implements OnInit {
                         chara.attrShotEnigma = upStatus.attrShot;
                         chara.atkCloseEnigma = upStatus.atkClose;
                         chara.attrCloseEnigma = upStatus.attrClose;
-                        chara.atkShotEnigmaCustom = upStatus.atkShot;
-                        chara.attrShotEnigmaCustom = upStatus.attrShot;
-                        chara.atkCloseEnigmaCustom = upStatus.atkClose;
-                        chara.attrCloseEnigmaCustom = upStatus.attrClose;
+                        // chara.atkShotEnigmaCustom = upStatus.atkShot;
+                        // chara.attrShotEnigmaCustom = upStatus.attrShot;
+                        // chara.atkCloseEnigmaCustom = upStatus.atkClose;
+                        // chara.attrCloseEnigmaCustom = upStatus.attrClose;
                     }
                 }
             });
