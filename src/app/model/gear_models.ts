@@ -42023,9 +42023,9 @@ export const ActressGears = {
                 atkMax: 520,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 216,
+                attr: 417,
                 attrMin: 232,
-                attrMax: 216,
+                attrMax: 417,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42041,9 +42041,9 @@ export const ActressGears = {
                 atkMax: 491,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 180,
+                attr: 394,
                 attrMin: 209,
-                attrMax: 180,
+                attrMax: 394,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42059,9 +42059,9 @@ export const ActressGears = {
                 atkMax: 462,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 144,
+                attr: 371,
                 attrMin: 116,
-                attrMax: 144,
+                attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42133,9 +42133,9 @@ export const ActressGears = {
                 atkMax: 520,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 216,
-                attrMin: 216,
-                attrMax: 216,
+                attr: 417,
+                attrMin: 417,
+                attrMax: 417,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42151,9 +42151,9 @@ export const ActressGears = {
                 atkMax: 491,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 180,
-                attrMin: 180,
-                attrMax: 180,
+                attr: 394,
+                attrMin: 394,
+                attrMax: 394,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42169,9 +42169,9 @@ export const ActressGears = {
                 atkMax: 462,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 144,
-                attrMin: 144,
-                attrMax: 144,
+                attr: 371,
+                attrMin: 371,
+                attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -42495,9 +42495,9 @@ export const ActressGears = {
                 atkMax: 515,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Energy,
-                attr: 219,
+                attr: 421,
                 attrMin: 234,
-                attrMax: 219,
+                attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -42513,9 +42513,9 @@ export const ActressGears = {
                 atkMax: 486,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Energy,
-                attr: 182,
+                attr: 398,
                 attrMin: 211,
-                attrMax: 182,
+                attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -42531,9 +42531,9 @@ export const ActressGears = {
                 atkMax: 458,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Energy,
-                attr: 146,
+                attr: 374,
                 attrMin: 117,
-                attrMax: 146,
+                attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -42605,9 +42605,9 @@ export const ActressGears = {
                 atkMax: 515,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 219,
-                attrMin: 219,
-                attrMax: 219,
+                attr: 421,
+                attrMin: 421,
+                attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -42623,9 +42623,9 @@ export const ActressGears = {
                 atkMax: 486,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 182,
-                attrMin: 182,
-                attrMax: 182,
+                attr: 398,
+                attrMin: 398,
+                attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -42641,9 +42641,9 @@ export const ActressGears = {
                 atkMax: 458,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 146,
-                attrMin: 146,
-                attrMax: 146,
+                attr: 374,
+                attrMin: 374,
+                attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
