@@ -11138,6 +11138,42 @@ class AdelaideBluthausen05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
+class TakahataNodoka01 extends Character {
+    name: string = '高幡のどか ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 1;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 896;
+    hpMin: number = 371;
+    hpMax: number = 896;
+    atkClose: number = 205;
+    atkCloseMin: number = 82;
+    atkCloseMax: number = 205;
+    attrClose: number = 0;
+    atkShot: number = 207;
+    atkShotMin: number = 83;
+    atkShotMax: number = 207;
+    attrShot: number = 0;
+    def: number = 258;
+    defMin: number = 103;
+    defMax: number = 258;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TakahataNodoka.long;
+    weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
+    equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
+    equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+}
+
 class Gourai04 extends Character {
     name: string = '轟雷 ★3';
     rare: number = 3;
@@ -13950,6 +13986,7 @@ export const ActressNames: string[] = [
     'HasamiRika',
     'KasugaokaMoe',
     'AdelaideBluthausen',
+    'TakahataNodoka',
     'Gourai',
     'Stylet',
     'Baselard',
@@ -14293,6 +14330,7 @@ export const CharacterModels = {
     AdelaideBluthausen02: new AdelaideBluthausen02(),
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
+    TakahataNodoka01: new TakahataNodoka01(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),

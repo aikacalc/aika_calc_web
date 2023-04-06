@@ -31947,6 +31947,42 @@ export const ActressGears = {
     MerabuchiKanami: {
         long: [
             new Gear({
+                name: '',
+                unitType: AttrTypeId.Sniper,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 630,
+                atkMin: 350,
+                atkMax: 630,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 315,
+                attrMin: 175,
+                attrMax: 315,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: '',
+                unitType: AttrTypeId.Sniper,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 595,
+                atkMin: 315,
+                atkMax: 595,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 298,
+                attrMin: 158,
+                attrMax: 298,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
                 name: 'ルイス・ペレンナ',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
@@ -39668,6 +39704,16 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistFire, -0.15)
             ]
             })
+        ]
+    },
+    TakahataNodoka: {
+        long: [
+        ],
+        short: [
+        ],
+        top: [
+        ],
+        bottom: [
         ]
     },
     Gourai: {
