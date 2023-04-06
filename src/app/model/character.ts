@@ -173,6 +173,19 @@ export class Character extends Unit {
             this.equipmentTopIndex = this.equipmentTops.findIndex(g => g.base.levelMax == 80);
             this.equipmentBottomIndex = this.equipmentBottoms.findIndex(g => g.base.levelMax == 80);
 
+            if (this.weaponShotIndex == -1 && this.weaponShots.length > 0) {
+                this.weaponShotIndex = 0;
+            }
+            if (this.weaponCloseIndex == -1 && this.weaponCloses.length > 0) {
+                this.weaponCloseIndex = 0;
+            }
+            if (this.equipmentTopIndex == -1 && this.equipmentTops.length > 0) {
+                this.equipmentTopIndex = 0;
+            }
+            if (this.equipmentBottomIndex == -1 && this.equipmentBottoms.length > 0) {
+                this.equipmentBottomIndex = 0;
+            }
+
             Unit.cloneDeep(this.weaponShot, this.weaponShots[this.weaponShotIndex], 0);
             Unit.cloneDeep(this.weaponClose, this.weaponCloses[this.weaponCloseIndex], 0);
             Unit.cloneDeep(this.equipmentTop, this.equipmentTops[this.equipmentTopIndex], 0);

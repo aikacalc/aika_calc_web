@@ -1,4 +1,4 @@
-import { AttrTypeId } from './../model/attr-type';
+import { AttrTypeId, AttrTypeIdAttrs, AttrTypeIdCloses, AttrTypeIdShots } from './../model/attr-type';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { AttrTypeName, AttrTypeIdList, getTypeColor } from '../model/attr-type';
 // import { AttrTypeId } from '../model/attr-type-id.enum';
@@ -44,7 +44,7 @@ export class AikaCalcComponent implements OnInit {
         gearbuff: `裝備自帶被動，或是插件效果`,
         tune: `AN裝備詞條效果，只會作用在當前裝備上`,
         mastermax: `熟練等級到MAX(30)之後才會啟用`,
-        masterlevel:`熟練等級MAX
+        masterlevel: `熟練等級MAX
 HP+725
 DEF+200
 射擊/近戰+100`
@@ -90,26 +90,125 @@ DEF+200
 
         Object.values(CharacterModels)
             .forEach(chara => {
-                const charaAttrOutputTypeBuff = chara.buffs.find(b => [
-                    AttrTypeId.Volt,
-                    AttrTypeId.Gravity,
-                    AttrTypeId.Fire,
-                    AttrTypeId.Ice
-                ].indexOf(b.type)>-1);
-                if (charaAttrOutputTypeBuff) {
-                    const outputValueString = charaAttrOutputTypeBuff.value + '';
-                    const upStatus = attrTypeEnigmaStatus[outputValueString];
-                    if (upStatus) {
-                        chara.atkShotEnigma = upStatus.atkShot;
-                        chara.attrShotEnigma = upStatus.attrShot;
-                        chara.atkCloseEnigma = upStatus.atkClose;
-                        chara.attrCloseEnigma = upStatus.attrClose;
-                        // chara.atkShotEnigmaCustom = upStatus.atkShot;
-                        // chara.attrShotEnigmaCustom = upStatus.attrShot;
-                        // chara.atkCloseEnigmaCustom = upStatus.atkClose;
-                        // chara.attrCloseEnigmaCustom = upStatus.attrClose;
+
+                //
+                if (chara.name != '高幡のどか ★1') {
+                    const charaAttrOutputTypeBuff = chara.buffs.find(b => [
+                        AttrTypeId.Volt,
+                        AttrTypeId.Gravity,
+                        AttrTypeId.Fire,
+                        AttrTypeId.Ice
+                    ].indexOf(b.type) > -1);
+                    if (charaAttrOutputTypeBuff) {
+                        const outputValueString = charaAttrOutputTypeBuff.value + '';
+                        const upStatus = attrTypeEnigmaStatus[outputValueString];
+                        if (upStatus) {
+                            chara.atkShotEnigma = upStatus.atkShot;
+                            chara.attrShotEnigma = upStatus.attrShot;
+                            chara.atkCloseEnigma = upStatus.atkClose;
+                            chara.attrCloseEnigma = upStatus.attrClose;
+                            // chara.atkShotEnigmaCustom = upStatus.atkShot;
+                            // chara.attrShotEnigmaCustom = upStatus.attrShot;
+                            // chara.atkCloseEnigmaCustom = upStatus.atkClose;
+                            // chara.attrCloseEnigmaCustom = upStatus.attrClose;
+                        }
                     }
                 }
+
+                //
+                if (chara.weaponCloses.length == 0
+                    || chara.weaponShots.length == 0
+                ) {
+                    const charaAttrType = chara.buffs.find(b => AttrTypeIdAttrs.indexOf(b.type) > -1);
+                    const closeType = chara.buffs.find(b => AttrTypeIdCloses.indexOf(b.type) > -1);
+                    const shotType = chara.buffs.find(b => AttrTypeIdShots.indexOf(b.type) > -1);
+
+                    // const goodWeaponType = closeType.value > shotType.value ? closeType.type : shotType.type;
+                    // const subGoodWeaponType = closeType.value < shotType.value ? closeType.type : shotType.type;
+
+                    const closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType.type) > -1
+                        ? AttrTypeId.Impact : AttrTypeId.Slash;
+                    const shotAmmoType = shotType.type == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
+
+                    if (chara.weaponCloses.length == 0) {
+                        const defaultGear = new Gear({
+                            unitType: closeType.type,
+                            level: 1,
+                            levelMin: 1,
+                            levelMax: 1,
+                            gradeUp: 0,
+                            gradeUpLimit: 0,
+                            atk: 70,
+                            atkMin: 70,
+                            atkMax: 70,
+                            atkTypeId: AttrTypeId.Close,
+                            atkAmmoTypeId: closeAmmoType,
+                            attr: 30,
+                            attrMin: 30,
+                            attrMax: 30,
+                            attrTypeId: charaAttrType.type
+                        });
+                        chara.weaponCloses.push(defaultGear);
+                    }
+                    if (chara.weaponShots.length == 0) {
+                        const defaultGear = new Gear({
+                            unitType: shotType.type,
+                            level: 1,
+                            levelMin: 1,
+                            levelMax: 1,
+                            gradeUp: 0,
+                            gradeUpLimit: 0,
+                            atk: 70,
+                            atkMin: 70,
+                            atkMax: 70,
+                            atkTypeId: AttrTypeId.Close,
+                            atkAmmoTypeId: shotAmmoType,
+                            attr: 30,
+                            attrMin: 30,
+                            attrMax: 30,
+                            attrTypeId: charaAttrType.type
+                        });
+                        chara.weaponShots.push(defaultGear);
+                    }
+                }
+                if (chara.equipmentTops.length == 0) {
+                    const defaultGear = new Gear({
+                        unitType: AttrTypeId.EquipmentTop,
+                        level: 1,
+                        levelMin: 1,
+                        levelMax: 1,
+                        gradeUp: 0,
+                        gradeUpLimit: 0,
+                        hp: 216,
+                        hpMin: 216,
+                        hpMax: 216,
+                        def: 60,
+                        defMin: 60,
+                        defMax: 60,
+                        buffs: []
+                    });
+                    chara.equipmentTops.push(defaultGear);
+                }
+                if (chara.equipmentBottoms.length == 0) {
+                    const defaultGear = new Gear({
+                        unitType: AttrTypeId.EquipmentBottom,
+                        level: 1,
+                        levelMin: 1,
+                        levelMax: 1,
+                        gradeUp: 0,
+                        gradeUpLimit: 0,
+                        hp: 144,
+                        hpMin: 144,
+                        hpMax: 144,
+                        def: 40,
+                        defMin: 40,
+                        defMax: 40,
+                        buffs: []
+                    });
+                    chara.equipmentBottoms.push(defaultGear);
+                }
+
+
             });
 
         const aika = CharacterModels.AikawaAika05;

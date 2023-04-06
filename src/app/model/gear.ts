@@ -16,6 +16,9 @@ export class Gear extends Unit {
         return color;
     }
     get baseLevelPct(): number {
+        if (this.base.level == 1 && this.base.levelMax == 1) {
+            return 0;
+        }
         return (this.base.level - 1) / (this.base.levelMax - 1);
     }
 
@@ -114,7 +117,7 @@ export class Gear extends Unit {
     updateBaseATK(): void {
         const growthRange = this.base.atkMax - this.base.atkMin;
         const value = this.base.atkMin + (growthRange * this.baseLevelPct);
-        
+
         let gradeValue = 0;
 
         if (this.atkTypeId == AttrTypeId.Shot) {

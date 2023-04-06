@@ -30,6 +30,27 @@ export enum AttrTypeId {
     EquipmentBottom = 29,
 }
 
+export const AttrTypeIdAttrs = [
+    AttrTypeId.Volt,
+    AttrTypeId.Gravity,
+    AttrTypeId.Fire,
+    AttrTypeId.Ice
+];
+export const AttrTypeIdCloses = [
+    AttrTypeId.Sword,
+    AttrTypeId.Hammer,
+    AttrTypeId.Spear,
+    AttrTypeId.Dagger,
+    AttrTypeId.HandGun
+];
+export const AttrTypeIdShots = [
+    AttrTypeId.Rifle,
+    AttrTypeId.Bazooka,
+    AttrTypeId.Twin,
+    AttrTypeId.Sniper
+];
+
+
 export class AttrType {
     get name(): string {
         return AttrTypeName[AttrTypeId[this.typeId]];
