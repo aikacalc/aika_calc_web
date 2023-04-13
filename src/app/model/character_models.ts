@@ -8903,6 +8903,43 @@ class MerabuchiKanami05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
 }
 
+class MerabuchiKanami70 extends Character {
+    name: string = '米良渕 花浪 / 大雅 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 163;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MerabuchiKanami.long;
+    weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
+    equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
+    equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+}
+
 class RitaHenschel01 extends Character {
     name: string = 'リタ・H ★1';
     rare: number = 1;
@@ -14269,6 +14306,7 @@ export const CharacterModels = {
     MerabuchiKanami02: new MerabuchiKanami02(),
     MerabuchiKanami04: new MerabuchiKanami04(),
     MerabuchiKanami05: new MerabuchiKanami05(),
+    MerabuchiKanami70: new MerabuchiKanami70(),
     RitaHenschel01: new RitaHenschel01(),
     RitaHenschel02: new RitaHenschel02(),
     RitaHenschel04: new RitaHenschel04(),

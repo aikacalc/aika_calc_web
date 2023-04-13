@@ -31947,7 +31947,7 @@ export const ActressGears = {
     MerabuchiKanami: {
         long: [
             new Gear({
-                name: '',
+                name: 'ルイス・ペレンナ・レヴ',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
                 levelMin: 1,
@@ -31965,7 +31965,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'ドラグーン・レヴ',
                 unitType: AttrTypeId.Sniper,
                 level: 75,
                 levelMin: 1,
@@ -34778,11 +34778,119 @@ export const ActressGears = {
                 attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'XBR-EOS-7LA',
+                unitType: AttrTypeId.Rifle,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 618,
+                atkMin: 343,
+                atkMax: 618,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 318,
+                attrMin: 177,
+                attrMax: 318,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'XBR-EOS-5LA',
+                unitType: AttrTypeId.Rifle,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 583,
+                atkMin: 309,
+                atkMax: 583,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 301,
+                attrMin: 159,
+                attrMax: 301,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'XBR-EOS-3LA',
+                unitType: AttrTypeId.Rifle,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 549,
+                atkMin: 172,
+                atkMax: 549,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 283,
+                attrMin: 88,
+                attrMax: 283,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作XBR-EOS-3LA真',
+                unitType: AttrTypeId.Rifle,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 480,
+                atkMin: 275,
+                atkMax: 480,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 248,
+                attrMin: 141,
+                attrMax: 248,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作XBR-EOS-3LA改',
+                unitType: AttrTypeId.Rifle,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 412,
+                atkMin: 206,
+                atkMax: 412,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 212,
+                attrMin: 106,
+                attrMax: 212,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作XBR-EOS-3LA',
+                unitType: AttrTypeId.Rifle,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 343,
+                atkMin: 137,
+                atkMax: 343,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 177,
+                attrMin: 71,
+                attrMax: 177,
+                attrTypeId: AttrTypeId.Volt
             })
         ],
         short: [
             new Gear({
-                name: 'C048_SWR_101_21',
+                name: 'リオリエントμ・Oα',
                 unitType: AttrTypeId.Dagger,
                 level: 80,
                 levelMin: 1,
@@ -34800,7 +34908,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'C048_SWR_101_11',
+                name: 'リオリエントμ・α',
                 unitType: AttrTypeId.Dagger,
                 level: 75,
                 levelMin: 1,
@@ -34923,6 +35031,114 @@ export const ActressGears = {
                 attr: 260,
                 attrMin: 260,
                 attrMax: 260,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'リオリエントμ・OαA',
+                unitType: AttrTypeId.Dagger,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 618,
+                atkMin: 343,
+                atkMax: 618,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 318,
+                attrMin: 318,
+                attrMax: 318,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'リオリエントμ・αA',
+                unitType: AttrTypeId.Dagger,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 583,
+                atkMin: 309,
+                atkMax: 583,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 301,
+                attrMin: 301,
+                attrMax: 301,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'リオリエントμA',
+                unitType: AttrTypeId.Dagger,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 549,
+                atkMin: 172,
+                atkMax: 549,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 283,
+                attrMin: 283,
+                attrMax: 283,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作リオリエントμOαA',
+                unitType: AttrTypeId.Dagger,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 480,
+                atkMin: 275,
+                atkMax: 480,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 248,
+                attrMin: 248,
+                attrMax: 248,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作リオリエントμαA',
+                unitType: AttrTypeId.Dagger,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 412,
+                atkMin: 206,
+                atkMax: 412,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 212,
+                attrMin: 212,
+                attrMax: 212,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: '試作リオリエントμA',
+                unitType: AttrTypeId.Dagger,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 343,
+                atkMin: 137,
+                atkMax: 343,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 177,
+                attrMin: 177,
+                attrMax: 177,
                 attrTypeId: AttrTypeId.Volt
             })
         ],
@@ -35048,7 +35264,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'AN048++/T',
+                name: 'ガル・リヴィングストンA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -35062,13 +35278,13 @@ export const ActressGears = {
                 defMin: 303,
                 defMax: 545,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.Volt, 0.1)
             ]
             }),
             new Gear({
-                name: 'AN048+/T',
+                name: 'リヴィングストンA改/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -35082,13 +35298,13 @@ export const ActressGears = {
                 defMin: 273,
                 defMax: 515,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.Volt, 0.1)
             ]
             }),
             new Gear({
-                name: 'AN048/T',
+                name: 'リヴィングストンA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -35102,9 +35318,69 @@ export const ActressGears = {
                 defMin: 151,
                 defMax: 485,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA真/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1565,
+                hpMin: 886,
+                hpMax: 1565,
+                def: 424,
+                defMin: 242,
+                defMax: 424,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA改/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1341,
+                hpMin: 661,
+                hpMax: 1341,
+                def: 364,
+                defMin: 182,
+                defMax: 364,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1110,
+                hpMin: 430,
+                hpMax: 1110,
+                def: 303,
+                defMin: 121,
+                defMax: 303,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.Volt, 0.05)
             ]
             })
         ],
@@ -35236,7 +35512,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'AN048++/B',
+                name: 'ガル・リヴィングストンA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -35251,13 +35527,13 @@ export const ActressGears = {
                 defMax: 349,
                 spd: 280,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
-                name: 'AN048+/B',
+                name: 'リヴィングストンA改/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -35272,13 +35548,13 @@ export const ActressGears = {
                 defMax: 329,
                 spd: 280,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
-                name: 'AN048/B',
+                name: 'リヴィングストンA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -35293,8 +35569,71 @@ export const ActressGears = {
                 defMax: 310,
                 spd: 280,
                 buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.HP, -0.1)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA真/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1107,
+                hpMin: 626,
+                hpMax: 1107,
+                def: 271,
+                defMin: 155,
+                defMax: 271,
+                spd: 280,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.HP, -0.1)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA改/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 948,
+                hpMin: 467,
+                hpMax: 948,
+                def: 233,
+                defMin: 116,
+                defMax: 233,
+                spd: 280,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
+                new Buff(AttrTypeId.HP, -0.1)
+            ]
+            }),
+            new Gear({
+                name: '試作リヴィングストンA/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 785,
+                hpMin: 304,
+                hpMax: 785,
+                def: 194,
+                defMin: 78,
+                defMax: 194,
+                spd: 280,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.1),
+                new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
             })
