@@ -172,7 +172,6 @@ export class AikaTimelineComponent implements OnInit {
         ['node', '年底敲鐘2021', ``],
         ['node', '年底敲鐘2022', ``],
         ['node', '南國幻想\n南国幻想(トロピカルビーチ) あんなのクイズでぴょん！ぴょん！-外伝-', ``],
-        ['node', '畢業', `AN愛花角色劇情`],
     ]
 
     blocks: TimeBlock[] = [];
