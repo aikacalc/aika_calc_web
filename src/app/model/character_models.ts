@@ -8940,6 +8940,154 @@ class MerabuchiKanami70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
 }
 
+class KomazoiEden01 extends Character {
+    name: string = '駒添 絵伝 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 3;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    hp: number = 879;
+    hpMin: number = 364;
+    hpMax: number = 879;
+    atkClose: number = 177;
+    atkCloseMin: number = 71;
+    atkCloseMax: number = 177;
+    attrClose: number = 0;
+    atkShot: number = 170;
+    atkShotMin: number = 68;
+    atkShotMax: number = 170;
+    attrShot: number = 0;
+    def: number = 250;
+    defMin: number = 100;
+    defMax: number = 250;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KomazoiEden.long;
+    weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
+    equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
+    equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+}
+
+class KomazoiEden02 extends Character {
+    name: string = '駒添 絵伝 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    hp: number = 1434;
+    hpMin: number = 515;
+    hpMax: number = 1434;
+    atkClose: number = 283;
+    atkCloseMin: number = 106;
+    atkCloseMax: number = 283;
+    attrClose: number = 0;
+    atkShot: number = 272;
+    atkShotMin: number = 102;
+    atkShotMax: number = 272;
+    attrShot: number = 0;
+    def: number = 400;
+    defMin: number = 150;
+    defMax: number = 400;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KomazoiEden.long;
+    weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
+    equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
+    equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+}
+
+class KomazoiEden04 extends Character {
+    name: string = '駒添 絵伝 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 495;
+    atkCloseMin: number = 141;
+    atkCloseMax: number = 495;
+    attrClose: number = 0;
+    atkShot: number = 476;
+    atkShotMin: number = 136;
+    atkShotMax: number = 476;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KomazoiEden.long;
+    weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
+    equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
+    equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+}
+
+class KomazoiEden05 extends Character {
+    name: string = '駒添 絵伝 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KomazoiEden.long;
+    weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
+    equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
+    equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+}
+
 class RitaHenschel01 extends Character {
     name: string = 'リタ・H ★1';
     rare: number = 1;
@@ -14009,6 +14157,7 @@ export const ActressNames: string[] = [
     'NikaidohTsukasa',
     'OchanomizuMirie',
     'MerabuchiKanami',
+    'KomazoiEden',
     'RitaHenschel',
     'OnagaAkino',
     'TatsumiRyuko',
@@ -14307,6 +14456,10 @@ export const CharacterModels = {
     MerabuchiKanami04: new MerabuchiKanami04(),
     MerabuchiKanami05: new MerabuchiKanami05(),
     MerabuchiKanami70: new MerabuchiKanami70(),
+    KomazoiEden01: new KomazoiEden01(),
+    KomazoiEden02: new KomazoiEden02(),
+    KomazoiEden04: new KomazoiEden04(),
+    KomazoiEden05: new KomazoiEden05(),
     RitaHenschel01: new RitaHenschel01(),
     RitaHenschel02: new RitaHenschel02(),
     RitaHenschel04: new RitaHenschel04(),
