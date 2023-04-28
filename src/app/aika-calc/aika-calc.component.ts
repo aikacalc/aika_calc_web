@@ -361,8 +361,7 @@ DEF+200
             this.copyedBuffString = '';
         } else {
             this.copyedBuff = buff;
-            const valStr = buff.value * 100;
-            this.copyedBuffString = `${buff.attrTypeName}:${valStr}%`;
+            this.copyedBuffString = `${buff.attrTypeName}:${buff.valuePct}%`;
         }
     }
     setGear(gear: Gear, gears: Gear[], gearIndexValue: string): void {
