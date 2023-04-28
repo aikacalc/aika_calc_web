@@ -28,6 +28,7 @@ export enum AttrTypeId {
     SPD = 27,
     EquipmentTop = 28,
     EquipmentBottom = 29,
+    Weapon = 30,
 }
 
 export const AttrTypeIdAttrs = [
@@ -44,6 +45,17 @@ export const AttrTypeIdCloses = [
     AttrTypeId.HandGun
 ];
 export const AttrTypeIdShots = [
+    AttrTypeId.Rifle,
+    AttrTypeId.Bazooka,
+    AttrTypeId.Twin,
+    AttrTypeId.Sniper
+];
+export const AttrTypeIdWeapons = [
+    AttrTypeId.Sword,
+    AttrTypeId.Hammer,
+    AttrTypeId.Spear,
+    AttrTypeId.Dagger,
+    AttrTypeId.HandGun,
     AttrTypeId.Rifle,
     AttrTypeId.Bazooka,
     AttrTypeId.Twin,
@@ -131,6 +143,7 @@ export const AttrTypeName: { [key in keyof typeof AttrTypeId]: string } = {
     SPD: 'SPD',
     EquipmentTop: '上身',
     EquipmentBottom: '下身',
+    Weapon: '武器'
 };
 
 export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
@@ -163,6 +176,7 @@ export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     SPD: '#000000',
     EquipmentTop: '#000000',
     EquipmentBottom: '#000000',
+    Weapon: '#000000',
 }
 
 export const AttrTypeDict: {
@@ -197,6 +211,7 @@ export const AttrTypeDict: {
     SPD: (value: number) => new AttrType(AttrTypeId.SPD, '', value),
     EquipmentTop: (value: number) => new AttrType(AttrTypeId.EquipmentTop, '', value),
     EquipmentBottom: (value: number) => new AttrType(AttrTypeId.EquipmentBottom, '', value),
+    Weapon: (value: number) => new AttrType(AttrTypeId.Weapon, '', value),
 };
 export function getTypeColor(typeId: AttrTypeId): string {
     return AttrTypeColor[AttrTypeId[typeId]];

@@ -45,7 +45,8 @@
                             </td>
                         </tr>
                         <tr class="level">
-                            <td class="name help" [title]="help.masterlevel" (click)="showMsg(help.masterlevel)">熟練等級</td>
+                            <td class="name help" [title]="help.masterlevel" (click)="showMsg(help.masterlevel)">熟練等級
+                            </td>
                             <td colspan="2">
                                 <div class="wrapper-row">
                                     <input type="number" min="1" max="30" [(ngModel)]="character.masterLevel"
@@ -180,20 +181,26 @@
                                     <div class="buff-list">
                                         <div class="buff" *ngFor="let buff of character.buffs">
                                             <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                                                <option *ngFor="let attrType of attrTypeList" [value]="attrType.id"
-                                                    [ngStyle]="{color:getTypeColor(attrType.id)}">
-                                                    {{attrType.name}}
-                                                </option>
+                                                <option [value]="22">無</option>
+                                                <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                                    <option *ngFor="let attrType of group.list" [value]="attrType.id"
+                                                        [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                        {{attrType.name}}
+                                                    </option>
+                                                </optgroup>
                                             </select>
                                             <input type="number" class="value" [(ngModel)]="buff.valuePct"
                                                 [style.color]="buff.attrColor"
                                                 (ngModelChange)="character.updateStatus()">%
                                             <hr class="line">
+                                            <button class="copy" [ngClass]="{copyed:copyedBuff==buff}"
+                                                (click)="copyBuff(buff)">C</button>
                                             <button class="delete" (click)="deleteBuff(character.buffs,buff);
                                                 character.updateStatus()">X</button>
                                         </div>
                                         <button class="new-buff" (click)="addBuff(character.buffs);
-                                        character.updateStatus()">[+]</button>
+                                        character.updateStatus()">[+]<span
+                                                class="copyed-buff-string">{{copyedBuffString}}</span></button>
                                     </div>
                                 </div>
                             </td>
@@ -559,19 +566,23 @@
                 <div class="buff-list">
                     <div class="buff" *ngFor="let buff of gear.buffs">
                         <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id"
-                                [ngStyle]="{color:getTypeColor(attrType.id)}">
-                                {{attrType.name}}
-                            </option>
+                            <option [value]="22">無</option>
+                            <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                <option *ngFor="let attrType of group.list" [value]="attrType.id"
+                                    [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                    {{attrType.name}}
+                                </option>
+                            </optgroup>
                         </select>
                         <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor"
                             (ngModelChange)="character.updateStatus()">%
                         <hr class="line">
+                        <button class="copy" [ngClass]="{copyed:copyedBuff==buff}" (click)="copyBuff(buff)">C</button>
                         <button class="delete" (click)="deleteBuff(gear.buffs,buff);
                         character.updateStatus()">X</button>
                     </div>
                     <button class="new-buff" (click)="addBuff(gear.buffs);
-                    character.updateStatus()">[+]</button>
+                    character.updateStatus()">[+]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
                 </div>
             </div>
         </td>
@@ -583,19 +594,23 @@
                 <div class="buff-list">
                     <div class="buff" *ngFor="let buff of gear.tunes">
                         <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
-                            <option *ngFor="let attrType of attrTypeList" [attr.value]="attrType.id"
-                                [ngStyle]="{color:getTypeColor(attrType.id)}">
-                                {{attrType.name}}
-                            </option>
+                            <option [value]="22">無</option>
+                            <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                <option *ngFor="let attrType of group.list" [value]="attrType.id"
+                                    [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                    {{attrType.name}}
+                                </option>
+                            </optgroup>
                         </select>
                         <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor"
                             (ngModelChange)="character.updateStatus()">%
                         <hr class="line">
+                        <button class="copy" [ngClass]="{copyed:copyedBuff==buff}" (click)="copyBuff(buff)">C</button>
                         <button class="delete" (click)="deleteBuff(gear.tunes,buff);
                         character.updateStatus()">X</button>
                     </div>
                     <button class="new-buff" (click)="addBuff(gear.tunes);
-                    character.updateStatus()">[+]</button>
+                    character.updateStatus()">[+]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
                 </div>
             </div>
         </td>

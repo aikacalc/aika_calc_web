@@ -110,6 +110,27 @@
                 border-bottom: 1px dashed #aaa;
             }
 
+            >button.copy {
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                background-color: #fff;
+
+                &:hover {
+                    background-color: #eee;
+                }
+
+                &.copyed {
+                    background-color: #0c0;
+
+                    &:hover {
+                        background-color: #0e0;
+                    }
+                }
+            }
+
             >button.delete {
                 width: 20px;
                 display: flex;
@@ -227,6 +248,7 @@
                 }
 
                 button.new-buff {
+                    position: relative;
                     margin-top: 10px;
                     width: 100%;
                     padding: 5px;
@@ -235,6 +257,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    >.copyed-buff-string {
+                        position: absolute;
+                        left: 0;
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: #777;
+                    }
                 }
             }
 

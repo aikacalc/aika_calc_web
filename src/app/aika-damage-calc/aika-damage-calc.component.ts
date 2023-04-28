@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
-import { AttrType, AttrTypeColor, AttrTypeId, getTypeColor } from '../model/attr-type';
-// import { AttrTypeId } from '../model/attr-type-id.enum';
-
+import { AttrTypeColor, AttrTypeId, AttrTypeIdWeapons, getTypeColor } from '../model/attr-type';
 
 const attrDamageRate = {
     Volt: {
@@ -151,9 +149,6 @@ class DMGCalcPlan {
     update(): void {
         this.damageRate = this.damageRatePercent / 100;
 
-
-
-
         const atkBuff = this.charaBuff
             .filter(v => {
                 if (v.attrTypeId == this.atkTypeId) {
@@ -229,19 +224,35 @@ class DMGCalcPlan {
         this.outputAttrDamage = Math.floor(baseAttrDmg);
 
 
+
+        const weaponResist = this.enemyDebuff
+            .filter(v => v.attrTypeId == AttrTypeId.Weapon)
+            .reduce((p, v) => {
+                p += v.value / 100;
+                return p;
+            }, 0);
+        this.outputDamage = (baseAtkDmg + baseAttrDmg) * (1 + -weaponResist);
+        this.outputDamageMin = (minAtkDmg + minAttrDmg) * (1 + -weaponResist);
+        this.outputDamageMax = (maxAtkDmg + maxAttrDmg) * (1 + -weaponResist);
+
+
+
         const finalDmgPercent = this.finalDamageBuff / 100;
 
-        this.outputDamage = (baseAtkDmg + baseAttrDmg) * (1 + finalDmgPercent);
+        this.outputDamage = this.outputDamage * (1 + finalDmgPercent);
         this.outputDamage = Math.max(0, this.outputDamage);
         this.outputDamage = Math.floor(this.outputDamage);
 
-        this.outputDamageMin = (minAtkDmg + minAttrDmg) * (1 + finalDmgPercent);
+        this.outputDamageMin = this.outputDamageMin * (1 + finalDmgPercent);
         this.outputDamageMin = Math.max(0, this.outputDamageMin);
         this.outputDamageMin = Math.floor(this.outputDamageMin);
 
-        this.outputDamageMax = (maxAtkDmg + maxAttrDmg) * (1 + finalDmgPercent);
+        this.outputDamageMax = this.outputDamageMax * (1 + finalDmgPercent);
         this.outputDamageMax = Math.max(0, this.outputDamageMax);
         this.outputDamageMax = Math.floor(this.outputDamageMax);
+
+        console.log(this.outputDamage);
+        
     }
 
     // addEnemyResist(): void {
@@ -316,6 +327,16 @@ export class AikaDamageCalcComponent implements OnInit {
     viceAARList: ViceAARCalcCase[] = [];
 
     help = {
+        dmgcalc: `AGA的傷害計算流程:
+1. 物理傷害
+2. 屬性傷害
+3. 特定武器加成
+4. 最終傷害加成
+5. 被攻擊方最終接收傷害加成
+
+基本計算過程:
+((物理傷害+屬性傷害) * 特定武器加成) * (100% + 最終傷害加成 + 被攻擊方最終接收傷害加成)
+`,
         atk: `角色版面atk`,
         attr: `角色版面屬性
 例如，愛花是電屬性，那麼打怪的屬性影響：
@@ -323,7 +344,7 @@ export class AikaDamageCalcComponent implements OnInit {
 打電擊屬性(弱重力)，屬性傷害0%(沒有屬性傷害)
 打燒夷屬性(弱冷擊)，屬性傷害160%
 打冷擊屬性(弱燒夷)，屬性傷害100%(1:1)`,
-        charaBuff:`角色buff
+        charaBuff: `角色buff
 用法跟版面一樣，可以拿來算隊伍buff
 例如：
 愛花的被動，慈心の同調E1
@@ -338,7 +359,12 @@ export class AikaDamageCalcComponent implements OnInit {
 蓄力-子彈: 57.5%
 蓄力-榴彈頭:   100%
 蓄力-榴彈爆炸: 150%`,
-        finalDmgBuff: `例如：愛花AN槍的KISS3詞條是最終傷害+10%`,
+        finalDmgBuff: `這裡指的是上面 "輸出傷害計算" 中的 4、5 步驟
+例如：
+愛花AN槍的KISS3詞條是步驟4，最終傷害+10%
+愛花4星SP是步驟5，自己最終接收到的傷害-50%
+愛花ANSP是步驟4，被上debuff的怪，攻擊傷害-50%
+`,
         enemyDef: `訓練場的100級靶子DEF是872
 其他怪DEF大約參照，不是每個怪的DEF都一樣
 Lv10: 152

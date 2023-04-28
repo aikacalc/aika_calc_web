@@ -60,7 +60,7 @@
         </table>
     </div>
     <div class="damage-calc block">
-        <div class="title">輸出傷害計算</div>
+        <div class="title" [title]="help.dmgcalc" (click)="showMsg(help.dmgcalc)">輸出傷害計算</div>
         <table>
             <thead>
                 <tr>
@@ -114,16 +114,22 @@
                         <div class="wrapper" *ngFor="let item2 of item.charaBuff">
                             <select [(ngModel)]="item2.attrTypeId" (ngModelChange)="item.update()">
                                 <option value="22" [ngStyle]="{color:getTypeColor(AttrTypeId.None)}">無</option>
-                                <option value="18" [ngStyle]="{color:getTypeColor(AttrTypeId.Close)}">近戰</option>
-                                <option value="19" [ngStyle]="{color:getTypeColor(AttrTypeId.Shot)}">射擊</option>
-                                <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
-                                <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
-                                <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
-                                <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
-                                <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
-                                <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
-                                <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
-                                <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                                <optgroup label="種類1">
+                                    <option value="18" [ngStyle]="{color:getTypeColor(AttrTypeId.Close)}">近戰</option>
+                                    <option value="19" [ngStyle]="{color:getTypeColor(AttrTypeId.Shot)}">射擊</option>
+                                </optgroup>
+                                <optgroup label="種類2">
+                                    <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
+                                    <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
+                                    <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
+                                    <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
+                                </optgroup>
+                                <optgroup label="屬性">
+                                    <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
+                                    <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
+                                    <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
+                                    <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                                </optgroup>
                             </select>
                             <input type="number" [(ngModel)]="item2.value" (ngModelChange)="item.update()"
                                 [ngStyle]="{color:getTypeColor(item2.attrTypeId)}">%
@@ -154,16 +160,23 @@
                         <div class="wrapper" *ngFor="let item2 of item.enemyDebuff">
                             <select [(ngModel)]="item2.attrTypeId" (ngModelChange)="item.update()">
                                 <option value="22" [ngStyle]="{color:getTypeColor(AttrTypeId.None)}">無</option>
-                                <option value="18" [ngStyle]="{color:getTypeColor(AttrTypeId.Close)}">近戰</option>
-                                <option value="19" [ngStyle]="{color:getTypeColor(AttrTypeId.Shot)}">射擊</option>
-                                <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
-                                <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
-                                <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
-                                <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
-                                <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
-                                <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
-                                <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
-                                <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                                <optgroup label="種類1">
+                                    <option value="18" [ngStyle]="{color:getTypeColor(AttrTypeId.Close)}">近戰</option>
+                                    <option value="19" [ngStyle]="{color:getTypeColor(AttrTypeId.Shot)}">射擊</option>
+                                </optgroup>
+                                <optgroup label="種類2">
+                                    <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
+                                    <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
+                                    <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
+                                    <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
+                                </optgroup>
+                                <optgroup label="屬性">
+                                    <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
+                                    <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
+                                    <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
+                                    <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                                </optgroup>
+                                <option value="30" [ngStyle]="{color:getTypeColor(AttrTypeId.Weapon)}">特定武器</option>
                             </select>
                             <input type="number" [(ngModel)]="item2.value" (ngModelChange)="item.update()"
                                 [ngStyle]="{color:getTypeColor(item2.attrTypeId)}">%
@@ -188,7 +201,8 @@
             </tbody>
         </table>
         <div class="extra">
-            <a href="https://wikiwiki.jp/alicegear/%E7%B7%B4%E7%BF%92%E3%83%9A%E3%83%BC%E3%82%B8/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97?word=%E7%9B%B8%E6%B2%B3+%E6%84%9B%E8%8A%B1#n74756d3" target="_blank">日服wiki的傷害計算頁面</a>
+            <a href="https://wikiwiki.jp/alicegear/%E7%B7%B4%E7%BF%92%E3%83%9A%E3%83%BC%E3%82%B8/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97?word=%E7%9B%B8%E6%B2%B3+%E6%84%9B%E8%8A%B1#n74756d3"
+                target="_blank">日服wiki的傷害計算頁面</a>
         </div>
     </div>
     <!-- <div class="enemy-atk-ratio-calc">

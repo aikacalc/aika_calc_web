@@ -1,5 +1,9 @@
 :host>.root {
 
+    *[title] {
+        text-decoration: underline dotted #000;
+    }
+
     button,
     select,
     input {
@@ -38,10 +42,6 @@
 
         th {
             font-size: 13px;
-
-            &[title] {
-                text-decoration: underline dotted #000;
-            }
         }
 
         tr {

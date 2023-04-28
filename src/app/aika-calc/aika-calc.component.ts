@@ -16,6 +16,7 @@ import { AppService } from '../app.service';
 })
 export class AikaCalcComponent implements OnInit {
     public attrTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeGroupList: { name: string, list: { id: AttrTypeId; name: string }[] }[] = [];
     public attrTypeAttrList: { id: AttrTypeId; name: string }[] = [];
     public attrTypeGearShotList: { id: AttrTypeId; name: string }[] = [];
     public attrTypeGearCloseList: { id: AttrTypeId; name: string }[] = [];
@@ -27,6 +28,9 @@ export class AikaCalcComponent implements OnInit {
     public selectedCharacterTemplate: Character;
     public savedataJson: string = '';
     public character: Character;
+
+    copyedBuff: Buff;
+    copyedBuffString: string = '';
 
     getTypeColor = getTypeColor;
 
@@ -55,7 +59,58 @@ DEF+200
     ) { }
 
     ngOnInit(): void {
-        // const idToAttrType = (atid: AttrTypeId) => ({ id: atid, name: AttrTypeName[AttrTypeId[atid]] });
+        this.attrTypeGroupList = [
+            {
+                name: '種類1', list: [
+                    this.idToAttrType(AttrTypeId.Close),
+                    this.idToAttrType(AttrTypeId.Shot),
+                ]
+            },
+            {
+                name: '種類2', list: [
+                    this.idToAttrType(AttrTypeId.Impact),
+                    this.idToAttrType(AttrTypeId.Slash),
+                    this.idToAttrType(AttrTypeId.Physical),
+                    this.idToAttrType(AttrTypeId.Energy),
+                ]
+            },
+            {
+                name: '屬性', list: [
+                    this.idToAttrType(AttrTypeId.Volt),
+                    this.idToAttrType(AttrTypeId.Gravity),
+                    this.idToAttrType(AttrTypeId.Fire),
+                    this.idToAttrType(AttrTypeId.Ice),
+                ]
+            },
+            {
+                name: '接近', list: [
+                    this.idToAttrType(AttrTypeId.Sword),
+                    this.idToAttrType(AttrTypeId.Hammer),
+                    this.idToAttrType(AttrTypeId.Spear),
+                    this.idToAttrType(AttrTypeId.Dagger),
+                    this.idToAttrType(AttrTypeId.HandGun),
+                ]
+            },
+            {
+                name: '遠程', list: [
+                    this.idToAttrType(AttrTypeId.Rifle),
+                    this.idToAttrType(AttrTypeId.Bazooka),
+                    this.idToAttrType(AttrTypeId.Twin),
+                    this.idToAttrType(AttrTypeId.Sniper),
+                ]
+            },
+            {
+                name: '自身', list: [
+                    this.idToAttrType(AttrTypeId.HP),
+                    this.idToAttrType(AttrTypeId.DEF),
+                    this.idToAttrType(AttrTypeId.ResistVolt),
+                    this.idToAttrType(AttrTypeId.ResistGravity),
+                    this.idToAttrType(AttrTypeId.ResistFire),
+                    this.idToAttrType(AttrTypeId.ResistIce),
+                    this.idToAttrType(AttrTypeId.SPD),
+                ]
+            },
+        ]
         this.attrTypeList = AttrTypeIdList.map((atid) => this.idToAttrType(atid));
         this.attrTypeAttrList = [
             AttrTypeId.Volt,
@@ -278,13 +333,36 @@ DEF+200
         }
     }
     public addBuff(refList: Buff[]): void {
-        const newBuff = new Buff(AttrTypeId.HP, 0);
-        refList.push(newBuff);
+        if (this.copyedBuff != null) {
+            refList.push(new Buff(this.copyedBuff.type, this.copyedBuff.value));
+        } else {
+            if (refList.length > 0) {
+                const lastBuff = refList[refList.length - 1]
+                const newBuff = new Buff(lastBuff.type, lastBuff.value);
+                refList.push(newBuff);
+            } else {
+                refList.push(new Buff(AttrTypeId.HP, 0));
+            }
+        }
     }
     public deleteBuff(refList: Buff[], buff: Buff): void {
         const index = refList.indexOf(buff);
         if (index > -1) {
             refList.splice(index, 1);
+        }
+        if (this.copyedBuff == buff) {
+            this.copyedBuff = null;
+            this.copyedBuffString = '';
+        }
+    }
+    public copyBuff(buff: Buff) {
+        if (this.copyedBuff == buff) {
+            this.copyedBuff = null;
+            this.copyedBuffString = '';
+        } else {
+            this.copyedBuff = buff;
+            const valStr = buff.value * 100;
+            this.copyedBuffString = `${buff.attrTypeName}:${valStr}%`;
         }
     }
     setGear(gear: Gear, gears: Gear[], gearIndexValue: string): void {
