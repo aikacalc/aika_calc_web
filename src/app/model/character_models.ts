@@ -11982,6 +11982,80 @@ class MiyafujiYoshika05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MiyafujiYoshika.bottom;
 }
 
+class SakamotoMio04 extends Character {
+    name: string = '坂本 美緒 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 463;
+    atkCloseMin: number = 132;
+    atkCloseMax: number = 463;
+    attrClose: number = 0;
+    atkShot: number = 445;
+    atkShotMin: number = 127;
+    atkShotMax: number = 445;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 162;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
+    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
+    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
+    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+}
+
+class SakamotoMio05 extends Character {
+    name: string = '坂本 美緒 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 162;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
+    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
+    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
+    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+}
+
 class LynetteBishop04 extends Character {
     name: string = 'リネット・B ★3';
     rare: number = 3;
@@ -12054,6 +12128,80 @@ class LynetteBishop05 extends Character {
     weaponCloses: Gear[] = ActressGears.LynetteBishop.short;
     equipmentTops: Gear[] = ActressGears.LynetteBishop.top;
     equipmentBottoms: Gear[] = ActressGears.LynetteBishop.bottom;
+}
+
+class PerrineHClostermann04 extends Character {
+    name: string = 'ペリーヌ・C ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 490;
+    atkCloseMin: number = 140;
+    atkCloseMax: number = 490;
+    attrClose: number = 0;
+    atkShot: number = 495;
+    atkShotMin: number = 141;
+    atkShotMax: number = 495;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
+}
+
+class PerrineHClostermann05 extends Character {
+    name: string = 'ペリーヌ・C ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
+    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
+    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
+    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
 }
 
 class GertrudBarkhorn04 extends Character {
@@ -12202,152 +12350,150 @@ class EricaHartmann05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.EricaHartmann.bottom;
 }
 
-class SakamotoMio04 extends Character {
-    name: string = '坂本 美緒 ★3';
+class FrancescaLucchini04 extends Character {
+    name: string = 'フランチェスカ・L ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
-    hp: number = 2560;
-    hpMin: number = 704;
-    hpMax: number = 2560;
-    atkClose: number = 463;
-    atkCloseMin: number = 132;
-    atkCloseMax: number = 463;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 590;
+    atkCloseMin: number = 168;
+    atkCloseMax: number = 590;
     attrClose: number = 0;
-    atkShot: number = 445;
-    atkShotMin: number = 127;
-    atkShotMax: number = 445;
+    atkShot: number = 584;
+    atkShotMin: number = 167;
+    atkShotMax: number = 584;
     attrShot: number = 0;
-    def: number = 707;
-    defMin: number = 202;
-    defMax: number = 707;
-    spd: number = 162;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
     buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistFire, 0.7),
-        new Buff(AttrTypeId.ResistIce, -0.7),
-        new Buff(AttrTypeId.ResistVolt, -0.35),
-        new Buff(AttrTypeId.DEF, -0.1),
-        new Buff(AttrTypeId.Fire, 0.9),
-        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
-    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
-    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
-    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+    weaponShots: Gear[] = ActressGears.FrancescaLucchini.long;
+    weaponCloses: Gear[] = ActressGears.FrancescaLucchini.short;
+    equipmentTops: Gear[] = ActressGears.FrancescaLucchini.top;
+    equipmentBottoms: Gear[] = ActressGears.FrancescaLucchini.bottom;
 }
 
-class SakamotoMio05 extends Character {
-    name: string = '坂本 美緒 ★4';
+class FrancescaLucchini05 extends Character {
+    name: string = 'フランチェスカ・L ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
-    hp: number = 3305;
-    hpMin: number = 887;
-    hpMax: number = 3305;
-    atkClose: number = 595;
-    atkCloseMin: number = 165;
-    atkCloseMax: number = 595;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 758;
+    atkCloseMin: number = 211;
+    atkCloseMax: number = 758;
     attrClose: number = 0;
-    atkShot: number = 573;
-    atkShotMin: number = 159;
-    atkShotMax: number = 573;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
     attrShot: number = 0;
-    def: number = 909;
-    defMin: number = 253;
-    defMax: number = 909;
-    spd: number = 162;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
     buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistFire, 0.7),
-        new Buff(AttrTypeId.ResistIce, -0.7),
-        new Buff(AttrTypeId.ResistVolt, -0.35),
-        new Buff(AttrTypeId.DEF, -0.1),
-        new Buff(AttrTypeId.Fire, 0.9),
-        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.HandGun, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.SakamotoMio.long;
-    weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
-    equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
-    equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+    weaponShots: Gear[] = ActressGears.FrancescaLucchini.long;
+    weaponCloses: Gear[] = ActressGears.FrancescaLucchini.short;
+    equipmentTops: Gear[] = ActressGears.FrancescaLucchini.top;
+    equipmentBottoms: Gear[] = ActressGears.FrancescaLucchini.bottom;
 }
 
-class PerrineHClostermann04 extends Character {
-    name: string = 'ペリーヌ・C ★3';
+class CharlotteEYeager04 extends Character {
+    name: string = 'シャーロット・Y ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
-    hp: number = 2585;
-    hpMin: number = 711;
-    hpMax: number = 2585;
-    atkClose: number = 490;
-    atkCloseMin: number = 140;
-    atkCloseMax: number = 490;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 481;
+    atkCloseMin: number = 137;
+    atkCloseMax: number = 481;
     attrClose: number = 0;
-    atkShot: number = 495;
-    atkShotMin: number = 141;
-    atkShotMax: number = 495;
+    atkShot: number = 505;
+    atkShotMin: number = 144;
+    atkShotMax: number = 505;
     attrShot: number = 0;
-    def: number = 700;
-    defMin: number = 200;
-    defMax: number = 700;
-    spd: number = 160;
+    def: number = 693;
+    defMin: number = 198;
+    defMax: number = 693;
+    spd: number = 168;
     buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistVolt, 0.7),
-        new Buff(AttrTypeId.ResistGravity, -0.7),
-        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.DEF, -0.1),
-        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15)
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
-    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
-    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
-    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
+    weaponShots: Gear[] = ActressGears.CharlotteEYeager.long;
+    weaponCloses: Gear[] = ActressGears.CharlotteEYeager.short;
+    equipmentTops: Gear[] = ActressGears.CharlotteEYeager.top;
+    equipmentBottoms: Gear[] = ActressGears.CharlotteEYeager.bottom;
 }
 
-class PerrineHClostermann05 extends Character {
-    name: string = 'ペリーヌ・C ★4';
+class CharlotteEYeager05 extends Character {
+    name: string = 'シャーロット・Y ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
-    hp: number = 3337;
-    hpMin: number = 896;
-    hpMax: number = 3337;
-    atkClose: number = 630;
-    atkCloseMin: number = 175;
-    atkCloseMax: number = 630;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 618;
+    atkCloseMin: number = 172;
+    atkCloseMax: number = 618;
     attrClose: number = 0;
-    atkShot: number = 636;
-    atkShotMin: number = 177;
-    atkShotMax: number = 636;
+    atkShot: number = 649;
+    atkShotMin: number = 180;
+    atkShotMax: number = 649;
     attrShot: number = 0;
-    def: number = 900;
-    defMin: number = 250;
-    defMax: number = 900;
-    spd: number = 160;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 168;
     buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistVolt, 0.7),
-        new Buff(AttrTypeId.ResistGravity, -0.7),
-        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
         new Buff(AttrTypeId.DEF, -0.1),
-        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
-        new Buff(AttrTypeId.Dagger, 0.15)
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.PerrineHClostermann.long;
-    weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
-    equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
-    equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
+    weaponShots: Gear[] = ActressGears.CharlotteEYeager.long;
+    weaponCloses: Gear[] = ActressGears.CharlotteEYeager.short;
+    equipmentTops: Gear[] = ActressGears.CharlotteEYeager.top;
+    equipmentBottoms: Gear[] = ActressGears.CharlotteEYeager.bottom;
 }
 
 class HoshitsukiMiki04 extends Character {
@@ -14181,11 +14327,13 @@ export const ActressNames: string[] = [
     'KotobukiBukiko',
     'SolRaptor',
     'MiyafujiYoshika',
+    'SakamotoMio',
     'LynetteBishop',
+    'PerrineHClostermann',
     'GertrudBarkhorn',
     'EricaHartmann',
-    'SakamotoMio',
-    'PerrineHClostermann',
+    'FrancescaLucchini',
+    'CharlotteEYeager',
     'HoshitsukiMiki',
     'TokiwaKurumi',
     'TsubuzakiAnko',
@@ -14539,16 +14687,20 @@ export const CharacterModels = {
     SolRaptor70: new SolRaptor70(),
     MiyafujiYoshika04: new MiyafujiYoshika04(),
     MiyafujiYoshika05: new MiyafujiYoshika05(),
+    SakamotoMio04: new SakamotoMio04(),
+    SakamotoMio05: new SakamotoMio05(),
     LynetteBishop04: new LynetteBishop04(),
     LynetteBishop05: new LynetteBishop05(),
+    PerrineHClostermann04: new PerrineHClostermann04(),
+    PerrineHClostermann05: new PerrineHClostermann05(),
     GertrudBarkhorn04: new GertrudBarkhorn04(),
     GertrudBarkhorn05: new GertrudBarkhorn05(),
     EricaHartmann04: new EricaHartmann04(),
     EricaHartmann05: new EricaHartmann05(),
-    SakamotoMio04: new SakamotoMio04(),
-    SakamotoMio05: new SakamotoMio05(),
-    PerrineHClostermann04: new PerrineHClostermann04(),
-    PerrineHClostermann05: new PerrineHClostermann05(),
+    FrancescaLucchini04: new FrancescaLucchini04(),
+    FrancescaLucchini05: new FrancescaLucchini05(),
+    CharlotteEYeager04: new CharlotteEYeager04(),
+    CharlotteEYeager05: new CharlotteEYeager05(),
     HoshitsukiMiki04: new HoshitsukiMiki04(),
     HoshitsukiMiki05: new HoshitsukiMiki05(),
     TokiwaKurumi04: new TokiwaKurumi04(),
