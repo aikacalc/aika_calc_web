@@ -10218,6 +10218,43 @@ class MatobaAoi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
 }
 
+class MatobaAoi70 extends Character {
+    name: string = '的場 アオイ / 冀望 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 512;
+    atkCloseMin: number = 142;
+    atkCloseMax: number = 512;
+    attrClose: number = 0;
+    atkShot: number = 553;
+    atkShotMin: number = 154;
+    atkShotMax: number = 553;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.HandGun, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
 class ArugaNana01 extends Character {
     name: string = '在賀 奈々 ★1';
     rare: number = 1;
@@ -14639,6 +14676,7 @@ export const CharacterModels = {
     MatobaAoi02: new MatobaAoi02(),
     MatobaAoi04: new MatobaAoi04(),
     MatobaAoi05: new MatobaAoi05(),
+    MatobaAoi70: new MatobaAoi70(),
     ArugaNana01: new ArugaNana01(),
     ArugaNana02: new ArugaNana02(),
     ArugaNana04: new ArugaNana04(),

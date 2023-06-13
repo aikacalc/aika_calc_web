@@ -36698,7 +36698,7 @@ export const ActressGears = {
     MatobaAoi: {
         long: [
             new Gear({
-                name: 'WS_C059_04_101_21',
+                name: 'イン・ザ・ブラック701',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
                 levelMin: 1,
@@ -36716,7 +36716,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: 'WS_C059_04_101_11',
+                name: 'イン・ザ・ブラック501',
                 unitType: AttrTypeId.Sniper,
                 level: 75,
                 levelMin: 1,
