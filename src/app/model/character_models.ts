@@ -11396,6 +11396,78 @@ class TakahataNodoka01 extends Character {
     equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
 }
 
+class TakahataNodoka04 extends Character {
+    name: string = '高幡のどか ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 573;
+    atkCloseMin: number = 164;
+    atkCloseMax: number = 573;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 165;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 721;
+    defMin: number = 206;
+    defMax: number = 721;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TakahataNodoka.long;
+    weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
+    equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
+    equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+}
+
+class TakahataNodoka05 extends Character {
+    name: string = '高幡のどか ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 736;
+    atkCloseMin: number = 205;
+    atkCloseMax: number = 736;
+    attrClose: number = 0;
+    atkShot: number = 744;
+    atkShotMin: number = 207;
+    atkShotMax: number = 744;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TakahataNodoka.long;
+    weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
+    equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
+    equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+}
+
 class Gourai04 extends Character {
     name: string = '轟雷 ★3';
     rare: number = 3;
@@ -14708,6 +14780,8 @@ export const CharacterModels = {
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
     TakahataNodoka01: new TakahataNodoka01(),
+    TakahataNodoka04: new TakahataNodoka04(),
+    TakahataNodoka05: new TakahataNodoka05(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),
