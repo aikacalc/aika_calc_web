@@ -11361,7 +11361,7 @@ class AdelaideBluthausen05 extends Character {
 }
 
 class TakahataNodoka01 extends Character {
-    name: string = '高幡のどか ★1';
+    name: string = '高幡 のどか ★1';
     rare: number = 1;
     level: number = 15;
     levelMin: number = 1;
@@ -11397,7 +11397,7 @@ class TakahataNodoka01 extends Character {
 }
 
 class TakahataNodoka04 extends Character {
-    name: string = '高幡のどか ★3';
+    name: string = '高幡 のどか ★3';
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -11433,7 +11433,7 @@ class TakahataNodoka04 extends Character {
 }
 
 class TakahataNodoka05 extends Character {
-    name: string = '高幡のどか ★4';
+    name: string = '高幡 のどか ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -11461,6 +11461,43 @@ class TakahataNodoka05 extends Character {
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TakahataNodoka.long;
+    weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
+    equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
+    equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+}
+
+class TakahataNodoka70 extends Character {
+    name: string = '高幡 のどか / 師門 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.TakahataNodoka.long;
     weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
@@ -14365,6 +14402,43 @@ class Yuri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
 }
 
+class ACTRESS05 extends Character {
+    name: string = 'ココ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ACTRESS.long;
+    weaponCloses: Gear[] = ActressGears.ACTRESS.short;
+    equipmentTops: Gear[] = ActressGears.ACTRESS.top;
+    equipmentBottoms: Gear[] = ActressGears.ACTRESS.bottom;
+}
+
 export const ActressNames: string[] = [
     'HirasakaYotsuyu',
     'KaneshiyaSitara',
@@ -14465,7 +14539,8 @@ export const ActressNames: string[] = [
     'TanyaDegurechaff',
     'ViktoriyaIvanovnaSerebryakov',
     'Kei',
-    'Yuri'
+    'Yuri',
+    'ACTRESS'
 ];
 
 export const CharacterModels = {
@@ -14782,6 +14857,7 @@ export const CharacterModels = {
     TakahataNodoka01: new TakahataNodoka01(),
     TakahataNodoka04: new TakahataNodoka04(),
     TakahataNodoka05: new TakahataNodoka05(),
+    TakahataNodoka70: new TakahataNodoka70(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
     Stylet04: new Stylet04(),
@@ -14860,5 +14936,6 @@ export const CharacterModels = {
     Kei04: new Kei04(),
     Kei05: new Kei05(),
     Yuri04: new Yuri04(),
-    Yuri05: new Yuri05()
+    Yuri05: new Yuri05(),
+    ACTRESS05: new ACTRESS05()
 };
