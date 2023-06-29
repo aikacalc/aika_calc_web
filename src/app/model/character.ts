@@ -185,7 +185,7 @@ export class Character extends Unit {
             if (this.equipmentBottomIndex == -1 && this.equipmentBottoms.length > 0) {
                 this.equipmentBottomIndex = 0;
             }
-
+0
             Unit.cloneDeep(this.weaponShot, this.weaponShots[this.weaponShotIndex], 0);
             Unit.cloneDeep(this.weaponClose, this.weaponCloses[this.weaponCloseIndex], 0);
             Unit.cloneDeep(this.equipmentTop, this.equipmentTops[this.equipmentTopIndex], 0);
@@ -202,8 +202,8 @@ export class Character extends Unit {
         this.updateAttrShot();
         this.updateAtkClose();
         this.updateAttrClose();
+        this.updateSPD();
 
-        this.spd = this.equipmentBottom.spd;
     }
 
     // calcGrowthValue(minVal: number, maxVal: number): number {
@@ -331,5 +331,23 @@ export class Character extends Unit {
         const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
         const result = Math.floor(attrSum * buffValuePct);
         this.attrClose = result;
+    }
+    updateSPD(): void {
+        const targetAttrTypeId = AttrTypeId.SPD;
+        const charaValue = Unit.calcGrowthValue(this, this.spdMin, this.spdMax);
+        const valueSum = charaValue
+            + this.gears.reduce((v, c) => v + c.spd, 0)
+            ;
+        const allBuffResultValue = this.allUnits
+            .map(v => {
+                const valBuffs = v.buffs.filter(b => b.type === targetAttrTypeId);
+                const valBuffValues = valBuffs.map(b => b.value);
+                const buffValue = valBuffValues.reduce((p, c) => p + c, 0);
+                const unitResultValue = Math.floor(valueSum * buffValue);
+                return unitResultValue;
+            })
+            .reduce((p, c) => p + c, 0);
+
+        this.spd = valueSum + allBuffResultValue;
     }
 }

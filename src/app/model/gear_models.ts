@@ -950,6 +950,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -970,6 +972,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -990,6 +994,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1010,6 +1016,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1030,6 +1038,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1050,6 +1060,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1070,6 +1082,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1090,6 +1104,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1110,6 +1126,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1130,6 +1148,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1150,6 +1170,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -1170,6 +1192,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -2277,6 +2301,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             }),
             new Gear({
                 name: 'ガネーシャカルバチョート/B',
@@ -2293,6 +2319,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2315,6 +2343,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2337,6 +2367,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2359,6 +2391,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2380,6 +2414,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2401,6 +2437,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2422,6 +2460,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2443,6 +2483,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2464,6 +2506,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -2485,6 +2529,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2507,6 +2553,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2529,6 +2577,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2551,6 +2601,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2572,6 +2624,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2593,6 +2647,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2614,6 +2670,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2636,6 +2694,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -2658,6 +2718,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -3548,6 +3610,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3568,6 +3632,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3588,6 +3654,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3608,6 +3676,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3628,6 +3698,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3648,6 +3720,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3668,6 +3742,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -3688,6 +3764,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -3708,6 +3786,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -3728,6 +3808,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -3748,6 +3830,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -3768,6 +3852,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -3788,6 +3874,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -4532,6 +4620,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4552,6 +4642,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4572,6 +4664,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4592,6 +4686,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4612,6 +4708,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4632,6 +4730,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -4652,6 +4752,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4672,6 +4774,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4692,6 +4796,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4712,6 +4818,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4732,6 +4840,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4752,6 +4862,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4772,6 +4884,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4792,6 +4906,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4812,6 +4928,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4832,6 +4950,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4852,6 +4972,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -4872,6 +4994,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -5718,6 +5842,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5739,6 +5865,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5760,6 +5888,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5781,6 +5911,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5802,6 +5934,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5823,6 +5957,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -5844,6 +5980,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -5865,6 +6003,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -5886,6 +6026,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -5907,6 +6049,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -5928,6 +6072,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -5949,6 +6095,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -6706,6 +6854,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6728,6 +6878,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6750,6 +6902,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6772,6 +6926,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6794,6 +6950,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 255,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6816,6 +6974,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -6838,6 +6998,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -6860,6 +7022,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -6882,6 +7046,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -6904,6 +7070,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -6926,6 +7094,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 255,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -6948,6 +7118,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -7744,6 +7916,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7765,6 +7939,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7786,6 +7962,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7807,6 +7985,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7828,6 +8008,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7849,6 +8031,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -7870,6 +8054,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7891,6 +8077,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7912,6 +8100,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7933,6 +8123,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7954,6 +8146,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7975,6 +8169,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -7996,6 +8192,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -8831,6 +9029,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 360,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8852,6 +9052,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 340,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8873,6 +9075,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 320,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8894,6 +9098,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8915,6 +9121,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8936,6 +9144,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -8957,6 +9167,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 360,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -8978,6 +9190,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 340,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -8999,6 +9213,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 320,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -9020,6 +9236,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -9041,6 +9259,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -9062,6 +9282,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -9083,6 +9305,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 320,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -9860,6 +10084,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9881,6 +10107,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9902,6 +10130,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9923,6 +10153,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9944,6 +10176,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9965,6 +10199,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -9986,6 +10222,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10007,6 +10245,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10028,6 +10268,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10049,6 +10291,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10070,6 +10314,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10091,6 +10337,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -10112,6 +10360,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -10995,6 +11245,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11016,6 +11268,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11037,6 +11291,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 314,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11058,6 +11314,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11079,6 +11337,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11100,6 +11360,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -11121,6 +11383,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11142,6 +11406,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11163,6 +11429,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 314,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11184,6 +11452,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11205,6 +11475,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11226,6 +11498,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -11965,6 +12239,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -11986,6 +12262,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -12007,6 +12285,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -12028,6 +12308,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -12049,6 +12331,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 255,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -12070,6 +12354,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -12091,6 +12377,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12112,6 +12400,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12133,6 +12423,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12154,6 +12446,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12175,6 +12469,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 255,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12196,6 +12492,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -12563,6 +12861,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12583,6 +12883,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12603,6 +12905,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12623,6 +12927,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12643,6 +12949,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12663,6 +12971,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12683,6 +12993,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -12703,6 +13015,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -13441,6 +13755,8 @@ export const ActressGears = {
                 defMin: 220,
                 defMax: 396,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13461,6 +13777,8 @@ export const ActressGears = {
                 defMin: 220,
                 defMax: 396,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13481,6 +13799,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13501,6 +13821,8 @@ export const ActressGears = {
                 defMin: 110,
                 defMax: 352,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13521,6 +13843,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 308,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13541,6 +13865,8 @@ export const ActressGears = {
                 defMin: 132,
                 defMax: 264,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13561,6 +13887,8 @@ export const ActressGears = {
                 defMin: 88,
                 defMax: 220,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -13581,6 +13909,8 @@ export const ActressGears = {
                 defMin: 220,
                 defMax: 396,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -13601,6 +13931,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -13621,6 +13953,8 @@ export const ActressGears = {
                 defMin: 110,
                 defMax: 352,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -13641,6 +13975,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 308,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -13661,6 +13997,8 @@ export const ActressGears = {
                 defMin: 132,
                 defMax: 264,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -13681,6 +14019,8 @@ export const ActressGears = {
                 defMin: 88,
                 defMax: 220,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -14159,6 +14499,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14180,6 +14522,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14201,6 +14545,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14222,6 +14568,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14243,6 +14591,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14264,6 +14614,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14285,6 +14637,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14306,6 +14660,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -14749,6 +15105,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14769,6 +15127,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14789,6 +15149,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14809,6 +15171,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14829,6 +15193,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14849,6 +15215,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14869,6 +15237,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -14889,6 +15259,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15291,6 +15663,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15312,6 +15686,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15333,6 +15709,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15354,6 +15732,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15375,6 +15755,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15396,6 +15778,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -15803,6 +16187,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15823,6 +16209,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15843,6 +16231,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15863,6 +16253,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15883,6 +16275,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -15903,6 +16297,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -16305,6 +16701,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16325,6 +16723,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16345,6 +16745,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16365,6 +16767,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16385,6 +16789,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16405,6 +16811,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16425,6 +16833,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -16847,6 +17257,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16868,6 +17280,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16889,6 +17303,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16910,6 +17326,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16931,6 +17349,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16952,6 +17372,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16973,6 +17395,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -16994,6 +17418,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -17493,6 +17919,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             }),
             new Gear({
                 name: 'ダイコクBL/B',
@@ -17509,6 +17937,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 360,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17530,6 +17960,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 340,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17551,6 +17983,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 320,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17572,6 +18006,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17593,6 +18029,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17614,6 +18052,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -17635,6 +18075,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 360,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             }),
             new Gear({
                 name: 'AN039+/B',
@@ -17651,6 +18093,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 340,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             }),
             new Gear({
                 name: 'AN039/B',
@@ -17667,6 +18111,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 320,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             })
         ]
     },
@@ -18401,6 +18847,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 352,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18422,6 +18870,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18443,6 +18893,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18464,6 +18916,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18485,6 +18939,8 @@ export const ActressGears = {
                 defMin: 117,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18506,6 +18962,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18527,6 +18985,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 352,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18548,6 +19008,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18569,6 +19031,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18590,6 +19054,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18611,6 +19077,8 @@ export const ActressGears = {
                 defMin: 117,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -18632,6 +19100,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19371,6 +19841,8 @@ export const ActressGears = {
                 defMin: 216,
                 defMax: 389,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19392,6 +19864,8 @@ export const ActressGears = {
                 defMin: 195,
                 defMax: 368,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19413,6 +19887,8 @@ export const ActressGears = {
                 defMin: 108,
                 defMax: 346,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19434,6 +19910,8 @@ export const ActressGears = {
                 defMin: 173,
                 defMax: 303,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19455,6 +19933,8 @@ export const ActressGears = {
                 defMin: 130,
                 defMax: 260,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19476,6 +19956,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 216,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -19497,6 +19979,8 @@ export const ActressGears = {
                 defMin: 216,
                 defMax: 389,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19518,6 +20002,8 @@ export const ActressGears = {
                 defMin: 195,
                 defMax: 368,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19539,6 +20025,8 @@ export const ActressGears = {
                 defMin: 108,
                 defMax: 346,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19560,6 +20048,8 @@ export const ActressGears = {
                 defMin: 173,
                 defMax: 303,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19581,6 +20071,8 @@ export const ActressGears = {
                 defMin: 130,
                 defMax: 260,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -19602,6 +20094,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 216,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -20081,6 +20575,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20102,6 +20598,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20123,6 +20621,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20144,6 +20644,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20165,6 +20667,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 255,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20186,6 +20690,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -20925,6 +21431,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -20946,6 +21454,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -20967,6 +21477,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -20988,6 +21500,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -21009,6 +21523,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -21030,6 +21546,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -21051,6 +21569,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21072,6 +21592,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21093,6 +21615,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21114,6 +21638,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21135,6 +21661,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21156,6 +21684,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -21559,6 +22089,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21579,6 +22111,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21599,6 +22133,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21619,6 +22155,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21639,6 +22177,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21659,6 +22199,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21679,6 +22221,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -21699,6 +22243,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -22101,6 +22647,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22122,6 +22670,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22143,6 +22693,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22164,6 +22716,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22185,6 +22739,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22206,6 +22762,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -22649,6 +23207,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -22670,6 +23230,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -22691,6 +23253,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -22712,6 +23276,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -22733,6 +23299,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -22754,6 +23322,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -23157,6 +23727,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23178,6 +23750,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 337,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23199,6 +23773,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 317,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23220,6 +23796,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23241,6 +23819,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 238,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23262,6 +23842,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23629,6 +24211,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23650,6 +24234,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23671,6 +24257,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23692,6 +24280,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23713,6 +24303,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23734,6 +24326,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23755,6 +24349,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -23776,6 +24372,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -24143,6 +24741,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24163,6 +24763,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24183,6 +24785,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24203,6 +24807,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24223,6 +24829,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24243,6 +24851,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -24645,6 +25255,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24666,6 +25278,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24687,6 +25301,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24708,6 +25324,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24729,6 +25347,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24750,6 +25370,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24771,6 +25393,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -24792,6 +25416,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -25231,6 +25857,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25251,6 +25879,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25271,6 +25901,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 329,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25291,6 +25923,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25311,6 +25945,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25331,6 +25967,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -25697,6 +26335,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -25717,6 +26357,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -25737,6 +26379,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -25757,6 +26401,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -25777,6 +26423,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -25797,6 +26445,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -26199,6 +26849,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26219,6 +26871,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26239,6 +26893,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26259,6 +26915,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26279,6 +26937,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26299,6 +26959,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -26701,6 +27363,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -26724,6 +27388,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -26747,6 +27413,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -26770,6 +27438,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -26791,6 +27461,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -26812,6 +27484,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27215,6 +27889,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27236,6 +27912,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 337,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27257,6 +27935,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 317,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27278,6 +27958,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27299,6 +27981,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 238,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27320,6 +28004,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -27723,6 +28409,8 @@ export const ActressGears = {
                 defMin: 216,
                 defMax: 389,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27745,6 +28433,8 @@ export const ActressGears = {
                 defMin: 195,
                 defMax: 368,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27767,6 +28457,8 @@ export const ActressGears = {
                 defMin: 216,
                 defMax: 389,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27789,6 +28481,8 @@ export const ActressGears = {
                 defMin: 195,
                 defMax: 368,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27811,6 +28505,8 @@ export const ActressGears = {
                 defMin: 108,
                 defMax: 346,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27833,6 +28529,8 @@ export const ActressGears = {
                 defMin: 173,
                 defMax: 303,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27855,6 +28553,8 @@ export const ActressGears = {
                 defMin: 130,
                 defMax: 260,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -27877,6 +28577,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 216,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28281,6 +28983,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28302,6 +29006,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28323,6 +29029,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28344,6 +29052,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28365,6 +29075,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28386,6 +29098,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -28789,6 +29503,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28810,6 +29526,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28831,6 +29549,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28852,6 +29572,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28873,6 +29595,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -28894,6 +29618,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -29297,6 +30023,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29318,6 +30046,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29339,6 +30069,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29360,6 +30092,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29381,6 +30115,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29402,6 +30138,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -29805,6 +30543,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 352,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29826,6 +30566,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29847,6 +30589,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 352,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29868,6 +30612,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29889,6 +30635,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29910,6 +30658,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29931,6 +30681,8 @@ export const ActressGears = {
                 defMin: 117,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -29952,6 +30704,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -30355,6 +31109,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30375,6 +31131,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30395,6 +31153,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30415,6 +31175,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30435,6 +31197,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30455,6 +31219,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -30821,6 +31587,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -30842,6 +31610,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -30863,6 +31633,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -30884,6 +31656,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -30905,6 +31679,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -30926,6 +31702,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -31329,6 +32107,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31350,6 +32130,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31371,6 +32153,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31392,6 +32176,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31413,6 +32199,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31434,6 +32222,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -31837,6 +32627,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 359,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -31857,6 +32649,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -31877,6 +32671,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 319,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -31897,6 +32693,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -31917,6 +32715,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -31937,6 +32737,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -32339,6 +33141,8 @@ export const ActressGears = {
                 defMin: 218,
                 defMax: 393,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32360,6 +33164,8 @@ export const ActressGears = {
                 defMin: 197,
                 defMax: 371,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32381,6 +33187,8 @@ export const ActressGears = {
                 defMin: 109,
                 defMax: 349,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32402,6 +33210,8 @@ export const ActressGears = {
                 defMin: 175,
                 defMax: 306,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32423,6 +33233,8 @@ export const ActressGears = {
                 defMin: 131,
                 defMax: 262,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32444,6 +33256,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 218,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -32811,6 +33625,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 375,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -32833,6 +33649,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -32855,6 +33673,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -32877,6 +33697,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -32899,6 +33721,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -32921,6 +33745,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -33340,6 +34166,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 218,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
             }),
             new Gear({
                 name: 'HG-パンツァーKWS/B',
@@ -33356,6 +34184,8 @@ export const ActressGears = {
                 defMin: 218,
                 defMax: 393,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33377,6 +34207,8 @@ export const ActressGears = {
                 defMin: 197,
                 defMax: 371,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33398,6 +34230,8 @@ export const ActressGears = {
                 defMin: 109,
                 defMax: 349,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33419,6 +34253,8 @@ export const ActressGears = {
                 defMin: 175,
                 defMax: 306,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33440,6 +34276,8 @@ export const ActressGears = {
                 defMin: 131,
                 defMax: 262,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33461,6 +34299,8 @@ export const ActressGears = {
                 defMin: 87,
                 defMax: 218,
                 spd: 200,
+                spdMin: 200,
+                spdMax: 200,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -33828,6 +34668,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -33849,6 +34691,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -33870,6 +34714,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -33891,6 +34737,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -33912,6 +34760,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -33933,6 +34783,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -34402,6 +35254,8 @@ export const ActressGears = {
                 defMin: 214,
                 defMax: 386,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -34422,6 +35276,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             }),
             new Gear({
                 name: 'ニーズヘッグA/B',
@@ -34438,6 +35294,8 @@ export const ActressGears = {
                 defMin: 193,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -34458,6 +35316,8 @@ export const ActressGears = {
                 defMin: 107,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -34478,6 +35338,8 @@ export const ActressGears = {
                 defMin: 171,
                 defMax: 300,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -34498,6 +35360,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             }),
             new Gear({
                 name: 'MN404TRsG1/B',
@@ -34514,6 +35378,8 @@ export const ActressGears = {
                 defMin: 129,
                 defMax: 257,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -34534,6 +35400,8 @@ export const ActressGears = {
                 defMin: 86,
                 defMax: 214,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -35002,6 +35870,8 @@ export const ActressGears = {
                 defMin: 194,
                 defMax: 349,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35023,6 +35893,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             }),
             new Gear({
                 name: 'フレスベルグC/B',
@@ -35039,6 +35911,8 @@ export const ActressGears = {
                 defMin: 174,
                 defMax: 329,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35060,6 +35934,8 @@ export const ActressGears = {
                 defMin: 97,
                 defMax: 310,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35081,6 +35957,8 @@ export const ActressGears = {
                 defMin: 155,
                 defMax: 271,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35102,6 +35980,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             }),
             new Gear({
                 name: 'ペレグリーネOKsMk2/B',
@@ -35118,6 +35998,8 @@ export const ActressGears = {
                 defMin: 116,
                 defMax: 233,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35139,6 +36021,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 194,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -35878,6 +36762,8 @@ export const ActressGears = {
                 defMin: 194,
                 defMax: 349,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -35899,6 +36785,8 @@ export const ActressGears = {
                 defMin: 174,
                 defMax: 329,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -35920,6 +36808,8 @@ export const ActressGears = {
                 defMin: 97,
                 defMax: 310,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -35941,6 +36831,8 @@ export const ActressGears = {
                 defMin: 155,
                 defMax: 271,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -35962,6 +36854,8 @@ export const ActressGears = {
                 defMin: 116,
                 defMax: 233,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -35983,6 +36877,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 194,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -36004,6 +36900,8 @@ export const ActressGears = {
                 defMin: 194,
                 defMax: 349,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36025,6 +36923,8 @@ export const ActressGears = {
                 defMin: 174,
                 defMax: 329,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36046,6 +36946,8 @@ export const ActressGears = {
                 defMin: 97,
                 defMax: 310,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36067,6 +36969,8 @@ export const ActressGears = {
                 defMin: 155,
                 defMax: 271,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36088,6 +36992,8 @@ export const ActressGears = {
                 defMin: 116,
                 defMax: 233,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36109,6 +37015,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 194,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -36588,6 +37496,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 359,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -36608,6 +37518,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -36628,6 +37540,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 319,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -36648,6 +37562,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -36668,6 +37584,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -36688,6 +37606,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
@@ -37090,6 +38010,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 370,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37111,6 +38033,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37132,6 +38056,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 329,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37153,6 +38079,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37174,6 +38102,8 @@ export const ActressGears = {
                 defMin: 123,
                 defMax: 247,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37195,6 +38125,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -37562,6 +38494,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -37582,6 +38516,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -37602,6 +38538,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -37622,6 +38560,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -37642,6 +38582,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -37662,6 +38604,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38068,6 +39012,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38088,6 +39034,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38108,6 +39056,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38128,6 +39078,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38148,6 +39100,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38168,6 +39122,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -38534,6 +39490,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38554,6 +39512,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38574,6 +39534,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38594,6 +39556,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38614,6 +39578,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -38634,6 +39600,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -39036,6 +40004,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39056,6 +40026,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39076,6 +40048,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39096,6 +40070,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39116,6 +40092,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39136,6 +40114,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -39502,6 +40482,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39523,6 +40505,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39544,6 +40528,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39565,6 +40551,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39586,6 +40574,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39607,6 +40597,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -39974,6 +40966,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 359,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -39996,6 +40990,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 339,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -40018,6 +41014,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 319,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -40040,6 +41038,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 279,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -40062,6 +41062,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 239,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -40084,6 +41086,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -40452,6 +41456,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -40472,6 +41478,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 360,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -40492,6 +41500,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -40512,6 +41522,8 @@ export const ActressGears = {
                 defMin: 170,
                 defMax: 297,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -40532,6 +41544,8 @@ export const ActressGears = {
                 defMin: 127,
                 defMax: 254,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -40552,6 +41566,8 @@ export const ActressGears = {
                 defMin: 85,
                 defMax: 212,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -41254,6 +42270,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41274,6 +42292,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41294,6 +42314,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 329,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41314,6 +42336,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41334,6 +42358,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41354,6 +42380,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -41374,6 +42402,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41395,6 +42425,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41416,6 +42448,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 329,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41437,6 +42471,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41458,6 +42494,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41479,6 +42517,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -41933,6 +42973,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -41953,6 +42995,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -41973,6 +43017,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -41993,6 +43039,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -42013,6 +43061,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -42033,6 +43083,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1)
@@ -42053,6 +43105,8 @@ export const ActressGears = {
                 defMin: 38,
                 defMax: 95,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -42542,6 +43596,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42563,6 +43619,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42584,6 +43642,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42605,6 +43665,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42626,6 +43688,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42647,6 +43711,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -42668,6 +43734,8 @@ export const ActressGears = {
                 defMin: 38,
                 defMax: 95,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -43157,6 +44225,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43178,6 +44248,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43199,6 +44271,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43220,6 +44294,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43241,6 +44317,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43262,6 +44340,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -43283,6 +44363,8 @@ export const ActressGears = {
                 defMin: 38,
                 defMax: 95,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -43696,6 +44778,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43717,6 +44801,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43738,6 +44824,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43759,6 +44847,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43780,6 +44870,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43801,6 +44893,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -43822,6 +44916,8 @@ export const ActressGears = {
                 defMin: 38,
                 defMax: 95,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -44184,6 +45280,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44205,6 +45303,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44226,6 +45326,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44247,6 +45349,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44268,6 +45372,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44289,6 +45395,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -44656,6 +45764,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -44677,6 +45787,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -44698,6 +45810,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -44719,6 +45833,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -44740,6 +45856,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -44761,6 +45879,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45464,6 +46584,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45485,6 +46607,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45506,6 +46630,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45527,6 +46653,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -45548,6 +46676,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -45569,6 +46699,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -45590,6 +46722,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45611,6 +46745,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45632,6 +46768,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -45653,6 +46791,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -45674,6 +46814,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -45695,6 +46837,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -46185,6 +47329,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46206,6 +47352,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46227,6 +47375,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46248,6 +47398,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46269,6 +47421,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46290,6 +47444,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -46311,6 +47467,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -46724,6 +47882,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46745,6 +47905,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46766,6 +47928,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46787,6 +47951,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46808,6 +47974,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46829,6 +47997,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -46850,6 +48020,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -47335,6 +48507,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47355,6 +48529,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47375,6 +48551,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47395,6 +48573,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47415,6 +48595,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47435,6 +48617,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -47455,6 +48639,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -47904,6 +49090,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -47924,6 +49112,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -47944,6 +49134,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -47964,6 +49156,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -47984,6 +49178,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -48004,6 +49200,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -48024,6 +49222,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -48473,6 +49673,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48494,6 +49696,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48515,6 +49719,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48536,6 +49742,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48557,6 +49765,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48578,6 +49788,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -48599,6 +49811,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -49048,6 +50262,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49069,6 +50285,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49090,6 +50308,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49111,6 +50331,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49132,6 +50354,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49153,6 +50377,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -49174,6 +50400,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
             })
         ]
     },
@@ -49587,6 +50815,8 @@ export const ActressGears = {
                 defMin: 210,
                 defMax: 378,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49607,6 +50837,8 @@ export const ActressGears = {
                 defMin: 189,
                 defMax: 357,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49627,6 +50859,8 @@ export const ActressGears = {
                 defMin: 105,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49647,6 +50881,8 @@ export const ActressGears = {
                 defMin: 168,
                 defMax: 294,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49667,6 +50903,8 @@ export const ActressGears = {
                 defMin: 126,
                 defMax: 252,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49687,6 +50925,8 @@ export const ActressGears = {
                 defMin: 84,
                 defMax: 210,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1)
@@ -49707,6 +50947,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -50120,6 +51362,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 364,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50141,6 +51385,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50162,6 +51408,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50183,6 +51431,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50204,6 +51454,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50225,6 +51477,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -50246,6 +51500,8 @@ export const ActressGears = {
                 defMin: 40,
                 defMax: 80,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
             })
         ]
     },
@@ -50608,6 +51864,8 @@ export const ActressGears = {
                 defMin: 194,
                 defMax: 349,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50629,6 +51887,8 @@ export const ActressGears = {
                 defMin: 174,
                 defMax: 329,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50650,6 +51910,8 @@ export const ActressGears = {
                 defMin: 194,
                 defMax: 349,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50671,6 +51933,8 @@ export const ActressGears = {
                 defMin: 174,
                 defMax: 329,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50692,6 +51956,8 @@ export const ActressGears = {
                 defMin: 97,
                 defMax: 310,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50713,6 +51979,8 @@ export const ActressGears = {
                 defMin: 155,
                 defMax: 271,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50734,6 +52002,8 @@ export const ActressGears = {
                 defMin: 116,
                 defMax: 233,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -50755,6 +52025,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 194,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -51158,6 +52430,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51178,6 +52452,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51198,6 +52474,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51218,6 +52496,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51238,6 +52518,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51258,6 +52540,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
@@ -51624,6 +52908,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 363,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -51644,6 +52930,8 @@ export const ActressGears = {
                 defMin: 181,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -51664,6 +52952,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -51684,6 +52974,8 @@ export const ActressGears = {
                 defMin: 161,
                 defMax: 282,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -51704,6 +52996,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -51724,6 +53018,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -52090,6 +53386,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52111,6 +53409,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52132,6 +53432,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52153,6 +53455,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52174,6 +53478,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52195,6 +53501,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
@@ -52598,6 +53906,8 @@ export const ActressGears = {
                 defMin: 200,
                 defMax: 359,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -52618,6 +53928,8 @@ export const ActressGears = {
                 defMin: 180,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -52638,6 +53950,8 @@ export const ActressGears = {
                 defMin: 100,
                 defMax: 319,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -52658,6 +53972,8 @@ export const ActressGears = {
                 defMin: 160,
                 defMax: 280,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -52678,6 +53994,8 @@ export const ActressGears = {
                 defMin: 120,
                 defMax: 240,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -52698,6 +54016,8 @@ export const ActressGears = {
                 defMin: 80,
                 defMax: 200,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -53100,6 +54420,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53121,6 +54443,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53142,6 +54466,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53163,6 +54489,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53184,6 +54512,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53205,6 +54535,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
@@ -53572,6 +54904,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -53593,6 +54927,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -53614,6 +54950,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -53635,6 +54973,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -53656,6 +54996,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -53677,6 +55019,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -54044,6 +55388,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54064,6 +55410,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54084,6 +55432,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54104,6 +55454,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54124,6 +55476,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54144,6 +55498,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -54546,6 +55902,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -54568,6 +55926,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -54590,6 +55950,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -54612,6 +55974,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -54634,6 +55998,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -54656,6 +56022,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -55064,6 +56432,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 352,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55085,6 +56455,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55106,6 +56478,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55127,6 +56501,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55148,6 +56524,8 @@ export const ActressGears = {
                 defMin: 117,
                 defMax: 235,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55169,6 +56547,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
@@ -55536,6 +56916,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -55557,6 +56939,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -55578,6 +56962,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -55599,6 +56985,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -55620,6 +57008,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -55641,6 +57031,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -56344,6 +57736,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56364,6 +57758,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56384,6 +57780,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56404,6 +57802,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56424,6 +57824,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56444,6 +57846,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -56464,6 +57868,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56485,6 +57891,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56506,6 +57914,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56527,6 +57937,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56548,6 +57960,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56569,6 +57983,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -56936,6 +58352,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -56956,6 +58374,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -56976,6 +58396,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -56996,6 +58418,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -57016,6 +58440,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 249,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -57036,6 +58462,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -57402,6 +58830,8 @@ export const ActressGears = {
                 defMin: 204,
                 defMax: 367,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57423,6 +58853,8 @@ export const ActressGears = {
                 defMin: 184,
                 defMax: 347,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57444,6 +58876,8 @@ export const ActressGears = {
                 defMin: 102,
                 defMax: 326,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57465,6 +58899,8 @@ export const ActressGears = {
                 defMin: 163,
                 defMax: 286,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57486,6 +58922,8 @@ export const ActressGears = {
                 defMin: 122,
                 defMax: 245,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57507,6 +58945,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 204,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1),
@@ -57874,6 +59314,8 @@ export const ActressGears = {
                 defMin: 202,
                 defMax: 364,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -57894,6 +59336,8 @@ export const ActressGears = {
                 defMin: 182,
                 defMax: 343,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -57914,6 +59358,8 @@ export const ActressGears = {
                 defMin: 101,
                 defMax: 323,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -57934,6 +59380,8 @@ export const ActressGears = {
                 defMin: 162,
                 defMax: 283,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -57954,6 +59402,8 @@ export const ActressGears = {
                 defMin: 121,
                 defMax: 242,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -57974,6 +59424,8 @@ export const ActressGears = {
                 defMin: 81,
                 defMax: 202,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -58748,6 +60200,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58768,6 +60222,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58788,6 +60244,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58808,6 +60266,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58828,6 +60288,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58848,6 +60310,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58868,6 +60332,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58888,6 +60354,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -58908,6 +60376,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -58929,6 +60399,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -58950,6 +60422,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -58971,6 +60445,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -58992,6 +60468,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -59013,6 +60491,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
@@ -59380,6 +60860,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59401,6 +60883,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59422,6 +60906,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59443,6 +60929,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59464,6 +60952,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59485,6 +60975,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15),
@@ -59852,6 +61344,8 @@ export const ActressGears = {
                 defMin: 196,
                 defMax: 353,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -59872,6 +61366,8 @@ export const ActressGears = {
                 defMin: 176,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -59892,6 +61388,8 @@ export const ActressGears = {
                 defMin: 98,
                 defMax: 313,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -59912,6 +61410,8 @@ export const ActressGears = {
                 defMin: 157,
                 defMax: 274,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -59932,6 +61432,8 @@ export const ActressGears = {
                 defMin: 118,
                 defMax: 235,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -59952,6 +61454,8 @@ export const ActressGears = {
                 defMin: 78,
                 defMax: 196,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
@@ -60318,6 +61822,8 @@ export const ActressGears = {
                 defMin: 198,
                 defMax: 356,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60340,6 +61846,8 @@ export const ActressGears = {
                 defMin: 178,
                 defMax: 336,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60362,6 +61870,8 @@ export const ActressGears = {
                 defMin: 99,
                 defMax: 316,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60384,6 +61894,8 @@ export const ActressGears = {
                 defMin: 158,
                 defMax: 277,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60406,6 +61918,8 @@ export const ActressGears = {
                 defMin: 119,
                 defMax: 237,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60428,6 +61942,8 @@ export const ActressGears = {
                 defMin: 79,
                 defMax: 198,
                 spd: 280,
+                spdMin: 280,
+                spdMax: 280,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
@@ -60796,6 +62312,8 @@ export const ActressGears = {
                 defMin: 218,
                 defMax: 393,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -60816,6 +62334,8 @@ export const ActressGears = {
                 defMin: 197,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -60836,6 +62356,8 @@ export const ActressGears = {
                 defMin: 109,
                 defMax: 349,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -60856,6 +62378,8 @@ export const ActressGears = {
                 defMin: 218,
                 defMax: 393,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -60876,6 +62400,8 @@ export const ActressGears = {
                 defMin: 197,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -60896,6 +62422,8 @@ export const ActressGears = {
                 defMin: 109,
                 defMax: 349,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistVolt, 0.15),
                 new Buff(AttrTypeId.ResistGravity, -0.15)
@@ -61262,6 +62790,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61283,6 +62813,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61304,6 +62836,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61325,6 +62859,8 @@ export const ActressGears = {
                 defMin: 212,
                 defMax: 382,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61346,6 +62882,8 @@ export const ActressGears = {
                 defMin: 191,
                 defMax: 361,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61367,6 +62905,8 @@ export const ActressGears = {
                 defMin: 106,
                 defMax: 339,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.1),
                 new Buff(AttrTypeId.ResistIce, -0.1),
@@ -61734,6 +63274,8 @@ export const ActressGears = {
                 defMin: 206,
                 defMax: 371,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -61754,6 +63296,8 @@ export const ActressGears = {
                 defMin: 185,
                 defMax: 350,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -61774,6 +63318,8 @@ export const ActressGears = {
                 defMin: 103,
                 defMax: 330,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -61794,6 +63340,8 @@ export const ActressGears = {
                 defMin: 165,
                 defMax: 288,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -61814,6 +63362,8 @@ export const ActressGears = {
                 defMin: 124,
                 defMax: 247,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -61834,6 +63384,8 @@ export const ActressGears = {
                 defMin: 82,
                 defMax: 206,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15)
@@ -62200,6 +63752,8 @@ export const ActressGears = {
                 defMin: 208,
                 defMax: 374,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -62220,6 +63774,8 @@ export const ActressGears = {
                 defMin: 187,
                 defMax: 354,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -62240,6 +63796,8 @@ export const ActressGears = {
                 defMin: 104,
                 defMax: 333,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -62260,6 +63818,8 @@ export const ActressGears = {
                 defMin: 166,
                 defMax: 291,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -62280,6 +63840,8 @@ export const ActressGears = {
                 defMin: 125,
                 defMax: 250,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
@@ -62300,6 +63862,8 @@ export const ActressGears = {
                 defMin: 83,
                 defMax: 208,
                 spd: 240,
+                spdMin: 240,
+                spdMax: 240,
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)

@@ -50,6 +50,7 @@ export class Gear extends Unit {
         this.def = this.calcTuneValue(this.base.def, [AttrTypeId.DEF]);
         this.atk = this.calcTuneValue(this.base.atk, [this.base.unitType, this.base.atkTypeId, this.base.atkAmmoTypeId]);
         this.attr = this.calcTuneValue(this.base.attr, [this.base.attrTypeId]);
+        this.spd = this.base.spdMax;
     }
     calcTuneValue(baseVal: number, attrTypeIds: AttrTypeId[]): number {
         const tuneBuffs = this.tunes.filter(t => attrTypeIds.indexOf(t.type) > -1);

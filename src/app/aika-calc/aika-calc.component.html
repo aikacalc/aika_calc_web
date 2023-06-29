@@ -173,6 +173,13 @@
                                 <div class="warpper">{{character.def}}</div>
                             </td>
                         </tr>
+                        <tr class="close-attr">
+                            <td class="name">SPD</td>
+                            <td></td>
+                            <td>
+                                <div class="warpper">{{character.spd}}</div>
+                            </td>
+                        </tr>
                         <tr class="buff-list-tr">
                             <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">
                                 被動<br />Buff</td>
@@ -495,6 +502,15 @@
                                     <div class="wrapper">
                                         <span>{{character.equipmentBottom.base.def}}</span>
                                         <span class="tune-text"> (Tune: {{character.equipmentBottom.def}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">SPD</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.spd}}</span>
+                                        <!-- <span class="tune-text"> (Tune: {{character.equipmentBottom.spd}})</span> -->
                                     </div>
                                 </td>
                             </tr>

@@ -29,6 +29,8 @@ export class Unit {
     defMin?: number = 0;
     defMax?: number = 0;
     spd?: number = 0;
+    spdMin?: number = 0;
+    spdMax?: number = 0;
     buffs?: Buff[] = [];
 
     constructor() {
