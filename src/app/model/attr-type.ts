@@ -62,7 +62,6 @@ export const AttrTypeIdWeapons = [
     AttrTypeId.Sniper
 ];
 
-
 export class AttrType {
     get name(): string {
         return AttrTypeName[AttrTypeId[this.typeId]];

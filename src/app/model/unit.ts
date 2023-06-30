@@ -8,6 +8,7 @@ export class Unit {
     levelMax?: number = 1;
     gradeUp?: number = 0;
     gradeUpLimit?: number = 0;
+    gradeupPowUpRate?: number = 100;
     hp?: number = 0;
     hpMin?: number = 0;
     hpMax?: number = 0;

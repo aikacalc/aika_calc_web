@@ -11,6 +11,13 @@ export class Gear extends Unit {
     // gradeUpLimit: number = 99;
 
     tunes: Buff[] = [];
+    tuneHp: number = 0;
+    tuneDef: number = 0;
+    tuneAtk: number = 0;
+    tuneAttr: number = 0;
+    tuneSpd: number = 0;
+
+
     get attrColor(): string {
         const color = AttrTypeColor[AttrTypeId[this.base.attrTypeId]];
         return color;
@@ -46,20 +53,37 @@ export class Gear extends Unit {
             this.updateBaseATK();
             this.updateBaseATTR();
         }
-        this.hp = this.calcTuneValue(this.base.hp, [AttrTypeId.HP]);
-        this.def = this.calcTuneValue(this.base.def, [AttrTypeId.DEF]);
-        this.atk = this.calcTuneValue(this.base.atk, [this.base.unitType, this.base.atkTypeId, this.base.atkAmmoTypeId]);
-        this.attr = this.calcTuneValue(this.base.attr, [this.base.attrTypeId]);
-        this.spd = this.base.spdMax;
+
+        this.tuneHp = this.calcTuneValue(this.base.hp, [AttrTypeId.HP]);
+        this.tuneDef = this.calcTuneValue(this.base.def, [AttrTypeId.DEF]);
+        this.tuneAtk = this.calcTuneValue(this.base.atk, [this.base.unitType, this.base.atkTypeId, this.base.atkAmmoTypeId]);
+        this.tuneAttr = this.calcTuneValue(this.base.attr, [this.base.attrTypeId]);
+        this.tuneSpd = this.calcTuneValue(this.base.spd, [AttrTypeId.SPD]);
+
+        this.hp = this.base.hp + this.tuneHp;
+        this.def = this.base.def + this.tuneDef;
+        this.atk = this.base.atk + this.tuneAtk;
+        this.attr = this.base.attr + this.tuneAttr;
+        this.spd = this.base.spd + this.tuneSpd;
     }
     calcTuneValue(baseVal: number, attrTypeIds: AttrTypeId[]): number {
         const tuneBuffs = this.tunes.filter(t => attrTypeIds.indexOf(t.type) > -1);
-        const tuneBuffValuePct = tuneBuffs
-            .map(v => v.value)
-            .reduce((p, c) => p + c, 0)
-            + 1;
-        const result = Math.floor(baseVal * tuneBuffValuePct);
+        let result = 0;
+        tuneBuffs.forEach(b => {
+            result += baseVal * (b.valuePct / 100);
+        });
+        result = Math.floor(result);
+        // const tuneBuffValuePct = tuneBuffs
+        //     .map(v => v.value)
+        //     .reduce((p, c) => p + c, 0)
+        //     + 1;
+        // const result = Math.floor(baseVal * tuneBuffValuePct);
         return result;
+    }
+    calcGrowthValue(minVal, maxVal) {
+        return Math.floor(
+            (minVal + (maxVal - minVal) * this.baseLevelPct)
+        );
     }
 
 
@@ -84,77 +108,73 @@ export class Gear extends Unit {
          * 1121-435=686
          * Math.floor(435+((3-1)/(40-1))*686)=470
          */
-        // const uValue = Unit.calcGrowthValue(this, this.base.hpMin, this.base.hpMax);
-        // this.base.level
 
-        const growthRange = this.base.hpMax - this.base.hpMin;
-        const value = Math.floor(this.base.hpMin + (growthRange * this.baseLevelPct));
-        let gradeValue = 0;
+        let baseVal = this.calcGrowthValue(this.base.hpMin, this.base.hpMax);
+        let qualityVal = 0;
 
         if (this.base.unitType == AttrTypeId.EquipmentTop) {
             const growthInfo = gearQualityGrowth.Top[this.base.gradeUp];
             if (growthInfo != null && growthInfo.hp) {
-                gradeValue = growthInfo.hp;
+                qualityVal = growthInfo.hp;
             }
         }
 
-        this.base.hp = value + gradeValue;
+        this.base.hp = baseVal + qualityVal;
     }
     updateBaseDEF(): void {
-        const growthRange = this.base.defMax - this.base.defMin;
-        const value = Math.floor(this.base.defMin + (growthRange * this.baseLevelPct));
+        // const growthRange = this.base.defMax - this.base.defMin;
+        // const value = Math.floor(this.base.defMin + (growthRange * this.baseLevelPct));
+        // let gradeValue = 0;
 
-        let gradeValue = 0;
+        let baseVal = this.calcGrowthValue(this.base.defMin, this.base.defMax);
+        let qualityVal = 0;
+
 
         if (this.base.unitType == AttrTypeId.EquipmentBottom) {
             const growthInfo = gearQualityGrowth.Bottom[this.base.gradeUp];
             if (growthInfo != null && growthInfo.def) {
-                gradeValue = growthInfo.def;
+                qualityVal = growthInfo.def;
             }
         }
 
-        this.base.def = value + gradeValue;
+        this.base.def = baseVal + qualityVal;
     }
     updateBaseATK(): void {
-        const growthRange = this.base.atkMax - this.base.atkMin;
-        const value = this.base.atkMin + (growthRange * this.baseLevelPct);
-
-        let gradeValue = 0;
+        let baseVal = this.calcGrowthValue(this.base.atkMin, this.base.atkMax);
+        let qualityVal = 0;
 
         if (this.atkTypeId == AttrTypeId.Shot) {
             const growthInfo = gearQualityGrowth.Shot[this.base.gradeUp];
             if (growthInfo != null && growthInfo.atk) {
-                gradeValue = growthInfo.atk;
+                qualityVal = growthInfo.atk;
             }
         }
         else if (this.atkTypeId == AttrTypeId.Close) {
             const growthInfo = gearQualityGrowth.Close[this.base.gradeUp];
             if (growthInfo != null && growthInfo.atk) {
-                gradeValue = growthInfo.atk;
+                qualityVal = growthInfo.atk;
             }
         }
 
-        this.base.atk = Math.floor(value + gradeValue);
+        this.base.atk = baseVal + qualityVal;
     }
     updateBaseATTR(): void {
-        const growthRange = this.base.attrMax - this.base.attrMin;
-        const value = this.base.attrMin + (growthRange * this.baseLevelPct);
-
-        let gradeValue = 0;
+        let baseVal = this.calcGrowthValue(this.base.attrMin, this.base.attrMax);
+        let qualityVal = 0;
 
         if (this.atkTypeId == AttrTypeId.Shot) {
             const growthInfo = gearQualityGrowth.Shot[this.base.gradeUp];
             if (growthInfo != null && growthInfo.attr) {
-                gradeValue = growthInfo.attr;
+                qualityVal = growthInfo.attr;
             }
         }
         else if (this.atkTypeId == AttrTypeId.Close) {
             const growthInfo = gearQualityGrowth.Close[this.base.gradeUp];
             if (growthInfo != null && growthInfo.attr) {
-                gradeValue = growthInfo.attr;
+                qualityVal = growthInfo.attr;
             }
         }
 
-        this.base.attr = Math.floor(value + gradeValue);
+        this.base.attr = baseVal + qualityVal;
     }
 }

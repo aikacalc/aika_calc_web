@@ -159,6 +159,8 @@ export class Character extends Unit {
         ];
     }
 
+    levelGrowthPct: number = 0;
+
     updateStatus(): void {
         if (!this.isCustomEnigmaStatus) {
             this.atkShotEnigmaCustom;
@@ -185,7 +187,7 @@ export class Character extends Unit {
             if (this.equipmentBottomIndex == -1 && this.equipmentBottoms.length > 0) {
                 this.equipmentBottomIndex = 0;
             }
-0
+            0
             Unit.cloneDeep(this.weaponShot, this.weaponShots[this.weaponShotIndex], 0);
             Unit.cloneDeep(this.weaponClose, this.weaponCloses[this.weaponCloseIndex], 0);
             Unit.cloneDeep(this.equipmentTop, this.equipmentTops[this.equipmentTopIndex], 0);
@@ -196,6 +198,8 @@ export class Character extends Unit {
 
         this.gears.forEach(g => g.updateStatus());
 
+        this.setLevelGrowthVal();
+
         this.updateHP();
         this.updateDEF();
         this.updateAtkShot();
@@ -205,7 +209,19 @@ export class Character extends Unit {
         this.updateSPD();
 
     }
-
+    setLevelGrowthVal(): void {
+        let level = this.level;
+        if (this.level == this.levelMax) {
+            level += this.gradeUp;
+        }
+        const v1 = (this.levelMax - 1) * 100;
+        const v2 = ((Math.min(level, this.levelMax) - 1) * 100)
+            + (Math.max(0, level - this.levelMax) * this.gradeupPowUpRate);
+        this.levelGrowthPct = v2 / v1;
+    }
+    calcValue(minVal: number, maxVal: number): number {
+        return Math.floor(minVal + (maxVal - minVal) * this.levelGrowthPct);
+    }
     // calcGrowthValue(minVal: number, maxVal: number): number {
     //     let gradeUpLv = 0;
     //     if (this.level === this.levelMax) {
@@ -218,102 +234,116 @@ export class Character extends Unit {
     //     return growthValue;
     // }
     updateHP(): void {
-        const targetAttrTypeId = AttrTypeId.HP;
-        const charaValue = Unit.calcGrowthValue(this, this.hpMin, this.hpMax);
-        const valueSum = charaValue
-            + this.gears.reduce((v, c) => v + c.hp, 0)
-            + masterLevelStatus[this.masterLevel].hp
-            + (this.masterLevel == 30 ? this.masterPlus : 0)
-            + this.hpEnigma
-            ;
-        const allBuffResultValue = this.allUnits
-            .map(v => {
-                const hpBuffs = v.buffs.filter(b => b.type === targetAttrTypeId);
-                const hpBuffValues = hpBuffs.map(b => b.value);
-                const buffValue = hpBuffValues.reduce((p, c) => p + c, 0);
-                const unitResultValue = Math.floor(valueSum * buffValue);
-                return unitResultValue;
-            })
-            .reduce((p, c) => p + c, 0);
+        const chrBaseVal = this.calcValue(this.hpMin, this.hpMax);
+        const gearBaseVal = this.gears.reduce((v, c) => v + c.base.hp, 0);
+        const masterVal = masterLevelStatus[this.masterLevel].hp;
+        this.hpEnigma = this.masterPlus;
+        const enigmaStatusVal = this.hpEnigma;
+        const tuneVal = this.gears.reduce((v, c) => v + c.tuneHp, 0);
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
 
-        this.hp = valueSum + allBuffResultValue;
+        let result = baseVal;
+
+        const targetAttrTypeId = AttrTypeId.HP;
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type == targetAttrTypeId);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
+        this.hp = result;
     }
     updateDEF(): void {
-        const targetAttrTypeId = AttrTypeId.DEF;
-        const charaValue = Unit.calcGrowthValue(this, this.defMin, this.defMax);
-        const valueSum = charaValue
-            + this.gears.reduce((v, c) => v + c.def, 0)
-            + masterLevelStatus[this.masterLevel].def
-            + this.defEnigma
-            ;
-        const allBuffResultValue = this.allUnits
-            .map(v => {
-                const hpBuffs = v.buffs.filter(b => b.type === targetAttrTypeId);
-                const hpBuffValues = hpBuffs.map(b => b.value);
-                const buffValue = hpBuffValues.reduce((p, c) => p + c, 0);
-                const unitResultValue = Math.floor(valueSum * buffValue);
-                return unitResultValue;
-            })
-            .reduce((p, c) => p + c, 0);
+        const chrBaseVal = this.calcValue(this.defMin, this.defMax);
+        const gearBaseVal = this.gears.reduce((v, c) => v + c.base.def, 0);
+        const masterVal = masterLevelStatus[this.masterLevel].def;
+        const enigmaStatusVal = this.defEnigma;
+        const tuneVal = this.gears.reduce((v, c) => v + c.tuneDef, 0);
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
 
-        this.def = valueSum + allBuffResultValue;
+        let result = baseVal;
+        const targetAttrTypeId = AttrTypeId.DEF;
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type == targetAttrTypeId);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
+        this.def = result;
     }
     updateAtkShot(): void {
+        const chrBaseVal = this.calcValue(this.atkShotMin, this.atkShotMax);
         const gear = this.weaponShot;
-        const atk = Unit.calcGrowthValue(this, this.atkShotMin, this.atkShotMax);
-
-        let enigmaValue = this.atkShotEnigma;
+        const gearBaseVal = gear.base.atk;
+        const masterVal = masterLevelStatus[this.masterLevel].atkShot;
+        let enigmaStatusVal = this.atkShotEnigma;
         if (this.isCustomEnigmaStatus) {
-            enigmaValue = this.atkShotEnigmaCustom;
+            enigmaStatusVal = this.atkShotEnigmaCustom;
         }
+        const tuneVal = gear.tuneAtk;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
 
-        const atkSum = atk
-            + gear.atk
-            + masterLevelStatus[this.masterLevel].atkShot
-            + enigmaValue
-            ;
-        const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
-            || b.type === gear.atkAmmoTypeId
-            || b.type === gear.unitType);
-        const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
-        const result = Math.floor(atkSum * buffValuePct);
+        let result = baseVal;
+
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type === gear.atkTypeId
+                || b.type === gear.atkAmmoTypeId
+                || b.type === gear.unitType);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
         this.atkShot = result;
     }
     updateAttrShot(): void {
+        const chrBaseVal = 0;
         const gear = this.weaponShot;
-
-        let enigmaValue = this.attrShotEnigma;
+        const gearBaseVal = gear.base.attr;
+        const masterVal = 0;
+        let enigmaStatusVal = this.attrShotEnigma;
         if (this.isCustomEnigmaStatus) {
-            enigmaValue = this.attrShotEnigmaCustom;
+            enigmaStatusVal = this.attrShotEnigmaCustom;
         }
+        const tuneVal = gear.tuneAttr;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
 
-        const attrSum = gear.attr
-            + enigmaValue
-            ;
-        const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
-        const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
-        const result = Math.floor(attrSum * buffValuePct);
+        let result = baseVal;
+
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type === gear.base.attrTypeId);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
         this.attrShot = result;
+
     }
     updateAtkClose(): void {
+        const chrBaseVal = this.calcValue(this.atkCloseMin, this.atkCloseMax);
         const gear = this.weaponClose;
-        const atk = Unit.calcGrowthValue(this, this.atkCloseMin, this.atkCloseMax);
-
-        let enigmaValue = this.atkCloseEnigma;
+        const gearBaseVal = gear.base.atk;
+        const masterVal = masterLevelStatus[this.masterLevel].atkClose;
+        let enigmaStatusVal = this.atkCloseEnigma;
         if (this.isCustomEnigmaStatus) {
-            enigmaValue = this.atkCloseEnigmaCustom;
+            enigmaStatusVal = this.atkCloseEnigmaCustom;
         }
 
-        const atkSum = atk
-            + gear.atk
-            + masterLevelStatus[this.masterLevel].atkClose
-            + enigmaValue
-            ;
-        const buffs = this.allBuffs.filter(b => b.type === gear.atkTypeId
-            || b.type === gear.atkAmmoTypeId
-            || b.type === gear.unitType);
-        const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
-        const result = Math.floor(atkSum * buffValuePct);
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal;
+
+        let result = chrBaseVal + gearBaseVal;
+
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type === gear.atkTypeId
+                || b.type === gear.atkAmmoTypeId
+                || b.type === gear.unitType);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
+        result += gear.tuneAtk;
+        result += masterVal;
+        result += enigmaStatusVal;
+
         this.atkClose = result;
     }
     updateAttrClose(): void {
@@ -350,4 +380,5 @@ export class Character extends Unit {
 
         this.spd = valueSum + allBuffResultValue;
     }
+
 }

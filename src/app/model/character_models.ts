@@ -11,6 +11,7 @@ class HirasakaYotsuyu01 extends Character {
     levelMin: number = 1;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 896;
     hpMin: number = 371;
     hpMax: number = 896;
@@ -50,6 +51,7 @@ class HirasakaYotsuyu02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1463;
     hpMin: number = 525;
     hpMax: number = 1463;
@@ -89,6 +91,7 @@ class HirasakaYotsuyu04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -128,6 +131,7 @@ class HirasakaYotsuyu05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -167,6 +171,7 @@ class HirasakaYotsuyu70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -206,6 +211,7 @@ class HirasakaYotsuyu80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -245,6 +251,7 @@ class KaneshiyaSitara01 extends Character {
     levelMin: number = 1;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -284,6 +291,7 @@ class KaneshiyaSitara02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -323,6 +331,7 @@ class KaneshiyaSitara04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -362,6 +371,7 @@ class KaneshiyaSitara05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -401,6 +411,7 @@ class KaneshiyaSitara70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -439,6 +450,7 @@ class MomoshinaFumika01 extends Character {
     levelMin: number = 1;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -477,6 +489,7 @@ class MomoshinaFumika02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -515,6 +528,7 @@ class MomoshinaFumika04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -553,6 +567,7 @@ class MomoshinaFumika05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -591,6 +606,7 @@ class MomoshinaFumika70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -630,6 +646,7 @@ class AgatsumaKaede01 extends Character {
     levelMin: number = 13;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -668,6 +685,7 @@ class AgatsumaKaede02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -706,6 +724,7 @@ class AgatsumaKaede04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -744,6 +763,7 @@ class AgatsumaKaede05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -782,6 +802,7 @@ class AgatsumaKaede70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -821,6 +842,7 @@ class AgatsumaKaede80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -859,6 +881,7 @@ class HimukaiRin01 extends Character {
     levelMin: number = 12;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 914;
     hpMin: number = 378;
     hpMax: number = 914;
@@ -897,6 +920,7 @@ class HimukaiRin02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1491;
     hpMin: number = 536;
     hpMax: number = 1491;
@@ -935,6 +959,7 @@ class HimukaiRin04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2636;
     hpMin: number = 725;
     hpMax: number = 2636;
@@ -973,6 +998,7 @@ class HimukaiRin05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -1011,6 +1037,7 @@ class HimukaiRin70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -1050,6 +1077,7 @@ class HimukaiRin80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -1089,6 +1117,7 @@ class TakanashiRei01 extends Character {
     levelMin: number = 11;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -1128,6 +1157,7 @@ class TakanashiRei02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -1167,6 +1197,7 @@ class TakanashiRei04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -1206,6 +1237,7 @@ class TakanashiRei05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1245,6 +1277,7 @@ class TakanashiRei70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1283,6 +1316,7 @@ class TakanashiRei80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1322,6 +1356,7 @@ class IchijoAyaka01 extends Character {
     levelMin: number = 7;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -1360,6 +1395,7 @@ class IchijoAyaka02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -1398,6 +1434,7 @@ class IchijoAyaka04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -1436,6 +1473,7 @@ class IchijoAyaka05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1474,6 +1512,7 @@ class IchijoAyaka70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1513,6 +1552,7 @@ class IchijoAyaka80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -1552,6 +1592,7 @@ class AikawaAika01 extends Character {
     levelMin: number = 7;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -1591,6 +1632,7 @@ class AikawaAika02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -1630,6 +1672,7 @@ class AikawaAika04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -1669,6 +1712,7 @@ class AikawaAika05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -1708,6 +1752,7 @@ class AikawaAika70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -1746,6 +1791,7 @@ class KoashiMutsumi01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 835;
     hpMin: number = 346;
     hpMax: number = 835;
@@ -1784,6 +1830,7 @@ class KoashiMutsumi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1363;
     hpMin: number = 490;
     hpMax: number = 1363;
@@ -1822,6 +1869,7 @@ class KoashiMutsumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2410;
     hpMin: number = 662;
     hpMax: number = 2410;
@@ -1860,6 +1908,7 @@ class KoashiMutsumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -1898,6 +1947,7 @@ class KoashiMutsumi70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -1937,6 +1987,7 @@ class NikotamaMai01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -1975,6 +2026,7 @@ class NikotamaMai02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -2013,6 +2065,7 @@ class NikotamaMai04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -2051,6 +2104,7 @@ class NikotamaMai05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -2089,6 +2143,7 @@ class NikotamaMai70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -2128,6 +2183,7 @@ class NikotamaMai80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -2167,6 +2223,7 @@ class VirginiaGlynnberets01 extends Character {
     levelMin: number = 14;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -2205,6 +2262,7 @@ class VirginiaGlynnberets02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -2243,6 +2301,7 @@ class VirginiaGlynnberets04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -2281,6 +2340,7 @@ class VirginiaGlynnberets05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -2319,6 +2379,7 @@ class VirginiaGlynnberets70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -2358,6 +2419,7 @@ class VirginiaGlynnberets80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -2397,6 +2459,7 @@ class FatimaBetrorum01 extends Character {
     levelMin: number = 3;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -2436,6 +2499,7 @@ class FatimaBetrorum02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -2475,6 +2539,7 @@ class FatimaBetrorum04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -2514,6 +2579,7 @@ class FatimaBetrorum05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -2553,6 +2619,7 @@ class FatimaBetrorum70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -2591,6 +2658,7 @@ class YotsuyaYumi01 extends Character {
     levelMin: number = 9;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 835;
     hpMin: number = 346;
     hpMax: number = 835;
@@ -2630,6 +2698,7 @@ class YotsuyaYumi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1363;
     hpMin: number = 490;
     hpMax: number = 1363;
@@ -2669,6 +2738,7 @@ class YotsuyaYumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2410;
     hpMin: number = 662;
     hpMax: number = 2410;
@@ -2708,6 +2778,7 @@ class YotsuyaYumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -2747,6 +2818,7 @@ class YotsuyaYumi70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -2785,6 +2857,7 @@ class FujinoYayoi01 extends Character {
     levelMin: number = 8;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 896;
     hpMin: number = 371;
     hpMax: number = 896;
@@ -2824,6 +2897,7 @@ class FujinoYayoi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1463;
     hpMin: number = 525;
     hpMax: number = 1463;
@@ -2863,6 +2937,7 @@ class FujinoYayoi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -2902,6 +2977,7 @@ class FujinoYayoi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -2941,6 +3017,7 @@ class FujinoYayoi70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -2979,6 +3056,7 @@ class FujinoYayoi80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -3018,6 +3096,7 @@ class ShimoochiaiToka01 extends Character {
     levelMin: number = 7;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 914;
     hpMin: number = 378;
     hpMax: number = 914;
@@ -3057,6 +3136,7 @@ class ShimoochiaiToka02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1491;
     hpMin: number = 536;
     hpMax: number = 1491;
@@ -3096,6 +3176,7 @@ class ShimoochiaiToka04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2636;
     hpMin: number = 725;
     hpMax: number = 2636;
@@ -3135,6 +3216,7 @@ class ShimoochiaiToka05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -3174,6 +3256,7 @@ class ShimoochiaiToka70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -3212,6 +3295,7 @@ class ShimoochiaiToka80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -3251,6 +3335,7 @@ class ShirleyOakley01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -3289,6 +3374,7 @@ class ShirleyOakley02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -3327,6 +3413,7 @@ class ShirleyOakley04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -3365,6 +3452,7 @@ class ShirleyOakley05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -3403,6 +3491,7 @@ class ShirleyOakley70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -3442,6 +3531,7 @@ class ItokuraNeo01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -3481,6 +3571,7 @@ class ItokuraNeo02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -3520,6 +3611,7 @@ class ItokuraNeo04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -3559,6 +3651,7 @@ class ItokuraNeo05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -3598,6 +3691,7 @@ class ItokuraNeo70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -3637,6 +3731,7 @@ class YorishiroEri01 extends Character {
     levelMin: number = 7;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 896;
     hpMin: number = 371;
     hpMax: number = 896;
@@ -3676,6 +3771,7 @@ class YorishiroEri02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1463;
     hpMin: number = 525;
     hpMax: number = 1463;
@@ -3715,6 +3811,7 @@ class YorishiroEri04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -3754,6 +3851,7 @@ class YorishiroEri05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -3793,6 +3891,7 @@ class YorishiroEri70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -3832,6 +3931,7 @@ class FumishimaAsuka01 extends Character {
     levelMin: number = 3;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -3871,6 +3971,7 @@ class FumishimaAsuka02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -3910,6 +4011,7 @@ class FumishimaAsuka04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -3949,6 +4051,7 @@ class FumishimaAsuka05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -3988,6 +4091,7 @@ class FumishimaAsuka70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -4026,6 +4130,7 @@ class OhzekiKoyui01 extends Character {
     levelMin: number = 9;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 905;
     hpMin: number = 374;
     hpMax: number = 905;
@@ -4064,6 +4169,7 @@ class OhzekiKoyui02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1477;
     hpMin: number = 530;
     hpMax: number = 1477;
@@ -4102,6 +4208,7 @@ class OhzekiKoyui04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2610;
     hpMin: number = 718;
     hpMax: number = 2610;
@@ -4140,6 +4247,7 @@ class OhzekiKoyui05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3370;
     hpMin: number = 905;
     hpMax: number = 3370;
@@ -4178,6 +4286,7 @@ class OhzekiKoyui70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3370;
     hpMin: number = 905;
     hpMax: number = 3370;
@@ -4217,6 +4326,7 @@ class UsamotoAnna01 extends Character {
     levelMin: number = 12;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -4256,6 +4366,7 @@ class UsamotoAnna02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -4295,6 +4406,7 @@ class UsamotoAnna04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -4334,6 +4446,7 @@ class UsamotoAnna05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -4373,6 +4486,7 @@ class UsamotoAnna70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -4412,6 +4526,7 @@ class JingujiMari01 extends Character {
     levelMin: number = 12;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -4450,6 +4565,7 @@ class JingujiMari02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -4488,6 +4604,7 @@ class JingujiMari04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -4526,6 +4643,7 @@ class JingujiMari05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -4564,6 +4682,7 @@ class JingujiMari70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -4603,6 +4722,7 @@ class NiiyaSerina01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 853;
     hpMin: number = 353;
     hpMax: number = 853;
@@ -4641,6 +4761,7 @@ class NiiyaSerina02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1392;
     hpMin: number = 500;
     hpMax: number = 1392;
@@ -4679,6 +4800,7 @@ class NiiyaSerina04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2460;
     hpMin: number = 676;
     hpMax: number = 2460;
@@ -4717,6 +4839,7 @@ class NiiyaSerina05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -4755,6 +4878,7 @@ class NiiyaSerina70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -4794,6 +4918,7 @@ class KaeruzakaRaiya01 extends Character {
     levelMin: number = 8;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 844;
     hpMin: number = 349;
     hpMax: number = 844;
@@ -4832,6 +4957,7 @@ class KaeruzakaRaiya02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1377;
     hpMin: number = 495;
     hpMax: number = 1377;
@@ -4870,6 +4996,7 @@ class KaeruzakaRaiya04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2435;
     hpMin: number = 669;
     hpMax: number = 2435;
@@ -4908,6 +5035,7 @@ class KaeruzakaRaiya05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3143;
     hpMin: number = 844;
     hpMax: number = 3143;
@@ -4946,6 +5074,7 @@ class KaeruzakaRaiya70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3143;
     hpMin: number = 844;
     hpMax: number = 3143;
@@ -4985,6 +5114,7 @@ class KaeruzakaRaiya80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3143;
     hpMin: number = 844;
     hpMax: number = 3143;
@@ -5024,6 +5154,7 @@ class KagomeMisaki01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 835;
     hpMin: number = 346;
     hpMax: number = 835;
@@ -5063,6 +5194,7 @@ class KagomeMisaki02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1363;
     hpMin: number = 490;
     hpMax: number = 1363;
@@ -5102,6 +5234,7 @@ class KagomeMisaki04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2410;
     hpMin: number = 662;
     hpMax: number = 2410;
@@ -5141,6 +5274,7 @@ class KagomeMisaki05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -5180,6 +5314,7 @@ class KagomeMisaki70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3110;
     hpMin: number = 835;
     hpMax: number = 3110;
@@ -5219,6 +5354,7 @@ class KondohChieri01 extends Character {
     levelMin: number = 13;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -5258,6 +5394,7 @@ class KondohChieri02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -5297,6 +5434,7 @@ class KondohChieri04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -5336,6 +5474,7 @@ class KondohChieri05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -5375,6 +5514,7 @@ class KondohChieri70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -5414,6 +5554,7 @@ class SutegoroShiina01 extends Character {
     levelMin: number = 12;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -5452,6 +5593,7 @@ class SutegoroShiina02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -5490,6 +5632,7 @@ class SutegoroShiina04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -5528,6 +5671,7 @@ class SutegoroShiina05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5566,6 +5710,7 @@ class SutegoroShiina70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5605,6 +5750,7 @@ class SutegoroShiina80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5644,6 +5790,7 @@ class NikitohKanade01 extends Character {
     levelMin: number = 11;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -5683,6 +5830,7 @@ class NikitohKanade02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -5722,6 +5870,7 @@ class NikitohKanade04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -5761,6 +5910,7 @@ class NikitohKanade05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5800,6 +5950,7 @@ class NikitohKanade70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5839,6 +5990,7 @@ class NikitohKanade80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -5877,6 +6029,7 @@ class MuraoMira01 extends Character {
     levelMin: number = 10;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 922;
     hpMin: number = 382;
     hpMax: number = 922;
@@ -5916,6 +6069,7 @@ class MuraoMira02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1505;
     hpMin: number = 541;
     hpMax: number = 1505;
@@ -5955,6 +6109,7 @@ class MuraoMira04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2661;
     hpMin: number = 731;
     hpMax: number = 2661;
@@ -5994,6 +6149,7 @@ class MuraoMira05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3434;
     hpMin: number = 922;
     hpMax: number = 3434;
@@ -6033,6 +6189,7 @@ class MuraoMira70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3434;
     hpMin: number = 922;
     hpMax: number = 3434;
@@ -6071,6 +6228,7 @@ class KimikageYui01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 853;
     hpMin: number = 353;
     hpMax: number = 853;
@@ -6110,6 +6268,7 @@ class KimikageYui02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1392;
     hpMin: number = 500;
     hpMax: number = 1392;
@@ -6149,6 +6308,7 @@ class KimikageYui04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2460;
     hpMin: number = 676;
     hpMax: number = 2460;
@@ -6188,6 +6348,7 @@ class KimikageYui05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -6227,6 +6388,7 @@ class KimikageYui70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -6266,6 +6428,7 @@ class SugaItsuri01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -6304,6 +6467,7 @@ class SugaItsuri02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -6342,6 +6506,7 @@ class SugaItsuri04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -6380,6 +6545,7 @@ class SugaItsuri05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -6418,6 +6584,7 @@ class SugaItsuri70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -6457,6 +6624,7 @@ class YorozubaMeika01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -6496,6 +6664,7 @@ class YorozubaMeika02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -6535,6 +6704,7 @@ class YorozubaMeika04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -6574,6 +6744,7 @@ class YorozubaMeika05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -6613,6 +6784,7 @@ class YorozubaMeika70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -6652,6 +6824,7 @@ class KuroganeYuto01 extends Character {
     levelMin: number = 8;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -6690,6 +6863,7 @@ class KuroganeYuto02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -6728,6 +6902,7 @@ class KuroganeYuto04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -6766,6 +6941,7 @@ class KuroganeYuto05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -6804,6 +6980,7 @@ class KuroganeYuto70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -6843,6 +7020,7 @@ class KotomuraAkane01 extends Character {
     levelMin: number = 8;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -6882,6 +7060,7 @@ class KotomuraAkane02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -6921,6 +7100,7 @@ class KotomuraAkane04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -6960,6 +7140,7 @@ class KotomuraAkane05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -6999,6 +7180,7 @@ class KotomuraAkane70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -7038,6 +7220,7 @@ class KotomuraAkane80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -7076,6 +7259,7 @@ class KotomuraAmane01 extends Character {
     levelMin: number = 8;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -7115,6 +7299,7 @@ class KotomuraAmane02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -7154,6 +7339,7 @@ class KotomuraAmane04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -7193,6 +7379,7 @@ class KotomuraAmane05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -7232,6 +7419,7 @@ class KotomuraAmane70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -7271,6 +7459,7 @@ class KotomuraAmane80 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -7309,6 +7498,7 @@ class ShantiRana01 extends Character {
     levelMin: number = 13;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -7348,6 +7538,7 @@ class ShantiRana02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -7387,6 +7578,7 @@ class ShantiRana04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -7426,6 +7618,7 @@ class ShantiRana05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -7465,6 +7658,7 @@ class ShantiRana70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -7504,6 +7698,7 @@ class NinaKalinina01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -7543,6 +7738,7 @@ class NinaKalinina02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -7582,6 +7778,7 @@ class NinaKalinina04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -7621,6 +7818,7 @@ class NinaKalinina05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -7660,6 +7858,7 @@ class NinaKalinina70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -7699,6 +7898,7 @@ class WangHonghua01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 827;
     hpMin: number = 342;
     hpMax: number = 827;
@@ -7737,6 +7937,7 @@ class WangHonghua02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1349;
     hpMin: number = 485;
     hpMax: number = 1349;
@@ -7775,6 +7976,7 @@ class WangHonghua04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2385;
     hpMin: number = 656;
     hpMax: number = 2385;
@@ -7813,6 +8015,7 @@ class WangHonghua05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3078;
     hpMin: number = 827;
     hpMax: number = 3078;
@@ -7851,6 +8054,7 @@ class WangHonghua70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3078;
     hpMin: number = 827;
     hpMax: number = 3078;
@@ -7890,6 +8094,7 @@ class MiaVoisin01 extends Character {
     levelMin: number = 11;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 853;
     hpMin: number = 353;
     hpMax: number = 853;
@@ -7929,6 +8134,7 @@ class MiaVoisin02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1392;
     hpMin: number = 500;
     hpMax: number = 1392;
@@ -7968,6 +8174,7 @@ class MiaVoisin04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2460;
     hpMin: number = 676;
     hpMax: number = 2460;
@@ -8007,6 +8214,7 @@ class MiaVoisin05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -8046,6 +8254,7 @@ class MiaVoisin70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -8085,6 +8294,7 @@ class ChishimaMiyuki01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -8124,6 +8334,7 @@ class ChishimaMiyuki02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -8163,6 +8374,7 @@ class ChishimaMiyuki04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -8202,6 +8414,7 @@ class ChishimaMiyuki05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -8241,6 +8454,7 @@ class ChishimaMiyuki70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -8279,6 +8493,7 @@ class ShinonomeChie01 extends Character {
     levelMin: number = 15;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -8317,6 +8532,7 @@ class ShinonomeChie02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -8355,6 +8571,7 @@ class ShinonomeChie04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -8393,6 +8610,7 @@ class ShinonomeChie05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -8431,6 +8649,7 @@ class ShinonomeChie70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -8470,6 +8689,7 @@ class MikurazaAzuki01 extends Character {
     levelMin: number = 5;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -8509,6 +8729,7 @@ class MikurazaAzuki02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -8548,6 +8769,7 @@ class MikurazaAzuki04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -8587,6 +8809,7 @@ class MikurazaAzuki05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -8626,6 +8849,7 @@ class MikurazaAzuki70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -8664,6 +8888,7 @@ class YamanoKaoruko01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -8703,6 +8928,7 @@ class YamanoKaoruko02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -8742,6 +8968,7 @@ class YamanoKaoruko04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -8781,6 +9008,7 @@ class YamanoKaoruko05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -8820,6 +9048,7 @@ class YamanoKaoruko70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -8859,6 +9088,7 @@ class NikaidohTsukasa01 extends Character {
     levelMin: number = 4;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -8897,6 +9127,7 @@ class NikaidohTsukasa02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -8935,6 +9166,7 @@ class NikaidohTsukasa04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -8973,6 +9205,7 @@ class NikaidohTsukasa05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -9011,6 +9244,7 @@ class NikaidohTsukasa70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -9050,6 +9284,7 @@ class OchanomizuMirie01 extends Character {
     levelMin: number = 4;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 853;
     hpMin: number = 353;
     hpMax: number = 853;
@@ -9089,6 +9324,7 @@ class OchanomizuMirie02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1392;
     hpMin: number = 500;
     hpMax: number = 1392;
@@ -9128,6 +9364,7 @@ class OchanomizuMirie04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2460;
     hpMin: number = 676;
     hpMax: number = 2460;
@@ -9167,6 +9404,7 @@ class OchanomizuMirie05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -9206,6 +9444,7 @@ class OchanomizuMirie70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3175;
     hpMin: number = 853;
     hpMax: number = 3175;
@@ -9244,6 +9483,7 @@ class MerabuchiKanami01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -9282,6 +9522,7 @@ class MerabuchiKanami02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -9320,6 +9561,7 @@ class MerabuchiKanami04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -9358,6 +9600,7 @@ class MerabuchiKanami05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -9396,6 +9639,7 @@ class MerabuchiKanami70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -9435,6 +9679,7 @@ class KomazoiEden01 extends Character {
     levelMin: number = 3;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -9474,6 +9719,7 @@ class KomazoiEden02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -9513,6 +9759,7 @@ class KomazoiEden04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -9552,6 +9799,7 @@ class KomazoiEden05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -9591,6 +9839,7 @@ class RitaHenschel01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -9629,6 +9878,7 @@ class RitaHenschel02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -9667,6 +9917,7 @@ class RitaHenschel04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -9705,6 +9956,7 @@ class RitaHenschel05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -9743,6 +9995,7 @@ class RitaHenschel70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -9782,6 +10035,7 @@ class OnagaAkino01 extends Character {
     levelMin: number = 12;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -9821,6 +10075,7 @@ class OnagaAkino02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -9860,6 +10115,7 @@ class OnagaAkino04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -9899,6 +10155,7 @@ class OnagaAkino05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -9938,6 +10195,7 @@ class TatsumiRyuko01 extends Character {
     levelMin: number = 14;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -9976,6 +10234,7 @@ class TatsumiRyuko02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -10014,6 +10273,7 @@ class TatsumiRyuko04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -10052,6 +10312,7 @@ class TatsumiRyuko05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -10090,6 +10351,7 @@ class OhtoriKasumi01 extends Character {
     levelMin: number = 15;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -10129,6 +10391,7 @@ class OhtoriKasumi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -10168,6 +10431,7 @@ class OhtoriKasumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -10207,6 +10471,7 @@ class OhtoriKasumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -10246,6 +10511,7 @@ class KanagataSugumi01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -10285,6 +10551,7 @@ class KanagataSugumi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -10324,6 +10591,7 @@ class KanagataSugumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -10363,6 +10631,7 @@ class KanagataSugumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -10402,6 +10671,7 @@ class KanagataSugumi70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -10440,6 +10710,7 @@ class AraimeYasuri01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -10478,6 +10749,7 @@ class AraimeYasuri02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -10516,6 +10788,7 @@ class AraimeYasuri04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -10554,6 +10827,7 @@ class AraimeYasuri05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -10592,6 +10866,7 @@ class AraimeYasuri70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -10631,6 +10906,7 @@ class MatobaAoi01 extends Character {
     levelMin: number = 5;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -10669,6 +10945,7 @@ class MatobaAoi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -10707,6 +10984,7 @@ class MatobaAoi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -10745,6 +11023,7 @@ class MatobaAoi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -10783,6 +11062,7 @@ class MatobaAoi70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -10822,6 +11102,7 @@ class ArugaNana01 extends Character {
     levelMin: number = 4;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 896;
     hpMin: number = 371;
     hpMax: number = 896;
@@ -10861,6 +11142,7 @@ class ArugaNana02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1463;
     hpMin: number = 525;
     hpMax: number = 1463;
@@ -10900,6 +11182,7 @@ class ArugaNana04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -10939,6 +11222,7 @@ class ArugaNana05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -10978,6 +11262,7 @@ class MiyaminamiHikari01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 879;
     hpMin: number = 364;
     hpMax: number = 879;
@@ -11017,6 +11302,7 @@ class MiyaminamiHikari02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1434;
     hpMin: number = 515;
     hpMax: number = 1434;
@@ -11056,6 +11342,7 @@ class MiyaminamiHikari04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -11095,6 +11382,7 @@ class MiyaminamiHikari05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -11134,6 +11422,7 @@ class MiyaminamiHikari70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -11172,6 +11461,7 @@ class GaryuEmi01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 870;
     hpMin: number = 360;
     hpMax: number = 870;
@@ -11211,6 +11501,7 @@ class GaryuEmi02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1420;
     hpMin: number = 510;
     hpMax: number = 1420;
@@ -11250,6 +11541,7 @@ class GaryuEmi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -11289,6 +11581,7 @@ class GaryuEmi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -11328,6 +11621,7 @@ class TenkoSora01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -11366,6 +11660,7 @@ class TenkoSora02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -11404,6 +11699,7 @@ class TenkoSora04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -11442,6 +11738,7 @@ class TenkoSora05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -11480,6 +11777,7 @@ class TenkoSora70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -11519,6 +11817,7 @@ class HasamiRika01 extends Character {
     levelMin: number = 6;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -11558,6 +11857,7 @@ class HasamiRika02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -11597,6 +11897,7 @@ class HasamiRika04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -11636,6 +11937,7 @@ class HasamiRika05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -11675,6 +11977,7 @@ class KasugaokaMoe01 extends Character {
     levelMin: number = 2;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 887;
     hpMin: number = 367;
     hpMax: number = 887;
@@ -11714,6 +12017,7 @@ class KasugaokaMoe02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1448;
     hpMin: number = 520;
     hpMax: number = 1448;
@@ -11753,6 +12057,7 @@ class KasugaokaMoe04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -11792,6 +12097,7 @@ class KasugaokaMoe05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -11831,6 +12137,7 @@ class AdelaideBluthausen01 extends Character {
     levelMin: number = 13;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 861;
     hpMin: number = 356;
     hpMax: number = 861;
@@ -11870,6 +12177,7 @@ class AdelaideBluthausen02 extends Character {
     levelMin: number = 1;
     levelMax: number = 30;
     gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
     hp: number = 1406;
     hpMin: number = 505;
     hpMax: number = 1406;
@@ -11909,6 +12217,7 @@ class AdelaideBluthausen04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -11948,6 +12257,7 @@ class AdelaideBluthausen05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -11987,6 +12297,7 @@ class TakahataNodoka01 extends Character {
     levelMin: number = 1;
     levelMax: number = 15;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 896;
     hpMin: number = 371;
     hpMax: number = 896;
@@ -12025,6 +12336,7 @@ class TakahataNodoka04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -12063,6 +12375,7 @@ class TakahataNodoka05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -12101,6 +12414,7 @@ class TakahataNodoka70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -12140,6 +12454,7 @@ class Gourai04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2610;
     hpMin: number = 718;
     hpMax: number = 2610;
@@ -12178,6 +12493,7 @@ class Gourai05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3370;
     hpMin: number = 905;
     hpMax: number = 3370;
@@ -12216,6 +12532,7 @@ class Stylet04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -12254,6 +12571,7 @@ class Stylet05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -12292,6 +12610,7 @@ class Baselard04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -12331,6 +12650,7 @@ class Baselard05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -12370,6 +12690,7 @@ class Hresvelgr04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -12409,6 +12730,7 @@ class Hresvelgr05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -12448,6 +12770,7 @@ class GennaiAo04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2636;
     hpMin: number = 725;
     hpMax: number = 2636;
@@ -12487,6 +12810,7 @@ class GennaiAo05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -12526,6 +12850,7 @@ class KotobukiBukiko04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -12565,6 +12890,7 @@ class KotobukiBukiko05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -12604,6 +12930,7 @@ class SolRaptor04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -12642,6 +12969,7 @@ class SolRaptor05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -12680,6 +13008,7 @@ class SolRaptor70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -12719,6 +13048,7 @@ class MiyafujiYoshika04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2636;
     hpMin: number = 725;
     hpMax: number = 2636;
@@ -12758,6 +13088,7 @@ class MiyafujiYoshika05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -12797,6 +13128,7 @@ class SakamotoMio04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -12836,6 +13168,7 @@ class SakamotoMio05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -12875,6 +13208,7 @@ class LynetteBishop04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -12914,6 +13248,7 @@ class LynetteBishop05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -12953,6 +13288,7 @@ class PerrineHClostermann04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2585;
     hpMin: number = 711;
     hpMax: number = 2585;
@@ -12992,6 +13328,7 @@ class PerrineHClostermann05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
@@ -13031,6 +13368,7 @@ class GertrudBarkhorn04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -13069,6 +13407,7 @@ class GertrudBarkhorn05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -13107,6 +13446,7 @@ class EricaHartmann04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -13146,6 +13486,7 @@ class EricaHartmann05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -13185,6 +13526,7 @@ class FrancescaLucchini04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -13223,6 +13565,7 @@ class FrancescaLucchini05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -13261,6 +13604,7 @@ class CharlotteEYeager04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -13300,6 +13644,7 @@ class CharlotteEYeager05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -13339,6 +13684,7 @@ class HoshitsukiMiki04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -13377,6 +13723,7 @@ class HoshitsukiMiki05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -13415,6 +13762,7 @@ class TokiwaKurumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -13453,6 +13801,7 @@ class TokiwaKurumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -13491,6 +13840,7 @@ class TsubuzakiAnko04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -13530,6 +13880,7 @@ class TsubuzakiAnko05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -13569,6 +13920,7 @@ class KusunokiAsuha04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -13608,6 +13960,7 @@ class KusunokiAsuha05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -13647,6 +14000,7 @@ class WatagiMichelle04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -13686,6 +14040,7 @@ class WatagiMichelle05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -13725,6 +14080,7 @@ class Sadone04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -13764,6 +14120,7 @@ class Sadone05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -13803,6 +14160,7 @@ class KougamiKanon04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -13842,6 +14200,7 @@ class KougamiKanon05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -13881,6 +14240,7 @@ class KuniedaShiho04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -13920,6 +14280,7 @@ class KuniedaShiho05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -13959,6 +14320,7 @@ class Kasumi04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -13997,6 +14359,7 @@ class Kasumi05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14035,6 +14398,7 @@ class MarieRose04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -14073,6 +14437,7 @@ class MarieRose05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -14111,6 +14476,7 @@ class Nyotengu04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -14150,6 +14516,7 @@ class Nyotengu05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -14189,6 +14556,7 @@ class SylphyII04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -14227,6 +14595,7 @@ class SylphyII05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14265,6 +14634,7 @@ class SylphyII70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14304,6 +14674,7 @@ class Aya04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -14343,6 +14714,7 @@ class Aya05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -14382,6 +14754,7 @@ class Yuki04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -14420,6 +14793,7 @@ class Yuki05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -14458,6 +14832,7 @@ class Yamada04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2610;
     hpMin: number = 718;
     hpMax: number = 2610;
@@ -14497,6 +14872,7 @@ class Yamada05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3370;
     hpMin: number = 905;
     hpMax: number = 3370;
@@ -14536,6 +14912,7 @@ class AIT04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -14575,6 +14952,7 @@ class AIT05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14614,6 +14992,7 @@ class AIT70 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14653,6 +15032,7 @@ class IvryHadd04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -14692,6 +15072,7 @@ class IvryHadd05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -14731,6 +15112,7 @@ class MakiseKurisu04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2485;
     hpMin: number = 683;
     hpMax: number = 2485;
@@ -14770,6 +15152,7 @@ class MakiseKurisu05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3208;
     hpMin: number = 861;
     hpMax: number = 3208;
@@ -14809,6 +15192,7 @@ class AmaneSuzuha04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -14847,6 +15231,7 @@ class AmaneSuzuha05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -14885,6 +15270,7 @@ class TanyaDegurechaff04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2510;
     hpMin: number = 690;
     hpMax: number = 2510;
@@ -14924,6 +15310,7 @@ class TanyaDegurechaff05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3240;
     hpMin: number = 870;
     hpMax: number = 3240;
@@ -14963,6 +15350,7 @@ class ViktoriyaIvanovnaSerebryakov04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2636;
     hpMin: number = 725;
     hpMax: number = 2636;
@@ -15001,6 +15389,7 @@ class ViktoriyaIvanovnaSerebryakov05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3402;
     hpMin: number = 914;
     hpMax: number = 3402;
@@ -15039,6 +15428,7 @@ class Kei04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2535;
     hpMin: number = 697;
     hpMax: number = 2535;
@@ -15078,6 +15468,7 @@ class Kei05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3272;
     hpMin: number = 879;
     hpMax: number = 3272;
@@ -15117,6 +15508,7 @@ class Yuri04 extends Character {
     levelMin: number = 1;
     levelMax: number = 60;
     gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
     hp: number = 2560;
     hpMin: number = 704;
     hpMax: number = 2560;
@@ -15156,6 +15548,7 @@ class Yuri05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3305;
     hpMin: number = 887;
     hpMax: number = 3305;
@@ -15195,6 +15588,7 @@ class ACTRESS05 extends Character {
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
     hp: number = 3337;
     hpMin: number = 896;
     hpMax: number = 3337;
