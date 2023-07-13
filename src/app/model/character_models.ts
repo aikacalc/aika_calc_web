@@ -11255,6 +11255,46 @@ class ArugaNana05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
 }
 
+class ArugaNana70 extends Character {
+    name: string = '在賀 奈々 / 星詠 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 517;
+    atkCloseMin: number = 144;
+    atkCloseMax: number = 517;
+    attrClose: number = 0;
+    atkShot: number = 543;
+    atkShotMin: number = 151;
+    atkShotMax: number = 543;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 158;
+    spdMin: number = 158;
+    spdMax: number = 158;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
 class MiyaminamiHikari01 extends Character {
     name: string = '宮南 ひかり ★1';
     rare: number = 1;
@@ -16010,6 +16050,7 @@ export const CharacterModels = {
     ArugaNana02: new ArugaNana02(),
     ArugaNana04: new ArugaNana04(),
     ArugaNana05: new ArugaNana05(),
+    ArugaNana70: new ArugaNana70(),
     MiyaminamiHikari01: new MiyaminamiHikari01(),
     MiyaminamiHikari02: new MiyaminamiHikari02(),
     MiyaminamiHikari04: new MiyaminamiHikari04(),
