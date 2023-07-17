@@ -169,6 +169,39 @@
                                 </div>
                             </td>
                         </tr>
+
+                        <tr class="close-atk" *ngIf="!hideChrRawVal">
+                            <td class="name">SP ATK</td>
+                            <td colspan="2">
+                                <div class="warpper">
+                                    <select [(ngModel)]="character.spRangeTypeId"
+                                        (ngModelChange)="character.updateStatus()">
+                                        <option *ngFor="let attrType of attrTypeSpRangeTypeList" [attr.value]="attrType.id"
+                                            [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                            {{attrType.name}}
+                                        </option>
+                                    </select>
+                                    <select [(ngModel)]="character.spHitTypeId"
+                                        (ngModelChange)="character.updateStatus()">
+                                        <option *ngFor="let attrType of attrTypeSpHitTypeList"
+                                            [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                            {{attrType.name}}
+                                        </option>
+                                    </select>
+                                    <span>{{character.atkSp}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="close-attr" *ngIf="!hideChrRawVal">
+                            <td class="name">屬性值</td>
+                            <td colspan="2">
+                                <div class="warpper" [ngStyle]="{color:getTypeColor(character.chrAttrTypeId)}">
+                                    <span>{{idToAttrType(character.chrAttrTypeId).name}} / {{character.attrSp}}</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        
                         <tr class="close-attr">
                             <td class="name">DEF</td>
                             <!-- <td class="enigma">
@@ -526,49 +559,6 @@
                         </ng-container>
                         <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.equipmentBottom}">
                         </ng-container>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="block sp" *ngIf="!hideChrRawVal">
-            <div class="row sp">
-                <table class="sp">
-                    <tbody>
-                        <tr>
-                            <td class="title-cell" colspan="2">
-                                <span>SP</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="name">ATK</td>
-                            <td>
-                                <div class="wrapper-row">
-                                    <select [(ngModel)]="character.spRangeTypeId"
-                                        (ngModelChange)="character.updateStatus()">
-                                        <option *ngFor="let attrType of attrTypeSpRangeTypeList" [attr.value]="attrType.id"
-                                            [ngStyle]="{color:getTypeColor(attrType.id)}">
-                                            {{attrType.name}}
-                                        </option>
-                                    </select>
-                                    <select [(ngModel)]="character.spHitTypeId"
-                                        (ngModelChange)="character.updateStatus()">
-                                        <option *ngFor="let attrType of attrTypeSpHitTypeList"
-                                            [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
-                                            {{attrType.name}}
-                                        </option>
-                                    </select>
-                                    <span>{{character.atkSp}}</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="attr">
-                            <td class="name">屬性值</td>
-                            <td>
-                                <div class="wrapper-row" [ngStyle]="{color:getTypeColor(character.chrAttrTypeId)}">
-                                    <span>{{idToAttrType(character.chrAttrTypeId).name}} / {{character.attrSp}}</span>
-                                </div>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
