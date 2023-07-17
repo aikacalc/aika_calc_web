@@ -29,6 +29,13 @@ class HirasakaYotsuyu01 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -69,6 +76,13 @@ class HirasakaYotsuyu02 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -109,6 +123,13 @@ class HirasakaYotsuyu04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -149,6 +170,13 @@ class HirasakaYotsuyu05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -189,6 +217,13 @@ class HirasakaYotsuyu70 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -229,6 +264,13 @@ class HirasakaYotsuyu80 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -269,6 +311,13 @@ class KaneshiyaSitara01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -309,6 +358,13 @@ class KaneshiyaSitara02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -349,6 +405,13 @@ class KaneshiyaSitara04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -389,6 +452,13 @@ class KaneshiyaSitara05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -429,6 +499,13 @@ class KaneshiyaSitara70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -468,6 +545,13 @@ class MomoshinaFumika01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -507,6 +591,13 @@ class MomoshinaFumika02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -546,6 +637,13 @@ class MomoshinaFumika04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -585,6 +683,13 @@ class MomoshinaFumika05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -624,6 +729,13 @@ class MomoshinaFumika70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -664,6 +776,13 @@ class AgatsumaKaede01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -703,6 +822,13 @@ class AgatsumaKaede02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -742,6 +868,13 @@ class AgatsumaKaede04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -781,6 +914,13 @@ class AgatsumaKaede05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -820,6 +960,13 @@ class AgatsumaKaede70 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -860,6 +1007,13 @@ class AgatsumaKaede80 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -899,6 +1053,13 @@ class HimukaiRin01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -938,6 +1099,13 @@ class HimukaiRin02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -977,6 +1145,13 @@ class HimukaiRin04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1016,6 +1191,13 @@ class HimukaiRin05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1055,6 +1237,13 @@ class HimukaiRin70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2.17;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -1095,6 +1284,13 @@ class HimukaiRin80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2.11;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -1135,6 +1331,13 @@ class TakanashiRei01 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -1175,6 +1378,13 @@ class TakanashiRei02 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -1215,6 +1425,13 @@ class TakanashiRei04 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -1255,6 +1472,13 @@ class TakanashiRei05 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -1295,6 +1519,13 @@ class TakanashiRei70 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1334,6 +1565,13 @@ class TakanashiRei80 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -1374,6 +1612,13 @@ class IchijoAyaka01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1413,6 +1658,13 @@ class IchijoAyaka02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1452,6 +1704,13 @@ class IchijoAyaka04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1491,6 +1750,13 @@ class IchijoAyaka05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -1530,6 +1796,13 @@ class IchijoAyaka70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -1570,6 +1843,13 @@ class IchijoAyaka80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -1610,6 +1890,13 @@ class AikawaAika01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -1650,6 +1937,13 @@ class AikawaAika02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -1690,6 +1984,13 @@ class AikawaAika04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -1730,6 +2031,13 @@ class AikawaAika05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -1770,6 +2078,13 @@ class AikawaAika70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -1809,6 +2124,13 @@ class KoashiMutsumi01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1848,6 +2170,13 @@ class KoashiMutsumi02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1887,6 +2216,13 @@ class KoashiMutsumi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1926,6 +2262,13 @@ class KoashiMutsumi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -1965,6 +2308,13 @@ class KoashiMutsumi70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -2005,6 +2355,13 @@ class NikotamaMai01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2044,6 +2401,13 @@ class NikotamaMai02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2083,6 +2447,13 @@ class NikotamaMai04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2122,6 +2493,13 @@ class NikotamaMai05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -2161,6 +2539,13 @@ class NikotamaMai70 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -2201,6 +2586,13 @@ class NikotamaMai80 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -2241,6 +2633,13 @@ class VirginiaGlynnberets01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2280,6 +2679,13 @@ class VirginiaGlynnberets02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2319,6 +2725,13 @@ class VirginiaGlynnberets04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2358,6 +2771,13 @@ class VirginiaGlynnberets05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2397,6 +2817,13 @@ class VirginiaGlynnberets70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2437,6 +2864,13 @@ class VirginiaGlynnberets80 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2477,6 +2911,13 @@ class FatimaBetrorum01 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2517,6 +2958,13 @@ class FatimaBetrorum02 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2557,6 +3005,13 @@ class FatimaBetrorum04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2597,6 +3052,13 @@ class FatimaBetrorum05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -2637,6 +3099,13 @@ class FatimaBetrorum70 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -2676,6 +3145,13 @@ class YotsuyaYumi01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -2716,6 +3192,13 @@ class YotsuyaYumi02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -2756,6 +3239,13 @@ class YotsuyaYumi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -2796,6 +3286,13 @@ class YotsuyaYumi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -2836,6 +3333,13 @@ class YotsuyaYumi70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -2875,6 +3379,13 @@ class FujinoYayoi01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -2915,6 +3426,13 @@ class FujinoYayoi02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -2955,6 +3473,13 @@ class FujinoYayoi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -2995,6 +3520,13 @@ class FujinoYayoi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -3035,6 +3567,13 @@ class FujinoYayoi70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -3074,6 +3613,13 @@ class FujinoYayoi80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -3114,6 +3660,13 @@ class ShimoochiaiToka01 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3154,6 +3707,13 @@ class ShimoochiaiToka02 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3194,6 +3754,13 @@ class ShimoochiaiToka04 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3234,6 +3801,13 @@ class ShimoochiaiToka05 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3274,6 +3848,13 @@ class ShimoochiaiToka70 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3313,6 +3894,13 @@ class ShimoochiaiToka80 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -3353,6 +3941,13 @@ class ShirleyOakley01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3392,6 +3987,13 @@ class ShirleyOakley02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3431,6 +4033,13 @@ class ShirleyOakley04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3470,6 +4079,13 @@ class ShirleyOakley05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -3509,6 +4125,13 @@ class ShirleyOakley70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3549,6 +4172,13 @@ class ItokuraNeo01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -3589,6 +4219,13 @@ class ItokuraNeo02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -3629,6 +4266,13 @@ class ItokuraNeo04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -3669,6 +4313,13 @@ class ItokuraNeo05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -3709,6 +4360,13 @@ class ItokuraNeo70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -3749,6 +4407,13 @@ class YorishiroEri01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -3789,6 +4454,13 @@ class YorishiroEri02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -3829,6 +4501,13 @@ class YorishiroEri04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -3869,6 +4548,13 @@ class YorishiroEri05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -3909,6 +4595,13 @@ class YorishiroEri70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -3949,6 +4642,13 @@ class FumishimaAsuka01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -3989,6 +4689,13 @@ class FumishimaAsuka02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -4029,6 +4736,13 @@ class FumishimaAsuka04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -4069,6 +4783,13 @@ class FumishimaAsuka05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -4109,6 +4830,13 @@ class FumishimaAsuka70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -4148,6 +4876,13 @@ class OhzekiKoyui01 extends Character {
     spd: number = 155;
     spdMin: number = 155;
     spdMax: number = 155;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4187,6 +4922,13 @@ class OhzekiKoyui02 extends Character {
     spd: number = 155;
     spdMin: number = 155;
     spdMax: number = 155;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4226,6 +4968,13 @@ class OhzekiKoyui04 extends Character {
     spd: number = 155;
     spdMin: number = 155;
     spdMax: number = 155;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4265,6 +5014,13 @@ class OhzekiKoyui05 extends Character {
     spd: number = 155;
     spdMin: number = 155;
     spdMax: number = 155;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4304,6 +5060,13 @@ class OhzekiKoyui70 extends Character {
     spd: number = 155;
     spdMin: number = 155;
     spdMax: number = 155;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -4344,6 +5107,13 @@ class UsamotoAnna01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -4384,6 +5154,13 @@ class UsamotoAnna02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -4424,6 +5201,13 @@ class UsamotoAnna04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -4464,6 +5248,13 @@ class UsamotoAnna05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -4504,6 +5295,13 @@ class UsamotoAnna70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -4544,6 +5342,13 @@ class JingujiMari01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -4583,6 +5388,13 @@ class JingujiMari02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -4622,6 +5434,13 @@ class JingujiMari04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -4661,6 +5480,13 @@ class JingujiMari05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -4700,6 +5526,13 @@ class JingujiMari70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -4740,6 +5573,13 @@ class NiiyaSerina01 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4779,6 +5619,13 @@ class NiiyaSerina02 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4818,6 +5665,13 @@ class NiiyaSerina04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4857,6 +5711,13 @@ class NiiyaSerina05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -4896,6 +5757,13 @@ class NiiyaSerina70 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -4936,6 +5804,13 @@ class KaeruzakaRaiya01 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -4975,6 +5850,13 @@ class KaeruzakaRaiya02 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5014,6 +5896,13 @@ class KaeruzakaRaiya04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5053,6 +5942,13 @@ class KaeruzakaRaiya05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -5092,6 +5988,13 @@ class KaeruzakaRaiya70 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -5132,6 +6035,13 @@ class KaeruzakaRaiya80 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -5172,6 +6082,13 @@ class KagomeMisaki01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -5212,6 +6129,13 @@ class KagomeMisaki02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -5252,6 +6176,13 @@ class KagomeMisaki04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -5292,6 +6223,13 @@ class KagomeMisaki05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -5332,6 +6270,13 @@ class KagomeMisaki70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -5372,6 +6317,13 @@ class KondohChieri01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -5412,6 +6364,13 @@ class KondohChieri02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -5452,6 +6411,13 @@ class KondohChieri04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -5492,6 +6458,13 @@ class KondohChieri05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -5532,6 +6505,13 @@ class KondohChieri70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -5572,6 +6552,13 @@ class SutegoroShiina01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5611,6 +6598,13 @@ class SutegoroShiina02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5650,6 +6644,13 @@ class SutegoroShiina04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5689,6 +6690,13 @@ class SutegoroShiina05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -5728,6 +6736,13 @@ class SutegoroShiina70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -5768,6 +6783,13 @@ class SutegoroShiina80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -5808,6 +6830,13 @@ class NikitohKanade01 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -5848,6 +6877,13 @@ class NikitohKanade02 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -5888,6 +6924,13 @@ class NikitohKanade04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -5928,6 +6971,13 @@ class NikitohKanade05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -5968,6 +7018,13 @@ class NikitohKanade70 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -6008,6 +7065,13 @@ class NikitohKanade80 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6047,6 +7111,13 @@ class MuraoMira01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -6087,6 +7158,13 @@ class MuraoMira02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -6127,6 +7205,13 @@ class MuraoMira04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -6167,6 +7252,13 @@ class MuraoMira05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -6207,6 +7299,13 @@ class MuraoMira70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6246,6 +7345,13 @@ class KimikageYui01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -6286,6 +7392,13 @@ class KimikageYui02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -6326,6 +7439,13 @@ class KimikageYui04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -6366,6 +7486,13 @@ class KimikageYui05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -6406,6 +7533,13 @@ class KimikageYui70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -6446,6 +7580,13 @@ class SugaItsuri01 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6485,6 +7626,13 @@ class SugaItsuri02 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6524,6 +7672,13 @@ class SugaItsuri04 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6563,6 +7718,13 @@ class SugaItsuri05 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -6602,6 +7764,13 @@ class SugaItsuri70 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -6642,6 +7811,13 @@ class YorozubaMeika01 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -6682,6 +7858,13 @@ class YorozubaMeika02 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -6722,6 +7905,13 @@ class YorozubaMeika04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -6762,6 +7952,13 @@ class YorozubaMeika05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -6802,6 +7999,13 @@ class YorozubaMeika70 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -6842,6 +8046,13 @@ class KuroganeYuto01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -6881,6 +8092,13 @@ class KuroganeYuto02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -6920,6 +8138,13 @@ class KuroganeYuto04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -6959,6 +8184,13 @@ class KuroganeYuto05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -6998,6 +8230,13 @@ class KuroganeYuto70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -7038,6 +8277,13 @@ class KotomuraAkane01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -7078,6 +8324,13 @@ class KotomuraAkane02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -7118,6 +8371,13 @@ class KotomuraAkane04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -7158,6 +8418,13 @@ class KotomuraAkane05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -7198,6 +8465,13 @@ class KotomuraAkane70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -7238,6 +8512,13 @@ class KotomuraAkane80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7277,6 +8558,13 @@ class KotomuraAmane01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -7317,6 +8605,13 @@ class KotomuraAmane02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -7357,6 +8652,13 @@ class KotomuraAmane04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -7397,6 +8699,13 @@ class KotomuraAmane05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -7437,6 +8746,13 @@ class KotomuraAmane70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -7477,6 +8793,13 @@ class KotomuraAmane80 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -7516,6 +8839,13 @@ class ShantiRana01 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -7556,6 +8886,13 @@ class ShantiRana02 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -7596,6 +8933,13 @@ class ShantiRana04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -7636,6 +8980,13 @@ class ShantiRana05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -7676,6 +9027,13 @@ class ShantiRana70 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -7716,6 +9074,13 @@ class NinaKalinina01 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -7756,6 +9121,13 @@ class NinaKalinina02 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -7796,6 +9168,13 @@ class NinaKalinina04 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -7836,6 +9215,13 @@ class NinaKalinina05 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -7876,6 +9262,13 @@ class NinaKalinina70 extends Character {
     spd: number = 157;
     spdMin: number = 157;
     spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -7916,6 +9309,13 @@ class WangHonghua01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7955,6 +9355,13 @@ class WangHonghua02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -7994,6 +9401,13 @@ class WangHonghua04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8033,6 +9447,13 @@ class WangHonghua05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8072,6 +9493,13 @@ class WangHonghua70 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -8112,6 +9540,13 @@ class MiaVoisin01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8152,6 +9587,13 @@ class MiaVoisin02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8192,6 +9634,13 @@ class MiaVoisin04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8232,6 +9681,13 @@ class MiaVoisin05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8272,6 +9728,13 @@ class MiaVoisin70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -8312,6 +9775,13 @@ class ChishimaMiyuki01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -8352,6 +9822,13 @@ class ChishimaMiyuki02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -8392,6 +9869,13 @@ class ChishimaMiyuki04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -8432,6 +9916,13 @@ class ChishimaMiyuki05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -8472,6 +9963,13 @@ class ChishimaMiyuki70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -8511,6 +10009,13 @@ class ShinonomeChie01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8550,6 +10055,13 @@ class ShinonomeChie02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8589,6 +10101,13 @@ class ShinonomeChie04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8628,6 +10147,13 @@ class ShinonomeChie05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -8667,6 +10193,13 @@ class ShinonomeChie70 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -8707,6 +10240,13 @@ class MikurazaAzuki01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8747,6 +10287,13 @@ class MikurazaAzuki02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8787,6 +10334,13 @@ class MikurazaAzuki04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8827,6 +10381,13 @@ class MikurazaAzuki05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -8867,6 +10428,13 @@ class MikurazaAzuki70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -8906,6 +10474,13 @@ class YamanoKaoruko01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -8946,6 +10521,13 @@ class YamanoKaoruko02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -8986,6 +10568,13 @@ class YamanoKaoruko04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -9026,6 +10615,13 @@ class YamanoKaoruko05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -9066,6 +10662,13 @@ class YamanoKaoruko70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -9106,6 +10709,13 @@ class NikaidohTsukasa01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9145,6 +10755,13 @@ class NikaidohTsukasa02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9184,6 +10801,13 @@ class NikaidohTsukasa04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9223,6 +10847,13 @@ class NikaidohTsukasa05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -9262,6 +10893,13 @@ class NikaidohTsukasa70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -9302,6 +10940,13 @@ class OchanomizuMirie01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -9342,6 +10987,13 @@ class OchanomizuMirie02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -9382,6 +11034,13 @@ class OchanomizuMirie04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -9422,6 +11081,13 @@ class OchanomizuMirie05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -9462,6 +11128,13 @@ class OchanomizuMirie70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -9501,6 +11174,13 @@ class MerabuchiKanami01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9540,6 +11220,13 @@ class MerabuchiKanami02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9579,6 +11266,13 @@ class MerabuchiKanami04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9618,6 +11312,13 @@ class MerabuchiKanami05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -9657,6 +11358,13 @@ class MerabuchiKanami70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -9697,6 +11405,13 @@ class KomazoiEden01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -9737,6 +11452,13 @@ class KomazoiEden02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -9777,6 +11499,13 @@ class KomazoiEden04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -9817,6 +11546,13 @@ class KomazoiEden05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -9857,6 +11593,13 @@ class RitaHenschel01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -9896,6 +11639,13 @@ class RitaHenschel02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -9935,6 +11685,13 @@ class RitaHenschel04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -9974,6 +11731,13 @@ class RitaHenschel05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10013,6 +11777,13 @@ class RitaHenschel70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -10053,6 +11824,13 @@ class OnagaAkino01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -10093,6 +11871,13 @@ class OnagaAkino02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -10133,6 +11918,13 @@ class OnagaAkino04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -10173,6 +11965,13 @@ class OnagaAkino05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -10213,6 +12012,13 @@ class TatsumiRyuko01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10252,6 +12058,13 @@ class TatsumiRyuko02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10291,6 +12104,13 @@ class TatsumiRyuko04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10330,6 +12150,13 @@ class TatsumiRyuko05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10369,6 +12196,13 @@ class OhtoriKasumi01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -10409,6 +12243,13 @@ class OhtoriKasumi02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -10449,6 +12290,13 @@ class OhtoriKasumi04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -10489,6 +12337,13 @@ class OhtoriKasumi05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -10529,6 +12384,13 @@ class KanagataSugumi01 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -10569,6 +12431,13 @@ class KanagataSugumi02 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -10609,6 +12478,13 @@ class KanagataSugumi04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -10649,6 +12525,13 @@ class KanagataSugumi05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),
@@ -10689,6 +12572,13 @@ class KanagataSugumi70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -10728,6 +12618,13 @@ class AraimeYasuri01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10767,6 +12664,13 @@ class AraimeYasuri02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10806,6 +12710,13 @@ class AraimeYasuri04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10845,6 +12756,13 @@ class AraimeYasuri05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -10884,6 +12802,13 @@ class AraimeYasuri70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -10924,6 +12849,13 @@ class MatobaAoi01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -10963,6 +12895,13 @@ class MatobaAoi02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11002,6 +12941,13 @@ class MatobaAoi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11041,6 +12987,13 @@ class MatobaAoi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11080,6 +13033,13 @@ class MatobaAoi70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.8),
         new Buff(AttrTypeId.ResistFire, -0.8),
@@ -11120,6 +13080,13 @@ class ArugaNana01 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11160,6 +13127,13 @@ class ArugaNana02 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11200,6 +13174,13 @@ class ArugaNana04 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11240,6 +13221,13 @@ class ArugaNana05 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11280,6 +13268,13 @@ class ArugaNana70 extends Character {
     spd: number = 158;
     spdMin: number = 158;
     spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -11320,6 +13315,13 @@ class MiyaminamiHikari01 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -11360,6 +13362,13 @@ class MiyaminamiHikari02 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -11400,6 +13409,13 @@ class MiyaminamiHikari04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -11440,6 +13456,13 @@ class MiyaminamiHikari05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -11480,6 +13503,13 @@ class MiyaminamiHikari70 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -11519,6 +13549,13 @@ class GaryuEmi01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11559,6 +13596,13 @@ class GaryuEmi02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11599,6 +13643,13 @@ class GaryuEmi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11639,6 +13690,13 @@ class GaryuEmi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -11679,6 +13737,13 @@ class TenkoSora01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11718,6 +13783,13 @@ class TenkoSora02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11757,6 +13829,13 @@ class TenkoSora04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11796,6 +13875,13 @@ class TenkoSora05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -11835,6 +13921,13 @@ class TenkoSora70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -11875,6 +13968,13 @@ class HasamiRika01 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -11915,6 +14015,13 @@ class HasamiRika02 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -11955,6 +14062,13 @@ class HasamiRika04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -11995,6 +14109,13 @@ class HasamiRika05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.8),
         new Buff(AttrTypeId.ResistVolt, -0.8),
@@ -12035,6 +14156,13 @@ class KasugaokaMoe01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12075,6 +14203,13 @@ class KasugaokaMoe02 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12115,6 +14250,13 @@ class KasugaokaMoe04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12155,6 +14297,13 @@ class KasugaokaMoe05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12195,6 +14344,13 @@ class AdelaideBluthausen01 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12235,6 +14391,13 @@ class AdelaideBluthausen02 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12275,6 +14438,13 @@ class AdelaideBluthausen04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12315,6 +14485,13 @@ class AdelaideBluthausen05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12355,6 +14532,13 @@ class TakahataNodoka01 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -12394,6 +14578,13 @@ class TakahataNodoka04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -12433,6 +14624,13 @@ class TakahataNodoka05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -12472,6 +14670,13 @@ class TakahataNodoka70 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.8),
         new Buff(AttrTypeId.ResistIce, -0.8),
@@ -12512,6 +14717,13 @@ class Gourai04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -12551,6 +14763,13 @@ class Gourai05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -12590,6 +14809,13 @@ class Stylet04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -12629,6 +14855,13 @@ class Stylet05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -12668,6 +14901,13 @@ class Baselard04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -12708,6 +14948,13 @@ class Baselard05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -12748,6 +14995,13 @@ class Hresvelgr04 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -12788,6 +15042,13 @@ class Hresvelgr05 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -12828,6 +15089,13 @@ class GennaiAo04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12868,6 +15136,13 @@ class GennaiAo05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -12908,6 +15183,13 @@ class KotobukiBukiko04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12948,6 +15230,13 @@ class KotobukiBukiko05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -12988,6 +15277,13 @@ class SolRaptor04 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13027,6 +15323,13 @@ class SolRaptor05 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13066,6 +15369,13 @@ class SolRaptor70 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -13106,6 +15416,13 @@ class MiyafujiYoshika04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -13146,6 +15463,13 @@ class MiyafujiYoshika05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -13186,6 +15510,13 @@ class SakamotoMio04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -13226,6 +15557,13 @@ class SakamotoMio05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -13266,6 +15604,13 @@ class LynetteBishop04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -13306,6 +15651,13 @@ class LynetteBishop05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -13346,6 +15698,13 @@ class PerrineHClostermann04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -13386,6 +15745,13 @@ class PerrineHClostermann05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -13426,6 +15792,13 @@ class GertrudBarkhorn04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13465,6 +15838,13 @@ class GertrudBarkhorn05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13504,6 +15884,13 @@ class EricaHartmann04 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -13544,6 +15931,13 @@ class EricaHartmann05 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -13584,6 +15978,13 @@ class FrancescaLucchini04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -13623,6 +16024,13 @@ class FrancescaLucchini05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -13662,6 +16070,13 @@ class CharlotteEYeager04 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -13702,6 +16117,13 @@ class CharlotteEYeager05 extends Character {
     spd: number = 168;
     spdMin: number = 168;
     spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -13742,6 +16164,13 @@ class HoshitsukiMiki04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13781,6 +16210,13 @@ class HoshitsukiMiki05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -13820,6 +16256,13 @@ class TokiwaKurumi04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -13859,6 +16302,13 @@ class TokiwaKurumi05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -13898,6 +16348,13 @@ class TsubuzakiAnko04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -13938,6 +16395,13 @@ class TsubuzakiAnko05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -13978,6 +16442,13 @@ class KusunokiAsuha04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -14018,6 +16489,13 @@ class KusunokiAsuha05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -14058,6 +16536,13 @@ class WatagiMichelle04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14098,6 +16583,13 @@ class WatagiMichelle05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14138,6 +16630,13 @@ class Sadone04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -14178,6 +16677,13 @@ class Sadone05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -14218,6 +16724,13 @@ class KougamiKanon04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14258,6 +16771,13 @@ class KougamiKanon05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14298,6 +16818,13 @@ class KuniedaShiho04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -14338,6 +16865,13 @@ class KuniedaShiho05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -14378,6 +16912,13 @@ class Kasumi04 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14417,6 +16958,13 @@ class Kasumi05 extends Character {
     spd: number = 165;
     spdMin: number = 165;
     spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14456,6 +17004,13 @@ class MarieRose04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -14495,6 +17050,13 @@ class MarieRose05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.6),
         new Buff(AttrTypeId.ResistVolt, -0.6),
@@ -14534,6 +17096,13 @@ class Nyotengu04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -14574,6 +17143,13 @@ class Nyotengu05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -14614,6 +17190,13 @@ class SylphyII04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -14653,6 +17236,13 @@ class SylphyII05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -14692,6 +17282,13 @@ class SylphyII70 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -14732,6 +17329,13 @@ class Aya04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14772,6 +17376,13 @@ class Aya05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -14812,6 +17423,13 @@ class Yuki04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14851,6 +17469,13 @@ class Yuki05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
         new Buff(AttrTypeId.ResistFire, -0.6),
@@ -14890,6 +17515,13 @@ class Yamada04 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -14930,6 +17562,13 @@ class Yamada05 extends Character {
     spd: number = 162;
     spdMin: number = 162;
     spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -14970,6 +17609,13 @@ class AIT04 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -15010,6 +17656,13 @@ class AIT05 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -15050,6 +17703,13 @@ class AIT70 extends Character {
     spd: number = 163;
     spdMin: number = 163;
     spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -15090,6 +17750,13 @@ class IvryHadd04 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -15130,6 +17797,13 @@ class IvryHadd05 extends Character {
     spd: number = 166;
     spdMin: number = 166;
     spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -15170,6 +17844,13 @@ class MakiseKurisu04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -15210,6 +17891,13 @@ class MakiseKurisu05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistGravity, 0.7),
         new Buff(AttrTypeId.ResistVolt, -0.7),
@@ -15250,6 +17938,13 @@ class AmaneSuzuha04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -15289,6 +17984,13 @@ class AmaneSuzuha05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.6),
         new Buff(AttrTypeId.ResistGravity, -0.6),
@@ -15328,6 +18030,13 @@ class TanyaDegurechaff04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -15368,6 +18077,13 @@ class TanyaDegurechaff05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.7),
         new Buff(AttrTypeId.ResistGravity, -0.7),
@@ -15408,6 +18124,13 @@ class ViktoriyaIvanovnaSerebryakov04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -15447,6 +18170,13 @@ class ViktoriyaIvanovnaSerebryakov05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.6),
         new Buff(AttrTypeId.ResistIce, -0.6),
@@ -15486,6 +18216,13 @@ class Kei04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -15526,6 +18263,13 @@ class Kei05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistFire, 0.7),
         new Buff(AttrTypeId.ResistIce, -0.7),
@@ -15566,6 +18310,13 @@ class Yuri04 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -15606,6 +18357,13 @@ class Yuri05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.7),
         new Buff(AttrTypeId.ResistFire, -0.7),
@@ -15646,6 +18404,13 @@ class ACTRESS05 extends Character {
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistVolt, 0.8),
         new Buff(AttrTypeId.ResistGravity, -0.8),

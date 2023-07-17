@@ -93,6 +93,8 @@ export class Character extends Unit {
     attrShotEnigma: number = 0;
     atkShotEnigmaCustom: number = 0;
     attrShotEnigmaCustom: number = 0;
+    atkShotSp: number = 0;
+    attrShotSp: number = 0;
 
     atkClose: number = 0;
     atkCloseMin: number = 0;
@@ -102,11 +104,21 @@ export class Character extends Unit {
     attrCloseEnigma: number = 0;
     atkCloseEnigmaCustom: number = 0;
     attrCloseEnigmaCustom: number = 0;
+    atkCloseSp: number = 0;
+    attrCloseSp: number = 0;
 
     defEnigma: number = 0;
     // def: number = 0;
     // defMin: number = 0;
     // defMax: number = 0;
+
+    spDmgRatio: number = 0;
+    atkSp: number = 0;
+    attrSp: number = 0;
+    spRangeTypeId: AttrTypeId = AttrTypeId.None;
+    spHitTypeId: AttrTypeId = AttrTypeId.None;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.None;
+    
     goodAttr: AttrType[] = [];
     // buffs: Buff[] = [];
     weaponShot: Gear = new Gear();
@@ -208,6 +220,16 @@ export class Character extends Unit {
         this.updateAttrClose();
         this.updateSPD();
 
+
+        this.updateAtkShotSp();
+        this.updateAtkCloseSp();
+        this.updateAttrSp();
+
+        if (this.spRangeTypeId == AttrTypeId.Shot) {
+            this.atkSp = this.atkShotSp;
+        } else {
+            this.atkSp = this.atkCloseSp;
+        }
     }
     setLevelGrowthVal(): void {
         let level = this.level;
@@ -381,4 +403,73 @@ export class Character extends Unit {
         this.spd = valueSum + allBuffResultValue;
     }
 
+    updateAtkShotSp(): void {
+        const chrBaseVal = this.calcValue(this.atkShotMin, this.atkShotMax);
+        let spAdd1 = chrBaseVal * this.spDmgRatio;
+
+        let masterVal = masterLevelStatus[this.masterLevel].atkShot;
+        let enigmaStatusVal = this.atkShotEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaStatusVal = this.atkShotEnigmaCustom;
+        }
+        masterVal += enigmaStatusVal;
+        let spAdd2 = masterVal * this.spDmgRatio;
+
+        const baseVal = spAdd1 + spAdd2;
+
+        let result = baseVal;
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type === this.spRangeTypeId
+                || b.type === this.spHitTypeId);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
+        this.atkShotSp = Math.floor(result);
+    }
+    updateAtkCloseSp(): void {
+        const chrBaseVal = this.calcValue(this.atkCloseMin, this.atkCloseMax);
+        let spAdd1 = chrBaseVal * this.spDmgRatio;
+
+        let masterVal = masterLevelStatus[this.masterLevel].atkClose;
+        let enigmaStatusVal = this.atkCloseEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaStatusVal = this.atkCloseEnigmaCustom;
+        }
+        masterVal += enigmaStatusVal;
+        let spAdd2 = masterVal * this.spDmgRatio;
+
+        const baseVal = spAdd1 + spAdd2;
+
+        let result = baseVal;
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type === this.spRangeTypeId
+                || b.type === this.spHitTypeId);
+            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+            result += totalBuffVal;
+        });
+
+        this.atkCloseSp = Math.floor(result);
+    }
+    updateAttrSp(): void {
+        const chrBaseVal = this.calcValue(this.attrMin, this.attrMax);
+
+
+        let enigmaStatusVal = this.attrShotEnigma;
+        if (this.isCustomEnigmaStatus) {
+            enigmaStatusVal = this.attrShotEnigmaCustom;
+        }
+        const baseVal = chrBaseVal + enigmaStatusVal;
+
+        let result = baseVal;
+        this.allUnits.forEach(u => {
+            const buffs = u.buffs.filter(b => b.type == this.chrAttrTypeId);
+            if (buffs.length > 0) {
+                const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+                result += totalBuffVal;
+            }
+        });
+
+        this.attrSp = result;
+    }
 }

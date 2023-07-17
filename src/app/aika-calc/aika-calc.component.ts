@@ -22,12 +22,15 @@ export class AikaCalcComponent implements OnInit {
     public attrTypeGearCloseList: { id: AttrTypeId; name: string }[] = [];
     public attrTypeShotAmmoTypeList: { id: AttrTypeId; name: string }[] = [];
     public attrTypeCloseHitTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeSpRangeTypeList: { id: AttrTypeId; name: string }[] = [];
+    public attrTypeSpHitTypeList: { id: AttrTypeId; name: string }[] = [];
 
     public characterTemplates: Character[] = [];
     public selectedCharacterTemplateIndex: number;
     public selectedCharacterTemplate: Character;
     public savedataJson: string = '';
     public character: Character;
+    public hideChrRawVal: boolean = true;
 
     copyedBuff: Buff;
     copyedBuffString: string = '';
@@ -139,6 +142,20 @@ DEF+200
             AttrTypeId.Impact,
             AttrTypeId.Slash,
         ].map((atid) => this.idToAttrType(atid));
+
+        this.attrTypeSpRangeTypeList = [
+            AttrTypeId.None,
+            AttrTypeId.Shot,
+            AttrTypeId.Close,
+        ].map((atid) => this.idToAttrType(atid));
+        this.attrTypeSpHitTypeList = [
+            AttrTypeId.Physical,
+            AttrTypeId.Energy,
+            AttrTypeId.Impact,
+            AttrTypeId.Slash,
+        ].map((atid) => this.idToAttrType(atid));
+
+
         this.characterTemplates = Object.keys(CharacterModels)
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
