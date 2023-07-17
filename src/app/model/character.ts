@@ -118,7 +118,7 @@ export class Character extends Unit {
     spRangeTypeId: AttrTypeId = AttrTypeId.None;
     spHitTypeId: AttrTypeId = AttrTypeId.None;
     chrAttrTypeId: AttrTypeId = AttrTypeId.None;
-    
+
     goodAttr: AttrType[] = [];
     // buffs: Buff[] = [];
     weaponShot: Gear = new Gear();
@@ -227,8 +227,10 @@ export class Character extends Unit {
 
         if (this.spRangeTypeId == AttrTypeId.Shot) {
             this.atkSp = this.atkShotSp;
-        } else {
+        } else if (this.spRangeTypeId == AttrTypeId.Close) {
             this.atkSp = this.atkCloseSp;
+        } else {
+            this.atkSp = 0;
         }
     }
     setLevelGrowthVal(): void {
