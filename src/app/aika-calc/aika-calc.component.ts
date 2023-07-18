@@ -396,4 +396,11 @@ DEF+200
     autoInputEnigmaStatusUp(): void {
 
     }
+
+    saveCharacterSavedata(): void {
+
+    }
+    loadCharacterSavedata(): void {
+
+    }
 }

@@ -60,6 +60,10 @@
             margin-left: 5px;
         }
 
+        >label {
+            white-space: nowrap;
+        }
+
         >.fan-calc {
             margin-left: auto;
             display: flex;
@@ -68,6 +72,10 @@
             color: #00f;
             font-size: 16px;
         }
+    }
+
+    >.toolbar {
+        display: flex;
     }
 
     >.character {

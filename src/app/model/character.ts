@@ -352,9 +352,10 @@ export class Character extends Unit {
             enigmaStatusVal = this.atkCloseEnigmaCustom;
         }
 
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal;
+        const tuneVal = gear.tuneAtk;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
 
-        let result = chrBaseVal + gearBaseVal;
+        let result = baseVal;
 
         this.allUnits.forEach(u => {
             const buffs = u.buffs.filter(b => b.type === gear.atkTypeId
@@ -363,10 +364,6 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
-
-        result += gear.tuneAtk;
-        result += masterVal;
-        result += enigmaStatusVal;
 
         this.atkClose = result;
     }
@@ -473,5 +470,12 @@ export class Character extends Unit {
         });
 
         this.attrSp = result;
+    }
+
+    serialSavedata(): string {
+        return '';
+    }
+    setSavedata(): void {
+
     }
 }
