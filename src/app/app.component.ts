@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
     //     return location.pathname.replace(/^\//, '');
     // }
     page: string = '';
+    buildDate: Date;
 
     excCos = `比良坂 夜露
 	八八式戦闘服
@@ -1170,7 +1171,9 @@ AIT
     constructor(
         public service: AppService,
         private swUpdate: SwUpdate
-    ) { }
+    ) {
+        this.buildDate = service.getBuildDate();
+    }
 
     ngOnInit(): void {
         this.swUpdate.available.subscribe(() => {
