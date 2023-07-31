@@ -520,6 +520,53 @@ class KaneshiyaSitara70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
 }
 
+class KaneshiyaSitara80 extends Character {
+    name: string = '兼志谷 シタラ / ブレイブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 569;
+    atkCloseMin: number = 158;
+    atkCloseMax: number = 569;
+    attrClose: number = 0;
+    atkShot: number = 649;
+    atkShotMin: number = 180;
+    atkShotMax: number = 649;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KaneshiyaSitara.long;
+    weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
+    equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
+    equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+}
+
 class MomoshinaFumika01 extends Character {
     name: string = '百科 文嘉 ★1';
     rare: number = 1;
@@ -744,6 +791,53 @@ class MomoshinaFumika70 extends Character {
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MomoshinaFumika.long;
+    weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
+    equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
+    equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+}
+
+class MomoshinaFumika80 extends Character {
+    name: string = '百科 文嘉 / ブレイブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 506;
+    atkCloseMin: number = 141;
+    atkCloseMax: number = 506;
+    attrClose: number = 0;
+    atkShot: number = 543;
+    atkShotMin: number = 151;
+    atkShotMax: number = 543;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MomoshinaFumika.long;
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
@@ -18542,11 +18636,13 @@ export const CharacterModels = {
     KaneshiyaSitara04: new KaneshiyaSitara04(),
     KaneshiyaSitara05: new KaneshiyaSitara05(),
     KaneshiyaSitara70: new KaneshiyaSitara70(),
+    KaneshiyaSitara80: new KaneshiyaSitara80(),
     MomoshinaFumika01: new MomoshinaFumika01(),
     MomoshinaFumika02: new MomoshinaFumika02(),
     MomoshinaFumika04: new MomoshinaFumika04(),
     MomoshinaFumika05: new MomoshinaFumika05(),
     MomoshinaFumika70: new MomoshinaFumika70(),
+    MomoshinaFumika80: new MomoshinaFumika80(),
     AgatsumaKaede01: new AgatsumaKaede01(),
     AgatsumaKaede02: new AgatsumaKaede02(),
     AgatsumaKaede04: new AgatsumaKaede04(),

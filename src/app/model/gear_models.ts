@@ -17575,111 +17575,111 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_04_101_21',
                 unitType: AttrTypeId.Rifle,
                 level: 80,
                 levelMin: 1,
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 675,
-                atkMin: 375,
-                atkMax: 675,
+                atk: 578,
+                atkMin: 321,
+                atkMax: 578,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 273,
-                attrMin: 152,
-                attrMax: 273,
+                attr: 364,
+                attrMin: 202,
+                attrMax: 364,
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_04_101_11',
                 unitType: AttrTypeId.Rifle,
                 level: 75,
                 levelMin: 1,
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 637,
-                atkMin: 337,
-                atkMax: 637,
+                atk: 546,
+                atkMin: 289,
+                atkMax: 546,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 258,
-                attrMin: 136,
-                attrMax: 258,
+                attr: 343,
+                attrMin: 182,
+                attrMax: 343,
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_04_101_01',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
                 levelMax: 70,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 600,
-                atkMin: 187,
-                atkMax: 600,
+                atk: 514,
+                atkMin: 161,
+                atkMax: 514,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 242,
-                attrMin: 76,
-                attrMax: 242,
+                attr: 323,
+                attrMin: 101,
+                attrMax: 323,
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_03_101_21',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 525,
-                atkMin: 300,
-                atkMax: 525,
+                atk: 450,
+                atkMin: 257,
+                atkMax: 450,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 212,
-                attrMin: 121,
-                attrMax: 212,
+                attr: 283,
+                attrMin: 162,
+                attrMax: 283,
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_03_101_11',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 450,
-                atkMin: 225,
-                atkMax: 450,
+                atk: 386,
+                atkMin: 193,
+                atkMax: 386,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 182,
-                attrMin: 91,
-                attrMax: 182,
+                attr: 242,
+                attrMin: 121,
+                attrMax: 242,
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C039_70_03_101_01',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 375,
-                atkMin: 150,
-                atkMax: 375,
+                atk: 321,
+                atkMin: 129,
+                atkMax: 321,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 152,
-                attrMin: 61,
-                attrMax: 152,
+                attr: 202,
+                attrMin: 81,
+                attrMax: 202,
                 attrTypeId: AttrTypeId.Gravity
             })
         ],
@@ -17979,6 +17979,11 @@ export const ActressGears = {
                 def: 540,
                 defMin: 300,
                 defMax: 540,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.1)
+            ]
             }),
             new Gear({
                 name: 'AN039+/T',
@@ -17994,6 +17999,11 @@ export const ActressGears = {
                 def: 510,
                 defMin: 270,
                 defMax: 510,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.1)
+            ]
             }),
             new Gear({
                 name: 'AN039/T',
@@ -18009,6 +18019,11 @@ export const ActressGears = {
                 def: 480,
                 defMin: 150,
                 defMax: 480,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.07)
+            ]
             })
         ],
         bottom: [
@@ -18185,6 +18200,11 @@ export const ActressGears = {
                 spd: 200,
                 spdMin: 200,
                 spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             }),
             new Gear({
                 name: 'AN039+/B',
@@ -18203,6 +18223,11 @@ export const ActressGears = {
                 spd: 200,
                 spdMin: 200,
                 spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             }),
             new Gear({
                 name: 'AN039/B',
@@ -18221,6 +18246,11 @@ export const ActressGears = {
                 spd: 200,
                 spdMin: 200,
                 spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             })
         ]
     },
