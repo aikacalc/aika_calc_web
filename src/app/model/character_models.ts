@@ -14413,6 +14413,53 @@ class KasugaokaMoe05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
 }
 
+class KasugaokaMoe70 extends Character {
+    name: string = '春日丘 もえ / 萌芽 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 517;
+    atkCloseMin: number = 144;
+    atkCloseMax: number = 517;
+    attrClose: number = 0;
+    atkShot: number = 527;
+    atkShotMin: number = 146;
+    atkShotMax: number = 527;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+}
+
 class AdelaideBluthausen01 extends Character {
     name: string = 'アデライーデ・B ★1';
     rare: number = 1;
@@ -18934,6 +18981,7 @@ export const CharacterModels = {
     KasugaokaMoe02: new KasugaokaMoe02(),
     KasugaokaMoe04: new KasugaokaMoe04(),
     KasugaokaMoe05: new KasugaokaMoe05(),
+    KasugaokaMoe70: new KasugaokaMoe70(),
     AdelaideBluthausen01: new AdelaideBluthausen01(),
     AdelaideBluthausen02: new AdelaideBluthausen02(),
     AdelaideBluthausen04: new AdelaideBluthausen04(),
