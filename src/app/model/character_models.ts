@@ -18520,6 +18520,98 @@ class Yuri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
 }
 
+class HatsuneMiku04 extends Character {
+    name: string = '初音 ミク ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 578;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 165;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 721;
+    defMin: number = 206;
+    defMax: number = 721;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.HandGun, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HatsuneMiku.long;
+    weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
+    equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
+    equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+}
+
+class HatsuneMiku05 extends Character {
+    name: string = '初音 ミク ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 744;
+    atkCloseMin: number = 207;
+    atkCloseMax: number = 744;
+    attrClose: number = 0;
+    atkShot: number = 744;
+    atkShotMin: number = 207;
+    atkShotMax: number = 744;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.HandGun, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HatsuneMiku.long;
+    weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
+    equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
+    equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+}
+
 class ACTRESS05 extends Character {
     name: string = 'ココ ★4';
     rare: number = 4;
@@ -18668,6 +18760,7 @@ export const ActressNames: string[] = [
     'ViktoriyaIvanovnaSerebryakov',
     'Kei',
     'Yuri',
+    'HatsuneMiku',
     'ACTRESS'
 ];
 
@@ -19069,5 +19162,7 @@ export const CharacterModels = {
     Kei05: new Kei05(),
     Yuri04: new Yuri04(),
     Yuri05: new Yuri05(),
+    HatsuneMiku04: new HatsuneMiku04(),
+    HatsuneMiku05: new HatsuneMiku05(),
     ACTRESS05: new ACTRESS05()
 };
