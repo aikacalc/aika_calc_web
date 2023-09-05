@@ -18612,6 +18612,53 @@ class HatsuneMiku05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
 }
 
+class HatsuneMiku70 extends Character {
+    name: string = '初音 ミク / 音色 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 161;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.HandGun, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.HatsuneMiku.long;
+    weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
+    equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
+    equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+}
+
 class ACTRESS05 extends Character {
     name: string = 'ココ ★4';
     rare: number = 4;
@@ -19164,5 +19211,6 @@ export const CharacterModels = {
     Yuri05: new Yuri05(),
     HatsuneMiku04: new HatsuneMiku04(),
     HatsuneMiku05: new HatsuneMiku05(),
+    HatsuneMiku70: new HatsuneMiku70(),
     ACTRESS05: new ACTRESS05()
 };

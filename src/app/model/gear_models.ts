@@ -64285,7 +64285,7 @@ export const ActressGears = {
     HatsuneMiku: {
         long: [
             new Gear({
-                name: 'WS_C660_70_04_21',
+                name: '39スピーカー/音色S',
                 unitType: AttrTypeId.Twin,
                 level: 80,
                 levelMin: 1,
@@ -64303,7 +64303,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WS_C660_70_04_11',
+                name: '39スピーカー/音色',
                 unitType: AttrTypeId.Twin,
                 level: 75,
                 levelMin: 1,
@@ -64321,7 +64321,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WS_C660_70_04_01',
+                name: '39スピーカー/音色',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -64339,7 +64339,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WS_C660_70_03_21',
+                name: '39スピーカー/音色',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -64357,7 +64357,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WS_C660_70_03_11',
+                name: '39スピーカー/音色',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -64375,7 +64375,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WS_C660_70_03_01',
+                name: '39スピーカー/音色',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -64503,7 +64503,7 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: 'WC_C660_70_04_21',
+                name: '39メガフォン/音色S',
                 unitType: AttrTypeId.HandGun,
                 level: 80,
                 levelMin: 1,
@@ -64521,7 +64521,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WC_C660_70_04_11',
+                name: '39メガフォン/音色',
                 unitType: AttrTypeId.HandGun,
                 level: 75,
                 levelMin: 1,
@@ -64539,7 +64539,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WC_C660_70_04_01',
+                name: '39メガフォン/音色',
                 unitType: AttrTypeId.HandGun,
                 level: 70,
                 levelMin: 1,
@@ -64557,7 +64557,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WC_C660_70_03_21',
+                name: '39メガフォン/音色',
                 unitType: AttrTypeId.HandGun,
                 level: 60,
                 levelMin: 1,
@@ -64575,7 +64575,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WC_C660_70_03_11',
+                name: '39メガフォン/音色',
                 unitType: AttrTypeId.HandGun,
                 level: 50,
                 levelMin: 1,
@@ -64593,7 +64593,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'WC_C660_70_03_01',
+                name: '39メガフォン/音色',
                 unitType: AttrTypeId.HandGun,
                 level: 40,
                 levelMin: 1,
@@ -64721,7 +64721,7 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: 'EA_C660_70_04_21',
+                name: 'クラヴィア・音色S/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -64741,7 +64741,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C660_70_04_11',
+                name: 'クラヴィア・音色/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -64761,7 +64761,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C660_70_04_01',
+                name: 'クラヴィア・音色/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -64781,7 +64781,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C660_70_03_21',
+                name: 'クラヴィア・音色/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -64801,7 +64801,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C660_70_03_11',
+                name: 'クラヴィア・音色/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -64821,7 +64821,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C660_70_03_01',
+                name: 'クラヴィア・音色/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -64963,7 +64963,7 @@ export const ActressGears = {
         ],
         bottom: [
             new Gear({
-                name: 'EL_660_70_04_21',
+                name: 'クラヴィア・音色S/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -64986,7 +64986,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_660_70_04_11',
+                name: 'クラヴィア・音色/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -65009,7 +65009,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_660_70_04_01',
+                name: 'クラヴィア・音色/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -65032,7 +65032,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_660_70_03_21',
+                name: 'クラヴィア・音色/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -65055,7 +65055,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_660_70_03_11',
+                name: 'クラヴィア・音色/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -65078,7 +65078,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_660_70_03_01',
+                name: 'クラヴィア・音色/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
