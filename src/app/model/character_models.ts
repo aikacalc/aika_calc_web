@@ -13806,6 +13806,52 @@ class GaryuEmi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
 }
 
+class GaryuEmi70 extends Character {
+    name: string = '我龍 絵美 / 雅馴 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 773;
+    atkShotMin: number = 215;
+    atkShotMax: number = 773;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.GaryuEmi.long;
+    weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
+    equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
+    equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+}
+
 class TenkoSora01 extends Character {
     name: string = '天狐 天 ★1';
     rare: number = 1;
@@ -19108,6 +19154,7 @@ export const CharacterModels = {
     GaryuEmi02: new GaryuEmi02(),
     GaryuEmi04: new GaryuEmi04(),
     GaryuEmi05: new GaryuEmi05(),
+    GaryuEmi70: new GaryuEmi70(),
     TenkoSora01: new TenkoSora01(),
     TenkoSora02: new TenkoSora02(),
     TenkoSora04: new TenkoSora04(),
