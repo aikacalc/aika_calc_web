@@ -14788,6 +14788,53 @@ class AdelaideBluthausen05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
+class AdelaideBluthausen70 extends Character {
+    name: string = 'アデライーデ / 瑞花 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
 class TakahataNodoka01 extends Character {
     name: string = '高幡 のどか ★1';
     rare: number = 1;
@@ -19269,6 +19316,7 @@ export const CharacterModels = {
     AdelaideBluthausen02: new AdelaideBluthausen02(),
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
+    AdelaideBluthausen70: new AdelaideBluthausen70(),
     TakahataNodoka01: new TakahataNodoka01(),
     TakahataNodoka04: new TakahataNodoka04(),
     TakahataNodoka05: new TakahataNodoka05(),
