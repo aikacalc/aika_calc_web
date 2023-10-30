@@ -14835,6 +14835,194 @@ class AdelaideBluthausen70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
+class NoelleFrancisca01 extends Character {
+    name: string = 'ノエル・F ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 2;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 896;
+    hpMin: number = 371;
+    hpMax: number = 896;
+    atkClose: number = 159;
+    atkCloseMin: number = 64;
+    atkCloseMax: number = 159;
+    attrClose: number = 0;
+    atkShot: number = 159;
+    atkShotMin: number = 64;
+    atkShotMax: number = 159;
+    attrShot: number = 0;
+    def: number = 255;
+    defMin: number = 102;
+    defMax: number = 255;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 45;
+    attrMax: number = 113;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+}
+
+class NoelleFrancisca02 extends Character {
+    name: string = 'ノエル・F ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1463;
+    hpMin: number = 525;
+    hpMax: number = 1463;
+    atkClose: number = 255;
+    atkCloseMin: number = 95;
+    atkCloseMax: number = 255;
+    attrClose: number = 0;
+    atkShot: number = 255;
+    atkShotMin: number = 95;
+    atkShotMax: number = 255;
+    attrShot: number = 0;
+    def: number = 408;
+    defMin: number = 153;
+    defMax: number = 408;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 68;
+    attrMax: number = 180;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+}
+
+class NoelleFrancisca04 extends Character {
+    name: string = 'ノエル・F ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 445;
+    atkCloseMin: number = 127;
+    atkCloseMax: number = 445;
+    attrClose: number = 0;
+    atkShot: number = 445;
+    atkShotMin: number = 127;
+    atkShotMax: number = 445;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+}
+
+class NoelleFrancisca05 extends Character {
+    name: string = 'ノエル・F ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 573;
+    atkCloseMin: number = 159;
+    atkCloseMax: number = 573;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+}
+
 class TakahataNodoka01 extends Character {
     name: string = '高幡 のどか ★1';
     rare: number = 1;
@@ -18955,6 +19143,7 @@ export const ActressNames: string[] = [
     'HasamiRika',
     'KasugaokaMoe',
     'AdelaideBluthausen',
+    'NoelleFrancisca',
     'TakahataNodoka',
     'Gourai',
     'Stylet',
@@ -19317,6 +19506,10 @@ export const CharacterModels = {
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
     AdelaideBluthausen70: new AdelaideBluthausen70(),
+    NoelleFrancisca01: new NoelleFrancisca01(),
+    NoelleFrancisca02: new NoelleFrancisca02(),
+    NoelleFrancisca04: new NoelleFrancisca04(),
+    NoelleFrancisca05: new NoelleFrancisca05(),
     TakahataNodoka01: new TakahataNodoka01(),
     TakahataNodoka04: new TakahataNodoka04(),
     TakahataNodoka05: new TakahataNodoka05(),
