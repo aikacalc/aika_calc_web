@@ -5,7 +5,9 @@ const fs = require('fs');
 
 const build$ = new Observable((subsc) => {
     console.log('run ng build...');
-
+    const originalEnvFileString = fs.readFileSync('./src/environments/environment.prod.source.ts').toString();
+    const modifyVersionString = originalEnvFileString.replace(/\{buildTime\}/,new Date().toISOString());
+    fs.writeFileSync('./src/environments/environment.prod.ts', modifyVersionString);
     exec("ng build --build-optimizer --configuration production", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
