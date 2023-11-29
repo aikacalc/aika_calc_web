@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 import { SwUpdate } from '@angular/service-worker';
 import { range } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
     selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
     //     return location.pathname.replace(/^\//, '');
     // }
     page: string = '';
-    buildDate: Date;
+    buildDateString: string = '';
 
     excCos = `比良坂 夜露
 	八八式戦闘服
@@ -1172,7 +1173,7 @@ AIT
         public service: AppService,
         private swUpdate: SwUpdate
     ) {
-        this.buildDate = service.getBuildDate();
+        this.buildDateString = environment.buildDate;
     }
 
     ngOnInit(): void {
