@@ -14365,6 +14365,53 @@ class HasamiRika05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
 }
 
+class HasamiRika70 extends Character {
+    name: string = '波佐見 利佳 / 勇断 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 606;
+    atkShotMin: number = 168;
+    atkShotMax: number = 606;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
 class KasugaokaMoe01 extends Character {
     name: string = '春日丘 もえ ★1';
     rare: number = 1;
@@ -16745,6 +16792,98 @@ class HoshitsukiMiki05 extends Character {
     weaponCloses: Gear[] = ActressGears.HoshitsukiMiki.short;
     equipmentTops: Gear[] = ActressGears.HoshitsukiMiki.top;
     equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
+}
+
+class AmanoNozomi04 extends Character {
+    name: string = '天野 望 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 584;
+    atkCloseMin: number = 167;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 167;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AmanoNozomi.long;
+    weaponCloses: Gear[] = ActressGears.AmanoNozomi.short;
+    equipmentTops: Gear[] = ActressGears.AmanoNozomi.top;
+    equipmentBottoms: Gear[] = ActressGears.AmanoNozomi.bottom;
+}
+
+class AmanoNozomi05 extends Character {
+    name: string = '天野 望 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 751;
+    atkCloseMin: number = 209;
+    atkCloseMax: number = 751;
+    attrClose: number = 0;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AmanoNozomi.long;
+    weaponCloses: Gear[] = ActressGears.AmanoNozomi.short;
+    equipmentTops: Gear[] = ActressGears.AmanoNozomi.top;
+    equipmentBottoms: Gear[] = ActressGears.AmanoNozomi.bottom;
 }
 
 class TokiwaKurumi04 extends Character {
@@ -19161,6 +19300,7 @@ export const ActressNames: string[] = [
     'FrancescaLucchini',
     'CharlotteEYeager',
     'HoshitsukiMiki',
+    'AmanoNozomi',
     'TokiwaKurumi',
     'TsubuzakiAnko',
     'KusunokiAsuha',
@@ -19496,6 +19636,7 @@ export const CharacterModels = {
     HasamiRika02: new HasamiRika02(),
     HasamiRika04: new HasamiRika04(),
     HasamiRika05: new HasamiRika05(),
+    HasamiRika70: new HasamiRika70(),
     KasugaokaMoe01: new KasugaokaMoe01(),
     KasugaokaMoe02: new KasugaokaMoe02(),
     KasugaokaMoe04: new KasugaokaMoe04(),
@@ -19547,6 +19688,8 @@ export const CharacterModels = {
     CharlotteEYeager05: new CharlotteEYeager05(),
     HoshitsukiMiki04: new HoshitsukiMiki04(),
     HoshitsukiMiki05: new HoshitsukiMiki05(),
+    AmanoNozomi04: new AmanoNozomi04(),
+    AmanoNozomi05: new AmanoNozomi05(),
     TokiwaKurumi04: new TokiwaKurumi04(),
     TokiwaKurumi05: new TokiwaKurumi05(),
     TsubuzakiAnko04: new TsubuzakiAnko04(),
