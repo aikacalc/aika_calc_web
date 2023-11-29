@@ -3,7 +3,7 @@
     <div class="top">
         <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
         <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-        <span class="version" *ngIf="!service.hasNewUpdate">ver.aika.{{buildDate | date}}</span>
+        <span class="version" *ngIf="!service.hasNewUpdate">aika.V{{buildDateString}}</span>
         <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
             <span>愛花版面計算</span>
         </a>
@@ -1079,31 +1079,31 @@
                 <tr>
                     <td>轟雷</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
                     <td>スティレット</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
                     <td>バーゼラルド</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
                     <td>フレズヴェルク</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
                     <td>SOL ラプター</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
@@ -1225,7 +1225,7 @@
                 <tr>
                     <td>シルフィーII</td>
                     <td>
-        
+
                     </td>
                 </tr>
                 <tr>
@@ -1276,7 +1276,7 @@
                         <div>メリーパーティ</div>
                     </td>
                 </tr>
-        
+
             </table>
         </div>
     </div>
