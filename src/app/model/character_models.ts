@@ -17072,6 +17072,100 @@ class TsubuzakiAnko05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.TsubuzakiAnko.bottom;
 }
 
+class SerizawaRenge04 extends Character {
+    name: string = '芹沢 蓮華 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 476;
+    atkCloseMin: number = 136;
+    atkCloseMax: number = 476;
+    attrClose: number = 0;
+    atkShot: number = 500;
+    atkShotMin: number = 143;
+    atkShotMax: number = 500;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SerizawaRenge.long;
+    weaponCloses: Gear[] = ActressGears.SerizawaRenge.short;
+    equipmentTops: Gear[] = ActressGears.SerizawaRenge.top;
+    equipmentBottoms: Gear[] = ActressGears.SerizawaRenge.bottom;
+}
+
+class SerizawaRenge05 extends Character {
+    name: string = '芹沢 蓮華 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SerizawaRenge.long;
+    weaponCloses: Gear[] = ActressGears.SerizawaRenge.short;
+    equipmentTops: Gear[] = ActressGears.SerizawaRenge.top;
+    equipmentBottoms: Gear[] = ActressGears.SerizawaRenge.bottom;
+}
+
 class KusunokiAsuha04 extends Character {
     name: string = '楠 明日葉 ★3';
     rare: number = 3;
@@ -19303,6 +19397,7 @@ export const ActressNames: string[] = [
     'AmanoNozomi',
     'TokiwaKurumi',
     'TsubuzakiAnko',
+    'SerizawaRenge',
     'KusunokiAsuha',
     'WatagiMichelle',
     'Sadone',
@@ -19694,6 +19789,8 @@ export const CharacterModels = {
     TokiwaKurumi05: new TokiwaKurumi05(),
     TsubuzakiAnko04: new TsubuzakiAnko04(),
     TsubuzakiAnko05: new TsubuzakiAnko05(),
+    SerizawaRenge04: new SerizawaRenge04(),
+    SerizawaRenge05: new SerizawaRenge05(),
     KusunokiAsuha04: new KusunokiAsuha04(),
     KusunokiAsuha05: new KusunokiAsuha05(),
     WatagiMichelle04: new WatagiMichelle04(),
