@@ -5505,6 +5505,52 @@ class UsamotoAnna70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
 }
 
+class UsamotoAnna80 extends Character {
+    name: string = '宇佐元 杏奈 / レジェンド ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 765;
+    atkShotMin: number = 213;
+    atkShotMax: number = 765;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.UsamotoAnna.long;
+    weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
+    equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
+    equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+}
+
 class JingujiMari01 extends Character {
     name: string = '神宮寺 真理 ★1';
     rare: number = 1;
@@ -5729,6 +5775,53 @@ class JingujiMari70 extends Character {
         new Buff(AttrTypeId.Volt, 0.9),
         new Buff(AttrTypeId.Sniper, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.JingujiMari.long;
+    weaponCloses: Gear[] = ActressGears.JingujiMari.short;
+    equipmentTops: Gear[] = ActressGears.JingujiMari.top;
+    equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+}
+
+class JingujiMari80 extends Character {
+    name: string = '神宮寺 真理 / レジェンド ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 581;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 581;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.JingujiMari.long;
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
@@ -19541,11 +19634,13 @@ export const CharacterModels = {
     UsamotoAnna04: new UsamotoAnna04(),
     UsamotoAnna05: new UsamotoAnna05(),
     UsamotoAnna70: new UsamotoAnna70(),
+    UsamotoAnna80: new UsamotoAnna80(),
     JingujiMari01: new JingujiMari01(),
     JingujiMari02: new JingujiMari02(),
     JingujiMari04: new JingujiMari04(),
     JingujiMari05: new JingujiMari05(),
     JingujiMari70: new JingujiMari70(),
+    JingujiMari80: new JingujiMari80(),
     NiiyaSerina01: new NiiyaSerina01(),
     NiiyaSerina02: new NiiyaSerina02(),
     NiiyaSerina04: new NiiyaSerina04(),
