@@ -18494,6 +18494,42 @@ export const ActressGears = {
     UsamotoAnna: {
         long: [
             new Gear({
+                name: 'アレクサンドラ・ローダ',
+                unitType: AttrTypeId.Bazooka,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 573,
+                atkMin: 318,
+                atkMax: 573,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 371,
+                attrMin: 206,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'アレクサンドラプラス',
+                unitType: AttrTypeId.Bazooka,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 541,
+                atkMin: 286,
+                atkMax: 541,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 350,
+                attrMin: 185,
+                attrMax: 350,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
                 name: 'アレクサンドラ・メリー',
                 unitType: AttrTypeId.Bazooka,
                 level: 80,
