@@ -12640,6 +12640,378 @@ class OhtoriKasumi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
 }
 
+class AgatsumaKei01 extends Character {
+    name: string = '吾妻 京 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 15;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 870;
+    hpMin: number = 360;
+    hpMax: number = 870;
+    atkClose: number = 227;
+    atkCloseMin: number = 91;
+    atkCloseMax: number = 227;
+    attrClose: number = 0;
+    atkShot: number = 217;
+    atkShotMin: number = 87;
+    atkShotMax: number = 217;
+    attrShot: number = 0;
+    def: number = 253;
+    defMin: number = 101;
+    defMax: number = 253;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKei.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+}
+
+class AgatsumaKei02 extends Character {
+    name: string = '吾妻 京 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1420;
+    hpMin: number = 510;
+    hpMax: number = 1420;
+    atkClose: number = 364;
+    atkCloseMin: number = 136;
+    atkCloseMax: number = 364;
+    attrClose: number = 0;
+    atkShot: number = 347;
+    atkShotMin: number = 130;
+    atkShotMax: number = 347;
+    attrShot: number = 0;
+    def: number = 404;
+    defMin: number = 152;
+    defMax: number = 404;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKei.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+}
+
+class AgatsumaKei04 extends Character {
+    name: string = '吾妻 京 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 637;
+    atkCloseMin: number = 182;
+    atkCloseMax: number = 637;
+    attrClose: number = 0;
+    atkShot: number = 607;
+    atkShotMin: number = 173;
+    atkShotMax: number = 607;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKei.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+}
+
+class AgatsumaKei05 extends Character {
+    name: string = '吾妻 京 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 819;
+    atkCloseMin: number = 227;
+    atkCloseMax: number = 819;
+    attrClose: number = 0;
+    atkShot: number = 780;
+    atkShotMin: number = 217;
+    atkShotMax: number = 780;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKei.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+}
+
+class AngelicaGlazunova01 extends Character {
+    name: string = 'アンジェリカ・G ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 15;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 853;
+    hpMin: number = 353;
+    hpMax: number = 853;
+    atkClose: number = 149;
+    atkCloseMin: number = 60;
+    atkCloseMax: number = 149;
+    attrClose: number = 0;
+    atkShot: number = 152;
+    atkShotMin: number = 61;
+    atkShotMax: number = 152;
+    attrShot: number = 0;
+    def: number = 260;
+    defMin: number = 104;
+    defMax: number = 260;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova02 extends Character {
+    name: string = 'アンジェリカ・G ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1392;
+    hpMin: number = 500;
+    hpMax: number = 1392;
+    atkClose: number = 239;
+    atkCloseMin: number = 90;
+    atkCloseMax: number = 239;
+    attrClose: number = 0;
+    atkShot: number = 244;
+    atkShotMin: number = 91;
+    atkShotMax: number = 244;
+    attrShot: number = 0;
+    def: number = 416;
+    defMin: number = 156;
+    defMax: number = 416;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova04 extends Character {
+    name: string = 'アンジェリカ・G ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2460;
+    hpMin: number = 676;
+    hpMax: number = 2460;
+    atkClose: number = 418;
+    atkCloseMin: number = 119;
+    atkCloseMax: number = 418;
+    attrClose: number = 0;
+    atkShot: number = 426;
+    atkShotMin: number = 122;
+    atkShotMax: number = 426;
+    attrShot: number = 0;
+    def: number = 728;
+    defMin: number = 208;
+    defMax: number = 728;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
+class AngelicaGlazunova05 extends Character {
+    name: string = 'アンジェリカ・G ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AngelicaGlazunova.long;
+    weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
+    equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
+    equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+}
+
 class KanagataSugumi01 extends Character {
     name: string = '金潟 すぐみ ★1';
     rare: number = 1;
@@ -19459,6 +19831,8 @@ export const ActressNames: string[] = [
     'OnagaAkino',
     'TatsumiRyuko',
     'OhtoriKasumi',
+    'AgatsumaKei',
+    'AngelicaGlazunova',
     'KanagataSugumi',
     'AraimeYasuri',
     'MatobaAoi',
@@ -19787,6 +20161,14 @@ export const CharacterModels = {
     OhtoriKasumi02: new OhtoriKasumi02(),
     OhtoriKasumi04: new OhtoriKasumi04(),
     OhtoriKasumi05: new OhtoriKasumi05(),
+    AgatsumaKei01: new AgatsumaKei01(),
+    AgatsumaKei02: new AgatsumaKei02(),
+    AgatsumaKei04: new AgatsumaKei04(),
+    AgatsumaKei05: new AgatsumaKei05(),
+    AngelicaGlazunova01: new AngelicaGlazunova01(),
+    AngelicaGlazunova02: new AngelicaGlazunova02(),
+    AngelicaGlazunova04: new AngelicaGlazunova04(),
+    AngelicaGlazunova05: new AngelicaGlazunova05(),
     KanagataSugumi01: new KanagataSugumi01(),
     KanagataSugumi02: new KanagataSugumi02(),
     KanagataSugumi04: new KanagataSugumi04(),
