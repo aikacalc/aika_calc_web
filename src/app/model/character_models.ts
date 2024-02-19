@@ -12268,6 +12268,52 @@ class OnagaAkino05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
 }
 
+class OnagaAkino70 extends Character {
+    name: string = '尾長 晶乃 / 翼成 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 796;
+    atkShotMin: number = 221;
+    atkShotMax: number = 796;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
 class TatsumiRyuko01 extends Character {
     name: string = '巽 竜子 ★1';
     rare: number = 1;
@@ -20153,6 +20199,7 @@ export const CharacterModels = {
     OnagaAkino02: new OnagaAkino02(),
     OnagaAkino04: new OnagaAkino04(),
     OnagaAkino05: new OnagaAkino05(),
+    OnagaAkino70: new OnagaAkino70(),
     TatsumiRyuko01: new TatsumiRyuko01(),
     TatsumiRyuko02: new TatsumiRyuko02(),
     TatsumiRyuko04: new TatsumiRyuko04(),

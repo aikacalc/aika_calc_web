@@ -142,6 +142,9 @@ class DMGCalcPlan {
     }
     static clone(dmgc: DMGCalcPlan): DMGCalcPlan {
         const n = Object.assign(new DMGCalcPlan(), dmgc);
+        n.charaBuff = [];
+        dmgc.charaBuff.forEach(v => { n.charaBuff.push(Object.assign({}, v)) });
+
         n.enemyDebuff = [];
         dmgc.enemyDebuff.forEach(v => { n.enemyDebuff.push(Object.assign({}, v)) });
         return n;
@@ -252,7 +255,7 @@ class DMGCalcPlan {
         this.outputDamageMax = Math.floor(this.outputDamageMax);
 
         console.log(this.outputDamage);
-        
+
     }
 
     // addEnemyResist(): void {
@@ -354,7 +357,7 @@ export class AikaDamageCalcComponent implements OnInit {
 一般子彈
   站立:    100%
   衝刺-前: 65%
-  衝刺-後: 65% 
+  衝刺-後: 65%
   衝刺-側: 90%
 蓄力-子彈: 57.5%
 蓄力-榴彈頭:   100%
@@ -407,7 +410,9 @@ Lv200:1672`,
     耐性：近戰40%
     弱點：射擊-30%
 刺蝟核心
-    弱點：近戰-100% 射擊-100%
+    弱點：近戰射擊-100%
+屬性刺蝟核心
+    弱點：打擊-100%
 花園本體
     耐性：射擊90%
 花園種子
