@@ -189,6 +189,7 @@
                     <td class="output-dmg">{{item.outputDamageMin}}~{{item.outputDamage}}~{{item.outputDamageMax}}</td>
                     <td class="close">
                         <div class="wrapper">
+                            <button class="copy" [ngClass]="{copyed:copyedPlan==item}" (click)="copyPlan(item)">C</button>
                             <button class="delete" (click)="removeCalc(item)">X</button>
                         </div>
                     </td>

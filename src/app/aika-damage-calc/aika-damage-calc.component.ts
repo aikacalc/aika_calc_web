@@ -328,6 +328,7 @@ export class AikaDamageCalcComponent implements OnInit {
     dmgrList: DMGRateCase[] = [];
     dmgcList: DMGCalcPlan[] = [];
     viceAARList: ViceAARCalcCase[] = [];
+    copyedPlan: DMGCalcPlan;
 
     help = {
         dmgcalc: `AGA的傷害計算流程:
@@ -462,14 +463,17 @@ Lv200:1672`,
     }
 
     removeCalc(item: DMGCalcPlan): void {
+        if (this.copyedPlan == item) {
+            this.copyedPlan = null;
+        }
         const i = this.dmgcList.findIndex(v => v == item);
         this.dmgcList.splice(i, 1);
     }
     addCalc(): void {
-        if (this.dmgcList.length > 0) {
-            this.dmgcList.push(
-                DMGCalcPlan.clone(this.dmgcList[this.dmgcList.length - 1])
-            );
+        if (this.copyedPlan != null) {
+            this.dmgcList.push(DMGCalcPlan.clone(this.copyedPlan));
+        } else if (this.dmgcList.length > 0) {
+            this.dmgcList.push(DMGCalcPlan.clone(this.dmgcList[this.dmgcList.length - 1]));
         } else {
             this.dmgcList.push(new DMGCalcPlan());
         }
@@ -479,4 +483,11 @@ Lv200:1672`,
         this.service.message(msg);
     }
 
+    copyPlan(item: any): void {
+        if (this.copyedPlan == item) {
+            this.copyedPlan = null;
+        } else {
+            this.copyedPlan = item;
+        }
+    }
 }
