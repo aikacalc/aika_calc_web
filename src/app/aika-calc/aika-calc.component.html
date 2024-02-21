@@ -11,8 +11,8 @@
             <span style="color:#f0f0f0">隱藏SP值</span>
         </label>
         <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
-        <!-- <button (click)="saveCharacterSavedata()">儲存角色</button>
-        <button (click)="loadCharacterSavedata()">讀取角色</button> -->
+        <button (click)="saveCharacterSavedata()">更新當前角色設定到網址</button>
+        <button (click)="loadCharacterSavedata()">從網址讀取設定</button>
     </div>
     <div class="character" *ngIf="character">
         <div class="block character">
@@ -203,7 +203,7 @@
                             </td>
                         </tr>
 
-                        
+
                         <tr class="close-attr">
                             <td class="name">DEF</td>
                             <!-- <td class="enigma">

@@ -32,6 +32,8 @@ export class AikaCalcComponent implements OnInit {
     public character: Character;
     public hideChrRawVal: boolean = true;
 
+    characterDict: { [key: string]: Character } = {};
+
     copyedBuff: Buff;
     copyedBuffString: string = '';
 
@@ -155,133 +157,136 @@ DEF+200
             AttrTypeId.Slash,
         ].map((atid) => this.idToAttrType(atid));
 
+        const characterModelKeys = Object.keys(CharacterModels);
+        characterModelKeys.forEach(key => {
+            const chara = CharacterModels[key];
+            this.characterDict[chara.name] = chara;
+        });
 
-        this.characterTemplates = Object.keys(CharacterModels)
+        this.characterTemplates = characterModelKeys
             .filter((k) => !k.match(/71$/))
             .map((k) => CharacterModels[k]);
 
-        Object.values(CharacterModels)
-            .forEach(chara => {
-
-                //
-                if (chara.name != '高幡のどか ★1') {
-                    const charaAttrOutputTypeBuff = chara.buffs.find(b => [
-                        AttrTypeId.Volt,
-                        AttrTypeId.Gravity,
-                        AttrTypeId.Fire,
-                        AttrTypeId.Ice
-                    ].indexOf(b.type) > -1);
-                    if (charaAttrOutputTypeBuff) {
-                        const outputValueString = charaAttrOutputTypeBuff.value + '';
-                        const upStatus = attrTypeEnigmaStatus[outputValueString];
-                        if (upStatus) {
-                            chara.atkShotEnigma = upStatus.atkShot;
-                            chara.attrShotEnigma = upStatus.attrShot;
-                            chara.atkCloseEnigma = upStatus.atkClose;
-                            chara.attrCloseEnigma = upStatus.attrClose;
-                            // chara.atkShotEnigmaCustom = upStatus.atkShot;
-                            // chara.attrShotEnigmaCustom = upStatus.attrShot;
-                            // chara.atkCloseEnigmaCustom = upStatus.atkClose;
-                            // chara.attrCloseEnigmaCustom = upStatus.attrClose;
-                        }
+        characterModelKeys.forEach(key => {
+            const chara = CharacterModels[key];
+            //
+            if (chara.name != '高幡のどか ★1') {
+                const charaAttrOutputTypeBuff = chara.buffs.find(b => [
+                    AttrTypeId.Volt,
+                    AttrTypeId.Gravity,
+                    AttrTypeId.Fire,
+                    AttrTypeId.Ice
+                ].indexOf(b.type) > -1);
+                if (charaAttrOutputTypeBuff) {
+                    const outputValueString = charaAttrOutputTypeBuff.value + '';
+                    const upStatus = attrTypeEnigmaStatus[outputValueString];
+                    if (upStatus) {
+                        chara.atkShotEnigma = upStatus.atkShot;
+                        chara.attrShotEnigma = upStatus.attrShot;
+                        chara.atkCloseEnigma = upStatus.atkClose;
+                        chara.attrCloseEnigma = upStatus.attrClose;
+                        // chara.atkShotEnigmaCustom = upStatus.atkShot;
+                        // chara.attrShotEnigmaCustom = upStatus.attrShot;
+                        // chara.atkCloseEnigmaCustom = upStatus.atkClose;
+                        // chara.attrCloseEnigmaCustom = upStatus.attrClose;
                     }
                 }
+            }
 
-                //
-                if (chara.weaponCloses.length == 0
-                    || chara.weaponShots.length == 0
-                ) {
-                    const charaAttrType = chara.buffs.find(b => AttrTypeIdAttrs.indexOf(b.type) > -1);
-                    const closeType = chara.buffs.find(b => AttrTypeIdCloses.indexOf(b.type) > -1);
-                    const shotType = chara.buffs.find(b => AttrTypeIdShots.indexOf(b.type) > -1);
+            //
+            if (chara.weaponCloses.length == 0
+                || chara.weaponShots.length == 0
+            ) {
+                const charaAttrType = chara.buffs.find(b => AttrTypeIdAttrs.indexOf(b.type) > -1);
+                const closeType = chara.buffs.find(b => AttrTypeIdCloses.indexOf(b.type) > -1);
+                const shotType = chara.buffs.find(b => AttrTypeIdShots.indexOf(b.type) > -1);
 
-                    // const goodWeaponType = closeType.value > shotType.value ? closeType.type : shotType.type;
-                    // const subGoodWeaponType = closeType.value < shotType.value ? closeType.type : shotType.type;
+                // const goodWeaponType = closeType.value > shotType.value ? closeType.type : shotType.type;
+                // const subGoodWeaponType = closeType.value < shotType.value ? closeType.type : shotType.type;
 
-                    const closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType.type) > -1
-                        ? AttrTypeId.Impact : AttrTypeId.Slash;
-                    const shotAmmoType = shotType.type == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
+                const closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType.type) > -1
+                    ? AttrTypeId.Impact : AttrTypeId.Slash;
+                const shotAmmoType = shotType.type == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
 
-                    if (chara.weaponCloses.length == 0) {
-                        const defaultGear = new Gear({
-                            unitType: closeType.type,
-                            level: 1,
-                            levelMin: 1,
-                            levelMax: 1,
-                            gradeUp: 0,
-                            gradeUpLimit: 0,
-                            atk: 70,
-                            atkMin: 70,
-                            atkMax: 70,
-                            atkTypeId: AttrTypeId.Close,
-                            atkAmmoTypeId: closeAmmoType,
-                            attr: 30,
-                            attrMin: 30,
-                            attrMax: 30,
-                            attrTypeId: charaAttrType.type
-                        });
-                        chara.weaponCloses.push(defaultGear);
-                    }
-                    if (chara.weaponShots.length == 0) {
-                        const defaultGear = new Gear({
-                            unitType: shotType.type,
-                            level: 1,
-                            levelMin: 1,
-                            levelMax: 1,
-                            gradeUp: 0,
-                            gradeUpLimit: 0,
-                            atk: 70,
-                            atkMin: 70,
-                            atkMax: 70,
-                            atkTypeId: AttrTypeId.Close,
-                            atkAmmoTypeId: shotAmmoType,
-                            attr: 30,
-                            attrMin: 30,
-                            attrMax: 30,
-                            attrTypeId: charaAttrType.type
-                        });
-                        chara.weaponShots.push(defaultGear);
-                    }
-                }
-                if (chara.equipmentTops.length == 0) {
+                if (chara.weaponCloses.length == 0) {
                     const defaultGear = new Gear({
-                        unitType: AttrTypeId.EquipmentTop,
+                        unitType: closeType.type,
                         level: 1,
                         levelMin: 1,
                         levelMax: 1,
                         gradeUp: 0,
                         gradeUpLimit: 0,
-                        hp: 216,
-                        hpMin: 216,
-                        hpMax: 216,
-                        def: 60,
-                        defMin: 60,
-                        defMax: 60,
-                        buffs: []
+                        atk: 70,
+                        atkMin: 70,
+                        atkMax: 70,
+                        atkTypeId: AttrTypeId.Close,
+                        atkAmmoTypeId: closeAmmoType,
+                        attr: 30,
+                        attrMin: 30,
+                        attrMax: 30,
+                        attrTypeId: charaAttrType.type
                     });
-                    chara.equipmentTops.push(defaultGear);
+                    chara.weaponCloses.push(defaultGear);
                 }
-                if (chara.equipmentBottoms.length == 0) {
+                if (chara.weaponShots.length == 0) {
                     const defaultGear = new Gear({
-                        unitType: AttrTypeId.EquipmentBottom,
+                        unitType: shotType.type,
                         level: 1,
                         levelMin: 1,
                         levelMax: 1,
                         gradeUp: 0,
                         gradeUpLimit: 0,
-                        hp: 144,
-                        hpMin: 144,
-                        hpMax: 144,
-                        def: 40,
-                        defMin: 40,
-                        defMax: 40,
-                        buffs: []
+                        atk: 70,
+                        atkMin: 70,
+                        atkMax: 70,
+                        atkTypeId: AttrTypeId.Close,
+                        atkAmmoTypeId: shotAmmoType,
+                        attr: 30,
+                        attrMin: 30,
+                        attrMax: 30,
+                        attrTypeId: charaAttrType.type
                     });
-                    chara.equipmentBottoms.push(defaultGear);
+                    chara.weaponShots.push(defaultGear);
                 }
+            }
+            if (chara.equipmentTops.length == 0) {
+                const defaultGear = new Gear({
+                    unitType: AttrTypeId.EquipmentTop,
+                    level: 1,
+                    levelMin: 1,
+                    levelMax: 1,
+                    gradeUp: 0,
+                    gradeUpLimit: 0,
+                    hp: 216,
+                    hpMin: 216,
+                    hpMax: 216,
+                    def: 60,
+                    defMin: 60,
+                    defMax: 60,
+                    buffs: []
+                });
+                chara.equipmentTops.push(defaultGear);
+            }
+            if (chara.equipmentBottoms.length == 0) {
+                const defaultGear = new Gear({
+                    unitType: AttrTypeId.EquipmentBottom,
+                    level: 1,
+                    levelMin: 1,
+                    levelMax: 1,
+                    gradeUp: 0,
+                    gradeUpLimit: 0,
+                    hp: 144,
+                    hpMin: 144,
+                    hpMax: 144,
+                    def: 40,
+                    defMin: 40,
+                    defMax: 40,
+                    buffs: []
+                });
+                chara.equipmentBottoms.push(defaultGear);
+            }
+        });
 
-
-            });
 
         const aika = CharacterModels.AikawaAika05;
         this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(aika);
@@ -328,6 +333,8 @@ DEF+200
         // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
 
         // this.character.updateStatus();
+
+        // this.loadCharacterSavedata();
     }
     public idToAttrType(atid: AttrTypeId): { id: AttrTypeId, name: string } {
         return { id: atid, name: AttrTypeName[AttrTypeId[atid]] };
@@ -398,9 +405,236 @@ DEF+200
     }
 
     saveCharacterSavedata(): void {
+        // chrName,lv,gradeUp,masterLevel,masterPlus,isCustomEnigmaStatus,atkShotEnigmaCustom,attrShotEnigmaCustom,atkCloseEnigmaCustom,attrCloseEnigmaCustom
+        // ,buffCount, ...[bufftypeid,value],
+        // ,shotgearName,lv,gradeUp,isCustom,attrTypeGearShot,attrTypeShotAmmoType,atk,attrTypeAttr,attr,buffCount, ...[bufftypeid,value],tuneCount, ...[tuneTypeid,value]
+        // ,closegearName,lv,gradeUp,isCustom,attrTypeGearClose,attrTypeCloseHitType,atk,attrTypeAttr,attr,buffCount, ...[bufftypeid,value],tuneCount, ...[tuneTypeid,value]
+        // ,topgearName,lv,gradeUp,isCustom,hp,def,buffCount, ...[bufftypeid,value],tuneCount, ...[tuneTypeid,value]
+        // ,bottomgearName,lv,gradeUp,isCustom,hp,def,buffCount, ...[bufftypeid,value],tuneCount, ...[tuneTypeid,value]
 
+        const saveDatas = [];
+        saveDatas.push(
+            this.character.name,
+            this.character.level,
+            this.character.gradeUp,
+            this.character.masterLevel,
+            this.character.masterPlus,
+            this.character.isCustomEnigmaStatus,
+            this.character.atkShotEnigmaCustom,
+            this.character.attrShotEnigmaCustom,
+            this.character.atkCloseEnigmaCustom,
+            this.character.attrCloseEnigmaCustom,
+        );
+        saveDatas.push(
+            this.character.buffs.length,
+            ...[].concat(...this.character.buffs.map(b => [b.type, b.value])),
+        );
+
+        saveDatas.push(
+            this.character.weaponShot.base.name,
+            this.character.weaponShot.base.level,
+            this.character.weaponShot.base.gradeUp,
+            this.character.weaponShot.isCustom,
+            this.character.weaponShot.base.unitType,
+            this.character.weaponShot.base.atkAmmoTypeId,
+            this.character.weaponShot.base.atk,
+            this.character.weaponShot.base.attrTypeId,
+            this.character.weaponShot.base.attr,
+        );
+        saveDatas.push(
+            this.character.weaponShot.buffs.length,
+            ...[].concat(...this.character.weaponShot.buffs.map(b => [b.type, b.value])),
+            this.character.weaponShot.tunes.length,
+            ...[].concat(...this.character.weaponShot.tunes.map(b => [b.type, b.value])),
+        );
+
+        saveDatas.push(
+            this.character.weaponClose.base.name,
+            this.character.weaponClose.base.level,
+            this.character.weaponClose.base.gradeUp,
+            this.character.weaponClose.isCustom,
+            this.character.weaponClose.base.unitType,
+            this.character.weaponClose.base.atkAmmoTypeId,
+            this.character.weaponClose.base.atk,
+            this.character.weaponClose.base.attrTypeId,
+            this.character.weaponClose.base.attr,
+        );
+        saveDatas.push(
+            this.character.weaponClose.buffs.length,
+            ...[].concat(...this.character.weaponClose.buffs.map(b => [b.type, b.value])),
+            this.character.weaponClose.tunes.length,
+            ...[].concat(...this.character.weaponClose.tunes.map(b => [b.type, b.value])),
+        );
+
+        saveDatas.push(
+            this.character.equipmentTop.base.name,
+            this.character.equipmentTop.base.level,
+            this.character.equipmentTop.base.gradeUp,
+            this.character.equipmentTop.isCustom,
+            this.character.equipmentTop.base.hp,
+            this.character.equipmentTop.base.def,
+        );
+        saveDatas.push(
+            this.character.equipmentTop.buffs.length,
+            ...[].concat(...this.character.equipmentTop.buffs.map(b => [b.type, b.value])),
+            this.character.equipmentTop.tunes.length,
+            ...[].concat(...this.character.equipmentTop.tunes.map(b => [b.type, b.value])),
+        );
+
+        saveDatas.push(
+            this.character.equipmentBottom.base.name,
+            this.character.equipmentBottom.base.level,
+            this.character.equipmentBottom.base.gradeUp,
+            this.character.equipmentBottom.isCustom,
+            this.character.equipmentBottom.base.hp,
+            this.character.equipmentBottom.base.def,
+        );
+        saveDatas.push(
+            this.character.equipmentBottom.buffs.length,
+            ...[].concat(...this.character.equipmentBottom.buffs.map(b => [b.type, b.value])),
+            this.character.equipmentBottom.tunes.length,
+            ...[].concat(...this.character.equipmentBottom.tunes.map(b => [b.type, b.value])),
+        );
+
+        console.log(saveDatas);
+
+        const saveDataString = encodeURIComponent(saveDatas.join(','));
+        console.log(saveDataString);
+
+        history.replaceState(null, null, `?s=${saveDataString}`);
     }
     loadCharacterSavedata(): void {
+        const saveString = decodeURIComponent(location.search.split('s=')[1]);
+        const saveDatas = saveString.split(',');
+        console.log(saveString, saveDatas);
+        try {
+            let saveDataIndex = 0;
+            const characterName = saveDatas[saveDataIndex++];
+            const characterTemplateIndex = this.characterTemplates.findIndex(c => c.name == characterName);
+            this.selectedCharacterTemplateIndex = characterTemplateIndex;
+            this.onCharacterTemplateChange();
+            this.setCharacterTemplateToCharacter();
+
+            this.character.level = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.gradeUp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.masterLevel = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.masterPlus = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.isCustomEnigmaStatus = saveDatas[saveDataIndex++] == 'true';
+            this.character.atkShotEnigmaCustom = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.attrShotEnigmaCustom = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.atkCloseEnigmaCustom = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.attrCloseEnigmaCustom = parseInt(saveDatas[saveDataIndex++], 10);
+
+            this.character.buffs = [];
+            const buffCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < buffCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.buffs.push(new Buff(type, value));
+            }
+
+            const shotGearName = saveDatas[saveDataIndex++];
+            this.character.weaponShotIndex = this.character.weaponShots.findIndex(g => g.base.name == shotGearName);
+            this.setGear(this.character.weaponShot, this.character.weaponShots, this.character.weaponShotIndex.toString());
+            this.character.weaponShot.base.level = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.base.gradeUp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.isCustom = saveDatas[saveDataIndex++] == 'true';
+            this.character.weaponShot.base.unitType = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.base.atkAmmoTypeId = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.base.atk = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.base.attrTypeId = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.base.attr = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponShot.buffs = [];
+            const shotBuffCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < shotBuffCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.weaponShot.buffs.push(new Buff(type, value));
+            }
+            this.character.weaponShot.tunes = [];
+            const shotTuneCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < shotTuneCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.weaponShot.tunes.push(new Buff(type, value));
+            }
+
+            const closeGearName = saveDatas[saveDataIndex++];
+            this.character.weaponCloseIndex = this.character.weaponCloses.findIndex(g => g.base.name == closeGearName);
+            this.setGear(this.character.weaponClose, this.character.weaponCloses, this.character.weaponCloseIndex.toString());
+            this.character.weaponClose.base.level = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.base.gradeUp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.isCustom = saveDatas[saveDataIndex++] == 'true';
+            this.character.weaponClose.base.unitType = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.base.atkAmmoTypeId = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.base.atk = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.base.attrTypeId = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.base.attr = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.weaponClose.buffs = [];
+            const closeBuffCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < closeBuffCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.weaponClose.buffs.push(new Buff(type, value));
+            }
+            this.character.weaponClose.tunes = [];
+            const closeTuneCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < closeTuneCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.weaponClose.tunes.push(new Buff(type, value));
+            }
+
+            const topGearName = saveDatas[saveDataIndex++];
+            this.character.equipmentTopIndex = this.character.equipmentTops.findIndex(g => g.base.name == topGearName);
+            this.setGear(this.character.equipmentTop, this.character.equipmentTops, this.character.equipmentTopIndex.toString());
+            this.character.equipmentTop.base.level = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentTop.base.gradeUp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentTop.isCustom = saveDatas[saveDataIndex++] == 'true';
+            this.character.equipmentTop.base.hp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentTop.base.def = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentTop.buffs = [];
+            const topBuffCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < topBuffCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.equipmentTop.buffs.push(new Buff(type, value));
+            }
+            this.character.equipmentTop.tunes = [];
+            const topTuneCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < topTuneCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.equipmentTop.tunes.push(new Buff(type, value));
+            }
+
+            const bottomGearName = saveDatas[saveDataIndex++];
+            this.character.equipmentBottomIndex = this.character.equipmentBottoms.findIndex(g => g.base.name == bottomGearName);
+            this.setGear(this.character.equipmentBottom, this.character.equipmentBottoms, this.character.equipmentBottomIndex.toString());
+            this.character.equipmentBottom.base.level = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentBottom.base.gradeUp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentBottom.isCustom = saveDatas[saveDataIndex++] == 'true';
+            this.character.equipmentBottom.base.hp = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentBottom.base.def = parseInt(saveDatas[saveDataIndex++], 10);
+            this.character.equipmentBottom.buffs = [];
+            const bottomBuffCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < bottomBuffCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.equipmentBottom.buffs.push(new Buff(type, value));
+            }
+            this.character.equipmentBottom.tunes = [];
+            const bottomTuneCount = parseInt(saveDatas[saveDataIndex++], 10);
+            for (let i = 0; i < bottomTuneCount; i++) {
+                const type = parseInt(saveDatas[saveDataIndex++], 10);
+                const value = parseFloat(saveDatas[saveDataIndex++]);
+                this.character.equipmentBottom.tunes.push(new Buff(type, value));
+            }
+
+            this.character.updateStatus();
+        } catch (error) {
+            console.error(error);
+        }
 
     }
 }
