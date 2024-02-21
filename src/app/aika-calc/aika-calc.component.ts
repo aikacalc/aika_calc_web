@@ -58,6 +58,7 @@ HP+725
 DEF+200
 射擊/近戰+100`
     }
+    loadingSettingError: boolean = false;
 
     constructor(
         public service: AppService
@@ -287,30 +288,33 @@ DEF+200
             }
         });
 
+        const isLoadSetting = this.loadCharacterSavedataFromUrl();
+        if (!isLoadSetting) {
 
-        const aika = CharacterModels.AikawaAika05;
-        this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(aika);
-        this.onCharacterTemplateChange();
-        this.setCharacterTemplateToCharacter();
+            const aika = CharacterModels.AikawaAika05;
+            this.selectedCharacterTemplateIndex = this.characterTemplates.indexOf(aika);
+            this.onCharacterTemplateChange();
+            this.setCharacterTemplateToCharacter();
 
-        aika.weaponShotIndex = aika.weaponShots.findIndex(g => g.base.name == 'フラワーポットMk3');
-        this.setGear(aika.weaponShot, aika.weaponShots, aika.weaponShotIndex.toString());
-        aika.weaponCloseIndex = aika.weaponCloses.findIndex(g => g.base.name == 'ポティスティリ');
-        this.setGear(aika.weaponClose, aika.weaponCloses, aika.weaponCloseIndex.toString());
-        aika.equipmentTopIndex = aika.equipmentTops.findIndex(g => g.base.name == 'シープソングMk3/T');
-        this.setGear(aika.equipmentTop, aika.equipmentTops, aika.equipmentTopIndex.toString());
-        aika.equipmentBottomIndex = aika.equipmentBottoms.findIndex(g => g.base.name == 'シープソングMk3/B');
-        this.setGear(aika.equipmentBottom, aika.equipmentBottoms, aika.equipmentBottomIndex.toString());
+            aika.weaponShotIndex = aika.weaponShots.findIndex(g => g.base.name == 'フラワーポットMk3');
+            this.setGear(aika.weaponShot, aika.weaponShots, aika.weaponShotIndex.toString());
+            aika.weaponCloseIndex = aika.weaponCloses.findIndex(g => g.base.name == 'ポティスティリ');
+            this.setGear(aika.weaponClose, aika.weaponCloses, aika.weaponCloseIndex.toString());
+            aika.equipmentTopIndex = aika.equipmentTops.findIndex(g => g.base.name == 'シープソングMk3/T');
+            this.setGear(aika.equipmentTop, aika.equipmentTops, aika.equipmentTopIndex.toString());
+            aika.equipmentBottomIndex = aika.equipmentBottoms.findIndex(g => g.base.name == 'シープソングMk3/B');
+            this.setGear(aika.equipmentBottom, aika.equipmentBottoms, aika.equipmentBottomIndex.toString());
 
-        aika.masterLevel = 30;
-        // aika.attrShotEnigma = 50;
-        // aika.attrCloseEnigma = 50;
-        aika.weaponShot.base.gradeUp = 99;
-        aika.weaponClose.base.gradeUp = 99;
-        aika.equipmentTop.base.gradeUp = 99;
-        aika.equipmentBottom.base.gradeUp = 99;
+            aika.masterLevel = 30;
+            // aika.attrShotEnigma = 50;
+            // aika.attrCloseEnigma = 50;
+            aika.weaponShot.base.gradeUp = 99;
+            aika.weaponClose.base.gradeUp = 99;
+            aika.equipmentTop.base.gradeUp = 99;
+            aika.equipmentBottom.base.gradeUp = 99;
 
-        this.character.updateStatus();
+            this.character.updateStatus();
+        }
         // console.log(this.character);
 
 
@@ -334,7 +338,7 @@ DEF+200
 
         // this.character.updateStatus();
 
-        // this.loadCharacterSavedata();
+
     }
     public idToAttrType(atid: AttrTypeId): { id: AttrTypeId, name: string } {
         return { id: atid, name: AttrTypeName[AttrTypeId[atid]] };
@@ -404,7 +408,7 @@ DEF+200
 
     }
 
-    saveCharacterSavedata(): void {
+    getSavedatas(): any[] {
         // chrName,lv,gradeUp,masterLevel,masterPlus,isCustomEnigmaStatus,atkShotEnigmaCustom,attrShotEnigmaCustom,atkCloseEnigmaCustom,attrCloseEnigmaCustom
         // ,buffCount, ...[bufftypeid,value],
         // ,shotgearName,lv,gradeUp,isCustom,attrTypeGearShot,attrTypeShotAmmoType,atk,attrTypeAttr,attr,buffCount, ...[bufftypeid,value],tuneCount, ...[tuneTypeid,value]
@@ -495,18 +499,28 @@ DEF+200
             this.character.equipmentBottom.tunes.length,
             ...[].concat(...this.character.equipmentBottom.tunes.map(b => [b.type, b.value])),
         );
-
+        return saveDatas;
+    }
+    saveCharacterSavedata(): void {
+        const saveDatas = this.getSavedatas();
         console.log(saveDatas);
-
         const saveDataString = encodeURIComponent(saveDatas.join(','));
         console.log(saveDataString);
 
         history.replaceState(null, null, `?s=${saveDataString}`);
+        this.loadingSettingError = false;
     }
-    loadCharacterSavedata(): void {
+
+    loadCharacterSavedataFromUrl(): boolean {
         const saveString = decodeURIComponent(location.search.split('s=')[1]);
         const saveDatas = saveString.split(',');
         console.log(saveString, saveDatas);
+        if (!saveString || saveString == 'undefined' || saveDatas.length < 2) {
+            return false;
+        }
+
+        let success = false;
+
         try {
             let saveDataIndex = 0;
             const characterName = saveDatas[saveDataIndex++];
@@ -632,9 +646,13 @@ DEF+200
             }
 
             this.character.updateStatus();
+
+            success = true;
         } catch (error) {
+            this.loadingSettingError = true;
             console.error(error);
         }
 
+        return success;
     }
 }

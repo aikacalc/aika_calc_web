@@ -1,4 +1,4 @@
-:host>.root {
+:host > .root {
     // height: 100%;
     padding-top: 10px;
     padding-left: 10px;
@@ -14,7 +14,7 @@
         }
     }
 
-    input[type=range] {
+    input[type="range"] {
         width: 100px;
     }
 
@@ -26,45 +26,45 @@
         text-decoration: underline dotted #000;
     }
 
-    >.input-json {
+    > .input-json {
         height: 30px;
         display: flex;
         align-items: flex-start;
 
-        >button {
+        > button {
             width: 60px;
             // height: 24px;
             font-size: 16px;
         }
 
-        >input {
+        > input {
             margin-left: 5px;
             flex: 1;
         }
     }
 
-    >.character-template-select {
+    > .character-template-select {
         height: 30px;
         display: flex;
         align-items: flex-start;
 
-        >span {
+        > span {
             width: 60px;
         }
 
-        >select {
+        > select {
             margin-left: 5px;
         }
 
-        >button {
+        > button {
             margin-left: 5px;
         }
 
-        >label {
+        > label {
             white-space: nowrap;
         }
 
-        >.fan-calc {
+        > .fan-calc {
             margin-left: auto;
             display: flex;
             align-items: center;
@@ -74,11 +74,11 @@
         }
     }
 
-    >.toolbar {
+    > .toolbar {
         display: flex;
     }
 
-    >.character {
+    > .character {
         display: flex;
         flex-wrap: wrap;
 
@@ -101,7 +101,6 @@
             font-size: 16px;
         }
 
-
         .buff-list {
             width: 100%;
         }
@@ -110,7 +109,7 @@
             display: flex;
             align-items: center;
 
-            >hr.line {
+            > hr.line {
                 flex: 1;
                 border: 0;
                 margin: 0;
@@ -118,7 +117,7 @@
                 border-bottom: 1px dashed #aaa;
             }
 
-            >button.copy {
+            > button.copy {
                 width: 20px;
                 display: flex;
                 justify-content: center;
@@ -139,7 +138,7 @@
                 }
             }
 
-            >button.delete {
+            > button.delete {
                 width: 20px;
                 display: flex;
                 justify-content: center;
@@ -153,18 +152,18 @@
             }
         }
 
-        >.block {
+        > .block {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
 
-            >.row {
+            > .row {
                 margin-right: 10px;
                 margin-bottom: 10px;
                 display: flex;
                 flex-wrap: wrap;
 
-                >table {
+                > table {
                     margin-right: 10px;
                     margin-bottom: 10px;
                     width: 370px;
@@ -176,83 +175,81 @@
                         border-bottom: 1px dashed #aaa;
                     }
 
-                    >tbody {
-                        >tr {
-                            >td {
+                    > tbody {
+                        > tr {
+                            > td {
                                 border: 1px solid #aaa;
                             }
                         }
 
-                        >tr>td.title-cell {
+                        > tr > td.title-cell {
                             padding: 4px;
                             background-color: #cccccc;
                             line-height: 20px;
 
-                            >span+span {
+                            > span + span {
                                 margin-left: 10px;
                             }
                         }
 
-                        >tr>td.enigma {
+                        > tr > td.enigma {
                             width: 0px;
                             // text-align: center;
                             text-align: right;
                             white-space: nowrap;
 
-                            >.text {
+                            > .text {
                                 padding-bottom: 8px;
                             }
 
-                            >button {
+                            > button {
                                 white-space: nowrap;
                             }
                         }
 
-                        >tr:nth-child(n+2)>td.name {
+                        > tr:nth-child(n + 2) > td.name {
                             width: 80px;
                             padding: 4px;
                         }
 
-                        >tr>td>.wrapper-row {
+                        > tr > td > .wrapper-row {
                             display: flex;
                             align-items: center;
                         }
 
-                        >tr.level>td>.wrapper {
-                            input[type=number] {
+                        > tr.level > td > .wrapper {
+                            input[type="number"] {
                                 margin-right: 5px;
                             }
 
-                            input[type=range] {
+                            input[type="range"] {
                                 margin-left: 5px;
                                 border: 1px solid #000;
                             }
                         }
 
-                        >tr>td.gear-custom-cell>.wrapper-col {
-                            >.row {
+                        > tr > td.gear-custom-cell > .wrapper-col {
+                            > .row {
                                 display: flex;
 
-                                >select {
+                                > select {
                                     flex: 1;
                                 }
 
-                                >button>span.is-custom {
-                                    color: #0a0
+                                > button > span.is-custom {
+                                    color: #0a0;
                                 }
 
-                                >button+button {
+                                > button + button {
                                     margin-left: 5px;
                                 }
                             }
                         }
 
-                        >tr>td .tune-text {
+                        > tr > td .tune-text {
                             margin-left: 5px;
                         }
                     }
-
-
                 }
 
                 button.new-buff {
@@ -266,7 +263,7 @@
                     align-items: center;
                     justify-content: center;
 
-                    >.copyed-buff-string {
+                    > .copyed-buff-string {
                         position: absolute;
                         left: 0;
                         font-size: 16px;
@@ -276,12 +273,19 @@
                 }
             }
 
-            >.row.character {}
+            > .row.character {
+            }
 
-            >.row.weapon {}
+            > .row.weapon {
+            }
 
-            >.row.equipment {}
+            > .row.equipment {
+            }
         }
+    }
 
+    .load-setting-error {
+        color: #f00;
+        white-space: nowrap;
     }
 }

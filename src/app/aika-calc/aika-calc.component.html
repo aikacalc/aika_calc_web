@@ -12,7 +12,8 @@
         </label>
         <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
         <button (click)="saveCharacterSavedata()">更新當前角色設定到網址</button>
-        <button (click)="loadCharacterSavedata()">從網址讀取設定</button>
+        <span class="load-setting-error" *ngIf="loadingSettingError">網址設定似乎有錯? <a href="/">返回</a></span>
+        <!-- <button (click)="loadCharacterSavedata()">從網址讀取設定</button> -->
     </div>
     <div class="character" *ngIf="character">
         <div class="block character">
