@@ -61,7 +61,15 @@
         }
 
         tr>td.close>.wrapper {
+            position: relative;
             justify-content: flex-end;
+
+            >button::after {
+                position: absolute;
+                top: 0;
+                left: 90px;
+                font-size: 18px;
+            }
         }
 
         .wrapper {
@@ -106,6 +114,44 @@
             &:hover {
                 background-color: #eee;
             }
+        }
+
+        button.update-url,
+        button.load-url {
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+            background-color: #fff;
+
+            &:hover {
+                background-color: #eee;
+            }
+
+            &.copyed {
+                background-color: #0c0;
+
+                &:hover {
+                    background-color: #0e0;
+                }
+            }
+        }
+
+        button.copy:hover::after {
+            content: '複製引用';
+        }
+
+        button.delete:hover::after {
+            content: '刪除';
+        }
+
+        button.update-url:hover::after {
+            content: '更新到網址';
+        }
+
+        button.load-url:hover::after {
+            content: '讀取計算';
         }
 
         .phy {
@@ -168,6 +214,36 @@
             >.output-dmg {
                 min-width: 200px;
                 width: 200px;
+            }
+        }
+
+        >.container {
+            >.block {
+                width: 500px;
+                border: 1px solid #ccc;
+
+                .row {
+                    padding: 4px;
+                    display: flex;
+                    .col{
+                        padding: 4px;
+                        border: 1px solid #ccc;
+                    }
+                }
+
+                .row.name {
+                    >.col:nth-child(1) {
+                        width: 40px;
+                    }
+
+                    >.col:nth-child(2) {
+                        flex: 1;
+                        display: flex;
+                        >input{
+                            flex: 1;
+                        }
+                    }
+                }
             }
         }
     }

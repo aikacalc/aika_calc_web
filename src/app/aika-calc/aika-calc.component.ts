@@ -512,6 +512,10 @@ DEF+200
     }
 
     loadCharacterSavedataFromUrl(): boolean {
+        const url = new URL(location.href);
+        if(!url.searchParams.has('s')) {
+            return false;
+        }
         const saveString = decodeURIComponent(location.search.split('s=')[1]);
         const saveDatas = saveString.split(',');
         console.log(saveString, saveDatas);

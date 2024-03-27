@@ -293,6 +293,48 @@ class DMGCalcPlan {
         const i = this.enemyDebuff.findIndex(v => v == item);
         this.enemyDebuff.splice(i, 1);
     }
+    setFromSavedatas(savedatas: any[]): void {
+        let index = 0;
+
+        this.name = savedatas[index++];
+        this.atkTypeId = Number(savedatas[index++]);
+        this.atk = Number(savedatas[index++]);
+        this.attrTypeId = Number(savedatas[index++]);
+        this.attr = Number(savedatas[index++]);
+
+        const charaBuffIndex = index;
+        index++;
+        const charaBuffCount = parseInt(savedatas[charaBuffIndex], 10);
+        this.charaBuff = [];
+        if (charaBuffCount > 0) {
+            for (let i = 0; i < charaBuffCount; i++) {
+                this.charaBuff.push({
+                    attrTypeId: Number(savedatas[charaBuffIndex + 1 + i * 2]),
+                    value: Number(savedatas[charaBuffIndex + 2 + i * 2]),
+                });
+                index += 2;
+            }
+        }
+
+        this.damageRatePercent = Number(savedatas[index++]);
+        this.finalDamageBuff = Number(savedatas[index++]);
+        this.enemyDef = Number(savedatas[index++]);
+        this.enemyAttrTypeId = Number(savedatas[index++]);
+
+        const enemyDebuffIndex = index;
+        index++;
+        const enemyDebuffCount = parseInt(savedatas[enemyDebuffIndex], 10);
+        this.enemyDebuff = [];
+        if (enemyDebuffCount > 0) {
+            for (let i = 0; i < enemyDebuffCount; i++) {
+                this.enemyDebuff.push({
+                    attrTypeId: Number(savedatas[enemyDebuffIndex + 1 + i * 2]),
+                    value: Number(savedatas[enemyDebuffIndex + 2 + i * 2]),
+                });
+                index += 2;
+            }
+        }
+    }
 }
 
 class ViceAARCalcCase {
@@ -446,7 +488,19 @@ Lv200:1672`,
 
     ngOnInit(): void {
         this.dmgrList.push(DMGRateCase.getAika());
-        this.dmgcList.push(DMGCalcPlan.getAika());
+
+        let isLoadSetting = false;
+        const url = new URL(location.href);
+        if (url.searchParams.has('ds')) {
+            const plan = this.loadSavedataFromUrl();
+            if (plan) {
+                this.dmgcList.push(plan);
+                isLoadSetting = true;
+            }
+        }
+        if (!isLoadSetting) {
+            this.dmgcList.push(DMGCalcPlan.getAika());
+        }
     }
     removeRate(item: DMGRateCase): void {
         const i = this.dmgrList.findIndex(v => v == item);
@@ -488,6 +542,60 @@ Lv200:1672`,
             this.copyedPlan = null;
         } else {
             this.copyedPlan = item;
+        }
+    }
+
+    getItemSavedatas(item: DMGCalcPlan): any[] {
+        const saveDatas = [];
+        saveDatas.push(item.name);
+        saveDatas.push(item.atkTypeId);
+        saveDatas.push(item.atk);
+        saveDatas.push(item.attrTypeId);
+        saveDatas.push(item.attr);
+        saveDatas.push(
+            item.charaBuff.length,
+            ...[].concat(...item.charaBuff.map(b => [b.attrTypeId, b.value])),
+        );
+        saveDatas.push(item.damageRatePercent);
+        saveDatas.push(item.finalDamageBuff);
+        saveDatas.push(item.enemyDef);
+        saveDatas.push(item.enemyAttrTypeId);
+
+        saveDatas.push(
+            item.enemyDebuff.length,
+            ...[].concat(...item.enemyDebuff.map(b => [b.attrTypeId, b.value])),
+        );
+        return saveDatas;
+    }
+    updateUrl(item: DMGCalcPlan): void {
+        const saveDatas = this.getItemSavedatas(item);
+        const saveDataString = encodeURIComponent(saveDatas.join(','));
+
+        history.replaceState(null, null, `?page=adc&ds=${saveDataString}`);
+    }
+    loadSavedataFromUrl(): DMGCalcPlan {
+        const url = new URL(location.href);
+        if (!url.searchParams.has('ds')) {
+            return null;
+        }
+
+        const savedataString = url.searchParams.get('ds');
+        const savedatas = savedataString.split(',');
+        console.log(savedatas);
+
+        const p = new DMGCalcPlan();
+        p.setFromSavedatas(savedatas);
+        p.update();
+        return p;
+    }
+    loadUrl(item: DMGCalcPlan): void {
+        const savedataUrl = prompt('貼上存檔網址');
+        const url = new URL(savedataUrl);
+        if (url.searchParams.has('ds')) {
+            const savedataString = url.searchParams.get('ds');
+            const savedatas = savedataString.split(',');
+            item.setFromSavedatas(savedatas);
+            item.update();
         }
     }
 }

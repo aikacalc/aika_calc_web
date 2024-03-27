@@ -189,6 +189,8 @@
                     <td class="output-dmg">{{item.outputDamageMin}}~{{item.outputDamage}}~{{item.outputDamageMax}}</td>
                     <td class="close">
                         <div class="wrapper">
+                            <button class="load-url" (click)="loadUrl(item)">L</button>
+                            <button class="update-url" (click)="updateUrl(item)">U</button>
                             <button class="copy" [ngClass]="{copyed:copyedPlan==item}" (click)="copyPlan(item)">C</button>
                             <button class="delete" (click)="removeCalc(item)">X</button>
                         </div>
@@ -201,6 +203,58 @@
                 </tr>
             </tbody>
         </table>
+        <!-- <div class="container">
+            <div class="block" *ngFor="let item of dmgcList">
+                <div class="row name">
+                    <div class="col">名稱</div>
+                    <div class="col">
+                        <input type="text" [(ngModel)]="item.name" (ngModelChange)="item.update()">
+                    </div>
+                </div>
+                <div class="row chara">
+                    <div class="col">ATK</div>
+                    <div class="col">
+                        <select [(ngModel)]="item.atkTypeId" (ngModelChange)="item.update()">
+                            <option value="1" [ngStyle]="{color:getTypeColor(AttrTypeId.Impact)}">打擊</option>
+                            <option value="2" [ngStyle]="{color:getTypeColor(AttrTypeId.Slash)}">斬擊</option>
+                            <option value="3" [ngStyle]="{color:getTypeColor(AttrTypeId.Physical)}">實彈</option>
+                            <option value="4" [ngStyle]="{color:getTypeColor(AttrTypeId.Energy)}">能量</option>
+                        </select>
+                        <input type="number" [(ngModel)]="item.atk" (ngModelChange)="item.update()"
+                            [ngStyle]="{color:getTypeColor(item.atkTypeId)}">
+                    </div>
+                    <div class="col">屬性</div>
+                    <div class="col">
+                        <select [(ngModel)]="item.attrTypeId" (ngModelChange)="item.update()">
+                            <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
+                            <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
+                            <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
+                            <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                        </select>
+                        <input type="number" [(ngModel)]="item.attr" (ngModelChange)="item.update()"
+                            [ngStyle]="{color:getTypeColor(item.attrTypeId)}">
+                    </div>
+                </div>
+                <div class="row enemy">
+                    <div class="col">敵人DEF</div>
+                    <div class="col">
+                        <input type="number" [(ngModel)]="item.enemyDef" (ngModelChange)="item.update()">
+                    </div>
+                    <div class="col">敵人屬性</div>
+                    <div class="col">
+                        <select [(ngModel)]="item.enemyAttrTypeId" (ngModelChange)="item.update()"
+                            [ngStyle]="{color:getTypeColor(item.enemyAttrTypeId)}">
+                            <option value="22" [ngStyle]="{color:getTypeColor(AttrTypeId.None)}">無</option>
+                            <option value="5" [ngStyle]="{color:getTypeColor(AttrTypeId.Volt)}">電擊</option>
+                            <option value="6" [ngStyle]="{color:getTypeColor(AttrTypeId.Gravity)}">重力</option>
+                            <option value="7" [ngStyle]="{color:getTypeColor(AttrTypeId.Fire)}">燒夷</option>
+                            <option value="8" [ngStyle]="{color:getTypeColor(AttrTypeId.Ice)}">冷擊</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
         <div class="extra">
             <a href="https://wikiwiki.jp/alicegear/%E7%B7%B4%E7%BF%92%E3%83%9A%E3%83%BC%E3%82%B8/%E3%83%80%E3%83%A1%E3%83%BC%E3%82%B8%E8%A8%88%E7%AE%97#aika_c"
                 target="_blank">日服wiki的傷害計算頁面</a>

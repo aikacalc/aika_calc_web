@@ -1180,6 +1180,15 @@ AIT
         this.swUpdate.available.subscribe(() => {
             this.service.hasNewUpdate = true;
         });
+
+        console.log(location.href);
+        const url = new URL(location.href);
+        if (url.searchParams.has('page')) {
+            const page_ = url.searchParams.get('page');
+            if (page_ == 'adc') {
+                this.page = 'adc';
+            }
+        }
     }
 
     temphpcalc(): void {
