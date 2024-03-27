@@ -192,6 +192,53 @@ class HirasakaYotsuyu05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
 }
 
+class HirasakaYotsuyu60 extends Character {
+    name: string = '比良坂 夜露 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 618;
+    atkCloseMin: number = 172;
+    atkCloseMax: number = 618;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.HirasakaYotsuyu.long;
+    weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
+    equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
+    equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+}
+
 class HirasakaYotsuyu70 extends Character {
     name: string = '比良坂 夜露 / 勇躍 ★4';
     rare: number = 4;
@@ -474,6 +521,52 @@ class KaneshiyaSitara05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
 }
 
+class KaneshiyaSitara60 extends Character {
+    name: string = '兼志谷 シタラ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 678;
+    atkCloseMin: number = 188;
+    atkCloseMax: number = 678;
+    attrClose: number = 0;
+    atkShot: number = 773;
+    atkShotMin: number = 215;
+    atkShotMax: number = 773;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KaneshiyaSitara.long;
+    weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
+    equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
+    equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+}
+
 class KaneshiyaSitara70 extends Character {
     name: string = '兼志谷 シタラ / 天機 ★4';
     rare: number = 4;
@@ -744,6 +837,53 @@ class MomoshinaFumika05 extends Character {
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MomoshinaFumika.long;
+    weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
+    equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
+    equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+}
+
+class MomoshinaFumika60 extends Character {
+    name: string = '百科 文嘉 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 594;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 594;
+    attrClose: number = 0;
+    atkShot: number = 636;
+    atkShotMin: number = 177;
+    atkShotMax: number = 636;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MomoshinaFumika.long;
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
@@ -1029,6 +1169,53 @@ class AgatsumaKaede05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
 }
 
+class AgatsumaKaede60 extends Character {
+    name: string = '吾妻 楓 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 649;
+    atkCloseMin: number = 180;
+    atkCloseMax: number = 649;
+    attrClose: number = 0;
+    atkShot: number = 606;
+    atkShotMin: number = 168;
+    atkShotMax: number = 606;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKaede.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+}
+
 class AgatsumaKaede70 extends Character {
     name: string = '吾妻 楓 / 皆伝 ★4';
     rare: number = 4;
@@ -1299,6 +1486,53 @@ class HimukaiRin05 extends Character {
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.HimukaiRin.long;
+    weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
+    equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
+    equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+}
+
+class HimukaiRin60 extends Character {
+    name: string = '日向 リン ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 649;
+    atkCloseMin: number = 180;
+    atkCloseMax: number = 649;
+    attrClose: number = 0;
+    atkShot: number = 575;
+    atkShotMin: number = 160;
+    atkShotMax: number = 575;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2.17;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.HimukaiRin.long;
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
@@ -1588,6 +1822,52 @@ class TakanashiRei05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
 }
 
+class TakanashiRei60 extends Character {
+    name: string = '小鳥遊 怜 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 722;
+    atkCloseMin: number = 200;
+    atkCloseMax: number = 722;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 158;
+    spdMin: number = 158;
+    spdMax: number = 158;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.TakanashiRei.long;
+    weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
+    equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
+    equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+}
+
 class TakanashiRei70 extends Character {
     name: string = '小鳥遊 怜 / 蒼穹 ★4';
     rare: number = 4;
@@ -1858,6 +2138,53 @@ class IchijoAyaka05 extends Character {
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.IchijoAyaka.long;
+    weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
+    equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
+    equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+}
+
+class IchijoAyaka60 extends Character {
+    name: string = '一条 綾香 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 864;
+    defMin: number = 240;
+    defMax: number = 864;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.IchijoAyaka.long;
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
@@ -2147,6 +2474,52 @@ class AikawaAika05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
 }
 
+class AikawaAika60 extends Character {
+    name: string = '相河 愛花 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 685;
+    atkCloseMin: number = 190;
+    atkCloseMax: number = 685;
+    attrClose: number = 0;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AikawaAika.long;
+    weaponCloses: Gear[] = ActressGears.AikawaAika.short;
+    equipmentTops: Gear[] = ActressGears.AikawaAika.top;
+    equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+}
+
 class AikawaAika70 extends Character {
     name: string = '相河 愛花 / 仁愛 ★4';
     rare: number = 4;
@@ -2417,6 +2790,53 @@ class KoashiMutsumi05 extends Character {
         new Buff(AttrTypeId.Ice, 0.5),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KoashiMutsumi.long;
+    weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
+    equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
+    equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+}
+
+class KoashiMutsumi60 extends Character {
+    name: string = '小芦 睦海 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3110;
+    hpMin: number = 835;
+    hpMax: number = 3110;
+    atkClose: number = 643;
+    atkCloseMin: number = 179;
+    atkCloseMax: number = 643;
+    attrClose: number = 0;
+    atkShot: number = 606;
+    atkShotMin: number = 168;
+    atkShotMax: number = 606;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KoashiMutsumi.long;
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
@@ -2702,6 +3122,53 @@ class NikotamaMai05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
 }
 
+class NikotamaMai60 extends Character {
+    name: string = '二子玉 舞 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 590;
+    atkCloseMin: number = 164;
+    atkCloseMax: number = 590;
+    attrClose: number = 0;
+    atkShot: number = 533;
+    atkShotMin: number = 148;
+    atkShotMax: number = 533;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NikotamaMai.long;
+    weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
+    equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
+    equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+}
+
 class NikotamaMai70 extends Character {
     name: string = '二子玉 舞 / 繊麗 ★4';
     rare: number = 4;
@@ -2973,6 +3440,53 @@ class VirginiaGlynnberets05 extends Character {
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.VirginiaGlynnberets.long;
+    weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
+    equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
+    equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+}
+
+class VirginiaGlynnberets60 extends Character {
+    name: string = 'バージニア・G ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 595;
+    atkShotMin: number = 165;
+    atkShotMax: number = 595;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.VirginiaGlynnberets.long;
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
@@ -3262,6 +3776,52 @@ class FatimaBetrorum05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
 }
 
+class FatimaBetrorum60 extends Character {
+    name: string = 'ファティマ・B ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 780;
+    atkCloseMin: number = 217;
+    atkCloseMax: number = 780;
+    attrClose: number = 0;
+    atkShot: number = 744;
+    atkShotMin: number = 207;
+    atkShotMax: number = 744;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.FatimaBetrorum.long;
+    weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
+    equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
+    equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+}
+
 class FatimaBetrorum70 extends Character {
     name: string = 'ファティマ / Miθra ★4';
     rare: number = 4;
@@ -3496,6 +4056,52 @@ class YotsuyaYumi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
 }
 
+class YotsuyaYumi60 extends Character {
+    name: string = '四谷 ゆみ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3110;
+    hpMin: number = 835;
+    hpMax: number = 3110;
+    atkClose: number = 707;
+    atkCloseMin: number = 196;
+    atkCloseMax: number = 707;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.YotsuyaYumi.long;
+    weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
+    equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
+    equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+}
+
 class YotsuyaYumi70 extends Character {
     name: string = '四谷 ゆみ / 絢爛 ★4';
     rare: number = 4;
@@ -3723,6 +4329,52 @@ class FujinoYayoi05 extends Character {
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.FujinoYayoi.long;
+    weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
+    equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
+    equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+}
+
+class FujinoYayoi60 extends Character {
+    name: string = '藤野 やよい ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 714;
+    atkCloseMin: number = 198;
+    atkCloseMax: number = 714;
+    attrClose: number = 0;
+    atkShot: number = 736;
+    atkShotMin: number = 205;
+    atkShotMax: number = 736;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.FujinoYayoi.long;
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
@@ -4011,6 +4663,52 @@ class ShimoochiaiToka05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
 }
 
+class ShimoochiaiToka60 extends Character {
+    name: string = '下落合 桃歌 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 693;
+    atkCloseMin: number = 192;
+    atkCloseMax: number = 693;
+    attrClose: number = 0;
+    atkShot: number = 765;
+    atkShotMin: number = 213;
+    atkShotMax: number = 765;
+    attrShot: number = 0;
+    def: number = 873;
+    defMin: number = 243;
+    defMax: number = 873;
+    spd: number = 157;
+    spdMin: number = 157;
+    spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ShimoochiaiToka.long;
+    weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
+    equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
+    equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+}
+
 class ShimoochiaiToka70 extends Character {
     name: string = '下落合 桃歌 / 明星 ★4';
     rare: number = 4;
@@ -4288,6 +4986,53 @@ class ShirleyOakley05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
 }
 
+class ShirleyOakley60 extends Character {
+    name: string = 'シャーリー・O ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 506;
+    atkShotMin: number = 141;
+    atkShotMax: number = 506;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.HandGun, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ShirleyOakley.long;
+    weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
+    equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
+    equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+}
+
 class ShirleyOakley70 extends Character {
     name: string = 'シャーリー / 撃壌 ★4';
     rare: number = 4;
@@ -4516,6 +5261,53 @@ class ItokuraNeo05 extends Character {
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo60 extends Character {
+    name: string = '伊戸倉 音緒 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
@@ -4758,6 +5550,53 @@ class YorishiroEri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
 }
 
+class YorishiroEri60 extends Character {
+    name: string = '依城 えり ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 569;
+    atkCloseMin: number = 158;
+    atkCloseMax: number = 569;
+    attrClose: number = 0;
+    atkShot: number = 649;
+    atkShotMin: number = 180;
+    atkShotMax: number = 649;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.YorishiroEri.long;
+    weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
+    equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
+    equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+}
+
 class YorishiroEri70 extends Character {
     name: string = '依城 えり / 清廉 ★4';
     rare: number = 4;
@@ -4986,6 +5825,52 @@ class FumishimaAsuka05 extends Character {
         new Buff(AttrTypeId.Fire, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.FumishimaAsuka.long;
+    weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
+    equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
+    equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+}
+
+class FumishimaAsuka60 extends Character {
+    name: string = '文島 明日翔 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 727;
+    atkCloseMin: number = 202;
+    atkCloseMax: number = 727;
+    attrClose: number = 0;
+    atkShot: number = 803;
+    atkShotMin: number = 223;
+    atkShotMax: number = 803;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.FumishimaAsuka.long;
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
@@ -5223,6 +6108,53 @@ class OhzekiKoyui05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
 }
 
+class OhzekiKoyui60 extends Character {
+    name: string = '大関 小結 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 588;
+    atkCloseMin: number = 163;
+    atkCloseMax: number = 588;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 945;
+    defMin: number = 263;
+    defMax: number = 945;
+    spd: number = 155;
+    spdMin: number = 155;
+    spdMax: number = 155;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.OhzekiKoyui.long;
+    weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
+    equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
+    equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+}
+
 class OhzekiKoyui70 extends Character {
     name: string = '大関 小結 / 豊潤 ★4';
     rare: number = 4;
@@ -5451,6 +6383,53 @@ class UsamotoAnna05 extends Character {
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.UsamotoAnna.long;
+    weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
+    equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
+    equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+}
+
+class UsamotoAnna60 extends Character {
+    name: string = '宇佐元 杏奈 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 522;
+    atkShotMin: number = 145;
+    atkShotMax: number = 522;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.UsamotoAnna.long;
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
@@ -5728,6 +6707,53 @@ class JingujiMari05 extends Character {
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.JingujiMari.long;
+    weaponCloses: Gear[] = ActressGears.JingujiMari.short;
+    equipmentTops: Gear[] = ActressGears.JingujiMari.top;
+    equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+}
+
+class JingujiMari60 extends Character {
+    name: string = '神宮寺 真理 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 539;
+    atkCloseMin: number = 150;
+    atkCloseMax: number = 539;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 164;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.JingujiMari.long;
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
@@ -6013,6 +7039,53 @@ class NiiyaSerina05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
 }
 
+class NiiyaSerina60 extends Character {
+    name: string = '新谷 芹菜 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 618;
+    atkCloseMin: number = 172;
+    atkCloseMax: number = 618;
+    attrClose: number = 0;
+    atkShot: number = 618;
+    atkShotMin: number = 172;
+    atkShotMax: number = 618;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NiiyaSerina.long;
+    weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
+    equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
+    equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+}
+
 class NiiyaSerina70 extends Character {
     name: string = '新谷 芹菜 / 燐光 ★4';
     rare: number = 4;
@@ -6237,6 +7310,53 @@ class KaeruzakaRaiya05 extends Character {
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Twin, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KaeruzakaRaiya.long;
+    weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
+    equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
+    equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+}
+
+class KaeruzakaRaiya60 extends Character {
+    name: string = '蛙坂 来弥 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3143;
+    hpMin: number = 844;
+    hpMax: number = 3143;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 522;
+    atkShotMin: number = 145;
+    atkShotMax: number = 522;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KaeruzakaRaiya.long;
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
@@ -6526,6 +7646,53 @@ class KagomeMisaki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
 }
 
+class KagomeMisaki60 extends Character {
+    name: string = '籠目 深沙希 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3110;
+    hpMin: number = 835;
+    hpMax: number = 3110;
+    atkClose: number = 618;
+    atkCloseMin: number = 172;
+    atkCloseMax: number = 618;
+    attrClose: number = 0;
+    atkShot: number = 630;
+    atkShotMin: number = 175;
+    atkShotMax: number = 630;
+    attrShot: number = 0;
+    def: number = 945;
+    defMin: number = 263;
+    defMax: number = 945;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KagomeMisaki.long;
+    weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
+    equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
+    equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+}
+
 class KagomeMisaki70 extends Character {
     name: string = '籠目 深沙希 / 泡影 ★4';
     rare: number = 4;
@@ -6761,6 +7928,53 @@ class KondohChieri05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
 }
 
+class KondohChieri60 extends Character {
+    name: string = '紺堂 地衛理 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 624;
+    atkCloseMin: number = 173;
+    atkCloseMax: number = 624;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KondohChieri.long;
+    weaponCloses: Gear[] = ActressGears.KondohChieri.short;
+    equipmentTops: Gear[] = ActressGears.KondohChieri.top;
+    equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+}
+
 class KondohChieri70 extends Character {
     name: string = '紺堂 地衛理 / 晨星 ★4';
     rare: number = 4;
@@ -6985,6 +8199,53 @@ class SutegoroShiina05 extends Character {
         new Buff(AttrTypeId.Volt, 0.5),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SutegoroShiina.long;
+    weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
+    equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
+    equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+}
+
+class SutegoroShiina60 extends Character {
+    name: string = '州天頃 椎奈 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 588;
+    atkShotMin: number = 163;
+    atkShotMax: number = 588;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.SutegoroShiina.long;
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
@@ -7274,6 +8535,53 @@ class NikitohKanade05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
 }
 
+class NikitohKanade60 extends Character {
+    name: string = '仁紀藤 奏 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 522;
+    atkCloseMin: number = 145;
+    atkCloseMax: number = 522;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NikitohKanade.long;
+    weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
+    equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
+    equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+}
+
 class NikitohKanade70 extends Character {
     name: string = '仁紀藤 奏 / 雲耀 ★4';
     rare: number = 4;
@@ -7555,6 +8863,52 @@ class MuraoMira05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
 }
 
+class MuraoMira60 extends Character {
+    name: string = '村尾 未羅 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3434;
+    hpMin: number = 922;
+    hpMax: number = 3434;
+    atkClose: number = 729;
+    atkCloseMin: number = 203;
+    atkCloseMax: number = 729;
+    attrClose: number = 0;
+    atkShot: number = 700;
+    atkShotMin: number = 194;
+    atkShotMax: number = 700;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MuraoMira.long;
+    weaponCloses: Gear[] = ActressGears.MuraoMira.short;
+    equipmentTops: Gear[] = ActressGears.MuraoMira.top;
+    equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+}
+
 class MuraoMira70 extends Character {
     name: string = '村尾 未羅 / 至純 ★4';
     rare: number = 4;
@@ -7789,6 +9143,53 @@ class KimikageYui05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
 }
 
+class KimikageYui60 extends Character {
+    name: string = '君影 唯 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 485;
+    atkCloseMin: number = 135;
+    atkCloseMax: number = 485;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KimikageYui.long;
+    weaponCloses: Gear[] = ActressGears.KimikageYui.short;
+    equipmentTops: Gear[] = ActressGears.KimikageYui.top;
+    equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+}
+
 class KimikageYui70 extends Character {
     name: string = '君影 唯 / 連理 ★4';
     rare: number = 4;
@@ -8013,6 +9414,53 @@ class SugaItsuri05 extends Character {
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SugaItsuri.long;
+    weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
+    equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
+    equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+}
+
+class SugaItsuri60 extends Character {
+    name: string = '須賀 乙莉 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 544;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 544;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 161;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 157;
+    spdMin: number = 157;
+    spdMax: number = 157;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.SugaItsuri.long;
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
@@ -8255,6 +9703,53 @@ class YorozubaMeika05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
 }
 
+class YorozubaMeika60 extends Character {
+    name: string = '萬場 盟華 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 501;
+    atkCloseMin: number = 139;
+    atkCloseMax: number = 501;
+    attrClose: number = 0;
+    atkShot: number = 527;
+    atkShotMin: number = 146;
+    atkShotMax: number = 527;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.YorozubaMeika.long;
+    weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
+    equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
+    equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+}
+
 class YorozubaMeika70 extends Character {
     name: string = '萬場 盟華 / 極彩 ★4';
     rare: number = 4;
@@ -8479,6 +9974,53 @@ class KuroganeYuto05 extends Character {
         new Buff(AttrTypeId.Fire, 0.5),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KuroganeYuto.long;
+    weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
+    equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
+    equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+}
+
+class KuroganeYuto60 extends Character {
+    name: string = '九炉鉄 悠都 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 561;
+    atkShotMin: number = 156;
+    atkShotMax: number = 561;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KuroganeYuto.long;
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
@@ -8714,6 +10256,53 @@ class KotomuraAkane05 extends Character {
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAkane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+}
+
+class KotomuraAkane60 extends Character {
+    name: string = '琴村 朱音 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 643;
+    atkShotMin: number = 179;
+    atkShotMax: number = 643;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KotomuraAkane.long;
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
@@ -9002,6 +10591,53 @@ class KotomuraAmane05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
 }
 
+class KotomuraAmane60 extends Character {
+    name: string = '琴村 天音 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 600;
+    atkShotMin: number = 167;
+    atkShotMax: number = 600;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAmane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+}
+
 class KotomuraAmane70 extends Character {
     name: string = '琴村 天音 / 玄天 ★4';
     rare: number = 4;
@@ -9283,6 +10919,53 @@ class ShantiRana05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
 }
 
+class ShantiRana60 extends Character {
+    name: string = 'サンティ・R ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 522;
+    atkShotMin: number = 145;
+    atkShotMax: number = 522;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ShantiRana.long;
+    weaponCloses: Gear[] = ActressGears.ShantiRana.short;
+    equipmentTops: Gear[] = ActressGears.ShantiRana.top;
+    equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+}
+
 class ShantiRana70 extends Character {
     name: string = 'サンティ / 雄渾 ★4';
     rare: number = 4;
@@ -9518,6 +11201,53 @@ class NinaKalinina05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
 }
 
+class NinaKalinina60 extends Character {
+    name: string = 'ニーナ・K ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 522;
+    atkCloseMin: number = 145;
+    atkCloseMax: number = 522;
+    attrClose: number = 0;
+    atkShot: number = 543;
+    atkShotMin: number = 151;
+    atkShotMax: number = 543;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 157;
+    spdMin: number = 157;
+    spdMax: number = 157;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NinaKalinina.long;
+    weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
+    equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
+    equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+}
+
 class NinaKalinina70 extends Character {
     name: string = 'ニーナ / 破軍 ★4';
     rare: number = 4;
@@ -9742,6 +11472,53 @@ class WangHonghua05 extends Character {
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.WangHonghua.long;
+    weaponCloses: Gear[] = ActressGears.WangHonghua.short;
+    equipmentTops: Gear[] = ActressGears.WangHonghua.top;
+    equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+}
+
+class WangHonghua60 extends Character {
+    name: string = '王 紅花 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3078;
+    hpMin: number = 827;
+    hpMax: number = 3078;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 561;
+    atkShotMin: number = 156;
+    atkShotMax: number = 561;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.WangHonghua.long;
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
@@ -9984,6 +11761,53 @@ class MiaVoisin05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
 }
 
+class MiaVoisin60 extends Character {
+    name: string = 'ミア・V ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
+    attrClose: number = 0;
+    atkShot: number = 538;
+    atkShotMin: number = 149;
+    atkShotMax: number = 538;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MiaVoisin.long;
+    weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
+    equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
+    equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+}
+
 class MiaVoisin70 extends Character {
     name: string = 'ミア / 恭敬 ★4';
     rare: number = 4;
@@ -10219,6 +12043,52 @@ class ChishimaMiyuki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
 }
 
+class ChishimaMiyuki60 extends Character {
+    name: string = '千島 美幸 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 693;
+    atkShotMin: number = 192;
+    atkShotMax: number = 693;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ChishimaMiyuki.long;
+    weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
+    equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
+    equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+}
+
 class ChishimaMiyuki70 extends Character {
     name: string = '千島 美幸 / 幸魂 ★4';
     rare: number = 4;
@@ -10442,6 +12312,53 @@ class ShinonomeChie05 extends Character {
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ShinonomeChie.long;
+    weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
+    equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
+    equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+}
+
+class ShinonomeChie60 extends Character {
+    name: string = '東雲 チヱ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 864;
+    defMin: number = 240;
+    defMax: number = 864;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.ShinonomeChie.long;
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
@@ -10684,6 +12601,52 @@ class MikurazaAzuki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
 }
 
+class MikurazaAzuki60 extends Character {
+    name: string = '御蔵座 梓希 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 722;
+    atkCloseMin: number = 200;
+    atkCloseMax: number = 722;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MikurazaAzuki.long;
+    weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
+    equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
+    equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+}
+
 class MikurazaAzuki70 extends Character {
     name: string = '御蔵座 梓希 / 招福 ★4';
     rare: number = 4;
@@ -10918,6 +12881,53 @@ class YamanoKaoruko05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
 }
 
+class YamanoKaoruko60 extends Character {
+    name: string = '山野 薫子 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 527;
+    atkShotMin: number = 146;
+    atkShotMax: number = 527;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.YamanoKaoruko.long;
+    weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
+    equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
+    equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+}
+
 class YamanoKaoruko70 extends Character {
     name: string = '山野 薫子 / 玄妙 ★4';
     rare: number = 4;
@@ -11142,6 +13152,53 @@ class NikaidohTsukasa05 extends Character {
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NikaidohTsukasa.long;
+    weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
+    equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
+    equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+}
+
+class NikaidohTsukasa60 extends Character {
+    name: string = '二階堂 司 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 527;
+    atkCloseMin: number = 146;
+    atkCloseMax: number = 527;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.NikaidohTsukasa.long;
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
@@ -11384,6 +13441,52 @@ class OchanomizuMirie05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
 }
 
+class OchanomizuMirie60 extends Character {
+    name: string = '御茶ノ水 美里江 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 796;
+    atkCloseMin: number = 221;
+    atkCloseMax: number = 796;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 873;
+    defMin: number = 243;
+    defMax: number = 873;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.OchanomizuMirie.long;
+    weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
+    equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
+    equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+}
+
 class OchanomizuMirie70 extends Character {
     name: string = '御茶ノ水 美里江 / 無辜 ★4';
     rare: number = 4;
@@ -11607,6 +13710,53 @@ class MerabuchiKanami05 extends Character {
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Hammer, 0.25),
         new Buff(AttrTypeId.Sniper, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MerabuchiKanami.long;
+    weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
+    equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
+    equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+}
+
+class MerabuchiKanami60 extends Character {
+    name: string = '米良渕 花浪 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MerabuchiKanami.long;
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
@@ -12033,6 +14183,53 @@ class RitaHenschel05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
 }
 
+class RitaHenschel60 extends Character {
+    name: string = 'リタ・H ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 561;
+    atkCloseMin: number = 156;
+    atkCloseMax: number = 561;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 161;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.RitaHenschel.long;
+    weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
+    equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
+    equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+}
+
 class RitaHenschel70 extends Character {
     name: string = 'リタ / 巧匠 ★4';
     rare: number = 4;
@@ -12261,6 +14458,52 @@ class OnagaAkino05 extends Character {
         new Buff(AttrTypeId.Volt, 0.86),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.OnagaAkino.long;
+    weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
+    equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
+    equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+}
+
+class OnagaAkino60 extends Character {
+    name: string = '尾長 晶乃 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 796;
+    atkShotMin: number = 221;
+    atkShotMax: number = 796;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.OnagaAkino.long;
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
@@ -13246,6 +15489,52 @@ class KanagataSugumi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
 }
 
+class KanagataSugumi60 extends Character {
+    name: string = '金潟 すぐみ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 751;
+    atkCloseMin: number = 209;
+    atkCloseMax: number = 751;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KanagataSugumi.long;
+    weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
+    equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
+    equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+}
+
 class KanagataSugumi70 extends Character {
     name: string = '金潟 すぐみ / 臥薪 ★4';
     rare: number = 4;
@@ -13469,6 +15758,53 @@ class AraimeYasuri05 extends Character {
         new Buff(AttrTypeId.Gravity, 0.5),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AraimeYasuri.long;
+    weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
+    equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+}
+
+class AraimeYasuri60 extends Character {
+    name: string = '新居目 安里 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 612;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 612;
+    attrClose: number = 0;
+    atkShot: number = 630;
+    atkShotMin: number = 175;
+    atkShotMax: number = 630;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AraimeYasuri.long;
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
@@ -13700,6 +16036,53 @@ class MatobaAoi05 extends Character {
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MatobaAoi.long;
+    weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
+    equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
+    equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+}
+
+class MatobaAoi60 extends Character {
+    name: string = '的場 アオイ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 512;
+    atkCloseMin: number = 142;
+    atkCloseMax: number = 512;
+    attrClose: number = 0;
+    atkShot: number = 553;
+    atkShotMin: number = 154;
+    atkShotMax: number = 553;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.HandGun, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MatobaAoi.long;
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
@@ -13942,6 +16325,53 @@ class ArugaNana05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
 }
 
+class ArugaNana60 extends Character {
+    name: string = '在賀 奈々 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 517;
+    atkCloseMin: number = 144;
+    atkCloseMax: number = 517;
+    attrClose: number = 0;
+    atkShot: number = 543;
+    atkShotMin: number = 151;
+    atkShotMax: number = 543;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 158;
+    spdMin: number = 158;
+    spdMax: number = 158;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ArugaNana.long;
+    weaponCloses: Gear[] = ActressGears.ArugaNana.short;
+    equipmentTops: Gear[] = ActressGears.ArugaNana.top;
+    equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+}
+
 class ArugaNana70 extends Character {
     name: string = '在賀 奈々 / 星詠 ★4';
     rare: number = 4;
@@ -14170,6 +16600,52 @@ class MiyaminamiHikari05 extends Character {
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Rifle, 0.25),
         new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MiyaminamiHikari.long;
+    weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
+    equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
+    equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+}
+
+class MiyaminamiHikari60 extends Character {
+    name: string = '宮南 ひかり ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 750;
+    atkCloseMin: number = 208;
+    atkCloseMax: number = 750;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.MiyaminamiHikari.long;
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
@@ -14411,6 +16887,52 @@ class GaryuEmi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
 }
 
+class GaryuEmi60 extends Character {
+    name: string = '我龍 絵美 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 773;
+    atkShotMin: number = 215;
+    atkShotMax: number = 773;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.5),
+        new Buff(AttrTypeId.Sniper, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.GaryuEmi.long;
+    weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
+    equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
+    equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+}
+
 class GaryuEmi70 extends Character {
     name: string = '我龍 絵美 / 雅馴 ★4';
     rare: number = 4;
@@ -14634,6 +17156,53 @@ class TenkoSora05 extends Character {
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Spear, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TenkoSora.long;
+    weaponCloses: Gear[] = ActressGears.TenkoSora.short;
+    equipmentTops: Gear[] = ActressGears.TenkoSora.top;
+    equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+}
+
+class TenkoSora60 extends Character {
+    name: string = '天狐 天 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.TenkoSora.long;
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
@@ -14876,6 +17445,53 @@ class HasamiRika05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
 }
 
+class HasamiRika60 extends Character {
+    name: string = '波佐見 利佳 ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 606;
+    atkShotMin: number = 168;
+    atkShotMax: number = 606;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.HasamiRika.long;
+    weaponCloses: Gear[] = ActressGears.HasamiRika.short;
+    equipmentTops: Gear[] = ActressGears.HasamiRika.top;
+    equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+}
+
 class HasamiRika70 extends Character {
     name: string = '波佐見 利佳 / 勇断 ★4';
     rare: number = 4;
@@ -15111,6 +17727,53 @@ class KasugaokaMoe05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
 }
 
+class KasugaokaMoe60 extends Character {
+    name: string = '春日丘 もえ ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 517;
+    atkCloseMin: number = 144;
+    atkCloseMax: number = 517;
+    attrClose: number = 0;
+    atkShot: number = 527;
+    atkShotMin: number = 146;
+    atkShotMax: number = 527;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KasugaokaMoe.long;
+    weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
+    equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
+    equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+}
+
 class KasugaokaMoe70 extends Character {
     name: string = '春日丘 もえ / 萌芽 ★4';
     rare: number = 4;
@@ -15339,6 +18002,53 @@ class AdelaideBluthausen05 extends Character {
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
+class AdelaideBluthausen60 extends Character {
+    name: string = 'アデライーデ・B ★undefined';
+    rare: number = undefined;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
@@ -20129,251 +22839,297 @@ export const CharacterModels = {
     HirasakaYotsuyu02: new HirasakaYotsuyu02(),
     HirasakaYotsuyu04: new HirasakaYotsuyu04(),
     HirasakaYotsuyu05: new HirasakaYotsuyu05(),
+    HirasakaYotsuyu60: new HirasakaYotsuyu60(),
     HirasakaYotsuyu70: new HirasakaYotsuyu70(),
     HirasakaYotsuyu80: new HirasakaYotsuyu80(),
     KaneshiyaSitara01: new KaneshiyaSitara01(),
     KaneshiyaSitara02: new KaneshiyaSitara02(),
     KaneshiyaSitara04: new KaneshiyaSitara04(),
     KaneshiyaSitara05: new KaneshiyaSitara05(),
+    KaneshiyaSitara60: new KaneshiyaSitara60(),
     KaneshiyaSitara70: new KaneshiyaSitara70(),
     KaneshiyaSitara80: new KaneshiyaSitara80(),
     MomoshinaFumika01: new MomoshinaFumika01(),
     MomoshinaFumika02: new MomoshinaFumika02(),
     MomoshinaFumika04: new MomoshinaFumika04(),
     MomoshinaFumika05: new MomoshinaFumika05(),
+    MomoshinaFumika60: new MomoshinaFumika60(),
     MomoshinaFumika70: new MomoshinaFumika70(),
     MomoshinaFumika80: new MomoshinaFumika80(),
     AgatsumaKaede01: new AgatsumaKaede01(),
     AgatsumaKaede02: new AgatsumaKaede02(),
     AgatsumaKaede04: new AgatsumaKaede04(),
     AgatsumaKaede05: new AgatsumaKaede05(),
+    AgatsumaKaede60: new AgatsumaKaede60(),
     AgatsumaKaede70: new AgatsumaKaede70(),
     AgatsumaKaede80: new AgatsumaKaede80(),
     HimukaiRin01: new HimukaiRin01(),
     HimukaiRin02: new HimukaiRin02(),
     HimukaiRin04: new HimukaiRin04(),
     HimukaiRin05: new HimukaiRin05(),
+    HimukaiRin60: new HimukaiRin60(),
     HimukaiRin70: new HimukaiRin70(),
     HimukaiRin80: new HimukaiRin80(),
     TakanashiRei01: new TakanashiRei01(),
     TakanashiRei02: new TakanashiRei02(),
     TakanashiRei04: new TakanashiRei04(),
     TakanashiRei05: new TakanashiRei05(),
+    TakanashiRei60: new TakanashiRei60(),
     TakanashiRei70: new TakanashiRei70(),
     TakanashiRei80: new TakanashiRei80(),
     IchijoAyaka01: new IchijoAyaka01(),
     IchijoAyaka02: new IchijoAyaka02(),
     IchijoAyaka04: new IchijoAyaka04(),
     IchijoAyaka05: new IchijoAyaka05(),
+    IchijoAyaka60: new IchijoAyaka60(),
     IchijoAyaka70: new IchijoAyaka70(),
     IchijoAyaka80: new IchijoAyaka80(),
     AikawaAika01: new AikawaAika01(),
     AikawaAika02: new AikawaAika02(),
     AikawaAika04: new AikawaAika04(),
     AikawaAika05: new AikawaAika05(),
+    AikawaAika60: new AikawaAika60(),
     AikawaAika70: new AikawaAika70(),
     AikawaAika80: new AikawaAika80(),
     KoashiMutsumi01: new KoashiMutsumi01(),
     KoashiMutsumi02: new KoashiMutsumi02(),
     KoashiMutsumi04: new KoashiMutsumi04(),
     KoashiMutsumi05: new KoashiMutsumi05(),
+    KoashiMutsumi60: new KoashiMutsumi60(),
     KoashiMutsumi70: new KoashiMutsumi70(),
     KoashiMutsumi80: new KoashiMutsumi80(),
     NikotamaMai01: new NikotamaMai01(),
     NikotamaMai02: new NikotamaMai02(),
     NikotamaMai04: new NikotamaMai04(),
     NikotamaMai05: new NikotamaMai05(),
+    NikotamaMai60: new NikotamaMai60(),
     NikotamaMai70: new NikotamaMai70(),
     NikotamaMai80: new NikotamaMai80(),
     VirginiaGlynnberets01: new VirginiaGlynnberets01(),
     VirginiaGlynnberets02: new VirginiaGlynnberets02(),
     VirginiaGlynnberets04: new VirginiaGlynnberets04(),
     VirginiaGlynnberets05: new VirginiaGlynnberets05(),
+    VirginiaGlynnberets60: new VirginiaGlynnberets60(),
     VirginiaGlynnberets70: new VirginiaGlynnberets70(),
     VirginiaGlynnberets80: new VirginiaGlynnberets80(),
     FatimaBetrorum01: new FatimaBetrorum01(),
     FatimaBetrorum02: new FatimaBetrorum02(),
     FatimaBetrorum04: new FatimaBetrorum04(),
     FatimaBetrorum05: new FatimaBetrorum05(),
+    FatimaBetrorum60: new FatimaBetrorum60(),
     FatimaBetrorum70: new FatimaBetrorum70(),
     YotsuyaYumi01: new YotsuyaYumi01(),
     YotsuyaYumi02: new YotsuyaYumi02(),
     YotsuyaYumi04: new YotsuyaYumi04(),
     YotsuyaYumi05: new YotsuyaYumi05(),
+    YotsuyaYumi60: new YotsuyaYumi60(),
     YotsuyaYumi70: new YotsuyaYumi70(),
     FujinoYayoi01: new FujinoYayoi01(),
     FujinoYayoi02: new FujinoYayoi02(),
     FujinoYayoi04: new FujinoYayoi04(),
     FujinoYayoi05: new FujinoYayoi05(),
+    FujinoYayoi60: new FujinoYayoi60(),
     FujinoYayoi70: new FujinoYayoi70(),
     FujinoYayoi80: new FujinoYayoi80(),
     ShimoochiaiToka01: new ShimoochiaiToka01(),
     ShimoochiaiToka02: new ShimoochiaiToka02(),
     ShimoochiaiToka04: new ShimoochiaiToka04(),
     ShimoochiaiToka05: new ShimoochiaiToka05(),
+    ShimoochiaiToka60: new ShimoochiaiToka60(),
     ShimoochiaiToka70: new ShimoochiaiToka70(),
     ShimoochiaiToka80: new ShimoochiaiToka80(),
     ShirleyOakley01: new ShirleyOakley01(),
     ShirleyOakley02: new ShirleyOakley02(),
     ShirleyOakley04: new ShirleyOakley04(),
     ShirleyOakley05: new ShirleyOakley05(),
+    ShirleyOakley60: new ShirleyOakley60(),
     ShirleyOakley70: new ShirleyOakley70(),
     ItokuraNeo01: new ItokuraNeo01(),
     ItokuraNeo02: new ItokuraNeo02(),
     ItokuraNeo04: new ItokuraNeo04(),
     ItokuraNeo05: new ItokuraNeo05(),
+    ItokuraNeo60: new ItokuraNeo60(),
     ItokuraNeo70: new ItokuraNeo70(),
     YorishiroEri01: new YorishiroEri01(),
     YorishiroEri02: new YorishiroEri02(),
     YorishiroEri04: new YorishiroEri04(),
     YorishiroEri05: new YorishiroEri05(),
+    YorishiroEri60: new YorishiroEri60(),
     YorishiroEri70: new YorishiroEri70(),
     FumishimaAsuka01: new FumishimaAsuka01(),
     FumishimaAsuka02: new FumishimaAsuka02(),
     FumishimaAsuka04: new FumishimaAsuka04(),
     FumishimaAsuka05: new FumishimaAsuka05(),
+    FumishimaAsuka60: new FumishimaAsuka60(),
     FumishimaAsuka70: new FumishimaAsuka70(),
     OhzekiKoyui01: new OhzekiKoyui01(),
     OhzekiKoyui02: new OhzekiKoyui02(),
     OhzekiKoyui04: new OhzekiKoyui04(),
     OhzekiKoyui05: new OhzekiKoyui05(),
+    OhzekiKoyui60: new OhzekiKoyui60(),
     OhzekiKoyui70: new OhzekiKoyui70(),
     UsamotoAnna01: new UsamotoAnna01(),
     UsamotoAnna02: new UsamotoAnna02(),
     UsamotoAnna04: new UsamotoAnna04(),
     UsamotoAnna05: new UsamotoAnna05(),
+    UsamotoAnna60: new UsamotoAnna60(),
     UsamotoAnna70: new UsamotoAnna70(),
     UsamotoAnna80: new UsamotoAnna80(),
     JingujiMari01: new JingujiMari01(),
     JingujiMari02: new JingujiMari02(),
     JingujiMari04: new JingujiMari04(),
     JingujiMari05: new JingujiMari05(),
+    JingujiMari60: new JingujiMari60(),
     JingujiMari70: new JingujiMari70(),
     JingujiMari80: new JingujiMari80(),
     NiiyaSerina01: new NiiyaSerina01(),
     NiiyaSerina02: new NiiyaSerina02(),
     NiiyaSerina04: new NiiyaSerina04(),
     NiiyaSerina05: new NiiyaSerina05(),
+    NiiyaSerina60: new NiiyaSerina60(),
     NiiyaSerina70: new NiiyaSerina70(),
     KaeruzakaRaiya01: new KaeruzakaRaiya01(),
     KaeruzakaRaiya02: new KaeruzakaRaiya02(),
     KaeruzakaRaiya04: new KaeruzakaRaiya04(),
     KaeruzakaRaiya05: new KaeruzakaRaiya05(),
+    KaeruzakaRaiya60: new KaeruzakaRaiya60(),
     KaeruzakaRaiya70: new KaeruzakaRaiya70(),
     KaeruzakaRaiya80: new KaeruzakaRaiya80(),
     KagomeMisaki01: new KagomeMisaki01(),
     KagomeMisaki02: new KagomeMisaki02(),
     KagomeMisaki04: new KagomeMisaki04(),
     KagomeMisaki05: new KagomeMisaki05(),
+    KagomeMisaki60: new KagomeMisaki60(),
     KagomeMisaki70: new KagomeMisaki70(),
     KondohChieri01: new KondohChieri01(),
     KondohChieri02: new KondohChieri02(),
     KondohChieri04: new KondohChieri04(),
     KondohChieri05: new KondohChieri05(),
+    KondohChieri60: new KondohChieri60(),
     KondohChieri70: new KondohChieri70(),
     SutegoroShiina01: new SutegoroShiina01(),
     SutegoroShiina02: new SutegoroShiina02(),
     SutegoroShiina04: new SutegoroShiina04(),
     SutegoroShiina05: new SutegoroShiina05(),
+    SutegoroShiina60: new SutegoroShiina60(),
     SutegoroShiina70: new SutegoroShiina70(),
     SutegoroShiina80: new SutegoroShiina80(),
     NikitohKanade01: new NikitohKanade01(),
     NikitohKanade02: new NikitohKanade02(),
     NikitohKanade04: new NikitohKanade04(),
     NikitohKanade05: new NikitohKanade05(),
+    NikitohKanade60: new NikitohKanade60(),
     NikitohKanade70: new NikitohKanade70(),
     NikitohKanade80: new NikitohKanade80(),
     MuraoMira01: new MuraoMira01(),
     MuraoMira02: new MuraoMira02(),
     MuraoMira04: new MuraoMira04(),
     MuraoMira05: new MuraoMira05(),
+    MuraoMira60: new MuraoMira60(),
     MuraoMira70: new MuraoMira70(),
     KimikageYui01: new KimikageYui01(),
     KimikageYui02: new KimikageYui02(),
     KimikageYui04: new KimikageYui04(),
     KimikageYui05: new KimikageYui05(),
+    KimikageYui60: new KimikageYui60(),
     KimikageYui70: new KimikageYui70(),
     SugaItsuri01: new SugaItsuri01(),
     SugaItsuri02: new SugaItsuri02(),
     SugaItsuri04: new SugaItsuri04(),
     SugaItsuri05: new SugaItsuri05(),
+    SugaItsuri60: new SugaItsuri60(),
     SugaItsuri70: new SugaItsuri70(),
     YorozubaMeika01: new YorozubaMeika01(),
     YorozubaMeika02: new YorozubaMeika02(),
     YorozubaMeika04: new YorozubaMeika04(),
     YorozubaMeika05: new YorozubaMeika05(),
+    YorozubaMeika60: new YorozubaMeika60(),
     YorozubaMeika70: new YorozubaMeika70(),
     KuroganeYuto01: new KuroganeYuto01(),
     KuroganeYuto02: new KuroganeYuto02(),
     KuroganeYuto04: new KuroganeYuto04(),
     KuroganeYuto05: new KuroganeYuto05(),
+    KuroganeYuto60: new KuroganeYuto60(),
     KuroganeYuto70: new KuroganeYuto70(),
     KotomuraAkane01: new KotomuraAkane01(),
     KotomuraAkane02: new KotomuraAkane02(),
     KotomuraAkane04: new KotomuraAkane04(),
     KotomuraAkane05: new KotomuraAkane05(),
+    KotomuraAkane60: new KotomuraAkane60(),
     KotomuraAkane70: new KotomuraAkane70(),
     KotomuraAkane80: new KotomuraAkane80(),
     KotomuraAmane01: new KotomuraAmane01(),
     KotomuraAmane02: new KotomuraAmane02(),
     KotomuraAmane04: new KotomuraAmane04(),
     KotomuraAmane05: new KotomuraAmane05(),
+    KotomuraAmane60: new KotomuraAmane60(),
     KotomuraAmane70: new KotomuraAmane70(),
     KotomuraAmane80: new KotomuraAmane80(),
     ShantiRana01: new ShantiRana01(),
     ShantiRana02: new ShantiRana02(),
     ShantiRana04: new ShantiRana04(),
     ShantiRana05: new ShantiRana05(),
+    ShantiRana60: new ShantiRana60(),
     ShantiRana70: new ShantiRana70(),
     NinaKalinina01: new NinaKalinina01(),
     NinaKalinina02: new NinaKalinina02(),
     NinaKalinina04: new NinaKalinina04(),
     NinaKalinina05: new NinaKalinina05(),
+    NinaKalinina60: new NinaKalinina60(),
     NinaKalinina70: new NinaKalinina70(),
     WangHonghua01: new WangHonghua01(),
     WangHonghua02: new WangHonghua02(),
     WangHonghua04: new WangHonghua04(),
     WangHonghua05: new WangHonghua05(),
+    WangHonghua60: new WangHonghua60(),
     WangHonghua70: new WangHonghua70(),
     MiaVoisin01: new MiaVoisin01(),
     MiaVoisin02: new MiaVoisin02(),
     MiaVoisin04: new MiaVoisin04(),
     MiaVoisin05: new MiaVoisin05(),
+    MiaVoisin60: new MiaVoisin60(),
     MiaVoisin70: new MiaVoisin70(),
     ChishimaMiyuki01: new ChishimaMiyuki01(),
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
     ChishimaMiyuki05: new ChishimaMiyuki05(),
+    ChishimaMiyuki60: new ChishimaMiyuki60(),
     ChishimaMiyuki70: new ChishimaMiyuki70(),
     ShinonomeChie01: new ShinonomeChie01(),
     ShinonomeChie02: new ShinonomeChie02(),
     ShinonomeChie04: new ShinonomeChie04(),
     ShinonomeChie05: new ShinonomeChie05(),
+    ShinonomeChie60: new ShinonomeChie60(),
     ShinonomeChie70: new ShinonomeChie70(),
     MikurazaAzuki01: new MikurazaAzuki01(),
     MikurazaAzuki02: new MikurazaAzuki02(),
     MikurazaAzuki04: new MikurazaAzuki04(),
     MikurazaAzuki05: new MikurazaAzuki05(),
+    MikurazaAzuki60: new MikurazaAzuki60(),
     MikurazaAzuki70: new MikurazaAzuki70(),
     YamanoKaoruko01: new YamanoKaoruko01(),
     YamanoKaoruko02: new YamanoKaoruko02(),
     YamanoKaoruko04: new YamanoKaoruko04(),
     YamanoKaoruko05: new YamanoKaoruko05(),
+    YamanoKaoruko60: new YamanoKaoruko60(),
     YamanoKaoruko70: new YamanoKaoruko70(),
     NikaidohTsukasa01: new NikaidohTsukasa01(),
     NikaidohTsukasa02: new NikaidohTsukasa02(),
     NikaidohTsukasa04: new NikaidohTsukasa04(),
     NikaidohTsukasa05: new NikaidohTsukasa05(),
+    NikaidohTsukasa60: new NikaidohTsukasa60(),
     NikaidohTsukasa70: new NikaidohTsukasa70(),
     OchanomizuMirie01: new OchanomizuMirie01(),
     OchanomizuMirie02: new OchanomizuMirie02(),
     OchanomizuMirie04: new OchanomizuMirie04(),
     OchanomizuMirie05: new OchanomizuMirie05(),
+    OchanomizuMirie60: new OchanomizuMirie60(),
     OchanomizuMirie70: new OchanomizuMirie70(),
     MerabuchiKanami01: new MerabuchiKanami01(),
     MerabuchiKanami02: new MerabuchiKanami02(),
     MerabuchiKanami04: new MerabuchiKanami04(),
     MerabuchiKanami05: new MerabuchiKanami05(),
+    MerabuchiKanami60: new MerabuchiKanami60(),
     MerabuchiKanami70: new MerabuchiKanami70(),
     KomazoiEden01: new KomazoiEden01(),
     KomazoiEden02: new KomazoiEden02(),
@@ -20383,11 +23139,13 @@ export const CharacterModels = {
     RitaHenschel02: new RitaHenschel02(),
     RitaHenschel04: new RitaHenschel04(),
     RitaHenschel05: new RitaHenschel05(),
+    RitaHenschel60: new RitaHenschel60(),
     RitaHenschel70: new RitaHenschel70(),
     OnagaAkino01: new OnagaAkino01(),
     OnagaAkino02: new OnagaAkino02(),
     OnagaAkino04: new OnagaAkino04(),
     OnagaAkino05: new OnagaAkino05(),
+    OnagaAkino60: new OnagaAkino60(),
     OnagaAkino70: new OnagaAkino70(),
     TatsumiRyuko01: new TatsumiRyuko01(),
     TatsumiRyuko02: new TatsumiRyuko02(),
@@ -20409,51 +23167,61 @@ export const CharacterModels = {
     KanagataSugumi02: new KanagataSugumi02(),
     KanagataSugumi04: new KanagataSugumi04(),
     KanagataSugumi05: new KanagataSugumi05(),
+    KanagataSugumi60: new KanagataSugumi60(),
     KanagataSugumi70: new KanagataSugumi70(),
     AraimeYasuri01: new AraimeYasuri01(),
     AraimeYasuri02: new AraimeYasuri02(),
     AraimeYasuri04: new AraimeYasuri04(),
     AraimeYasuri05: new AraimeYasuri05(),
+    AraimeYasuri60: new AraimeYasuri60(),
     AraimeYasuri70: new AraimeYasuri70(),
     MatobaAoi01: new MatobaAoi01(),
     MatobaAoi02: new MatobaAoi02(),
     MatobaAoi04: new MatobaAoi04(),
     MatobaAoi05: new MatobaAoi05(),
+    MatobaAoi60: new MatobaAoi60(),
     MatobaAoi70: new MatobaAoi70(),
     ArugaNana01: new ArugaNana01(),
     ArugaNana02: new ArugaNana02(),
     ArugaNana04: new ArugaNana04(),
     ArugaNana05: new ArugaNana05(),
+    ArugaNana60: new ArugaNana60(),
     ArugaNana70: new ArugaNana70(),
     MiyaminamiHikari01: new MiyaminamiHikari01(),
     MiyaminamiHikari02: new MiyaminamiHikari02(),
     MiyaminamiHikari04: new MiyaminamiHikari04(),
     MiyaminamiHikari05: new MiyaminamiHikari05(),
+    MiyaminamiHikari60: new MiyaminamiHikari60(),
     MiyaminamiHikari70: new MiyaminamiHikari70(),
     GaryuEmi01: new GaryuEmi01(),
     GaryuEmi02: new GaryuEmi02(),
     GaryuEmi04: new GaryuEmi04(),
     GaryuEmi05: new GaryuEmi05(),
+    GaryuEmi60: new GaryuEmi60(),
     GaryuEmi70: new GaryuEmi70(),
     TenkoSora01: new TenkoSora01(),
     TenkoSora02: new TenkoSora02(),
     TenkoSora04: new TenkoSora04(),
     TenkoSora05: new TenkoSora05(),
+    TenkoSora60: new TenkoSora60(),
     TenkoSora70: new TenkoSora70(),
     HasamiRika01: new HasamiRika01(),
     HasamiRika02: new HasamiRika02(),
     HasamiRika04: new HasamiRika04(),
     HasamiRika05: new HasamiRika05(),
+    HasamiRika60: new HasamiRika60(),
     HasamiRika70: new HasamiRika70(),
     KasugaokaMoe01: new KasugaokaMoe01(),
     KasugaokaMoe02: new KasugaokaMoe02(),
     KasugaokaMoe04: new KasugaokaMoe04(),
     KasugaokaMoe05: new KasugaokaMoe05(),
+    KasugaokaMoe60: new KasugaokaMoe60(),
     KasugaokaMoe70: new KasugaokaMoe70(),
     AdelaideBluthausen01: new AdelaideBluthausen01(),
     AdelaideBluthausen02: new AdelaideBluthausen02(),
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
+    AdelaideBluthausen60: new AdelaideBluthausen60(),
     AdelaideBluthausen70: new AdelaideBluthausen70(),
     NicoleFrancisca01: new NicoleFrancisca01(),
     NicoleFrancisca02: new NicoleFrancisca02(),
