@@ -3120,6 +3120,53 @@ class VirginiaGlynnberets80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
 }
 
+class VirginiaGlynnberets60 extends Character {
+    name: string = 'バージニア / チャリオット ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Sword, 0.35),
+        new Buff(AttrTypeId.Rifle, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.VirginiaGlynnberets.long;
+    weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
+    equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
+    equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+}
+
 class FatimaBetrorum01 extends Character {
     name: string = 'ファティマ・B ★1';
     rare: number = 1;
@@ -20332,6 +20379,7 @@ export const CharacterModels = {
     VirginiaGlynnberets05: new VirginiaGlynnberets05(),
     VirginiaGlynnberets70: new VirginiaGlynnberets70(),
     VirginiaGlynnberets80: new VirginiaGlynnberets80(),
+    VirginiaGlynnberets60: new VirginiaGlynnberets60(),
     FatimaBetrorum01: new FatimaBetrorum01(),
     FatimaBetrorum02: new FatimaBetrorum02(),
     FatimaBetrorum04: new FatimaBetrorum04(),
