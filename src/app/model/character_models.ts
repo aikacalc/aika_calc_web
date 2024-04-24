@@ -20153,46 +20153,93 @@ class HatsuneMiku70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
 }
 
+class ACTRESS04 extends Character {
+    name: string = 'C.C. ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 414;
+    atkCloseMin: number = 118;
+    atkCloseMax: number = 414;
+    attrClose: number = 0;
+    atkShot: number = 426;
+    atkShotMin: number = 122;
+    atkShotMax: number = 426;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.ACTRESS.long;
+    weaponCloses: Gear[] = ActressGears.ACTRESS.short;
+    equipmentTops: Gear[] = ActressGears.ACTRESS.top;
+    equipmentBottoms: Gear[] = ActressGears.ACTRESS.bottom;
+}
+
 class ACTRESS05 extends Character {
-    name: string = 'ココ ★4';
+    name: string = 'C.C. ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
     levelMax: number = 80;
     gradeUpLimit: number = 10;
     gradeupPowUpRate: number = 100;
-    hp: number = 3337;
-    hpMin: number = 896;
-    hpMax: number = 3337;
-    atkClose: number = 527;
-    atkCloseMin: number = 146;
-    atkCloseMax: number = 527;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 532;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 532;
     attrClose: number = 0;
-    atkShot: number = 532;
-    atkShotMin: number = 148;
-    atkShotMax: number = 532;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
     attrShot: number = 0;
-    def: number = 927;
-    defMin: number = 258;
-    defMax: number = 927;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
     spd: number = 160;
     spdMin: number = 160;
     spdMax: number = 160;
     spDmgRatio: number = 2;
     attrMin: number = 125;
     attrMax: number = 450;
-    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
-    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
-    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
-    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
     buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistVolt, 0.8),
-        new Buff(AttrTypeId.ResistGravity, -0.8),
-        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
         new Buff(AttrTypeId.DEF, -0.2),
-        new Buff(AttrTypeId.Volt, 0.96),
-        new Buff(AttrTypeId.Sword, 0.3),
-        new Buff(AttrTypeId.Rifle, 0.1)
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
     ];
     weaponShots: Gear[] = ActressGears.ACTRESS.long;
     weaponCloses: Gear[] = ActressGears.ACTRESS.short;
@@ -20744,5 +20791,6 @@ export const CharacterModels = {
     HatsuneMiku04: new HatsuneMiku04(),
     HatsuneMiku05: new HatsuneMiku05(),
     HatsuneMiku70: new HatsuneMiku70(),
+    ACTRESS04: new ACTRESS04(),
     ACTRESS05: new ACTRESS05()
 };

@@ -8,12 +8,11 @@ import { AppService } from './app.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
-import { AikaHealPointCalcComponent } from './aika-heal-point-calc/aika-heal-point-calc.component';
 // import { AikaBattleSimulatorModule } from './aika-battle-simulator/aika-battle-simulator.module';
 // import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-    declarations: [AppComponent, AikaHealPointCalcComponent],
+    declarations: [AppComponent],
     imports: [
         BrowserModule,
         AikaCalcModule,
