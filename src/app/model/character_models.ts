@@ -20153,7 +20153,7 @@ class HatsuneMiku70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
 }
 
-class ACTRESS04 extends Character {
+class CC04 extends Character {
     name: string = 'C.C. ★3';
     rare: number = 3;
     level: number = 60;
@@ -20194,13 +20194,13 @@ class ACTRESS04 extends Character {
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.ACTRESS.long;
-    weaponCloses: Gear[] = ActressGears.ACTRESS.short;
-    equipmentTops: Gear[] = ActressGears.ACTRESS.top;
-    equipmentBottoms: Gear[] = ActressGears.ACTRESS.bottom;
+    weaponShots: Gear[] = ActressGears.CC.long;
+    weaponCloses: Gear[] = ActressGears.CC.short;
+    equipmentTops: Gear[] = ActressGears.CC.top;
+    equipmentBottoms: Gear[] = ActressGears.CC.bottom;
 }
 
-class ACTRESS05 extends Character {
+class CC05 extends Character {
     name: string = 'C.C. ★4';
     rare: number = 4;
     level: number = 80;
@@ -20241,10 +20241,102 @@ class ACTRESS05 extends Character {
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.HandGun, 0.15)
     ];
-    weaponShots: Gear[] = ActressGears.ACTRESS.long;
-    weaponCloses: Gear[] = ActressGears.ACTRESS.short;
-    equipmentTops: Gear[] = ActressGears.ACTRESS.top;
-    equipmentBottoms: Gear[] = ActressGears.ACTRESS.bottom;
+    weaponShots: Gear[] = ActressGears.CC.long;
+    weaponCloses: Gear[] = ActressGears.CC.short;
+    equipmentTops: Gear[] = ActressGears.CC.top;
+    equipmentBottoms: Gear[] = ActressGears.CC.bottom;
+}
+
+class KouzukiKallen04 extends Character {
+    name: string = '紅月 カレン ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 590;
+    atkCloseMin: number = 168;
+    atkCloseMax: number = 590;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 168;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KouzukiKallen.long;
+    weaponCloses: Gear[] = ActressGears.KouzukiKallen.short;
+    equipmentTops: Gear[] = ActressGears.KouzukiKallen.top;
+    equipmentBottoms: Gear[] = ActressGears.KouzukiKallen.bottom;
+}
+
+class KouzukiKallen05 extends Character {
+    name: string = '紅月 カレン ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 758;
+    atkCloseMin: number = 211;
+    atkCloseMax: number = 758;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KouzukiKallen.long;
+    weaponCloses: Gear[] = ActressGears.KouzukiKallen.short;
+    equipmentTops: Gear[] = ActressGears.KouzukiKallen.top;
+    equipmentBottoms: Gear[] = ActressGears.KouzukiKallen.bottom;
 }
 
 export const ActressNames: string[] = [
@@ -20355,7 +20447,8 @@ export const ActressNames: string[] = [
     'Kei',
     'Yuri',
     'HatsuneMiku',
-    'ACTRESS'
+    'CC',
+    'KouzukiKallen'
 ];
 
 export const CharacterModels = {
@@ -20791,6 +20884,8 @@ export const CharacterModels = {
     HatsuneMiku04: new HatsuneMiku04(),
     HatsuneMiku05: new HatsuneMiku05(),
     HatsuneMiku70: new HatsuneMiku70(),
-    ACTRESS04: new ACTRESS04(),
-    ACTRESS05: new ACTRESS05()
+    CC04: new CC04(),
+    CC05: new CC05(),
+    KouzukiKallen04: new KouzukiKallen04(),
+    KouzukiKallen05: new KouzukiKallen05()
 };

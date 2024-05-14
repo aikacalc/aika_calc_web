@@ -8,11 +8,12 @@ import { AppService } from './app.service';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
+import { AikaSkillComponent } from './aika-skill/aika-skill.component';
 // import { AikaBattleSimulatorModule } from './aika-battle-simulator/aika-battle-simulator.module';
 // import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, AikaSkillComponent],
     imports: [
         BrowserModule,
         AikaCalcModule,

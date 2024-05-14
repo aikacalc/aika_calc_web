@@ -1,5 +1,6 @@
 import { AttrTypeId } from './attr-type';
 import { Buff } from './buff';
+import { Skill } from './skill';
 
 export class Unit {
     name?: string = '';
@@ -33,6 +34,7 @@ export class Unit {
     spdMin?: number = 0;
     spdMax?: number = 0;
     buffs?: Buff[] = [];
+    skills?: Skill[] = [];
 
     constructor() {
         Object.defineProperty(this, 'unitType', {
