@@ -222,7 +222,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]ヤクモA',
+                name: '[AN] ヤクモA',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -240,7 +240,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ヤクモA【剣花菱】',
+                name: '[AN] 試作ヤクモA【剣花菱】',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -258,7 +258,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ヤクモA【花菱】',
+                name: '[AN] 試作ヤクモA【花菱】',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -276,7 +276,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ヤクモA',
+                name: '[AN] 試作ヤクモA',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -440,7 +440,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]アメノトツカA',
+                name: '[AN] アメノトツカA',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -458,7 +458,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]トツカA',
+                name: '[AN] トツカA',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -476,7 +476,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アメノトツカA【鬼花菱】',
+                name: '[AN] 試作アメノトツカA【鬼花菱】',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -494,7 +494,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アメノトツカA【花菱】',
+                name: '[AN] 試作アメノトツカA【花菱】',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -512,7 +512,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アメノトツカA',
+                name: '[AN] 試作アメノトツカA',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -530,7 +530,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作トツカA【剣花菱】',
+                name: '[AN] 試作トツカA【剣花菱】',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -548,7 +548,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作トツカA【花菱】',
+                name: '[AN] 試作トツカA【花菱】',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -566,7 +566,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作トツカA',
+                name: '[AN] 試作トツカA',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -706,7 +706,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]加武呂A/T',
+                name: '[AN] 加武呂A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -726,7 +726,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A【剣花菱】/T',
+                name: '[AN] 試作加武呂A【剣花菱】/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -746,7 +746,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A【花菱】/T',
+                name: '[AN] 試作加武呂A【花菱】/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -766,7 +766,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A/T',
+                name: '[AN] 試作加武呂A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -920,7 +920,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]加武呂A/B',
+                name: '[AN] 加武呂A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -942,7 +942,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A【剣花菱】/B',
+                name: '[AN] 試作加武呂A【剣花菱】/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -964,7 +964,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A【花菱】/B',
+                name: '[AN] 試作加武呂A【花菱】/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -986,7 +986,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作加武呂A/B',
+                name: '[AN] 試作加武呂A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -1174,7 +1174,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]ヴィグネーシュヴァラA',
+                name: '[AN] ヴィグネーシュヴァラA',
                 unitType: AttrTypeId.Sniper,
                 level: 70,
                 levelMin: 1,
@@ -1192,7 +1192,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]アンクーシャA',
+                name: '[AN] アンクーシャA',
                 unitType: AttrTypeId.Sniper,
                 level: 70,
                 levelMin: 1,
@@ -1210,7 +1210,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ヴィグネーSAMk3',
+                name: '[AN] 試作ヴィグネーSAMk3',
                 unitType: AttrTypeId.Sniper,
                 level: 60,
                 levelMin: 1,
@@ -1228,7 +1228,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ヴィグネーSAMk2',
+                name: '[AN] 試作ヴィグネーSAMk2',
                 unitType: AttrTypeId.Sniper,
                 level: 50,
                 levelMin: 1,
@@ -1246,7 +1246,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ヴィグネーシュヴァラA',
+                name: '[AN] 試作ヴィグネーシュヴァラA',
                 unitType: AttrTypeId.Sniper,
                 level: 40,
                 levelMin: 1,
@@ -1482,7 +1482,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]エーカダンタ・ギーA',
+                name: '[AN] エーカダンタ・ギーA',
                 unitType: AttrTypeId.Spear,
                 level: 70,
                 levelMin: 1,
@@ -1500,7 +1500,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]マホーダラA',
+                name: '[AN] マホーダラA',
                 unitType: AttrTypeId.Spear,
                 level: 70,
                 levelMin: 1,
@@ -1518,7 +1518,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作エーカダンタ・GAMk3',
+                name: '[AN] 試作エーカダンタ・GAMk3',
                 unitType: AttrTypeId.Spear,
                 level: 60,
                 levelMin: 1,
@@ -1536,7 +1536,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作エーカダンタ・GAMk2',
+                name: '[AN] 試作エーカダンタ・GAMk2',
                 unitType: AttrTypeId.Spear,
                 level: 50,
                 levelMin: 1,
@@ -1554,7 +1554,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作エーカダンタ・ギーA',
+                name: '[AN] 試作エーカダンタ・ギーA',
                 unitType: AttrTypeId.Spear,
                 level: 40,
                 levelMin: 1,
@@ -1769,7 +1769,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]GカルバチョートA/T',
+                name: '[AN] GカルバチョートA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -1789,7 +1789,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ガネーシャA/T',
+                name: '[AN] ガネーシャA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -1809,7 +1809,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKAMk3/T',
+                name: '[AN] 試作ガネーシャKAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -1829,7 +1829,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKAMk2/T',
+                name: '[AN] 試作ガネーシャKAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -1849,7 +1849,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKA/T',
+                name: '[AN] 試作ガネーシャKA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -2099,7 +2099,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]GカルバチョートA/B',
+                name: '[AN] GカルバチョートA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -2123,7 +2123,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ガネーシャA/B',
+                name: '[AN] ガネーシャA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -2146,7 +2146,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKAMk3/B',
+                name: '[AN] 試作ガネーシャKAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -2170,7 +2170,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKAMk2/B',
+                name: '[AN] 試作ガネーシャKAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -2194,7 +2194,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ガネーシャKA/B',
+                name: '[AN] 試作ガネーシャKA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -2366,7 +2366,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]エンチクロペディA',
+                name: '[AN] エンチクロペディA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -2384,7 +2384,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]ヘーゲルA',
+                name: '[AN] ヘーゲルA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -2402,7 +2402,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作エンチクロペディAMk3',
+                name: '[AN] 試作エンチクロペディAMk3',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -2420,7 +2420,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作エンチクロペディAMk2',
+                name: '[AN] 試作エンチクロペディAMk2',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -2438,7 +2438,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作エンチクロペディA',
+                name: '[AN] 試作エンチクロペディA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -2456,7 +2456,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ヘーゲルAMk3',
+                name: '[AN] 試作ヘーゲルAMk3',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -2474,7 +2474,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ヘーゲルAMk2',
+                name: '[AN] 試作ヘーゲルAMk2',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -2492,7 +2492,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ヘーゲルA',
+                name: '[AN] 試作ヘーゲルA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -2674,7 +2674,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]シャンポリオンA',
+                name: '[AN] シャンポリオンA',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -2692,7 +2692,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャンポリオンAMk3',
+                name: '[AN] 試作シャンポリオンAMk3',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -2710,7 +2710,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャンポリオンAMk2',
+                name: '[AN] 試作シャンポリオンAMk2',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -2728,7 +2728,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャンポリオンA',
+                name: '[AN] 試作シャンポリオンA',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -2862,7 +2862,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ブリガンティアA/T',
+                name: '[AN] ブリガンティアA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -2881,7 +2881,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアAMk3/T',
+                name: '[AN] 試作ブリガンティアAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -2900,7 +2900,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアAMk2/T',
+                name: '[AN] 試作ブリガンティアAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -2919,7 +2919,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアA/T',
+                name: '[AN] 試作ブリガンティアA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -3094,7 +3094,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ブリガンティアA/B',
+                name: '[AN] ブリガンティアA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -3116,7 +3116,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアAMk3/B',
+                name: '[AN] 試作ブリガンティアAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -3138,7 +3138,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアAMk2/B',
+                name: '[AN] 試作ブリガンティアAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -3160,7 +3160,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ブリガンティアA/B',
+                name: '[AN] 試作ブリガンティアA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -3348,7 +3348,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]初音A',
+                name: '[AN] 初音A',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -3366,7 +3366,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作初音A乙',
+                name: '[AN] 試作初音A乙',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -3384,7 +3384,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作初音A甲',
+                name: '[AN] 試作初音A甲',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -3402,7 +3402,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作初音A',
+                name: '[AN] 試作初音A',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -3530,7 +3530,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]膝丸A',
+                name: '[AN] 膝丸A',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -3548,7 +3548,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作膝丸A乙',
+                name: '[AN] 試作膝丸A乙',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -3566,7 +3566,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作膝丸A甲',
+                name: '[AN] 試作膝丸A甲',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -3584,7 +3584,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作膝丸A',
+                name: '[AN] 試作膝丸A',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -3718,7 +3718,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]稲荷A/T',
+                name: '[AN] 稲荷A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -3737,7 +3737,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A乙/T',
+                name: '[AN] 試作稲荷A乙/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -3756,7 +3756,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A甲/T',
+                name: '[AN] 試作稲荷A甲/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -3775,7 +3775,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A/T',
+                name: '[AN] 試作稲荷A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -3928,7 +3928,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]稲荷吉野山A/B',
+                name: '[AN] 稲荷吉野山A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -3950,7 +3950,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]稲荷A/B',
+                name: '[AN] 稲荷A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -3972,7 +3972,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷吉野山A乙/B',
+                name: '[AN] 試作稲荷吉野山A乙/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -3994,7 +3994,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷吉野山A甲/B',
+                name: '[AN] 試作稲荷吉野山A甲/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -4016,7 +4016,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷吉野山A/B',
+                name: '[AN] 試作稲荷吉野山A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -4038,7 +4038,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A乙/B',
+                name: '[AN] 試作稲荷A乙/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -4060,7 +4060,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A甲/B',
+                name: '[AN] 試作稲荷A甲/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -4082,7 +4082,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作稲荷A/B',
+                name: '[AN] 試作稲荷A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -4216,7 +4216,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]サーメートランチャーA',
+                name: '[AN] サーメートランチャーA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -4234,7 +4234,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作サーメートランチャーA乙',
+                name: '[AN] 試作サーメートランチャーA乙',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -4252,7 +4252,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作サーメートランチャーA甲',
+                name: '[AN] 試作サーメートランチャーA甲',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -4270,7 +4270,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作サーメートランチャーA',
+                name: '[AN] 試作サーメートランチャーA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -4434,7 +4434,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]ミートテンダライザA',
+                name: '[AN] ミートテンダライザA',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -4452,7 +4452,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]ポテトマッシャーA',
+                name: '[AN] ポテトマッシャーA',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -4470,7 +4470,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ミートテンダライザA乙',
+                name: '[AN] 試作ミートテンダライザA乙',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -4488,7 +4488,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ミートテンダライザA甲',
+                name: '[AN] 試作ミートテンダライザA甲',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -4506,7 +4506,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ミートテンダライザA',
+                name: '[AN] 試作ミートテンダライザA',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -4524,7 +4524,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ポテトマッシャーA乙',
+                name: '[AN] 試作ポテトマッシャーA乙',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -4542,7 +4542,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ポテトマッシャーA甲',
+                name: '[AN] 試作ポテトマッシャーA甲',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -4560,7 +4560,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作ポテトマッシャーA',
+                name: '[AN] 試作ポテトマッシャーA',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -4700,7 +4700,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ワイルドボアA/T',
+                name: '[AN] ワイルドボアA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -4720,7 +4720,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA乙/T',
+                name: '[AN] 試作ワイルドボアA乙/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -4740,7 +4740,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA甲/T',
+                name: '[AN] 試作ワイルドボアA甲/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -4760,7 +4760,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA/T',
+                name: '[AN] 試作ワイルドボアA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -4920,7 +4920,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ワイルドボアA/B',
+                name: '[AN] ワイルドボアA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -4943,7 +4943,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA乙/B',
+                name: '[AN] 試作ワイルドボアA乙/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -4966,7 +4966,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA甲/B',
+                name: '[AN] 試作ワイルドボアA甲/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -4989,7 +4989,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ワイルドボアA/B',
+                name: '[AN] 試作ワイルドボアA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -5124,7 +5124,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]ラプタービークA',
+                name: '[AN] ラプタービークA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -5142,7 +5142,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ラプタービークA乙',
+                name: '[AN] 試作ラプタービークA乙',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -5160,7 +5160,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ラプタービークA甲',
+                name: '[AN] 試作ラプタービークA甲',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -5178,7 +5178,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ラプタービークA',
+                name: '[AN] 試作ラプタービークA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -5468,7 +5468,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]シャープフェザーA',
+                name: '[AN] シャープフェザーA',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -5486,7 +5486,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャープフェザーA乙',
+                name: '[AN] 試作シャープフェザーA乙',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -5504,7 +5504,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャープフェザーA甲',
+                name: '[AN] 試作シャープフェザーA甲',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -5522,7 +5522,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作シャープフェザーA',
+                name: '[AN] 試作シャープフェザーA',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -5824,7 +5824,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]アズールホークA/T',
+                name: '[AN] アズールホークA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -5844,7 +5844,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA乙/T',
+                name: '[AN] 試作アズールホークA乙/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -5864,7 +5864,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA甲/T',
+                name: '[AN] 試作アズールホークA甲/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -5884,7 +5884,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA/T',
+                name: '[AN] 試作アズールホークA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -6170,7 +6170,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]アズールホークA/B',
+                name: '[AN] アズールホークA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -6194,7 +6194,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA乙/B',
+                name: '[AN] 試作アズールホークA乙/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -6218,7 +6218,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA甲/B',
+                name: '[AN] 試作アズールホークA甲/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -6242,7 +6242,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作アズールホークA/B',
+                name: '[AN] 試作アズールホークA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -6558,7 +6558,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]フリントクロウA',
+                name: '[AN] フリントクロウA',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -6576,7 +6576,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作フリントクロウAMk3',
+                name: '[AN] 試作フリントクロウAMk3',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -6594,7 +6594,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作フリントクロウAMk2',
+                name: '[AN] 試作フリントクロウAMk2',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -6612,7 +6612,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作フリントクロウA',
+                name: '[AN] 試作フリントクロウA',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -6776,7 +6776,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]アルタキアラA',
+                name: '[AN] アルタキアラA',
                 unitType: AttrTypeId.Dagger,
                 level: 70,
                 levelMin: 1,
@@ -6794,7 +6794,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作アルタキアラAMk3',
+                name: '[AN] 試作アルタキアラAMk3',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -6812,7 +6812,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作アルタキアラAMk2',
+                name: '[AN] 試作アルタキアラAMk2',
                 unitType: AttrTypeId.Dagger,
                 level: 50,
                 levelMin: 1,
@@ -6830,7 +6830,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作アルタキアラA',
+                name: '[AN] 試作アルタキアラA',
                 unitType: AttrTypeId.Dagger,
                 level: 40,
                 levelMin: 1,
@@ -6970,7 +6970,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ノーブルキティA/T',
+                name: '[AN] ノーブルキティA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -6990,7 +6990,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティAMk3/T',
+                name: '[AN] 試作ノーブルキティAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -7010,7 +7010,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティAMk2/T',
+                name: '[AN] 試作ノーブルキティAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -7030,7 +7030,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティA/T',
+                name: '[AN] 試作ノーブルキティA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -7210,7 +7210,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ノーブルキティA/B',
+                name: '[AN] ノーブルキティA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -7233,7 +7233,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティAMk3/B',
+                name: '[AN] 試作ノーブルキティAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -7256,7 +7256,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティAMk2/B',
+                name: '[AN] 試作ノーブルキティAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -7279,7 +7279,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ノーブルキティA/B',
+                name: '[AN] 試作ノーブルキティA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -7473,7 +7473,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]フラワーヴァーズA',
+                name: '[AN] フラワーヴァーズA',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -7491,7 +7491,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作フラワーヴァーズAMk3',
+                name: '[AN] 試作フラワーヴァーズAMk3',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -7509,7 +7509,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作フラワーヴァーズAMk2',
+                name: '[AN] 試作フラワーヴァーズAMk2',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -7527,7 +7527,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作フラワーヴァーズA',
+                name: '[AN] 試作フラワーヴァーズA',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -7691,7 +7691,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]ティンクルブーケA',
+                name: '[AN] ティンクルブーケA',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -7709,7 +7709,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ティンクルブーケAMk3',
+                name: '[AN] 試作ティンクルブーケAMk3',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -7727,7 +7727,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ティンクルブーケAMk2',
+                name: '[AN] 試作ティンクルブーケAMk2',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -7745,7 +7745,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ティンクルブーケA',
+                name: '[AN] 試作ティンクルブーケA',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -7925,7 +7925,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シープソングA/T',
+                name: '[AN] シープソングA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -7945,7 +7945,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングAMk3/T',
+                name: '[AN] 試作シープソングAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -7965,7 +7965,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングAMk2/T',
+                name: '[AN] 試作シープソングAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -7985,7 +7985,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングA/T',
+                name: '[AN] 試作シープソングA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -8165,7 +8165,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シープソングA/B',
+                name: '[AN] シープソングA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -8188,7 +8188,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングAMk3/B',
+                name: '[AN] 試作シープソングAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -8211,7 +8211,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングAMk2/B',
+                name: '[AN] 試作シープソングAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -8234,7 +8234,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作シープソングA/B',
+                name: '[AN] 試作シープソングA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -8392,7 +8392,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]キルシュイェーガーA',
+                name: '[AN] キルシュイェーガーA',
                 unitType: AttrTypeId.Sniper,
                 level: 70,
                 levelMin: 1,
@@ -8410,7 +8410,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作キルシュイェーガーAA2',
+                name: '[AN] 試作キルシュイェーガーAA2',
                 unitType: AttrTypeId.Sniper,
                 level: 60,
                 levelMin: 1,
@@ -8428,7 +8428,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作キルシュイェーガーAA1',
+                name: '[AN] 試作キルシュイェーガーAA1',
                 unitType: AttrTypeId.Sniper,
                 level: 50,
                 levelMin: 1,
@@ -8446,7 +8446,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作キルシュイェーガーA',
+                name: '[AN] 試作キルシュイェーガーA',
                 unitType: AttrTypeId.Sniper,
                 level: 40,
                 levelMin: 1,
@@ -8628,7 +8628,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]ブレイクハンマーA',
+                name: '[AN] ブレイクハンマーA',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -8646,7 +8646,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ブレイクハンマーAA2',
+                name: '[AN] 試作ブレイクハンマーAA2',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -8664,7 +8664,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ブレイクハンマーAA1',
+                name: '[AN] 試作ブレイクハンマーAA1',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -8682,7 +8682,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作ブレイクハンマーA',
+                name: '[AN] 試作ブレイクハンマーA',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -8822,7 +8822,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ベルクカッツェA/T',
+                name: '[AN] ベルクカッツェA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -8842,7 +8842,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェAA2/T',
+                name: '[AN] 試作ベルクカッツェAA2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -8862,7 +8862,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェAA1/T',
+                name: '[AN] 試作ベルクカッツェAA1/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -8882,7 +8882,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェA/T',
+                name: '[AN] 試作ベルクカッツェA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -9062,7 +9062,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ベルクカッツェA/B',
+                name: '[AN] ベルクカッツェA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -9085,7 +9085,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェAA2/B',
+                name: '[AN] 試作ベルクカッツェAA2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -9108,7 +9108,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェAA1/B',
+                name: '[AN] 試作ベルクカッツェAA1/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -9131,7 +9131,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ベルクカッツェA/B',
+                name: '[AN] 試作ベルクカッツェA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -9325,7 +9325,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]フィオンサイユA',
+                name: '[AN] フィオンサイユA',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -9343,7 +9343,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作フィオンサイユAMk3',
+                name: '[AN] 試作フィオンサイユAMk3',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -9361,7 +9361,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作フィオンサイユAMk2',
+                name: '[AN] 試作フィオンサイユAMk2',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -9379,7 +9379,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作フィオンサイユA',
+                name: '[AN] 試作フィオンサイユA',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -9543,7 +9543,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]オディール・ピケA',
+                name: '[AN] オディール・ピケA',
                 unitType: AttrTypeId.Dagger,
                 level: 70,
                 levelMin: 1,
@@ -9561,7 +9561,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作オディール・ピケAMk3',
+                name: '[AN] 試作オディール・ピケAMk3',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -9579,7 +9579,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作オディール・ピケAMk2',
+                name: '[AN] 試作オディール・ピケAMk2',
                 unitType: AttrTypeId.Dagger,
                 level: 50,
                 levelMin: 1,
@@ -9597,7 +9597,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '[AN]試作オディール・ピケA',
+                name: '[AN] 試作オディール・ピケA',
                 unitType: AttrTypeId.Dagger,
                 level: 40,
                 levelMin: 1,
@@ -9737,7 +9737,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]オデットA/T',
+                name: '[AN] オデットA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -9757,7 +9757,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットAMk3/T',
+                name: '[AN] 試作オデットAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -9777,7 +9777,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットAMk2/T',
+                name: '[AN] 試作オデットAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -9797,7 +9797,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットA/T',
+                name: '[AN] 試作オデットA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -9957,7 +9957,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]オデットA/B',
+                name: '[AN] オデットA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -9980,7 +9980,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットAMk3/B',
+                name: '[AN] 試作オデットAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -10003,7 +10003,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットAMk2/B',
+                name: '[AN] 試作オデットAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -10026,7 +10026,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作オデットA/B',
+                name: '[AN] 試作オデットA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -10197,7 +10197,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]PG417A',
+                name: '[AN] PG417A',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -10215,7 +10215,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作PG417AA2',
+                name: '[AN] 試作PG417AA2',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -10233,7 +10233,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作PG417AA1',
+                name: '[AN] 試作PG417AA1',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -10251,7 +10251,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作PG417A',
+                name: '[AN] 試作PG417A',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -10523,7 +10523,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]ヴォルパーティンガー9A',
+                name: '[AN] ヴォルパーティンガー9A',
                 unitType: AttrTypeId.HandGun,
                 level: 70,
                 levelMin: 1,
@@ -10541,7 +10541,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作Vティンガー40A',
+                name: '[AN] 試作Vティンガー40A',
                 unitType: AttrTypeId.HandGun,
                 level: 60,
                 levelMin: 1,
@@ -10559,7 +10559,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作VティンガーLA',
+                name: '[AN] 試作VティンガーLA',
                 unitType: AttrTypeId.HandGun,
                 level: 50,
                 levelMin: 1,
@@ -10577,7 +10577,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作VティンガーA',
+                name: '[AN] 試作VティンガーA',
                 unitType: AttrTypeId.HandGun,
                 level: 40,
                 levelMin: 1,
@@ -10933,7 +10933,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]US-AG1A/T',
+                name: '[AN] US-AG1A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -10953,7 +10953,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1AG2/T',
+                name: '[AN] 試作US-AG1AG2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -10973,7 +10973,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1AG1/T',
+                name: '[AN] 試作US-AG1AG1/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -10993,7 +10993,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1A/T',
+                name: '[AN] 試作US-AG1A/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -11273,7 +11273,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]US-AG1A/B',
+                name: '[AN] US-AG1A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -11296,7 +11296,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1AG2/B',
+                name: '[AN] 試作US-AG1AG2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -11319,7 +11319,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1AG1/B',
+                name: '[AN] 試作US-AG1AG1/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -11342,7 +11342,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作US-AG1A/B',
+                name: '[AN] 試作US-AG1A/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -12137,7 +12137,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]グリッツグルースA',
+                name: '[AN] グリッツグルースA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -12155,7 +12155,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グリッツグルースAM3',
+                name: '[AN] 試作グリッツグルースAM3',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -12173,7 +12173,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グリッツグルースAM2',
+                name: '[AN] 試作グリッツグルースAM2',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -12191,7 +12191,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グリッツグルースA',
+                name: '[AN] 試作グリッツグルースA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -12209,7 +12209,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WS_C011_60_04_001_21',
+                name: 'グリッツグルースSM3',
                 unitType: AttrTypeId.Bazooka,
                 level: 80,
                 levelMin: 1,
@@ -12227,7 +12227,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WS_C011_60_04_001_11',
+                name: 'グリッツグルースSM2',
                 unitType: AttrTypeId.Bazooka,
                 level: 75,
                 levelMin: 1,
@@ -12245,7 +12245,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WS_C011_60_04_001_01',
+                name: 'グリッツグルースS',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -12263,7 +12263,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WS_C011_60_03_001_21',
+                name: 'GラケーテYYsSA2',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -12281,7 +12281,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WS_C011_60_03_001_11',
+                name: 'GラケーテYYsSA1',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -12299,7 +12299,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WS_C011_60_03_001_01',
+                name: 'GラケーテYYsS',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -12319,7 +12319,7 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: '',
+                name: 'グロームクレインMk3',
                 unitType: AttrTypeId.Sword,
                 level: 80,
                 levelMin: 1,
@@ -12481,7 +12481,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]ダスククレインA',
+                name: '[AN] ダスククレインA',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -12499,7 +12499,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ダスククレインAMk3',
+                name: '[AN] 試作ダスククレインAMk3',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -12517,7 +12517,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ダスククレインAMk2',
+                name: '[AN] 試作ダスククレインAMk2',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -12535,7 +12535,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ダスククレインA',
+                name: '[AN] 試作ダスククレインA',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -12553,7 +12553,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'グロームクレインSMk3',
                 unitType: AttrTypeId.Sword,
                 level: 80,
                 levelMin: 1,
@@ -12571,7 +12571,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_04_101_21',
+                name: 'ダスククレインSMk3',
                 unitType: AttrTypeId.Sword,
                 level: 80,
                 levelMin: 1,
@@ -12589,7 +12589,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_04_101_11',
+                name: 'ダスククレインSMk2',
                 unitType: AttrTypeId.Sword,
                 level: 75,
                 levelMin: 1,
@@ -12607,7 +12607,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_04_001_21',
+                name: 'ナイトクレインSMk3',
                 unitType: AttrTypeId.Sword,
                 level: 80,
                 levelMin: 1,
@@ -12625,7 +12625,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_04_001_11',
+                name: 'ナイトクレインSMk2',
                 unitType: AttrTypeId.Sword,
                 level: 75,
                 levelMin: 1,
@@ -12643,7 +12643,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_04_001_01',
+                name: 'ナイトクレインS',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -12661,7 +12661,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_03_001_21',
+                name: 'グライフYYsSA2',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -12679,7 +12679,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_03_001_11',
+                name: 'グライフYYsSA1',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -12697,7 +12697,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C011_60_03_001_01',
+                name: 'グライフYYsS',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -12837,7 +12837,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]グレイスクレインA/T',
+                name: '[AN] グレイスクレインA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -12857,7 +12857,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GクレインAMk3/T',
+                name: '[AN] 試作GクレインAMk3/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -12877,7 +12877,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GクレインAMk2/T',
+                name: '[AN] 試作GクレインAMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -12897,7 +12897,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作グレイスクレインA/T',
+                name: '[AN] 試作グレイスクレインA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -12917,7 +12917,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_21',
+                name: 'スノーホワイトS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -12937,7 +12937,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_11',
+                name: 'グレイスクレインSMk2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -12957,7 +12957,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_01',
+                name: 'グレイスクレインS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -12977,7 +12977,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_21',
+                name: 'MN404YYsSG2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -12997,7 +12997,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_11',
+                name: 'MN404YYsSG1/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -13017,7 +13017,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_01',
+                name: 'MN404YYsS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -13039,7 +13039,7 @@ export const ActressGears = {
         ],
         bottom: [
             new Gear({
-                name: '',
+                name: 'パールホワイト/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -13215,7 +13215,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]グレイスクレインA/B',
+                name: '[AN] グレイスクレインA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -13237,7 +13237,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GクレインAMk3/B',
+                name: '[AN] 試作GクレインAMk3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -13259,7 +13259,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GクレインAMk2/B',
+                name: '[AN] 試作GクレインAMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -13281,7 +13281,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作グレイスクレインA/B',
+                name: '[AN] 試作グレイスクレインA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -13303,7 +13303,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'パールホワイトS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -13325,7 +13325,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_21',
+                name: 'スノーホワイトS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -13347,7 +13347,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_11',
+                name: 'グレイスクレインSMk2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -13369,7 +13369,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_04_001_01',
+                name: 'グレイスクレインS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -13391,7 +13391,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_21',
+                name: 'ペレグリーネYYsSM3/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -13413,7 +13413,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_11',
+                name: 'ペレグリーネYYsSM2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -13435,7 +13435,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'C011_60_03_001_01',
+                name: 'ペレグリーネYYsS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -14809,7 +14809,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_04_001_21',
                 unitType: AttrTypeId.Twin,
                 level: 80,
                 levelMin: 1,
@@ -14827,7 +14827,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_04_001_11',
                 unitType: AttrTypeId.Twin,
                 level: 75,
                 levelMin: 1,
@@ -14845,7 +14845,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_04_001_01',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -14863,7 +14863,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_03_001_21',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -14881,7 +14881,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_03_001_11',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -14899,7 +14899,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C044_60_03_001_01',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -15027,7 +15027,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_04_101_21',
                 unitType: AttrTypeId.HandGun,
                 level: 80,
                 levelMin: 1,
@@ -15045,7 +15045,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_04_101_11',
                 unitType: AttrTypeId.HandGun,
                 level: 75,
                 levelMin: 1,
@@ -15063,7 +15063,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_04_001_21',
                 unitType: AttrTypeId.HandGun,
                 level: 80,
                 levelMin: 1,
@@ -15081,7 +15081,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_04_001_11',
                 unitType: AttrTypeId.HandGun,
                 level: 75,
                 levelMin: 1,
@@ -15099,7 +15099,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_04_001_01',
                 unitType: AttrTypeId.HandGun,
                 level: 70,
                 levelMin: 1,
@@ -15117,7 +15117,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_03_001_21',
                 unitType: AttrTypeId.HandGun,
                 level: 60,
                 levelMin: 1,
@@ -15135,7 +15135,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_03_001_11',
                 unitType: AttrTypeId.HandGun,
                 level: 50,
                 levelMin: 1,
@@ -15153,7 +15153,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WC_C044_60_03_001_01',
                 unitType: AttrTypeId.HandGun,
                 level: 40,
                 levelMin: 1,
@@ -15329,7 +15329,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_04_001_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -15344,7 +15344,7 @@ export const ActressGears = {
                 defMax: 578,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_04_001_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -15359,7 +15359,7 @@ export const ActressGears = {
                 defMax: 546,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_04_001_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -15374,7 +15374,7 @@ export const ActressGears = {
                 defMax: 514,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_03_001_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -15389,7 +15389,7 @@ export const ActressGears = {
                 defMax: 450,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_03_001_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -15404,7 +15404,7 @@ export const ActressGears = {
                 defMax: 386,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C044_60_03_001_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -15559,7 +15559,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_04_001_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -15577,7 +15577,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_04_001_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -15595,7 +15595,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_04_001_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -15613,7 +15613,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_03_001_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -15631,7 +15631,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_03_001_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -15649,7 +15649,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C044_60_03_001_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -17455,7 +17455,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試験用ライスシャワーAHVY',
+                name: '[AN] 試験用ライスシャワーAHVY',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -17473,7 +17473,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ライスシャワーAHVY真',
+                name: '[AN] 試作ライスシャワーAHVY真',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -17491,7 +17491,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ライスシャワーAHVY改',
+                name: '[AN] 試作ライスシャワーAHVY改',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -17509,7 +17509,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作ライスシャワーAHVY',
+                name: '[AN] 試作ライスシャワーAHVY',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -17673,7 +17673,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試験用グラビトンコリダーA凸',
+                name: '[AN] 試験用グラビトンコリダーA凸',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -17691,7 +17691,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グラビトンコリダーA凸真',
+                name: '[AN] 試作グラビトンコリダーA凸真',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -17709,7 +17709,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グラビトンコリダーA凸改',
+                name: '[AN] 試作グラビトンコリダーA凸改',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -17727,7 +17727,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '[AN]試作グラビトンコリダーA凸',
+                name: '[AN] 試作グラビトンコリダーA凸',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -17882,7 +17882,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ダイコクA/T',
+                name: '[AN] ダイコクA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -17902,7 +17902,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクABL/T',
+                name: '[AN] 試作ダイコクABL/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -17922,7 +17922,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクA改/T',
+                name: '[AN] 試作ダイコクA改/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -17942,7 +17942,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクA/T',
+                name: '[AN] 試作ダイコクA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -18120,7 +18120,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ダイコクA/B',
+                name: '[AN] ダイコクA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -18143,7 +18143,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクABL/B',
+                name: '[AN] 試作ダイコクABL/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -18166,7 +18166,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクA改/B',
+                name: '[AN] 試作ダイコクA改/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -18189,7 +18189,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ダイコクA/B',
+                name: '[AN] 試作ダイコクA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -18360,7 +18360,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]アレクサンドラA',
+                name: '[AN] アレクサンドラA',
                 unitType: AttrTypeId.Bazooka,
                 level: 70,
                 levelMin: 1,
@@ -18378,7 +18378,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アレクサンドラA乙',
+                name: '[AN] 試作アレクサンドラA乙',
                 unitType: AttrTypeId.Bazooka,
                 level: 60,
                 levelMin: 1,
@@ -18396,7 +18396,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アレクサンドラA甲',
+                name: '[AN] 試作アレクサンドラA甲',
                 unitType: AttrTypeId.Bazooka,
                 level: 50,
                 levelMin: 1,
@@ -18414,7 +18414,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作アレクサンドラA',
+                name: '[AN] 試作アレクサンドラA',
                 unitType: AttrTypeId.Bazooka,
                 level: 40,
                 levelMin: 1,
@@ -18578,7 +18578,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]ブリッツクロスA',
+                name: '[AN] ブリッツクロスA',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -18596,7 +18596,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ブリッツクロスA乙',
+                name: '[AN] 試作ブリッツクロスA乙',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -18614,7 +18614,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ブリッツクロスA甲',
+                name: '[AN] 試作ブリッツクロスA甲',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -18632,7 +18632,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ブリッツクロスA',
+                name: '[AN] 試作ブリッツクロスA',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -18772,7 +18772,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMk-IIA/T',
+                name: '[AN] シロウサギMk-IIA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -18792,7 +18792,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試参/T',
+                name: '[AN] シロウサギMkIIA試参/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -18812,7 +18812,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試弐/T',
+                name: '[AN] シロウサギMkIIA試弐/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -18832,7 +18832,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試/T',
+                name: '[AN] シロウサギMkIIA試/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -18992,7 +18992,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMk-IIA/B',
+                name: '[AN] シロウサギMk-IIA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -19015,7 +19015,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試参/B',
+                name: '[AN] シロウサギMkIIA試参/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -19038,7 +19038,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試弐/B',
+                name: '[AN] シロウサギMkIIA試弐/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -19061,7 +19061,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]シロウサギMkIIA試/B',
+                name: '[AN] シロウサギMkIIA試/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -19196,7 +19196,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]ストリクスA',
+                name: '[AN] ストリクスA',
                 unitType: AttrTypeId.Sniper,
                 level: 70,
                 levelMin: 1,
@@ -19214,7 +19214,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ストリクスAT2',
+                name: '[AN] 試作ストリクスAT2',
                 unitType: AttrTypeId.Sniper,
                 level: 60,
                 levelMin: 1,
@@ -19232,7 +19232,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ストリクスAT1',
+                name: '[AN] 試作ストリクスAT1',
                 unitType: AttrTypeId.Sniper,
                 level: 50,
                 levelMin: 1,
@@ -19250,7 +19250,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ストリクスA',
+                name: '[AN] 試作ストリクスA',
                 unitType: AttrTypeId.Sniper,
                 level: 40,
                 levelMin: 1,
@@ -19414,7 +19414,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]ナイトストーカーA',
+                name: '[AN] ナイトストーカーA',
                 unitType: AttrTypeId.Dagger,
                 level: 70,
                 levelMin: 1,
@@ -19432,7 +19432,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ナイトストーカーAT2',
+                name: '[AN] 試作ナイトストーカーAT2',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -19450,7 +19450,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ナイトストーカーAT1',
+                name: '[AN] 試作ナイトストーカーAT1',
                 unitType: AttrTypeId.Dagger,
                 level: 50,
                 levelMin: 1,
@@ -19468,7 +19468,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作ナイトストーカーA',
+                name: '[AN] 試作ナイトストーカーA',
                 unitType: AttrTypeId.Dagger,
                 level: 40,
                 levelMin: 1,
@@ -19608,7 +19608,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]グレイハーミットA/T',
+                name: '[AN] グレイハーミットA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -19628,7 +19628,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GハーミットAT2/T',
+                name: '[AN] 試作GハーミットAT2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -19648,7 +19648,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GハーミットAT1/T',
+                name: '[AN] 試作GハーミットAT1/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -19668,7 +19668,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作グレイハーミットA/T',
+                name: '[AN] 試作グレイハーミットA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -19828,7 +19828,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]グレイハーミットA/B',
+                name: '[AN] グレイハーミットA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -19851,7 +19851,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GハーミットAT2/B',
+                name: '[AN] 試作GハーミットAT2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -19874,7 +19874,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作GハーミットAT1/B',
+                name: '[AN] 試作GハーミットAT1/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -19897,7 +19897,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作グレイハーミットA/B',
+                name: '[AN] 試作グレイハーミットA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -20664,7 +20664,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]蒼光円盤手裏剣・忍冬A',
+                name: '[AN] 蒼光円盤手裏剣・忍冬A',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -20682,7 +20682,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作蒼光円盤手裏剣・忍冬A乙',
+                name: '[AN] 試作蒼光円盤手裏剣・忍冬A乙',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -20700,7 +20700,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作蒼光円盤手裏剣・忍冬A甲',
+                name: '[AN] 試作蒼光円盤手裏剣・忍冬A甲',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -20718,7 +20718,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作蒼光円盤手裏剣・忍冬A',
+                name: '[AN] 試作蒼光円盤手裏剣・忍冬A',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -20846,7 +20846,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]霧燃A',
+                name: '[AN] 霧燃A',
                 unitType: AttrTypeId.Sword,
                 level: 70,
                 levelMin: 1,
@@ -20864,7 +20864,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作霧燃A改弐',
+                name: '[AN] 試作霧燃A改弐',
                 unitType: AttrTypeId.Sword,
                 level: 60,
                 levelMin: 1,
@@ -20882,7 +20882,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作霧燃A改',
+                name: '[AN] 試作霧燃A改',
                 unitType: AttrTypeId.Sword,
                 level: 50,
                 levelMin: 1,
@@ -20900,7 +20900,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '[AN]試作霧燃A',
+                name: '[AN] 試作霧燃A',
                 unitType: AttrTypeId.Sword,
                 level: 40,
                 levelMin: 1,
@@ -21040,7 +21040,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ジライヤA/T',
+                name: '[AN] ジライヤA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -21060,7 +21060,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA乙/T',
+                name: '[AN] 試作ジライヤA乙/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -21080,7 +21080,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA甲/T',
+                name: '[AN] 試作ジライヤA甲/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -21100,7 +21100,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA/T',
+                name: '[AN] 試作ジライヤA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -21260,7 +21260,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]ジライヤA/B',
+                name: '[AN] ジライヤA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -21283,7 +21283,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA乙/B',
+                name: '[AN] 試作ジライヤA乙/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -21306,7 +21306,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA甲/B',
+                name: '[AN] 試作ジライヤA甲/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -21329,7 +21329,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作ジライヤA/B',
+                name: '[AN] 試作ジライヤA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -25742,7 +25742,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_04_101_21',
                 unitType: AttrTypeId.Twin,
                 level: 80,
                 levelMin: 1,
@@ -25760,7 +25760,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_04_101_11',
                 unitType: AttrTypeId.Twin,
                 level: 75,
                 levelMin: 1,
@@ -25778,7 +25778,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_04_001_21',
                 unitType: AttrTypeId.Twin,
                 level: 80,
                 levelMin: 1,
@@ -25796,7 +25796,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_04_001_11',
                 unitType: AttrTypeId.Twin,
                 level: 75,
                 levelMin: 1,
@@ -25814,7 +25814,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_04_001_01',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -25832,7 +25832,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_03_001_21',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -25850,7 +25850,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_03_001_11',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -25868,7 +25868,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C015_60_03_001_01',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -26032,7 +26032,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_04_001_21',
                 unitType: AttrTypeId.Hammer,
                 level: 80,
                 levelMin: 1,
@@ -26050,7 +26050,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_04_001_11',
                 unitType: AttrTypeId.Hammer,
                 level: 75,
                 levelMin: 1,
@@ -26068,7 +26068,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_04_001_01',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
@@ -26086,7 +26086,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_03_001_21',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
@@ -26104,7 +26104,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_03_001_11',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
@@ -26122,7 +26122,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WC_C015_60_03_001_01',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
@@ -26262,7 +26262,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_04_001_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -26277,7 +26277,7 @@ export const ActressGears = {
                 defMax: 556,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_04_001_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -26292,7 +26292,7 @@ export const ActressGears = {
                 defMax: 525,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_04_001_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -26307,7 +26307,7 @@ export const ActressGears = {
                 defMax: 494,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_03_001_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -26322,7 +26322,7 @@ export const ActressGears = {
                 defMax: 432,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_03_001_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -26337,7 +26337,7 @@ export const ActressGears = {
                 defMax: 371,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C015_60_03_001_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -26486,7 +26486,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_04_001_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -26504,7 +26504,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_04_001_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -26522,7 +26522,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_04_001_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -26540,7 +26540,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_03_001_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -26558,7 +26558,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_03_001_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -26576,7 +26576,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C015_60_03_001_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -37765,7 +37765,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]XBR-EOS-3LA',
+                name: '[AN] XBR-EOS-3LA',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -37783,7 +37783,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作XBR-EOS-3LA真',
+                name: '[AN] 試作XBR-EOS-3LA真',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -37801,7 +37801,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作XBR-EOS-3LA改',
+                name: '[AN] 試作XBR-EOS-3LA改',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -37819,7 +37819,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作XBR-EOS-3LA',
+                name: '[AN] 試作XBR-EOS-3LA',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -37983,7 +37983,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]リオリエントμA',
+                name: '[AN] リオリエントμA',
                 unitType: AttrTypeId.Dagger,
                 level: 70,
                 levelMin: 1,
@@ -38001,7 +38001,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作リオリエントμOαA',
+                name: '[AN] 試作リオリエントμOαA',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -38019,7 +38019,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作リオリエントμαA',
+                name: '[AN] 試作リオリエントμαA',
                 unitType: AttrTypeId.Dagger,
                 level: 50,
                 levelMin: 1,
@@ -38037,7 +38037,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '[AN]試作リオリエントμA',
+                name: '[AN] 試作リオリエントμA',
                 unitType: AttrTypeId.Dagger,
                 level: 40,
                 levelMin: 1,
@@ -38177,7 +38177,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]リヴィングストンA/T',
+                name: '[AN] リヴィングストンA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -38197,7 +38197,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA真/T',
+                name: '[AN] 試作リヴィングストンA真/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -38217,7 +38217,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA改/T',
+                name: '[AN] 試作リヴィングストンA改/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -38237,7 +38237,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA/T',
+                name: '[AN] 試作リヴィングストンA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -38397,7 +38397,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]リヴィングストンA/B',
+                name: '[AN] リヴィングストンA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -38420,7 +38420,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA真/B',
+                name: '[AN] 試作リヴィングストンA真/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -38443,7 +38443,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA改/B',
+                name: '[AN] 試作リヴィングストンA改/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -38466,7 +38466,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '[AN]試作リヴィングストンA/B',
+                name: '[AN] 試作リヴィングストンA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,

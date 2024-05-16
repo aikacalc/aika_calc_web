@@ -3635,6 +3635,53 @@ class YotsuyaYumi70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
 }
 
+class YotsuyaYumi60 extends Character {
+    name: string = '四谷 ゆみ / ムーン ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3110;
+    hpMin: number = 835;
+    hpMax: number = 3110;
+    atkClose: number = 550;
+    atkCloseMin: number = 153;
+    atkCloseMax: number = 550;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 164;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Sword, 0.35),
+        new Buff(AttrTypeId.Bazooka, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.YotsuyaYumi.long;
+    weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
+    equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
+    equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+}
+
 class FujinoYayoi01 extends Character {
     name: string = '藤野 やよい ★1';
     rare: number = 1;
@@ -20530,6 +20577,7 @@ export const CharacterModels = {
     YotsuyaYumi04: new YotsuyaYumi04(),
     YotsuyaYumi05: new YotsuyaYumi05(),
     YotsuyaYumi70: new YotsuyaYumi70(),
+    YotsuyaYumi60: new YotsuyaYumi60(),
     FujinoYayoi01: new FujinoYayoi01(),
     FujinoYayoi02: new FujinoYayoi02(),
     FujinoYayoi04: new FujinoYayoi04(),
