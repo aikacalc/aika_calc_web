@@ -15392,6 +15392,190 @@ class KasugaokaMoe70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
 }
 
+class AsumaIsami01 extends Character {
+    name: string = '遊馬 勇 ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 3;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 896;
+    hpMin: number = 371;
+    hpMax: number = 896;
+    atkClose: number = 213;
+    atkCloseMin: number = 85;
+    atkCloseMax: number = 213;
+    attrClose: number = 0;
+    atkShot: number = 215;
+    atkShotMin: number = 86;
+    atkShotMax: number = 215;
+    attrShot: number = 0;
+    def: number = 250;
+    defMin: number = 100;
+    defMax: number = 250;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 30;
+    attrMax: number = 75;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AsumaIsami.long;
+    weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
+    equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
+    equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+}
+
+class AsumaIsami02 extends Character {
+    name: string = '遊馬 勇 ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1463;
+    hpMin: number = 525;
+    hpMax: number = 1463;
+    atkClose: number = 340;
+    atkCloseMin: number = 128;
+    atkCloseMax: number = 340;
+    attrClose: number = 0;
+    atkShot: number = 343;
+    atkShotMin: number = 129;
+    atkShotMax: number = 343;
+    attrShot: number = 0;
+    def: number = 400;
+    defMin: number = 150;
+    defMax: number = 400;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 45;
+    attrMax: number = 120;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AsumaIsami.long;
+    weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
+    equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
+    equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+}
+
+class AsumaIsami04 extends Character {
+    name: string = '遊馬 勇 ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 595;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 601;
+    atkShotMin: number = 172;
+    atkShotMax: number = 601;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AsumaIsami.long;
+    weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
+    equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
+    equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+}
+
+class AsumaIsami05 extends Character {
+    name: string = '遊馬 勇 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 773;
+    atkShotMin: number = 215;
+    atkShotMax: number = 773;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AsumaIsami.long;
+    weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
+    equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
+    equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+}
+
 class AdelaideBluthausen01 extends Character {
     name: string = 'アデライーデ・B ★1';
     rare: number = 1;
@@ -20449,6 +20633,7 @@ export const ActressNames: string[] = [
     'TenkoSora',
     'HasamiRika',
     'KasugaokaMoe',
+    'AsumaIsami',
     'AdelaideBluthausen',
     'NicoleFrancisca',
     'NoelleFrancisca',
@@ -20829,6 +21014,10 @@ export const CharacterModels = {
     KasugaokaMoe04: new KasugaokaMoe04(),
     KasugaokaMoe05: new KasugaokaMoe05(),
     KasugaokaMoe70: new KasugaokaMoe70(),
+    AsumaIsami01: new AsumaIsami01(),
+    AsumaIsami02: new AsumaIsami02(),
+    AsumaIsami04: new AsumaIsami04(),
+    AsumaIsami05: new AsumaIsami05(),
     AdelaideBluthausen01: new AdelaideBluthausen01(),
     AdelaideBluthausen02: new AdelaideBluthausen02(),
     AdelaideBluthausen04: new AdelaideBluthausen04(),
