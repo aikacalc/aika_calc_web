@@ -8489,6 +8489,52 @@ class YorozubaMeika70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
 }
 
+class YorozubaMeika60 extends Character {
+    name: string = '萬場 盟華 / サン ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 700;
+    atkCloseMin: number = 194;
+    atkCloseMax: number = 700;
+    attrClose: number = 0;
+    atkShot: number = 736;
+    atkShotMin: number = 205;
+    atkShotMax: number = 736;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.35),
+        new Buff(AttrTypeId.Twin, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.YorozubaMeika.long;
+    weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
+    equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
+    equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+}
+
 class KuroganeYuto01 extends Character {
     name: string = '九炉鉄 悠都 ★1';
     rare: number = 1;
@@ -20866,6 +20912,7 @@ export const CharacterModels = {
     YorozubaMeika04: new YorozubaMeika04(),
     YorozubaMeika05: new YorozubaMeika05(),
     YorozubaMeika70: new YorozubaMeika70(),
+    YorozubaMeika60: new YorozubaMeika60(),
     KuroganeYuto01: new KuroganeYuto01(),
     KuroganeYuto02: new KuroganeYuto02(),
     KuroganeYuto04: new KuroganeYuto04(),
