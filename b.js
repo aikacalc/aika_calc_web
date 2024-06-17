@@ -3,10 +3,11 @@ const { from, Observable, defer } = require('rxjs');
 const { concatAll } = require('rxjs/operators');
 const fs = require('fs');
 
+// 建立angular
 const build$ = new Observable((subsc) => {
     console.log('run ng build...');
     const originalEnvFileString = fs.readFileSync('./src/environments/environment.prod.source.ts').toString();
-    const modifyVersionString = originalEnvFileString.replace(/\{buildTime\}/,new Date().toISOString());
+    const modifyVersionString = originalEnvFileString.replace(/\{buildTime\}/, new Date().toISOString());
     fs.writeFileSync('./src/environments/environment.prod.ts', modifyVersionString);
     exec("ng build --build-optimizer --configuration production", (error, stdout, stderr) => {
         if (error) {
@@ -32,6 +33,7 @@ function getDistFiles(dirPath) {
     // });
     return filesNames;
 }
+// 複製檔案
 const copyGithub$ = new Observable((subsc) => {
     console.log('copyGithub');
     const targetDirName = 'aikacalc.github.io';
@@ -60,9 +62,12 @@ const copyBitbucket$ = new Observable((subsc) => {
     subsc.next();
     subsc.complete();
 });
+
+// commit
 const gitGithubAikaClac$ = new Observable((subsc) => {
     console.log('git aikacalc');
-    const cmd = 'cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
+    const cmd = 'cd ../aika_calc_web'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -a -m' + `u`;
     // const cmd = 'cd';
     execSync(cmd, (error, stdout, stderr) => {
         if (error) {
@@ -83,8 +88,7 @@ const gitGithub$ = new Observable((subsc) => {
     const cmd = 'cd ../aikacalc.github.io'
         + ' & cmd /K "C:/Program Files/Git/bin/git.exe" add --all'
         + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -m' + `u`;
-    execSync(cmd, (error, stdout, stderr) => {
-    });
+    execSync(cmd, (error, stdout, stderr) => { });
     subsc.next();
     subsc.complete();
 });
@@ -93,11 +97,42 @@ const gitBitbucket$ = new Observable((subsc) => {
     const cmd = 'cd ../aikacalc.bitbucket.io'
         + ' & cmd /K "C:/Program Files/Git/bin/git.exe" add --all'
         + ' & cmd /K "C:/Program Files/Git/bin/git.exe" commit -m' + `u`;
-    execSync(cmd, (error, stdout, stderr) => {
-    });
+    execSync(cmd, (error, stdout, stderr) => { });
     subsc.next();
     subsc.complete();
 });
+
+
+// 上傳aikacalc
+const gitPushGithubAikaClac$ = new Observable((subsc) => {
+    console.log('git push aikacalc');
+    const cmd = 'cd ../aika_calc_web'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" push origin master';
+    execSync(cmd, (error, stdout, stderr) => { });
+    subsc.next();
+    subsc.complete();
+});
+
+// 上傳aiakcalc.github.io
+const gitPushGithubIO$ = new Observable((subsc) => {
+    console.log('git push aikacalc.github.io');
+    const cmd = 'cd ../aikacalc.github.io'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" push origin master';
+    execSync(cmd, (error, stdout, stderr) => { });
+    subsc.next();
+    subsc.complete();
+});
+
+// 上傳aikacalc.bitbucket.io
+const gitPushBitbucketIO$ = new Observable((subsc) => {
+    console.log('git push aikacalc.bitbucket.io');
+    const cmd = 'cd ../aikacalc.bitbucket.io'
+        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" push origin master';
+    execSync(cmd, (error, stdout, stderr) => { });
+    subsc.next();
+    subsc.complete();
+});
+
 
 
 from([
