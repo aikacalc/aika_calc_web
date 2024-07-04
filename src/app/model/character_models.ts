@@ -8519,7 +8519,7 @@ class YorozubaMeika60 extends Character {
     attrMax: number = 306;
     chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     spRangeTypeId: AttrTypeId = AttrTypeId.Close;
-    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
     spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
     buffs: Buff[] = [
         new Buff(AttrTypeId.ResistIce, 0.6),
@@ -16978,6 +16978,192 @@ class KotobukiBukiko05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KotobukiBukiko.bottom;
 }
 
+class SaekiRitsuka04 extends Character {
+    name: string = '佐伯 リツカ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 495;
+    atkCloseMin: number = 141;
+    atkCloseMax: number = 495;
+    attrClose: number = 0;
+    atkShot: number = 486;
+    atkShotMin: number = 139;
+    atkShotMax: number = 486;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SaekiRitsuka.long;
+    weaponCloses: Gear[] = ActressGears.SaekiRitsuka.short;
+    equipmentTops: Gear[] = ActressGears.SaekiRitsuka.top;
+    equipmentBottoms: Gear[] = ActressGears.SaekiRitsuka.bottom;
+}
+
+class SaekiRitsuka05 extends Character {
+    name: string = '佐伯 リツカ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sword, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SaekiRitsuka.long;
+    weaponCloses: Gear[] = ActressGears.SaekiRitsuka.short;
+    equipmentTops: Gear[] = ActressGears.SaekiRitsuka.top;
+    equipmentBottoms: Gear[] = ActressGears.SaekiRitsuka.bottom;
+}
+
+class KoishikawaEmma04 extends Character {
+    name: string = '小石川 エマ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2610;
+    hpMin: number = 718;
+    hpMax: number = 2610;
+    atkClose: number = 573;
+    atkCloseMin: number = 164;
+    atkCloseMax: number = 573;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 168;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KoishikawaEmma.long;
+    weaponCloses: Gear[] = ActressGears.KoishikawaEmma.short;
+    equipmentTops: Gear[] = ActressGears.KoishikawaEmma.top;
+    equipmentBottoms: Gear[] = ActressGears.KoishikawaEmma.bottom;
+}
+
+class KoishikawaEmma05 extends Character {
+    name: string = '小石川 エマ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 736;
+    atkCloseMin: number = 205;
+    atkCloseMax: number = 736;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KoishikawaEmma.long;
+    weaponCloses: Gear[] = ActressGears.KoishikawaEmma.short;
+    equipmentTops: Gear[] = ActressGears.KoishikawaEmma.top;
+    equipmentBottoms: Gear[] = ActressGears.KoishikawaEmma.bottom;
+}
+
 class SolRaptor04 extends Character {
     name: string = 'SOL ラプター ★3';
     rare: number = 3;
@@ -20690,6 +20876,8 @@ export const ActressNames: string[] = [
     'Hresvelgr',
     'GennaiAo',
     'KotobukiBukiko',
+    'SaekiRitsuka',
+    'KoishikawaEmma',
     'SolRaptor',
     'MiyafujiYoshika',
     'SakamotoMio',
@@ -21094,6 +21282,10 @@ export const CharacterModels = {
     GennaiAo05: new GennaiAo05(),
     KotobukiBukiko04: new KotobukiBukiko04(),
     KotobukiBukiko05: new KotobukiBukiko05(),
+    SaekiRitsuka04: new SaekiRitsuka04(),
+    SaekiRitsuka05: new SaekiRitsuka05(),
+    KoishikawaEmma04: new KoishikawaEmma04(),
+    KoishikawaEmma05: new KoishikawaEmma05(),
     SolRaptor04: new SolRaptor04(),
     SolRaptor05: new SolRaptor05(),
     SolRaptor70: new SolRaptor70(),
