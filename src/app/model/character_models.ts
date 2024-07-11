@@ -4475,6 +4475,53 @@ class ShirleyOakley70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
 }
 
+class ShirleyOakley60 extends Character {
+    name: string = 'シャーリー / チャリオット ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 590;
+    atkCloseMin: number = 164;
+    atkCloseMax: number = 590;
+    attrClose: number = 0;
+    atkShot: number = 550;
+    atkShotMin: number = 153;
+    atkShotMax: number = 550;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Twin, 0.35),
+        new Buff(AttrTypeId.HandGun, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.ShirleyOakley.long;
+    weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
+    equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
+    equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+}
+
 class ItokuraNeo01 extends Character {
     name: string = '伊戸倉 音緒 ★1';
     rare: number = 1;
@@ -21014,6 +21061,7 @@ export const CharacterModels = {
     ShirleyOakley04: new ShirleyOakley04(),
     ShirleyOakley05: new ShirleyOakley05(),
     ShirleyOakley70: new ShirleyOakley70(),
+    ShirleyOakley60: new ShirleyOakley60(),
     ItokuraNeo01: new ItokuraNeo01(),
     ItokuraNeo02: new ItokuraNeo02(),
     ItokuraNeo04: new ItokuraNeo04(),
