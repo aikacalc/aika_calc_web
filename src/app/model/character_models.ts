@@ -3401,6 +3401,53 @@ class FatimaBetrorum70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
 }
 
+class FatimaBetrorum80 extends Character {
+    name: string = 'ファティマ / ライブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 655;
+    atkCloseMin: number = 182;
+    atkCloseMax: number = 655;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.FatimaBetrorum.long;
+    weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
+    equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
+    equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+}
+
 class YotsuyaYumi01 extends Character {
     name: string = '四谷 ゆみ ★1';
     rare: number = 1;
@@ -4750,6 +4797,52 @@ class ItokuraNeo70 extends Character {
         new Buff(AttrTypeId.Volt, 0.96),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
+    weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
+    equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
+    equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+}
+
+class ItokuraNeo80 extends Character {
+    name: string = '伊戸倉 音緒 / ライブ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 803;
+    atkShotMin: number = 223;
+    atkShotMax: number = 803;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.5),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.ItokuraNeo.long;
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
@@ -21038,6 +21131,7 @@ export const CharacterModels = {
     FatimaBetrorum04: new FatimaBetrorum04(),
     FatimaBetrorum05: new FatimaBetrorum05(),
     FatimaBetrorum70: new FatimaBetrorum70(),
+    FatimaBetrorum80: new FatimaBetrorum80(),
     YotsuyaYumi01: new YotsuyaYumi01(),
     YotsuyaYumi02: new YotsuyaYumi02(),
     YotsuyaYumi04: new YotsuyaYumi04(),
@@ -21067,6 +21161,7 @@ export const CharacterModels = {
     ItokuraNeo04: new ItokuraNeo04(),
     ItokuraNeo05: new ItokuraNeo05(),
     ItokuraNeo70: new ItokuraNeo70(),
+    ItokuraNeo80: new ItokuraNeo80(),
     YorishiroEri01: new YorishiroEri01(),
     YorishiroEri02: new YorishiroEri02(),
     YorishiroEri04: new YorishiroEri04(),
