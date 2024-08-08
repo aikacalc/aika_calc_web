@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AppService } from './app.service';
 import { environment } from '../environments/environment.prod';
-import { SwUpdate } from '@angular/service-worker';
+import { SwUpdate, VersionEvent } from '@angular/service-worker';
 import { AikaCalcComponent } from './aika-calc/aika-calc.component';
 import { AikaFanReachCalcComponent } from './aika-fan-reach-calc/aika-fan-reach-calc.component';
 import { AikaDamageCalcComponent } from './aika-damage-calc/aika-damage-calc.component';
@@ -36,8 +36,10 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.swUpdate.versionUpdates.subscribe(() => {
-            this.service.hasNewUpdate = true;
+        this.swUpdate.versionUpdates.subscribe((versionEvent: VersionEvent) => {
+            if(versionEvent.type == 'VERSION_READY'){
+                this.service.hasNewUpdate = true;
+            }
         });
 
         console.log(location.href);

@@ -1,10 +1,9 @@
-
 <div class="aika-app">
-  <div class="top">
-      <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
-      <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-      <span class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</span>
-      <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
+    <div class="top">
+        <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
+        <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
+        <span class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</span>
+        <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
           <span>愛花版面計算</span>
       </a>
       <a class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" [routerLink]="['/afrc']">
@@ -13,43 +12,43 @@
       <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
           <span>愛花輸出計算</span>
       </a> -->
-      <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="page=''">
-          <span>愛花版面計算</span>
-      </button>
-      <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="page='afrc'">
-          <span>愛花粉絲計算</span>
-      </button>
-      <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="page='adc'">
-          <span>愛花輸出計算</span>
-      </button>
-      <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
+        <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="page=''">
+            <span>愛花版面計算</span>
+        </button>
+        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="page='afrc'">
+            <span>愛花粉絲計算</span>
+        </button>
+        <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="page='adc'">
+            <span>愛花輸出計算</span>
+        </button>
+        <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
           <span>愛花技能</span>
       </button> -->
-      <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
-        <span>愛花ENIGMA</span>
-    </button>
-  </div>
-  <div class="body">
-      <div class="aika-calc-container" [hidden]="page!=''">
-          <app-aika-calc></app-aika-calc>
-      </div>
-      <div class="aika-fan-reach-calc" [hidden]="page!='afrc'">
-          <app-aika-fan-reach-calc></app-aika-fan-reach-calc>
-      </div>
-      <div class="aika-damage-calc" [hidden]="page!='adc'">
-          <app-aika-damage-calc></app-aika-damage-calc>
-      </div>
-      <!-- <div class="aika-skill" [hidden]="page!='ask'">
+        <!-- <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
+            <span>愛花ENIGMA</span>
+        </button> -->
+    </div>
+    <div class="body">
+        <div class="aika-calc-container" [hidden]="page!=''">
+            <app-aika-calc></app-aika-calc>
+        </div>
+        <div class="aika-fan-reach-calc" [hidden]="page!='afrc'">
+            <app-aika-fan-reach-calc></app-aika-fan-reach-calc>
+        </div>
+        <div class="aika-damage-calc" [hidden]="page!='adc'">
+            <app-aika-damage-calc></app-aika-damage-calc>
+        </div>
+        <!-- <div class="aika-skill" [hidden]="page!='ask'">
           <app-aika-skill></app-aika-skill>
       </div> -->
-      <div class="aika-enigma" [hidden]="page!='ask'">
-        <app-aika-enigma></app-aika-enigma>
+        <!-- <div class="aika-enigma" [hidden]="page!='ask'">
+            <app-aika-enigma></app-aika-enigma>
+        </div> -->
     </div>
-  </div>
-  <div class="msg" *ngIf="service.showMessage">
-      <div class="mask" (click)="service.showMessage=false"></div>
-      <div class="message">{{service.messageWindowContent}}</div>
-  </div>
+    <div class="msg" *ngIf="service.showMessage">
+        <div class="mask" (click)="service.showMessage=false"></div>
+        <div class="message">{{service.messageWindowContent}}</div>
+    </div>
 </div>
 
 <!-- <router-outlet></router-outlet> -->

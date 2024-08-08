@@ -1,9 +1,10 @@
 :host>.aika-app {
     position: relative;
     // padding: 10px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     // overflow: auto;
+    // overflow: hidden;
     display: flex;
     flex-direction: column;
 
@@ -16,6 +17,7 @@
         display: flex;
         align-items: center;
         overflow-x: auto;
+        border-bottom: #ccc 1px solid;
 
 
         >.aika {
@@ -58,9 +60,10 @@
     }
 
     >.body {
+        width: 100%;
         position: relative;
         flex: 1;
-        overflow: auto;
+        overflow: scroll;
     }
 
     >.msg {
