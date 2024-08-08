@@ -19,6 +19,8 @@ const fs = require('fs');
 git remote set-url origin https://<TOKEN>@github.com/aikacalc/aika_calc_web.git
 git push origin master
 
+// * git remote set-url origin https://<TOKEN>@github.com/aikacalc/aikacalc.github.io.git
+
 git remote set-url origin https://<USERNAME>:<TOKEN>@bitbucket.org/aikacalc/aikacalc.bitbucket.io.git
 git push origin master
  */
