@@ -2842,6 +2842,53 @@ class NikotamaMai80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
 }
 
+class NikotamaMai60 extends Character {
+    name: string = '二子玉 舞 / スター ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 491;
+    atkShotMin: number = 136;
+    atkShotMax: number = 491;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.35),
+        new Buff(AttrTypeId.Rifle, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.NikotamaMai.long;
+    weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
+    equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
+    equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+}
+
 class VirginiaGlynnberets01 extends Character {
     name: string = 'バージニア・G ★1';
     rare: number = 1;
@@ -21119,6 +21166,7 @@ export const CharacterModels = {
     NikotamaMai05: new NikotamaMai05(),
     NikotamaMai70: new NikotamaMai70(),
     NikotamaMai80: new NikotamaMai80(),
+    NikotamaMai60: new NikotamaMai60(),
     VirginiaGlynnberets01: new VirginiaGlynnberets01(),
     VirginiaGlynnberets02: new VirginiaGlynnberets02(),
     VirginiaGlynnberets04: new VirginiaGlynnberets04(),

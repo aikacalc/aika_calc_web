@@ -1,20 +1,25 @@
-import { AttrTypeId, AttrTypeIdAttrs, AttrTypeIdCloses, AttrTypeIdShots } from './../model/attr-type';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { AttrTypeName, AttrTypeIdList, getTypeColor } from '../model/attr-type';
-// import { AttrTypeId } from '../model/attr-type-id.enum';
+import { Component } from '@angular/core';
+import { AttrTypeId, AttrTypeIdAttrs, AttrTypeIdCloses, AttrTypeIdList, AttrTypeIdShots, AttrTypeName, getTypeColor } from '../model/attr-type';
+import { attrTypeEnigmaStatus, Character } from '../model/character';
 import { Buff } from '../model/buff';
-import { Character, attrTypeEnigmaStatus } from '../model/character';
-import { CharacterModels } from '../model/character_models';
-import { Unit } from '../model/unit';
-import { Gear } from '../model/gear';
 import { AppService } from '../app.service';
+import { CharacterModels } from '../model/character_models';
+import { Gear } from '../model/gear';
+import { Unit } from '../model/unit';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-aika-calc',
+    standalone: true,
+    imports: [
+        CommonModule,
+        FormsModule,
+    ],
     templateUrl: './aika-calc.component.html',
-    styleUrls: ['./aika-calc.component.scss']
+    styleUrl: './aika-calc.component.scss'
 })
-export class AikaCalcComponent implements OnInit {
+export class AikaCalcComponent {
     public attrTypeList: { id: AttrTypeId; name: string }[] = [];
     public attrTypeGroupList: { name: string, list: { id: AttrTypeId; name: string }[] }[] = [];
     public attrTypeAttrList: { id: AttrTypeId; name: string }[] = [];
@@ -513,7 +518,7 @@ DEF+200
 
     loadCharacterSavedataFromUrl(): boolean {
         const url = new URL(location.href);
-        if(!url.searchParams.has('s')) {
+        if (!url.searchParams.has('s')) {
             return false;
         }
         const saveString = decodeURIComponent(location.search.split('s=')[1]);

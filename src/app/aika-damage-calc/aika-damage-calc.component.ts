@@ -1,6 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppService } from '../app.service';
-import { AttrTypeColor, AttrTypeId, AttrTypeIdWeapons, getTypeColor } from '../model/attr-type';
+import { AttrTypeId, AttrTypeColor, getTypeColor } from '../model/attr-type';
 
 const attrDamageRate = {
     Volt: {
@@ -357,10 +359,16 @@ class ViceAARCalcCase {
     }
 }
 
+
 @Component({
     selector: 'app-aika-damage-calc',
+    standalone: true,
+    imports: [
+        CommonModule,
+        FormsModule,
+    ],
     templateUrl: './aika-damage-calc.component.html',
-    styleUrls: ['./aika-damage-calc.component.scss']
+    styleUrl: './aika-damage-calc.component.scss'
 })
 export class AikaDamageCalcComponent implements OnInit {
     AttrTypeColor = AttrTypeColor;

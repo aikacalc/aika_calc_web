@@ -1,14 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { StageReward } from '../model/stage-reward';
-import { Actress } from '../model/actress';
-import { StageRewardFan } from '../model/stage-reward-fan';
-import { FanRoad } from '../model/fan-road';
+import { FormsModule } from '@angular/forms';
 import { AppService } from '../app.service';
+import { Actress } from '../model/actress';
+import { FanRoad } from '../model/fan-road';
+import { StageRewardFan } from '../model/stage-reward-fan';
 
 @Component({
     selector: 'app-aika-fan-reach-calc',
+    standalone: true,
+    imports: [
+        CommonModule,
+        FormsModule,
+    ],
     templateUrl: './aika-fan-reach-calc.component.html',
-    styleUrls: ['./aika-fan-reach-calc.component.scss']
+    styleUrl: './aika-fan-reach-calc.component.scss'
 })
 export class AikaFanReachCalcComponent implements OnInit {
     actress: Actress[] = [];
@@ -66,10 +72,10 @@ export class AikaFanReachCalcComponent implements OnInit {
     inputTargetFan: number = 1999999;
     resultRoads: FanRoad[][] = [];
     charaRareStar = {
-        1:'★',
-        2:'★★',
-        3:'★★★',
-        4:'★★★★',
+        1: '★',
+        2: '★★',
+        3: '★★★',
+        4: '★★★★',
     }
 
 

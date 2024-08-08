@@ -1,3 +1,4 @@
+import { FanRoad } from './fan-road';
 import { StageRewardFan } from './stage-reward-fan';
 
 export class Actress {
@@ -5,5 +6,5 @@ export class Actress {
 
     fan: number = 3000;
     fanTarget: number = 2003000;
-    fanReachRoads: { stage: StageRewardFan, count: number }[][];
+    fanReachRoads: FanRoad[][];
 }

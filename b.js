@@ -35,7 +35,7 @@ const build$ = new Observable((subsc) => {
     const originalEnvFileString = fs.readFileSync('./src/environments/environment.prod.source.ts').toString();
     const modifyVersionString = originalEnvFileString.replace(/\{buildTime\}/, new Date().toISOString());
     fs.writeFileSync('./src/environments/environment.prod.ts', modifyVersionString);
-    exec("ng build --build-optimizer --configuration production", (error, stdout, stderr) => {
+    exec("ng build --configuration production", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -64,12 +64,12 @@ const copyGithub$ = new Observable((subsc) => {
     console.log('copyGithub');
     const targetDirName = 'aikacalc.github.io';
     const locFiles = getDistFiles(`../${targetDirName}`);
-    const distFiles = getDistFiles(`dist/AikaCalc`);
+    const distFiles = getDistFiles(`dist/aika_calc_web/browser`);
     locFiles.forEach(fileName => {
         fs.unlinkSync(`../${targetDirName}/${fileName}`, { recursive: true });
     });
     distFiles.forEach(fileName => {
-        fs.copyFileSync(`dist/AikaCalc/${fileName}`, `../${targetDirName}/${fileName}`);
+        fs.copyFileSync(`dist/aika_calc_web/browser/${fileName}`, `../${targetDirName}/${fileName}`);
     });
     subsc.next();
     subsc.complete();
@@ -78,12 +78,12 @@ const copyBitbucket$ = new Observable((subsc) => {
     console.log('copyBitbucket');
     const targetDirName = 'aikacalc.bitbucket.io';
     const locFiles = getDistFiles(`../${targetDirName}`);
-    const distFiles = getDistFiles(`dist/AikaCalc`);
+    const distFiles = getDistFiles(`dist/aika_calc_web/browser`);
     locFiles.forEach(fileName => {
         fs.unlinkSync(`../${targetDirName}/${fileName}`, { recursive: true });
     });
     distFiles.forEach(fileName => {
-        fs.copyFileSync(`dist/AikaCalc/${fileName}`, `../${targetDirName}/${fileName}`);
+        fs.copyFileSync(`dist/aika_calc_web/browser/${fileName}`, `../${targetDirName}/${fileName}`);
     });
     subsc.next();
     subsc.complete();
