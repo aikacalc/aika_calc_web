@@ -16044,6 +16044,194 @@ class AdelaideBluthausen70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
+class EmmaAshfield01 extends Character {
+    name: string = 'エマ・A ★1';
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 10;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 870;
+    hpMin: number = 360;
+    hpMax: number = 870;
+    atkClose: number = 177;
+    atkCloseMin: number = 71;
+    atkCloseMax: number = 177;
+    attrClose: number = 0;
+    atkShot: number = 180;
+    atkShotMin: number = 72;
+    atkShotMax: number = 180;
+    attrShot: number = 0;
+    def: number = 250;
+    defMin: number = 100;
+    defMax: number = 250;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 40;
+    attrMax: number = 100;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EmmaAshfield.long;
+    weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
+    equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
+    equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+}
+
+class EmmaAshfield02 extends Character {
+    name: string = 'エマ・A ★2';
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1420;
+    hpMin: number = 510;
+    hpMax: number = 1420;
+    atkClose: number = 283;
+    atkCloseMin: number = 106;
+    atkCloseMax: number = 283;
+    attrClose: number = 0;
+    atkShot: number = 288;
+    atkShotMin: number = 108;
+    atkShotMax: number = 288;
+    attrShot: number = 0;
+    def: number = 400;
+    defMin: number = 150;
+    defMax: number = 400;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 60;
+    attrMax: number = 160;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EmmaAshfield.long;
+    weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
+    equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
+    equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+}
+
+class EmmaAshfield04 extends Character {
+    name: string = 'エマ・A ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 495;
+    atkCloseMin: number = 141;
+    atkCloseMax: number = 495;
+    attrClose: number = 0;
+    atkShot: number = 505;
+    atkShotMin: number = 144;
+    atkShotMax: number = 505;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EmmaAshfield.long;
+    weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
+    equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
+    equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+}
+
+class EmmaAshfield05 extends Character {
+    name: string = 'エマ・A ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 636;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 636;
+    attrClose: number = 0;
+    atkShot: number = 649;
+    atkShotMin: number = 180;
+    atkShotMax: number = 649;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Hammer, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EmmaAshfield.long;
+    weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
+    equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
+    equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+}
+
 class NicoleFrancisca01 extends Character {
     name: string = 'ニコル・F ★1';
     rare: number = 1;
@@ -21054,6 +21242,7 @@ export const ActressNames: string[] = [
     'KasugaokaMoe',
     'AsumaIsami',
     'AdelaideBluthausen',
+    'EmmaAshfield',
     'NicoleFrancisca',
     'NoelleFrancisca',
     'TakahataNodoka',
@@ -21449,6 +21638,10 @@ export const CharacterModels = {
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
     AdelaideBluthausen70: new AdelaideBluthausen70(),
+    EmmaAshfield01: new EmmaAshfield01(),
+    EmmaAshfield02: new EmmaAshfield02(),
+    EmmaAshfield04: new EmmaAshfield04(),
+    EmmaAshfield05: new EmmaAshfield05(),
     NicoleFrancisca01: new NicoleFrancisca01(),
     NicoleFrancisca02: new NicoleFrancisca02(),
     NicoleFrancisca04: new NicoleFrancisca04(),
