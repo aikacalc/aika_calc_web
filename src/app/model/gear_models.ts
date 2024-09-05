@@ -65627,7 +65627,7 @@ export const ActressGears = {
     MakiseKurisu: {
         long: [
             new Gear({
-                name: '',
+                name: 'WS_C628_04_011_21',
                 unitType: AttrTypeId.Twin,
                 level: 80,
                 levelMin: 1,
@@ -65645,7 +65645,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WS_C628_04_011_11',
                 unitType: AttrTypeId.Twin,
                 level: 75,
                 levelMin: 1,
@@ -65663,7 +65663,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WS_C628_04_011_01',
                 unitType: AttrTypeId.Twin,
                 level: 70,
                 levelMin: 1,
@@ -65735,7 +65735,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'WS_C628_03_011_21',
                 unitType: AttrTypeId.Twin,
                 level: 60,
                 levelMin: 1,
@@ -65753,7 +65753,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WS_C628_03_011_11',
                 unitType: AttrTypeId.Twin,
                 level: 50,
                 levelMin: 1,
@@ -65771,7 +65771,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'WS_C628_03_011_01',
                 unitType: AttrTypeId.Twin,
                 level: 40,
                 levelMin: 1,
@@ -65845,7 +65845,7 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: '',
+                name: 'C628_04_011_21',
                 unitType: AttrTypeId.HandGun,
                 level: 80,
                 levelMin: 1,
@@ -65863,7 +65863,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'C628_04_011_11',
                 unitType: AttrTypeId.HandGun,
                 level: 75,
                 levelMin: 1,
@@ -65881,7 +65881,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'C628_04_011_01',
                 unitType: AttrTypeId.HandGun,
                 level: 70,
                 levelMin: 1,
@@ -65953,7 +65953,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '',
+                name: 'C628_03_011_21',
                 unitType: AttrTypeId.HandGun,
                 level: 60,
                 levelMin: 1,
@@ -65971,7 +65971,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'C628_03_011_11',
                 unitType: AttrTypeId.HandGun,
                 level: 50,
                 levelMin: 1,
@@ -65989,7 +65989,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: '',
+                name: 'C628_03_011_01',
                 unitType: AttrTypeId.HandGun,
                 level: 40,
                 levelMin: 1,
@@ -66063,7 +66063,7 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: '',
+                name: 'EA_C628_04_011_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -66078,7 +66078,7 @@ export const ActressGears = {
                 defMax: 529,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C628_04_011_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -66093,7 +66093,7 @@ export const ActressGears = {
                 defMax: 499,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C628_04_011_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -66168,7 +66168,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EA_C628_03_011_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -66183,7 +66183,7 @@ export const ActressGears = {
                 defMax: 411,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C628_03_011_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -66198,7 +66198,7 @@ export const ActressGears = {
                 defMax: 353,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C628_03_011_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -66275,7 +66275,7 @@ export const ActressGears = {
         ],
         bottom: [
             new Gear({
-                name: '',
+                name: 'EL_C628_04_011_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -66293,7 +66293,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C628_04_011_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -66311,7 +66311,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C628_04_011_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -66395,7 +66395,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EL_C628_03_011_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -66413,7 +66413,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C628_03_011_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -66431,7 +66431,7 @@ export const ActressGears = {
                 spdMax: 240,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C628_03_011_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -66519,7 +66519,7 @@ export const ActressGears = {
     AmaneSuzuha: {
         long: [
             new Gear({
-                name: '',
+                name: 'WS_C629_04_011_21',
                 unitType: AttrTypeId.Rifle,
                 level: 80,
                 levelMin: 1,
@@ -66537,7 +66537,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C629_04_011_11',
                 unitType: AttrTypeId.Rifle,
                 level: 75,
                 levelMin: 1,
@@ -66555,7 +66555,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C629_04_011_01',
                 unitType: AttrTypeId.Rifle,
                 level: 70,
                 levelMin: 1,
@@ -66627,7 +66627,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '',
+                name: 'WS_C629_03_011_21',
                 unitType: AttrTypeId.Rifle,
                 level: 60,
                 levelMin: 1,
@@ -66645,7 +66645,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C629_03_011_11',
                 unitType: AttrTypeId.Rifle,
                 level: 50,
                 levelMin: 1,
@@ -66663,7 +66663,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'WS_C629_03_011_01',
                 unitType: AttrTypeId.Rifle,
                 level: 40,
                 levelMin: 1,
@@ -66737,7 +66737,7 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: '',
+                name: 'C629_04_011_21',
                 unitType: AttrTypeId.Dagger,
                 level: 80,
                 levelMin: 1,
@@ -66755,7 +66755,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'C629_04_011_11',
                 unitType: AttrTypeId.Dagger,
                 level: 75,
                 levelMin: 1,
@@ -66773,7 +66773,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'C629_04_011_01',
                 unitType: AttrTypeId.Dagger,
                 level: 70,
                 levelMin: 1,
@@ -66845,7 +66845,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: '',
+                name: 'C629_03_011_21',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -66863,7 +66863,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'C629_03_011_11',
                 unitType: AttrTypeId.Dagger,
                 level: 50,
                 levelMin: 1,
@@ -66881,7 +66881,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '',
+                name: 'C629_03_011_01',
                 unitType: AttrTypeId.Dagger,
                 level: 40,
                 levelMin: 1,
@@ -66955,7 +66955,7 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: '',
+                name: 'EA_C629_04_011_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -66970,7 +66970,7 @@ export const ActressGears = {
                 defMax: 539,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C629_04_011_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -66985,7 +66985,7 @@ export const ActressGears = {
                 defMax: 509,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C629_04_011_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -67060,7 +67060,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EA_C629_03_011_21',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -67075,7 +67075,7 @@ export const ActressGears = {
                 defMax: 419,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C629_03_011_11',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -67090,7 +67090,7 @@ export const ActressGears = {
                 defMax: 359,
             }),
             new Gear({
-                name: '',
+                name: 'EA_C629_03_011_01',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -67167,7 +67167,7 @@ export const ActressGears = {
         ],
         bottom: [
             new Gear({
-                name: '',
+                name: 'EL_C629_04_011_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -67185,7 +67185,7 @@ export const ActressGears = {
                 spdMax: 280,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C629_04_011_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -67203,7 +67203,7 @@ export const ActressGears = {
                 spdMax: 280,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C629_04_011_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -67293,7 +67293,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: '',
+                name: 'EL_C629_03_011_21',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -67311,7 +67311,7 @@ export const ActressGears = {
                 spdMax: 280,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C629_03_011_11',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -67329,7 +67329,7 @@ export const ActressGears = {
                 spdMax: 280,
             }),
             new Gear({
-                name: '',
+                name: 'EL_C629_03_011_01',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
