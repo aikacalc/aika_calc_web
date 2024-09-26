@@ -5597,6 +5597,53 @@ class OhzekiKoyui70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
 }
 
+class OhzekiKoyui60 extends Character {
+    name: string = '大関 小結 / エンプレス ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 544;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 544;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 945;
+    defMin: number = 263;
+    defMax: number = 945;
+    spd: number = 155;
+    spdMin: number = 155;
+    spdMax: number = 155;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.OhzekiKoyui.long;
+    weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
+    equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
+    equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+}
+
 class UsamotoAnna01 extends Character {
     name: string = '宇佐元 杏奈 ★1';
     rare: number = 1;
@@ -20386,6 +20433,52 @@ class MakiseKurisu05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MakiseKurisu.bottom;
 }
 
+class MakiseKurisu70 extends Character {
+    name: string = '牧瀬 紅莉栖 / 因果 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 780;
+    atkCloseMin: number = 217;
+    atkCloseMax: number = 780;
+    attrClose: number = 0;
+    atkShot: number = 796;
+    atkShotMin: number = 221;
+    atkShotMax: number = 796;
+    attrShot: number = 0;
+    def: number = 945;
+    defMin: number = 263;
+    defMax: number = 945;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.HandGun, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MakiseKurisu.long;
+    weaponCloses: Gear[] = ActressGears.MakiseKurisu.short;
+    equipmentTops: Gear[] = ActressGears.MakiseKurisu.top;
+    equipmentBottoms: Gear[] = ActressGears.MakiseKurisu.bottom;
+}
+
 class AmaneSuzuha04 extends Character {
     name: string = '阿万音 鈴羽 ★3';
     rare: number = 3;
@@ -20471,6 +20564,53 @@ class AmaneSuzuha05 extends Character {
         new Buff(AttrTypeId.Volt, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AmaneSuzuha.long;
+    weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
+    equipmentTops: Gear[] = ActressGears.AmaneSuzuha.top;
+    equipmentBottoms: Gear[] = ActressGears.AmaneSuzuha.bottom;
+}
+
+class AmaneSuzuha70 extends Character {
+    name: string = '阿万音 鈴羽 / 戦士 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AmaneSuzuha.long;
     weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
@@ -21414,6 +21554,7 @@ export const CharacterModels = {
     OhzekiKoyui04: new OhzekiKoyui04(),
     OhzekiKoyui05: new OhzekiKoyui05(),
     OhzekiKoyui70: new OhzekiKoyui70(),
+    OhzekiKoyui60: new OhzekiKoyui60(),
     UsamotoAnna01: new UsamotoAnna01(),
     UsamotoAnna02: new UsamotoAnna02(),
     UsamotoAnna04: new UsamotoAnna04(),
@@ -21731,8 +21872,10 @@ export const CharacterModels = {
     IvryHadd05: new IvryHadd05(),
     MakiseKurisu04: new MakiseKurisu04(),
     MakiseKurisu05: new MakiseKurisu05(),
+    MakiseKurisu70: new MakiseKurisu70(),
     AmaneSuzuha04: new AmaneSuzuha04(),
     AmaneSuzuha05: new AmaneSuzuha05(),
+    AmaneSuzuha70: new AmaneSuzuha70(),
     TanyaDegurechaff04: new TanyaDegurechaff04(),
     TanyaDegurechaff05: new TanyaDegurechaff05(),
     ViktoriyaIvanovnaSerebryakov04: new ViktoriyaIvanovnaSerebryakov04(),
