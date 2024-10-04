@@ -8,18 +8,20 @@ import { AikaCalcComponent } from './aika-calc/aika-calc.component';
 import { AikaFanReachCalcComponent } from './aika-fan-reach-calc/aika-fan-reach-calc.component';
 import { AikaDamageCalcComponent } from './aika-damage-calc/aika-damage-calc.component';
 import { AikaEnigmaComponent } from './aika-enigma/aika-enigma.component';
+import { AikaTimelineComponent } from "./aika-timeline/aika-timeline.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     imports: [
-        CommonModule,
-        RouterOutlet,
-        AikaCalcComponent,
-        AikaFanReachCalcComponent,
-        AikaDamageCalcComponent,
-        AikaEnigmaComponent,
-    ],
+    CommonModule,
+    RouterOutlet,
+    AikaCalcComponent,
+    AikaFanReachCalcComponent,
+    AikaDamageCalcComponent,
+    AikaEnigmaComponent,
+    AikaTimelineComponent
+],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
@@ -46,9 +48,10 @@ export class AppComponent implements OnInit {
         const url = new URL(location.href);
         if (url.searchParams.has('page')) {
             const page_ = url.searchParams.get('page');
-            if (page_ == 'adc') {
-                this.page = 'adc';
-            }
+            this.page = page_;
+            // if (page_ == 'adc') {
+            //     this.page = 'adc';
+            // }
         }
     }
 }
