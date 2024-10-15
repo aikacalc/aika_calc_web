@@ -10498,6 +10498,52 @@ class MiaVoisin70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
 }
 
+class MiaVoisin60 extends Character {
+    name: string = 'ミア / テンペランス ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 744;
+    atkCloseMin: number = 207;
+    atkCloseMax: number = 744;
+    attrClose: number = 0;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Rifle, 0.35),
+        new Buff(AttrTypeId.Dagger, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.MiaVoisin.long;
+    weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
+    equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
+    equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+}
+
 class ChishimaMiyuki01 extends Character {
     name: string = '千島 美幸 ★1';
     rare: number = 1;
@@ -21659,6 +21705,7 @@ export const CharacterModels = {
     MiaVoisin04: new MiaVoisin04(),
     MiaVoisin05: new MiaVoisin05(),
     MiaVoisin70: new MiaVoisin70(),
+    MiaVoisin60: new MiaVoisin60(),
     ChishimaMiyuki01: new ChishimaMiyuki01(),
     ChishimaMiyuki02: new ChishimaMiyuki02(),
     ChishimaMiyuki04: new ChishimaMiyuki04(),
