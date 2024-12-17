@@ -10172,6 +10172,52 @@ class NinaKalinina70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
 }
 
+class NinaKalinina60 extends Character {
+    name: string = 'ニーナ / ハングドマン ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 729;
+    atkCloseMin: number = 203;
+    atkCloseMax: number = 729;
+    attrClose: number = 0;
+    atkShot: number = 758;
+    atkShotMin: number = 211;
+    atkShotMax: number = 758;
+    attrShot: number = 0;
+    def: number = 954;
+    defMin: number = 265;
+    defMax: number = 954;
+    spd: number = 157;
+    spdMin: number = 157;
+    spdMax: number = 157;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.35),
+        new Buff(AttrTypeId.Bazooka, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.NinaKalinina.long;
+    weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
+    equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
+    equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+}
+
 class WangHonghua01 extends Character {
     name: string = '王 紅花 ★1';
     rare: number = 1;
@@ -10396,6 +10442,53 @@ class WangHonghua70 extends Character {
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Twin, 0.3),
         new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.WangHonghua.long;
+    weaponCloses: Gear[] = ActressGears.WangHonghua.short;
+    equipmentTops: Gear[] = ActressGears.WangHonghua.top;
+    equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+}
+
+class WangHonghua60 extends Character {
+    name: string = '王 紅花 / ストレングス ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3078;
+    hpMin: number = 827;
+    hpMax: number = 3078;
+    atkClose: number = 548;
+    atkCloseMin: number = 152;
+    atkCloseMax: number = 548;
+    attrClose: number = 0;
+    atkShot: number = 517;
+    atkShotMin: number = 144;
+    atkShotMax: number = 517;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.8),
+        new Buff(AttrTypeId.ResistFire, -0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Ice, 0.96),
+        new Buff(AttrTypeId.Spear, 0.35),
+        new Buff(AttrTypeId.Twin, 0.05)
     ];
     weaponShots: Gear[] = ActressGears.WangHonghua.long;
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
@@ -17911,6 +18004,53 @@ class SolRaptor70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
 }
 
+class SolRaptor60 extends Character {
+    name: string = 'SOL ラプター / ストライク ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 168;
+    spdMin: number = 168;
+    spdMax: number = 168;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.35),
+        new Buff(AttrTypeId.Dagger, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.SolRaptor.long;
+    weaponCloses: Gear[] = ActressGears.SolRaptor.short;
+    equipmentTops: Gear[] = ActressGears.SolRaptor.top;
+    equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
+}
+
 class MiyafujiYoshika04 extends Character {
     name: string = '宮藤 芳佳 ★3';
     rare: number = 3;
@@ -22026,11 +22166,13 @@ export const CharacterModels = {
     NinaKalinina04: new NinaKalinina04(),
     NinaKalinina05: new NinaKalinina05(),
     NinaKalinina70: new NinaKalinina70(),
+    NinaKalinina60: new NinaKalinina60(),
     WangHonghua01: new WangHonghua01(),
     WangHonghua02: new WangHonghua02(),
     WangHonghua04: new WangHonghua04(),
     WangHonghua05: new WangHonghua05(),
     WangHonghua70: new WangHonghua70(),
+    WangHonghua60: new WangHonghua60(),
     MiaVoisin01: new MiaVoisin01(),
     MiaVoisin02: new MiaVoisin02(),
     MiaVoisin04: new MiaVoisin04(),
@@ -22192,6 +22334,7 @@ export const CharacterModels = {
     SolRaptor04: new SolRaptor04(),
     SolRaptor05: new SolRaptor05(),
     SolRaptor70: new SolRaptor70(),
+    SolRaptor60: new SolRaptor60(),
     MiyafujiYoshika04: new MiyafujiYoshika04(),
     MiyafujiYoshika05: new MiyafujiYoshika05(),
     SakamotoMio04: new SakamotoMio04(),
