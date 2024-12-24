@@ -18005,7 +18005,7 @@ class SolRaptor70 extends Character {
 }
 
 class SolRaptor60 extends Character {
-    name: string = 'SOL ラプター / ストライク ★4';
+    name: string = 'SOL ラプター / BEAST MODE ★4';
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
