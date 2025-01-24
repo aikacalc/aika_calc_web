@@ -14085,6 +14085,53 @@ class KanagataSugumi70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
 }
 
+class KanagataSugumi80 extends Character {
+    name: string = '金潟 すぐみ / クリエイト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KanagataSugumi.long;
+    weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
+    equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
+    equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+}
+
 class AraimeYasuri01 extends Character {
     name: string = '新居目 安里 ★1';
     rare: number = 1;
@@ -14309,6 +14356,53 @@ class AraimeYasuri70 extends Character {
         new Buff(AttrTypeId.Gravity, 0.86),
         new Buff(AttrTypeId.Spear, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AraimeYasuri.long;
+    weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
+    equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+}
+
+class AraimeYasuri80 extends Character {
+    name: string = '新居目 安里 / クリエイト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 522;
+    atkCloseMin: number = 145;
+    atkCloseMax: number = 522;
+    attrClose: number = 0;
+    atkShot: number = 538;
+    atkShotMin: number = 149;
+    atkShotMax: number = 538;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AraimeYasuri.long;
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
@@ -22250,11 +22344,13 @@ export const CharacterModels = {
     KanagataSugumi04: new KanagataSugumi04(),
     KanagataSugumi05: new KanagataSugumi05(),
     KanagataSugumi70: new KanagataSugumi70(),
+    KanagataSugumi80: new KanagataSugumi80(),
     AraimeYasuri01: new AraimeYasuri01(),
     AraimeYasuri02: new AraimeYasuri02(),
     AraimeYasuri04: new AraimeYasuri04(),
     AraimeYasuri05: new AraimeYasuri05(),
     AraimeYasuri70: new AraimeYasuri70(),
+    AraimeYasuri80: new AraimeYasuri80(),
     MatobaAoi01: new MatobaAoi01(),
     MatobaAoi02: new MatobaAoi02(),
     MatobaAoi04: new MatobaAoi04(),

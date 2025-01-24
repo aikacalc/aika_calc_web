@@ -41059,6 +41059,42 @@ export const ActressGears = {
     KanagataSugumi: {
         long: [
             new Gear({
+                name: 'XBR-EOS-7L/Reg',
+                unitType: AttrTypeId.Rifle,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 468,
+                atkMin: 260,
+                atkMax: 468,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 468,
+                attrMin: 260,
+                attrMax: 468,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'XBR-EOS-5L/Reg',
+                unitType: AttrTypeId.Rifle,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 442,
+                atkMin: 234,
+                atkMax: 442,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 442,
+                attrMin: 234,
+                attrMax: 442,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
                 name: 'XBR-EOS-7L',
                 unitType: AttrTypeId.Rifle,
                 level: 80,
@@ -42041,7 +42077,7 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: 'C052_SPR_101_21',
+                name: 'カシャロットスパウトMk3',
                 unitType: AttrTypeId.Spear,
                 level: 80,
                 levelMin: 1,
@@ -42059,7 +42095,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C052_SPR_101_11',
+                name: 'カシャロットスパウトMk2',
                 unitType: AttrTypeId.Spear,
                 level: 75,
                 levelMin: 1,

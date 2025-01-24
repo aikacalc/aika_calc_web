@@ -29,6 +29,7 @@ export enum AttrTypeId {
     EquipmentTop = 28,
     EquipmentBottom = 29,
     Weapon = 30,
+    // CharacterMainAttr = 31,
 }
 
 export const AttrTypeIdAttrs = [
