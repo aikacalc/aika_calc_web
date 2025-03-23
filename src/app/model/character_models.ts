@@ -9421,6 +9421,53 @@ class KotomuraAkane80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
 }
 
+class KotomuraAkane60 extends Character {
+    name: string = '琴村 朱音 / プリースト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 567;
+    atkCloseMin: number = 158;
+    atkCloseMax: number = 567;
+    attrClose: number = 0;
+    atkShot: number = 595;
+    atkShotMin: number = 165;
+    atkShotMax: number = 595;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Sniper, 0.35),
+        new Buff(AttrTypeId.Spear, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAkane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+}
+
 class KotomuraAmane01 extends Character {
     name: string = '琴村 天音 ★1';
     rare: number = 1;
@@ -9695,6 +9742,53 @@ class KotomuraAmane80 extends Character {
         new Buff(AttrTypeId.Ice, 0.56),
         new Buff(AttrTypeId.Hammer, 0.3),
         new Buff(AttrTypeId.Bazooka, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KotomuraAmane.long;
+    weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
+    equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
+    equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+}
+
+class KotomuraAmane60 extends Character {
+    name: string = '琴村 天音 / ラヴァーズ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 584;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 556;
+    atkShotMin: number = 154;
+    atkShotMax: number = 556;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
     ];
     weaponShots: Gear[] = ActressGears.KotomuraAmane.long;
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
@@ -11711,6 +11805,53 @@ class YamanoKaoruko70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
 }
 
+class YamanoKaoruko60 extends Character {
+    name: string = '山野 薫子 / プリースト ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 573;
+    atkCloseMin: number = 159;
+    atkCloseMax: number = 573;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Spear, 0.35),
+        new Buff(AttrTypeId.Rifle, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.YamanoKaoruko.long;
+    weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
+    equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
+    equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+}
+
 class NikaidohTsukasa01 extends Character {
     name: string = '二階堂 司 ★1';
     rare: number = 1;
@@ -13284,6 +13425,53 @@ class TatsumiRyuko05 extends Character {
         new Buff(AttrTypeId.Gravity, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
+    weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
+    equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
+    equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+}
+
+class TatsumiRyuko70 extends Character {
+    name: string = '巽 竜子 / 霹靂 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 559;
+    atkCloseMin: number = 155;
+    atkCloseMax: number = 559;
+    attrClose: number = 0;
+    atkShot: number = 522;
+    atkShotMin: number = 145;
+    atkShotMax: number = 522;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.TatsumiRyuko.long;
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
@@ -22244,12 +22432,14 @@ export const CharacterModels = {
     KotomuraAkane05: new KotomuraAkane05(),
     KotomuraAkane70: new KotomuraAkane70(),
     KotomuraAkane80: new KotomuraAkane80(),
+    KotomuraAkane60: new KotomuraAkane60(),
     KotomuraAmane01: new KotomuraAmane01(),
     KotomuraAmane02: new KotomuraAmane02(),
     KotomuraAmane04: new KotomuraAmane04(),
     KotomuraAmane05: new KotomuraAmane05(),
     KotomuraAmane70: new KotomuraAmane70(),
     KotomuraAmane80: new KotomuraAmane80(),
+    KotomuraAmane60: new KotomuraAmane60(),
     ShantiRana01: new ShantiRana01(),
     ShantiRana02: new ShantiRana02(),
     ShantiRana04: new ShantiRana04(),
@@ -22293,6 +22483,7 @@ export const CharacterModels = {
     YamanoKaoruko04: new YamanoKaoruko04(),
     YamanoKaoruko05: new YamanoKaoruko05(),
     YamanoKaoruko70: new YamanoKaoruko70(),
+    YamanoKaoruko60: new YamanoKaoruko60(),
     NikaidohTsukasa01: new NikaidohTsukasa01(),
     NikaidohTsukasa02: new NikaidohTsukasa02(),
     NikaidohTsukasa04: new NikaidohTsukasa04(),
@@ -22327,6 +22518,7 @@ export const CharacterModels = {
     TatsumiRyuko02: new TatsumiRyuko02(),
     TatsumiRyuko04: new TatsumiRyuko04(),
     TatsumiRyuko05: new TatsumiRyuko05(),
+    TatsumiRyuko70: new TatsumiRyuko70(),
     OhtoriKasumi01: new OhtoriKasumi01(),
     OhtoriKasumi02: new OhtoriKasumi02(),
     OhtoriKasumi04: new OhtoriKasumi04(),

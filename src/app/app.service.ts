@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Skill } from './model/skill';
 
 @Injectable({
     providedIn: 'root'
@@ -9,10 +10,21 @@ export class AppService {
     showMessage: boolean = false;
     messageWindowContent: string = '';
 
+    skillSelector: {
+        show: boolean,
+        skills: Skill[],
+        onSelect: (skill: Skill) => void
+    } = {
+            show: false,
+            skills: [],
+            onSelect: () => { }
+        };
+
     constructor() { }
 
     message(msg: string): void {
         this.showMessage = true;
         this.messageWindowContent = msg;
     }
+
 }

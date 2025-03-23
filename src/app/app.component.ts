@@ -9,6 +9,7 @@ import { AikaFanReachCalcComponent } from './aika-fan-reach-calc/aika-fan-reach-
 import { AikaDamageCalcComponent } from './aika-damage-calc/aika-damage-calc.component';
 import { AikaEnigmaComponent } from './aika-enigma/aika-enigma.component';
 import { AikaTimelineComponent } from "./aika-timeline/aika-timeline.component";
+// import { AikaCalc2Component } from "./aika-calc2/aika-calc2.component";
 
 @Component({
     selector: 'app-root',
@@ -20,7 +21,8 @@ import { AikaTimelineComponent } from "./aika-timeline/aika-timeline.component";
     AikaFanReachCalcComponent,
     AikaDamageCalcComponent,
     AikaEnigmaComponent,
-    AikaTimelineComponent
+    AikaTimelineComponent,
+    // AikaCalc2Component
 ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
