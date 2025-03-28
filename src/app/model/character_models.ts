@@ -20109,6 +20109,98 @@ class KuniedaShiho05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KuniedaShiho.bottom;
 }
 
+class Misaki04 extends Character {
+    name: string = 'ミサキ ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 595;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 164;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Misaki.long;
+    weaponCloses: Gear[] = ActressGears.Misaki.short;
+    equipmentTops: Gear[] = ActressGears.Misaki.top;
+    equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+}
+
+class Misaki05 extends Character {
+    name: string = 'ミサキ ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 736;
+    atkShotMin: number = 205;
+    atkShotMax: number = 736;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Misaki.long;
+    weaponCloses: Gear[] = ActressGears.Misaki.short;
+    equipmentTops: Gear[] = ActressGears.Misaki.top;
+    equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+}
+
 class SylphyII04 extends Character {
     name: string = 'シルフィーII ★3';
     rare: number = 3;
@@ -22302,6 +22394,7 @@ export const ActressNames: string[] = [
     'Sadone',
     'KougamiKanon',
     'KuniedaShiho',
+    'Misaki',
     'SylphyII',
     'Kasumi',
     'MarieRose',
@@ -22756,6 +22849,8 @@ export const CharacterModels = {
     KougamiKanon05: new KougamiKanon05(),
     KuniedaShiho04: new KuniedaShiho04(),
     KuniedaShiho05: new KuniedaShiho05(),
+    Misaki04: new Misaki04(),
+    Misaki05: new Misaki05(),
     SylphyII04: new SylphyII04(),
     SylphyII05: new SylphyII05(),
     SylphyII70: new SylphyII70(),
