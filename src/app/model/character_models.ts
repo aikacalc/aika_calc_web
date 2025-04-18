@@ -19173,6 +19173,53 @@ class HoshitsukiMiki05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
 }
 
+class HoshitsukiMiki70 extends Character {
+    name: string = '星月 みき / エルピス ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 584;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.HoshitsukiMiki.long;
+    weaponCloses: Gear[] = ActressGears.HoshitsukiMiki.short;
+    equipmentTops: Gear[] = ActressGears.HoshitsukiMiki.top;
+    equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
+}
+
 class NarumiHaruka04 extends Character {
     name: string = '成海 遥香 ★3';
     rare: number = 3;
@@ -20194,6 +20241,53 @@ class Misaki05 extends Character {
         new Buff(AttrTypeId.Fire, 0.56),
         new Buff(AttrTypeId.Dagger, 0.25),
         new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.Misaki.long;
+    weaponCloses: Gear[] = ActressGears.Misaki.short;
+    equipmentTops: Gear[] = ActressGears.Misaki.top;
+    equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+}
+
+class Misaki70 extends Character {
+    name: string = 'ミサキ / エルピス ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 573;
+    atkShotMin: number = 159;
+    atkShotMax: number = 573;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.Misaki.long;
     weaponCloses: Gear[] = ActressGears.Misaki.short;
@@ -22829,6 +22923,7 @@ export const CharacterModels = {
     CharlotteEYeager05: new CharlotteEYeager05(),
     HoshitsukiMiki04: new HoshitsukiMiki04(),
     HoshitsukiMiki05: new HoshitsukiMiki05(),
+    HoshitsukiMiki70: new HoshitsukiMiki70(),
     NarumiHaruka04: new NarumiHaruka04(),
     NarumiHaruka05: new NarumiHaruka05(),
     AmanoNozomi04: new AmanoNozomi04(),
@@ -22851,6 +22946,7 @@ export const CharacterModels = {
     KuniedaShiho05: new KuniedaShiho05(),
     Misaki04: new Misaki04(),
     Misaki05: new Misaki05(),
+    Misaki70: new Misaki70(),
     SylphyII04: new SylphyII04(),
     SylphyII05: new SylphyII05(),
     SylphyII70: new SylphyII70(),
