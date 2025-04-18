@@ -68,9 +68,12 @@ const copyGithub$ = new Observable((subsc) => {
     const locFiles = fs.readdirSync(`../${targetDirName}`, { withFileTypes: true });
     const distFiles = fs.readdirSync(`dist/aika_calc_web/browser`, { withFileTypes: true });
 
-    // Remove existing files and directories in the target directory
+    // Remove existing files and directories in the target directory, except .git folder
     locFiles.forEach(dirent => {
         const targetPath = `../${targetDirName}/${dirent.name}`;
+        if (dirent.name === '.git') {
+            return; // Skip .git folder
+        }
         if (dirent.isDirectory()) {
             fs.rmSync(targetPath, { recursive: true, force: true });
         } else {
@@ -100,6 +103,9 @@ const copyBitbucket$ = new Observable((subsc) => {
 
     // Remove existing files and directories in the target directory
     locFiles.forEach(dirent => {
+        if (dirent.name === '.git') {
+            return; // Skip .git folder
+        }
         const targetPath = `../${targetDirName}/${dirent.name}`;
         if (dirent.isDirectory()) {
             fs.rmSync(targetPath, { recursive: true, force: true });
@@ -168,7 +174,7 @@ const gitPushGithubAikaClac$ = new Observable((subsc) => {
     console.log('git push aikacalc');
     const cmd = 'cd ../aika_calc_web'
         + ` & cmd /K "C:/Program Files/Git/bin/git.exe" remote set-url origin ${aikacalcRemote}`;
-        + ' & cmd /K "C:/Program Files/Git/bin/git.exe" push origin master';
+    + ' & cmd /K "C:/Program Files/Git/bin/git.exe" push origin master';
     execSync(cmd, (error, stdout, stderr) => { });
     subsc.next();
     subsc.complete();
