@@ -10,6 +10,8 @@ export class AppService {
     showMessage: boolean = false;
     messageWindowContent: string = '';
 
+    pageEnter: { [key: string]: Function } = {};
+
     skillSelector: {
         show: boolean,
         skills: Skill[],
@@ -25,6 +27,12 @@ export class AppService {
     message(msg: string): void {
         this.showMessage = true;
         this.messageWindowContent = msg;
+    }
+
+    onPageChange(page: string): void {
+        if(this.pageEnter[page]){
+            this.pageEnter[page]();
+        }
     }
 
 }

@@ -12,22 +12,25 @@
       <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
           <span>愛花輸出計算</span>
       </a> -->
-        <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="page=''">
+        <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="selectPage('')">
             <span>愛花版面計算</span>
         </button>
-        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="page='afrc'">
+        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
             <span>愛花粉絲計算</span>
         </button>
-        <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="page='adc'">
+        <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="selectPage('adc')">
             <span>愛花輸出計算</span>
         </button>
-        <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
+        <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
           <span>愛花技能</span>
       </button> -->
-        <!-- <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="page='ask'">
+        <!-- <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
             <span>愛花ENIGMA</span>
         </button> -->
-        <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="page='atl'">
+        <button class="aika-enigma-txt" [ngClass]="{selected:page=='aet'}" (click)="selectPage('aet')">
+            <span>愛花ENIGMA</span>
+        </button>
+        <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
             <span>愛花時間線</span>
         </button>
     </div>
@@ -48,6 +51,9 @@
         <!-- <div class="aika-enigma" [hidden]="page!='ask'">
             <app-aika-enigma></app-aika-enigma>
         </div> -->
+        <div class="aika-enigma-txt" [hidden]="page!='aet'">
+            <app-aika-enigma-txt></app-aika-enigma-txt>
+        </div>
         <div class="aika-damage-calc" [hidden]="page!='atl'">
             <app-aika-timeline></app-aika-timeline>
         </div>
