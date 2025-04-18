@@ -65,28 +65,60 @@ function getDistFiles(dirPath) {
 const copyGithub$ = new Observable((subsc) => {
     console.log('copyGithub');
     const targetDirName = 'aikacalc.github.io';
-    const locFiles = getDistFiles(`../${targetDirName}`);
-    const distFiles = getDistFiles(`dist/aika_calc_web/browser`);
-    locFiles.forEach(fileName => {
-        fs.unlinkSync(`../${targetDirName}/${fileName}`, { recursive: true });
+    const locFiles = fs.readdirSync(`../${targetDirName}`, { withFileTypes: true });
+    const distFiles = fs.readdirSync(`dist/aika_calc_web/browser`, { withFileTypes: true });
+
+    // Remove existing files and directories in the target directory
+    locFiles.forEach(dirent => {
+        const targetPath = `../${targetDirName}/${dirent.name}`;
+        if (dirent.isDirectory()) {
+            fs.rmSync(targetPath, { recursive: true, force: true });
+        } else {
+            fs.unlinkSync(targetPath);
+        }
     });
-    distFiles.forEach(fileName => {
-        fs.copyFileSync(`dist/aika_calc_web/browser/${fileName}`, `../${targetDirName}/${fileName}`);
+
+    // Copy new files and directories from the dist directory
+    distFiles.forEach(dirent => {
+        const sourcePath = `dist/aika_calc_web/browser/${dirent.name}`;
+        const targetPath = `../${targetDirName}/${dirent.name}`;
+        if (dirent.isDirectory()) {
+            fs.cpSync(sourcePath, targetPath, { recursive: true });
+        } else {
+            fs.copyFileSync(sourcePath, targetPath);
+        }
     });
+
     subsc.next();
     subsc.complete();
 });
 const copyBitbucket$ = new Observable((subsc) => {
     console.log('copyBitbucket');
     const targetDirName = 'aikacalc.bitbucket.io';
-    const locFiles = getDistFiles(`../${targetDirName}`);
-    const distFiles = getDistFiles(`dist/aika_calc_web/browser`);
-    locFiles.forEach(fileName => {
-        fs.unlinkSync(`../${targetDirName}/${fileName}`, { recursive: true });
+    const locFiles = fs.readdirSync(`../${targetDirName}`, { withFileTypes: true });
+    const distFiles = fs.readdirSync(`dist/aika_calc_web/browser`, { withFileTypes: true });
+
+    // Remove existing files and directories in the target directory
+    locFiles.forEach(dirent => {
+        const targetPath = `../${targetDirName}/${dirent.name}`;
+        if (dirent.isDirectory()) {
+            fs.rmSync(targetPath, { recursive: true, force: true });
+        } else {
+            fs.unlinkSync(targetPath);
+        }
     });
-    distFiles.forEach(fileName => {
-        fs.copyFileSync(`dist/aika_calc_web/browser/${fileName}`, `../${targetDirName}/${fileName}`);
+
+    // Copy new files and directories from the dist directory
+    distFiles.forEach(dirent => {
+        const sourcePath = `dist/aika_calc_web/browser/${dirent.name}`;
+        const targetPath = `../${targetDirName}/${dirent.name}`;
+        if (dirent.isDirectory()) {
+            fs.cpSync(sourcePath, targetPath, { recursive: true });
+        } else {
+            fs.copyFileSync(sourcePath, targetPath);
+        }
     });
+
     subsc.next();
     subsc.complete();
 });

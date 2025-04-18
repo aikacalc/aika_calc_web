@@ -60,9 +60,9 @@ export class AppComponent implements OnInit {
 
     selectPage(page: string) {
         this.page = page;
-        const url = new URL(location.href);
-        url.searchParams.set('page', page);
-        history.pushState({}, '', url.toString());
+        // const url = new URL(location.href);
+        // url.searchParams.set('page', page);
+        // history.pushState({}, '', url.toString());
         this.service.onPageChange(page);
     }
 }
