@@ -1,0 +1,11 @@
+.root {
+    table {
+        border-collapse: collapse;
+
+        td,th {
+            padding: 10px;
+            border: 1px solid black;
+            white-space: pre-wrap;
+        }
+    }
+}

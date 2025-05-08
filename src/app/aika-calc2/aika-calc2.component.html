@@ -1,0 +1,651 @@
+<div class="root">
+    <div class="character-template-select">
+        <span class="actress">Actress:</span>
+        <select [(ngModel)]="selectedCharacterTemplateIndex" (ngModelChange)="onCharacterTemplateChange();setCharacterTemplateToCharacter()">
+            <option *ngFor="let characterTemplate of characterTemplates;let i=index;" [value]="i">
+                {{characterTemplate.name}}</option>
+        </select>
+        <label style="margin-left: 30px;">
+            <input type="checkbox" [(ngModel)]="hideChrRawVal" (ngModelChange)="character.updateStatus()">
+            <span style="color:#f0f0f0">隱藏SP值</span>
+        </label>
+        <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
+        <button (click)="saveCharacterSavedata()">更新當前角色設定到網址</button>
+        <span class="load-setting-error" *ngIf="loadingSettingError">網址設定似乎有錯? <a href="/">返回</a></span>
+        <!-- <button (click)="loadCharacterSavedata()">從網址讀取設定</button> -->
+    </div>
+    <div class="character" *ngIf="character">
+        <div class="block character">
+            <div class="row character">
+                <table class="status-table">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="3">{{character.name}}</td>
+                        </tr>
+                        <tr class="level">
+                            <td class="name">Lv</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.level" [attr.min]="character.levelMin" [attr.max]="character.levelMax" (ngModelChange)="character.updateStatus()">
+                                    <span>{{character.levelMin}}</span>
+                                    <input type="range" [attr.min]="character.levelMin" [attr.max]="character.levelMax" [(ngModel)]="character.level" (ngModelChange)="character.updateStatus()">
+                                    <span>{{character.levelMax}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="level">
+                            <td class="name">上限解放</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" [disabled]="character.level!=character.levelMax" [attr.min]="0" [attr.max]="character.gradeUpLimit" [(ngModel)]="character.gradeUp" (ngModelChange)="character.updateStatus()">
+                                    <span>0</span>
+                                    <input type="range" [disabled]="character.level!=character.levelMax" [attr.min]="0" [attr.max]="character.gradeUpLimit" [(ngModel)]="character.gradeUp" (ngModelChange)="character.updateStatus()">
+                                    <span>{{character.gradeUpLimit}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="level">
+                            <td class="name help" [title]="help.masterlevel" (click)="showMsg(help.masterlevel)">熟練等級
+                            </td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" min="1" max="30" [(ngModel)]="character.masterLevel" (ngModelChange)="character.updateStatus()">
+                                    <span>1</span>
+                                    <input type="range" min="1" max="30" [(ngModel)]="character.masterLevel" (ngModelChange)="character.updateStatus()">
+                                    <span>MAX(30)</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="level">
+                            <td class="name help" [title]="help.mastermax" (click)="showMsg(help.mastermax)">MAX+</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <input type="number" min="0" max="999" [disabled]="character.masterLevel!=30" [(ngModel)]="character.masterPlus" (ngModelChange)="character.updateStatus()">
+                                    <span>0</span>
+                                    <input type="range" min="0" max="999" [disabled]="character.masterLevel!=30" [(ngModel)]="character.masterPlus" (ngModelChange)="character.updateStatus()">
+                                    <span>999</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td class="enigma" colspan="2">
+                                <div class="text help" [title]="help.enigma" (click)="showMsg(help.enigma)">
+                                    enigma 能力提升</div>
+                                <button (click)="character.isCustomEnigmaStatus=!character.isCustomEnigmaStatus;character.updateStatus()">CUSTOM:{{character.isCustomEnigmaStatus?'ON':'OFF'}}</button>
+                            </td>
+                            <td>結果</td>
+                        </tr>
+                        <tr class="hp">
+                            <td class="name">HP</td>
+                            <!-- <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.hpEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+
+                                </div>
+                            </td> -->
+                            <td></td>
+                            <td>
+                                <div class="warpper">{{character.hp}}</div>
+                            </td>
+                        </tr>
+                        <tr class="shot-atk">
+                            <td class="name">射擊ATK</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <!-- <div class="text" *ngIf="!character.isCustomEnigmaStatus">
+                                        {{character.atkShotEnigma}}</div> -->
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus" [(ngModel)]="character.atkShotEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus" [(ngModel)]="character.atkShotEnigmaCustom" (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="warpper">
+                                    <span>{{character.atkShot}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="shot-attr">
+                            <td class="name">屬性值</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus" [(ngModel)]="character.attrShotEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus" [(ngModel)]="character.attrShotEnigmaCustom" (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="warpper" [style.color]="character.weaponShot.attrColor">
+                                    <span>{{character.attrShot}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="close-atk">
+                            <td class="name">近身ATK</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus" [(ngModel)]="character.atkCloseEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus" [(ngModel)]="character.atkCloseEnigmaCustom" (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="warpper">
+                                    <span>{{character.atkClose}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="close-attr">
+                            <td class="name">屬性值</td>
+                            <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" *ngIf="!character.isCustomEnigmaStatus" [(ngModel)]="character.attrCloseEnigma" disabled>
+                                    <input type="number" *ngIf="character.isCustomEnigmaStatus" [(ngModel)]="character.attrCloseEnigmaCustom" (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="warpper" [style.color]="character.weaponClose.attrColor">
+                                    <span>{{character.attrClose}}</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="close-atk" *ngIf="!hideChrRawVal">
+                            <td class="name">SP ATK</td>
+                            <td colspan="2">
+                                <div class="warpper">
+                                    <select [(ngModel)]="character.spRangeTypeId" (ngModelChange)="character.updateStatus()">
+                                        <option *ngFor="let attrType of attrTypeSpRangeTypeList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                            {{attrType.name}}
+                                        </option>
+                                    </select>
+                                    <select [(ngModel)]="character.spHitTypeId" (ngModelChange)="character.updateStatus()">
+                                        <option *ngFor="let attrType of attrTypeSpHitTypeList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                            {{attrType.name}}
+                                        </option>
+                                    </select>
+                                    <span>{{character.atkSp}}</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="close-attr" *ngIf="!hideChrRawVal">
+                            <td class="name">屬性值</td>
+                            <td colspan="2">
+                                <div class="warpper" [ngStyle]="{color:getTypeColor(character.chrAttrTypeId)}">
+                                    <span>{{idToAttrType(character.chrAttrTypeId).name}} / {{character.attrSp}}</span>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr class="close-attr">
+                            <td class="name">DEF</td>
+                            <!-- <td class="enigma">
+                                <div class="wrapper">
+                                    <input type="number" [(ngModel)]="character.defEnigma"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td> -->
+                            <td></td>
+                            <td>
+                                <div class="warpper">{{character.def}}</div>
+                            </td>
+                        </tr>
+                        <tr class="close-attr">
+                            <td class="name">SPD</td>
+                            <td></td>
+                            <td>
+                                <div class="warpper">{{character.spd}}</div>
+                            </td>
+                        </tr>
+                        <tr class="buff-list-tr">
+                            <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">
+                                被動<br />Buff</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <div class="buff-list">
+                                        <div class="buff" *ngFor="let buff of character.buffs">
+                                            <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
+                                                <option [value]="22">無</option>
+                                                <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                                    <option *ngFor="let attrType of group.list" [value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                        {{attrType.name}}
+                                                    </option>
+                                                </optgroup>
+                                            </select>
+                                            <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor" (ngModelChange)="character.updateStatus()">%
+                                            <hr class="line">
+                                            <button class="copy" [ngClass]="{copyed:copyedBuff==buff}" (click)="copyBuff(buff)">C</button>
+                                            <button class="delete" (click)="deleteBuff(character.buffs,buff);
+                                                character.updateStatus()">X</button>
+                                        </div>
+                                        <button class="new-buff" (click)="addBuff(character.buffs);
+                                        character.updateStatus()">[+]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="buff-list-tr">
+                            <td class="name help" [title]="help.charabuff" (click)="showMsg(help.charabuff)">被動</td>
+                            <td colspan="2">
+                                <div class="wrapper-row">
+                                    <div class="buff-list">
+                                        <div class="buff" *ngFor="let skill of character.skills">
+                                            <ng-container *ngTemplateOutlet="skillRow; context:{data:{skill:skill,skills:character.skills}}">
+                                            </ng-container>
+                                        </div>
+                                        <div class="add-skill-row">
+                                            <button class="new-buff" (click)="addBuff(character.buffs);
+                                            character.updateStatus()">[+B]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
+                                            <button class="new-buff" (click)="openSkillSelector(character.skills)">[+S]</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="block gear">
+            <div class="row weapon">
+                <table class="unit weapon-shot">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="2">
+                                <span>射擊</span>
+                                <span *ngIf="!character.weaponShot.isCustom">{{character.weaponShot.base.name}}</span>
+                            </td>
+                        </tr>
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'weaponShot'}}">
+                        </ng-container>
+                        <ng-container *ngIf="character.weaponShot.isCustom">
+                            <tr class="atk">
+                                <td class="name">ATK</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <select [(ngModel)]="character.weaponShot.base.unitType" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeGearShotList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <select [(ngModel)]="character.weaponShot.base.atkAmmoTypeId" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeShotAmmoTypeList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <input type="number" [(ngModel)]="character.weaponShot.base.atk" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.weaponShot.atk}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="attr">
+                                <td class="name">屬性值</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <select [(ngModel)]="character.weaponShot.base.attrTypeId" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeAttrList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <input type="number" [style.color]="character.weaponClose.attrColor" [(ngModel)]="character.weaponShot.base.attr" (ngModelChange)="character.updateStatus()">
+                                        <span [style.color]="character.weaponShot.attrColor">(Tune:
+                                            {{character.weaponShot.attr}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngIf="!character.weaponShot.isCustom">
+                            <ng-container *ngTemplateOutlet="gearBaseRow; context:{gear:character.weaponShot}">
+                            </ng-container>
+                            <tr>
+                                <td class="name">ATK</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{idToAttrType(character.weaponShot.base.unitType).name}}</span>
+                                        <span> / {{idToAttrType(character.weaponShot.base.atkAmmoTypeId).name}}</span>
+                                        <span> / {{character.weaponShot.base.atk}}</span>
+                                        <span> (Tune:{{character.weaponShot.atk}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">屬性值</td>
+                                <td>
+                                    <div class="wrapper" [style.color]="character.weaponShot.attrColor">
+                                        <span>{{idToAttrType(character.weaponShot.base.attrTypeId).name}}</span>
+                                        <span> / {{character.weaponShot.base.attr}}</span>
+                                        <span> (Tune:{{character.weaponShot.attr}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.weaponShot}">
+                        </ng-container>
+                    </tbody>
+                </table>
+                <table class="unit weapon-close">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="2">
+                                <span>近身</span>
+                                <span *ngIf="!character.weaponClose.isCustom">{{character.weaponClose.base.name}}</span>
+                            </td>
+                        </tr>
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'weaponClose'}}">
+                        </ng-container>
+                        <ng-container *ngIf="character.weaponClose.isCustom">
+                            <tr class="atk">
+                                <td class="name">ATK</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <select [(ngModel)]="character.weaponClose.base.unitType" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeGearCloseList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <select [(ngModel)]="character.weaponClose.base.atkAmmoTypeId" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeCloseHitTypeList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <input type="number" [(ngModel)]="character.weaponClose.base.atk" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.weaponClose.atk}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="attr">
+                                <td class="name">屬性值</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <select [(ngModel)]="character.weaponClose.base.attrTypeId" (ngModelChange)="character.updateStatus()">
+                                            <option *ngFor="let attrType of attrTypeAttrList" [attr.value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                                {{attrType.name}}
+                                            </option>
+                                        </select>
+                                        <input type="number" [style.color]="character.weaponClose.attrColor" [(ngModel)]="character.weaponClose.base.attr" (ngModelChange)="character.updateStatus()">
+                                        <span [style.color]="character.weaponClose.attrColor">(Tune:
+                                            {{character.weaponClose.attr}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngIf="!character.weaponClose.isCustom">
+                            <ng-container *ngTemplateOutlet="gearBaseRow; context:{gear:character.weaponClose}">
+                            </ng-container>
+                            <tr>
+                                <td class="name">ATK</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{idToAttrType(character.weaponClose.base.unitType).name}}</span>
+                                        <span> / {{idToAttrType(character.weaponClose.base.atkAmmoTypeId).name}}</span>
+                                        <span> / {{character.weaponClose.base.atk}}</span>
+                                        <span> (Tune:{{character.weaponClose.atk}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">屬性值</td>
+                                <td>
+                                    <div class="wrapper" [style.color]="character.weaponClose.attrColor">
+                                        <span>{{idToAttrType(character.weaponClose.base.attrTypeId).name}}</span>
+                                        <span> / {{character.weaponClose.base.attr}}</span>
+                                        <span> (Tune:{{character.weaponClose.attr}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.weaponClose}">
+                        </ng-container>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row equipment">
+                <table class="unit equipment-top">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="2">
+                                <span>上身</span>
+                                <span *ngIf="!character.equipmentTop.isCustom">{{character.equipmentTop.base.name}}</span>
+                            </td>
+                        </tr>
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'equipmentTop'}}">
+                        </ng-container>
+                        <ng-container *ngIf="character.equipmentTop.isCustom">
+                            <tr class="hp">
+                                <td class="name">HP</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <input type="number" [(ngModel)]="character.equipmentTop.base.hp" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.equipmentTop.hp}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="def">
+                                <td class="name">DEF</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <input type="number" [(ngModel)]="character.equipmentTop.base.def" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.equipmentTop.def}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngIf="!character.equipmentTop.isCustom">
+                            <ng-container *ngTemplateOutlet="gearBaseRow; context:{gear:character.equipmentTop}">
+                            </ng-container>
+                            <tr>
+                                <td class="name">HP</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentTop.base.hp}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentTop.hp}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">DEF</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentTop.base.def}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentTop.def}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.equipmentTop}">
+                        </ng-container>
+                    </tbody>
+                </table>
+                <table class="unit equipment-bottom">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="2">
+                                <span>下身</span>
+                                <span *ngIf="!character.equipmentBottom.isCustom">{{character.equipmentBottom.base.name}}</span>
+                            </td>
+                        </tr>
+                        <ng-container *ngTemplateOutlet="gearCustomRow; context:{data:{gearName:'equipmentBottom'}}">
+                        </ng-container>
+                        <ng-container *ngIf="character.equipmentBottom.isCustom">
+                            <tr class="hp">
+                                <td class="name">HP</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <input type="number" [(ngModel)]="character.equipmentBottom.base.hp" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.equipmentBottom.hp}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="def">
+                                <td class="name">DEF</td>
+                                <td>
+                                    <div class="wrapper-row">
+                                        <input type="number" [(ngModel)]="character.equipmentBottom.base.def" (ngModelChange)="character.updateStatus()">
+                                        <span class="tune-text">(Tune: {{character.equipmentBottom.def}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngIf="!character.equipmentBottom.isCustom">
+                            <ng-container *ngTemplateOutlet="gearBaseRow; context:{gear:character.equipmentBottom}">
+                            </ng-container>
+                            <tr>
+                                <td class="name">HP</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.hp}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentBottom.hp}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">DEF</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.def}}</span>
+                                        <span class="tune-text"> (Tune: {{character.equipmentBottom.def}})</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="name">SPD</td>
+                                <td>
+                                    <div class="wrapper">
+                                        <span>{{character.equipmentBottom.base.spd}}</span>
+                                        <!-- <span class="tune-text"> (Tune: {{character.equipmentBottom.spd}})</span> -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                        <ng-container *ngTemplateOutlet="gearBuffRow; context:{gear:character.equipmentBottom}">
+                        </ng-container>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<app-skill-select-popup *ngIf="service.skillSelector.show"></app-skill-select-popup>
+
+<ng-template #gearCustomRow let-data="data">
+    <tr>
+        <td class="gear-custom-cell" colspan="2">
+            <div class="wrapper-col">
+                <div class="row">
+                    <select [(ngModel)]="character[data.gearName+'Index']" (ngModelChange)="setGear(character[data.gearName],character[data.gearName+'s'],$event);character.updateStatus()">
+                        <option *ngFor="let gear_ of character[data.gearName+'s'];let i=index" [attr.value]="i">{{gear_.base.name+' ('+gear_.base.levelMax+')'}}</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <!-- <button>SET</button> -->
+                    <button (click)="character[data.gearName].toggleCustom();character.updateStatus()">
+                        <span>CUSTOM:</span>
+                        <span [ngClass]="{'is-custom': character[data.gearName].isCustom}">{{character[data.gearName].isCustom?'ON':'OFF'}}</span>
+                    </button>
+                </div>
+            </div>
+        </td>
+    </tr>
+</ng-template>
+<ng-template #gearBaseRow let-gear="gear">
+    <tr>
+        <td class="name">Lv</td>
+        <td>
+            <div class="wrapper-row">
+                <input type="number" [(ngModel)]="gear.base.level" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax" (ngModelChange)="character.updateStatus()">
+                <span>{{gear.base.levelMin}}</span>
+                <input type="range" [attr.min]="gear.base.levelMin" [attr.max]="gear.base.levelMax" [(ngModel)]="gear.base.level" (ngModelChange)="character.updateStatus()">
+                <span>{{gear.base.levelMax}}</span>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">品質</td>
+        <td>
+            <div class="wrapper-row">
+                <input type="number" [(ngModel)]="gear.base.gradeUp" [attr.min]="0" [attr.max]="gear.base.gradeUpLimit" (ngModelChange)="character.updateStatus()">
+                <span>{{0}}</span>
+                <input type="range" [attr.min]="0" [attr.max]="gear.base.gradeUpLimit" [(ngModel)]="gear.base.gradeUp" (ngModelChange)="character.updateStatus()">
+                <span>{{gear.base.gradeUpLimit}}</span>
+            </div>
+        </td>
+    </tr>
+</ng-template>
+<ng-template #gearBuffRow let-gear="gear">
+    <tr class="buff-list-tr">
+        <td class="name help" [title]="help.gearbuff" (click)="showMsg(help.gearbuff)">Buff</td>
+        <td>
+            <div class="wrapper-row">
+                <div class="buff-list">
+                    <div class="buff" *ngFor="let buff of gear.buffs">
+                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
+                            <option [value]="22">無</option>
+                            <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                <option *ngFor="let attrType of group.list" [value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                    {{attrType.name}}
+                                </option>
+                            </optgroup>
+                        </select>
+                        <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor" (ngModelChange)="character.updateStatus()">%
+                        <hr class="line">
+                        <button class="copy" [ngClass]="{copyed:copyedBuff==buff}" (click)="copyBuff(buff)">C</button>
+                        <button class="delete" (click)="deleteBuff(gear.buffs,buff);
+                        character.updateStatus()">X</button>
+                    </div>
+                    <button class="new-buff" (click)="addBuff(gear.buffs);
+                    character.updateStatus()">[+]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr class="tune-list">
+        <td class="name help" [title]="help.tune" (click)="showMsg(help.tune)">Tune</td>
+        <td>
+            <div class="wrapper-row">
+                <div class="buff-list">
+                    <div class="buff" *ngFor="let buff of gear.tunes">
+                        <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
+                            <option [value]="22">無</option>
+                            <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                                <option *ngFor="let attrType of group.list" [value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">
+                                    {{attrType.name}}
+                                </option>
+                            </optgroup>
+                        </select>
+                        <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor" (ngModelChange)="character.updateStatus()">%
+                        <hr class="line">
+                        <button class="copy" [ngClass]="{copyed:copyedBuff==buff}" (click)="copyBuff(buff)">C</button>
+                        <button class="delete" (click)="deleteBuff(gear.tunes,buff);
+                        character.updateStatus()">X</button>
+                    </div>
+                    <button class="new-buff" (click)="addBuff(gear.tunes);
+                    character.updateStatus()">[+]<span class="copyed-buff-string">{{copyedBuffString}}</span></button>
+                </div>
+            </div>
+        </td>
+    </tr>
+</ng-template>
+<ng-template #skillRow let-data="data">
+    <div class="buff-list">
+        <div class="skill">
+            <div class="head">
+                <div class="button-row">
+                    <button class="remove" (click)="removeSkill(data.skills,data.skill)">X</button>
+                </div>
+                <div class="name">{{data.skill.name}}</div>
+                <div class="description">{{data.skill.description}}</div>
+            </div>
+            <div class="buffs">
+                <div class="buff" *ngFor="let buff of data.skill.buffs">
+                    <select [(ngModel)]="buff.type" (ngModelChange)="character.updateStatus()">
+                        <option [value]="22">無</option>
+                        <optgroup [label]="group.name" *ngFor="let group of attrTypeGroupList">
+                            <option *ngFor="let attrType of group.list" [value]="attrType.id" [ngStyle]="{color:getTypeColor(attrType.id)}">{{attrType.name}}</option>
+                        </optgroup>
+                    </select>
+                    <input type="number" class="value" [(ngModel)]="buff.valuePct" [style.color]="buff.attrColor" (ngModelChange)="character.updateStatus()">%
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,297 @@
+:host>.root {
+    // height: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    // overflow: auto;
+
+    button,
+    select,
+    input {
+        // border: 1px solid #000;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    input[type="range"] {
+        width: 100px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .help {
+        text-decoration: underline dotted #000;
+    }
+
+    >.input-json {
+        height: 30px;
+        display: flex;
+        align-items: flex-start;
+
+        >button {
+            width: 60px;
+            // height: 24px;
+            font-size: 16px;
+        }
+
+        >input {
+            margin-left: 5px;
+            flex: 1;
+        }
+    }
+
+    >.character-template-select {
+        height: 30px;
+        display: flex;
+        align-items: flex-start;
+
+        >span {
+            width: 60px;
+        }
+
+        >select {
+            margin-left: 5px;
+        }
+
+        >button {
+            margin-left: 5px;
+        }
+
+        >label {
+            white-space: nowrap;
+        }
+
+        >.fan-calc {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            color: #00f;
+            font-size: 16px;
+        }
+    }
+
+    >.toolbar {
+        display: flex;
+    }
+
+    >.character {
+        display: flex;
+        flex-wrap: wrap;
+
+        input:not([type="range"]) {
+            box-sizing: border-box;
+            margin: 2px;
+            width: 60px;
+            height: 24px;
+            padding: 0 0 0 5px;
+            font-size: 16px;
+        }
+
+        select {
+            // appearance: none;
+            box-sizing: border-box;
+            margin: 2px;
+            width: 75px;
+            height: 24px;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .buff-list {
+            width: 100%;
+        }
+
+        .buff {
+            display: flex;
+            align-items: center;
+
+            >hr.line {
+                flex: 1;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                border-bottom: 1px dashed #aaa;
+            }
+
+            >button.copy {
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                background-color: #fff;
+
+                &:hover {
+                    background-color: #eee;
+                }
+
+                &.copyed {
+                    background-color: #0c0;
+
+                    &:hover {
+                        background-color: #0e0;
+                    }
+                }
+            }
+
+            >button.delete {
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #f00;
+                background-color: #fff;
+
+                &:hover {
+                    background-color: #eee;
+                }
+            }
+        }
+
+        >.block {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            >.row {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                flex-wrap: wrap;
+
+                >table {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    width: 370px;
+                    // font-size: 13px;
+                    // max-width: 350px;
+                    // border-collapse: collapse;
+
+                    .calc {
+                        border-bottom: 1px dashed #aaa;
+                    }
+
+                    >tbody {
+                        >tr {
+                            >td {
+                                border: 1px solid #aaa;
+                            }
+                        }
+
+                        >tr>td.title-cell {
+                            padding: 4px;
+                            background-color: #cccccc;
+                            line-height: 20px;
+
+                            >span+span {
+                                margin-left: 10px;
+                            }
+                        }
+
+                        >tr>td.enigma {
+                            width: 0px;
+                            // text-align: center;
+                            text-align: right;
+                            white-space: nowrap;
+
+                            >.text {
+                                padding-bottom: 8px;
+                            }
+
+                            >button {
+                                white-space: nowrap;
+                            }
+                        }
+
+                        >tr:nth-child(n + 2)>td.name {
+                            width: 80px;
+                            padding: 4px;
+                        }
+
+                        >tr>td>.wrapper-row {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        >tr.level>td>.wrapper {
+                            input[type="number"] {
+                                margin-right: 5px;
+                            }
+
+                            input[type="range"] {
+                                margin-left: 5px;
+                                border: 1px solid #000;
+                            }
+                        }
+
+                        >tr>td.gear-custom-cell>.wrapper-col {
+                            >.row {
+                                display: flex;
+
+                                >select {
+                                    flex: 1;
+                                }
+
+                                >button>span.is-custom {
+                                    color: #0a0;
+                                }
+
+                                >button+button {
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+
+                        >tr>td .tune-text {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                button.new-buff {
+                    position: relative;
+                    margin-top: 10px;
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    >.copyed-buff-string {
+                        position: absolute;
+                        left: 0;
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: #777;
+                    }
+                }
+            }
+
+            >.row.character {}
+
+            >.row.weapon {}
+
+            >.row.equipment {}
+        }
+
+        .add-skill-row {
+            display: flex;
+            align-items: center;
+
+            button {
+                flex: 1;
+            }
+        }
+    }
+
+    .load-setting-error {
+        color: #f00;
+        white-space: nowrap;
+    }
+}

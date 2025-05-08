@@ -1,0 +1,300 @@
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { CompressionService } from '../model/compression.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { AppService } from '../app.service';
+
+class AikaEnigmaIndex {
+    id: number = -1;
+    name: string = '';
+    enable: boolean = false;
+    parent: AikaEnigmaIndex | null = null;
+    data: any = null;
+
+    constructor(name?: string, enable?: boolean, parent?: AikaEnigmaIndex) {
+        this.name = name || '';
+        this.enable = enable || false;
+        this.parent = parent || null;
+    }
+}
+class AikaEnigmaSection {
+    id: number = -1;
+    name: string = '';
+    area: AikaEnigmaArea[] = [];
+    index: AikaEnigmaIndex;
+}
+class AikaEnigmaArea {
+    id: number = -1;
+    name: string = '';
+    psvskills: AikaEnigmaPsvSkill[] = [];
+    index: AikaEnigmaIndex;
+}
+class AikaEnigmaPsvSkill {
+    id: number = -1;
+    name: string = '';
+    grade: string = '';
+    level: number = 0;
+    maxLv: number = 0;
+    desc: string = '';
+    effect: string = '';
+    upgrade: AikaEnigmaPsvSkillUpgrade;
+    index: AikaEnigmaIndex;
+}
+class AikaEnigmaPsvSkillUpgrade {
+    level: number = 0;
+    cost: string[] = [];
+}
+
+
+@Component({
+    selector: 'app-aika-enigma-txt',
+    standalone: true,
+    imports: [
+        CommonModule,
+        HttpClientModule,
+    ],
+    providers: [
+        CompressionService,
+    ],
+    templateUrl: './aika-enigma-txt.component.html',
+    styleUrl: './aika-enigma-txt.component.scss'
+})
+export class AikaEnigmaTxtComponent implements OnInit {
+
+    // decompressedContent: string = '';
+    errorMessage: string = '';
+    sections: AikaEnigmaSection[] = [];
+    indexes1: AikaEnigmaIndex[] = [];
+    indexes2: AikaEnigmaIndex[] = [];
+    indexes3: AikaEnigmaIndex[] = [];
+
+    selectedIndex1: AikaEnigmaIndex = new AikaEnigmaIndex('--');
+    selectedIndex2: AikaEnigmaIndex = new AikaEnigmaIndex('--');
+    selectedIndex3: AikaEnigmaIndex = new AikaEnigmaIndex('--');
+
+    @ViewChildren('index1Item') index1Items!: QueryList<ElementRef>;
+    @ViewChildren('index2Item') index2Items!: QueryList<ElementRef>;
+    @ViewChildren('index3Item') index3Items!: QueryList<ElementRef>;
+    @ViewChildren('sectionItem') sectionItems!: QueryList<ElementRef>;
+    @ViewChildren('areaItem') areaItems!: QueryList<ElementRef>;
+    @ViewChildren('psvSkillItem') psvSkillItems!: QueryList<ElementRef>;
+
+    firstTimeEnter: boolean = true;
+    inited: boolean = false;
+    gid: number = 1;
+    constructor(
+        private compressionService: CompressionService,
+        private appService: AppService,
+    ) {
+        this.appService.pageEnter['aet'] = () => {
+            this.firstTimeRun();
+        }
+    }
+    async ngOnInit(): Promise<void> {
+        const assetPath = '/assets/enigma.bin';
+
+        try {
+            const jsonString = await this.compressionService.decompressZlibFromAsset(assetPath);
+            // console.log('解壓縮成功:', this.decompressedContent.length);
+            this.sections = this.parseContent(jsonString);
+
+            this.sections.forEach((section) => {
+                section.id = this.gid++;
+
+                const index1 = new AikaEnigmaIndex(section.name, true);
+                index1.id = this.gid++;
+
+                const index2Title = new AikaEnigmaIndex(section.name, false, index1);
+                index2Title.id = this.gid++;
+
+                section.index = index1;
+                this.indexes1.push(index1);
+                this.indexes2.push(index2Title);
+
+                section.area.forEach((area) => {
+                    area.id = this.gid++;
+
+                    area.name = area.name.toLocaleUpperCase();
+                    const index2 = new AikaEnigmaIndex(area.name, true, index1);
+                    index2.id = this.gid++;
+
+                    const index3Title = new AikaEnigmaIndex(index1.name + '-' + index2.name, false, index2);
+                    index3Title.id = this.gid++;
+
+                    area.index = index2;
+                    this.indexes2.push(index2);
+                    this.indexes3.push(index3Title);
+
+                    area.psvskills.forEach((psvskill) => {
+                        psvskill.id = this.gid++;
+
+                        const index3 = new AikaEnigmaIndex(psvskill.name, true, index2);
+                        index3.id = this.gid++;
+
+                        psvskill.index = index3;
+                        this.indexes3.push(index3);
+                    });
+                });
+            });
+            console.log(this.sections);
+
+            this.inited = true;
+            setTimeout(() => {
+                this.firstTimeRun();
+            }, 1);
+        } catch (error: any) {
+            this.errorMessage = error.message || '解壓縮失敗';
+        }
+    }
+
+    parseContent(jsonString: string): AikaEnigmaSection[] {
+        const result: AikaEnigmaSection[] = [];
+        const json = JSON.parse(jsonString);
+        Object.keys(json).forEach((name) => {
+            const actress = json[name];
+
+            const section = new AikaEnigmaSection();
+            section.name = name;
+
+            Object.keys(actress).forEach((areaName) => {
+                const area = new AikaEnigmaArea();
+                area.name = areaName;
+
+                const psvskills = actress[areaName];
+                for (const rawPsvskill of psvskills) {
+                    const psvskill = new AikaEnigmaPsvSkill();
+                    psvskill.name = rawPsvskill.name;
+                    psvskill.grade = rawPsvskill.grade;
+                    psvskill.level = rawPsvskill.level;
+                    psvskill.maxLv = rawPsvskill.maxLv;
+                    psvskill.desc = rawPsvskill.desc;
+                    psvskill.effect = rawPsvskill.effect;
+                    if (rawPsvskill.upgrade) {
+                        psvskill.upgrade = new AikaEnigmaPsvSkillUpgrade();
+                        psvskill.upgrade.level = rawPsvskill.upgrade.level;
+                        psvskill.upgrade.cost = rawPsvskill.upgrade.cost;
+                    }
+                    area.psvskills.push(psvskill);
+                }
+                section.area.push(area);
+            });
+
+            result.push(section);
+            // console.log('name:', name, 'data:', data);
+        });
+
+        return result;
+    }
+
+    firstTimeRun(): void {
+        console.log('firstTimeRun', this.inited, this.firstTimeEnter);
+        if (!this.inited) {
+            return;
+        }
+        if (!this.firstTimeEnter) {
+            return;
+        }
+        this.firstTimeEnter = false;
+        const 愛花index = this.indexes1.find((index) => index.name === '相河愛花');
+        const 愛花index2 = this.indexes2.find((index) => index.parent == 愛花index && index.enable);
+        const 愛花index3 = this.indexes3.find((index) => index.parent == 愛花index2 && index.enable);
+        this.selectedIndex1 = 愛花index;
+        this.selectedIndex2 = 愛花index2;
+        this.selectedIndex3 = 愛花index3;
+
+        const el2 = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        el2.nativeElement.scrollIntoView({ block: 'center' });
+
+        const el3 = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+        el3.nativeElement.scrollIntoView({ block: 'center' });
+
+        const section = this.sections.find(v => v.index == 愛花index);
+        const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+        bodyEl.nativeElement.scrollIntoView({ block: 'start' });
+    }
+
+    selectIndex1(index: AikaEnigmaIndex): void {
+        console.log('selectIndex1', index);
+        this.selectedIndex1 = index;
+
+        if (this.selectedIndex2.parent != index) {
+            this.selectedIndex2 = this.indexes2.find(v => v.parent == index && v.enable);
+        }
+        if (this.selectedIndex3.parent.parent != index) {
+            this.selectedIndex3 = this.indexes3.find(v => v.parent == this.selectedIndex2 && v.enable);
+        }
+
+        const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        if (index2El) {
+            index2El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+
+        const index3El = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+        if (index3El) {
+            index3El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+
+        const section = this.sections.find(v => v.index == index);
+        const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+        if (bodyEl) {
+            bodyEl.nativeElement.scrollIntoView({ block: 'start' });
+        }
+    }
+    selectIndex2(index: AikaEnigmaIndex): void {
+        this.selectedIndex2 = index;
+
+        if (this.selectedIndex2.parent != this.selectedIndex1) {
+            this.selectedIndex1 = this.selectedIndex2.parent;
+        }
+        if (this.selectedIndex3.parent != index) {
+            this.selectedIndex3 = this.indexes3.find(v => v.parent == index && v.enable);
+        }
+
+        const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        if (index1El) {
+            index1El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+
+        const index3El = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+        if (index3El) {
+            index3El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+
+        const section = this.sections.find(v => v.index == this.selectedIndex1);
+        const area = section.area.find(v => v.index == index);
+        const areaEl = this.areaItems.find(v => v.nativeElement?.getAttribute('data-id') == area.id);
+        if (areaEl) {
+            areaEl.nativeElement.scrollIntoView({ block: 'start' });
+        }
+    }
+    selectIndex3(index: AikaEnigmaIndex): void {
+        this.selectedIndex3 = index;
+
+        if (this.selectedIndex3.parent != this.selectedIndex2) {
+            this.selectedIndex2 = this.selectedIndex3.parent;
+        }
+        if (this.selectedIndex2.parent != this.selectedIndex1) {
+            this.selectedIndex1 = this.selectedIndex2.parent;
+        }
+
+        const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        if (index1El) {
+            index1El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+        const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        if (index2El) {
+            index2El.nativeElement.scrollIntoView({ block: 'center' });
+        }
+
+        const section = this.sections.find(v => v.index == this.selectedIndex1);
+        const area = section.area.find(v => v.index == this.selectedIndex2);
+        const psvSkill = area.psvskills.find(v => v.index == index);
+        const psvSkillEl = this.psvSkillItems.find(v => v.nativeElement?.getAttribute('data-id') == psvSkill.id);
+        if (psvSkillEl) {
+            psvSkillEl.nativeElement.scrollIntoView({ block: 'start' });
+        }
+    }
+    trackById(index: number, item: any): any {
+        return item.id; // 使用唯一的 id 作為追蹤依據
+    }
+}

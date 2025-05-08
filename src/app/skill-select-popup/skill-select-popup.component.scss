@@ -1,0 +1,84 @@
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    flex-direction: column;
+
+    .head {
+        display: flex;
+        justify-content: flex-end;
+
+        .close {
+            margin-top: 10px;
+            margin-right: 10px;
+            font-size: 28px;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    .list {
+        flex: 1;
+        overflow: auto;
+        // display: flex;
+        // flex-wrap: wrap;
+
+        .skill {
+            position: relative;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: #fff;
+            display: inline-block;
+
+            .skill-head {
+                padding: 5px 0;
+                background-color: #eee;
+
+                .name {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                .description {
+                    font-size: 16px;
+                }
+            }
+
+            .buffs {
+                padding-top: 5px;
+                display: block;
+
+                .buff {
+                    display: flex;
+
+                    .name {
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            &.selected{
+                box-shadow: 0 0 0 5px #0f0;
+                background-color: #cfc;
+            }
+
+            .select-button-row{
+                position: absolute;
+                top: -10px;
+                right: -10px;
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

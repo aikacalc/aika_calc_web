@@ -1,0 +1,90 @@
+.aika-enigma-txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    overflow-x: auto;
+
+    .index1,
+    .index2,
+    .index3 {
+        min-width: 150px;
+        border-right: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+
+        .selected-item {
+            min-height: 30px;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            background-color: #e0e0e0;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .list {
+            overflow-y: auto;
+
+            .index-item {
+                min-height: 30px;
+                cursor: pointer;
+
+                &.disabled {
+                    color: #f77;
+                    pointer-events: none;
+                }
+
+                &.selected {
+                    background-color: #e0e0e0;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    background-color: #f0f0f0;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .index3 {
+        min-width: 200px;
+    }
+
+    .body {
+        flex: 1;
+        min-width: 500px;
+        overflow-y: auto;
+
+        h3 {
+            padding-left: 20px;
+        }
+
+        h4 {
+            padding-left: 40px;
+        }
+
+        .desc {
+            padding-left: 60px;
+            white-space: pre-wrap;
+        }
+
+        .effect {
+            padding-left: 80px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            white-space: pre-wrap;
+        }
+
+        .upgrade {
+            padding-left: 60px;
+            white-space: pre-wrap;
+        }
+        .cost {
+            padding-left: 20px;
+        }
+    }
+}
