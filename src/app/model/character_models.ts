@@ -20435,145 +20435,6 @@ class Misaki70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
 }
 
-class SylphyII04 extends Character {
-    name: string = 'シルフィーII ★3';
-    rare: number = 3;
-    level: number = 60;
-    levelMin: number = 1;
-    levelMax: number = 60;
-    gradeUpLimit: number = 0;
-    gradeupPowUpRate: number = 50;
-    hp: number = 2510;
-    hpMin: number = 690;
-    hpMax: number = 2510;
-    atkClose: number = 595;
-    atkCloseMin: number = 170;
-    atkCloseMax: number = 595;
-    attrClose: number = 0;
-    atkShot: number = 567;
-    atkShotMin: number = 162;
-    atkShotMax: number = 567;
-    attrShot: number = 0;
-    def: number = 728;
-    defMin: number = 208;
-    defMax: number = 728;
-    spd: number = 162;
-    spdMin: number = 162;
-    spdMax: number = 162;
-    spDmgRatio: number = 1.82;
-    attrMin: number = 68;
-    attrMax: number = 238;
-    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
-    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
-    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
-    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistVolt, 0.6),
-        new Buff(AttrTypeId.ResistGravity, -0.6),
-        new Buff(AttrTypeId.ResistFire, -0.3),
-        new Buff(AttrTypeId.Volt, 0.56),
-        new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.SylphyII.long;
-    weaponCloses: Gear[] = ActressGears.SylphyII.short;
-    equipmentTops: Gear[] = ActressGears.SylphyII.top;
-    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
-}
-
-class SylphyII05 extends Character {
-    name: string = 'シルフィーII ★4';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    gradeupPowUpRate: number = 100;
-    hp: number = 3240;
-    hpMin: number = 870;
-    hpMax: number = 3240;
-    atkClose: number = 765;
-    atkCloseMin: number = 213;
-    atkCloseMax: number = 765;
-    attrClose: number = 0;
-    atkShot: number = 729;
-    atkShotMin: number = 203;
-    atkShotMax: number = 729;
-    attrShot: number = 0;
-    def: number = 936;
-    defMin: number = 260;
-    defMax: number = 936;
-    spd: number = 162;
-    spdMin: number = 162;
-    spdMax: number = 162;
-    spDmgRatio: number = 1.82;
-    attrMin: number = 85;
-    attrMax: number = 306;
-    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
-    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
-    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
-    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistVolt, 0.6),
-        new Buff(AttrTypeId.ResistGravity, -0.6),
-        new Buff(AttrTypeId.ResistFire, -0.3),
-        new Buff(AttrTypeId.Volt, 0.56),
-        new Buff(AttrTypeId.Dagger, 0.25),
-        new Buff(AttrTypeId.Twin, 0.15)
-    ];
-    weaponShots: Gear[] = ActressGears.SylphyII.long;
-    weaponCloses: Gear[] = ActressGears.SylphyII.short;
-    equipmentTops: Gear[] = ActressGears.SylphyII.top;
-    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
-}
-
-class SylphyII70 extends Character {
-    name: string = 'シルフィーII / Mode-B ★4';
-    rare: number = 4;
-    level: number = 80;
-    levelMin: number = 1;
-    levelMax: number = 80;
-    gradeUpLimit: number = 10;
-    gradeupPowUpRate: number = 100;
-    hp: number = 3240;
-    hpMin: number = 870;
-    hpMax: number = 3240;
-    atkClose: number = 643;
-    atkCloseMin: number = 179;
-    atkCloseMax: number = 643;
-    attrClose: number = 0;
-    atkShot: number = 612;
-    atkShotMin: number = 170;
-    atkShotMax: number = 612;
-    attrShot: number = 0;
-    def: number = 936;
-    defMin: number = 260;
-    defMax: number = 936;
-    spd: number = 162;
-    spdMin: number = 162;
-    spdMax: number = 162;
-    spDmgRatio: number = 1.94;
-    attrMin: number = 100;
-    attrMax: number = 360;
-    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
-    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
-    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
-    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
-    buffs: Buff[] = [
-        new Buff(AttrTypeId.ResistGravity, 0.7),
-        new Buff(AttrTypeId.ResistVolt, -0.7),
-        new Buff(AttrTypeId.ResistIce, -0.35),
-        new Buff(AttrTypeId.DEF, -0.1),
-        new Buff(AttrTypeId.Gravity, 0.86),
-        new Buff(AttrTypeId.Dagger, 0.3),
-        new Buff(AttrTypeId.Twin, 0.1)
-    ];
-    weaponShots: Gear[] = ActressGears.SylphyII.long;
-    weaponCloses: Gear[] = ActressGears.SylphyII.short;
-    equipmentTops: Gear[] = ActressGears.SylphyII.top;
-    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
-}
-
 class Kasumi04 extends Character {
     name: string = 'かすみ ★3';
     rare: number = 3;
@@ -20850,6 +20711,145 @@ class Nyotengu05 extends Character {
     weaponCloses: Gear[] = ActressGears.Nyotengu.short;
     equipmentTops: Gear[] = ActressGears.Nyotengu.top;
     equipmentBottoms: Gear[] = ActressGears.Nyotengu.bottom;
+}
+
+class SylphyII04 extends Character {
+    name: string = 'シルフィーII ★3';
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 595;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 162;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 728;
+    defMin: number = 208;
+    defMax: number = 728;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SylphyII.long;
+    weaponCloses: Gear[] = ActressGears.SylphyII.short;
+    equipmentTops: Gear[] = ActressGears.SylphyII.top;
+    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
+}
+
+class SylphyII05 extends Character {
+    name: string = 'シルフィーII ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Twin, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SylphyII.long;
+    weaponCloses: Gear[] = ActressGears.SylphyII.short;
+    equipmentTops: Gear[] = ActressGears.SylphyII.top;
+    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
+}
+
+class SylphyII70 extends Character {
+    name: string = 'シルフィーII / Mode-B ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 643;
+    atkCloseMin: number = 179;
+    atkCloseMax: number = 643;
+    attrClose: number = 0;
+    atkShot: number = 612;
+    atkShotMin: number = 170;
+    atkShotMax: number = 612;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Twin, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.SylphyII.long;
+    weaponCloses: Gear[] = ActressGears.SylphyII.short;
+    equipmentTops: Gear[] = ActressGears.SylphyII.top;
+    equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
 }
 
 class Aya04 extends Character {
@@ -22629,10 +22629,10 @@ export const ActressNames: string[] = [
     'KougamiKanon',
     'KuniedaShiho',
     'Misaki',
-    'SylphyII',
     'Kasumi',
     'MarieRose',
     'Nyotengu',
+    'SylphyII',
     'Aya',
     'Yuki',
     'Yamada',
@@ -23090,15 +23090,15 @@ export const CharacterModels = {
     Misaki04: new Misaki04(),
     Misaki05: new Misaki05(),
     Misaki70: new Misaki70(),
-    SylphyII04: new SylphyII04(),
-    SylphyII05: new SylphyII05(),
-    SylphyII70: new SylphyII70(),
     Kasumi04: new Kasumi04(),
     Kasumi05: new Kasumi05(),
     MarieRose04: new MarieRose04(),
     MarieRose05: new MarieRose05(),
     Nyotengu04: new Nyotengu04(),
     Nyotengu05: new Nyotengu05(),
+    SylphyII04: new SylphyII04(),
+    SylphyII05: new SylphyII05(),
+    SylphyII70: new SylphyII70(),
     Aya04: new Aya04(),
     Aya05: new Aya05(),
     Yuki04: new Yuki04(),
