@@ -13761,6 +13761,52 @@ class OhtoriKasumi05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
 }
 
+class OhtoriKasumi70 extends Character {
+    name: string = '鳳 加純 / 鳳翔 ★4';
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 796;
+    atkShotMin: number = 221;
+    atkShotMax: number = 796;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.OhtoriKasumi.long;
+    weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
+    equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
+    equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+}
+
 class AgatsumaKei01 extends Character {
     name: string = '吾妻 京 ★1';
     rare: number = 1;
@@ -22901,6 +22947,7 @@ export const CharacterModels = {
     OhtoriKasumi02: new OhtoriKasumi02(),
     OhtoriKasumi04: new OhtoriKasumi04(),
     OhtoriKasumi05: new OhtoriKasumi05(),
+    OhtoriKasumi70: new OhtoriKasumi70(),
     AgatsumaKei01: new AgatsumaKei01(),
     AgatsumaKei02: new AgatsumaKei02(),
     AgatsumaKei04: new AgatsumaKei04(),

@@ -4,6 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../app.service';
 
+enum SelectStatus {
+    None = 0,
+    Some = 1,
+    All = 2,
+    Selected = 3,
+}
+
 class AikaEnigmaIndex {
     id: number = -1;
     name: string = '';
@@ -22,12 +29,15 @@ class AikaEnigmaSection {
     name: string = '';
     area: AikaEnigmaArea[] = [];
     index: AikaEnigmaIndex;
+    slots: string[] = [];
+    selected: SelectStatus = SelectStatus.None;
 }
 class AikaEnigmaArea {
     id: number = -1;
     name: string = '';
     psvskills: AikaEnigmaPsvSkill[] = [];
     index: AikaEnigmaIndex;
+    selected: SelectStatus = SelectStatus.None;
 }
 class AikaEnigmaPsvSkill {
     id: number = -1;
@@ -39,6 +49,9 @@ class AikaEnigmaPsvSkill {
     effect: string = '';
     upgrade: AikaEnigmaPsvSkillUpgrade;
     index: AikaEnigmaIndex;
+    tags: string[] = [];
+    uc: number = 0;
+    selected: SelectStatus = SelectStatus.None;
 }
 class AikaEnigmaPsvSkillUpgrade {
     level: number = 0;
@@ -78,6 +91,14 @@ export class AikaEnigmaTxtComponent implements OnInit {
     @ViewChildren('sectionItem') sectionItems!: QueryList<ElementRef>;
     @ViewChildren('areaItem') areaItems!: QueryList<ElementRef>;
     @ViewChildren('psvSkillItem') psvSkillItems!: QueryList<ElementRef>;
+
+    TagName = {
+        'attack': '[ATK]',
+        'sp_gain': '[SP]',
+        'deffence': '[DEF]',
+        'hp_recover': '[HP]',
+        'mobile': '[SPD]',
+    }
 
     firstTimeEnter: boolean = true;
     inited: boolean = false;
@@ -136,12 +157,12 @@ export class AikaEnigmaTxtComponent implements OnInit {
                     });
                 });
             });
-            console.log(this.sections);
+            // console.log(this.sections);
 
             this.inited = true;
-            setTimeout(() => {
+            requestAnimationFrame(() => {
                 this.firstTimeRun();
-            }, 1);
+            });
         } catch (error: any) {
             this.errorMessage = error.message || '解壓縮失敗';
         }
@@ -169,6 +190,8 @@ export class AikaEnigmaTxtComponent implements OnInit {
                     psvskill.maxLv = rawPsvskill.maxLv;
                     psvskill.desc = rawPsvskill.desc;
                     psvskill.effect = rawPsvskill.effect;
+                    psvskill.tags = rawPsvskill.tags;
+                    psvskill.uc = rawPsvskill.uc;
                     if (rawPsvskill.upgrade) {
                         psvskill.upgrade = new AikaEnigmaPsvSkillUpgrade();
                         psvskill.upgrade.level = rawPsvskill.upgrade.level;

@@ -30,6 +30,13 @@
                 <h3>{{area.name}}</h3>
                 <div *ngFor="let psvSkill of area.psvskills; trackBy: trackById" #psvSkillItem [attr.data-id]="psvSkill.id">
                     <h4>{{psvSkill.name}}</h4>
+                    <div class="grade">
+                        <span>G:{{psvSkill.uc}} </span>
+                        <span *ngFor="let tag of psvSkill.tags;let last = last">{{TagName[tag]}} </span>
+                    </div>
+                    <!-- <div class="tag" *ngIf="psvSkill.tags.length > 0">
+                        <span *ngFor="let tag of psvSkill.tags;let last = last">{{tag}} </span>
+                    </div> -->
                     <div class="desc">{{psvSkill.desc}}</div>
                     <div class="effect">{{psvSkill.effect}}</div>
                     <div *ngIf="psvSkill.upgrade" class="upgrade">
