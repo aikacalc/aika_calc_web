@@ -333,11 +333,13 @@ export class Character extends Unit {
 
         let result = baseVal;
 
+        const buffs = [];
         this.allUnits.forEach(u => {
-            const buffs = u.buffs.filter(b => b.type === gear.base.attrTypeId);
-            const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
-            result += totalBuffVal;
+            const buffs_ = u.buffs.filter(b => b.type === gear.base.attrTypeId);
+            buffs.push(...buffs_);
         });
+        const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+        result += totalBuffVal;
 
         this.attrShot = result;
 
