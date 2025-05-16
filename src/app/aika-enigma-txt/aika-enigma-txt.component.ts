@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { CompressionService } from '../model/compression.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
@@ -72,10 +72,11 @@ class AikaEnigmaPsvSkillUpgrade {
     templateUrl: './aika-enigma-txt.component.html',
     styleUrl: './aika-enigma-txt.component.scss'
 })
-export class AikaEnigmaTxtComponent implements OnInit {
+export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
     // decompressedContent: string = '';
     errorMessage: string = '';
+    selectedSections: AikaEnigmaSection[] = [];
     sections: AikaEnigmaSection[] = [];
     indexes1: AikaEnigmaIndex[] = [];
     indexes2: AikaEnigmaIndex[] = [];
@@ -84,6 +85,8 @@ export class AikaEnigmaTxtComponent implements OnInit {
     selectedIndex1: AikaEnigmaIndex = new AikaEnigmaIndex('--');
     selectedIndex2: AikaEnigmaIndex = new AikaEnigmaIndex('--');
     selectedIndex3: AikaEnigmaIndex = new AikaEnigmaIndex('--');
+
+    selectedSectionTotalCost: string = '';
 
     @ViewChildren('index1Item') index1Items!: QueryList<ElementRef>;
     @ViewChildren('index2Item') index2Items!: QueryList<ElementRef>;
@@ -110,6 +113,11 @@ export class AikaEnigmaTxtComponent implements OnInit {
         this.appService.pageEnter['aet'] = () => {
             this.firstTimeRun();
         }
+    }
+    ngAfterViewInit(): void {
+        requestAnimationFrame(() => {
+            this.firstTimeRun();
+        });
     }
     async ngOnInit(): Promise<void> {
         const assetPath = '/assets/enigma.bin';
@@ -160,9 +168,6 @@ export class AikaEnigmaTxtComponent implements OnInit {
             // console.log(this.sections);
 
             this.inited = true;
-            requestAnimationFrame(() => {
-                this.firstTimeRun();
-            });
         } catch (error: any) {
             this.errorMessage = error.message || '解壓縮失敗';
         }
@@ -225,15 +230,24 @@ export class AikaEnigmaTxtComponent implements OnInit {
         this.selectedIndex2 = 愛花index2;
         this.selectedIndex3 = 愛花index3;
 
-        const el2 = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
-        el2.nativeElement.scrollIntoView({ block: 'center' });
+        setTimeout(() => {
+            const el2 = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+            el2.nativeElement.scrollIntoView({ block: 'center' });
 
-        const el3 = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
-        el3.nativeElement.scrollIntoView({ block: 'center' });
+            const el3 = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+            el3.nativeElement.scrollIntoView({ block: 'center' });
 
-        const section = this.sections.find(v => v.index == 愛花index);
-        const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
-        bodyEl.nativeElement.scrollIntoView({ block: 'start' });
+            const section = this.sections.find(v => v.index == 愛花index);
+            this.selectedSections = [section];
+            this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+
+            setTimeout(() => {
+                const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+                bodyEl.nativeElement.scrollIntoView({ block: 'start' });
+            }, 1);
+        }, 1);
+
+
     }
 
     selectIndex1(index: AikaEnigmaIndex): void {
@@ -258,10 +272,15 @@ export class AikaEnigmaTxtComponent implements OnInit {
         }
 
         const section = this.sections.find(v => v.index == index);
-        const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
-        if (bodyEl) {
-            bodyEl.nativeElement.scrollIntoView({ block: 'start' });
-        }
+        this.selectedSections = [section];
+        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        console.log('section', section);
+        setTimeout(() => {
+            const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+            if (bodyEl) {
+                bodyEl.nativeElement.scrollIntoView({ block: 'start' });
+            }
+        }, 1);
     }
     selectIndex2(index: AikaEnigmaIndex): void {
         this.selectedIndex2 = index;
@@ -284,11 +303,15 @@ export class AikaEnigmaTxtComponent implements OnInit {
         }
 
         const section = this.sections.find(v => v.index == this.selectedIndex1);
-        const area = section.area.find(v => v.index == index);
-        const areaEl = this.areaItems.find(v => v.nativeElement?.getAttribute('data-id') == area.id);
-        if (areaEl) {
-            areaEl.nativeElement.scrollIntoView({ block: 'start' });
-        }
+        this.selectedSections = [section];
+        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        setTimeout(() => {
+            const area = section.area.find(v => v.index == index);
+            const areaEl = this.areaItems.find(v => v.nativeElement?.getAttribute('data-id') == area.id);
+            if (areaEl) {
+                areaEl.nativeElement.scrollIntoView({ block: 'start' });
+            }
+        }, 1);
     }
     selectIndex3(index: AikaEnigmaIndex): void {
         this.selectedIndex3 = index;
@@ -310,14 +333,55 @@ export class AikaEnigmaTxtComponent implements OnInit {
         }
 
         const section = this.sections.find(v => v.index == this.selectedIndex1);
-        const area = section.area.find(v => v.index == this.selectedIndex2);
-        const psvSkill = area.psvskills.find(v => v.index == index);
-        const psvSkillEl = this.psvSkillItems.find(v => v.nativeElement?.getAttribute('data-id') == psvSkill.id);
-        if (psvSkillEl) {
-            psvSkillEl.nativeElement.scrollIntoView({ block: 'start' });
-        }
+        this.selectedSections = [section];
+        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        setTimeout(() => {
+            const area = section.area.find(v => v.index == this.selectedIndex2);
+            const psvSkill = area.psvskills.find(v => v.index == index);
+            const psvSkillEl = this.psvSkillItems.find(v => v.nativeElement?.getAttribute('data-id') == psvSkill.id);
+            if (psvSkillEl) {
+                psvSkillEl.nativeElement.scrollIntoView({ block: 'start' });
+            }
+        }, 1);
     }
     trackById(index: number, item: any): any {
         return item.id; // 使用唯一的 id 作為追蹤依據
     }
+
+    getSectionsCost(sections: AikaEnigmaSection[]): string {
+        let totalCost = '';
+
+        const costDict = {};
+
+        sections.forEach((section) => {
+            section.area.forEach((area) => {
+                area.psvskills.forEach((psvskill) => {
+                    if (psvskill.upgrade) {
+                        for (const costItem of psvskill.upgrade.cost) {
+                            const costStrs = costItem.split(' x');
+                            const material = costStrs[0].trim();
+                            const cost = parseInt(costStrs[1].trim());
+                            if (costDict[material]) {
+                                costDict[material] += cost;
+                            } else {
+                                costDict[material] = cost;
+                            }
+                        }
+                    }
+                });
+            });
+        });
+
+        Object.keys(costDict).forEach((key) => {
+            const cost = costDict[key];
+            if (cost > 0) {
+                totalCost += key + ' x' + cost;
+                totalCost += '\n';
+            }
+        });
+
+
+        return totalCost.toString();
+    }
+
 }

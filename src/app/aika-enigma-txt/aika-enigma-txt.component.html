@@ -24,8 +24,12 @@
         </div>
     </div>
     <div class="body">
-        <div class="section-item" *ngFor="let item of sections; trackBy: trackById" #sectionItem [attr.data-id]="item.id">
+        <div class="section-item" *ngFor="let item of selectedSections; trackBy: trackById" #sectionItem [attr.data-id]="item.id">
             <h2>{{item.name}}</h2>
+            <div class="total-cost">
+                <div>升級總素材:</div>
+                <div>{{selectedSectionTotalCost}}</div>
+            </div>
             <div *ngFor="let area of item.area; trackBy: trackById" #areaItem [attr.data-id]="area.id">
                 <h3>{{area.name}}</h3>
                 <div *ngFor="let psvSkill of area.psvskills; trackBy: trackById" #psvSkillItem [attr.data-id]="psvSkill.id">

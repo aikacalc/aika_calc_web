@@ -66,9 +66,11 @@
         h4 {
             padding-left: 40px;
         }
+
         .tag {
             padding-left: 60px;
         }
+
         .desc {
             padding-left: 60px;
             white-space: pre-wrap;
@@ -85,8 +87,22 @@
             padding-left: 60px;
             white-space: pre-wrap;
         }
+
         .cost {
             padding-left: 20px;
+        }
+
+        .total-cost {
+            padding-left: 20px;
+            white-space: pre-wrap;
+
+            >div:nth-child(1) {
+                font-weight: bold;
+            }
+
+            >div:nth-child(2) {
+                padding-left: 20px;
+            }
         }
     }
 }
