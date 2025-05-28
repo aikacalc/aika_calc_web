@@ -7,7 +7,7 @@ import { SwUpdate, VersionEvent } from '@angular/service-worker';
 import { AikaCalcComponent } from './aika-calc/aika-calc.component';
 import { AikaFanReachCalcComponent } from './aika-fan-reach-calc/aika-fan-reach-calc.component';
 import { AikaDamageCalcComponent } from './aika-damage-calc/aika-damage-calc.component';
-// import { AikaEnigmaComponent } from './aika-enigma/aika-enigma.component';
+import { AikaEnigmaComponent } from './aika-enigma/aika-enigma.component';
 import { AikaTimelineComponent } from "./aika-timeline/aika-timeline.component";
 import { AikaEnigmaTxtComponent } from "./aika-enigma-txt/aika-enigma-txt.component";
 // import { AikaCalc2Component } from "./aika-calc2/aika-calc2.component";
@@ -21,7 +21,7 @@ import { AikaEnigmaTxtComponent } from "./aika-enigma-txt/aika-enigma-txt.compon
     AikaCalcComponent,
     AikaFanReachCalcComponent,
     AikaDamageCalcComponent,
-    // AikaEnigmaComponent,
+    AikaEnigmaComponent,
     AikaTimelineComponent,
     AikaEnigmaTxtComponent
 ],

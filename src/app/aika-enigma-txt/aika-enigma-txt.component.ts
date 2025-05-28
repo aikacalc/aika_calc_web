@@ -3,61 +3,7 @@ import { CompressionService } from '../model/compression.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../app.service';
-
-enum SelectStatus {
-    None = 0,
-    Some = 1,
-    All = 2,
-    Selected = 3,
-}
-
-class AikaEnigmaIndex {
-    id: number = -1;
-    name: string = '';
-    enable: boolean = false;
-    parent: AikaEnigmaIndex | null = null;
-    data: any = null;
-
-    constructor(name?: string, enable?: boolean, parent?: AikaEnigmaIndex) {
-        this.name = name || '';
-        this.enable = enable || false;
-        this.parent = parent || null;
-    }
-}
-class AikaEnigmaSection {
-    id: number = -1;
-    name: string = '';
-    area: AikaEnigmaArea[] = [];
-    index: AikaEnigmaIndex;
-    slots: string[] = [];
-    selected: SelectStatus = SelectStatus.None;
-}
-class AikaEnigmaArea {
-    id: number = -1;
-    name: string = '';
-    psvskills: AikaEnigmaPsvSkill[] = [];
-    index: AikaEnigmaIndex;
-    selected: SelectStatus = SelectStatus.None;
-}
-class AikaEnigmaPsvSkill {
-    id: number = -1;
-    name: string = '';
-    grade: string = '';
-    level: number = 0;
-    maxLv: number = 0;
-    desc: string = '';
-    effect: string = '';
-    upgrade: AikaEnigmaPsvSkillUpgrade;
-    index: AikaEnigmaIndex;
-    tags: string[] = [];
-    uc: number = 0;
-    selected: SelectStatus = SelectStatus.None;
-}
-class AikaEnigmaPsvSkillUpgrade {
-    level: number = 0;
-    cost: string[] = [];
-}
-
+import { AikaEnigmaArea, AikaEnigmaIndex, AikaEnigmaPsvSkill, AikaEnigmaPsvSkillUpgrade, AikaEnigmaSection, parseSkillDataJson } from '../model/skill';
 
 @Component({
     selector: 'app-aika-enigma-txt',
@@ -95,14 +41,6 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
     @ViewChildren('areaItem') areaItems!: QueryList<ElementRef>;
     @ViewChildren('psvSkillItem') psvSkillItems!: QueryList<ElementRef>;
 
-    TagName = {
-        'attack': '[ATK]',
-        'sp_gain': '[SP]',
-        'deffence': '[DEF]',
-        'hp_recover': '[HP]',
-        'mobile': '[SPD]',
-    }
-
     firstTimeEnter: boolean = true;
     inited: boolean = false;
     gid: number = 1;
@@ -125,7 +63,7 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         try {
             const jsonString = await this.compressionService.decompressZlibFromAsset(assetPath);
             // console.log('解壓縮成功:', this.decompressedContent.length);
-            this.sections = this.parseContent(jsonString);
+            this.sections = parseSkillDataJson(jsonString);
 
             this.sections.forEach((section) => {
                 section.id = this.gid++;
@@ -171,47 +109,6 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         } catch (error: any) {
             this.errorMessage = error.message || '解壓縮失敗';
         }
-    }
-
-    parseContent(jsonString: string): AikaEnigmaSection[] {
-        const result: AikaEnigmaSection[] = [];
-        const json = JSON.parse(jsonString);
-        Object.keys(json).forEach((name) => {
-            const actress = json[name];
-
-            const section = new AikaEnigmaSection();
-            section.name = name;
-
-            Object.keys(actress).forEach((areaName) => {
-                const area = new AikaEnigmaArea();
-                area.name = areaName;
-
-                const psvskills = actress[areaName];
-                for (const rawPsvskill of psvskills) {
-                    const psvskill = new AikaEnigmaPsvSkill();
-                    psvskill.name = rawPsvskill.name;
-                    psvskill.grade = rawPsvskill.grade;
-                    psvskill.level = rawPsvskill.level;
-                    psvskill.maxLv = rawPsvskill.maxLv;
-                    psvskill.desc = rawPsvskill.desc;
-                    psvskill.effect = rawPsvskill.effect;
-                    psvskill.tags = rawPsvskill.tags;
-                    psvskill.uc = rawPsvskill.uc;
-                    if (rawPsvskill.upgrade) {
-                        psvskill.upgrade = new AikaEnigmaPsvSkillUpgrade();
-                        psvskill.upgrade.level = rawPsvskill.upgrade.level;
-                        psvskill.upgrade.cost = rawPsvskill.upgrade.cost;
-                    }
-                    area.psvskills.push(psvskill);
-                }
-                section.area.push(area);
-            });
-
-            result.push(section);
-            // console.log('name:', name, 'data:', data);
-        });
-
-        return result;
     }
 
     firstTimeRun(): void {

@@ -1,0 +1,190 @@
+.aika-enigma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    overflow: auto;
+
+    .column {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .character-list {
+        box-sizing: border-box;
+        flex: 1;
+        outline: none;
+    }
+
+    .character {
+        flex: 0 0 600px;
+        height: 100%;
+        position: relative;
+        overflow: auto;
+
+    }
+    .effect-summary{
+        padding: 0 0 20px 40px;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    .slot {
+        box-sizing: border-box;
+        min-height: 50px;
+        width: 100%;
+        display: flex;
+        border: 1px solid #ccc;
+
+        >.index {
+            flex: 0 0 20px;
+            border-right: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        >.head {
+            flex: 0 0 50px;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >.cost {
+                color: #44f;
+            }
+        }
+
+        >.body {
+            position: relative;
+            flex: 1;
+            padding: 10px;
+
+            >.tag-info {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 12px;
+                text-align: right;
+
+                >.cost {
+                    color: #44f;
+                }
+            }
+
+            >.name,
+            >.description,
+            >.effect {
+                white-space: pre-wrap;
+                word-break: break-all;
+            }
+
+            >.name {
+                font-weight: bold;
+            }
+
+            >.description {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            >.effect {
+                padding-left: 20px;
+                font-size: 14px;
+            }
+        }
+
+        >button.change-psvskill {
+            width: 50px;
+            font-weight: bold;
+        }
+
+        &.selected {
+            background-color: #f0f0f0;
+
+            >button.change-psvskill {
+                background-color: #44f;
+                color: #fff;
+            }
+        }
+    }
+
+    .psvskill-list {
+        box-sizing: border-box;
+        min-width: 600px;
+        flex: 1;
+        overflow: auto;
+        outline: none;
+
+        >.psvskill {
+            box-sizing: border-box;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+
+            >.head {
+                button {
+                    width: 50px;
+                    height: 100%;
+                    font-weight: bold;
+                }
+            }
+
+            >.body {
+                position: relative;
+                flex: 1;
+                padding: 30px 10px;
+
+                >.tag-info {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    font-size: 12px;
+                    text-align: right;
+
+                    >.cost {
+                        color: #44f;
+                    }
+                }
+
+                >.name,
+                >.description,
+                >.effect {
+                    white-space: pre-wrap;
+                    word-break: break-all;
+                }
+
+                >.name {
+                    font-weight: bold;
+                }
+
+                >.description {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+
+                >.effect {
+                    padding-left: 20px;
+                    font-size: 14px;
+                }
+            }
+
+            &.selected {
+                background-color: #f0f0f0;
+
+                >.head>button.change-psvskill {
+                    background-color: #44f;
+                    color: #fff;
+                }
+            }
+            &.other-selected {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+}

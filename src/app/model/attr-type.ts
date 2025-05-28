@@ -178,6 +178,38 @@ export const AttrTypeColor: { [key in keyof typeof AttrTypeId]: string } = {
     EquipmentBottom: '#000000',
     Weapon: '#000000',
 }
+export const AttrTypeBackgroundColor: { [key in keyof typeof AttrTypeId]: string } = {
+    Impact: '#000000',
+    Slash: '#000000',
+    Physical: '#000000',
+    Energy: '#000000',
+    Volt: '#ffe',
+    Gravity: '#fef',
+    Fire: '#fee',
+    Ice: '#eef',
+    Sword: '#000000',
+    Hammer: '#000000',
+    Spear: '#000000',
+    Dagger: '#000000',
+    HandGun: '#000000',
+    Rifle: '#000000',
+    Bazooka: '#000000',
+    Twin: '#000000',
+    Sniper: '#000000',
+    Close: '#000000',
+    Shot: '#000000',
+    HP: '#000000',
+    DEF: '#000000',
+    None: '#000000',
+    ResistVolt: '#ea8a00',
+    ResistGravity: 'purple',
+    ResistFire: 'red',
+    ResistIce: '#107cdc',
+    SPD: '#000000',
+    EquipmentTop: '#000000',
+    EquipmentBottom: '#000000',
+    Weapon: '#000000',
+}
 
 export const AttrTypeDict: {
     [key in keyof typeof AttrTypeId]: (value: number) => AttrType;

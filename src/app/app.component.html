@@ -2,7 +2,7 @@
     <div class="top">
         <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
         <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-        <span class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</span>
+        <div class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</div>
         <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
           <span>愛花版面計算</span>
       </a>
@@ -24,11 +24,11 @@
         <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
           <span>愛花技能</span>
       </button> -->
-        <!-- <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
-            <span>愛花ENIGMA</span>
-        </button> -->
         <button class="aika-enigma-txt" [ngClass]="{selected:page=='aet'}" (click)="selectPage('aet')">
             <span>愛花ENIGMA</span>
+        </button>
+        <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
+            <span>愛花被動搭配</span>
         </button>
         <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
             <span>愛花時間線</span>
@@ -48,9 +48,9 @@
         <!-- <div class="aika-skill" [hidden]="page!='ask'">
           <app-aika-skill></app-aika-skill>
       </div> -->
-        <!-- <div class="aika-enigma" [hidden]="page!='ask'">
+        <div class="aika-enigma" [hidden]="page!='ask'">
             <app-aika-enigma></app-aika-enigma>
-        </div> -->
+        </div>
         <div class="aika-enigma-txt" [hidden]="page!='aet'">
             <app-aika-enigma-txt></app-aika-enigma-txt>
         </div>

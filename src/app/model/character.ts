@@ -2,6 +2,7 @@ import { Unit } from './unit';
 import { Buff } from './buff';
 import { AttrType, AttrTypeId } from './attr-type';
 import { Gear } from './gear';
+import { AikaPsvSkillSlot } from './skill';
 
 const masterLevelStatus = {
     1: { "hp": 0, "def": 0, "atkShot": 0, "atkClose": 0, },
@@ -69,6 +70,11 @@ export const attrTypeEnigmaStatus = {
 }
 
 export class Character extends Unit {
+    id: number = -1; // Local ID
+    aid:number = -1; // Actress ID
+    cid: number = -1; // Character ID
+    // characterType: string = ''; // Character ID
+
     rare: number = 1;
     // level: number = 1;
     // levelMin: number = 1;
@@ -172,6 +178,8 @@ export class Character extends Unit {
     }
 
     levelGrowthPct: number = 0;
+    psvSkillSlots: AikaPsvSkillSlot[] = [];
+
 
     updateStatus(): void {
         if (!this.isCustomEnigmaStatus) {

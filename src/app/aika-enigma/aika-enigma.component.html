@@ -1,1 +1,68 @@
-<p>aika-enigma works!</p>
+<div class="aika-enigma">
+    <div class="column">
+        <select #characterList class="character-list" name="character-list" size="10"
+        [(ngModel)]="selectedCharacterId"
+        (change)="onCharacterChange()">
+            <option
+            #characterOption
+            *ngFor="let character of characters"
+            [value]="character.id"
+            [ngStyle]="getCharacterOptionStyle(character)"
+            >{{character.name}}</option>
+        </select>
+    </div>
+    <div class="character">
+        <h1 class="name">{{getSelectedCharacterName()}}</h1>
+        <div class="effect-summary">{{selectedCharacterEffectSummary}}</div>
+        <div class="character-psvskill-list">
+            <div class="slot"
+            *ngFor="let slot of selectedCharacterSlots;"
+            [ngClass]="{selected:selectedSlot==slot}">
+                <div class="index">{{slot.index}}</div>
+                <div class="head" *ngIf="slot.enable">
+                    <div class="type">{{slot.tagStyle.name}}</div>
+                    <div class="cost">{{slot.costPoint}}</div>
+                </div>
+                <div class="body" *ngIf="slot.selectedPsvSkill != null">
+                    <div class="tag-info">
+                        <div class="tags">
+                            <span class="tag" *ngFor="let tagStyle of slot.selectedPsvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
+                        </div>
+                        <span class="cost">{{slot.selectedPsvSkill.costPoint}}</span>
+                    </div>
+                    <div class="name">{{slot.selectedPsvSkill.name}}</div>
+                    <div class="description">{{slot.selectedPsvSkill.desc}}</div>
+                    <div class="effect">{{slot.selectedPsvSkill.effect}}</div>
+                </div>
+                <div class="body" *ngIf="slot.selectedPsvSkill==null">
+                    <span>--</span>
+                </div>
+                <button type="button" class="change-psvskill"
+                *ngIf="slot.enable"
+                (click)="selectSlot(slot)"
+                >[>]</button>
+            </div>
+        </div>
+    </div>
+    <div class="psvskill-list" #psvSkillList>
+        <div class="psvskill"
+            #psvSkillItem
+            *ngFor="let psvSkill of slotSelectablePsvSkills;"
+            [attr.data-gid]="psvSkill.gid"
+            [ngClass]="{
+                selected:selectedSlot && selectedSlot.selectedPsvSkillGid == psvSkill.gid,
+                'other-selected': slotsSelectedPsvSkills[psvSkill.gid] != null && selectedSlot && selectedSlot.selectedPsvSkillGid != psvSkill.gid
+            }">
+            <div class="head">
+                <button type="button" class="change-psvskill" (click)="selectPsvSkill(psvSkill)">[<]</button>
+            </div>
+            <div class="body">
+                <div class="name">{{psvSkill.name}}</div>
+                <div class="description">{{psvSkill.desc}}</div>
+                <div class="effect">{{psvSkill.effect}}</div>
+                <div class="type"></div>
+                <div class="cost"></div>
+            </div>
+        </div>
+    </div>
+</div>
