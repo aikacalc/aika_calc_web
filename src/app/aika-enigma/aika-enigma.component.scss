@@ -27,7 +27,8 @@
         overflow: auto;
 
     }
-    .effect-summary{
+
+    .effect-summary {
         padding: 0 0 20px 40px;
         white-space: pre-wrap;
         word-break: break-all;
@@ -143,9 +144,9 @@
                 >.tag-info {
                     position: absolute;
                     top: 5px;
-                    right: 5px;
+                    left: 5px;
                     font-size: 12px;
-                    text-align: right;
+                    text-align: left;
 
                     >.cost {
                         color: #44f;
@@ -182,6 +183,7 @@
                     color: #fff;
                 }
             }
+
             &.other-selected {
                 background-color: #f0f0f0;
             }
