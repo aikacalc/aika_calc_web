@@ -13040,6 +13040,55 @@ class OchanomizuMirie70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
 }
 
+class OchanomizuMirie60 extends Character {
+    name: string = '御茶ノ水 美里江 / ハングドマン ★4';
+    aid:number = 221;
+    cid: number = 225;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 538;
+    atkShotMin: number = 149;
+    atkShotMax: number = 538;
+    attrShot: number = 0;
+    def: number = 873;
+    defMin: number = 243;
+    defMax: number = 873;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.8),
+        new Buff(AttrTypeId.ResistIce, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Gravity, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.OchanomizuMirie.long;
+    weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
+    equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
+    equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+}
+
 class MerabuchiKanami01 extends Character {
     name: string = '米良渕 花浪 ★1';
     aid:number = 525;
@@ -23983,6 +24032,7 @@ export const CharacterModels = {
     OchanomizuMirie04: new OchanomizuMirie04(),
     OchanomizuMirie05: new OchanomizuMirie05(),
     OchanomizuMirie70: new OchanomizuMirie70(),
+    OchanomizuMirie60: new OchanomizuMirie60(),
     MerabuchiKanami01: new MerabuchiKanami01(),
     MerabuchiKanami02: new MerabuchiKanami02(),
     MerabuchiKanami04: new MerabuchiKanami04(),
