@@ -116,76 +116,98 @@
         }
     }
 
-    .psvskill-list {
+    .psvskill-list-column {
+        position: relative;
         box-sizing: border-box;
         min-width: 600px;
         flex: 1;
-        overflow: auto;
-        outline: none;
+        display: flex;
+        flex-direction: column;
 
-        >.psvskill {
-            box-sizing: border-box;
+        .toolbar {
             border-bottom: 1px solid #ccc;
-            display: flex;
 
-            >.head {
-                button {
-                    width: 50px;
-                    height: 100%;
-                    font-weight: bold;
-                }
-            }
-
-            >.body {
-                position: relative;
-                flex: 1;
-                padding: 30px 10px;
-
-                >.tag-info {
-                    position: absolute;
-                    top: 5px;
-                    left: 5px;
-                    font-size: 12px;
-                    text-align: left;
-
-                    >.cost {
-                        color: #44f;
-                    }
-                }
-
-                >.name,
-                >.description,
-                >.effect {
-                    white-space: pre-wrap;
-                    word-break: break-all;
-                }
-
-                >.name {
-                    font-weight: bold;
-                }
-
-                >.description {
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                }
-
-                >.effect {
-                    padding-left: 20px;
-                    font-size: 14px;
-                }
-            }
-
-            &.selected {
-                background-color: #f0f0f0;
-
-                >.head>button.change-psvskill {
+            button {
+                &.selected {
                     background-color: #44f;
                     color: #fff;
                 }
             }
+        }
 
-            &.other-selected {
-                background-color: #f0f0f0;
+        .psvskill-list {
+            flex: 1;
+            overflow: auto;
+            outline: none;
+
+            >.psvskill {
+                box-sizing: border-box;
+                border-bottom: 1px solid #ccc;
+                display: flex;
+
+                &.hide {
+                    display: none;
+                }
+
+                >.head {
+                    button {
+                        width: 50px;
+                        height: 100%;
+                        font-weight: bold;
+                    }
+                }
+
+                >.body {
+                    position: relative;
+                    flex: 1;
+                    padding: 30px 10px;
+
+                    >.tag-info {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        font-size: 12px;
+                        text-align: left;
+
+                        >.cost {
+                            color: #44f;
+                        }
+                    }
+
+                    >.name,
+                    >.description,
+                    >.effect {
+                        white-space: pre-wrap;
+                        word-break: break-all;
+                    }
+
+                    >.name {
+                        font-weight: bold;
+                    }
+
+                    >.description {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    >.effect {
+                        padding-left: 20px;
+                        font-size: 14px;
+                    }
+                }
+
+                &.selected {
+                    background-color: #f0f0f0;
+
+                    >.head>button.change-psvskill {
+                        background-color: #44f;
+                        color: #fff;
+                    }
+                }
+
+                &.other-selected {
+                    background-color: #f0f0f0;
+                }
             }
         }
     }

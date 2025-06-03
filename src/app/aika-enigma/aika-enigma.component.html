@@ -44,28 +44,41 @@
             </div>
         </div>
     </div>
-    <div class="psvskill-list" #psvSkillList>
-        <div class="psvskill"
-            #psvSkillItem
-            *ngFor="let psvSkill of slotSelectablePsvSkills;"
-            [attr.data-gid]="psvSkill.gid"
-            [ngClass]="{
-                selected:selectedSlot && selectedSlot.selectedPsvSkillGid == psvSkill.gid,
-                'other-selected': slotsSelectedPsvSkills[psvSkill.gid] != null && selectedSlot && selectedSlot.selectedPsvSkillGid != psvSkill.gid
-            }">
-            <div class="head">
-                <button type="button" class="change-psvskill" (click)="selectPsvSkill(psvSkill)">[<]</button>
+    <div class="psvskill-list-column">
+        <div class="toolbar">
+            <div class="row">
+                <span>過濾:</span>
+                <button type="button" (click)="setEffectFilter('ALL',$event)">ALL</button>
+                <button type="button"
+                    [ngClass]="{selected:filterEffectNames.includes(effectName)}"
+                    *ngFor="let effectName of slotSelectablePsvSkillEffectNames"
+                    (click)="setEffectFilter(effectName,$event)">{{effectName}}</button>
             </div>
-            <div class="body">
-                <div class="tag-info">
-                    <div class="tags">
-                        <span class="tag" *ngFor="let tagStyle of psvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
-                    </div>
-                    <span class="cost">{{psvSkill.costPoint}}</span>
+        </div>
+        <div class="psvskill-list" #psvSkillList>
+            <div class="psvskill"
+                #psvSkillItem
+                *ngFor="let psvSkill of slotSelectablePsvSkills;"
+                [attr.data-gid]="psvSkill.gid"
+                [ngClass]="{
+                    selected:selectedSlot && selectedSlot.selectedPsvSkillGid == psvSkill.gid,
+                    'other-selected': slotsSelectedPsvSkills[psvSkill.gid] != null && selectedSlot && selectedSlot.selectedPsvSkillGid != psvSkill.gid,
+                    hide: checkPsvSkillHide(psvSkill),
+                }">
+                <div class="head">
+                    <button type="button" class="change-psvskill" (click)="selectPsvSkill(psvSkill)">[<]</button>
                 </div>
-                <div class="name">{{psvSkill.name}}</div>
-                <div class="description">{{psvSkill.desc}}</div>
-                <div class="effect">{{psvSkill.effect}}</div>
+                <div class="body">
+                    <div class="tag-info">
+                        <div class="tags">
+                            <span class="tag" *ngFor="let tagStyle of psvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
+                        </div>
+                        <span class="cost">{{psvSkill.costPoint}}</span>
+                    </div>
+                    <div class="name">{{psvSkill.name}}</div>
+                    <div class="description">{{psvSkill.desc}}</div>
+                    <div class="effect">{{psvSkill.effect}}</div>
+                </div>
             </div>
         </div>
     </div>

@@ -58,6 +58,8 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
     selectedSlot: AikaPsvSkillSlot | null = null;
     slotSelectablePsvSkills: AikaEnigmaPsvSkill[] = [];
+    slotSelectablePsvSkillEffectNames: string[] = [];
+    filterEffectNames: string[] = [];
     slotDisablePsvSkills: { [key: number]: boolean } = {};
     slotsSelectedPsvSkills: { [key: number]: number } = {};
     selectedCharacterEffectSummary: string = '';
@@ -74,6 +76,9 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         private compressionService: CompressionService,
         private appService: AppService,
     ) {
+        this.appService.pageEnter['ask'] = () => {
+            this.firstTimeRun();
+        }
     }
 
     async ngOnInit(): Promise<void> {
@@ -178,18 +183,6 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
             this.selectedCharacterId = this.characters.find(v => v.name == '相河 愛花 ★4').id.toString();
             this.onCharacterChange();
-
-            setTimeout(() => {
-                this.inited = true;
-                const selectedCharacterOptionElement = this.characterOptionElements.find(e => e.nativeElement.value == this.selectedCharacterId);
-                if (selectedCharacterOptionElement != null) {
-                    selectedCharacterOptionElement.nativeElement.scrollIntoView({
-                        behavior: 'instant',
-                        block: 'center',
-                        inline: 'center'
-                    });
-                }
-            }, 100);
         } catch (error: any) {
             this.errorMessage = error.message || '解壓縮失敗';
         }
@@ -198,6 +191,23 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         requestAnimationFrame(() => {
             // this.firstTimeRun();
         });
+    }
+    firstTimeRun(): void {
+        console.log('AikaEnigmaComponent firstTimeRun', this.inited);
+        if (this.inited) {
+            return;
+        }
+        setTimeout(() => {
+            this.inited = true;
+            const selectedCharacterOptionElement = this.characterOptionElements.find(e => e.nativeElement.value == this.selectedCharacterId);
+            if (selectedCharacterOptionElement != null) {
+                selectedCharacterOptionElement.nativeElement.scrollIntoView({
+                    behavior: 'instant',
+                    block: 'center',
+                    inline: 'center'
+                });
+            }
+        }, 100);
     }
 
     onCharacterChange(): void {
@@ -247,6 +257,7 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         if (this.selectedSlot == slot || slot == null) {
             this.selectedSlot = null;
             this.slotSelectablePsvSkills = [];
+            this.slotSelectablePsvSkillEffectNames = [];
             return;
         }
         this.selectedSlot = slot;
@@ -262,6 +273,16 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             }
         });
 
+        this.slotSelectablePsvSkillEffectNames = [];
+        this.slotSelectablePsvSkills.forEach((psvSkill) => {
+            psvSkill.effects.forEach((effect) => {
+                if (effect.name && !this.slotSelectablePsvSkillEffectNames.includes(effect.name)) {
+                    this.slotSelectablePsvSkillEffectNames.push(effect.name);
+                }
+            });
+        });
+
+        this.filterEffectNames = [];
         this.updatePsvSkillStatus();
         this.updateEffectSummary();
 
@@ -319,11 +340,48 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             }
         });
     }
+
+    sortKeyword = {
+        'HP': 1,
+        '減傷': 2,
+        '霸體': 3,
+        'SP': 4,
+        'step': 5,
+        'SPD': 6,
+        '高速移動': 6,
+    }
     updateEffectSummary(): void {
         const effectLines: string[] = [];
+
+        const effects = {};
+        const effectPcts = {};
+
         this.selectedCharacterSlots.forEach((slot) => {
             if (slot.selectedPsvSkillGid != -1) {
                 const psvSkill = this.psvSkillDict[slot.selectedPsvSkillGid];
+                // psvSkill.effects.forEach((effect) => {
+                //     if (effect.疊加) {
+                //         if (effect.isPct) {
+                //             if (effectPcts[effect.name] == null) {
+                //                 effectPcts[effect.name] = 0;
+                //             }
+                //             effectPcts[effect.name] += effect.valuePct;
+                //         } else {
+                //             if (effects[effect.name] == null) {
+                //                 effects[effect.name] = 0;
+                //             }
+                //             effects[effect.name] += effect.valueNumber;
+                //         }
+                //     } else {
+                //         if (effect.isPct) {
+                //             effectLines.push(`${effect.name}: ${effect.valuePct}%`);
+                //         } else {
+                //             effectLines.push(`${effect.name}: ${effect.valueNumber}`);
+                //         }
+                //     }
+                // });
+
+
                 psvSkill.effect.split('\n').forEach((line) => {
                     const trimmedLine = line.trim();
                     if (trimmedLine) {
@@ -336,9 +394,80 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             }
         });
 
-        effectLines.sort();
+        Object.keys(effectPcts).forEach((effectName) => {
+            const effectValue = effectPcts[effectName];
+            if (effectValue != 0) {
+                effectLines.push(`${effectName}: ${effectValue}%`);
+            }
+        });
+        Object.keys(effects).forEach((effectName) => {
+            const effectValue = effects[effectName];
+            if (effectValue != 0) {
+                effectLines.push(`${effectName}: ${effectValue}`);
+            }
+        });
+
+        const sortKeywords = Object.keys(this.sortKeyword);
+        effectLines.sort((a, b) => {
+            const aKeyword = sortKeywords.find(keyword => a.includes(keyword));
+            const bKeyword = sortKeywords.find(keyword => b.includes(keyword));
+            if (aKeyword && bKeyword) {
+                if (aKeyword === bKeyword) {
+                    return a.localeCompare(b); // If both have the same keyword, sort alphabetically
+                }
+                return this.sortKeyword[aKeyword] - this.sortKeyword[bKeyword];
+            } else if (aKeyword) {
+                return -1; // a comes first
+            } else if (bKeyword) {
+                return 1; // b comes first
+            } else {
+                return a.localeCompare(b); // default string comparison
+            }
+        });
         this.selectedCharacterEffectSummary = effectLines.join('\n');
         // console.log('Selected Character Effect Summary:', JSON.stringify(this.selectedCharacterEffectSummary));
+    }
+
+    setEffectFilter(effectName: string, $event_: Event): void {
+        if (effectName == 'ALL') {
+            this.filterEffectNames = [];
+            return;
+        }
+
+        const $event: KeyboardEvent = $event_ as KeyboardEvent;
+
+        if ($event.shiftKey || $event.ctrlKey || $event.metaKey) {
+            const index = this.filterEffectNames.indexOf(effectName);
+            if (index > -1) {
+                this.filterEffectNames.splice(index, 1);
+            } else {
+                this.filterEffectNames.push(effectName);
+            }
+        } else {
+            const index = this.filterEffectNames.indexOf(effectName);
+            if (index > -1) {
+                this.filterEffectNames.splice(index, 1);
+            } else {
+                this.filterEffectNames = [effectName]; // Clear previous filters and set new one
+            }
+        }
+    }
+    checkPsvSkillHide(psvSkill: AikaEnigmaPsvSkill): boolean {
+        if (this.filterEffectNames.length == 0) {
+            return false; // No filter, show all
+        }
+        // if (psvSkill.effects.some(effect =>
+        //     this.filterEffectNames.every((filterEffectName) => effect.name && effect.name.includes(filterEffectName)
+        //     ))) {
+        //     return false; // At least one effect matches the filter
+        // }
+        if (this.filterEffectNames.every(filterEffectName => {
+            return psvSkill.effects.some(effect => effect.name && effect.name.includes(filterEffectName));
+        }
+        )) {
+            return false; // At least one effect matches the filter
+        }
+        return true; // No effects match the filter, hide this skill
     }
 
 }

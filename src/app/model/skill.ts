@@ -63,6 +63,7 @@ export class AikaEnigmaPsvSkill {
     costPoint: string = ''; // ●
     tagStyles: { name: string, color: string }[] = []; // tag styles for display
     id: number = -1;
+    effects: AikaSkillEffect[] = []; // parsed effects for display
 }
 export class AikaEnigmaPsvSkillUpgrade {
     level: number = 0;
@@ -103,6 +104,37 @@ export function parseSkillDataJson(jsonString: string): AikaEnigmaSection[] {
                     psvskill.upgrade = new AikaEnigmaPsvSkillUpgrade();
                     psvskill.upgrade.level = rawPsvskill.upgrade.level;
                     psvskill.upgrade.cost = rawPsvskill.upgrade.cost;
+                }
+
+                psvskill.effects = [];
+                if (psvskill.effect) {
+                    const effectLines = psvskill.effect.split('\n');
+                    effectLines.forEach((line) => {
+                        let trimmedLine = line.trim();
+                        const effect = new AikaSkillEffect();
+                        effect.text = line.trim();
+                        if (effect.text) {
+                            if (trimmedLine.startsWith('[疊加]')) {
+                                effect.疊加 = true;
+                                trimmedLine = trimmedLine.replace('[疊加]', '').trim();
+                            }
+                            trimmedLine = trimmedLine.replace(/^\((.+)\)$/, '$1').trim(); // remove parentheses at the start and end
+                            const lineSplit = trimmedLine.split(' ');
+                            effect.name = lineSplit[0]; // first word is the name
+                            effect.value = lineSplit[1];
+
+                            if (effect.value) {
+                                if (effect.value.endsWith('%')) {
+                                    effect.valuePct = parseFloat(effect.value.replace('%', ''));
+                                    effect.isPct = true; // mark as percentage
+                                } else {
+                                    effect.valueNumber = parseFloat(effect.value);
+                                }
+                            }
+
+                            psvskill.effects.push(effect);
+                        }
+                    });
                 }
                 area.psvskills.push(psvskill);
             }
@@ -158,4 +190,13 @@ export class AikaPsvSkillSlot {
     costPoint: string = ''; // ●
     psvSkill: AikaEnigmaPsvSkill | null = null; // reference to the selected skill
     tagStyle: { name: string, color: string } = { name: '', color: '' }; // tag style for display
+}
+export class AikaSkillEffect {
+    text: string = '';
+    疊加: boolean = false;
+    name: string = '';
+    value: string = '';
+    isPct: boolean = false; // true if value is a percentage
+    valueNumber: number = 0;
+    valuePct: number = 0;
 }
