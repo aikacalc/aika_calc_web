@@ -39222,6 +39222,42 @@ export const ActressGears = {
     OchanomizuMirie: {
         long: [
             new Gear({
+                name: 'ヘレナ・ズルツァドロ',
+                unitType: AttrTypeId.Sniper,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 535,
+                atkMin: 297,
+                atkMax: 535,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 413,
+                attrMin: 230,
+                attrMax: 413,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ロッサムライフル・オドラズ',
+                unitType: AttrTypeId.Sniper,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 506,
+                atkMin: 268,
+                atkMax: 506,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 390,
+                attrMin: 207,
+                attrMax: 390,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
                 name: 'ヘレナ',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
@@ -39330,7 +39366,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'ヘレナ・ズルツァドロ',
+                name: 'ヘレナ・ズルツァドロS',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
                 levelMin: 1,
@@ -39348,7 +39384,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'ロッサムライフル・オドラズ',
+                name: 'ロッサムライフル・オドラズS',
                 unitType: AttrTypeId.Sniper,
                 level: 75,
                 levelMin: 1,
