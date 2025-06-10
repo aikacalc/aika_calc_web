@@ -39330,148 +39330,148 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'C028_60_04_101_21',
+                name: 'ヘレナ・ズルツァドロ',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
                 levelMin: 1,
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 535,
-                atkMin: 297,
-                atkMax: 535,
+                atk: 487,
+                atkMin: 270,
+                atkMax: 487,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 413,
-                attrMin: 230,
-                attrMax: 413,
-                attrTypeId: AttrTypeId.Volt
+                attr: 459,
+                attrMin: 255,
+                attrMax: 459,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_04_101_11',
+                name: 'ロッサムライフル・オドラズ',
                 unitType: AttrTypeId.Sniper,
                 level: 75,
                 levelMin: 1,
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 506,
-                atkMin: 268,
-                atkMax: 506,
+                atk: 460,
+                atkMin: 243,
+                atkMax: 460,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 390,
-                attrMin: 207,
-                attrMax: 390,
-                attrTypeId: AttrTypeId.Volt
+                attr: 434,
+                attrMin: 230,
+                attrMax: 434,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_04_001_21',
+                name: 'ヘレナS',
                 unitType: AttrTypeId.Sniper,
                 level: 80,
                 levelMin: 1,
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 535,
-                atkMin: 297,
-                atkMax: 535,
+                atk: 487,
+                atkMin: 270,
+                atkMax: 487,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 413,
-                attrMin: 230,
-                attrMax: 413,
-                attrTypeId: AttrTypeId.Volt
+                attr: 459,
+                attrMin: 255,
+                attrMax: 459,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_04_001_11',
+                name: 'ロッサムライフルS改',
                 unitType: AttrTypeId.Sniper,
                 level: 75,
                 levelMin: 1,
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 506,
-                atkMin: 268,
-                atkMax: 506,
+                atk: 460,
+                atkMin: 243,
+                atkMax: 460,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 390,
-                attrMin: 207,
-                attrMax: 390,
-                attrTypeId: AttrTypeId.Volt
+                attr: 434,
+                attrMin: 230,
+                attrMax: 434,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_04_001_01',
+                name: 'ロッサムライフルS',
                 unitType: AttrTypeId.Sniper,
                 level: 70,
                 levelMin: 1,
                 levelMax: 70,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 476,
-                atkMin: 149,
-                atkMax: 476,
+                atk: 433,
+                atkMin: 135,
+                atkMax: 433,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 367,
-                attrMin: 115,
-                attrMax: 367,
-                attrTypeId: AttrTypeId.Volt
+                attr: 408,
+                attrMin: 128,
+                attrMax: 408,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_03_001_21',
+                name: 'RハンターOMsS2',
                 unitType: AttrTypeId.Sniper,
                 level: 60,
                 levelMin: 1,
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 416,
-                atkMin: 238,
-                atkMax: 416,
+                atk: 379,
+                atkMin: 216,
+                atkMax: 379,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 321,
-                attrMin: 184,
-                attrMax: 321,
-                attrTypeId: AttrTypeId.Volt
+                attr: 357,
+                attrMin: 204,
+                attrMax: 357,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_03_001_11',
+                name: 'RハンターOMsS改',
                 unitType: AttrTypeId.Sniper,
                 level: 50,
                 levelMin: 1,
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 357,
-                atkMin: 178,
-                atkMax: 357,
+                atk: 324,
+                atkMin: 162,
+                atkMax: 324,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 275,
-                attrMin: 138,
-                attrMax: 275,
-                attrTypeId: AttrTypeId.Volt
+                attr: 306,
+                attrMin: 153,
+                attrMax: 306,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'C028_60_03_001_01',
+                name: 'RハンターOMsS',
                 unitType: AttrTypeId.Sniper,
                 level: 40,
                 levelMin: 1,
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 297,
-                atkMin: 119,
-                atkMax: 297,
+                atk: 270,
+                atkMin: 108,
+                atkMax: 270,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 230,
-                attrMin: 92,
-                attrMax: 230,
-                attrTypeId: AttrTypeId.Volt
+                attr: 255,
+                attrMin: 102,
+                attrMax: 255,
+                attrTypeId: AttrTypeId.Gravity
             })
         ],
         short: [
@@ -39620,148 +39620,148 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Volt
             }),
             new Gear({
-                name: 'WC_C028_60_04_101_21',
+                name: 'ウアウプライヤS',
                 unitType: AttrTypeId.Hammer,
                 level: 80,
                 levelMin: 1,
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 515,
-                atkMin: 286,
-                atkMax: 515,
+                atk: 468,
+                atkMin: 260,
+                atkMax: 468,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 409,
-                attrMin: 409,
-                attrMax: 409,
-                attrTypeId: AttrTypeId.Volt
+                attr: 455,
+                attrMin: 455,
+                attrMax: 455,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_04_101_11',
+                name: 'ウォープライヤST型',
                 unitType: AttrTypeId.Hammer,
                 level: 75,
                 levelMin: 1,
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 486,
-                atkMin: 257,
-                atkMax: 486,
+                atk: 442,
+                atkMin: 234,
+                atkMax: 442,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 386,
-                attrMin: 386,
-                attrMax: 386,
-                attrTypeId: AttrTypeId.Volt
+                attr: 429,
+                attrMin: 429,
+                attrMax: 429,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_04_001_21',
+                name: 'ディガンマプライヤS',
                 unitType: AttrTypeId.Hammer,
                 level: 80,
                 levelMin: 1,
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 515,
-                atkMin: 286,
-                atkMax: 515,
+                atk: 468,
+                atkMin: 260,
+                atkMax: 468,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 409,
-                attrMin: 409,
-                attrMax: 409,
-                attrTypeId: AttrTypeId.Volt
+                attr: 455,
+                attrMin: 455,
+                attrMax: 455,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_04_001_11',
+                name: 'ウォープライヤS改',
                 unitType: AttrTypeId.Hammer,
                 level: 75,
                 levelMin: 1,
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 486,
-                atkMin: 257,
-                atkMax: 486,
+                atk: 442,
+                atkMin: 234,
+                atkMax: 442,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 386,
-                attrMin: 386,
-                attrMax: 386,
-                attrTypeId: AttrTypeId.Volt
+                attr: 429,
+                attrMin: 429,
+                attrMax: 429,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_04_001_01',
+                name: 'ウォープライヤS',
                 unitType: AttrTypeId.Hammer,
                 level: 70,
                 levelMin: 1,
                 levelMax: 70,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 458,
-                atkMin: 143,
-                atkMax: 458,
+                atk: 416,
+                atkMin: 130,
+                atkMax: 416,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 364,
-                attrMin: 364,
-                attrMax: 364,
-                attrTypeId: AttrTypeId.Volt
+                attr: 404,
+                attrMin: 404,
+                attrMax: 404,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_03_001_21',
+                name: 'ストラトリフターOMsS2',
                 unitType: AttrTypeId.Hammer,
                 level: 60,
                 levelMin: 1,
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 400,
-                atkMin: 229,
-                atkMax: 400,
+                atk: 364,
+                atkMin: 208,
+                atkMax: 364,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 318,
-                attrMin: 318,
-                attrMax: 318,
-                attrTypeId: AttrTypeId.Volt
+                attr: 354,
+                attrMin: 354,
+                attrMax: 354,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_03_001_11',
+                name: 'ストラトリフターOMsS改',
                 unitType: AttrTypeId.Hammer,
                 level: 50,
                 levelMin: 1,
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 343,
-                atkMin: 172,
-                atkMax: 343,
+                atk: 312,
+                atkMin: 156,
+                atkMax: 312,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 273,
-                attrMin: 273,
-                attrMax: 273,
-                attrTypeId: AttrTypeId.Volt
+                attr: 303,
+                attrMin: 303,
+                attrMax: 303,
+                attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'WC_C028_60_03_001_01',
+                name: 'ストラトリフターOMsS',
                 unitType: AttrTypeId.Hammer,
                 level: 40,
                 levelMin: 1,
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 286,
-                atkMin: 114,
-                atkMax: 286,
+                atk: 260,
+                atkMin: 104,
+                atkMax: 260,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 227,
-                attrMin: 227,
-                attrMax: 227,
-                attrTypeId: AttrTypeId.Volt
+                attr: 253,
+                attrMin: 253,
+                attrMax: 253,
+                attrTypeId: AttrTypeId.Gravity
             })
         ],
         top: [
@@ -39886,7 +39886,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EA_C028_60_04_21',
+                name: 'アルクイストS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
                 levelMin: 1,
@@ -39899,9 +39899,14 @@ export const ActressGears = {
                 def: 539,
                 defMin: 300,
                 defMax: 539,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.1)
+            ]
             }),
             new Gear({
-                name: 'EA_C028_60_04_11',
+                name: 'Alc004S/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
                 levelMin: 1,
@@ -39914,9 +39919,14 @@ export const ActressGears = {
                 def: 509,
                 defMin: 270,
                 defMax: 509,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.1)
+            ]
             }),
             new Gear({
-                name: 'EA_C028_60_04_01',
+                name: 'Alc003S/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 70,
                 levelMin: 1,
@@ -39929,9 +39939,14 @@ export const ActressGears = {
                 def: 479,
                 defMin: 150,
                 defMax: 479,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.07)
+            ]
             }),
             new Gear({
-                name: 'EA_C028_60_03_21',
+                name: '七七式OMsS2/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 60,
                 levelMin: 1,
@@ -39944,9 +39959,14 @@ export const ActressGears = {
                 def: 419,
                 defMin: 240,
                 defMax: 419,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.07)
+            ]
             }),
             new Gear({
-                name: 'EA_C028_60_03_11',
+                name: '七七式OMsS改/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 50,
                 levelMin: 1,
@@ -39959,9 +39979,14 @@ export const ActressGears = {
                 def: 359,
                 defMin: 180,
                 defMax: 359,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.07)
+            ]
             }),
             new Gear({
-                name: 'EA_C028_60_03_01',
+                name: '七七式OMsS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 40,
                 levelMin: 1,
@@ -39974,6 +39999,11 @@ export const ActressGears = {
                 def: 300,
                 defMin: 120,
                 defMax: 300,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15),
+                new Buff(AttrTypeId.Gravity, 0.05)
+            ]
             })
         ],
         bottom: [
@@ -40110,7 +40140,7 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'EL_C028_60_04_21',
+                name: 'アルクイストS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
                 levelMin: 1,
@@ -40126,9 +40156,13 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             }),
             new Gear({
-                name: 'EL_C028_60_04_11',
+                name: 'Alc004S/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
                 levelMin: 1,
@@ -40144,9 +40178,13 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             }),
             new Gear({
-                name: 'EL_C028_60_04_01',
+                name: 'Alc003S/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 70,
                 levelMin: 1,
@@ -40162,9 +40200,13 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             }),
             new Gear({
-                name: 'EL_C028_60_03_21',
+                name: '七八式OMsS2/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 60,
                 levelMin: 1,
@@ -40180,9 +40222,13 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             }),
             new Gear({
-                name: 'EL_C028_60_03_11',
+                name: '七八式OMsS改/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 50,
                 levelMin: 1,
@@ -40198,9 +40244,13 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             }),
             new Gear({
-                name: 'EL_C028_60_03_01',
+                name: '七八式OMsS/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 40,
                 levelMin: 1,
@@ -40216,6 +40266,10 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistGravity, 0.15),
+                new Buff(AttrTypeId.ResistVolt, -0.15)
+            ]
             })
         ]
     },
