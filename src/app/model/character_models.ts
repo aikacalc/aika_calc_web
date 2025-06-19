@@ -18246,6 +18246,200 @@ class NoelleFrancisca05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
 }
 
+class SashiharaNanami04 extends Character {
+    name: string = '佐士原 七海 ★3';
+    aid:number = 725;
+    cid: number = 727;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 590;
+    atkCloseMin: number = 168;
+    atkCloseMax: number = 590;
+    attrClose: number = 0;
+    atkShot: number = 578;
+    atkShotMin: number = 165;
+    atkShotMax: number = 578;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SashiharaNanami.long;
+    weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
+    equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
+    equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+}
+
+class SashiharaNanami05 extends Character {
+    name: string = '佐士原 七海 ★4';
+    aid:number = 725;
+    cid: number = 728;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 758;
+    atkCloseMin: number = 211;
+    atkCloseMax: number = 758;
+    attrClose: number = 0;
+    atkShot: number = 744;
+    atkShotMin: number = 207;
+    atkShotMax: number = 744;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Hammer, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SashiharaNanami.long;
+    weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
+    equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
+    equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+}
+
+class AohamaMakuri04 extends Character {
+    name: string = '蒼浜 麻駆理 ★3';
+    aid:number = 733;
+    cid: number = 735;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 490;
+    atkCloseMin: number = 140;
+    atkCloseMax: number = 490;
+    attrClose: number = 0;
+    atkShot: number = 490;
+    atkShotMin: number = 140;
+    atkShotMax: number = 490;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 80;
+    attrMax: number = 280;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AohamaMakuri.long;
+    weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
+    equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+}
+
+class AohamaMakuri05 extends Character {
+    name: string = '蒼浜 麻駆理 ★4';
+    aid:number = 733;
+    cid: number = 736;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 630;
+    atkShotMin: number = 175;
+    atkShotMax: number = 630;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.86),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AohamaMakuri.long;
+    weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
+    equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+}
+
 class TakahataNodoka01 extends Character {
     name: string = '高幡 のどか ★1';
     aid:number = 2175;
@@ -23711,6 +23905,8 @@ export const ActressNames: string[] = [
     'EmmaAshfield',
     'NicoleFrancisca',
     'NoelleFrancisca',
+    'SashiharaNanami',
+    'AohamaMakuri',
     'TakahataNodoka',
     'Gourai',
     'Stylet',
@@ -24139,6 +24335,10 @@ export const CharacterModels = {
     NoelleFrancisca02: new NoelleFrancisca02(),
     NoelleFrancisca04: new NoelleFrancisca04(),
     NoelleFrancisca05: new NoelleFrancisca05(),
+    SashiharaNanami04: new SashiharaNanami04(),
+    SashiharaNanami05: new SashiharaNanami05(),
+    AohamaMakuri04: new AohamaMakuri04(),
+    AohamaMakuri05: new AohamaMakuri05(),
     TakahataNodoka01: new TakahataNodoka01(),
     TakahataNodoka04: new TakahataNodoka04(),
     TakahataNodoka05: new TakahataNodoka05(),
