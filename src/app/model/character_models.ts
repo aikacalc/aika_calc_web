@@ -18248,7 +18248,7 @@ class NoelleFrancisca05 extends Character {
 
 class SashiharaNanami04 extends Character {
     name: string = '佐士原 七海 ★3';
-    aid:number = 725;
+    aid:number = 728;
     cid: number = 727;
     rare: number = 3;
     level: number = 60;
@@ -18296,8 +18296,8 @@ class SashiharaNanami04 extends Character {
 
 class SashiharaNanami05 extends Character {
     name: string = '佐士原 七海 ★4';
-    aid:number = 725;
-    cid: number = 728;
+    aid:number = 728;
+    cid: number = 729;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -18344,7 +18344,7 @@ class SashiharaNanami05 extends Character {
 
 class AohamaMakuri04 extends Character {
     name: string = '蒼浜 麻駆理 ★3';
-    aid:number = 733;
+    aid:number = 736;
     cid: number = 735;
     rare: number = 3;
     level: number = 60;
@@ -18393,8 +18393,8 @@ class AohamaMakuri04 extends Character {
 
 class AohamaMakuri05 extends Character {
     name: string = '蒼浜 麻駆理 ★4';
-    aid:number = 733;
-    cid: number = 736;
+    aid:number = 736;
+    cid: number = 737;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
