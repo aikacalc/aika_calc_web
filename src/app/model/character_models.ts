@@ -14737,6 +14737,55 @@ class AgatsumaKei05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
 }
 
+class AgatsumaKei70 extends Character {
+    name: string = '吾妻 京 / 濡羽 ★4';
+    aid:number = 405;
+    cid: number = 410;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 655;
+    atkCloseMin: number = 182;
+    atkCloseMax: number = 655;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.86),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Sword, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.AgatsumaKei.long;
+    weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
+    equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
+    equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+}
+
 class AngelicaGlazunova01 extends Character {
     name: string = 'アンジェリカ・G ★1';
     aid:number = 293;
@@ -24263,6 +24312,7 @@ export const CharacterModels = {
     AgatsumaKei02: new AgatsumaKei02(),
     AgatsumaKei04: new AgatsumaKei04(),
     AgatsumaKei05: new AgatsumaKei05(),
+    AgatsumaKei70: new AgatsumaKei70(),
     AngelicaGlazunova01: new AngelicaGlazunova01(),
     AngelicaGlazunova02: new AngelicaGlazunova02(),
     AngelicaGlazunova04: new AngelicaGlazunova04(),
