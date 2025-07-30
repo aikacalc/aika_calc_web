@@ -13575,6 +13575,251 @@ class KomazoiEden70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
 }
 
+class KanayaNeri01 extends Character {
+    name: string = '叶屋 寧里 ★1';
+    aid:number = 509;
+    cid: number = 508;
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 6;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 879;
+    hpMin: number = 364;
+    hpMax: number = 879;
+    atkClose: number = 149;
+    atkCloseMin: number = 60;
+    atkCloseMax: number = 149;
+    attrClose: number = 0;
+    atkShot: number = 149;
+    atkShotMin: number = 60;
+    atkShotMax: number = 149;
+    attrShot: number = 0;
+    def: number = 250;
+    defMin: number = 100;
+    defMax: number = 250;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 50;
+    attrMax: number = 125;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KanayaNeri.long;
+    weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
+    equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
+    equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+}
+
+class KanayaNeri02 extends Character {
+    name: string = '叶屋 寧里 ★2';
+    aid:number = 509;
+    cid: number = 510;
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1434;
+    hpMin: number = 515;
+    hpMax: number = 1434;
+    atkClose: number = 239;
+    atkCloseMin: number = 90;
+    atkCloseMax: number = 239;
+    attrClose: number = 0;
+    atkShot: number = 239;
+    atkShotMin: number = 90;
+    atkShotMax: number = 239;
+    attrShot: number = 0;
+    def: number = 400;
+    defMin: number = 150;
+    defMax: number = 400;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 75;
+    attrMax: number = 200;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KanayaNeri.long;
+    weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
+    equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
+    equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+}
+
+class KanayaNeri04 extends Character {
+    name: string = '叶屋 寧里 ★3';
+    aid:number = 509;
+    cid: number = 511;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2535;
+    hpMin: number = 697;
+    hpMax: number = 2535;
+    atkClose: number = 418;
+    atkCloseMin: number = 119;
+    atkCloseMax: number = 418;
+    attrClose: number = 0;
+    atkShot: number = 418;
+    atkShotMin: number = 119;
+    atkShotMax: number = 418;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KanayaNeri.long;
+    weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
+    equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
+    equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+}
+
+class KanayaNeri05 extends Character {
+    name: string = '叶屋 寧里 ★4';
+    aid:number = 509;
+    cid: number = 512;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 538;
+    atkShotMin: number = 149;
+    atkShotMax: number = 538;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.8),
+        new Buff(AttrTypeId.ResistGravity, -0.8),
+        new Buff(AttrTypeId.ResistFire, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Volt, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.KanayaNeri.long;
+    weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
+    equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
+    equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+}
+
+class KanayaNeri70 extends Character {
+    name: string = '叶屋 寧里 / 黒子 ★4';
+    aid:number = 509;
+    cid: number = 514;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 630;
+    atkShotMin: number = 175;
+    atkShotMax: number = 630;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.86),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Rifle, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KanayaNeri.long;
+    weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
+    equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
+    equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+}
+
 class RitaHenschel01 extends Character {
     name: string = 'リタ・H ★1';
     aid:number = 365;
@@ -23934,6 +24179,7 @@ export const ActressNames: string[] = [
     'OchanomizuMirie',
     'MerabuchiKanami',
     'KomazoiEden',
+    'KanayaNeri',
     'RitaHenschel',
     'OnagaAkino',
     'TatsumiRyuko',
@@ -24288,6 +24534,11 @@ export const CharacterModels = {
     KomazoiEden04: new KomazoiEden04(),
     KomazoiEden05: new KomazoiEden05(),
     KomazoiEden70: new KomazoiEden70(),
+    KanayaNeri01: new KanayaNeri01(),
+    KanayaNeri02: new KanayaNeri02(),
+    KanayaNeri04: new KanayaNeri04(),
+    KanayaNeri05: new KanayaNeri05(),
+    KanayaNeri70: new KanayaNeri70(),
     RitaHenschel01: new RitaHenschel01(),
     RitaHenschel02: new RitaHenschel02(),
     RitaHenschel04: new RitaHenschel04(),
