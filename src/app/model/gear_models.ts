@@ -4288,6 +4288,42 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
+                name: '',
+                unitType: AttrTypeId.Bazooka,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 413,
+                attrMin: 230,
+                attrMax: 413,
+                attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
+                name: '',
+                unitType: AttrTypeId.Bazooka,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Physical,
+                attr: 390,
+                attrMin: 207,
+                attrMax: 390,
+                attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
                 name: 'WS_C002_60_04_21',
                 unitType: AttrTypeId.Bazooka,
                 level: 80,
@@ -4295,14 +4331,14 @@ export const ActressGears = {
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 662,
-                atkMin: 368,
-                atkMax: 662,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 275,
-                attrMin: 153,
-                attrMax: 275,
+                attr: 413,
+                attrMin: 230,
+                attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4313,14 +4349,14 @@ export const ActressGears = {
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 625,
-                atkMin: 331,
-                atkMax: 625,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 260,
-                attrMin: 138,
-                attrMax: 260,
+                attr: 390,
+                attrMin: 207,
+                attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4331,14 +4367,14 @@ export const ActressGears = {
                 levelMax: 70,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 588,
-                atkMin: 184,
-                atkMax: 588,
+                atk: 462,
+                atkMin: 144,
+                atkMax: 462,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 245,
-                attrMin: 77,
-                attrMax: 245,
+                attr: 367,
+                attrMin: 115,
+                attrMax: 367,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4349,14 +4385,14 @@ export const ActressGears = {
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 515,
-                atkMin: 294,
-                atkMax: 515,
+                atk: 404,
+                atkMin: 231,
+                atkMax: 404,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 214,
-                attrMin: 122,
-                attrMax: 214,
+                attr: 321,
+                attrMin: 184,
+                attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4367,14 +4403,14 @@ export const ActressGears = {
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 441,
-                atkMin: 221,
-                atkMax: 441,
+                atk: 347,
+                atkMin: 173,
+                atkMax: 347,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 184,
-                attrMin: 92,
-                attrMax: 184,
+                attr: 275,
+                attrMin: 138,
+                attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4385,14 +4421,14 @@ export const ActressGears = {
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 368,
-                atkMin: 147,
-                atkMax: 368,
+                atk: 289,
+                atkMin: 116,
+                atkMax: 289,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 153,
-                attrMin: 61,
-                attrMax: 153,
+                attr: 230,
+                attrMin: 92,
+                attrMax: 230,
                 attrTypeId: AttrTypeId.Ice
             })
         ],
@@ -4693,14 +4729,14 @@ export const ActressGears = {
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 675,
-                atkMin: 375,
-                atkMax: 675,
+                atk: 530,
+                atkMin: 295,
+                atkMax: 530,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 275,
-                attrMin: 275,
-                attrMax: 275,
+                attr: 413,
+                attrMin: 413,
+                attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4711,14 +4747,14 @@ export const ActressGears = {
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 637,
-                atkMin: 337,
-                atkMax: 637,
+                atk: 501,
+                atkMin: 265,
+                atkMax: 501,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 260,
-                attrMin: 260,
-                attrMax: 260,
+                attr: 390,
+                attrMin: 390,
+                attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4729,14 +4765,14 @@ export const ActressGears = {
                 levelMax: 80,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 675,
-                atkMin: 375,
-                atkMax: 675,
+                atk: 530,
+                atkMin: 295,
+                atkMax: 530,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 275,
-                attrMin: 275,
-                attrMax: 275,
+                attr: 413,
+                attrMin: 413,
+                attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4747,14 +4783,14 @@ export const ActressGears = {
                 levelMax: 75,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 637,
-                atkMin: 337,
-                atkMax: 637,
+                atk: 501,
+                atkMin: 265,
+                atkMax: 501,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 260,
-                attrMin: 260,
-                attrMax: 260,
+                attr: 390,
+                attrMin: 390,
+                attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4765,14 +4801,14 @@ export const ActressGears = {
                 levelMax: 70,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 600,
-                atkMin: 187,
-                atkMax: 600,
+                atk: 471,
+                atkMin: 147,
+                atkMax: 471,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 245,
-                attrMin: 245,
-                attrMax: 245,
+                attr: 367,
+                attrMin: 367,
+                attrMax: 367,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4783,14 +4819,14 @@ export const ActressGears = {
                 levelMax: 60,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 525,
-                atkMin: 300,
-                atkMax: 525,
+                atk: 412,
+                atkMin: 236,
+                atkMax: 412,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 214,
-                attrMin: 214,
-                attrMax: 214,
+                attr: 321,
+                attrMin: 321,
+                attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4801,14 +4837,14 @@ export const ActressGears = {
                 levelMax: 50,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 450,
-                atkMin: 225,
-                atkMax: 450,
+                atk: 353,
+                atkMin: 177,
+                atkMax: 353,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 184,
-                attrMin: 184,
-                attrMax: 184,
+                attr: 275,
+                attrMin: 275,
+                attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
@@ -4819,14 +4855,14 @@ export const ActressGears = {
                 levelMax: 40,
                 gradeUp: 0,
                 gradeUpLimit: 99,
-                atk: 375,
-                atkMin: 150,
-                atkMax: 375,
+                atk: 295,
+                atkMin: 118,
+                atkMax: 295,
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
-                attr: 153,
-                attrMin: 153,
-                attrMax: 153,
+                attr: 230,
+                attrMin: 230,
+                attrMax: 230,
                 attrTypeId: AttrTypeId.Ice
             })
         ],
@@ -5045,6 +5081,11 @@ export const ActressGears = {
                 def: 584,
                 defMin: 324,
                 defMax: 584,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.15)
+            ]
             }),
             new Gear({
                 name: 'EA_C002_60_04_11',
@@ -5060,6 +5101,11 @@ export const ActressGears = {
                 def: 552,
                 defMin: 292,
                 defMax: 552,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.15)
+            ]
             }),
             new Gear({
                 name: 'EA_C002_60_04_01',
@@ -5075,6 +5121,11 @@ export const ActressGears = {
                 def: 519,
                 defMin: 162,
                 defMax: 519,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EA_C002_60_03_21',
@@ -5090,6 +5141,11 @@ export const ActressGears = {
                 def: 454,
                 defMin: 260,
                 defMax: 454,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EA_C002_60_03_11',
@@ -5105,6 +5161,11 @@ export const ActressGears = {
                 def: 389,
                 defMin: 195,
                 defMax: 389,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EA_C002_60_03_01',
@@ -5120,6 +5181,11 @@ export const ActressGears = {
                 def: 324,
                 defMin: 130,
                 defMax: 324,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.Close, 0.07)
+            ]
             })
         ],
         bottom: [
@@ -5370,6 +5436,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.15)
+            ]
             }),
             new Gear({
                 name: 'EL_C002_60_04_11',
@@ -5388,6 +5459,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.15)
+            ]
             }),
             new Gear({
                 name: 'EL_C002_60_04_01',
@@ -5406,6 +5482,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EL_C002_60_03_21',
@@ -5424,6 +5505,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EL_C002_60_03_11',
@@ -5442,6 +5528,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             }),
             new Gear({
                 name: 'EL_C002_60_03_01',
@@ -5460,6 +5551,11 @@ export const ActressGears = {
                 spd: 240,
                 spdMin: 240,
                 spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistIce, 0.15),
+                new Buff(AttrTypeId.ResistFire, -0.15),
+                new Buff(AttrTypeId.HP, 0.07)
+            ]
             })
         ]
     },
