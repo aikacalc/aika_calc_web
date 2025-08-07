@@ -1460,6 +1460,55 @@ class HimukaiRin80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
 }
 
+class HimukaiRin60 extends Character {
+    name: string = '日向 リン / チャリオット ★4';
+    aid:number = 11;
+    cid: number = 15;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 601;
+    atkCloseMin: number = 167;
+    atkCloseMax: number = 601;
+    attrClose: number = 0;
+    atkShot: number = 533;
+    atkShotMin: number = 148;
+    atkShotMax: number = 533;
+    attrShot: number = 0;
+    def: number = 927;
+    defMin: number = 258;
+    defMax: number = 927;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2.14;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.HimukaiRin.long;
+    weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
+    equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
+    equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+}
+
 class TakanashiRei01 extends Character {
     name: string = '小鳥遊 怜 ★1';
     aid:number = 20;
@@ -24285,6 +24334,7 @@ export const CharacterModels = {
     HimukaiRin05: new HimukaiRin05(),
     HimukaiRin70: new HimukaiRin70(),
     HimukaiRin80: new HimukaiRin80(),
+    HimukaiRin60: new HimukaiRin60(),
     TakanashiRei01: new TakanashiRei01(),
     TakanashiRei02: new TakanashiRei02(),
     TakanashiRei04: new TakanashiRei04(),
