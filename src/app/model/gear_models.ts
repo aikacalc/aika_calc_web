@@ -1574,21 +1574,6 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: 'EV00162_004/T TypeB',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1099,
-                hpMin: 426,
-                hpMax: 1099,
-                def: 321,
-                defMin: 129,
-                defMax: 321,
-            }),
-            new Gear({
                 name: 'ガネーシャカルバチョート/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
@@ -1870,24 +1855,6 @@ export const ActressGears = {
             })
         ],
         bottom: [
-            new Gear({
-                name: 'EV00162_004/B TypeB',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 733,
-                hpMin: 284,
-                hpMax: 733,
-                def: 214,
-                defMin: 86,
-                defMax: 214,
-                spd: 200,
-                spdMin: 200,
-                spdMax: 200,
-            }),
             new Gear({
                 name: 'ガネーシャカルバチョート/B',
                 unitType: AttrTypeId.EquipmentBottom,
@@ -7630,26 +7597,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, -0.15),
                 new Buff(AttrTypeId.Fire, 0.05)
             ]
-            }),
-            new Gear({
-                name: 'C010_SEC0607/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1791,
-                hpMin: 543,
-                hpMax: 1791,
-                def: 494,
-                defMin: 155,
-                defMax: 494,
-                buffs: [
-                new Buff(AttrTypeId.ResistFire, 0.1),
-                new Buff(AttrTypeId.ResistIce, -0.1),
-                new Buff(AttrTypeId.Fire, 0.07)
-            ]
             })
         ],
         bottom: [
@@ -7880,29 +7827,6 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistFire, 0.15),
                 new Buff(AttrTypeId.ResistIce, -0.15),
-                new Buff(AttrTypeId.HP, -0.1)
-            ]
-            }),
-            new Gear({
-                name: 'C010_SEC0607/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1218,
-                hpMin: 369,
-                hpMax: 1218,
-                def: 323,
-                defMin: 101,
-                defMax: 323,
-                spd: 280,
-                spdMin: 280,
-                spdMax: 280,
-                buffs: [
-                new Buff(AttrTypeId.ResistFire, 0.1),
-                new Buff(AttrTypeId.ResistIce, -0.1),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
             })
@@ -8585,26 +8509,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.Volt, 0.05)
             ]
-            }),
-            new Gear({
-                name: 'C009_SEC0607/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1808,
-                hpMin: 548,
-                hpMax: 1808,
-                def: 480,
-                defMin: 150,
-                defMax: 480,
-                buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
-                new Buff(AttrTypeId.Volt, 0.07)
-            ]
             })
         ],
         bottom: [
@@ -8836,29 +8740,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistVolt, 0.1),
                 new Buff(AttrTypeId.ResistGravity, -0.1),
                 new Buff(AttrTypeId.HP, 0.07)
-            ]
-            }),
-            new Gear({
-                name: 'C009_SEC0607/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1205,
-                hpMin: 365,
-                hpMax: 1205,
-                def: 320,
-                defMin: 100,
-                defMax: 320,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
-                buffs: [
-                new Buff(AttrTypeId.ResistVolt, 0.15),
-                new Buff(AttrTypeId.ResistGravity, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
             ]
             })
         ]
@@ -9482,26 +9363,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistFire, -0.15),
                 new Buff(AttrTypeId.Ice, 0.05)
             ]
-            }),
-            new Gear({
-                name: 'C013_SEC0607/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1719,
-                hpMin: 521,
-                hpMax: 1719,
-                def: 514,
-                defMin: 161,
-                defMax: 514,
-                buffs: [
-                new Buff(AttrTypeId.ResistIce, 0.1),
-                new Buff(AttrTypeId.ResistFire, -0.1),
-                new Buff(AttrTypeId.Ice, 0.07)
-            ]
             })
         ],
         bottom: [
@@ -9733,29 +9594,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15),
                 new Buff(AttrTypeId.HP, 0.07)
-            ]
-            }),
-            new Gear({
-                name: 'C013_SEC0607/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 70,
-                levelMin: 1,
-                levelMax: 70,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1146,
-                hpMin: 347,
-                hpMax: 1146,
-                def: 343,
-                defMin: 107,
-                defMax: 343,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
-                buffs: [
-                new Buff(AttrTypeId.ResistIce, 0.1),
-                new Buff(AttrTypeId.ResistFire, -0.1),
-                new Buff(AttrTypeId.HP, 0.1)
             ]
             })
         ]
@@ -20471,21 +20309,6 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: 'EV00162_039/T TypeA',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1144,
-                hpMin: 443,
-                hpMax: 1144,
-                def: 300,
-                defMin: 120,
-                defMax: 300,
-            }),
-            new Gear({
                 name: 'ダイコクBL/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
@@ -20807,24 +20630,6 @@ export const ActressGears = {
             })
         ],
         bottom: [
-            new Gear({
-                name: 'EV00162_039/B TypeA',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 763,
-                hpMin: 296,
-                hpMax: 763,
-                def: 200,
-                defMin: 80,
-                defMax: 200,
-                spd: 200,
-                spdMin: 200,
-                spdMax: 200,
-            }),
             new Gear({
                 name: 'ダイコクBL/B',
                 unitType: AttrTypeId.EquipmentBottom,
@@ -28301,42 +28106,6 @@ export const ActressGears = {
                 attr: 172,
                 attrMin: 172,
                 attrMax: 172,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
-                name: 'C050_SPR_101_21',
-                unitType: AttrTypeId.Spear,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 642,
-                atkMin: 357,
-                atkMax: 642,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 309,
-                attrMin: 309,
-                attrMax: 309,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
-                name: 'C050_SPR_101_11',
-                unitType: AttrTypeId.Spear,
-                level: 75,
-                levelMin: 1,
-                levelMax: 75,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 607,
-                atkMin: 321,
-                atkMax: 607,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 292,
-                attrMin: 292,
-                attrMax: 292,
                 attrTypeId: AttrTypeId.Gravity
             })
         ],
@@ -37472,52 +37241,6 @@ export const ActressGears = {
         ],
         bottom: [
             new Gear({
-                name: 'C45_04_101_21',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1415,
-                hpMin: 778,
-                hpMax: 1415,
-                def: 352,
-                defMin: 196,
-                defMax: 352,
-                spd: 280,
-                spdMin: 280,
-                spdMax: 280,
-                buffs: [
-                new Buff(AttrTypeId.ResistFire, 0.1),
-                new Buff(AttrTypeId.ResistIce, -0.1),
-                new Buff(AttrTypeId.HP, -0.1)
-            ]
-            }),
-            new Gear({
-                name: 'C45_04_101_11',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 75,
-                levelMin: 1,
-                levelMax: 75,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1337,
-                hpMin: 699,
-                hpMax: 1337,
-                def: 333,
-                defMin: 176,
-                defMax: 333,
-                spd: 280,
-                spdMin: 280,
-                spdMax: 280,
-                buffs: [
-                new Buff(AttrTypeId.ResistFire, 0.1),
-                new Buff(AttrTypeId.ResistIce, -0.1),
-                new Buff(AttrTypeId.HP, -0.1)
-            ]
-            }),
-            new Gear({
                 name: '74改修三一型/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 80,
@@ -42714,21 +42437,6 @@ export const ActressGears = {
         ],
         top: [
             new Gear({
-                name: 'EV00162_046/T TypeC',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1045,
-                hpMin: 405,
-                hpMax: 1045,
-                def: 328,
-                defMin: 131,
-                defMax: 328,
-            }),
-            new Gear({
                 name: 'HG-パンツァーKWS/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 80,
@@ -42850,24 +42558,6 @@ export const ActressGears = {
             })
         ],
         bottom: [
-            new Gear({
-                name: 'EV00162_046/B TypeC',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 40,
-                levelMin: 1,
-                levelMax: 40,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 697,
-                hpMin: 270,
-                hpMax: 697,
-                def: 218,
-                defMin: 87,
-                defMax: 218,
-                spd: 200,
-                spdMin: 200,
-                spdMax: 200,
-            }),
             new Gear({
                 name: 'HG-パンツァーKWS/B',
                 unitType: AttrTypeId.EquipmentBottom,
@@ -43549,24 +43239,6 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'ACT061_ライフル極',
-                unitType: AttrTypeId.Rifle,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 630,
-                atkMin: 350,
-                atkMax: 630,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Energy,
-                attr: 312,
-                attrMin: 173,
-                attrMax: 312,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
                 name: 'ラタトスクB8',
                 unitType: AttrTypeId.Rifle,
                 level: 75,
@@ -43613,24 +43285,6 @@ export const ActressGears = {
                 atk: 495,
                 atkMin: 283,
                 atkMax: 495,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Energy,
-                attr: 243,
-                attrMin: 139,
-                attrMax: 243,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
-                name: 'ACT061_ライフルX極',
-                unitType: AttrTypeId.Rifle,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 490,
-                atkMin: 280,
-                atkMax: 490,
                 atkTypeId: AttrTypeId.Shot,
                 atkAmmoTypeId: AttrTypeId.Energy,
                 attr: 243,
@@ -43695,24 +43349,6 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: 'ACT061_片手剣極',
-                unitType: AttrTypeId.Dagger,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 636,
-                atkMin: 353,
-                atkMax: 636,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 312,
-                attrMin: 312,
-                attrMax: 312,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
                 name: 'ナーストレンドMk2',
                 unitType: AttrTypeId.Dagger,
                 level: 75,
@@ -43750,24 +43386,6 @@ export const ActressGears = {
             }),
             new Gear({
                 name: 'ガントレットTRsMk3',
-                unitType: AttrTypeId.Dagger,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 495,
-                atkMin: 283,
-                atkMax: 495,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 243,
-                attrMin: 243,
-                attrMax: 243,
-                attrTypeId: AttrTypeId.Gravity
-            }),
-            new Gear({
-                name: '試製ACT061_片手剣極',
                 unitType: AttrTypeId.Dagger,
                 level: 60,
                 levelMin: 1,
@@ -43843,21 +43461,6 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'ACT061_4Y/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1961,
-                hpMin: 1077,
-                hpMax: 1961,
-                def: 573,
-                defMin: 318,
-                defMax: 573,
-            }),
-            new Gear({
                 name: 'ニーズヘッグA/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
@@ -43916,21 +43519,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistVolt, -0.1),
                 new Buff(AttrTypeId.Gravity, 0.07)
             ]
-            }),
-            new Gear({
-                name: 'ACT061_3B/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1519,
-                hpMin: 859,
-                hpMax: 1519,
-                def: 446,
-                defMin: 255,
-                defMax: 446,
             }),
             new Gear({
                 name: '一〇式D型TRs甲/T',
@@ -43997,24 +43585,6 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'ACT061_4Y/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1307,
-                hpMin: 718,
-                hpMax: 1307,
-                def: 382,
-                defMin: 212,
-                defMax: 382,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
-            }),
-            new Gear({
                 name: 'ニーズヘッグA/B',
                 unitType: AttrTypeId.EquipmentBottom,
                 level: 75,
@@ -44079,24 +43649,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1)
             ]
-            }),
-            new Gear({
-                name: 'ACT061_3B/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1013,
-                hpMin: 573,
-                hpMax: 1013,
-                def: 297,
-                defMin: 170,
-                defMax: 297,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
             }),
             new Gear({
                 name: 'MN404TRsG1/B',
@@ -44201,24 +43753,6 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'ACT076_ライフル極',
-                unitType: AttrTypeId.Rifle,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 675,
-                atkMin: 375,
-                atkMax: 675,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 273,
-                attrMin: 152,
-                attrMax: 273,
-                attrTypeId: AttrTypeId.Fire
-            }),
-            new Gear({
                 name: 'グリンカムビMk2',
                 unitType: AttrTypeId.Rifle,
                 level: 75,
@@ -44270,24 +43804,6 @@ export const ActressGears = {
                 attr: 361,
                 attrMin: 206,
                 attrMax: 361,
-                attrTypeId: AttrTypeId.Fire
-            }),
-            new Gear({
-                name: 'ACT076_ライフルX極',
-                unitType: AttrTypeId.Rifle,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 525,
-                atkMin: 300,
-                atkMax: 525,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 212,
-                attrMin: 121,
-                attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -44347,24 +43863,6 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
-                name: 'ACT076_ランス極',
-                unitType: AttrTypeId.Spear,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 681,
-                atkMin: 379,
-                atkMax: 681,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 273,
-                attrMin: 273,
-                attrMax: 273,
-                attrTypeId: AttrTypeId.Fire
-            }),
-            new Gear({
                 name: 'レクトゥリクスMk2',
                 unitType: AttrTypeId.Spear,
                 level: 75,
@@ -44416,24 +43914,6 @@ export const ActressGears = {
                 attr: 361,
                 attrMin: 361,
                 attrMax: 361,
-                attrTypeId: AttrTypeId.Fire
-            }),
-            new Gear({
-                name: '試製ACT076_ランス極',
-                unitType: AttrTypeId.Spear,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 530,
-                atkMin: 303,
-                atkMax: 530,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 212,
-                attrMin: 212,
-                attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
             new Gear({
@@ -44495,21 +43975,6 @@ export const ActressGears = {
             ]
             }),
             new Gear({
-                name: 'ACT076_4Y/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 2103,
-                hpMin: 1155,
-                hpMax: 2103,
-                def: 534,
-                defMin: 297,
-                defMax: 534,
-            }),
-            new Gear({
                 name: 'フレスベルグC/T',
                 unitType: AttrTypeId.EquipmentTop,
                 level: 75,
@@ -44568,21 +44033,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, -0.15),
                 new Buff(AttrTypeId.Fire, 0.07)
             ]
-            }),
-            new Gear({
-                name: 'ACT076_3B/T',
-                unitType: AttrTypeId.EquipmentTop,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1629,
-                hpMin: 922,
-                hpMax: 1629,
-                def: 415,
-                defMin: 237,
-                defMax: 415,
             }),
             new Gear({
                 name: 'ペレグリーネOKsMk2/T',
@@ -44648,24 +44098,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, -0.15),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
-            }),
-            new Gear({
-                name: 'ACT076_4Y/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1402,
-                hpMin: 770,
-                hpMax: 1402,
-                def: 356,
-                defMin: 198,
-                defMax: 356,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
             }),
             new Gear({
                 name: 'フレスベルグC/B',
@@ -44735,24 +44167,6 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, -0.15),
                 new Buff(AttrTypeId.HP, -0.1)
             ]
-            }),
-            new Gear({
-                name: 'ACT076_3B/B',
-                unitType: AttrTypeId.EquipmentBottom,
-                level: 60,
-                levelMin: 1,
-                levelMax: 60,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                hp: 1086,
-                hpMin: 614,
-                hpMax: 1086,
-                def: 277,
-                defMin: 158,
-                defMax: 277,
-                spd: 240,
-                spdMin: 240,
-                spdMax: 240,
             }),
             new Gear({
                 name: 'ペレグリーネOKsMk2/B',
@@ -56013,42 +55427,6 @@ export const ActressGears = {
         ],
         short: [
             new Gear({
-                name: 'CB1_c603_02',
-                unitType: AttrTypeId.Spear,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 545,
-                atkMin: 303,
-                atkMax: 545,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 374,
-                attrMin: 374,
-                attrMax: 374,
-                attrTypeId: AttrTypeId.Volt
-            }),
-            new Gear({
-                name: 'CB1_c603_01',
-                unitType: AttrTypeId.Spear,
-                level: 75,
-                levelMin: 1,
-                levelMax: 75,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 515,
-                atkMin: 273,
-                atkMax: 515,
-                atkTypeId: AttrTypeId.Close,
-                atkAmmoTypeId: AttrTypeId.Slash,
-                attr: 354,
-                attrMin: 354,
-                attrMax: 354,
-                attrTypeId: AttrTypeId.Volt
-            }),
-            new Gear({
                 name: 'ガンブレードランスS',
                 unitType: AttrTypeId.Spear,
                 level: 80,
@@ -60896,42 +60274,6 @@ export const ActressGears = {
     },
     MiyafujiYoshika: {
         long: [
-            new Gear({
-                name: 'G2_WS_c606_02',
-                unitType: AttrTypeId.Rifle,
-                level: 80,
-                levelMin: 1,
-                levelMax: 80,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 545,
-                atkMin: 303,
-                atkMax: 545,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 374,
-                attrMin: 208,
-                attrMax: 374,
-                attrTypeId: AttrTypeId.Volt
-            }),
-            new Gear({
-                name: 'G2_WS_c606_01',
-                unitType: AttrTypeId.Rifle,
-                level: 75,
-                levelMin: 1,
-                levelMax: 75,
-                gradeUp: 0,
-                gradeUpLimit: 99,
-                atk: 515,
-                atkMin: 273,
-                atkMax: 515,
-                atkTypeId: AttrTypeId.Shot,
-                atkAmmoTypeId: AttrTypeId.Physical,
-                attr: 354,
-                attrMin: 187,
-                attrMax: 354,
-                attrTypeId: AttrTypeId.Volt
-            }),
             new Gear({
                 name: '九九式二号二型改機関銃',
                 unitType: AttrTypeId.Rifle,
