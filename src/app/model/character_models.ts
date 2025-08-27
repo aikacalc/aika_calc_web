@@ -20340,6 +20340,104 @@ class PerrineHClostermann05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
 }
 
+class MinnaDietlindeWilcke04 extends Character {
+    name: string = 'ミーナ・W ★3';
+    aid:number = 2271;
+    cid: number = 2270;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2610;
+    hpMin: number = 718;
+    hpMax: number = 2610;
+    atkClose: number = 445;
+    atkCloseMin: number = 127;
+    atkCloseMax: number = 445;
+    attrClose: number = 0;
+    atkShot: number = 454;
+    atkShotMin: number = 130;
+    atkShotMax: number = 454;
+    attrShot: number = 0;
+    def: number = 714;
+    defMin: number = 204;
+    defMax: number = 714;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MinnaDietlindeWilcke.long;
+    weaponCloses: Gear[] = ActressGears.MinnaDietlindeWilcke.short;
+    equipmentTops: Gear[] = ActressGears.MinnaDietlindeWilcke.top;
+    equipmentBottoms: Gear[] = ActressGears.MinnaDietlindeWilcke.bottom;
+}
+
+class MinnaDietlindeWilcke05 extends Character {
+    name: string = 'ミーナ・W ★4';
+    aid:number = 2271;
+    cid: number = 2272;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 573;
+    atkCloseMin: number = 159;
+    atkCloseMax: number = 573;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.MinnaDietlindeWilcke.long;
+    weaponCloses: Gear[] = ActressGears.MinnaDietlindeWilcke.short;
+    equipmentTops: Gear[] = ActressGears.MinnaDietlindeWilcke.top;
+    equipmentBottoms: Gear[] = ActressGears.MinnaDietlindeWilcke.bottom;
+}
+
 class GertrudBarkhorn04 extends Character {
     name: string = 'ゲルトルート・B ★3';
     aid:number = 2020;
@@ -20726,6 +20824,200 @@ class CharlotteEYeager05 extends Character {
     weaponCloses: Gear[] = ActressGears.CharlotteEYeager.short;
     equipmentTops: Gear[] = ActressGears.CharlotteEYeager.top;
     equipmentBottoms: Gear[] = ActressGears.CharlotteEYeager.bottom;
+}
+
+class SanyaVLitvyak04 extends Character {
+    name: string = 'サーニャ・L ★3';
+    aid:number = 2274;
+    cid: number = 2273;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2585;
+    hpMin: number = 711;
+    hpMax: number = 2585;
+    atkClose: number = 578;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 167;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SanyaVLitvyak.long;
+    weaponCloses: Gear[] = ActressGears.SanyaVLitvyak.short;
+    equipmentTops: Gear[] = ActressGears.SanyaVLitvyak.top;
+    equipmentBottoms: Gear[] = ActressGears.SanyaVLitvyak.bottom;
+}
+
+class SanyaVLitvyak05 extends Character {
+    name: string = 'サーニャ・L ★4';
+    aid:number = 2274;
+    cid: number = 2275;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 744;
+    atkCloseMin: number = 207;
+    atkCloseMax: number = 744;
+    attrClose: number = 0;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 162;
+    spdMin: number = 162;
+    spdMax: number = 162;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SanyaVLitvyak.long;
+    weaponCloses: Gear[] = ActressGears.SanyaVLitvyak.short;
+    equipmentTops: Gear[] = ActressGears.SanyaVLitvyak.top;
+    equipmentBottoms: Gear[] = ActressGears.SanyaVLitvyak.bottom;
+}
+
+class EilaIlmatarJuutilainen04 extends Character {
+    name: string = 'エイラ・J ★3';
+    aid:number = 2277;
+    cid: number = 2276;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2560;
+    hpMin: number = 704;
+    hpMax: number = 2560;
+    atkClose: number = 454;
+    atkCloseMin: number = 130;
+    atkCloseMax: number = 454;
+    attrClose: number = 0;
+    atkShot: number = 459;
+    atkShotMin: number = 131;
+    atkShotMax: number = 459;
+    attrShot: number = 0;
+    def: number = 686;
+    defMin: number = 196;
+    defMax: number = 686;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 90;
+    attrMax: number = 315;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EilaIlmatarJuutilainen.long;
+    weaponCloses: Gear[] = ActressGears.EilaIlmatarJuutilainen.short;
+    equipmentTops: Gear[] = ActressGears.EilaIlmatarJuutilainen.top;
+    equipmentBottoms: Gear[] = ActressGears.EilaIlmatarJuutilainen.bottom;
+}
+
+class EilaIlmatarJuutilainen05 extends Character {
+    name: string = 'エイラ・J ★4';
+    aid:number = 2277;
+    cid: number = 2278;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 584;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 590;
+    atkShotMin: number = 164;
+    atkShotMax: number = 590;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.25),
+        new Buff(AttrTypeId.HandGun, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.EilaIlmatarJuutilainen.long;
+    weaponCloses: Gear[] = ActressGears.EilaIlmatarJuutilainen.short;
+    equipmentTops: Gear[] = ActressGears.EilaIlmatarJuutilainen.top;
+    equipmentBottoms: Gear[] = ActressGears.EilaIlmatarJuutilainen.bottom;
 }
 
 class HoshitsukiMiki04 extends Character {
@@ -24265,10 +24557,13 @@ export const ActressNames: string[] = [
     'SakamotoMio',
     'LynetteBishop',
     'PerrineHClostermann',
+    'MinnaDietlindeWilcke',
     'GertrudBarkhorn',
     'EricaHartmann',
     'FrancescaLucchini',
     'CharlotteEYeager',
+    'SanyaVLitvyak',
+    'EilaIlmatarJuutilainen',
     'HoshitsukiMiki',
     'NarumiHaruka',
     'AmanoNozomi',
@@ -24722,6 +25017,8 @@ export const CharacterModels = {
     LynetteBishop05: new LynetteBishop05(),
     PerrineHClostermann04: new PerrineHClostermann04(),
     PerrineHClostermann05: new PerrineHClostermann05(),
+    MinnaDietlindeWilcke04: new MinnaDietlindeWilcke04(),
+    MinnaDietlindeWilcke05: new MinnaDietlindeWilcke05(),
     GertrudBarkhorn04: new GertrudBarkhorn04(),
     GertrudBarkhorn05: new GertrudBarkhorn05(),
     EricaHartmann04: new EricaHartmann04(),
@@ -24730,6 +25027,10 @@ export const CharacterModels = {
     FrancescaLucchini05: new FrancescaLucchini05(),
     CharlotteEYeager04: new CharlotteEYeager04(),
     CharlotteEYeager05: new CharlotteEYeager05(),
+    SanyaVLitvyak04: new SanyaVLitvyak04(),
+    SanyaVLitvyak05: new SanyaVLitvyak05(),
+    EilaIlmatarJuutilainen04: new EilaIlmatarJuutilainen04(),
+    EilaIlmatarJuutilainen05: new EilaIlmatarJuutilainen05(),
     HoshitsukiMiki04: new HoshitsukiMiki04(),
     HoshitsukiMiki05: new HoshitsukiMiki05(),
     HoshitsukiMiki70: new HoshitsukiMiki70(),
