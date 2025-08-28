@@ -62727,7 +62727,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '初期装備677/重力',
+                name: 'MG42機関銃【D】',
                 unitType: AttrTypeId.Rifle,
                 level: 2,
                 levelMin: 1,
@@ -62855,7 +62855,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Gravity
             }),
             new Gear({
-                name: '初期装備677/重力',
+                name: 'PPK【D】',
                 unitType: AttrTypeId.HandGun,
                 level: 2,
                 levelMin: 1,
@@ -62993,6 +62993,21 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistVolt, -0.15),
                 new Buff(AttrTypeId.Gravity, 0.05)
             ]
+            }),
+            new Gear({
+                name: 'クラヴァッテ章【D】',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 414,
+                hpMin: 216,
+                hpMax: 414,
+                def: 120,
+                defMin: 60,
+                defMax: 120,
             })
         ],
         bottom: [
@@ -63127,6 +63142,24 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15)
             ]
+            }),
+            new Gear({
+                name: 'Bf109G-2【D】',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 276,
+                hpMin: 144,
+                hpMax: 276,
+                def: 80,
+                defMin: 40,
+                defMax: 80,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -65519,7 +65552,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '初期装備678/冷撃',
+                name: 'フリーガーハマー【D】',
                 unitType: AttrTypeId.Bazooka,
                 level: 2,
                 levelMin: 1,
@@ -65647,7 +65680,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '初期装備678/冷撃',
+                name: 'PPK【D】',
                 unitType: AttrTypeId.HandGun,
                 level: 2,
                 levelMin: 1,
@@ -65785,6 +65818,21 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistFire, -0.1),
                 new Buff(AttrTypeId.Ice, 0.05)
             ]
+            }),
+            new Gear({
+                name: '黒猫章【D】',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 414,
+                hpMin: 216,
+                hpMax: 414,
+                def: 120,
+                defMin: 60,
+                defMax: 120,
             })
         ],
         bottom: [
@@ -65919,6 +65967,24 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, 0.1),
                 new Buff(AttrTypeId.ResistFire, -0.1)
             ]
+            }),
+            new Gear({
+                name: 'MiG60【D】',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 276,
+                hpMin: 144,
+                hpMax: 276,
+                def: 80,
+                defMin: 40,
+                defMax: 80,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
@@ -66033,7 +66099,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '初期装備679/冷撃',
+                name: 'MG42機関銃【D】',
                 unitType: AttrTypeId.Rifle,
                 level: 2,
                 levelMin: 1,
@@ -66161,7 +66227,7 @@ export const ActressGears = {
                 attrTypeId: AttrTypeId.Ice
             }),
             new Gear({
-                name: '初期装備679/冷撃',
+                name: 'スオムスM1931【D】',
                 unitType: AttrTypeId.HandGun,
                 level: 2,
                 levelMin: 1,
@@ -66299,6 +66365,21 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistFire, -0.15),
                 new Buff(AttrTypeId.Ice, 0.05)
             ]
+            }),
+            new Gear({
+                name: '黒狐章【D】',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 414,
+                hpMin: 216,
+                hpMax: 414,
+                def: 120,
+                defMin: 60,
+                defMax: 120,
             })
         ],
         bottom: [
@@ -66433,6 +66514,24 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
             ]
+            }),
+            new Gear({
+                name: 'Bf109G-2【D】',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 15,
+                levelMin: 1,
+                levelMax: 15,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 276,
+                hpMin: 144,
+                hpMax: 276,
+                def: 80,
+                defMin: 40,
+                defMax: 80,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
             })
         ]
     },
