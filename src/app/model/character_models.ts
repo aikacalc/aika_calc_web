@@ -18001,6 +18001,247 @@ class AdelaideBluthausen70 extends Character {
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
 }
 
+class AdelaideBluthausen60 extends Character {
+    name: string = 'アデライーデ / プリーステス ★4';
+    aid:number = 549;
+    cid: number = 553;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 595;
+    atkShotMin: number = 165;
+    atkShotMax: number = 595;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 165;
+    spdMin: number = 165;
+    spdMax: number = 165;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sniper, 0.35),
+        new Buff(AttrTypeId.Spear, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.AdelaideBluthausen.long;
+    weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
+    equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
+    equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+}
+
+class LiliShahar01 extends Character {
+    name: string = 'リリ・S ★1';
+    aid:number = 557;
+    cid: number = 556;
+    rare: number = 1;
+    level: number = 15;
+    levelMin: number = 13;
+    levelMax: number = 15;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 861;
+    hpMin: number = 356;
+    hpMax: number = 861;
+    atkClose: number = 213;
+    atkCloseMin: number = 85;
+    atkCloseMax: number = 213;
+    attrClose: number = 0;
+    atkShot: number = 209;
+    atkShotMin: number = 83;
+    atkShotMax: number = 209;
+    attrShot: number = 0;
+    def: number = 253;
+    defMin: number = 101;
+    defMax: number = 253;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 34;
+    attrMax: number = 85;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.LiliShahar.long;
+    weaponCloses: Gear[] = ActressGears.LiliShahar.short;
+    equipmentTops: Gear[] = ActressGears.LiliShahar.top;
+    equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+}
+
+class LiliShahar02 extends Character {
+    name: string = 'リリ・S ★2';
+    aid:number = 557;
+    cid: number = 558;
+    rare: number = 2;
+    level: number = 30;
+    levelMin: number = 1;
+    levelMax: number = 30;
+    gradeUpLimit: number = 40;
+    gradeupPowUpRate: number = 50;
+    hp: number = 1406;
+    hpMin: number = 505;
+    hpMax: number = 1406;
+    atkClose: number = 340;
+    atkCloseMin: number = 128;
+    atkCloseMax: number = 340;
+    attrClose: number = 0;
+    atkShot: number = 334;
+    atkShotMin: number = 125;
+    atkShotMax: number = 334;
+    attrShot: number = 0;
+    def: number = 404;
+    defMin: number = 152;
+    defMax: number = 404;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 51;
+    attrMax: number = 136;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.LiliShahar.long;
+    weaponCloses: Gear[] = ActressGears.LiliShahar.short;
+    equipmentTops: Gear[] = ActressGears.LiliShahar.top;
+    equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+}
+
+class LiliShahar04 extends Character {
+    name: string = 'リリ・S ★3';
+    aid:number = 557;
+    cid: number = 559;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 20;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2485;
+    hpMin: number = 683;
+    hpMax: number = 2485;
+    atkClose: number = 595;
+    atkCloseMin: number = 170;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 167;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 68;
+    attrMax: number = 238;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.LiliShahar.long;
+    weaponCloses: Gear[] = ActressGears.LiliShahar.short;
+    equipmentTops: Gear[] = ActressGears.LiliShahar.top;
+    equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+}
+
+class LiliShahar05 extends Character {
+    name: string = 'リリ・S ★4';
+    aid:number = 557;
+    cid: number = 560;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 751;
+    atkShotMin: number = 209;
+    atkShotMax: number = 751;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.56),
+        new Buff(AttrTypeId.Dagger, 0.25),
+        new Buff(AttrTypeId.Rifle, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.LiliShahar.long;
+    weaponCloses: Gear[] = ActressGears.LiliShahar.short;
+    equipmentTops: Gear[] = ActressGears.LiliShahar.top;
+    equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+}
+
 class EmmaAshfield01 extends Character {
     name: string = 'エマ・A ★1';
     aid:number = 565;
@@ -24538,6 +24779,7 @@ export const ActressNames: string[] = [
     'KasugaokaMoe',
     'AsumaIsami',
     'AdelaideBluthausen',
+    'LiliShahar',
     'EmmaAshfield',
     'NicoleFrancisca',
     'NoelleFrancisca',
@@ -24969,6 +25211,11 @@ export const CharacterModels = {
     AdelaideBluthausen04: new AdelaideBluthausen04(),
     AdelaideBluthausen05: new AdelaideBluthausen05(),
     AdelaideBluthausen70: new AdelaideBluthausen70(),
+    AdelaideBluthausen60: new AdelaideBluthausen60(),
+    LiliShahar01: new LiliShahar01(),
+    LiliShahar02: new LiliShahar02(),
+    LiliShahar04: new LiliShahar04(),
+    LiliShahar05: new LiliShahar05(),
     EmmaAshfield01: new EmmaAshfield01(),
     EmmaAshfield02: new EmmaAshfield02(),
     EmmaAshfield04: new EmmaAshfield04(),
