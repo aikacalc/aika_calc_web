@@ -91,6 +91,8 @@ export class AikaGachaCalcComponent implements OnInit {
             }
         });
 
+        // 載入儲存的選擇結果
+        this.loadSelection();
 
         // console.log(this.characterModels);
     }
@@ -130,17 +132,22 @@ export class AikaGachaCalcComponent implements OnInit {
             }
             this.lastSelectedIndex = currentIndex;
         }
+
+        // 儲存選擇結果
+        this.saveSelection();
     }
 
     selectAll() {
         this.characterModels.forEach(cm => {
             this.selectedCharacterId.add(cm.cid);
         });
+        this.saveSelection();
     }
 
     selectNone() {
         this.selectedCharacterId.clear();
         this.lastSelectedIndex = -1;
+        this.saveSelection();
     }
 
     invertSelection() {
@@ -151,6 +158,7 @@ export class AikaGachaCalcComponent implements OnInit {
                 this.selectedCharacterId.add(cm.cid);
             }
         });
+        this.saveSelection();
     }
 
     onCharacterMouseEnter(cm: Character) {
@@ -200,5 +208,61 @@ export class AikaGachaCalcComponent implements OnInit {
             event.stopPropagation();
             return;
         }
+    }
+
+    // 儲存選擇結果到 localStorage
+    private saveSelection(): void {
+        try {
+            const selectionData = {
+                selectedCharacterIds: Array.from(this.selectedCharacterId),
+                lastSelectedIndex: this.lastSelectedIndex,
+                timestamp: Date.now()
+            };
+            localStorage.setItem('aika-gacha-calc-selection', JSON.stringify(selectionData));
+        } catch (error) {
+            console.warn('無法儲存選擇結果:', error);
+        }
+    }
+
+    // 從 localStorage 載入選擇結果
+    private loadSelection(): void {
+        try {
+            const savedData = localStorage.getItem('aika-gacha-calc-selection');
+            if (savedData) {
+                const selectionData = JSON.parse(savedData);
+
+                // 驗證資料有效性
+                if (selectionData && Array.isArray(selectionData.selectedCharacterIds)) {
+                    // 只載入有效的角色ID（確保角色還存在）
+                    const validCharacterIds = this.characterModels.map(cm => cm.cid);
+
+                    this.selectedCharacterId.clear();
+                    selectionData.selectedCharacterIds.forEach((cid: number) => {
+                        if (validCharacterIds.includes(cid)) {
+                            this.selectedCharacterId.add(cid);
+                        }
+                    });
+
+                    // 恢復最後選擇的索引（如果有效的話）
+                    if (typeof selectionData.lastSelectedIndex === 'number' &&
+                        selectionData.lastSelectedIndex >= 0 &&
+                        selectionData.lastSelectedIndex < this.characterModels.length) {
+                        this.lastSelectedIndex = selectionData.lastSelectedIndex;
+                    }
+
+                    console.log(`載入了 ${this.selectedCharacterId.size} 個角色的選擇狀態`);
+                }
+            }
+        } catch (error) {
+            console.warn('無法載入選擇結果:', error);
+            // 如果載入失敗，清除可能損壞的資料
+            localStorage.removeItem('aika-gacha-calc-selection');
+        }
+    }
+
+    // 清除儲存的選擇結果
+    clearSavedSelection(): void {
+        localStorage.removeItem('aika-gacha-calc-selection');
+        console.log('已清除儲存的選擇記錄');
     }
 }

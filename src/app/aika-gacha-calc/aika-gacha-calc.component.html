@@ -3,6 +3,7 @@
         <button (click)="selectAll()">全選</button>
         <button (click)="selectNone()">取消全選</button>
         <button (click)="invertSelection()">反選</button>
+        <button (click)="clearSavedSelection()" title="清除儲存的選擇記錄">清除儲存</button>
         <p>shift多選/取消 - 依照第一個選擇的角色(橘框)</p>
         <span class="selection-info">{{selectedCharacterId.size}} / {{characterModels.length}} ({{getSelectionPercentage()}}%)</span>
     </div>
