@@ -1,0 +1,123 @@
+.aika-gacha-calc {
+    // 防止雙擊縮放
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .control-buttons {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+
+        button {
+            padding: 8px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: #e7f1ff;
+                border-color: #007bff;
+            }
+
+            &:active {
+                background-color: #cde1ff;
+            }
+        }
+
+        .selection-info {
+            font-size: 18px;
+            margin-left: auto;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+
+    .character-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        // max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .character {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        opacity: 0.5;
+        transition: opacity 0.1s ease;
+
+        // 防止雙擊縮放和長按選單
+        touch-action: manipulation;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        .name {
+            user-select: text;
+        }
+
+        &.selected {
+            border-color: #007bff;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            background-color: #e7f1ff;
+            opacity: 1;
+        }
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            background-color: #eef6ff;
+        }
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 5px;
+    }
+
+    .picture {
+        width: 192px * 0.5;
+        height: 360px * 0.5;
+        object-fit: cover;
+        border-radius: 10%;
+        margin-top: 5px;
+
+        // 防止圖片拖拽和長按儲存
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .name {
+        padding-top: 10px;
+        height: 50px;
+        font-size: 13px;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}

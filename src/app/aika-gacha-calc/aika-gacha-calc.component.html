@@ -1,0 +1,28 @@
+<div class="aika-gacha-calc">
+    <div class="control-buttons">
+        <button (click)="selectAll()">全選</button>
+        <button (click)="selectNone()">取消全選</button>
+        <button (click)="invertSelection()">反選</button>
+        <p>shift多選, ctrl滑過反選</p>
+        <span class="selection-info">{{selectedCharacterId.size}} / {{characterModels.length}} ({{getSelectionPercentage()}}%)</span>
+    </div>
+    <div class="character-list">
+        <div class="character" *ngFor="let cm of characterModels"
+        [ngClass]="{'selected': selectedCharacterId.has(cm.cid)}"
+        (click)="toggleSelectCharacter(cm, $event)"
+        (mouseenter)="onCharacterMouseEnter(cm)"
+        (contextmenu)="preventDefault($event)"
+        (dblclick)="preventDefault($event)"
+        (touchstart)="onTouchStart($event)"
+        (touchend)="onTouchEnd($event)"
+        [title]="cm.name + (checkIsCollaboCharacter(cm) ? ' (Collabo)' : '')">
+            <!-- w192, h360 -->
+            <img class="picture" *ngIf="characterPicturesMap[cm.cid]"
+                 [src]="characterPicturesMap[cm.cid].imageUrl"
+                 (contextmenu)="preventDefault($event)"
+                 (dragstart)="preventDefault($event)"
+                 draggable="false" />
+            <span class="name">{{cm.name}}</span>
+        </div>
+    </div>
+</div>
