@@ -3,7 +3,7 @@
         <button (click)="selectAll()">全選</button>
         <button (click)="selectNone()">取消全選</button>
         <button (click)="invertSelection()">反選</button>
-        <p>shift多選, ctrl滑過反選</p>
+        <p>shift多選</p>
         <span class="selection-info">{{selectedCharacterId.size}} / {{characterModels.length}} ({{getSelectionPercentage()}}%)</span>
     </div>
     <div class="character-list">
