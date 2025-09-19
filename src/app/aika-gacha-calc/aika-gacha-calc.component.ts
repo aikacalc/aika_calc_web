@@ -103,12 +103,23 @@ export class AikaGachaCalcComponent implements OnInit {
         const currentIndex = this.characterModels.findIndex(c => c.cid === cm.cid);
 
         if (event?.shiftKey && this.lastSelectedIndex !== -1) {
-            // Shift+click: Select range
+            // Shift+click: Select or deselect range based on the last selected character's state
             const startIndex = Math.min(this.lastSelectedIndex, currentIndex);
             const endIndex = Math.max(this.lastSelectedIndex, currentIndex);
 
+            // 檢查範圍起始角色（lastSelectedIndex）的當前狀態
+            const lastSelectedCharacter = this.characterModels[this.lastSelectedIndex];
+            const shouldSelect = this.selectedCharacterId.has(lastSelectedCharacter.cid);
+
             for (let i = startIndex; i <= endIndex; i++) {
-                this.selectedCharacterId.add(this.characterModels[i].cid);
+                const characterCid = this.characterModels[i].cid;
+                if (shouldSelect) {
+                    // 如果起始角色未選中，則選中範圍內所有角色
+                    this.selectedCharacterId.add(characterCid);
+                } else {
+                    // 如果起始角色已選中，則取消選中範圍內所有角色
+                    this.selectedCharacterId.delete(characterCid);
+                }
             }
         } else {
             // Normal click: Toggle selection
@@ -159,6 +170,13 @@ export class AikaGachaCalcComponent implements OnInit {
         }
         const percentage = (this.selectedCharacterId.size / this.characterModels.length) * 100;
         return percentage.toFixed(1);
+    }
+
+    // 檢查角色是否為 Shift 選擇的起始點
+    isLastSelectedCharacter(cm: Character): boolean {
+        if (this.lastSelectedIndex === -1) return false;
+        const currentIndex = this.characterModels.findIndex(c => c.cid === cm.cid);
+        return currentIndex === this.lastSelectedIndex;
     }
 
     // 防止默認行為的通用方法

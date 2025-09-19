@@ -3,12 +3,15 @@
         <button (click)="selectAll()">全選</button>
         <button (click)="selectNone()">取消全選</button>
         <button (click)="invertSelection()">反選</button>
-        <p>shift多選</p>
+        <p>shift多選/取消 - 依照第一個選擇的角色(橘框)</p>
         <span class="selection-info">{{selectedCharacterId.size}} / {{characterModels.length}} ({{getSelectionPercentage()}}%)</span>
     </div>
     <div class="character-list">
         <div class="character" *ngFor="let cm of characterModels"
-        [ngClass]="{'selected': selectedCharacterId.has(cm.cid)}"
+        [ngClass]="{
+            'selected': selectedCharacterId.has(cm.cid),
+            'shift-anchor': isLastSelectedCharacter(cm)
+        }"
         (click)="toggleSelectCharacter(cm, $event)"
         (mouseenter)="onCharacterMouseEnter(cm)"
         (mouseleave)="onCharacterMouseLeave()"
