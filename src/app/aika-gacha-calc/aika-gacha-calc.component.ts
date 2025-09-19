@@ -28,6 +28,7 @@ export class AikaGachaCalcComponent implements OnInit {
     lastSelectedIndex: number = -1;
     isCtrlPressed: boolean = false;
     touchStartTime: number = 0;
+    currentHoveredCharacter: Character | null = null;
 
     constructor(
         private appService: AppService,
@@ -37,18 +38,22 @@ export class AikaGachaCalcComponent implements OnInit {
             this.onPageEnter();
         };
 
-        // Listen for keyboard events
-        document.addEventListener('keydown', (event) => {
-            if (event.ctrlKey) {
-                this.isCtrlPressed = true;
-            }
-        });
+        // // Listen for keyboard events
+        // document.addEventListener('keydown', (event) => {
+        //     if (event.ctrlKey && !this.isCtrlPressed) {
+        //         this.isCtrlPressed = true;
+        //         // 如果按下 Ctrl 時有角色在滑鼠下方，立即反選
+        //         if (this.currentHoveredCharacter) {
+        //             this.toggleSelectCharacter(this.currentHoveredCharacter);
+        //         }
+        //     }
+        // });
 
-        document.addEventListener('keyup', (event) => {
-            if (!event.ctrlKey) {
-                this.isCtrlPressed = false;
-            }
-        });
+        // document.addEventListener('keyup', (event) => {
+        //     if (!event.ctrlKey) {
+        //         this.isCtrlPressed = false;
+        //     }
+        // });
     }
 
     private onPageEnter() {
@@ -138,9 +143,14 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     onCharacterMouseEnter(cm: Character) {
+        this.currentHoveredCharacter = cm;
         if (this.isCtrlPressed) {
             this.toggleSelectCharacter(cm);
         }
+    }
+
+    onCharacterMouseLeave() {
+        this.currentHoveredCharacter = null;
     }
 
     getSelectionPercentage(): string {

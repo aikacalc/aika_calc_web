@@ -11,6 +11,7 @@
         [ngClass]="{'selected': selectedCharacterId.has(cm.cid)}"
         (click)="toggleSelectCharacter(cm, $event)"
         (mouseenter)="onCharacterMouseEnter(cm)"
+        (mouseleave)="onCharacterMouseLeave()"
         (contextmenu)="preventDefault($event)"
         (dblclick)="preventDefault($event)"
         (touchstart)="onTouchStart($event)"
