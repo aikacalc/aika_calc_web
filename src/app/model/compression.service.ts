@@ -59,21 +59,22 @@ export class CompressionService {
         document.body.removeChild(a);
         window.URL.revokeObjectURL(url);
     }
-    async decompressZlibFromAsset(assetPath: string): Promise<string> {
+    async decompressZlibFromAsset(assetPath: string): Promise<Uint8Array> {
         try {
+            console.log('從資產解壓縮 Zlib 文件:', assetPath);
             // 使用 HttpClient 以 ArrayBuffer 格式獲取資產文件
             const response = await firstValueFrom(
-                this.http.get(assetPath, { responseType: 'arraybuffer' })
+                this.http.get(assetPath, { responseType: 'arraybuffer', })
             );
             const compressedArray = new Uint8Array(response);
 
             // 使用 pako 解壓縮 zlib 格式的資料 (raw: false 表示輸入是 zlib 封裝的)
             const decompressedData = pako.inflate(compressedArray, { raw: false });
-
+            return decompressedData;
             // 將解壓縮後的 Uint8Array 轉換為字串
-            return new TextDecoder().decode(decompressedData);
+            // return new TextDecoder().decode(decompressedData);
         } catch (error) {
-            console.error('從資產解壓縮 Zlib 文件時發生錯誤:', error);
+            console.error('從資產解壓縮 Zlib 文件時發生錯誤:', assetPath, '\n', error);
             throw error;
         }
     }

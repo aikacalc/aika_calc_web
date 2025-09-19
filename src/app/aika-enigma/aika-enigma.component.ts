@@ -104,7 +104,8 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
         const assetPath = '/assets/enigma.bin';
         try {
-            const jsonString = await this.compressionService.decompressZlibFromAsset(assetPath);
+            const jsonBytes = await this.compressionService.decompressZlibFromAsset(assetPath);
+            const jsonString = new TextDecoder().decode(jsonBytes);
             // console.log('解壓縮成功:', this.decompressedContent.length);
             this.sections = parseSkillDataJson(jsonString);
 

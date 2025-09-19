@@ -33,6 +33,9 @@
         <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
             <span>愛花時間線</span>
         </button>
+        <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
+            <span>愛花誘拐率</span>
+        </button>
     </div>
     <div class="body">
         <div class="aika-calc-container" [hidden]="page!=''">
@@ -56,6 +59,9 @@
         </div>
         <div class="aika-damage-calc" [hidden]="page!='atl'">
             <app-aika-timeline></app-aika-timeline>
+        </div>
+        <div class="aika-gacha-calc" [hidden]="page!='agc'">
+            <app-aika-gacha-calc></app-aika-gacha-calc>
         </div>
     </div>
     <div class="msg" *ngIf="service.showMessage">

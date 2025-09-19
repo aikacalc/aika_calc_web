@@ -10,21 +10,23 @@ import { AikaDamageCalcComponent } from './aika-damage-calc/aika-damage-calc.com
 import { AikaEnigmaComponent } from './aika-enigma/aika-enigma.component';
 import { AikaTimelineComponent } from "./aika-timeline/aika-timeline.component";
 import { AikaEnigmaTxtComponent } from "./aika-enigma-txt/aika-enigma-txt.component";
+import { AikaGachaCalcComponent } from './aika-gacha-calc/aika-gacha-calc.component';
 // import { AikaCalc2Component } from "./aika-calc2/aika-calc2.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     imports: [
-    CommonModule,
-    RouterOutlet,
-    AikaCalcComponent,
-    AikaFanReachCalcComponent,
-    AikaDamageCalcComponent,
-    AikaEnigmaComponent,
-    AikaTimelineComponent,
-    AikaEnigmaTxtComponent
-],
+        CommonModule,
+        RouterOutlet,
+        AikaCalcComponent,
+        AikaFanReachCalcComponent,
+        AikaDamageCalcComponent,
+        AikaEnigmaComponent,
+        AikaTimelineComponent,
+        AikaEnigmaTxtComponent,
+        AikaGachaCalcComponent,
+    ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
@@ -42,7 +44,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.swUpdate.versionUpdates.subscribe((versionEvent: VersionEvent) => {
-            if(versionEvent.type == 'VERSION_READY'){
+            if (versionEvent.type == 'VERSION_READY') {
                 this.service.hasNewUpdate = true;
             }
         });
