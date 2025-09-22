@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    buildTime: '2025-09-19T14:27:42.540Z'
+    buildTime: '2025-09-22T09:28:49.822Z'
 };

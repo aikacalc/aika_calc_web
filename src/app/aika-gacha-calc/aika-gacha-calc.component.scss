@@ -7,14 +7,56 @@
     -ms-user-select: none;
     user-select: none;
 
+    // 使用 flexbox 垂直佈局
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    .control-panel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        flex-shrink: 0; // 固定高度，不會被壓縮
+    }
+
+    .control-buttons-wrapper {
+        flex: 1;
+        overflow-x: auto; // 水平滾動
+        overflow-y: hidden;
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+
+            &:hover {
+                background: #a8a8a8;
+            }
+        }
+    }
+
     .control-buttons {
         display: flex;
         gap: 10px;
         align-items: center;
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: #f5f5f5;
-        border-radius: 5px;
+        min-width: max-content; // 確保不會被壓縮
+        padding-right: 10px; // 右側留一些空間
 
         button {
             padding: 8px 16px;
@@ -23,6 +65,8 @@
             background-color: #fff;
             cursor: pointer;
             transition: background-color 0.2s ease;
+            white-space: nowrap; // 按鈕文字不換行
+            flex-shrink: 0; // 按鈕不會被壓縮
 
             &:hover {
                 background-color: #e7f1ff;
@@ -34,11 +78,22 @@
             }
         }
 
+        p {
+            margin: 0;
+            white-space: nowrap; // 說明文字不換行
+            flex-shrink: 0; // 不會被壓縮
+        }
+    }
+
+    .selection-info-fixed {
+        flex-shrink: 0; // 固定寬度，不會被壓縮
+        margin-left: 10px;
+
         .selection-info {
             font-size: 18px;
-            margin-left: auto;
             font-weight: bold;
             color: #333;
+            white-space: nowrap; // 文字不換行
         }
     }
 
@@ -46,11 +101,31 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        // max-height: 400px;
-        overflow-y: auto;
+        overflow-y: auto; // 垂直滾動
         border: 1px solid #ccc;
         padding: 10px;
         background-color: #f9f9f9;
+        flex: 1; // 佔據剩餘空間
+        max-height: calc(100vh - 120px); // 限制最大高度，預留上方控制面板的空間
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 4px;
+
+            &:hover {
+                background: #a8a8a8;
+            }
+        }
     }
 
     .character {
@@ -84,15 +159,15 @@
         &.shift-anchor {
             // Shift 選擇起始點的特殊樣式
             box-shadow:
-                inset 0 0 0 3px #ff6b35,  // 內邊框：橙色
-                0 0 10px rgba(255, 107, 53, 0.5);  // 外陰影：橙色
+                inset 0 0 0 3px #ff6b35, // 內邊框：橙色
+                0 0 10px rgba(255, 107, 53, 0.5); // 外陰影：橙色
 
             &.selected {
                 // 如果同時是選中狀態，組合兩種效果
                 box-shadow:
-                    inset 0 0 0 3px #ff6b35,  // 內邊框：橙色
-                    0 0 10px rgba(0, 123, 255, 0.5),  // 外陰影：藍色（選中）
-                    0 0 15px rgba(255, 107, 53, 0.3);  // 額外橙色陰影
+                    inset 0 0 0 3px #ff6b35, // 內邊框：橙色
+                    0 0 10px rgba(0, 123, 255, 0.5), // 外陰影：藍色（選中）
+                    0 0 15px rgba(255, 107, 53, 0.3); // 額外橙色陰影
                 border-color: #007bff;
                 background-color: #e7f1ff;
             }

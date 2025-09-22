@@ -5,7 +5,7 @@ import { Character } from '../model/character';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CompressionService } from '../model/compression.service';
-import { CharacterPicture, ChrpicReader } from '../model/chrpic-reader';
+import { CharacterPicture, ChrpicReader, CharacterPictureHelper } from '../model/chrpic-reader';
 
 @Component({
     selector: 'app-aika-gacha-calc',
@@ -22,13 +22,22 @@ export class AikaGachaCalcComponent implements OnInit {
     firstTimeEnter: boolean = true;
     characterModels: Character[] = [];
     collaboCharacterIds: Set<number> = new Set();
-    // characterPictures: CharacterPicture[] = [];
-    characterPicturesMap: { [key: number]: CharacterPicture } = {};
+
+    // 角色固定序號字串與 cid 的 Map，方便查找
+    characterKeyToCidMap: Map<string, number> = new Map();
+    cidToCharacterKeyMap: Map<number, string> = new Map();
+
+    // 使用角色固定序號字串作為 key 的圖片 Map
+    characterPicturesMap: { [key: string]: CharacterPicture } = {};
+
     selectedCharacterId: Set<number> = new Set();
     lastSelectedIndex: number = -1;
     isCtrlPressed: boolean = false;
     touchStartTime: number = 0;
     currentHoveredCharacter: Character | null = null;
+
+    // 追蹤初始化狀態
+    private isInitialized: boolean = false;
 
     constructor(
         private appService: AppService,
@@ -37,23 +46,6 @@ export class AikaGachaCalcComponent implements OnInit {
         this.appService.pageEnter['agc'] = () => {
             this.onPageEnter();
         };
-
-        // // Listen for keyboard events
-        // document.addEventListener('keydown', (event) => {
-        //     if (event.ctrlKey && !this.isCtrlPressed) {
-        //         this.isCtrlPressed = true;
-        //         // 如果按下 Ctrl 時有角色在滑鼠下方，立即反選
-        //         if (this.currentHoveredCharacter) {
-        //             this.toggleSelectCharacter(this.currentHoveredCharacter);
-        //         }
-        //     }
-        // });
-
-        // document.addEventListener('keyup', (event) => {
-        //     if (!event.ctrlKey) {
-        //         this.isCtrlPressed = false;
-        //     }
-        // });
     }
 
     private onPageEnter() {
@@ -64,14 +56,25 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     async ngOnInit(): Promise<void> {
-        // Initialization logic here
         const assetPath = '/assets/chrpic.bin';
 
         const chrPicBytes = await this.compressionService.decompressZlibFromAsset(assetPath);
         const characterPictures = await ChrpicReader.readChrpicBin(chrPicBytes);
+        // console.log(characterPictures);
+
+        // 設定角色圖片 Map 和 cid 對應關係
         characterPictures.forEach(cp => {
-            this.characterPicturesMap[cp.cid] = cp;
+            const characterKey = CharacterPictureHelper.getCharacterKeyFromPicture(cp);
+            this.characterPicturesMap[characterKey] = cp;
+
+            // 設定角色固定序號字串與 cid 的雙向對應
+            this.characterKeyToCidMap.set(characterKey, cp.cid);
+            this.cidToCharacterKeyMap.set(cp.cid, characterKey);
         });
+
+        // 標記初始化完成
+        this.isInitialized = true;
+        console.log('角色圖片初始化完成');
     }
 
     initPage() {
@@ -91,14 +94,40 @@ export class AikaGachaCalcComponent implements OnInit {
             }
         });
 
-        // 載入儲存的選擇結果
-        this.loadSelection();
+        // 延遲載入選擇結果，確保初始化完成
+        this.loadSelectionWhenReady();
 
         // console.log(this.characterModels);
     }
 
+    // 等待初始化完成後載入選擇結果
+    private async loadSelectionWhenReady(): Promise<void> {
+        // 如果還未初始化完成，等待一段時間後重試
+        if (!this.isInitialized) {
+            console.log('等待角色圖片初始化完成...');
+            await new Promise(resolve => setTimeout(resolve, 100)); // 等待 100ms
+            return this.loadSelectionWhenReady(); // 遞迴重試
+        }
+
+        // 初始化完成後載入選擇結果
+        this.loadSelection();
+    }
+
     checkIsCollaboCharacter(cm: Character): boolean {
         return this.collaboCharacterIds.has(cm.cid);
+    }
+
+    /**
+     * 根據角色模型取得對應的角色圖片
+     * @param cm 角色模型
+     * @returns 角色圖片物件或 undefined
+     */
+    getCharacterPicture(cm: Character): CharacterPicture | undefined {
+        const characterKey = this.cidToCharacterKeyMap.get(cm.cid);
+        if (characterKey) {
+            return this.characterPicturesMap[characterKey];
+        }
+        return undefined;
     }
 
     toggleSelectCharacter(cm: Character, event?: MouseEvent) {
@@ -210,30 +239,83 @@ export class AikaGachaCalcComponent implements OnInit {
         }
     }
 
-    // 儲存選擇結果到 localStorage
+    // 儲存選擇結果到 localStorage (v2 版本，使用角色固定序號字串)
     private saveSelection(): void {
         try {
+            // 將 cid 轉換為角色固定序號字串
+            const selectedCharacterKeys: string[] = [];
+            this.selectedCharacterId.forEach(cid => {
+                const characterKey = this.cidToCharacterKeyMap.get(cid);
+                if (characterKey) {
+                    selectedCharacterKeys.push(characterKey);
+                }
+            });
+
             const selectionData = {
-                selectedCharacterIds: Array.from(this.selectedCharacterId),
+                version: 2, // 標記為 v2 版本
+                selectedCharacterKeys: selectedCharacterKeys,
                 lastSelectedIndex: this.lastSelectedIndex,
                 timestamp: Date.now()
             };
-            localStorage.setItem('aika-gacha-calc-selection', JSON.stringify(selectionData));
+            localStorage.setItem('aika-gacha-calc-selection-v2', JSON.stringify(selectionData));
         } catch (error) {
             console.warn('無法儲存選擇結果:', error);
         }
     }
 
-    // 從 localStorage 載入選擇結果
+    // 從 localStorage 載入選擇結果 (支援 v1、v2 版本和新的浮點數編碼)
     private loadSelection(): void {
         try {
-            const savedData = localStorage.getItem('aika-gacha-calc-selection');
-            if (savedData) {
-                const selectionData = JSON.parse(savedData);
+            // 確保初始化已完成
+            if (!this.isInitialized || this.characterKeyToCidMap.size === 0) {
+                console.warn('初始化尚未完成，跳過載入選擇結果');
+                return;
+            }
 
-                // 驗證資料有效性
-                if (selectionData && Array.isArray(selectionData.selectedCharacterIds)) {
-                    // 只載入有效的角色ID（確保角色還存在）
+            // 1. 優先嘗試從網址載入新格式的浮點數編碼
+            const urlData = this.compressionService.loadDataFromUrl<string>('selection');
+            if (urlData && typeof urlData === 'string') {
+                // 解析浮點數格式的選擇資料
+                this.parseFloatNumberSelection(urlData);
+                console.log(`從網址載入浮點數編碼資料: ${this.selectedCharacterId.size} 個角色`);
+                return;
+            }
+
+            // 2. 使用 CompressionService 的優先載入功能載入舊格式
+            const loadedData = this.compressionService.loadDataWithPriority<any>(
+                'aika-gacha-calc-selection-v2',
+                'selection'
+            );
+
+            if (loadedData && loadedData.version === 2) {
+                // v2 版本：使用角色固定序號字串
+                if (Array.isArray(loadedData.selectedCharacterKeys)) {
+                    this.selectedCharacterId.clear();
+                    loadedData.selectedCharacterKeys.forEach((characterKey: string) => {
+                        const cid = this.characterKeyToCidMap.get(characterKey);
+                        if (cid !== undefined) {
+                            this.selectedCharacterId.add(cid);
+                        }
+                    });
+                    console.log(`載入了 ${this.selectedCharacterId.size} 個角色的選擇狀態 (v2)`);
+                }
+
+                // 恢復最後選擇的索引
+                if (typeof loadedData.lastSelectedIndex === 'number' &&
+                    loadedData.lastSelectedIndex >= 0 &&
+                    loadedData.lastSelectedIndex < this.characterModels.length) {
+                    this.lastSelectedIndex = loadedData.lastSelectedIndex;
+                }
+                return;
+            }
+
+            // 3. 如果都沒有資料，嘗試載入 v1 版本並轉換
+            const savedDataV1 = localStorage.getItem('aika-gacha-calc-selection');
+            if (savedDataV1) {
+                const selectionData = JSON.parse(savedDataV1);
+
+                // v1 版本：使用 cid，需要轉換並升級到 v2
+                if (Array.isArray(selectionData.selectedCharacterIds)) {
                     const validCharacterIds = this.characterModels.map(cm => cm.cid);
 
                     this.selectedCharacterId.clear();
@@ -243,26 +325,138 @@ export class AikaGachaCalcComponent implements OnInit {
                         }
                     });
 
-                    // 恢復最後選擇的索引（如果有效的話）
-                    if (typeof selectionData.lastSelectedIndex === 'number' &&
-                        selectionData.lastSelectedIndex >= 0 &&
-                        selectionData.lastSelectedIndex < this.characterModels.length) {
-                        this.lastSelectedIndex = selectionData.lastSelectedIndex;
-                    }
+                    // 自動升級到 v2 並儲存
+                    this.saveSelection();
+                    console.log(`載入並升級了 ${this.selectedCharacterId.size} 個角色的選擇狀態 (v1->v2)`);
+                }
 
-                    console.log(`載入了 ${this.selectedCharacterId.size} 個角色的選擇狀態`);
+                // 恢復最後選擇的索引
+                if (typeof selectionData.lastSelectedIndex === 'number' &&
+                    selectionData.lastSelectedIndex >= 0 &&
+                    selectionData.lastSelectedIndex < this.characterModels.length) {
+                    this.lastSelectedIndex = selectionData.lastSelectedIndex;
                 }
             }
         } catch (error) {
             console.warn('無法載入選擇結果:', error);
             // 如果載入失敗，清除可能損壞的資料
             localStorage.removeItem('aika-gacha-calc-selection');
+            localStorage.removeItem('aika-gacha-calc-selection-v2');
         }
     }
 
-    // 清除儲存的選擇結果
+    // 解析浮點數格式的選擇資料
+    private parseFloatNumberSelection(dataString: string): void {
+        try {
+            // 確保必要的 Map 已經初始化
+            if (!this.isInitialized || this.characterKeyToCidMap.size === 0) {
+                console.warn('角色資料尚未初始化完成，無法解析浮點數選擇資料');
+                return;
+            }
+
+            this.selectedCharacterId.clear();
+            this.lastSelectedIndex = -1; // 浮點數格式不記錄最後選擇
+
+            if (!dataString.trim()) {
+                return;
+            }
+
+            const floatNumbers = dataString.split(',').map(s => parseFloat(s.trim())).filter(n => !isNaN(n));
+
+            floatNumbers.forEach(floatNumber => {
+                // 解析浮點數：整數部分是 chr_id，小數部分是 chr_type
+                const chr_id = Math.floor(floatNumber);
+                const chr_type = Math.round((floatNumber - chr_id) * 100);
+
+                // 尋找對應的角色
+                const characterKey = CharacterPictureHelper.getCharacterKey(chr_id, chr_type);
+                const cid = this.characterKeyToCidMap.get(characterKey);
+
+                if (cid !== undefined) {
+                    this.selectedCharacterId.add(cid);
+                } else {
+                    console.warn(`無法找到角色: chr_id=${chr_id}, chr_type=${chr_type}, key=${characterKey}`);
+                }
+            });
+
+            console.log(`解析完成: ${floatNumbers.length} 個浮點數, ${this.selectedCharacterId.size} 個有效角色`);
+
+            // 自動儲存到本地儲存（使用舊格式以保持相容性）
+            this.saveSelection();
+        } catch (error) {
+            console.error('解析浮點數選擇資料時發生錯誤:', error);
+        }
+    }    // 清除儲存的選擇結果 (清除所有版本)
     clearSavedSelection(): void {
         localStorage.removeItem('aika-gacha-calc-selection');
-        console.log('已清除儲存的選擇記錄');
+        localStorage.removeItem('aika-gacha-calc-selection-v2');
+        console.log('已清除儲存的選擇記錄 (v1 和 v2)');
+    }
+
+    // 產生包含選擇狀態的分享網址（使用浮點數編碼）
+    generateShareUrl(): string {
+        try {
+            // 將選中的角色轉換為浮點數陣列 (chr_id.chr_type)
+            const selectedFloatNumbers: number[] = [];
+            this.selectedCharacterId.forEach(cid => {
+                const characterKey = this.cidToCharacterKeyMap.get(cid);
+                if (characterKey) {
+                    const picture = this.characterPicturesMap[characterKey];
+                    if (picture) {
+                        // 格式：chr_id.chr_type (例如: 1.01, 2.03)
+                        const floatNumber = picture.chr_id + (picture.chr_type / 100);
+                        selectedFloatNumbers.push(floatNumber);
+                    }
+                }
+            });
+
+            // 對浮點數陣列進行排序，以確保一致性
+            selectedFloatNumbers.sort((a, b) => a - b);
+
+            // 將浮點數陣列轉換為字串並壓縮
+            const dataString = selectedFloatNumbers.join(',');
+            const shareUrl = this.compressionService.generateShareUrl(dataString, undefined, 'selection');
+            console.log('產生分享網址 (浮點數編碼):', shareUrl);
+            console.log('編碼的浮點數:', selectedFloatNumbers);
+            return shareUrl;
+        } catch (error) {
+            console.error('產生分享網址時發生錯誤:', error);
+            throw error;
+        }
+    }
+
+    // 複製分享網址到剪貼簿
+    async copyShareUrl(): Promise<void> {
+        try {
+            const shareUrl = this.generateShareUrl();
+            await navigator.clipboard.writeText(shareUrl);
+            console.log('分享網址已複製到剪貼簿');
+            // 這裡可以顯示一個提示訊息給使用者
+        } catch (error) {
+            console.error('複製分享網址時發生錯誤:', error);
+            // 降級方案：使用傳統的選取複製方式
+            this.fallbackCopyToClipboard(this.generateShareUrl());
+        }
+    }
+
+    // 降級複製方案（適用於不支援 Clipboard API 的瀏覽器）
+    private fallbackCopyToClipboard(text: string): void {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            document.execCommand('copy');
+            console.log('分享網址已複製到剪貼簿 (降級方案)');
+        } catch (error) {
+            console.error('複製操作失敗:', error);
+        } finally {
+            document.body.removeChild(textArea);
+        }
     }
 }
