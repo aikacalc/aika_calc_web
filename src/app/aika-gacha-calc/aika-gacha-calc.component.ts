@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { CompressionService } from '../model/compression.service';
 import { CharacterPicture, ChrpicReader, CharacterPictureHelper } from '../model/chrpic-reader';
+import { AttrTypeId, AttrTypeColor } from '../model/attr-type';
 
 @Component({
     selector: 'app-aika-gacha-calc',
@@ -21,6 +22,7 @@ export class AikaGachaCalcComponent implements OnInit {
 
     firstTimeEnter: boolean = true;
     characterModels: Character[] = [];
+    filteredCharacterModels: Character[] = [];
     collaboCharacterIds: Set<number> = new Set();
 
     // 角色固定序號字串與 cid 的 Map，方便查找
@@ -38,6 +40,20 @@ export class AikaGachaCalcComponent implements OnInit {
 
     // 追蹤初始化狀態
     private isInitialized: boolean = false;
+
+    // 篩選設定
+    filterSettings = {
+        home: true,        // 本家
+        collabo: true,     // 聯動
+        normal: true,      // 一般
+        another: true,     // AN
+        factor: true,      // FA
+        stellar: true,     // ST
+        volt: true,        // 電擊
+        gravity: true,     // 重力
+        fire: true,        // 燒夷
+        ice: true          // 冷擊
+    };
 
     constructor(
         private appService: AppService,
@@ -94,6 +110,9 @@ export class AikaGachaCalcComponent implements OnInit {
             }
         });
 
+        // 初始化篩選列表
+        this.applyFilters();
+
         // 延遲載入選擇結果，確保初始化完成
         this.loadSelectionWhenReady();
 
@@ -109,12 +128,91 @@ export class AikaGachaCalcComponent implements OnInit {
             return this.loadSelectionWhenReady(); // 遞迴重試
         }
 
-        // 初始化完成後載入選擇結果
+        // 初始化完成後重新應用篩選（因為現在有完整的圖片資料）
+        this.applyFilters();
+
+        // 然後載入選擇結果
         this.loadSelection();
     }
 
     checkIsCollaboCharacter(cm: Character): boolean {
         return this.collaboCharacterIds.has(cm.cid);
+    }
+
+    // 檢查角色是否為本家角色（非聯動）
+    checkIsHomeCharacter(cm: Character): boolean {
+        return !this.checkIsCollaboCharacter(cm);
+    }
+
+    // 檢查角色類型（based on chr_id和chr_type）
+    getCharacterType(cm: Character): string {
+        const characterKey = this.cidToCharacterKeyMap.get(cm.cid);
+        if (characterKey) {
+            const picture = this.characterPicturesMap[characterKey];
+            if (picture) {
+                // chr_type 的含義：05=一般, 70=AN, 80=FA, 60=ST
+                switch (picture.chr_type) {
+                    case 5: return 'normal';   // 05 一般
+                    case 70: return 'another'; // 70 AN
+                    case 80: return 'factor';  // 80 FA
+                    case 60: return 'stellar'; // 60 ST
+                    default: return 'normal';
+                }
+            }
+        }
+        return 'normal';
+    }
+
+    // 應用篩選條件
+    applyFilters(): void {
+        this.filteredCharacterModels = this.characterModels.filter(cm => {
+            // 檢查本家/聯動篩選
+            const isCollabo = this.checkIsCollaboCharacter(cm);
+            if (isCollabo && !this.filterSettings.collabo) return false;
+            if (!isCollabo && !this.filterSettings.home) return false;
+
+            // 檢查角色類型篩選
+            const characterType = this.getCharacterType(cm);
+            if (characterType === 'normal' && !this.filterSettings.normal) return false;
+            if (characterType === 'another' && !this.filterSettings.another) return false;
+            if (characterType === 'factor' && !this.filterSettings.factor) return false;
+            if (characterType === 'stellar' && !this.filterSettings.stellar) return false;
+
+            // 檢查屬性篩選
+            switch (cm.chrAttrTypeId) {
+                case AttrTypeId.Volt:
+                    return this.filterSettings.volt;
+                case AttrTypeId.Gravity:
+                    return this.filterSettings.gravity;
+                case AttrTypeId.Fire:
+                    return this.filterSettings.fire;
+                case AttrTypeId.Ice:
+                    return this.filterSettings.ice;
+                default:
+                    return true; // 其他屬性預設顯示
+            }
+        });
+    }
+
+    // 篩選設定變更處理
+    onFilterChange(): void {
+        this.applyFilters();
+    }
+
+    // 獲取屬性類型對應的顏色
+    getAttrTypeColor(attrType: string): string {
+        switch (attrType) {
+            case 'volt':
+                return AttrTypeColor.Volt;
+            case 'gravity':
+                return AttrTypeColor.Gravity;
+            case 'fire':
+                return AttrTypeColor.Fire;
+            case 'ice':
+                return AttrTypeColor.Ice;
+            default:
+                return '#000000';
+        }
     }
 
     /**
@@ -131,7 +229,7 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     toggleSelectCharacter(cm: Character, event?: MouseEvent) {
-        const currentIndex = this.characterModels.findIndex(c => c.cid === cm.cid);
+        const currentIndex = this.filteredCharacterModels.findIndex(c => c.cid === cm.cid);
 
         if (event?.shiftKey && this.lastSelectedIndex !== -1) {
             // Shift+click: Select or deselect range based on the last selected character's state
@@ -139,11 +237,11 @@ export class AikaGachaCalcComponent implements OnInit {
             const endIndex = Math.max(this.lastSelectedIndex, currentIndex);
 
             // 檢查範圍起始角色（lastSelectedIndex）的當前狀態
-            const lastSelectedCharacter = this.characterModels[this.lastSelectedIndex];
+            const lastSelectedCharacter = this.filteredCharacterModels[this.lastSelectedIndex];
             const shouldSelect = this.selectedCharacterId.has(lastSelectedCharacter.cid);
 
             for (let i = startIndex; i <= endIndex; i++) {
-                const characterCid = this.characterModels[i].cid;
+                const characterCid = this.filteredCharacterModels[i].cid;
                 if (shouldSelect) {
                     // 如果起始角色未選中，則選中範圍內所有角色
                     this.selectedCharacterId.add(characterCid);
@@ -167,7 +265,7 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     selectAll() {
-        this.characterModels.forEach(cm => {
+        this.filteredCharacterModels.forEach(cm => {
             this.selectedCharacterId.add(cm.cid);
         });
         this.saveSelection();
@@ -180,7 +278,7 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     invertSelection() {
-        this.characterModels.forEach(cm => {
+        this.filteredCharacterModels.forEach(cm => {
             if (this.selectedCharacterId.has(cm.cid)) {
                 this.selectedCharacterId.delete(cm.cid);
             } else {
@@ -202,17 +300,21 @@ export class AikaGachaCalcComponent implements OnInit {
     }
 
     getSelectionPercentage(): string {
-        if (this.characterModels.length === 0) {
+        if (this.filteredCharacterModels.length === 0) {
             return '0';
         }
-        const percentage = (this.selectedCharacterId.size / this.characterModels.length) * 100;
+        // 計算篩選後角色中被選中的百分比
+        const selectedInFiltered = this.filteredCharacterModels.filter(cm =>
+            this.selectedCharacterId.has(cm.cid)
+        ).length;
+        const percentage = (selectedInFiltered / this.filteredCharacterModels.length) * 100;
         return percentage.toFixed(1);
     }
 
     // 檢查角色是否為 Shift 選擇的起始點
     isLastSelectedCharacter(cm: Character): boolean {
         if (this.lastSelectedIndex === -1) return false;
-        const currentIndex = this.characterModels.findIndex(c => c.cid === cm.cid);
+        const currentIndex = this.filteredCharacterModels.findIndex(c => c.cid === cm.cid);
         return currentIndex === this.lastSelectedIndex;
     }
 
@@ -303,7 +405,7 @@ export class AikaGachaCalcComponent implements OnInit {
                 // 恢復最後選擇的索引
                 if (typeof loadedData.lastSelectedIndex === 'number' &&
                     loadedData.lastSelectedIndex >= 0 &&
-                    loadedData.lastSelectedIndex < this.characterModels.length) {
+                    loadedData.lastSelectedIndex < this.filteredCharacterModels.length) {
                     this.lastSelectedIndex = loadedData.lastSelectedIndex;
                 }
                 return;
@@ -333,7 +435,7 @@ export class AikaGachaCalcComponent implements OnInit {
                 // 恢復最後選擇的索引
                 if (typeof selectionData.lastSelectedIndex === 'number' &&
                     selectionData.lastSelectedIndex >= 0 &&
-                    selectionData.lastSelectedIndex < this.characterModels.length) {
+                    selectionData.lastSelectedIndex < this.filteredCharacterModels.length) {
                     this.lastSelectedIndex = selectionData.lastSelectedIndex;
                 }
             }

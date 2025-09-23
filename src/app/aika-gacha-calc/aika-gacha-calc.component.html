@@ -11,11 +11,53 @@
             </div>
         </div>
         <div class="selection-info-fixed">
-            <span class="selection-info">{{selectedCharacterId.size}} / {{characterModels.length}} ({{getSelectionPercentage()}}%)</span>
+            <span class="selection-info">{{selectedCharacterId.size}} / {{filteredCharacterModels.length}} ({{getSelectionPercentage()}}%)</span>
         </div>
     </div>
+    <div class="filter-panel">
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
+            <span>本家</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
+            <span>聯動</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
+            <span>一般</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
+            <span>AN</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
+            <span>FA</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
+            <span>ST</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.volt" (change)="onFilterChange()">
+            <span [style.color]="getAttrTypeColor('volt')">電擊</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.gravity" (change)="onFilterChange()">
+            <span [style.color]="getAttrTypeColor('gravity')">重力</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.fire" (change)="onFilterChange()">
+            <span [style.color]="getAttrTypeColor('fire')">燒夷</span>
+        </label>
+        <label>
+            <input type="checkbox" [(ngModel)]="filterSettings.ice" (change)="onFilterChange()">
+            <span [style.color]="getAttrTypeColor('ice')">冷擊</span>
+        </label>
+    </div>
     <div class="character-list">
-        <div class="character" *ngFor="let cm of characterModels"
+        <div class="character" *ngFor="let cm of filteredCharacterModels"
         [ngClass]="{
             'selected': selectedCharacterId.has(cm.cid),
             'shift-anchor': isLastSelectedCharacter(cm)
