@@ -7196,6 +7196,55 @@ class KaeruzakaRaiya80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
 }
 
+class KaeruzakaRaiya60 extends Character {
+    name: string = '蛙坂 来弥 / ハーミット ★4';
+    aid:number = 229;
+    cid: number = 233;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3143;
+    hpMin: number = 844;
+    hpMax: number = 3143;
+    atkClose: number = 584;
+    atkCloseMin: number = 162;
+    atkCloseMax: number = 584;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 882;
+    defMin: number = 245;
+    defMax: number = 882;
+    spd: number = 166;
+    spdMin: number = 166;
+    spdMax: number = 166;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.7),
+        new Buff(AttrTypeId.ResistFire, -0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Ice, 0.9),
+        new Buff(AttrTypeId.Twin, 0.35),
+        new Buff(AttrTypeId.Sword, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.KaeruzakaRaiya.long;
+    weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
+    equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
+    equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+}
+
 class KagomeMisaki01 extends Character {
     name: string = '籠目 深沙希 ★1';
     aid:number = 373;
@@ -19026,8 +19075,8 @@ class AohamaMakuri05 extends Character {
 
 class TakahataNodoka01 extends Character {
     name: string = '高幡 のどか ★1';
-    aid:number = 2176;
-    cid: number = 2175;
+    aid:number = 2179;
+    cid: number = 2178;
     rare: number = 1;
     level: number = 15;
     levelMin: number = 1;
@@ -19074,8 +19123,8 @@ class TakahataNodoka01 extends Character {
 
 class TakahataNodoka04 extends Character {
     name: string = '高幡 のどか ★3';
-    aid:number = 2176;
-    cid: number = 2177;
+    aid:number = 2179;
+    cid: number = 2180;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -19122,8 +19171,8 @@ class TakahataNodoka04 extends Character {
 
 class TakahataNodoka05 extends Character {
     name: string = '高幡 のどか ★4';
-    aid:number = 2176;
-    cid: number = 2178;
+    aid:number = 2179;
+    cid: number = 2181;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -19170,8 +19219,8 @@ class TakahataNodoka05 extends Character {
 
 class TakahataNodoka70 extends Character {
     name: string = '高幡 のどか / 師門 ★4';
-    aid:number = 2176;
-    cid: number = 2179;
+    aid:number = 2179;
+    cid: number = 2182;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -19607,8 +19656,8 @@ class Hresvelgr05 extends Character {
 
 class GennaiAo04 extends Character {
     name: string = '源内 あお ★3';
-    aid:number = 2185;
-    cid: number = 2184;
+    aid:number = 2188;
+    cid: number = 2187;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -19656,8 +19705,8 @@ class GennaiAo04 extends Character {
 
 class GennaiAo05 extends Character {
     name: string = '源内 あお ★4';
-    aid:number = 2185;
-    cid: number = 2186;
+    aid:number = 2188;
+    cid: number = 2189;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -19705,8 +19754,8 @@ class GennaiAo05 extends Character {
 
 class KotobukiBukiko04 extends Character {
     name: string = '寿 武希子 ★3';
-    aid:number = 2189;
-    cid: number = 2188;
+    aid:number = 2192;
+    cid: number = 2191;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -19754,8 +19803,8 @@ class KotobukiBukiko04 extends Character {
 
 class KotobukiBukiko05 extends Character {
     name: string = '寿 武希子 ★4';
-    aid:number = 2189;
-    cid: number = 2190;
+    aid:number = 2192;
+    cid: number = 2193;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -19803,8 +19852,8 @@ class KotobukiBukiko05 extends Character {
 
 class SaekiRitsuka04 extends Character {
     name: string = '佐伯 リツカ ★3';
-    aid:number = 2198;
-    cid: number = 2197;
+    aid:number = 2201;
+    cid: number = 2200;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -19852,8 +19901,8 @@ class SaekiRitsuka04 extends Character {
 
 class SaekiRitsuka05 extends Character {
     name: string = '佐伯 リツカ ★4';
-    aid:number = 2198;
-    cid: number = 2199;
+    aid:number = 2201;
+    cid: number = 2202;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -19901,8 +19950,8 @@ class SaekiRitsuka05 extends Character {
 
 class KoishikawaEmma04 extends Character {
     name: string = '小石川 エマ ★3';
-    aid:number = 2201;
-    cid: number = 2200;
+    aid:number = 2204;
+    cid: number = 2203;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -19949,8 +19998,8 @@ class KoishikawaEmma04 extends Character {
 
 class KoishikawaEmma05 extends Character {
     name: string = '小石川 エマ ★4';
-    aid:number = 2201;
-    cid: number = 2202;
+    aid:number = 2204;
+    cid: number = 2205;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -20289,8 +20338,8 @@ class MiyafujiYoshika05 extends Character {
 
 class SakamotoMio04 extends Character {
     name: string = '坂本 美緒 ★3';
-    aid:number = 2100;
-    cid: number = 2099;
+    aid:number = 2103;
+    cid: number = 2102;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -20338,8 +20387,8 @@ class SakamotoMio04 extends Character {
 
 class SakamotoMio05 extends Character {
     name: string = '坂本 美緒 ★4';
-    aid:number = 2100;
-    cid: number = 2101;
+    aid:number = 2103;
+    cid: number = 2104;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -20485,8 +20534,8 @@ class LynetteBishop05 extends Character {
 
 class PerrineHClostermann04 extends Character {
     name: string = 'ペリーヌ・C ★3';
-    aid:number = 2103;
-    cid: number = 2102;
+    aid:number = 2106;
+    cid: number = 2105;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -20534,8 +20583,8 @@ class PerrineHClostermann04 extends Character {
 
 class PerrineHClostermann05 extends Character {
     name: string = 'ペリーヌ・C ★4';
-    aid:number = 2103;
-    cid: number = 2104;
+    aid:number = 2106;
+    cid: number = 2107;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -20583,8 +20632,8 @@ class PerrineHClostermann05 extends Character {
 
 class MinnaDietlindeWilcke04 extends Character {
     name: string = 'ミーナ・W ★3';
-    aid:number = 2273;
-    cid: number = 2272;
+    aid:number = 2276;
+    cid: number = 2275;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -20632,8 +20681,8 @@ class MinnaDietlindeWilcke04 extends Character {
 
 class MinnaDietlindeWilcke05 extends Character {
     name: string = 'ミーナ・W ★4';
-    aid:number = 2273;
-    cid: number = 2274;
+    aid:number = 2276;
+    cid: number = 2277;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -20875,8 +20924,8 @@ class EricaHartmann05 extends Character {
 
 class FrancescaLucchini04 extends Character {
     name: string = 'フランチェスカ・L ★3';
-    aid:number = 2109;
-    cid: number = 2108;
+    aid:number = 2112;
+    cid: number = 2111;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -20923,8 +20972,8 @@ class FrancescaLucchini04 extends Character {
 
 class FrancescaLucchini05 extends Character {
     name: string = 'フランチェスカ・L ★4';
-    aid:number = 2109;
-    cid: number = 2110;
+    aid:number = 2112;
+    cid: number = 2113;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -20971,8 +21020,8 @@ class FrancescaLucchini05 extends Character {
 
 class CharlotteEYeager04 extends Character {
     name: string = 'シャーロット・Y ★3';
-    aid:number = 2106;
-    cid: number = 2105;
+    aid:number = 2109;
+    cid: number = 2108;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21020,8 +21069,8 @@ class CharlotteEYeager04 extends Character {
 
 class CharlotteEYeager05 extends Character {
     name: string = 'シャーロット・Y ★4';
-    aid:number = 2106;
-    cid: number = 2107;
+    aid:number = 2109;
+    cid: number = 2110;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21069,8 +21118,8 @@ class CharlotteEYeager05 extends Character {
 
 class SanyaVLitvyak04 extends Character {
     name: string = 'サーニャ・L ★3';
-    aid:number = 2276;
-    cid: number = 2275;
+    aid:number = 2279;
+    cid: number = 2278;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21117,8 +21166,8 @@ class SanyaVLitvyak04 extends Character {
 
 class SanyaVLitvyak05 extends Character {
     name: string = 'サーニャ・L ★4';
-    aid:number = 2276;
-    cid: number = 2277;
+    aid:number = 2279;
+    cid: number = 2280;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21165,8 +21214,8 @@ class SanyaVLitvyak05 extends Character {
 
 class EilaIlmatarJuutilainen04 extends Character {
     name: string = 'エイラ・J ★3';
-    aid:number = 2279;
-    cid: number = 2278;
+    aid:number = 2282;
+    cid: number = 2281;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21214,8 +21263,8 @@ class EilaIlmatarJuutilainen04 extends Character {
 
 class EilaIlmatarJuutilainen05 extends Character {
     name: string = 'エイラ・J ★4';
-    aid:number = 2279;
-    cid: number = 2280;
+    aid:number = 2282;
+    cid: number = 2283;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21408,8 +21457,8 @@ class HoshitsukiMiki70 extends Character {
 
 class NarumiHaruka04 extends Character {
     name: string = '成海 遥香 ★3';
-    aid:number = 2244;
-    cid: number = 2243;
+    aid:number = 2247;
+    cid: number = 2246;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21457,8 +21506,8 @@ class NarumiHaruka04 extends Character {
 
 class NarumiHaruka05 extends Character {
     name: string = '成海 遥香 ★4';
-    aid:number = 2244;
-    cid: number = 2245;
+    aid:number = 2247;
+    cid: number = 2248;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21506,8 +21555,8 @@ class NarumiHaruka05 extends Character {
 
 class AmanoNozomi04 extends Character {
     name: string = '天野 望 ★3';
-    aid:number = 2142;
-    cid: number = 2141;
+    aid:number = 2145;
+    cid: number = 2144;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21554,8 +21603,8 @@ class AmanoNozomi04 extends Character {
 
 class AmanoNozomi05 extends Character {
     name: string = '天野 望 ★4';
-    aid:number = 2142;
-    cid: number = 2143;
+    aid:number = 2145;
+    cid: number = 2146;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21698,8 +21747,8 @@ class TokiwaKurumi05 extends Character {
 
 class TsubuzakiAnko04 extends Character {
     name: string = '粒咲 あんこ ★3';
-    aid:number = 2130;
-    cid: number = 2129;
+    aid:number = 2133;
+    cid: number = 2132;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21747,8 +21796,8 @@ class TsubuzakiAnko04 extends Character {
 
 class TsubuzakiAnko05 extends Character {
     name: string = '粒咲 あんこ ★4';
-    aid:number = 2130;
-    cid: number = 2131;
+    aid:number = 2133;
+    cid: number = 2134;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21796,8 +21845,8 @@ class TsubuzakiAnko05 extends Character {
 
 class SerizawaRenge04 extends Character {
     name: string = '芹沢 蓮華 ★3';
-    aid:number = 2138;
-    cid: number = 2137;
+    aid:number = 2141;
+    cid: number = 2140;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21845,8 +21894,8 @@ class SerizawaRenge04 extends Character {
 
 class SerizawaRenge05 extends Character {
     name: string = '芹沢 蓮華 ★4';
-    aid:number = 2138;
-    cid: number = 2139;
+    aid:number = 2141;
+    cid: number = 2142;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -21894,8 +21943,8 @@ class SerizawaRenge05 extends Character {
 
 class KusunokiAsuha04 extends Character {
     name: string = '楠 明日葉 ★3';
-    aid:number = 2134;
-    cid: number = 2133;
+    aid:number = 2137;
+    cid: number = 2136;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -21943,8 +21992,8 @@ class KusunokiAsuha04 extends Character {
 
 class KusunokiAsuha05 extends Character {
     name: string = '楠 明日葉 ★4';
-    aid:number = 2134;
-    cid: number = 2135;
+    aid:number = 2137;
+    cid: number = 2138;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -22384,8 +22433,8 @@ class KuniedaShiho05 extends Character {
 
 class Misaki04 extends Character {
     name: string = 'ミサキ ★3';
-    aid:number = 2263;
-    cid: number = 2262;
+    aid:number = 2266;
+    cid: number = 2265;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -22432,8 +22481,8 @@ class Misaki04 extends Character {
 
 class Misaki05 extends Character {
     name: string = 'ミサキ ★4';
-    aid:number = 2263;
-    cid: number = 2264;
+    aid:number = 2266;
+    cid: number = 2267;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -22480,8 +22529,8 @@ class Misaki05 extends Character {
 
 class Misaki70 extends Character {
     name: string = 'ミサキ / エルピス ★4';
-    aid:number = 2263;
-    cid: number = 2265;
+    aid:number = 2266;
+    cid: number = 2268;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -22721,8 +22770,8 @@ class MarieRose05 extends Character {
 
 class Nyotengu04 extends Character {
     name: string = '女天狗 ★3';
-    aid:number = 2152;
-    cid: number = 2151;
+    aid:number = 2155;
+    cid: number = 2154;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -22770,8 +22819,8 @@ class Nyotengu04 extends Character {
 
 class Nyotengu05 extends Character {
     name: string = '女天狗 ★4';
-    aid:number = 2152;
-    cid: number = 2153;
+    aid:number = 2155;
+    cid: number = 2156;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23062,8 +23111,8 @@ class Aya05 extends Character {
 
 class Yuki04 extends Character {
     name: string = 'ユキ ★3';
-    aid:number = 2089;
-    cid: number = 2088;
+    aid:number = 2090;
+    cid: number = 2089;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23110,8 +23159,8 @@ class Yuki04 extends Character {
 
 class Yuki05 extends Character {
     name: string = 'ユキ ★4';
-    aid:number = 2089;
-    cid: number = 2090;
+    aid:number = 2090;
+    cid: number = 2091;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23158,8 +23207,8 @@ class Yuki05 extends Character {
 
 class Yamada04 extends Character {
     name: string = 'ヤマダ ★3';
-    aid:number = 2092;
-    cid: number = 2091;
+    aid:number = 2094;
+    cid: number = 2093;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23207,8 +23256,8 @@ class Yamada04 extends Character {
 
 class Yamada05 extends Character {
     name: string = 'ヤマダ ★4';
-    aid:number = 2092;
-    cid: number = 2093;
+    aid:number = 2094;
+    cid: number = 2095;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23256,8 +23305,8 @@ class Yamada05 extends Character {
 
 class AIT04 extends Character {
     name: string = 'AIT Ti2 ★3';
-    aid:number = 2096;
-    cid: number = 2095;
+    aid:number = 2099;
+    cid: number = 2098;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23305,8 +23354,8 @@ class AIT04 extends Character {
 
 class AIT05 extends Character {
     name: string = 'AIT Ti2 ★4';
-    aid:number = 2096;
-    cid: number = 2097;
+    aid:number = 2099;
+    cid: number = 2100;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23354,8 +23403,8 @@ class AIT05 extends Character {
 
 class AIT70 extends Character {
     name: string = 'AIT / イア・レトナ ★4';
-    aid:number = 2096;
-    cid: number = 2098;
+    aid:number = 2099;
+    cid: number = 2101;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23403,8 +23452,8 @@ class AIT70 extends Character {
 
 class IvryHadd04 extends Character {
     name: string = 'イブリー・ハッド ★3';
-    aid:number = 2149;
-    cid: number = 2148;
+    aid:number = 2152;
+    cid: number = 2151;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23452,8 +23501,8 @@ class IvryHadd04 extends Character {
 
 class IvryHadd05 extends Character {
     name: string = 'イブリー・ハッド ★4';
-    aid:number = 2149;
-    cid: number = 2150;
+    aid:number = 2152;
+    cid: number = 2153;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23501,8 +23550,8 @@ class IvryHadd05 extends Character {
 
 class MakiseKurisu04 extends Character {
     name: string = '牧瀬 紅莉栖 ★3';
-    aid:number = 2112;
-    cid: number = 2111;
+    aid:number = 2115;
+    cid: number = 2114;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23550,8 +23599,8 @@ class MakiseKurisu04 extends Character {
 
 class MakiseKurisu05 extends Character {
     name: string = '牧瀬 紅莉栖 ★4';
-    aid:number = 2112;
-    cid: number = 2113;
+    aid:number = 2115;
+    cid: number = 2116;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23599,8 +23648,8 @@ class MakiseKurisu05 extends Character {
 
 class MakiseKurisu70 extends Character {
     name: string = '牧瀬 紅莉栖 / 因果 ★4';
-    aid:number = 2112;
-    cid: number = 2114;
+    aid:number = 2115;
+    cid: number = 2117;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23647,8 +23696,8 @@ class MakiseKurisu70 extends Character {
 
 class AmaneSuzuha04 extends Character {
     name: string = '阿万音 鈴羽 ★3';
-    aid:number = 2116;
-    cid: number = 2115;
+    aid:number = 2119;
+    cid: number = 2118;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23695,8 +23744,8 @@ class AmaneSuzuha04 extends Character {
 
 class AmaneSuzuha05 extends Character {
     name: string = '阿万音 鈴羽 ★4';
-    aid:number = 2116;
-    cid: number = 2117;
+    aid:number = 2119;
+    cid: number = 2120;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23743,8 +23792,8 @@ class AmaneSuzuha05 extends Character {
 
 class AmaneSuzuha70 extends Character {
     name: string = '阿万音 鈴羽 / 戦士 ★4';
-    aid:number = 2116;
-    cid: number = 2118;
+    aid:number = 2119;
+    cid: number = 2121;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23792,8 +23841,8 @@ class AmaneSuzuha70 extends Character {
 
 class TanyaDegurechaff04 extends Character {
     name: string = 'ターニャ ★3';
-    aid:number = 2155;
-    cid: number = 2154;
+    aid:number = 2158;
+    cid: number = 2157;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23841,8 +23890,8 @@ class TanyaDegurechaff04 extends Character {
 
 class TanyaDegurechaff05 extends Character {
     name: string = 'ターニャ ★4';
-    aid:number = 2155;
-    cid: number = 2156;
+    aid:number = 2158;
+    cid: number = 2159;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23890,8 +23939,8 @@ class TanyaDegurechaff05 extends Character {
 
 class ViktoriyaIvanovnaSerebryakov04 extends Character {
     name: string = 'ヴィーシャ ★3';
-    aid:number = 2158;
-    cid: number = 2157;
+    aid:number = 2161;
+    cid: number = 2160;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -23938,8 +23987,8 @@ class ViktoriyaIvanovnaSerebryakov04 extends Character {
 
 class ViktoriyaIvanovnaSerebryakov05 extends Character {
     name: string = 'ヴィーシャ ★4';
-    aid:number = 2158;
-    cid: number = 2159;
+    aid:number = 2161;
+    cid: number = 2162;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -23986,8 +24035,8 @@ class ViktoriyaIvanovnaSerebryakov05 extends Character {
 
 class Kei04 extends Character {
     name: string = 'ケイ ★3';
-    aid:number = 2170;
-    cid: number = 2169;
+    aid:number = 2173;
+    cid: number = 2172;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24035,8 +24084,8 @@ class Kei04 extends Character {
 
 class Kei05 extends Character {
     name: string = 'ケイ ★4';
-    aid:number = 2170;
-    cid: number = 2171;
+    aid:number = 2173;
+    cid: number = 2174;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24084,8 +24133,8 @@ class Kei05 extends Character {
 
 class Yuri04 extends Character {
     name: string = 'ユリ ★3';
-    aid:number = 2173;
-    cid: number = 2172;
+    aid:number = 2176;
+    cid: number = 2175;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24133,8 +24182,8 @@ class Yuri04 extends Character {
 
 class Yuri05 extends Character {
     name: string = 'ユリ ★4';
-    aid:number = 2173;
-    cid: number = 2174;
+    aid:number = 2176;
+    cid: number = 2177;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24182,8 +24231,8 @@ class Yuri05 extends Character {
 
 class HatsuneMiku04 extends Character {
     name: string = '初音 ミク ★3';
-    aid:number = 2219;
-    cid: number = 2218;
+    aid:number = 2222;
+    cid: number = 2221;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24230,8 +24279,8 @@ class HatsuneMiku04 extends Character {
 
 class HatsuneMiku05 extends Character {
     name: string = '初音 ミク ★4';
-    aid:number = 2219;
-    cid: number = 2220;
+    aid:number = 2222;
+    cid: number = 2223;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24278,8 +24327,8 @@ class HatsuneMiku05 extends Character {
 
 class HatsuneMiku70 extends Character {
     name: string = '初音 ミク / 音色 ★4';
-    aid:number = 2219;
-    cid: number = 2221;
+    aid:number = 2222;
+    cid: number = 2224;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24327,8 +24376,8 @@ class HatsuneMiku70 extends Character {
 
 class CC04 extends Character {
     name: string = 'C.C. ★3';
-    aid:number = 2235;
-    cid: number = 2234;
+    aid:number = 2238;
+    cid: number = 2237;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24376,8 +24425,8 @@ class CC04 extends Character {
 
 class CC05 extends Character {
     name: string = 'C.C. ★4';
-    aid:number = 2235;
-    cid: number = 2236;
+    aid:number = 2238;
+    cid: number = 2239;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24425,8 +24474,8 @@ class CC05 extends Character {
 
 class KouzukiKallen04 extends Character {
     name: string = '紅月 カレン ★3';
-    aid:number = 2232;
-    cid: number = 2231;
+    aid:number = 2235;
+    cid: number = 2234;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24473,8 +24522,8 @@ class KouzukiKallen04 extends Character {
 
 class KouzukiKallen05 extends Character {
     name: string = '紅月 カレン ★4';
-    aid:number = 2232;
-    cid: number = 2233;
+    aid:number = 2235;
+    cid: number = 2236;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24521,8 +24570,8 @@ class KouzukiKallen05 extends Character {
 
 class KagamiharaNadeshiko04 extends Character {
     name: string = '各務原 なでしこ ★3';
-    aid:number = 2207;
-    cid: number = 2206;
+    aid:number = 2210;
+    cid: number = 2209;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24570,8 +24619,8 @@ class KagamiharaNadeshiko04 extends Character {
 
 class KagamiharaNadeshiko05 extends Character {
     name: string = '各務原 なでしこ ★4';
-    aid:number = 2207;
-    cid: number = 2208;
+    aid:number = 2210;
+    cid: number = 2211;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24619,8 +24668,8 @@ class KagamiharaNadeshiko05 extends Character {
 
 class ShimaRin04 extends Character {
     name: string = '志摩 リン ★3';
-    aid:number = 2204;
-    cid: number = 2203;
+    aid:number = 2207;
+    cid: number = 2206;
     rare: number = 3;
     level: number = 60;
     levelMin: number = 1;
@@ -24667,8 +24716,8 @@ class ShimaRin04 extends Character {
 
 class ShimaRin05 extends Character {
     name: string = '志摩 リン ★4';
-    aid:number = 2204;
-    cid: number = 2205;
+    aid:number = 2207;
+    cid: number = 2208;
     rare: number = 4;
     level: number = 80;
     levelMin: number = 1;
@@ -24989,6 +25038,7 @@ export const CharacterModels = {
     KaeruzakaRaiya05: new KaeruzakaRaiya05(),
     KaeruzakaRaiya70: new KaeruzakaRaiya70(),
     KaeruzakaRaiya80: new KaeruzakaRaiya80(),
+    KaeruzakaRaiya60: new KaeruzakaRaiya60(),
     KagomeMisaki01: new KagomeMisaki01(),
     KagomeMisaki02: new KagomeMisaki02(),
     KagomeMisaki04: new KagomeMisaki04(),
