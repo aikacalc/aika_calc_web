@@ -1,0 +1,65 @@
+<div class="aika-moon">
+    <h3>基本設定</h3>
+    <div class="time-zone-selector">
+        <span>時區: </span>
+        <select name="time-zone" [(ngModel)]="selectedTimeZone" (change)="onTimeZoneChange()">
+            <option value="UTC-12">UTC-12</option>
+            <option value="UTC-11">UTC-11</option>
+            <option value="UTC-10">UTC-10</option>
+            <option value="UTC-9">UTC-9</option>
+            <option value="UTC-8">UTC-8</option>
+            <option value="UTC-7">UTC-7</option>
+            <option value="UTC-6">UTC-6</option>
+            <option value="UTC-5">UTC-5</option>
+            <option value="UTC-4">UTC-4</option>
+            <option value="UTC-3">UTC-3</option>
+            <option value="UTC-2">UTC-2</option>
+            <option value="UTC-1">UTC-1</option>
+            <option value="UTC+0">UTC+0</option>
+            <option value="UTC+1">UTC+1</option>
+            <option value="UTC+2">UTC+2</option>
+            <option value="UTC+3">UTC+3</option>
+            <option value="UTC+4">UTC+4</option>
+            <option value="UTC+5">UTC+5</option>
+            <option value="UTC+6">UTC+6</option>
+            <option value="UTC+7">UTC+7</option>
+            <option value="UTC+8" selected>UTC+8</option>
+            <option value="UTC+9">UTC+9</option>
+            <option value="UTC+10">UTC+10</option>
+            <option value="UTC+11">UTC+11</option>
+            <option value="UTC+12">UTC+12</option>
+        </select>
+        <span> (顯示特定時區的月齡更新時間用)</span>
+    </div>
+    <hr>
+    <h3>現在月齡: 現在 / 最大</h3>
+    <h1>{{ currentMoonAge.age }} {{ currentMoonAge.name }} / {{ maxMoonAge }}</h1>
+    <hr>
+    <h3>今天月齡更新時間:</h3>
+    <table class="moon-age-table">
+        <tr>
+            <th>月齡</th>
+            <th>開始時間</th>
+            <th>結束時間</th>
+        </tr>
+        <tr *ngFor="let maTime of todayMoonAgeChanges" [ngClass]="{current:maTime.isCurrentAge}">
+            <td [ngClass]="{today:maTime.isCurrentAge}">{{ maTime.newAge.age }} {{ maTime.newAge.name }}</td>
+            <td [ngClass]="{today:maTime.isStartToday}">{{ maTime.startTimeStr }}</td>
+            <td [ngClass]="{today:maTime.isEndToday}">{{ maTime.endTimeStr }}</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>未來月齡更新時間:</h3>
+    <table class="moon-age-table">
+        <tr>
+            <th>月齡</th>
+            <th>開始時間</th>
+            <th>結束時間</th>
+        </tr>
+        <tr *ngFor="let maTime of futureMoonAgeChanges" [ngClass]="{current:maTime.isCurrentAge}">
+            <td [ngClass]="{today:maTime.isCurrentAge}">{{ maTime.newAge.age }} {{ maTime.newAge.name }}</td>
+            <td [ngClass]="{today:maTime.isStartToday}">{{ maTime.startTimeStr }}</td>
+            <td [ngClass]="{today:maTime.isEndToday}">{{ maTime.endTimeStr }}</td>
+        </tr>
+    </table>
+</div>
