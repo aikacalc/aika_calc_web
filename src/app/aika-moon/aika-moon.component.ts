@@ -7,8 +7,6 @@ class MoonAge {
     name: string;
     cycleStartMs: number;
     cycleEndMs: number;
-    startTime: Date;
-    endTime: Date;
 
     // 最大月齡
     static maxAge = 29;
@@ -95,45 +93,46 @@ export class AikaMoonComponent implements OnInit {
     baseStartDate = new Date(this.baseStartMs); // 已經是UTC+9時間
     maxMoonAge = MoonAge.maxAge;
 
-    moonAges: MoonAge[] = [
-        new MoonAge(0, '🌑新月'),
-        new MoonAge(1, '🌒娥眉月'),
-        new MoonAge(2, '🌒娥眉月'),
-        new MoonAge(3, '🌒娥眉月'),
-        new MoonAge(4, '🌒娥眉月'),
-        new MoonAge(5, '🌒娥眉月'),
-        new MoonAge(6, '🌒娥眉月'),
-        new MoonAge(7, '🌓上弦月'),
-        new MoonAge(8, '🌔盈凸月'),
-        new MoonAge(9, '🌔盈凸月'),
-        new MoonAge(10, '🌔盈凸月'),
-        new MoonAge(11, '🌔盈凸月'),
-        new MoonAge(12, '🌔盈凸月'),
-        new MoonAge(13, '🌔盈凸月'),
-        new MoonAge(14, '🌕滿月'),
-        new MoonAge(15, '🌕滿月'),
-        new MoonAge(16, '🌕滿月'),
-        new MoonAge(17, '🌖虧凸月'),
-        new MoonAge(18, '🌖虧凸月'),
-        new MoonAge(19, '🌖虧凸月'),
-        new MoonAge(20, '🌖虧凸月'),
-        new MoonAge(21, '🌖虧凸月'),
-        new MoonAge(22, '🌗下弦月'),
-        new MoonAge(23, '🌘殘月'),
-        new MoonAge(24, '🌘殘月'),
-        new MoonAge(25, '🌘殘月'),
-        new MoonAge(26, '🌘殘月'),
-        new MoonAge(27, '🌘殘月'),
-        new MoonAge(28, '🌘殘月'),
-        new MoonAge(29, '🌘殘月'),
-    ];
+    moonAgeNames = {
+        0: '🌑新月',
+        1: '🌒娥眉月',
+        2: '🌒娥眉月',
+        3: '🌒娥眉月',
+        4: '🌒娥眉月',
+        5: '🌒娥眉月',
+        6: '🌒娥眉月',
+        7: '🌓上弦月',
+        8: '🌔盈凸月',
+        9: '🌔盈凸月',
+        10: '🌔盈凸月',
+        11: '🌔盈凸月',
+        12: '🌔盈凸月',
+        13: '🌔盈凸月',
+        14: '🌕滿月',
+        15: '🌕滿月',
+        16: '🌕滿月',
+        17: '🌖虧凸月',
+        18: '🌖虧凸月',
+        19: '🌖虧凸月',
+        20: '🌖虧凸月',
+        21: '🌖虧凸月',
+        22: '🌗下弦月',
+        23: '🌘殘月',
+        24: '🌘殘月',
+        25: '🌘殘月',
+        26: '🌘殘月',
+        27: '🌘殘月',
+        28: '🌘殘月',
+        29: '🌘殘月',
+    }
 
     // 現在月齡
-    currentMoonAge: MoonAge = this.moonAges[0];
+    currentMoonAge: MoonAge = new MoonAge(0, this.moonAgeNames[0]);
     todayMoonAgeChanges: MoonAgeChangeResult[] = [];
     futureMoonAgeChanges: MoonAgeChangeResult[] = [];
 
-
+    futureCountBefore: number = 5;
+    futureCountAfter: number = 30;
 
     // moonAgeChangeTimes
 
@@ -161,6 +160,10 @@ export class AikaMoonComponent implements OnInit {
         // console.log(`Selected time zone: ${this.selectedTimeZone}, Offset: ${offset}`);
         this.updateMoonAgeTimeZone();
     }
+    updateFutureMoonAgeChanges(): void {
+        this.futureMoonAgeChanges = this.getMoonAgeChangesAroundDate(this.getMainTimeDateNow(), this.futureCountBefore, this.futureCountAfter);
+        this.updateMoonAgeTimeZone();
+    }
     // 獲取當前主時間，時區固定為UTC+9
     getMainTimeMsNow(): number {
         return Date.now() + 9 * 3600000;
@@ -169,17 +172,24 @@ export class AikaMoonComponent implements OnInit {
         const timeMs = this.getMainTimeMsNow();
         return new Date(timeMs);
     }
-    // 取特定時間的月齡
-    getMoonAgeAtTime(date: Date): MoonAge {
+    newMoonAgeAtIndex(ageIndex: number): MoonAge {
+        const index = ageIndex % MoonAge.maxAge;
+        return new MoonAge(index, this.moonAgeNames[index]);
+    }
+    getMoonAgeIndexAtTime(date: Date): number {
         const timeMs = date.getTime();
         const elapsedMs = timeMs - this.baseStartMs;
         const elapsedDays = Math.floor(elapsedMs / 86400000);
         const cycleDays = elapsedDays % MoonAge.fullCycleDays;
         const ageIndex = Math.floor(cycleDays / MoonAge.singleCycleDays);
-        return this.moonAges[ageIndex];
+        return ageIndex;
+    }
+    // 取特定時間的月齡
+    getMoonAgeAtTime(date: Date): MoonAge {
+        return this.newMoonAgeAtIndex(this.getMoonAgeIndexAtTime(date));
     }
     // 取特定日期的月齡週期起始時間
-    getMoonAgeCycleStartTime(date: Date): Date {
+    getMoonAgeFullCycleStartTime(date: Date): Date {
         const timeMs = date.getTime();
         const elapsedMs = timeMs - this.baseStartMs;
         const cycleMs = elapsedMs % MoonAge.fullCycleMs;
@@ -224,16 +234,30 @@ export class AikaMoonComponent implements OnInit {
 
         const targetTimeMs = date.getTime();
         const targetDate = new Date(targetTimeMs);
-        const targetMoonAge = this.getMoonAgeAtTime(targetDate);
+        const targetMoonAgeIndex = this.getMoonAgeIndexAtTime(targetDate);
+        const targetMoonAge = this.newMoonAgeAtIndex(targetMoonAgeIndex);
+        const targetMoonAgeStartMs = this.baseStartMs + targetMoonAge.cycleStartMs
+            + Math.floor((targetTimeMs - this.baseStartMs) / MoonAge.fullCycleMs) * MoonAge.fullCycleMs;
 
+
+
+
+        let handleIndex = 0;
         for (let i = -countBefore; i <= countAfter; i++) {
             const ageIndex = (targetMoonAge.age + i + MoonAge.maxAge) % MoonAge.maxAge;
-            const currentAge = this.moonAges[ageIndex];
-            const prevAge = this.moonAges[(ageIndex - 1 + MoonAge.maxAge) % MoonAge.maxAge];
-            const cycleStartMs = this.baseStartMs + currentAge.cycleStartMs + Math.floor((targetTimeMs - this.baseStartMs) / MoonAge.fullCycleMs) * MoonAge.fullCycleMs;
-            const cycleEndMs = this.baseStartMs + currentAge.cycleEndMs + Math.floor((targetTimeMs - this.baseStartMs) / MoonAge.fullCycleMs) * MoonAge.fullCycleMs;
-            const baseStartTime = new Date(cycleStartMs);
-            const baseEndTime = new Date(cycleEndMs);
+            const currentAge = this.newMoonAgeAtIndex(ageIndex);
+            const prevAge = this.newMoonAgeAtIndex((ageIndex - 1 + MoonAge.maxAge) % MoonAge.maxAge);
+
+            // 計算週期起始和結束時間
+            let cycleStartMs = targetMoonAgeStartMs + MoonAge.singleCycleMs * i;
+            let cycleEndMs = cycleStartMs + MoonAge.singleCycleMs - 1;
+            let baseStartTime = new Date(cycleStartMs);
+            let baseEndTime = new Date(cycleEndMs);
+
+            // const cycleStartMs = this.baseStartMs + currentAge.cycleStartMs + Math.floor((targetTimeMs - this.baseStartMs) / MoonAge.fullCycleMs) * MoonAge.fullCycleMs;
+            // const cycleEndMs = this.baseStartMs + currentAge.cycleEndMs + Math.floor((targetTimeMs - this.baseStartMs) / MoonAge.fullCycleMs) * MoonAge.fullCycleMs;
+            // const baseStartTime = new Date(cycleStartMs);
+            // const baseEndTime = new Date(cycleEndMs);
 
             // 轉為選擇的時區時間
             const offsetHours = this.timeZonesDict[this.selectedTimeZone];
@@ -257,8 +281,10 @@ export class AikaMoonComponent implements OnInit {
             result.isToday = isToday;
             result.isStartToday = this.checkDateIsToday(startTime);
             result.isEndToday = this.checkDateIsToday(endTime);
-            result.isCurrentAge = (currentAge.age == this.currentMoonAge.age);
+            result.isCurrentAge = (currentAge.age == this.currentMoonAge.age) && result.isToday;
             results.push(result);
+
+            handleIndex++;
         }
 
         return results;
@@ -281,7 +307,7 @@ export class AikaMoonComponent implements OnInit {
             element.isToday = this.checkDateIsToday(element.startTime) || this.checkDateIsToday(element.endTime);
             element.isStartToday = this.checkDateIsToday(element.startTime);
             element.isEndToday = this.checkDateIsToday(element.endTime);
-            element.isCurrentAge = (element.newAge.age == this.currentMoonAge.age);
+            element.isCurrentAge = (element.newAge.age == this.currentMoonAge.age) && element.isToday;
         }
 
     }

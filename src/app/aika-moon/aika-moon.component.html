@@ -49,7 +49,14 @@
         </tr>
     </table>
     <hr>
-    <h3>未來月齡更新時間:</h3>
+    <h3>月齡更新時間:</h3>
+    <div class="input-row">
+        <span>前</span>
+        <input type="number" min="0" [(ngModel)]="futureCountBefore" (change)="updateFutureMoonAgeChanges()">
+        <span>個月齡 ~ 今天 ~ 後</span>
+        <input type="number" min="0" [(ngModel)]="futureCountAfter" (change)="updateFutureMoonAgeChanges()">
+        <span>個月齡</span>
+    </div>
     <table class="moon-age-table">
         <tr>
             <th>月齡</th>
