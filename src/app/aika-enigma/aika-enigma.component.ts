@@ -3,7 +3,7 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChild, Vie
 import { FormsModule } from '@angular/forms';
 import { CompressionService } from '../model/compression.service';
 import { AppService } from '../app.service';
-import { AikaEnigmaPsvSkill, AikaEnigmaSection, AikaPsvSkillSlot, parseSkillDataJson } from '../model/skill';
+import { AikaEnigmaArea, AikaEnigmaPsvSkill, AikaEnigmaSection, AikaPsvSkillSlot, parseSkillDataJson } from '../model/skill';
 import { HttpClientModule } from '@angular/common/http';
 import { Actress } from '../model/actress';
 import { Character } from '../model/character';
@@ -68,6 +68,9 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
     selectedSection: AikaEnigmaSection | null = null;
     selectedSectionId: number = -1;
+    selectedSectionAreas: AikaEnigmaArea[] = [];
+    showAreaPsvSkills: { [key: number]: boolean } = {};
+
     errorMessage: string = '';
     gid: number = 1;
     inited: boolean = false;
@@ -220,6 +223,15 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             this.selectedCharacter = character;
             this.selectedCharacterSlots = this.slotDict[character.cid] || [];
             this.selectedActressPsvSkills = this.actressPsvSkills[character.aid] || [];
+            this.selectedSection = this.sections.find(v => v.aid == character.aid) || null;
+            if (this.selectedSection) {
+                this.selectedSectionAreas = this.selectedSection.area;
+                this.selectedSectionId = this.selectedSection.id;
+                for (const area of this.selectedSectionAreas) {
+                    this.showAreaPsvSkills[area.name] = true;
+                }
+                console.log('Selected Section Areas:', this.selectedSectionAreas);
+            }
             this.selectSlot(null); // Reset selected slot
             // console.log(this.selectedCharacter);
             // console.log(this.selectedCharacterSlots);
@@ -432,6 +444,9 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
     setEffectFilter(effectName: string, $event_: Event): void {
         if (effectName == 'ALL') {
             this.filterEffectNames = [];
+            for (const area of this.selectedSectionAreas) {
+                this.showAreaPsvSkills[area.name] = true;
+            }
             return;
         }
 
@@ -454,6 +469,9 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         }
     }
     checkPsvSkillHide(psvSkill: AikaEnigmaPsvSkill): boolean {
+        if (!this.showAreaPsvSkills[psvSkill.areaName]) {
+            return true; // Area is hidden
+        }
         if (this.filterEffectNames.length == 0) {
             return false; // No filter, show all
         }
@@ -469,6 +487,13 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             return false; // At least one effect matches the filter
         }
         return true; // No effects match the filter, hide this skill
+    }
+
+    onFilterAreaCheckboxChanged(areaName: string): void {
+        console.log('Area checkbox changed:', areaName, this.showAreaPsvSkills[areaName]);
+        // const slot_ = this.selectedSlot;
+        // this.selectedSlot = null;
+        // this.selectSlot(slot_);
     }
 
 }

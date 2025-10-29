@@ -5,7 +5,49 @@
     right: 0;
     bottom: 0;
     display: flex;
-    overflow-x: auto;
+    flex-direction: column;
+
+    .toolbar {
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+
+        button {
+            height: 25px;
+        }
+
+        label {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                margin-left: 5px;
+                height: 20px;
+            }
+
+            input[type="checkbox"] {
+                margin-left: 5px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .body {
+        flex: 1;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    hr.vert {
+        border: none;
+        border-left: 1px solid #ccc;
+        height: 20px;
+        margin: 0 10px;
+    }
 
     .index1,
     .index2,
@@ -54,10 +96,18 @@
         min-width: 200px;
     }
 
-    .body {
+    .psv-list {
         flex: 1;
         min-width: 500px;
         overflow-y: auto;
+
+        .character-name {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
         h3 {
             padding-left: 20px;

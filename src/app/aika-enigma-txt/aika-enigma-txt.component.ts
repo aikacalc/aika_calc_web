@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AppService } from '../app.service';
 import { AikaEnigmaArea, AikaEnigmaIndex, AikaEnigmaPsvSkill, AikaEnigmaPsvSkillUpgrade, AikaEnigmaSection, parseSkillDataJson } from '../model/skill';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-aika-enigma-txt',
@@ -11,6 +12,7 @@ import { AikaEnigmaArea, AikaEnigmaIndex, AikaEnigmaPsvSkill, AikaEnigmaPsvSkill
     imports: [
         CommonModule,
         HttpClientModule,
+        FormsModule,
     ],
     providers: [
         CompressionService,
@@ -44,6 +46,20 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
     firstTimeEnter: boolean = true;
     inited: boolean = false;
     gid: number = 1;
+
+
+    filter = {
+        keyword: '',
+        showSelectedCharacterOnly: true,
+        showUpgradeMaterials: true,
+    };
+    inputKeywordTimer: any = null;
+
+
+
+
+
+
     constructor(
         private compressionService: CompressionService,
         private appService: AppService,
@@ -282,4 +298,42 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         return totalCost.toString();
     }
 
+
+    scrollIndex1IntoView(index: AikaEnigmaIndex): void {
+        const el = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        if (el) {
+            el.nativeElement.scrollIntoView({ block: 'center' });
+        }
+    }
+    scrollIndex2IntoView(index: AikaEnigmaIndex): void {
+        const el = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        if (el) {
+            el.nativeElement.scrollIntoView({ block: 'center' });
+        }
+    }
+    scrollIndex3IntoView(index: AikaEnigmaIndex): void {
+        const el = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        if (el) {
+            el.nativeElement.scrollIntoView({ block: 'center' });
+        }
+    }
+    scrollAllIndexesIntoView(): void {
+        this.scrollIndex1IntoView(this.selectedIndex1);
+        this.scrollIndex2IntoView(this.selectedIndex2);
+        this.scrollIndex3IntoView(this.selectedIndex3);
+    }
+
+    resetFilters(): void {
+        this.filter.showSelectedCharacterOnly = true;
+        this.filter.keyword = '';
+    }
+    onKeywordChange(event: any): void {
+        if (this.inputKeywordTimer) {
+            clearTimeout(this.inputKeywordTimer);
+        }
+        this.inputKeywordTimer = setTimeout(() => {
+
+
+        }, 300);
+    }
 }

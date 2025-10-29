@@ -1,51 +1,70 @@
 <div class="aika-enigma-txt">
-    <div class="index1">
-        <div class="selected-item">{{selectedIndex1.name}}</div>
-        <div class="list">
-            <div class="index-item" *ngFor="let item of indexes1; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex1==item}" (click)="selectIndex1(item)" #index1Item [attr.data-id]="item.id">
-                <span>{{item.name}}</span>
-            </div>
-        </div>
-    </div>
-    <div class="index2">
-        <div class="selected-item">{{selectedIndex2.name}}</div>
-        <div class="list">
-            <div class="index-item" *ngFor="let item of indexes2; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex2==item}" (click)="selectIndex2(item)" #index2Item [attr.data-id]="item.id">
-                <span>{{item.name}}</span>
-            </div>
-        </div>
-    </div>
-    <div class="index3">
-        <div class="selected-item">{{selectedIndex3.name}}</div>
-        <div class="list">
-            <div class="index-item" *ngFor="let item of indexes3; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex3==item}" (click)="selectIndex3(item)" #index3Item [attr.data-id]="item.id">
-                <span>{{item.name}}</span>
-            </div>
-        </div>
+    <div class="toolbar">
+        <label>
+            <input type="checkbox" [(ngModel)]="filter.showUpgradeMaterials">
+            <span>顯示升級素材</span>
+        </label>
+        <!-- <label>
+            <input type="checkbox" [(ngModel)]="filter.showSelectedCharacterOnly">
+            <span>只顯示選擇的角色</span>
+        </label>
+        <hr class="vert">
+        <label>
+            <span>搜尋技能</span>
+            <input type="text" placeholder="搜尋技能名稱或效果" [(ngModel)]="filter.keyword">
+        </label>
+        <button (click)="resetFilters()">重置</button> -->
     </div>
     <div class="body">
-        <div class="section-item" *ngFor="let item of selectedSections; trackBy: trackById" #sectionItem [attr.data-id]="item.id">
-            <h2>{{item.name}}</h2>
-            <div class="total-cost">
-                <div>升級總素材:</div>
-                <div>{{selectedSectionTotalCost}}</div>
+        <div class="index1">
+            <div class="selected-item">{{selectedIndex1.name}}</div>
+            <div class="list">
+                <div class="index-item" *ngFor="let item of indexes1; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex1==item}" (click)="selectIndex1(item)" #index1Item [attr.data-id]="item.id">
+                    <span>{{item.name}}</span>
+                </div>
             </div>
-            <div *ngFor="let area of item.area; trackBy: trackById" #areaItem [attr.data-id]="area.id">
-                <h3>{{area.name}}</h3>
-                <div *ngFor="let psvSkill of area.psvskills; trackBy: trackById" #psvSkillItem [attr.data-id]="psvSkill.id">
-                    <h4>{{psvSkill.name}}</h4>
-                    <!-- <div class="grade">
-                        <span>G:{{psvSkill.uc}} </span>
-                        <span *ngFor="let tag of psvSkill.tags;let last = last">{{TagName[tag]}} </span>
-                    </div> -->
-                    <!-- <div class="tag" *ngIf="psvSkill.tags.length > 0">
-                        <span *ngFor="let tag of psvSkill.tags;let last = last">{{tag}} </span>
-                    </div> -->
-                    <div class="desc">{{psvSkill.desc}}</div>
-                    <div class="effect">{{psvSkill.effect}}</div>
-                    <div *ngIf="psvSkill.upgrade" class="upgrade">
-                        <div>升級: {{psvSkill.level}} -> {{psvSkill.upgrade.level}}</div>
-                        <div class="cost" *ngFor="let cost of psvSkill.upgrade.cost">{{cost}}</div>
+        </div>
+        <div class="index2">
+            <div class="selected-item">{{selectedIndex2.name}}</div>
+            <div class="list">
+                <div class="index-item" *ngFor="let item of indexes2; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex2==item}" (click)="selectIndex2(item)" #index2Item [attr.data-id]="item.id">
+                    <span>{{item.name}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="index3">
+            <div class="selected-item">{{selectedIndex3.name}}</div>
+            <div class="list">
+                <div class="index-item" *ngFor="let item of indexes3; trackBy: trackById" [ngClass]="{disabled:!item.enable,selected:selectedIndex3==item}" (click)="selectIndex3(item)" #index3Item [attr.data-id]="item.id">
+                    <span>{{item.name}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="psv-list">
+            <div class="section-item" *ngFor="let item of selectedSections; trackBy: trackById" #sectionItem [attr.data-id]="item.id">
+                <h2 class="character-name"
+                (click)="scrollAllIndexesIntoView()">{{item.name}}</h2>
+                <div class="total-cost" *ngIf="filter.showUpgradeMaterials">
+                    <div>升級總素材:</div>
+                    <div>{{selectedSectionTotalCost}}</div>
+                </div>
+                <div *ngFor="let area of item.area; trackBy: trackById" #areaItem [attr.data-id]="area.id">
+                    <h3>{{area.name}}</h3>
+                    <div *ngFor="let psvSkill of area.psvskills; trackBy: trackById" #psvSkillItem [attr.data-id]="psvSkill.id">
+                        <h4>{{psvSkill.name}}</h4>
+                        <!-- <div class="grade">
+                            <span>G:{{psvSkill.uc}} </span>
+                            <span *ngFor="let tag of psvSkill.tags;let last = last">{{TagName[tag]}} </span>
+                        </div> -->
+                        <!-- <div class="tag" *ngIf="psvSkill.tags.length > 0">
+                            <span *ngFor="let tag of psvSkill.tags;let last = last">{{tag}} </span>
+                        </div> -->
+                        <div class="desc">{{psvSkill.desc}}</div>
+                        <div class="effect">{{psvSkill.effect}}</div>
+                        <div *ngIf="psvSkill.upgrade && filter.showUpgradeMaterials" class="upgrade">
+                            <div>升級: {{psvSkill.level}} -> {{psvSkill.upgrade.level}}</div>
+                            <div class="cost" *ngFor="let cost of psvSkill.upgrade.cost">{{cost}}</div>
+                        </div>
                     </div>
                 </div>
             </div>
