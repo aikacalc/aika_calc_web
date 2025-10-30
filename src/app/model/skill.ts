@@ -66,6 +66,7 @@ export class AikaEnigmaPsvSkill {
     effects: AikaSkillEffect[] = []; // parsed effects for display
     areaName: string = ''; // area name for display
     areaNameTag: string = ''; // area name tag for display
+    descOneLine: string = '';
 }
 export class AikaEnigmaPsvSkillUpgrade {
     level: number = 0;
@@ -99,6 +100,7 @@ export function parseSkillDataJson(jsonString: string): AikaEnigmaSection[] {
                 psvskill.level = rawPsvskill.level;
                 psvskill.maxLv = rawPsvskill.maxLv;
                 psvskill.desc = rawPsvskill.desc;
+                psvskill.descOneLine = rawPsvskill.desc.replace(/[\r\n]/g, '');
                 psvskill.effect = rawPsvskill.effect;
                 psvskill.tags = rawPsvskill.tags;
                 psvskill.uc = rawPsvskill.uc;

@@ -24,11 +24,13 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
     // decompressedContent: string = '';
     errorMessage: string = '';
+    selectedSection: AikaEnigmaSection | null = null;
     selectedSections: AikaEnigmaSection[] = [];
     sections: AikaEnigmaSection[] = [];
     indexes1: AikaEnigmaIndex[] = [];
     indexes2: AikaEnigmaIndex[] = [];
     indexes3: AikaEnigmaIndex[] = [];
+    sectionCosts: { [key: number]: string } = {};
 
     selectedIndex1: AikaEnigmaIndex = new AikaEnigmaIndex('--');
     selectedIndex2: AikaEnigmaIndex = new AikaEnigmaIndex('--');
@@ -50,11 +52,15 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
     filter = {
         keyword: '',
-        showSelectedCharacterOnly: true,
+        showAllCharacterPsvSkills: false,
         showUpgradeMaterials: true,
+        showPassiveDescription: true,
+        showPassiveEffect: true,
     };
     inputKeywordTimer: any = null;
 
+    searchResultShow: { [key: number]: boolean } = {};
+    enableSearchHightlight: boolean = false;
 
 
 
@@ -120,6 +126,22 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
                     });
                 });
             });
+
+            this.sections.forEach((section) => {
+                const cost = this.getSectionsCost([section]);
+                this.sectionCosts[section.id] = cost;
+
+                this.searchResultShow[section.id] = true;
+                this.searchResultShow[section.index.id] = true;
+                section.area.forEach((area) => {
+                    this.searchResultShow[area.id] = true;
+                    this.searchResultShow[area.index.id] = true;
+                    area.psvskills.forEach((psvskill) => {
+                        this.searchResultShow[psvskill.id] = true;
+                        this.searchResultShow[psvskill.index.id] = true;
+                    });
+                });
+            });
             // console.log(this.sections);
 
             this.inited = true;
@@ -151,12 +173,17 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             const el3 = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
             el3.nativeElement.scrollIntoView({ block: 'center' });
 
-            const section = this.sections.find(v => v.index == 愛花index);
-            this.selectedSections = [section];
-            this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+            const selectedSection = this.sections.find(v => v.index == this.selectedIndex1);
+            this.selectedSection = selectedSection;
+            if (!this.filter.showAllCharacterPsvSkills) {
+                this.selectedSections = [selectedSection];
+            } else {
+                this.selectedSections = this.sections;
+            }
+            // this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
 
             setTimeout(() => {
-                const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+                const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == selectedSection.id);
                 bodyEl.nativeElement.scrollIntoView({ block: 'start' });
             }, 1);
         }, 1);
@@ -185,12 +212,18 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             index3El.nativeElement.scrollIntoView({ block: 'center' });
         }
 
-        const section = this.sections.find(v => v.index == index);
-        this.selectedSections = [section];
-        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
-        console.log('section', section);
+        const selectedSection = this.sections.find(v => v.index == this.selectedIndex1);
+        this.selectedSection = selectedSection;
+        if (!this.filter.showAllCharacterPsvSkills) {
+            this.selectedSections = [selectedSection];
+        } else {
+            this.selectedSections = this.sections;
+        }
+        // this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        // console.log('section', section);
+
         setTimeout(() => {
-            const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == section.id);
+            const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == selectedSection.id);
             if (bodyEl) {
                 bodyEl.nativeElement.scrollIntoView({ block: 'start' });
             }
@@ -216,11 +249,18 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             index3El.nativeElement.scrollIntoView({ block: 'center' });
         }
 
-        const section = this.sections.find(v => v.index == this.selectedIndex1);
-        this.selectedSections = [section];
-        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        const selectedSection = this.sections.find(v => v.index == this.selectedIndex1);
+        this.selectedSection = selectedSection;
+        if (!this.filter.showAllCharacterPsvSkills) {
+            this.selectedSections = [selectedSection];
+        } else {
+            this.selectedSections = this.sections;
+        }
+        // this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+
+
         setTimeout(() => {
-            const area = section.area.find(v => v.index == index);
+            const area = selectedSection.area.find(v => v.index == index);
             const areaEl = this.areaItems.find(v => v.nativeElement?.getAttribute('data-id') == area.id);
             if (areaEl) {
                 areaEl.nativeElement.scrollIntoView({ block: 'start' });
@@ -246,11 +286,18 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             index2El.nativeElement.scrollIntoView({ block: 'center' });
         }
 
-        const section = this.sections.find(v => v.index == this.selectedIndex1);
-        this.selectedSections = [section];
-        this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+        const selectedSection = this.sections.find(v => v.index == this.selectedIndex1);
+        this.selectedSection = selectedSection;
+        if (!this.filter.showAllCharacterPsvSkills) {
+            this.selectedSections = [selectedSection];
+        } else {
+            this.selectedSections = this.sections;
+        }
+        // this.selectedSectionTotalCost = this.getSectionsCost(this.selectedSections);
+
+
         setTimeout(() => {
-            const area = section.area.find(v => v.index == this.selectedIndex2);
+            const area = selectedSection.area.find(v => v.index == this.selectedIndex2);
             const psvSkill = area.psvskills.find(v => v.index == index);
             const psvSkillEl = this.psvSkillItems.find(v => v.nativeElement?.getAttribute('data-id') == psvSkill.id);
             if (psvSkillEl) {
@@ -323,17 +370,162 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         this.scrollIndex3IntoView(this.selectedIndex3);
     }
 
-    resetFilters(): void {
-        this.filter.showSelectedCharacterOnly = true;
+    resetSearch(): void {
         this.filter.keyword = '';
+        this.enableSearchHightlight = false;
+        this.onShowAllCharacterPsvSkillsChange(null);
+        this.onKeywordChange(null);
+    }
+    onShowAllCharacterPsvSkillsChange(event: any): void {
+        if (!this.filter.showAllCharacterPsvSkills) {
+            const selectedSection = this.sections.find(v => v.index == this.selectedIndex1);
+            this.selectedSections = [selectedSection];
+        } else {
+            this.selectedSections = this.sections;
+        }
     }
     onKeywordChange(event: any): void {
+        console.log('onKeywordChange', this.filter.keyword);
         if (this.inputKeywordTimer) {
             clearTimeout(this.inputKeywordTimer);
         }
         this.inputKeywordTimer = setTimeout(() => {
+            const inputKeyword = this.filter.keyword.trim();
 
+            if (inputKeyword == '') {
+                this.enableSearchHightlight = false;
 
-        }, 300);
+                // show all
+                this.sections.forEach((section) => {
+                    this.searchResultShow[section.id] = true;
+                    this.searchResultShow[section.index.id] = true;
+                    section.area.forEach((area) => {
+                        this.searchResultShow[area.id] = true;
+                        this.searchResultShow[area.index.id] = true;
+                        area.psvskills.forEach((psvskill) => {
+                            this.searchResultShow[psvskill.id] = true;
+                            this.searchResultShow[psvskill.index.id] = true;
+                        });
+                    });
+                });
+                return;
+            }
+
+            this.enableSearchHightlight = true;
+
+            // 解析查詢關鍵字
+            const { includeKeywords, excludeKeywords, exactKeywords } = this.parseKeywords(inputKeyword);
+
+            // reset
+            this.sections.forEach((section) => {
+                this.searchResultShow[section.id] = false;
+                this.searchResultShow[section.index.id] = false;
+                section.area.forEach((area) => {
+                    this.searchResultShow[area.id] = false;
+                    this.searchResultShow[area.index.id] = false;
+                    area.psvskills.forEach((psvskill) => {
+                        this.searchResultShow[psvskill.id] = false;
+                        this.searchResultShow[psvskill.index.id] = false;
+                    });
+                });
+            });
+
+            // search
+            this.sections.forEach((section) => {
+                let isMatchSection = false;
+                section.area.forEach((area) => {
+                    let isMatchArea = false;
+                    area.psvskills.forEach((psvskill) => {
+                        const isMatchPsvSkill = this.isMatchKeywords(psvskill, includeKeywords, excludeKeywords, exactKeywords);
+                        if (isMatchPsvSkill) {
+                            this.searchResultShow[psvskill.id] = true;
+                            this.searchResultShow[psvskill.index.id] = true;
+                            isMatchSection = true;
+                            isMatchArea = true;
+                        }
+                    });
+                    if (isMatchArea) {
+                        this.searchResultShow[area.id] = true;
+                        this.searchResultShow[area.index.id] = true;
+                    }
+                });
+                if (isMatchSection) {
+                    this.searchResultShow[section.id] = true;
+                    this.searchResultShow[section.index.id] = true;
+                }
+            });
+        }, 500);
+    }
+
+    private parseKeywords(inputKeyword: string): { includeKeywords: string[], excludeKeywords: string[], exactKeywords: string[] } {
+        const includeKeywords: string[] = [];
+        const excludeKeywords: string[] = [];
+        const exactKeywords: string[] = [];
+
+        // 處理雙引號內的完全匹配關鍵字
+        const exactMatches = inputKeyword.match(/"[^"]*"/g);
+        let remainingKeyword = inputKeyword;
+
+        if (exactMatches) {
+            exactMatches.forEach(match => {
+                const keyword = match.slice(1, -1); // 移除雙引號
+                if (keyword.trim()) {
+                    exactKeywords.push(keyword.trim());
+                }
+                remainingKeyword = remainingKeyword.replace(match, '');
+            });
+        }
+
+        // 處理剩餘的關鍵字（空格分割）
+        const keywords = remainingKeyword.split(/\s+/).filter(k => k.trim());
+
+        keywords.forEach(keyword => {
+            const trimmedKeyword = keyword.trim();
+            if (trimmedKeyword.startsWith('-') && trimmedKeyword.length > 1) {
+                // 排除關鍵字（去掉減號）
+                excludeKeywords.push(trimmedKeyword.substring(1));
+            } else if (trimmedKeyword) {
+                // 包含關鍵字
+                includeKeywords.push(trimmedKeyword);
+            }
+        });
+
+        return { includeKeywords, excludeKeywords, exactKeywords };
+    }
+
+    private isMatchKeywords(psvskill: AikaEnigmaPsvSkill, includeKeywords: string[], excludeKeywords: string[], exactKeywords: string[]): boolean {
+        const searchText = [
+            psvskill.name,
+            psvskill.descOneLine || '',
+            psvskill.effect || ''
+        ].join(' ').toLowerCase();
+
+        // 檢查排除關鍵字 - 如果包含任何排除關鍵字則不匹配
+        for (const excludeKeyword of excludeKeywords) {
+            if (searchText.includes(excludeKeyword.toLowerCase())) {
+                return false;
+            }
+        }
+
+        // 檢查完全匹配關鍵字 - 所有完全匹配關鍵字都必須存在
+        for (const exactKeyword of exactKeywords) {
+            if (!searchText.includes(exactKeyword.toLowerCase())) {
+                return false;
+            }
+        }
+
+        // 檢查包含關鍵字 - 所有包含關鍵字都必須存在
+        for (const includeKeyword of includeKeywords) {
+            if (!searchText.includes(includeKeyword.toLowerCase())) {
+                return false;
+            }
+        }
+
+        // 如果沒有任何關鍵字，則不匹配
+        if (includeKeywords.length === 0 && exactKeywords.length === 0) {
+            return false;
+        }
+
+        return true;
     }
 }
