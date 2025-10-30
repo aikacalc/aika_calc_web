@@ -56,6 +56,7 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         showUpgradeMaterials: true,
         showPassiveDescription: true,
         showPassiveEffect: true,
+        showSearchResultOnly: false,
     };
     inputKeywordTimer: any = null;
 

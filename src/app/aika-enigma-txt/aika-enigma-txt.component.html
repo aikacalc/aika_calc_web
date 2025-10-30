@@ -23,6 +23,10 @@
             <input type="text" placeholder="搜尋技能名稱或效果" [(ngModel)]="filter.keyword" (input)="onKeywordChange($event)">
         </label>
         <button (click)="resetSearch()">重置搜尋</button>
+        <label>
+            <input type="checkbox" [(ngModel)]="filter.showSearchResultOnly">
+            <span>僅顯示搜尋結果</span>
+        </label>
     </div>
     <div class="body">
         <div class="index1">
@@ -34,6 +38,7 @@
                         disabled:!item.enable,
                         selected:selectedIndex1==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
+                        'hide': filter.showSearchResultOnly && enableSearchHightlight && !searchResultShow[item.id]
                         }"
                     (click)="selectIndex1(item)"
                     #index1Item
@@ -51,6 +56,7 @@
                         disabled:!item.enable,
                         selected:selectedIndex2==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
+                        'hide': filter.showSearchResultOnly && enableSearchHightlight && !searchResultShow[item.id]
                         }"
                     (click)="selectIndex2(item)"
                     #index2Item
@@ -68,6 +74,7 @@
                         disabled:!item.enable,
                         selected:selectedIndex3==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
+                        'hide': filter.showSearchResultOnly && enableSearchHightlight && !searchResultShow[item.id]
                         }"
                     (click)="selectIndex3(item)"
                     #index3Item
