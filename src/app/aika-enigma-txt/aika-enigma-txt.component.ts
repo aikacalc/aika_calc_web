@@ -192,6 +192,24 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
     }
 
+
+    findDataIdElementRef(items: QueryList<ElementRef>, targetId: number): ElementRef {
+        return items.find(v => {
+            const isMatchId = v.nativeElement?.getAttribute('data-id') == targetId;
+
+            if (isMatchId) {
+                if (this.enableSearchHightlight) {
+                    if (this.filter.showSearchResultOnly) {
+                        if (this.searchResultShow[targetId]) {
+                            return true;
+                        }
+                    }
+                }
+            }
+
+            return isMatchId;
+        });
+    }
     selectIndex1(index: AikaEnigmaIndex): void {
         console.log('selectIndex1', index);
         this.selectedIndex1 = index;
@@ -203,12 +221,13 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             this.selectedIndex3 = this.indexes3.find(v => v.parent == this.selectedIndex2 && v.enable);
         }
 
-        const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        // const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        const index2El = this.findDataIdElementRef(this.index2Items, this.selectedIndex2.id);
         if (index2El) {
             index2El.nativeElement.scrollIntoView({ block: 'center' });
         }
 
-        const index3El = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+        const index3El = this.findDataIdElementRef(this.index3Items, this.selectedIndex3.id);
         if (index3El) {
             index3El.nativeElement.scrollIntoView({ block: 'center' });
         }
@@ -224,7 +243,8 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         // console.log('section', section);
 
         setTimeout(() => {
-            const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == selectedSection.id);
+            // const bodyEl = this.sectionItems.find(v => v.nativeElement?.getAttribute('data-id') == selectedSection.id);
+            const bodyEl = this.findDataIdElementRef(this.sectionItems, selectedSection.id);
             if (bodyEl) {
                 bodyEl.nativeElement.scrollIntoView({ block: 'start' });
             }
@@ -240,12 +260,13 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             this.selectedIndex3 = this.indexes3.find(v => v.parent == index && v.enable);
         }
 
-        const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        // const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        const index1El = this.findDataIdElementRef(this.index1Items, this.selectedIndex1.id);
         if (index1El) {
             index1El.nativeElement.scrollIntoView({ block: 'center' });
         }
 
-        const index3El = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex3.id);
+        const index3El = this.findDataIdElementRef(this.index3Items, this.selectedIndex3.id);
         if (index3El) {
             index3El.nativeElement.scrollIntoView({ block: 'center' });
         }
@@ -262,7 +283,7 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
         setTimeout(() => {
             const area = selectedSection.area.find(v => v.index == index);
-            const areaEl = this.areaItems.find(v => v.nativeElement?.getAttribute('data-id') == area.id);
+            const areaEl = this.findDataIdElementRef(this.areaItems, area.id);
             if (areaEl) {
                 areaEl.nativeElement.scrollIntoView({ block: 'start' });
             }
@@ -278,11 +299,12 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
             this.selectedIndex1 = this.selectedIndex2.parent;
         }
 
-        const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        // const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
+        const index1El = this.findDataIdElementRef(this.index1Items, this.selectedIndex1.id);
         if (index1El) {
             index1El.nativeElement.scrollIntoView({ block: 'center' });
         }
-        const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
+        const index2El = this.findDataIdElementRef(this.index2Items, this.selectedIndex2.id);
         if (index2El) {
             index2El.nativeElement.scrollIntoView({ block: 'center' });
         }
@@ -300,7 +322,7 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         setTimeout(() => {
             const area = selectedSection.area.find(v => v.index == this.selectedIndex2);
             const psvSkill = area.psvskills.find(v => v.index == index);
-            const psvSkillEl = this.psvSkillItems.find(v => v.nativeElement?.getAttribute('data-id') == psvSkill.id);
+            const psvSkillEl = this.findDataIdElementRef(this.psvSkillItems, psvSkill.id);
             if (psvSkillEl) {
                 psvSkillEl.nativeElement.scrollIntoView({ block: 'start' });
             }
@@ -348,19 +370,20 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
 
 
     scrollIndex1IntoView(index: AikaEnigmaIndex): void {
-        const el = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        // const el = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        const el = this.findDataIdElementRef(this.index1Items, index.id);
         if (el) {
             el.nativeElement.scrollIntoView({ block: 'center' });
         }
     }
     scrollIndex2IntoView(index: AikaEnigmaIndex): void {
-        const el = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        const el = this.findDataIdElementRef(this.index2Items, index.id);
         if (el) {
             el.nativeElement.scrollIntoView({ block: 'center' });
         }
     }
     scrollIndex3IntoView(index: AikaEnigmaIndex): void {
-        const el = this.index3Items.find(v => v.nativeElement?.getAttribute('data-id') == index.id);
+        const el = this.findDataIdElementRef(this.index3Items, index.id);
         if (el) {
             el.nativeElement.scrollIntoView({ block: 'center' });
         }
