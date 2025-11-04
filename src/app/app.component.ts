@@ -13,6 +13,7 @@ import { AikaEnigmaTxtComponent } from "./aika-enigma-txt/aika-enigma-txt.compon
 import { AikaGachaCalcComponent } from './aika-gacha-calc/aika-gacha-calc.component';
 // import { AikaCalc2Component } from "./aika-calc2/aika-calc2.component";
 import { AikaMoonComponent } from './aika-moon/aika-moon.component';
+import { AikaSpinComponent } from './aika-spin/aika-spin.component';
 
 @Component({
     selector: 'app-root',
@@ -28,6 +29,7 @@ import { AikaMoonComponent } from './aika-moon/aika-moon.component';
         AikaEnigmaTxtComponent,
         AikaGachaCalcComponent,
         AikaMoonComponent,
+        AikaSpinComponent,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
