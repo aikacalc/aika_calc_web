@@ -197,15 +197,15 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         return items.find(v => {
             const isMatchId = v.nativeElement?.getAttribute('data-id') == targetId;
 
-            if (isMatchId) {
-                if (this.enableSearchHightlight) {
-                    if (this.filter.showSearchResultOnly) {
-                        if (this.searchResultShow[targetId]) {
-                            return true;
-                        }
-                    }
-                }
-            }
+            // if (isMatchId) {
+            //     if (this.enableSearchHightlight) {
+            //         if (this.filter.showSearchResultOnly) {
+            //             if (this.searchResultShow[targetId]) {
+            //                 return true;
+            //             }
+            //         }
+            //     }
+            // }
 
             return isMatchId;
         });
@@ -214,11 +214,11 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         console.log('selectIndex1', index);
         this.selectedIndex1 = index;
 
-        if (this.selectedIndex2.parent != index) {
-            this.selectedIndex2 = this.indexes2.find(v => v.parent == index && v.enable);
+        if (this.selectedIndex2.parent != index || (this.enableSearchHightlight && !this.searchResultShow[this.selectedIndex2.id])) {
+            this.selectedIndex2 = this.indexes2.find(v => v.parent == index && v.enable && (this.enableSearchHightlight ? this.searchResultShow[v.id] : true));
         }
-        if (this.selectedIndex3.parent.parent != index) {
-            this.selectedIndex3 = this.indexes3.find(v => v.parent == this.selectedIndex2 && v.enable);
+        if (this.selectedIndex3.parent.parent != index || (this.enableSearchHightlight && !this.searchResultShow[this.selectedIndex3.id])) {
+            this.selectedIndex3 = this.indexes3.find(v => v.parent == this.selectedIndex2 && v.enable && (this.enableSearchHightlight ? this.searchResultShow[v.id] : true));
         }
 
         // const index2El = this.index2Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex2.id);
@@ -256,8 +256,8 @@ export class AikaEnigmaTxtComponent implements OnInit, AfterViewInit {
         if (this.selectedIndex2.parent != this.selectedIndex1) {
             this.selectedIndex1 = this.selectedIndex2.parent;
         }
-        if (this.selectedIndex3.parent != index) {
-            this.selectedIndex3 = this.indexes3.find(v => v.parent == index && v.enable);
+        if (this.selectedIndex3.parent != index || (this.enableSearchHightlight && !this.searchResultShow[this.selectedIndex3.id])) {
+            this.selectedIndex3 = this.indexes3.find(v => v.parent == index && v.enable && (this.enableSearchHightlight ? this.searchResultShow[v.id] : true));
         }
 
         // const index1El = this.index1Items.find(v => v.nativeElement?.getAttribute('data-id') == this.selectedIndex1.id);
