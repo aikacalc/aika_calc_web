@@ -2723,6 +2723,55 @@ class KoashiMutsumi80 extends Character {
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
 }
 
+class KoashiMutsumi60 extends Character {
+    name: string = '小芦 睦海 / ストレングス ★4';
+    aid:number = 101;
+    cid: number = 105;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3110;
+    hpMin: number = 835;
+    hpMax: number = 3110;
+    atkClose: number = 595;
+    atkCloseMin: number = 165;
+    atkCloseMax: number = 595;
+    attrClose: number = 0;
+    atkShot: number = 561;
+    atkShotMin: number = 156;
+    atkShotMax: number = 561;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.9),
+        new Buff(AttrTypeId.Sniper, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.KoashiMutsumi.long;
+    weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
+    equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
+    equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+}
+
 class NikotamaMai01 extends Character {
     name: string = '二子玉 舞 ★1';
     aid:number = 93;
@@ -25092,6 +25141,7 @@ export const CharacterModels = {
     KoashiMutsumi05: new KoashiMutsumi05(),
     KoashiMutsumi70: new KoashiMutsumi70(),
     KoashiMutsumi80: new KoashiMutsumi80(),
+    KoashiMutsumi60: new KoashiMutsumi60(),
     NikotamaMai01: new NikotamaMai01(),
     NikotamaMai02: new NikotamaMai02(),
     NikotamaMai04: new NikotamaMai04(),
