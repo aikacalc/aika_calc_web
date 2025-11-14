@@ -42,6 +42,9 @@
         <!-- <button class="aika-spin" [ngClass]="{selected:page=='asp'}" (click)="selectPage('asp')">
             <span>*愛花轉圈圈*</span>
         </button> -->
+        <button class="aika-merge-image" [ngClass]="{selected:page=='ami'}" (click)="selectPage('ami')">
+            <span>愛花合併圖</span>
+        </button>
     </div>
     <div class="body">
         <div class="aika-calc-container" [hidden]="page!=''">
@@ -74,6 +77,9 @@
         </div>
         <div class="aika-spin" [hidden]="page!='asp'">
             <app-aika-spin></app-aika-spin>
+        </div>
+        <div class="aika-merge-image" [hidden]="page!='ami'">
+            <app-aika-merge-image></app-aika-merge-image>
         </div>
     </div>
     <div class="msg" *ngIf="service.showMessage">
