@@ -15,6 +15,7 @@ import { AikaGachaCalcComponent } from './aika-gacha-calc/aika-gacha-calc.compon
 import { AikaMoonComponent } from './aika-moon/aika-moon.component';
 import { AikaSpinComponent } from './aika-spin/aika-spin.component';
 import { AikaMergeImageComponent } from './aika-merge-image/aika-merge-image.component';
+import { AikaSpriteSheetGifComponent } from './aika-sprite-sheet-gif/aika-sprite-sheet-gif.component';
 
 @Component({
     selector: 'app-root',
@@ -32,6 +33,7 @@ import { AikaMergeImageComponent } from './aika-merge-image/aika-merge-image.com
         AikaMoonComponent,
         AikaSpinComponent,
         AikaMergeImageComponent,
+        AikaSpriteSheetGifComponent,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'

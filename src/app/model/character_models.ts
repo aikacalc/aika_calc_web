@@ -19024,6 +19024,55 @@ class SashiharaNanami05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
 }
 
+class SashiharaNanami70 extends Character {
+    name: string = '佐士原 七海 / 驀進 ★4';
+    aid:number = 728;
+    cid: number = 731;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 543;
+    atkCloseMin: number = 151;
+    atkCloseMax: number = 543;
+    attrClose: number = 0;
+    atkShot: number = 532;
+    atkShotMin: number = 148;
+    atkShotMax: number = 532;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Physical;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Rifle, 0.3),
+        new Buff(AttrTypeId.Hammer, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.SashiharaNanami.long;
+    weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
+    equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
+    equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+}
+
 class AohamaMakuri04 extends Character {
     name: string = '蒼浜 麻駆理 ★3';
     aid:number = 736;
@@ -19115,6 +19164,54 @@ class AohamaMakuri05 extends Character {
         new Buff(AttrTypeId.Ice, 0.86),
         new Buff(AttrTypeId.Sniper, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.AohamaMakuri.long;
+    weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
+    equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
+    equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+}
+
+class AohamaMakuri70 extends Character {
+    name: string = '蒼浜 麻駆理 / 清澄 ★4';
+    aid:number = 736;
+    cid: number = 739;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 788;
+    atkCloseMin: number = 219;
+    atkCloseMax: number = 788;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.Spear, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.AohamaMakuri.long;
     weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
@@ -25476,8 +25573,10 @@ export const CharacterModels = {
     NoelleFrancisca05: new NoelleFrancisca05(),
     SashiharaNanami04: new SashiharaNanami04(),
     SashiharaNanami05: new SashiharaNanami05(),
+    SashiharaNanami70: new SashiharaNanami70(),
     AohamaMakuri04: new AohamaMakuri04(),
     AohamaMakuri05: new AohamaMakuri05(),
+    AohamaMakuri70: new AohamaMakuri70(),
     TakahataNodoka01: new TakahataNodoka01(),
     TakahataNodoka04: new TakahataNodoka04(),
     TakahataNodoka05: new TakahataNodoka05(),

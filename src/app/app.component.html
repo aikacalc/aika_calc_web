@@ -45,6 +45,9 @@
         <button class="aika-merge-image" [ngClass]="{selected:page=='ami'}" (click)="selectPage('ami')">
             <span>愛花合併圖</span>
         </button>
+        <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
+            <span>愛花精靈GIF</span>
+        </button>
     </div>
     <div class="body">
         <div class="aika-calc-container" [hidden]="page!=''">
@@ -80,6 +83,9 @@
         </div>
         <div class="aika-merge-image" [hidden]="page!='ami'">
             <app-aika-merge-image></app-aika-merge-image>
+        </div>
+        <div class="aika-sprite-sheet-gif" [hidden]="page!='assg'">
+            <app-aika-sprite-sheet-gif></app-aika-sprite-sheet-gif>
         </div>
     </div>
     <div class="msg" *ngIf="service.showMessage">
