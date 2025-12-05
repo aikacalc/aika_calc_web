@@ -64,8 +64,8 @@ export class AikaEnigmaPsvSkill {
     tagStyles: { name: string, color: string }[] = []; // tag styles for display
     id: number = -1;
     effects: AikaSkillEffect[] = []; // parsed effects for display
-    areaName: string = ''; // area name for display
-    areaNameTag: string = ''; // area name tag for display
+    // areaName: string = ''; // area name for display
+    // areaNameTag: string = ''; // area name tag for display
     descOneLine: string = '';
 }
 export class AikaEnigmaPsvSkillUpgrade {
@@ -140,8 +140,13 @@ export function parseSkillDataJson(jsonString: string): AikaEnigmaSection[] {
                         }
                     });
                 }
-                psvskill.areaName = areaName;
-                psvskill.areaNameTag = `[${areaName.substring(0, 3).toUpperCase()}]`;
+
+                // if(psvskill.name.startsWith('抑圧からの解放E')){
+                //     debugger;
+                // }
+
+                // psvskill.areaName = areaName;
+                // psvskill.areaNameTag = `[${areaName.substring(0, 3).toUpperCase()}]`;
                 area.psvskills.push(psvskill);
             }
             section.area.push(area);

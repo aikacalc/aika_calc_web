@@ -26,7 +26,7 @@
                 <div class="body" *ngIf="slot.selectedPsvSkill != null">
                     <div class="tag-info">
                         <div class="tags">
-                            <span class="area-tag">{{slot.selectedPsvSkill.areaNameTag}}</span>
+                            <span class="area-tag">{{selectedActressPsvSkillAreaTagName[slot.selectedPsvSkill.gid]}}</span>
                             <span class="tag" *ngFor="let tagStyle of slot.selectedPsvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
                         </div>
                         <span class="cost">{{slot.selectedPsvSkill.costPoint}}</span>
@@ -76,7 +76,7 @@
                 <div class="body">
                     <div class="tag-info">
                         <div class="tags">
-                            <span class="area-tag">{{psvSkill.areaNameTag}}</span>
+                            <span class="area-tag">{{selectedActressPsvSkillAreaTagName[psvSkill.gid]}}</span>
                             <span class="tag" *ngFor="let tagStyle of psvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
                         </div>
                         <span class="cost">{{psvSkill.costPoint}}</span>

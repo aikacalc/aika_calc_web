@@ -55,6 +55,8 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
     selectedCharacter: Character | null = null;
     selectedCharacterSlots: AikaPsvSkillSlot[] = [];
     selectedActressPsvSkills: AikaEnigmaPsvSkill[] = [];
+    selectedActressPsvSkillAreaName: { [key: number]: string } = {};
+    selectedActressPsvSkillAreaTagName: { [key: number]: string } = {};
 
     selectedSlot: AikaPsvSkillSlot | null = null;
     slotSelectablePsvSkills: AikaEnigmaPsvSkill[] = [];
@@ -224,7 +226,18 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             this.selectedCharacterSlots = this.slotDict[character.cid] || [];
             this.selectedActressPsvSkills = this.actressPsvSkills[character.aid] || [];
             this.selectedSection = this.sections.find(v => v.aid == character.aid) || null;
+
             if (this.selectedSection) {
+                this.selectedActressPsvSkillAreaName = {};
+                this.selectedSection.area.forEach((area) => {
+                    const areaName = area.name;
+                    const areaNameTag = `[${areaName.substring(0, 3).toUpperCase()}]`;
+                    area.psvskills.forEach((psvskill) => {
+                        this.selectedActressPsvSkillAreaName[psvskill.gid] = areaName;
+                        this.selectedActressPsvSkillAreaTagName[psvskill.gid] = areaNameTag;
+                    });
+                });
+
                 this.selectedSectionAreas = this.selectedSection.area;
                 this.selectedSectionId = this.selectedSection.id;
                 for (const area of this.selectedSectionAreas) {
@@ -469,7 +482,7 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         }
     }
     checkPsvSkillHide(psvSkill: AikaEnigmaPsvSkill): boolean {
-        if (!this.showAreaPsvSkills[psvSkill.areaName]) {
+        if (!this.showAreaPsvSkills[this.selectedActressPsvSkillAreaName[psvSkill.gid]]) {
             return true; // Area is hidden
         }
         if (this.filterEffectNames.length == 0) {
