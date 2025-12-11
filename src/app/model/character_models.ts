@@ -19508,6 +19508,55 @@ class Gourai05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.Gourai.bottom;
 }
 
+class Gourai70 extends Character {
+    name: string = '轟雷 / 改 ★4';
+    aid:number = 2024;
+    cid: number = 2026;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3370;
+    hpMin: number = 905;
+    hpMax: number = 3370;
+    atkClose: number = 578;
+    atkCloseMin: number = 161;
+    atkCloseMax: number = 578;
+    attrClose: number = 0;
+    atkShot: number = 567;
+    atkShotMin: number = 158;
+    atkShotMax: number = 567;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.7),
+        new Buff(AttrTypeId.ResistGravity, -0.7),
+        new Buff(AttrTypeId.ResistFire, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Volt, 0.9),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.Gourai.long;
+    weaponCloses: Gear[] = ActressGears.Gourai.short;
+    equipmentTops: Gear[] = ActressGears.Gourai.top;
+    equipmentBottoms: Gear[] = ActressGears.Gourai.bottom;
+}
+
 class Stylet04 extends Character {
     name: string = 'スティレット ★3';
     aid:number = 2028;
@@ -19891,6 +19940,54 @@ class GennaiAo05 extends Character {
         new Buff(AttrTypeId.Fire, 0.9),
         new Buff(AttrTypeId.Sword, 0.25),
         new Buff(AttrTypeId.Bazooka, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.GennaiAo.long;
+    weaponCloses: Gear[] = ActressGears.GennaiAo.short;
+    equipmentTops: Gear[] = ActressGears.GennaiAo.top;
+    equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+}
+
+class GennaiAo70 extends Character {
+    name: string = '源内 あお / 轟 ★4';
+    aid:number = 2188;
+    cid: number = 2190;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3402;
+    hpMin: number = 914;
+    hpMax: number = 3402;
+    atkClose: number = 765;
+    atkCloseMin: number = 213;
+    atkCloseMax: number = 765;
+    attrClose: number = 0;
+    atkShot: number = 729;
+    atkShotMin: number = 203;
+    atkShotMax: number = 729;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Slash;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Volt;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistVolt, 0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.6),
+        new Buff(AttrTypeId.ResistFire, -0.3),
+        new Buff(AttrTypeId.Volt, 0.56),
+        new Buff(AttrTypeId.Sword, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.GennaiAo.long;
     weaponCloses: Gear[] = ActressGears.GennaiAo.short;
@@ -25583,6 +25680,7 @@ export const CharacterModels = {
     TakahataNodoka70: new TakahataNodoka70(),
     Gourai04: new Gourai04(),
     Gourai05: new Gourai05(),
+    Gourai70: new Gourai70(),
     Stylet04: new Stylet04(),
     Stylet05: new Stylet05(),
     Baselard04: new Baselard04(),
@@ -25591,6 +25689,7 @@ export const CharacterModels = {
     Hresvelgr05: new Hresvelgr05(),
     GennaiAo04: new GennaiAo04(),
     GennaiAo05: new GennaiAo05(),
+    GennaiAo70: new GennaiAo70(),
     KotobukiBukiko04: new KotobukiBukiko04(),
     KotobukiBukiko05: new KotobukiBukiko05(),
     SaekiRitsuka04: new SaekiRitsuka04(),
