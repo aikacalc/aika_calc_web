@@ -204,19 +204,34 @@ DEF+200
                 || chara.weaponShots.length == 0
             ) {
                 const charaAttrType = chara.buffs.find(b => AttrTypeIdAttrs.indexOf(b.type) > -1);
-                const closeType = chara.buffs.find(b => AttrTypeIdCloses.indexOf(b.type) > -1);
-                const shotType = chara.buffs.find(b => AttrTypeIdShots.indexOf(b.type) > -1);
 
+
+                const closeTypeBuff = chara.buffs.find(b => AttrTypeIdCloses.indexOf(b.type) > -1);
+                const shotTypeBuff = chara.buffs.find(b => AttrTypeIdShots.indexOf(b.type) > -1);
+                let closeType = AttrTypeId.None;
+                let shotType = AttrTypeId.None;
+
+                if (closeTypeBuff != null) {
+                    closeType = closeTypeBuff.type;
+                }
+                if (shotTypeBuff != null) {
+                    shotType = shotTypeBuff.type;
+                }
                 // const goodWeaponType = closeType.value > shotType.value ? closeType.type : shotType.type;
                 // const subGoodWeaponType = closeType.value < shotType.value ? closeType.type : shotType.type;
 
-                const closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType.type) > -1
-                    ? AttrTypeId.Impact : AttrTypeId.Slash;
-                const shotAmmoType = shotType.type == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
+                let closeAmmoType = AttrTypeId.None;
+                let shotAmmoType = AttrTypeId.None;
+                if(closeTypeBuff != null) {
+                    closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType) > -1 ? AttrTypeId.Impact : AttrTypeId.Slash;
+                }
+                if(shotTypeBuff != null) {
+                    shotAmmoType = shotType == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
+                }
 
                 if (chara.weaponCloses.length == 0) {
                     const defaultGear = new Gear({
-                        unitType: closeType.type,
+                        unitType: closeType,
                         level: 1,
                         levelMin: 1,
                         levelMax: 1,
@@ -236,7 +251,7 @@ DEF+200
                 }
                 if (chara.weaponShots.length == 0) {
                     const defaultGear = new Gear({
-                        unitType: shotType.type,
+                        unitType: shotTypeBuff.type,
                         level: 1,
                         levelMin: 1,
                         levelMax: 1,
