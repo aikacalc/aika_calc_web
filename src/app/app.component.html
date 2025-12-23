@@ -48,6 +48,9 @@
         <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
             <span>愛花精靈GIF</span>
         </button>
+        <button class="aika-kawaii" [ngClass]="{selected:page=='ak'}" (click)="selectPage('ak')">
+            <span>愛花可愛</span>
+        </button>
     </div>
     <div class="body">
         <div class="aika-calc-container" [hidden]="page!=''">
@@ -86,6 +89,9 @@
         </div>
         <div class="aika-sprite-sheet-gif" [hidden]="page!='assg'">
             <app-aika-sprite-sheet-gif></app-aika-sprite-sheet-gif>
+        </div>
+        <div class="aika-kawaii" [hidden]="page!='ak'">
+            <app-aika-kawaii></app-aika-kawaii>
         </div>
     </div>
     <div class="msg" *ngIf="service.showMessage">

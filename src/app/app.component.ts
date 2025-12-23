@@ -16,13 +16,14 @@ import { AikaMoonComponent } from './aika-moon/aika-moon.component';
 import { AikaSpinComponent } from './aika-spin/aika-spin.component';
 import { AikaMergeImageComponent } from './aika-merge-image/aika-merge-image.component';
 import { AikaSpriteSheetGifComponent } from './aika-sprite-sheet-gif/aika-sprite-sheet-gif.component';
+import { AikaKawaiiComponent } from './aika-kawaii/aika-kawaii.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     imports: [
         CommonModule,
-        RouterOutlet,
+        // RouterOutlet,
         AikaCalcComponent,
         AikaFanReachCalcComponent,
         AikaDamageCalcComponent,
@@ -34,6 +35,7 @@ import { AikaSpriteSheetGifComponent } from './aika-sprite-sheet-gif/aika-sprite
         AikaSpinComponent,
         AikaMergeImageComponent,
         AikaSpriteSheetGifComponent,
+        AikaKawaiiComponent,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
