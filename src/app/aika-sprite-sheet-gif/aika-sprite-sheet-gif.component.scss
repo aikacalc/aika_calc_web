@@ -1,0 +1,376 @@
+.sprite-sheet-gif-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      color: #555;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      color: #666;
+      margin: 15px 0 10px;
+      font-size: 1.1em;
+    }
+  }
+
+  .controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 0.9em;
+      color: #666;
+
+      input {
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 0.95em;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.95em;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #45a049;
+      }
+
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .canvas-container {
+    margin: 20px 0;
+    overflow: auto;
+    max-height: 600px;
+    border: 2px solid #ddd;
+    background: white;
+
+    canvas {
+      display: block;
+    }
+  }
+
+  .crop-regions-list {
+    margin-top: 20px;
+
+    .region-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+
+      span {
+        font-size: 0.9em;
+        color: #333;
+      }
+
+      .region-actions {
+        display: flex;
+        gap: 10px;
+
+        button {
+          padding: 5px 15px;
+          font-size: 0.85em;
+        }
+      }
+    }
+
+    .btn-primary {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background: #1976D2;
+      }
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 90%;
+
+      h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        font-size: 0.9em;
+        color: #666;
+
+        input {
+          padding: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 0.95em;
+          margin-top: 5px;
+        }
+      }
+
+      .modal-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 0.95em;
+
+          &:first-child {
+            background: #4CAF50;
+            color: white;
+
+            &:hover {
+              background: #45a049;
+            }
+          }
+
+          &:last-child {
+            background: #f44336;
+            color: white;
+
+            &:hover {
+              background: #da190b;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .global-settings {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .frames-list {
+    .frame-item {
+      display: flex;
+      gap: 15px;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: white;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      transition: all 0.3s;
+
+      &.selected {
+        border-color: #4CAF50;
+        background: #f0fff0;
+      }
+
+      &.editing {
+        border-color: #2196F3;
+        background: #e3f2fd;
+      }
+
+      .frame-preview {
+        flex-shrink: 0;
+
+        img {
+          max-width: 150px;
+          max-height: 150px;
+          border: 1px solid #ddd;
+          background: repeating-conic-gradient(#ccc 0% 25%, white 0% 50%) 50% / 20px 20px;
+        }
+
+        canvas {
+          display: none;
+        }
+      }
+
+      .frame-info {
+        flex-grow: 1;
+
+        label {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        .frame-details {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          label {
+            display: flex;
+            flex-direction: column;
+            font-weight: normal;
+            font-size: 0.9em;
+
+            input {
+              padding: 5px;
+              border: 1px solid #ddd;
+              border-radius: 4px;
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+
+      .frame-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        button {
+          padding: 5px 10px;
+          font-size: 0.85em;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .preview-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    button {
+      padding: 12px 25px;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover:not(:disabled) {
+        background: #1976D2;
+      }
+
+      &:disabled {
+        background: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .preview-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+
+    canvas {
+      display: inline-block;
+      border: 1px solid #ddd;
+      background: repeating-conic-gradient(#ccc 0% 25%, white 0% 50%) 50% / 20px 20px;
+    }
+  }
+
+  .generated-gif {
+    padding: 20px;
+    background: white;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+
+      &:hover {
+        background: #45a049;
+      }
+    }
+  }
+
+  input[type="file"] {
+    padding: 10px;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+
+    &:hover {
+      border-color: #4CAF50;
+    }
+  }
+}

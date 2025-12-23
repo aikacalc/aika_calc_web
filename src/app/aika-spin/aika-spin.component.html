@@ -1,0 +1,133 @@
+<div class="aika-spin">
+    <div class="config-panel">
+        <div class="images-input">
+            <div>圖片網址</div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>預覽</th>
+                    <th>圖片網址</th>
+                    <th>操作</th>
+                </tr>
+                <tr *ngFor="let aikaImg of aikaImages; let i = index">
+                    <td>{{ aikaImg.id }}</td>
+                    <td>
+                        <img class="preview-image" [src]="aikaImg.imageDataUrl" *ngIf="aikaImg.imageLoaded">
+                        <!-- <span *ngIf="!aikaImg.imageLoaded">--</span> -->
+                        <img class="preview-image" src="/favicon.ico" *ngIf="!aikaImg.imageLoaded">
+                    </td>
+                    <td>
+                        <input type="text" [(ngModel)]="aikaImg.url" />
+                    </td>
+                    <td>
+                        <button [disabled]="aikaImg.imageLoading" (click)="aikaImageLoadUrl(aikaImg)">讀取</button>
+                        <button (click)="removeImage(aikaImg)">[X]</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="center">
+                        <button class="add" (click)="newAikaImage()">[+]</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="move-input">
+            <div>移動、旋轉控制</div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>類型</th>
+                    <th>設定</th>
+                    <th>關聯圖片</th>
+                    <th>操作</th>
+                </tr>
+                <tr *ngFor="let action of actionSettings; let i = index">
+                    <td>{{ action.id }}</td>
+                    <td>
+                        <span *ngIf="action.type === 'spin'">旋轉</span>
+                        <span *ngIf="action.type === 'orbit'">環繞</span>
+                        <span *ngIf="action.type === 'path'">路徑</span>
+                        <span *ngIf="action.type === 'scale'">縮放</span>
+                    </td>
+                    <td class="action-cell">
+                        <div *ngIf="action.type === 'spin'">
+                            <div class="setting-row">
+                                <span>角度X</span>
+                                <input type="number" [(ngModel)]="action.spinSetting.rotateXAngle" />
+                            </div>
+                            <div class="setting-row">
+                                <span>角度Y</span>
+                                <input type="number" [(ngModel)]="action.spinSetting.rotateYAngle" />
+                            </div>
+                            <div class="setting-row">
+                                <span>角度Z</span>
+                                <input type="number" [(ngModel)]="action.spinSetting.rotateZAngle" />
+                            </div>
+                            <div class="setting-row">
+                                <span>時間秒</span>
+                                <input type="number" [(ngModel)]="action.spinSetting.duration" />
+                            </div>
+                        </div>
+                        <div *ngIf="action.type === 'orbit'">
+                            <div class="setting-row">
+                                <span>中心X</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.centerX" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>中心Y</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.centerY" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>半徑</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.radius" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>角度X</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.angleX" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>角度Y</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.angleY" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>角度Z</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.angleZ" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                            <div class="setting-row">
+                                <span>時間秒</span>
+                                <input type="number" [(ngModel)]="action.orbitSetting.duration" (ngModelChange)="onOrbitSettingChange()" />
+                            </div>
+                        </div>
+                    </td>
+                    <td class="image-attach-cell">
+                        <div class="attach-image-row" *ngFor="let img of action.attachImages">
+                            <input type="number" [ngClass]="{valid:img.aikaImage!=null,invalid:img.aikaImage==null}" [(ngModel)]="img.imageId" (ngModelChange)="onAttachImageIdChange(img)" />
+                            <button class="remove" (click)="removeAttachImage(action, img)">[x]</button>
+                        </div>
+                        <button class="attach-image" (click)="addAttachImage(action)">[+]</button>
+                    </td>
+                    <td>
+                        <button (click)="removeAction(action)">[X]</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="center">
+                        <button class="add3" (click)="createSpin()">[+旋轉]</button>
+                        <button class="add3" (click)="createOrbit()">[+環繞]</button>
+                        <button class="add3" (click)="createPath()">[+路徑]</button>
+                        <button class="add3" (click)="createScale()">[+縮放]</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="spin-panel">
+        <div class="toolbar">
+            <button (click)="stopAnimation()">停止</button>
+            <button (click)="playAnimation()">播放</button>
+        </div>
+        <div class="action-panel">
+            <canvas #orbitCanvas width="800" height="600"></canvas>
+        </div>
+    </div>
+</div>

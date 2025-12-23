@@ -1,0 +1,85 @@
+<div class="aika-merge-image">
+  <div class="container">
+    <h2>圖片合併工具</h2>
+
+    <!-- 圖片上傳區 -->
+    <div class="upload-section">
+      <h3>圖片上傳</h3>
+      <div class="drop-zone"
+           (dragover)="onDragOver($event)"
+           (drop)="onDrop($event)"
+           (click)="fileInput.click()">
+        <p>拖曳圖片至此處或點擊選擇檔案</p>
+        <p>也可以使用 Ctrl+V 貼上剪貼簿中的圖片</p>
+        <input #fileInput
+               type="file"
+               multiple
+               accept="image/*"
+               (change)="onFileSelect($event)"
+               style="display: none;">
+      </div>
+
+      <!-- 已上傳圖片預覽 -->
+      <div class="uploaded-images" *ngIf="images.length > 0">
+        <h4>已上傳的圖片 ({{images.length}}張)</h4>
+        <div class="image-list">
+          <div class="image-item" *ngFor="let img of images; let i = index">
+            <img [src]="img.preview" alt="預覽圖">
+            <div class="image-controls">
+              <button (click)="moveImage(i, 'up')" [disabled]="i === 0">↑</button>
+              <button (click)="moveImage(i, 'down')" [disabled]="i === images.length - 1">↓</button>
+              <button (click)="removeImage(i)" class="delete-btn">✕</button>
+            </div>
+            <span class="image-info">{{img.name}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 設定區 -->
+    <div class="settings-section" *ngIf="images.length > 0">
+      <h3>合併設定</h3>
+      <div class="settings-grid">
+        <div class="setting-group">
+          <label>合併方向：</label>
+          <select [(ngModel)]="mergeDirection">
+            <option value="horizontal">水平排列</option>
+            <option value="vertical">垂直排列</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>每行圖片數：</label>
+          <input type="number" min="1" [(ngModel)]="imagesPerRow" (input)="updateMerge()">
+        </div>
+
+        <div class="setting-group">
+          <label>縮放比例：</label>
+          <input type="range" min="0.1" max="2" step="0.1" [(ngModel)]="scaleFactor" (input)="updateMerge()">
+          <span>{{scaleFactor}}x</span>
+        </div>
+
+        <div class="setting-group">
+          <label>背景顏色：</label>
+          <select [(ngModel)]="backgroundColor" (change)="updateMerge()">
+            <option value="#ffffff">白色</option>
+            <option value="#000000">黑色</option>
+            <option value="#transparent">透明</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結果預覽區 -->
+    <div class="result-section" *ngIf="mergedImageUrl">
+      <h3>合併結果</h3>
+      <div class="result-preview">
+        <img [src]="mergedImageUrl" alt="合併結果" class="merged-image">
+        <div class="result-info">
+          <p>尺寸：{{mergedImageWidth}} × {{mergedImageHeight}} 像素</p>
+          <button (click)="downloadMergedImage()" class="download-btn">下載 JPG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
