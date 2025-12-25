@@ -18928,6 +18928,200 @@ class NoelleFrancisca05 extends Character {
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
 }
 
+class RakuhanaMeru04 extends Character {
+    name: string = '楽華 明瑠 ★3';
+    aid:number = 704;
+    cid: number = 703;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2510;
+    hpMin: number = 690;
+    hpMax: number = 2510;
+    atkClose: number = 418;
+    atkCloseMin: number = 119;
+    atkCloseMax: number = 418;
+    attrClose: number = 0;
+    atkShot: number = 426;
+    atkShotMin: number = 122;
+    atkShotMax: number = 426;
+    attrShot: number = 0;
+    def: number = 700;
+    defMin: number = 200;
+    defMax: number = 700;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 100;
+    attrMax: number = 350;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.RakuhanaMeru.long;
+    weaponCloses: Gear[] = ActressGears.RakuhanaMeru.short;
+    equipmentTops: Gear[] = ActressGears.RakuhanaMeru.top;
+    equipmentBottoms: Gear[] = ActressGears.RakuhanaMeru.bottom;
+}
+
+class RakuhanaMeru05 extends Character {
+    name: string = '楽華 明瑠 ★4';
+    aid:number = 704;
+    cid: number = 705;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3240;
+    hpMin: number = 870;
+    hpMax: number = 3240;
+    atkClose: number = 538;
+    atkCloseMin: number = 149;
+    atkCloseMax: number = 538;
+    attrClose: number = 0;
+    atkShot: number = 548;
+    atkShotMin: number = 152;
+    atkShotMax: number = 548;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 2;
+    attrMin: number = 125;
+    attrMax: number = 450;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.8),
+        new Buff(AttrTypeId.ResistIce, -0.8),
+        new Buff(AttrTypeId.ResistVolt, -0.4),
+        new Buff(AttrTypeId.DEF, -0.2),
+        new Buff(AttrTypeId.Fire, 0.96),
+        new Buff(AttrTypeId.Sniper, 0.25),
+        new Buff(AttrTypeId.Sword, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.RakuhanaMeru.long;
+    weaponCloses: Gear[] = ActressGears.RakuhanaMeru.short;
+    equipmentTops: Gear[] = ActressGears.RakuhanaMeru.top;
+    equipmentBottoms: Gear[] = ActressGears.RakuhanaMeru.bottom;
+}
+
+class SuiseiTsumugi04 extends Character {
+    name: string = '彗聖 紬 ★3';
+    aid:number = 712;
+    cid: number = 711;
+    rare: number = 3;
+    level: number = 60;
+    levelMin: number = 1;
+    levelMax: number = 60;
+    gradeUpLimit: number = 0;
+    gradeupPowUpRate: number = 50;
+    hp: number = 2460;
+    hpMin: number = 676;
+    hpMax: number = 2460;
+    atkClose: number = 619;
+    atkCloseMin: number = 177;
+    atkCloseMax: number = 619;
+    attrClose: number = 0;
+    atkShot: number = 625;
+    atkShotMin: number = 179;
+    atkShotMax: number = 625;
+    attrShot: number = 0;
+    def: number = 707;
+    defMin: number = 202;
+    defMax: number = 707;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 60;
+    attrMax: number = 210;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SuiseiTsumugi.long;
+    weaponCloses: Gear[] = ActressGears.SuiseiTsumugi.short;
+    equipmentTops: Gear[] = ActressGears.SuiseiTsumugi.top;
+    equipmentBottoms: Gear[] = ActressGears.SuiseiTsumugi.bottom;
+}
+
+class SuiseiTsumugi05 extends Character {
+    name: string = '彗聖 紬 ★4';
+    aid:number = 712;
+    cid: number = 713;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3175;
+    hpMin: number = 853;
+    hpMax: number = 3175;
+    atkClose: number = 796;
+    atkCloseMin: number = 221;
+    atkCloseMax: number = 796;
+    attrClose: number = 0;
+    atkShot: number = 803;
+    atkShotMin: number = 223;
+    atkShotMax: number = 803;
+    attrShot: number = 0;
+    def: number = 909;
+    defMin: number = 253;
+    defMax: number = 909;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.Twin, 0.25),
+        new Buff(AttrTypeId.Dagger, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.SuiseiTsumugi.long;
+    weaponCloses: Gear[] = ActressGears.SuiseiTsumugi.short;
+    equipmentTops: Gear[] = ActressGears.SuiseiTsumugi.top;
+    equipmentBottoms: Gear[] = ActressGears.SuiseiTsumugi.bottom;
+}
+
 class SashiharaNanami04 extends Character {
     name: string = '佐士原 七海 ★3';
     aid:number = 728;
@@ -25221,6 +25415,8 @@ export const ActressNames: string[] = [
     'EmmaAshfield',
     'NicoleFrancisca',
     'NoelleFrancisca',
+    'RakuhanaMeru',
+    'SuiseiTsumugi',
     'SashiharaNanami',
     'AohamaMakuri',
     'TakahataNodoka',
@@ -25668,6 +25864,10 @@ export const CharacterModels = {
     NoelleFrancisca02: new NoelleFrancisca02(),
     NoelleFrancisca04: new NoelleFrancisca04(),
     NoelleFrancisca05: new NoelleFrancisca05(),
+    RakuhanaMeru04: new RakuhanaMeru04(),
+    RakuhanaMeru05: new RakuhanaMeru05(),
+    SuiseiTsumugi04: new SuiseiTsumugi04(),
+    SuiseiTsumugi05: new SuiseiTsumugi05(),
     SashiharaNanami04: new SashiharaNanami04(),
     SashiharaNanami05: new SashiharaNanami05(),
     SashiharaNanami70: new SashiharaNanami70(),
