@@ -309,7 +309,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 253,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -327,7 +327,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 227,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -345,7 +345,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 253,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -363,7 +363,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 227,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -381,7 +381,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 404,
-                attrMin: 404,
+                attrMin: 126,
                 attrMax: 404,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -399,7 +399,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 202,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -417,7 +417,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 303,
-                attrMin: 303,
+                attrMin: 152,
                 attrMax: 303,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -435,7 +435,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 253,
-                attrMin: 253,
+                attrMin: 101,
                 attrMax: 253,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -453,7 +453,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -471,7 +471,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -489,7 +489,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -507,7 +507,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -525,7 +525,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -543,7 +543,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -561,7 +561,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -579,7 +579,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -1279,7 +1279,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1297,7 +1297,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1315,7 +1315,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1333,7 +1333,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1351,7 +1351,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1369,7 +1369,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1387,7 +1387,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1405,7 +1405,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1423,7 +1423,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1441,7 +1441,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1459,7 +1459,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1477,7 +1477,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1495,7 +1495,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1513,7 +1513,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1531,7 +1531,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1549,7 +1549,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -1567,7 +1567,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -2492,7 +2492,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2510,7 +2510,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2528,7 +2528,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 77,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2546,7 +2546,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2564,7 +2564,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2582,7 +2582,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 77,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2600,7 +2600,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 124,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2618,7 +2618,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 185,
-                attrMin: 185,
+                attrMin: 93,
                 attrMax: 185,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2636,7 +2636,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 155,
-                attrMin: 155,
+                attrMin: 62,
                 attrMax: 155,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2654,7 +2654,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2672,7 +2672,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2690,7 +2690,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -2708,7 +2708,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -3402,7 +3402,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3420,7 +3420,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3438,7 +3438,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3456,7 +3456,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3474,7 +3474,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3492,7 +3492,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3510,7 +3510,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3528,7 +3528,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3546,7 +3546,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -3564,7 +3564,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -4450,7 +4450,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4468,7 +4468,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4486,7 +4486,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4504,7 +4504,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4522,7 +4522,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4540,7 +4540,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4558,7 +4558,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4576,7 +4576,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4594,7 +4594,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 326,
-                attrMin: 326,
+                attrMin: 102,
                 attrMax: 326,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4612,7 +4612,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 326,
-                attrMin: 326,
+                attrMin: 102,
                 attrMax: 326,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4630,7 +4630,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 163,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4648,7 +4648,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 122,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4666,7 +4666,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 204,
-                attrMin: 204,
+                attrMin: 82,
                 attrMax: 204,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4684,7 +4684,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 163,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4702,7 +4702,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 122,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4720,7 +4720,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 204,
-                attrMin: 204,
+                attrMin: 82,
                 attrMax: 204,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -4738,7 +4738,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4756,7 +4756,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4774,7 +4774,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4792,7 +4792,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4810,7 +4810,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4828,7 +4828,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4846,7 +4846,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -4864,7 +4864,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -5868,7 +5868,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5886,7 +5886,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5904,7 +5904,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5922,7 +5922,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5940,7 +5940,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5958,7 +5958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5976,7 +5976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -5994,7 +5994,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6012,7 +6012,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6030,7 +6030,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6048,7 +6048,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6066,7 +6066,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6084,7 +6084,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -6102,7 +6102,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6120,7 +6120,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6138,7 +6138,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6156,7 +6156,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6174,7 +6174,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6192,7 +6192,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6210,7 +6210,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6228,7 +6228,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -6246,7 +6246,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -7194,7 +7194,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7212,7 +7212,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7230,7 +7230,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7248,7 +7248,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7266,7 +7266,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 77,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7284,7 +7284,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 124,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7302,7 +7302,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 185,
-                attrMin: 185,
+                attrMin: 93,
                 attrMax: 185,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7320,7 +7320,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 155,
-                attrMin: 155,
+                attrMin: 62,
                 attrMax: 155,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7338,7 +7338,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7356,7 +7356,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7374,7 +7374,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -7392,7 +7392,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -8066,7 +8066,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8084,7 +8084,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8102,7 +8102,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8120,7 +8120,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8138,7 +8138,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8156,7 +8156,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8174,7 +8174,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8192,7 +8192,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8210,7 +8210,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8228,7 +8228,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8246,7 +8246,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -8264,7 +8264,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -9050,7 +9050,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9068,7 +9068,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9086,7 +9086,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9104,7 +9104,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9122,7 +9122,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9140,7 +9140,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9158,7 +9158,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 221,
-                attrMin: 221,
+                attrMin: 126,
                 attrMax: 221,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9176,7 +9176,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 189,
-                attrMin: 189,
+                attrMin: 95,
                 attrMax: 189,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9194,7 +9194,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 158,
-                attrMin: 158,
+                attrMin: 63,
                 attrMax: 158,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9212,7 +9212,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 326,
-                attrMin: 326,
+                attrMin: 102,
                 attrMax: 326,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9230,7 +9230,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9248,7 +9248,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9266,7 +9266,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -9284,7 +9284,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9302,7 +9302,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9320,7 +9320,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9338,7 +9338,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9356,7 +9356,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9374,7 +9374,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9392,7 +9392,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9410,7 +9410,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -9428,7 +9428,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -10504,7 +10504,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10522,7 +10522,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10540,7 +10540,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10558,7 +10558,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10576,7 +10576,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 77,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10594,7 +10594,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 124,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10612,7 +10612,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 185,
-                attrMin: 185,
+                attrMin: 93,
                 attrMax: 185,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10630,7 +10630,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 155,
-                attrMin: 155,
+                attrMin: 62,
                 attrMax: 155,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10648,7 +10648,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10666,7 +10666,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 324,
-                attrMin: 324,
+                attrMin: 185,
                 attrMax: 324,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10684,7 +10684,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10702,7 +10702,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -10720,7 +10720,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10738,7 +10738,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10756,7 +10756,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10774,7 +10774,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10792,7 +10792,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10810,7 +10810,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10828,7 +10828,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -10846,7 +10846,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -11922,7 +11922,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -11940,7 +11940,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -11958,7 +11958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -11976,7 +11976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -11994,7 +11994,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12012,7 +12012,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12030,7 +12030,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12048,7 +12048,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12066,7 +12066,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12084,7 +12084,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12102,7 +12102,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12120,7 +12120,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12138,7 +12138,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12156,7 +12156,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12174,7 +12174,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12192,7 +12192,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12210,7 +12210,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12228,7 +12228,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12246,7 +12246,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -12264,7 +12264,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12282,7 +12282,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -12300,7 +12300,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -13124,7 +13124,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -13142,7 +13142,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -13160,7 +13160,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 117,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -13178,7 +13178,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -13196,7 +13196,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -13214,7 +13214,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -13826,7 +13826,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13844,7 +13844,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13862,7 +13862,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13880,7 +13880,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13898,7 +13898,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13916,7 +13916,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13934,7 +13934,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13952,7 +13952,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13970,7 +13970,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -13988,7 +13988,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -14006,7 +14006,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -14024,7 +14024,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -14042,7 +14042,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -14060,7 +14060,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14078,7 +14078,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14096,7 +14096,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14114,7 +14114,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14132,7 +14132,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14150,7 +14150,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14168,7 +14168,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 324,
-                attrMin: 324,
+                attrMin: 185,
                 attrMax: 324,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14186,7 +14186,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -14204,7 +14204,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -15258,7 +15258,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 477,
-                attrMin: 477,
+                attrMin: 265,
                 attrMax: 477,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15276,7 +15276,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 451,
-                attrMin: 451,
+                attrMin: 239,
                 attrMax: 451,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15294,7 +15294,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 477,
-                attrMin: 477,
+                attrMin: 265,
                 attrMax: 477,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15312,7 +15312,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 451,
-                attrMin: 451,
+                attrMin: 239,
                 attrMax: 451,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15330,7 +15330,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 424,
-                attrMin: 424,
+                attrMin: 133,
                 attrMax: 424,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15348,7 +15348,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 212,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15366,7 +15366,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 159,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15384,7 +15384,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 265,
-                attrMin: 265,
+                attrMin: 106,
                 attrMax: 265,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -15402,7 +15402,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15420,7 +15420,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15438,7 +15438,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15456,7 +15456,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15474,7 +15474,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 117,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15492,7 +15492,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15510,7 +15510,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -15528,7 +15528,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -16532,7 +16532,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16550,7 +16550,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16568,7 +16568,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16586,7 +16586,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16604,7 +16604,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16622,7 +16622,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16640,7 +16640,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16658,7 +16658,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -16676,7 +16676,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16694,7 +16694,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16712,7 +16712,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16730,7 +16730,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16748,7 +16748,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16766,7 +16766,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 324,
-                attrMin: 324,
+                attrMin: 185,
                 attrMax: 324,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16784,7 +16784,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -16802,7 +16802,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -17674,7 +17674,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17692,7 +17692,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17710,7 +17710,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17728,7 +17728,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17746,7 +17746,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17764,7 +17764,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17782,7 +17782,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17800,7 +17800,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17818,7 +17818,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17836,7 +17836,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17854,7 +17854,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17872,7 +17872,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17890,7 +17890,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17908,7 +17908,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -17926,7 +17926,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -17944,7 +17944,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -18596,7 +18596,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 389,
-                attrMin: 389,
+                attrMin: 216,
                 attrMax: 389,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -18614,7 +18614,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 368,
-                attrMin: 368,
+                attrMin: 195,
                 attrMax: 368,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -18632,7 +18632,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 346,
-                attrMin: 346,
+                attrMin: 108,
                 attrMax: 346,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -18650,7 +18650,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 303,
-                attrMin: 303,
+                attrMin: 173,
                 attrMax: 303,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -18668,7 +18668,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 130,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -18686,7 +18686,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 87,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -19114,7 +19114,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19132,7 +19132,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19150,7 +19150,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19168,7 +19168,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19186,7 +19186,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19204,7 +19204,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19222,7 +19222,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -19240,7 +19240,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -19650,7 +19650,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 380,
-                attrMin: 380,
+                attrMin: 211,
                 attrMax: 380,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19668,7 +19668,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 359,
-                attrMin: 359,
+                attrMin: 190,
                 attrMax: 359,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19686,7 +19686,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 380,
-                attrMin: 380,
+                attrMin: 211,
                 attrMax: 380,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19704,7 +19704,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 359,
-                attrMin: 359,
+                attrMin: 190,
                 attrMax: 359,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19722,7 +19722,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 338,
-                attrMin: 338,
+                attrMin: 106,
                 attrMax: 338,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19740,7 +19740,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 296,
-                attrMin: 296,
+                attrMin: 169,
                 attrMax: 296,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19758,7 +19758,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 253,
-                attrMin: 253,
+                attrMin: 127,
                 attrMax: 253,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -19776,7 +19776,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 211,
-                attrMin: 211,
+                attrMin: 84,
                 attrMax: 211,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -20488,7 +20488,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20506,7 +20506,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20524,7 +20524,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20542,7 +20542,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20560,7 +20560,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20578,7 +20578,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20596,7 +20596,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20614,7 +20614,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20632,7 +20632,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20650,7 +20650,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20668,7 +20668,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20686,7 +20686,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -20704,7 +20704,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 409,
-                attrMin: 409,
+                attrMin: 227,
                 attrMax: 409,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20722,7 +20722,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 205,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20740,7 +20740,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 409,
-                attrMin: 409,
+                attrMin: 227,
                 attrMax: 409,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20758,7 +20758,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 205,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20776,7 +20776,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 114,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20794,7 +20794,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 182,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20812,7 +20812,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 136,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -20830,7 +20830,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 227,
-                attrMin: 227,
+                attrMin: 91,
                 attrMax: 227,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -21762,7 +21762,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21780,7 +21780,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21798,7 +21798,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21816,7 +21816,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21834,7 +21834,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21852,7 +21852,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21870,7 +21870,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21888,7 +21888,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21906,7 +21906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21924,7 +21924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21942,7 +21942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -21960,7 +21960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -22598,7 +22598,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22616,7 +22616,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22634,7 +22634,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22652,7 +22652,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22670,7 +22670,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22688,7 +22688,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22706,7 +22706,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22724,7 +22724,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22742,7 +22742,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22760,7 +22760,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 185,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22778,7 +22778,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -22796,7 +22796,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -23398,7 +23398,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23416,7 +23416,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23434,7 +23434,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23452,7 +23452,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23470,7 +23470,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23488,7 +23488,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23506,7 +23506,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -23524,7 +23524,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -24210,7 +24210,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24228,7 +24228,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24246,7 +24246,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24264,7 +24264,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24282,7 +24282,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24300,7 +24300,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24318,7 +24318,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24336,7 +24336,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24354,7 +24354,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 404,
-                attrMin: 404,
+                attrMin: 126,
                 attrMax: 404,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24372,7 +24372,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 202,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24390,7 +24390,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 303,
-                attrMin: 303,
+                attrMin: 152,
                 attrMax: 303,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24408,7 +24408,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 253,
-                attrMin: 253,
+                attrMin: 101,
                 attrMax: 253,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -24426,7 +24426,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24444,7 +24444,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24462,7 +24462,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24480,7 +24480,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24498,7 +24498,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 117,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24516,7 +24516,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24534,7 +24534,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -24552,7 +24552,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -25376,7 +25376,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25394,7 +25394,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25412,7 +25412,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25430,7 +25430,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25448,7 +25448,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 416,
-                attrMin: 416,
+                attrMin: 130,
                 attrMax: 416,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25466,7 +25466,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 208,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25484,7 +25484,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 156,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -25502,7 +25502,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -26114,7 +26114,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 473,
-                attrMin: 473,
+                attrMin: 263,
                 attrMax: 473,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26132,7 +26132,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 447,
-                attrMin: 447,
+                attrMin: 236,
                 attrMax: 447,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26150,7 +26150,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 420,
-                attrMin: 420,
+                attrMin: 131,
                 attrMax: 420,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26168,7 +26168,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 368,
-                attrMin: 368,
+                attrMin: 210,
                 attrMax: 368,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26186,7 +26186,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 158,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26204,7 +26204,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 105,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -26222,7 +26222,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -26240,7 +26240,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -26258,7 +26258,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -26276,7 +26276,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -26294,7 +26294,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -26312,7 +26312,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -26964,7 +26964,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -26982,7 +26982,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27000,7 +27000,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27018,7 +27018,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27036,7 +27036,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27054,7 +27054,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27072,7 +27072,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -27090,7 +27090,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -27524,7 +27524,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 212,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27542,7 +27542,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 191,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27560,7 +27560,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 212,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27578,7 +27578,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 191,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27596,7 +27596,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 339,
-                attrMin: 339,
+                attrMin: 106,
                 attrMax: 339,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27614,7 +27614,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 297,
-                attrMin: 297,
+                attrMin: 170,
                 attrMax: 297,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27632,7 +27632,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 127,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -27650,7 +27650,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 85,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -28044,7 +28044,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28062,7 +28062,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28080,7 +28080,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28098,7 +28098,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28116,7 +28116,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28134,7 +28134,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 185,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28152,7 +28152,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -28170,7 +28170,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -28610,7 +28610,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 204,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28628,7 +28628,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 347,
-                attrMin: 347,
+                attrMin: 184,
                 attrMax: 347,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28646,7 +28646,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 204,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28664,7 +28664,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 347,
-                attrMin: 347,
+                attrMin: 184,
                 attrMax: 347,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28682,7 +28682,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 326,
-                attrMin: 326,
+                attrMin: 102,
                 attrMax: 326,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28700,7 +28700,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 163,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28718,7 +28718,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 122,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -28736,7 +28736,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 204,
-                attrMin: 204,
+                attrMin: 82,
                 attrMax: 204,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -29124,7 +29124,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 172,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -29142,7 +29142,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 292,
-                attrMin: 292,
+                attrMin: 155,
                 attrMax: 292,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -29160,7 +29160,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 86,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -29178,7 +29178,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 137,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -29196,7 +29196,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 103,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -29214,7 +29214,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 172,
-                attrMin: 172,
+                attrMin: 69,
                 attrMax: 172,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -29834,7 +29834,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29852,7 +29852,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29870,7 +29870,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29888,7 +29888,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29906,7 +29906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29924,7 +29924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29942,7 +29942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29960,7 +29960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -29978,7 +29978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 179,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -29996,7 +29996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 304,
-                attrMin: 304,
+                attrMin: 161,
                 attrMax: 304,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30014,7 +30014,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 89,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30032,7 +30032,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 143,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30050,7 +30050,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 107,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30068,7 +30068,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 179,
-                attrMin: 179,
+                attrMin: 71,
                 attrMax: 179,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -30888,7 +30888,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30906,7 +30906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30924,7 +30924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30942,7 +30942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30960,7 +30960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30978,7 +30978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -30996,7 +30996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31014,7 +31014,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31032,7 +31032,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31050,7 +31050,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31068,7 +31068,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31086,7 +31086,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -31834,7 +31834,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31852,7 +31852,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31870,7 +31870,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31888,7 +31888,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31906,7 +31906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31924,7 +31924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31942,7 +31942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31960,7 +31960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -31978,7 +31978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -31996,7 +31996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32014,7 +32014,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32032,7 +32032,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32050,7 +32050,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32068,7 +32068,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32086,7 +32086,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32104,7 +32104,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -32924,7 +32924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 459,
-                attrMin: 459,
+                attrMin: 255,
                 attrMax: 459,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32942,7 +32942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 230,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32960,7 +32960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 408,
-                attrMin: 408,
+                attrMin: 128,
                 attrMax: 408,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32978,7 +32978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 204,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -32996,7 +32996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 153,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -33014,7 +33014,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 102,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -33032,7 +33032,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -33050,7 +33050,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -33068,7 +33068,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -33086,7 +33086,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -33104,7 +33104,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -33122,7 +33122,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -33786,7 +33786,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33804,7 +33804,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33822,7 +33822,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33840,7 +33840,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33858,7 +33858,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33876,7 +33876,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 300,
-                attrMin: 300,
+                attrMin: 171,
                 attrMax: 300,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33894,7 +33894,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 257,
-                attrMin: 257,
+                attrMin: 129,
                 attrMax: 257,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -33912,7 +33912,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 86,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -34414,7 +34414,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34432,7 +34432,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34450,7 +34450,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34468,7 +34468,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34486,7 +34486,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34504,7 +34504,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34522,7 +34522,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34540,7 +34540,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -34558,7 +34558,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34576,7 +34576,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34594,7 +34594,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34612,7 +34612,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34630,7 +34630,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34648,7 +34648,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34666,7 +34666,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -34684,7 +34684,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -35624,7 +35624,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35642,7 +35642,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35660,7 +35660,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35678,7 +35678,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35696,7 +35696,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35714,7 +35714,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35732,7 +35732,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35750,7 +35750,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -35768,7 +35768,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35786,7 +35786,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35804,7 +35804,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35822,7 +35822,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35840,7 +35840,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 416,
-                attrMin: 416,
+                attrMin: 130,
                 attrMax: 416,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35858,7 +35858,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 208,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35876,7 +35876,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 156,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -35894,7 +35894,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -36726,7 +36726,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36744,7 +36744,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36762,7 +36762,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36780,7 +36780,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36798,7 +36798,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36816,7 +36816,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -36834,7 +36834,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -36852,7 +36852,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -36870,7 +36870,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -36888,7 +36888,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -36906,7 +36906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -36924,7 +36924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -37576,7 +37576,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37594,7 +37594,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37612,7 +37612,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37630,7 +37630,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37648,7 +37648,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37666,7 +37666,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 185,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37684,7 +37684,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -37702,7 +37702,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -38132,7 +38132,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -38150,7 +38150,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -38168,7 +38168,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -38186,7 +38186,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -38204,7 +38204,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -38222,7 +38222,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -38616,7 +38616,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 430,
-                attrMin: 430,
+                attrMin: 239,
                 attrMax: 430,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38634,7 +38634,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 406,
-                attrMin: 406,
+                attrMin: 215,
                 attrMax: 406,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38652,7 +38652,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 430,
-                attrMin: 430,
+                attrMin: 239,
                 attrMax: 430,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38670,7 +38670,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 406,
-                attrMin: 406,
+                attrMin: 215,
                 attrMax: 406,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38688,7 +38688,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 119,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38706,7 +38706,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 334,
-                attrMin: 334,
+                attrMin: 191,
                 attrMax: 334,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38724,7 +38724,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 143,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -38742,7 +38742,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 239,
-                attrMin: 239,
+                attrMin: 95,
                 attrMax: 239,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -39310,7 +39310,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39328,7 +39328,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39346,7 +39346,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39364,7 +39364,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39382,7 +39382,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39400,7 +39400,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -39418,7 +39418,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -39436,7 +39436,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -39454,7 +39454,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -39472,7 +39472,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -39490,7 +39490,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -39508,7 +39508,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -40276,7 +40276,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -40294,7 +40294,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -40312,7 +40312,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -40330,7 +40330,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -40348,7 +40348,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -40366,7 +40366,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -40940,7 +40940,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 409,
-                attrMin: 409,
+                attrMin: 227,
                 attrMax: 409,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -40958,7 +40958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 205,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -40976,7 +40976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 409,
-                attrMin: 409,
+                attrMin: 227,
                 attrMax: 409,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -40994,7 +40994,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 205,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -41012,7 +41012,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 114,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -41030,7 +41030,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 182,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -41048,7 +41048,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 136,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -41066,7 +41066,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 227,
-                attrMin: 227,
+                attrMin: 91,
                 attrMax: 227,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -41084,7 +41084,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 253,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41102,7 +41102,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 227,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41120,7 +41120,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 253,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41138,7 +41138,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 227,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41156,7 +41156,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 404,
-                attrMin: 404,
+                attrMin: 126,
                 attrMax: 404,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41174,7 +41174,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 202,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41192,7 +41192,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 303,
-                attrMin: 303,
+                attrMin: 152,
                 attrMax: 303,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -41210,7 +41210,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 253,
-                attrMin: 253,
+                attrMin: 101,
                 attrMax: 253,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -41886,7 +41886,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -41904,7 +41904,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -41922,7 +41922,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -41940,7 +41940,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -41958,7 +41958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -41976,7 +41976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -42370,7 +42370,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -42388,7 +42388,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -42406,7 +42406,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -42424,7 +42424,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -42442,7 +42442,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -42460,7 +42460,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -42860,7 +42860,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42878,7 +42878,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42896,7 +42896,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42914,7 +42914,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42932,7 +42932,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 416,
-                attrMin: 416,
+                attrMin: 130,
                 attrMax: 416,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42950,7 +42950,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 208,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42968,7 +42968,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 156,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -42986,7 +42986,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -43450,7 +43450,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43468,7 +43468,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43486,7 +43486,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43504,7 +43504,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43522,7 +43522,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43540,7 +43540,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -43934,7 +43934,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43952,7 +43952,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43970,7 +43970,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -43988,7 +43988,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -44006,7 +44006,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -44024,7 +44024,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -44042,7 +44042,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -44060,7 +44060,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -44454,7 +44454,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -44472,7 +44472,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -44490,7 +44490,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -44508,7 +44508,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -44526,7 +44526,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -44544,7 +44544,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -44968,7 +44968,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 464,
-                attrMin: 464,
+                attrMin: 258,
                 attrMax: 464,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -44986,7 +44986,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 438,
-                attrMin: 438,
+                attrMin: 232,
                 attrMax: 438,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -45004,7 +45004,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 412,
-                attrMin: 412,
+                attrMin: 129,
                 attrMax: 412,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -45022,7 +45022,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 206,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -45040,7 +45040,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 155,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -45058,7 +45058,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 103,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -45452,7 +45452,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 153,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -45470,7 +45470,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 138,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -45488,7 +45488,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 77,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -45506,7 +45506,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 122,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -45524,7 +45524,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 184,
-                attrMin: 184,
+                attrMin: 92,
                 attrMax: 184,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -45542,7 +45542,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 153,
-                attrMin: 153,
+                attrMin: 61,
                 attrMax: 153,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -45936,7 +45936,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -45954,7 +45954,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -45972,7 +45972,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 416,
-                attrMin: 416,
+                attrMin: 130,
                 attrMax: 416,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -45990,7 +45990,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 208,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -46008,7 +46008,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 156,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -46026,7 +46026,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -46528,7 +46528,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46546,7 +46546,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46564,7 +46564,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 468,
-                attrMin: 468,
+                attrMin: 260,
                 attrMax: 468,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46582,7 +46582,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 442,
-                attrMin: 442,
+                attrMin: 234,
                 attrMax: 442,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46600,7 +46600,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 416,
-                attrMin: 416,
+                attrMin: 130,
                 attrMax: 416,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46618,7 +46618,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 208,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46636,7 +46636,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 156,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46654,7 +46654,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 260,
-                attrMin: 260,
+                attrMin: 104,
                 attrMax: 260,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46672,7 +46672,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46690,7 +46690,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46708,7 +46708,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -46726,7 +46726,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -47328,7 +47328,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47346,7 +47346,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47364,7 +47364,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47382,7 +47382,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47400,7 +47400,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47418,7 +47418,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47436,7 +47436,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -47454,7 +47454,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -47918,7 +47918,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -47936,7 +47936,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -47954,7 +47954,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -47972,7 +47972,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -47990,7 +47990,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -48008,7 +48008,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -48438,7 +48438,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 393,
-                attrMin: 393,
+                attrMin: 218,
                 attrMax: 393,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -48456,7 +48456,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 197,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -48474,7 +48474,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 349,
-                attrMin: 349,
+                attrMin: 109,
                 attrMax: 349,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -48492,7 +48492,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 175,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -48510,7 +48510,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 262,
-                attrMin: 262,
+                attrMin: 131,
                 attrMax: 262,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -48528,7 +48528,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 218,
-                attrMin: 218,
+                attrMin: 87,
                 attrMax: 218,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -48916,7 +48916,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -48934,7 +48934,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -48952,7 +48952,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 117,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -48970,7 +48970,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -48988,7 +48988,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -49006,7 +49006,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -49434,7 +49434,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -49452,7 +49452,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -49470,7 +49470,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -49488,7 +49488,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 185,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -49506,7 +49506,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -49524,7 +49524,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -49948,7 +49948,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 172,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -49966,7 +49966,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 292,
-                attrMin: 292,
+                attrMin: 155,
                 attrMax: 292,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -49984,7 +49984,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 86,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -50002,7 +50002,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 137,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -50020,7 +50020,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 103,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -50038,7 +50038,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 172,
-                attrMin: 172,
+                attrMin: 69,
                 attrMax: 172,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -50426,7 +50426,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 477,
-                attrMin: 477,
+                attrMin: 265,
                 attrMax: 477,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -50444,7 +50444,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 451,
-                attrMin: 451,
+                attrMin: 239,
                 attrMax: 451,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -50462,7 +50462,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 424,
-                attrMin: 424,
+                attrMin: 133,
                 attrMax: 424,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -50480,7 +50480,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 212,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -50498,7 +50498,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 159,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -50516,7 +50516,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 265,
-                attrMin: 265,
+                attrMin: 106,
                 attrMax: 265,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -50910,7 +50910,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -50928,7 +50928,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -50946,7 +50946,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -50964,7 +50964,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -50982,7 +50982,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51000,7 +51000,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -51400,7 +51400,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51418,7 +51418,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51436,7 +51436,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51454,7 +51454,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51472,7 +51472,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -51490,7 +51490,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -52070,7 +52070,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52088,7 +52088,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52106,7 +52106,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52124,7 +52124,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52142,7 +52142,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52160,7 +52160,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 324,
-                attrMin: 324,
+                attrMin: 185,
                 attrMax: 324,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52178,7 +52178,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52196,7 +52196,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52214,7 +52214,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52232,7 +52232,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52250,7 +52250,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52268,7 +52268,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52286,7 +52286,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52304,7 +52304,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52322,7 +52322,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -52340,7 +52340,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -52980,7 +52980,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -52998,7 +52998,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -53016,7 +53016,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -53034,7 +53034,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -53052,7 +53052,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -53070,7 +53070,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -53464,7 +53464,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 212,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -53482,7 +53482,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 191,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -53500,7 +53500,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 339,
-                attrMin: 339,
+                attrMin: 106,
                 attrMax: 339,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -53518,7 +53518,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 297,
-                attrMin: 297,
+                attrMin: 170,
                 attrMax: 297,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -53536,7 +53536,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 127,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -53554,7 +53554,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 85,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -53942,7 +53942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -53960,7 +53960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -53978,7 +53978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -53996,7 +53996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -54014,7 +54014,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -54032,7 +54032,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -54420,7 +54420,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -54438,7 +54438,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -54456,7 +54456,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -54474,7 +54474,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 185,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -54492,7 +54492,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -54510,7 +54510,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -54904,7 +54904,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 477,
-                attrMin: 477,
+                attrMin: 265,
                 attrMax: 477,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -54922,7 +54922,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 451,
-                attrMin: 451,
+                attrMin: 239,
                 attrMax: 451,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -54940,7 +54940,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 424,
-                attrMin: 424,
+                attrMin: 133,
                 attrMax: 424,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -54958,7 +54958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 212,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -54976,7 +54976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 159,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -54994,7 +54994,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 265,
-                attrMin: 265,
+                attrMin: 106,
                 attrMax: 265,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -55382,7 +55382,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 158,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -55400,7 +55400,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 268,
-                attrMin: 268,
+                attrMin: 142,
                 attrMax: 268,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -55418,7 +55418,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 79,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -55436,7 +55436,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 221,
-                attrMin: 221,
+                attrMin: 126,
                 attrMax: 221,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -55454,7 +55454,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 189,
-                attrMin: 189,
+                attrMin: 95,
                 attrMax: 189,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -55472,7 +55472,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 158,
-                attrMin: 158,
+                attrMin: 63,
                 attrMax: 158,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -55896,7 +55896,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -55914,7 +55914,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -55932,7 +55932,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -55950,7 +55950,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -55968,7 +55968,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -55986,7 +55986,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -56380,7 +56380,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 212,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56398,7 +56398,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 191,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56416,7 +56416,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 212,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56434,7 +56434,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 191,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56452,7 +56452,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 106,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56470,7 +56470,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 170,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56488,7 +56488,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 127,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -56506,7 +56506,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 85,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -56906,7 +56906,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 182,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -56924,7 +56924,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 310,
-                attrMin: 310,
+                attrMin: 164,
                 attrMax: 310,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -56942,7 +56942,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 91,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -56960,7 +56960,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 146,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -56978,7 +56978,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 219,
-                attrMin: 219,
+                attrMin: 109,
                 attrMax: 219,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -56996,7 +56996,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 73,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -57426,7 +57426,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 170,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57444,7 +57444,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 153,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57462,7 +57462,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 306,
-                attrMin: 306,
+                attrMin: 170,
                 attrMax: 306,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57480,7 +57480,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 153,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57498,7 +57498,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 272,
-                attrMin: 272,
+                attrMin: 85,
                 attrMax: 272,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57516,7 +57516,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 238,
-                attrMin: 238,
+                attrMin: 136,
                 attrMax: 238,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57534,7 +57534,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 204,
-                attrMin: 204,
+                attrMin: 102,
                 attrMax: 204,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -57552,7 +57552,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 170,
-                attrMin: 170,
+                attrMin: 68,
                 attrMax: 170,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -58009,7 +58009,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58027,7 +58027,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58045,7 +58045,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58063,7 +58063,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58081,7 +58081,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58099,7 +58099,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58117,7 +58117,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -58135,7 +58135,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -58638,7 +58638,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -58656,7 +58656,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -58674,7 +58674,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -58692,7 +58692,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -58710,7 +58710,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -58728,7 +58728,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -59195,7 +59195,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59213,7 +59213,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59231,7 +59231,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59249,7 +59249,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59267,7 +59267,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59285,7 +59285,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59303,7 +59303,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -59321,7 +59321,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -59748,7 +59748,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 417,
-                attrMin: 417,
+                attrMin: 232,
                 attrMax: 417,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -59766,7 +59766,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 394,
-                attrMin: 394,
+                attrMin: 209,
                 attrMax: 394,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -59784,7 +59784,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 116,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -59802,7 +59802,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 324,
-                attrMin: 324,
+                attrMin: 185,
                 attrMax: 324,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -59820,7 +59820,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 139,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -59838,7 +59838,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 232,
-                attrMin: 232,
+                attrMin: 93,
                 attrMax: 232,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -60232,7 +60232,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60250,7 +60250,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60268,7 +60268,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 117,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60286,7 +60286,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60304,7 +60304,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60322,7 +60322,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -60716,7 +60716,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 212,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60734,7 +60734,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 191,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60752,7 +60752,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 339,
-                attrMin: 339,
+                attrMin: 106,
                 attrMax: 339,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60770,7 +60770,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 297,
-                attrMin: 297,
+                attrMin: 170,
                 attrMax: 297,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60788,7 +60788,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 127,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -60806,7 +60806,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 85,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -61200,7 +61200,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -61218,7 +61218,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -61236,7 +61236,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -61254,7 +61254,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -61272,7 +61272,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -61290,7 +61290,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -62002,7 +62002,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 239,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62020,7 +62020,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 405,
-                attrMin: 405,
+                attrMin: 215,
                 attrMax: 405,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62038,7 +62038,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 119,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62056,7 +62056,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 429,
-                attrMin: 429,
+                attrMin: 239,
                 attrMax: 429,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62074,7 +62074,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 405,
-                attrMin: 405,
+                attrMin: 215,
                 attrMax: 405,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62092,7 +62092,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 119,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62110,7 +62110,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 334,
-                attrMin: 334,
+                attrMin: 191,
                 attrMax: 334,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62128,7 +62128,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 143,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62146,7 +62146,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 239,
-                attrMin: 239,
+                attrMin: 95,
                 attrMax: 239,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62164,7 +62164,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 334,
-                attrMin: 334,
+                attrMin: 191,
                 attrMax: 334,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62182,7 +62182,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 143,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62200,7 +62200,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 239,
-                attrMin: 239,
+                attrMin: 95,
                 attrMax: 239,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62218,7 +62218,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 202,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62236,7 +62236,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 343,
-                attrMin: 343,
+                attrMin: 182,
                 attrMax: 343,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62254,7 +62254,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62272,7 +62272,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62290,7 +62290,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62308,7 +62308,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62326,7 +62326,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62344,7 +62344,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62362,7 +62362,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -62380,7 +62380,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62398,7 +62398,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -62416,7 +62416,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -63614,7 +63614,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63632,7 +63632,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63650,7 +63650,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63668,7 +63668,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63686,7 +63686,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63704,7 +63704,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63722,7 +63722,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63740,7 +63740,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -63758,7 +63758,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -64203,7 +64203,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64221,7 +64221,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64239,7 +64239,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64257,7 +64257,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64275,7 +64275,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64293,7 +64293,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -64311,7 +64311,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -64792,7 +64792,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 202,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64810,7 +64810,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 343,
-                attrMin: 343,
+                attrMin: 182,
                 attrMax: 343,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64828,7 +64828,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 202,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64846,7 +64846,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 343,
-                attrMin: 343,
+                attrMin: 182,
                 attrMax: 343,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64864,7 +64864,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 323,
-                attrMin: 323,
+                attrMin: 101,
                 attrMax: 323,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64882,7 +64882,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 162,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64900,7 +64900,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 121,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64918,7 +64918,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 202,
-                attrMin: 202,
+                attrMin: 81,
                 attrMax: 202,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -64936,7 +64936,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -65375,7 +65375,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65393,7 +65393,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65411,7 +65411,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 374,
-                attrMin: 374,
+                attrMin: 208,
                 attrMax: 374,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65429,7 +65429,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65447,7 +65447,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65465,7 +65465,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65483,7 +65483,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65501,7 +65501,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -65519,7 +65519,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -65958,7 +65958,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -65976,7 +65976,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -65994,7 +65994,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -66012,7 +66012,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -66030,7 +66030,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -66048,7 +66048,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -66066,7 +66066,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -66505,7 +66505,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 270,
-                attrMin: 270,
+                attrMin: 150,
                 attrMax: 270,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66523,7 +66523,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 135,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66541,7 +66541,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 270,
-                attrMin: 270,
+                attrMin: 150,
                 attrMax: 270,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66559,7 +66559,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 135,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66577,7 +66577,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 75,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66595,7 +66595,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 120,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66613,7 +66613,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 180,
-                attrMin: 180,
+                attrMin: 90,
                 attrMax: 180,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66631,7 +66631,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 150,
-                attrMin: 150,
+                attrMin: 60,
                 attrMax: 150,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -66649,7 +66649,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 75,
-                attrMin: 75,
+                attrMin: 30,
                 attrMax: 75,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -67130,7 +67130,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67148,7 +67148,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67166,7 +67166,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67184,7 +67184,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67202,7 +67202,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67220,7 +67220,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -67238,7 +67238,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -67683,7 +67683,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 172,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67701,7 +67701,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 292,
-                attrMin: 292,
+                attrMin: 155,
                 attrMax: 292,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67719,7 +67719,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 86,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67737,7 +67737,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 137,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67755,7 +67755,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 103,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67773,7 +67773,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 172,
-                attrMin: 172,
+                attrMin: 69,
                 attrMax: 172,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -67791,7 +67791,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 75,
-                attrMin: 75,
+                attrMin: 30,
                 attrMax: 75,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -68230,7 +68230,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68248,7 +68248,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68266,7 +68266,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68284,7 +68284,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68302,7 +68302,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68320,7 +68320,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -68338,7 +68338,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -68783,7 +68783,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 175,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68801,7 +68801,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 298,
-                attrMin: 298,
+                attrMin: 158,
                 attrMax: 298,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68819,7 +68819,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 280,
-                attrMin: 280,
+                attrMin: 88,
                 attrMax: 280,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68837,7 +68837,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 245,
-                attrMin: 245,
+                attrMin: 140,
                 attrMax: 245,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68855,7 +68855,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 105,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68873,7 +68873,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 175,
-                attrMin: 175,
+                attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -68891,7 +68891,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 75,
-                attrMin: 75,
+                attrMin: 30,
                 attrMax: 75,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -69330,7 +69330,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 433,
-                attrMin: 433,
+                attrMin: 241,
                 attrMax: 433,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69348,7 +69348,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 409,
-                attrMin: 409,
+                attrMin: 217,
                 attrMax: 409,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69366,7 +69366,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 385,
-                attrMin: 385,
+                attrMin: 120,
                 attrMax: 385,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69384,7 +69384,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 337,
-                attrMin: 337,
+                attrMin: 193,
                 attrMax: 337,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69402,7 +69402,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 144,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69420,7 +69420,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 241,
-                attrMin: 241,
+                attrMin: 96,
                 attrMax: 241,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -69438,7 +69438,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 100,
-                attrMin: 100,
+                attrMin: 40,
                 attrMax: 100,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -69859,7 +69859,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -69877,7 +69877,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -69895,7 +69895,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -69913,7 +69913,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -69931,7 +69931,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -69949,7 +69949,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -70389,7 +70389,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -70407,7 +70407,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -70425,7 +70425,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -70443,7 +70443,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -70461,7 +70461,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -70479,7 +70479,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -70867,7 +70867,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -70885,7 +70885,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -70903,7 +70903,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -70921,7 +70921,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -70939,7 +70939,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -70957,7 +70957,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -71345,7 +71345,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71363,7 +71363,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71381,7 +71381,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 273,
-                attrMin: 273,
+                attrMin: 152,
                 attrMax: 273,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71399,7 +71399,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 258,
-                attrMin: 258,
+                attrMin: 136,
                 attrMax: 258,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71417,7 +71417,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 242,
-                attrMin: 242,
+                attrMin: 76,
                 attrMax: 242,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71435,7 +71435,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 121,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71453,7 +71453,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 91,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -71471,7 +71471,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 152,
-                attrMin: 152,
+                attrMin: 61,
                 attrMax: 152,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -71859,7 +71859,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -71877,7 +71877,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -71895,7 +71895,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -71913,7 +71913,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -71931,7 +71931,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -71949,7 +71949,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -72337,7 +72337,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -72355,7 +72355,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -72373,7 +72373,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -72391,7 +72391,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -72409,7 +72409,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -72427,7 +72427,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -72821,7 +72821,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 421,
-                attrMin: 421,
+                attrMin: 234,
                 attrMax: 421,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -72839,7 +72839,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 398,
-                attrMin: 398,
+                attrMin: 211,
                 attrMax: 398,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -72857,7 +72857,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 117,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -72875,7 +72875,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 187,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -72893,7 +72893,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 140,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -72911,7 +72911,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 234,
-                attrMin: 234,
+                attrMin: 94,
                 attrMax: 234,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -73341,7 +73341,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 430,
-                attrMin: 430,
+                attrMin: 239,
                 attrMax: 430,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -73359,7 +73359,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 406,
-                attrMin: 406,
+                attrMin: 215,
                 attrMax: 406,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -73377,7 +73377,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 119,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -73395,7 +73395,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 334,
-                attrMin: 334,
+                attrMin: 191,
                 attrMax: 334,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -73413,7 +73413,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 143,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -73431,7 +73431,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 239,
-                attrMin: 239,
+                attrMin: 95,
                 attrMax: 239,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -73855,7 +73855,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -73873,7 +73873,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -73891,7 +73891,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -73909,7 +73909,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -73927,7 +73927,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -73945,7 +73945,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -74375,7 +74375,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 371,
-                attrMin: 371,
+                attrMin: 206,
                 attrMax: 371,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -74393,7 +74393,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 350,
-                attrMin: 350,
+                attrMin: 185,
                 attrMax: 350,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -74411,7 +74411,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 330,
-                attrMin: 330,
+                attrMin: 103,
                 attrMax: 330,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -74429,7 +74429,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 288,
-                attrMin: 288,
+                attrMin: 165,
                 attrMax: 288,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -74447,7 +74447,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 124,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -74465,7 +74465,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -74859,7 +74859,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74877,7 +74877,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74895,7 +74895,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74913,7 +74913,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74931,7 +74931,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74949,7 +74949,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74967,7 +74967,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -74985,7 +74985,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -75373,7 +75373,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 172,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -75391,7 +75391,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 292,
-                attrMin: 292,
+                attrMin: 155,
                 attrMax: 292,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -75409,7 +75409,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 86,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -75427,7 +75427,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 137,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -75445,7 +75445,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 103,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -75463,7 +75463,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 172,
-                attrMin: 172,
+                attrMin: 69,
                 attrMax: 172,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -75899,7 +75899,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 278,
-                attrMin: 278,
+                attrMin: 155,
                 attrMax: 278,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -75917,7 +75917,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 139,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -75935,7 +75935,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 247,
-                attrMin: 247,
+                attrMin: 77,
                 attrMax: 247,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -75953,7 +75953,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 124,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -75971,7 +75971,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 185,
-                attrMin: 185,
+                attrMin: 93,
                 attrMax: 185,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -75989,7 +75989,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 155,
-                attrMin: 155,
+                attrMin: 62,
                 attrMax: 155,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -76389,7 +76389,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -76407,7 +76407,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -76425,7 +76425,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -76443,7 +76443,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -76461,7 +76461,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -76479,7 +76479,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -76913,7 +76913,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -76931,7 +76931,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -76949,7 +76949,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -76967,7 +76967,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 297,
-                attrMin: 297,
+                attrMin: 170,
                 attrMax: 297,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -76985,7 +76985,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 127,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -77003,7 +77003,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 85,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -77397,7 +77397,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 179,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -77415,7 +77415,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 304,
-                attrMin: 304,
+                attrMin: 161,
                 attrMax: 304,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -77433,7 +77433,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 89,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -77451,7 +77451,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 143,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -77469,7 +77469,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 107,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -77487,7 +77487,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 179,
-                attrMin: 179,
+                attrMin: 71,
                 attrMax: 179,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -78061,7 +78061,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 430,
-                attrMin: 430,
+                attrMin: 239,
                 attrMax: 430,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78079,7 +78079,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 406,
-                attrMin: 406,
+                attrMin: 215,
                 attrMax: 406,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78097,7 +78097,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 119,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78115,7 +78115,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 382,
-                attrMin: 382,
+                attrMin: 212,
                 attrMax: 382,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -78133,7 +78133,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 361,
-                attrMin: 361,
+                attrMin: 191,
                 attrMax: 361,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -78151,7 +78151,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 339,
-                attrMin: 339,
+                attrMin: 106,
                 attrMax: 339,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -78169,7 +78169,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 334,
-                attrMin: 334,
+                attrMin: 191,
                 attrMax: 334,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78187,7 +78187,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 286,
-                attrMin: 286,
+                attrMin: 143,
                 attrMax: 286,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78205,7 +78205,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 239,
-                attrMin: 239,
+                attrMin: 95,
                 attrMax: 239,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -78223,7 +78223,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 297,
-                attrMin: 297,
+                attrMin: 170,
                 attrMax: 297,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -78241,7 +78241,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 127,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -78259,7 +78259,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 85,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -79007,7 +79007,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 241,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79025,7 +79025,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 410,
-                attrMin: 410,
+                attrMin: 217,
                 attrMax: 410,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79043,7 +79043,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 182,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79061,7 +79061,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 310,
-                attrMin: 310,
+                attrMin: 164,
                 attrMax: 310,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79079,7 +79079,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 241,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79097,7 +79097,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 410,
-                attrMin: 410,
+                attrMin: 217,
                 attrMax: 410,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79115,7 +79115,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 121,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79133,7 +79133,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 182,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79151,7 +79151,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 310,
-                attrMin: 310,
+                attrMin: 164,
                 attrMax: 310,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79169,7 +79169,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 91,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79187,7 +79187,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 337,
-                attrMin: 337,
+                attrMin: 193,
                 attrMax: 337,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79205,7 +79205,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 145,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79223,7 +79223,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 241,
-                attrMin: 241,
+                attrMin: 96,
                 attrMax: 241,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -79241,7 +79241,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 146,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79259,7 +79259,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 219,
-                attrMin: 219,
+                attrMin: 109,
                 attrMax: 219,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -79277,7 +79277,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 73,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -80037,7 +80037,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 182,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80055,7 +80055,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 310,
-                attrMin: 310,
+                attrMin: 164,
                 attrMax: 310,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80073,7 +80073,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 482,
-                attrMin: 482,
+                attrMin: 268,
                 attrMax: 482,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80091,7 +80091,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 241,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80109,7 +80109,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 328,
-                attrMin: 328,
+                attrMin: 182,
                 attrMax: 328,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80127,7 +80127,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 310,
-                attrMin: 310,
+                attrMin: 164,
                 attrMax: 310,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80145,7 +80145,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 91,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80163,7 +80163,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 482,
-                attrMin: 482,
+                attrMin: 268,
                 attrMax: 482,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80181,7 +80181,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 455,
-                attrMin: 455,
+                attrMin: 241,
                 attrMax: 455,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80199,7 +80199,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 428,
-                attrMin: 428,
+                attrMin: 134,
                 attrMax: 428,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80217,7 +80217,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 255,
-                attrMin: 255,
+                attrMin: 146,
                 attrMax: 255,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80235,7 +80235,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 219,
-                attrMin: 219,
+                attrMin: 109,
                 attrMax: 219,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80253,7 +80253,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 182,
-                attrMin: 182,
+                attrMin: 73,
                 attrMax: 182,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -80271,7 +80271,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 214,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80289,7 +80289,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 161,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -80307,7 +80307,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 268,
-                attrMin: 268,
+                attrMin: 107,
                 attrMax: 268,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -80983,7 +80983,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -81001,7 +81001,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -81019,7 +81019,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -81037,7 +81037,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -81055,7 +81055,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -81073,7 +81073,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -81467,7 +81467,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81485,7 +81485,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81503,7 +81503,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 210,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81521,7 +81521,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 357,
-                attrMin: 357,
+                attrMin: 189,
                 attrMax: 357,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81539,7 +81539,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 336,
-                attrMin: 336,
+                attrMin: 105,
                 attrMax: 336,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81557,7 +81557,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 294,
-                attrMin: 294,
+                attrMin: 168,
                 attrMax: 294,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81575,7 +81575,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 126,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -81593,7 +81593,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 210,
-                attrMin: 210,
+                attrMin: 84,
                 attrMax: 210,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -82095,7 +82095,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 281,
-                attrMin: 281,
+                attrMin: 156,
                 attrMax: 281,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82113,7 +82113,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 265,
-                attrMin: 265,
+                attrMin: 140,
                 attrMax: 265,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82131,7 +82131,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 78,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82149,7 +82149,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -82167,7 +82167,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -82185,7 +82185,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -82203,7 +82203,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 218,
-                attrMin: 218,
+                attrMin: 125,
                 attrMax: 218,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82221,7 +82221,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 187,
-                attrMin: 187,
+                attrMin: 94,
                 attrMax: 187,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82239,7 +82239,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 156,
-                attrMin: 156,
+                attrMin: 62,
                 attrMax: 156,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -82257,7 +82257,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -82275,7 +82275,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -82293,7 +82293,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -83041,7 +83041,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 413,
-                attrMin: 413,
+                attrMin: 230,
                 attrMax: 413,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83059,7 +83059,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 390,
-                attrMin: 390,
+                attrMin: 207,
                 attrMax: 390,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83077,7 +83077,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 367,
-                attrMin: 367,
+                attrMin: 115,
                 attrMax: 367,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83095,7 +83095,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83113,7 +83113,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83131,7 +83131,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83149,7 +83149,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 321,
-                attrMin: 321,
+                attrMin: 184,
                 attrMax: 321,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83167,7 +83167,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 138,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83185,7 +83185,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 230,
-                attrMin: 230,
+                attrMin: 92,
                 attrMax: 230,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -83203,7 +83203,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83221,7 +83221,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83239,7 +83239,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -83903,7 +83903,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 425,
-                attrMin: 425,
+                attrMin: 236,
                 attrMax: 425,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83921,7 +83921,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 402,
-                attrMin: 402,
+                attrMin: 213,
                 attrMax: 402,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83939,7 +83939,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 378,
-                attrMin: 378,
+                attrMin: 118,
                 attrMax: 378,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83957,7 +83957,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 331,
-                attrMin: 331,
+                attrMin: 189,
                 attrMax: 331,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83975,7 +83975,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 284,
-                attrMin: 284,
+                attrMin: 142,
                 attrMax: 284,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -83993,7 +83993,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 236,
-                attrMin: 236,
+                attrMin: 95,
                 attrMax: 236,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -84381,7 +84381,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 318,
-                attrMin: 318,
+                attrMin: 177,
                 attrMax: 318,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84399,7 +84399,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 301,
-                attrMin: 301,
+                attrMin: 159,
                 attrMax: 301,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84417,7 +84417,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 283,
-                attrMin: 283,
+                attrMin: 88,
                 attrMax: 283,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84435,7 +84435,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 248,
-                attrMin: 248,
+                attrMin: 141,
                 attrMax: 248,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84453,7 +84453,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 212,
-                attrMin: 212,
+                attrMin: 106,
                 attrMax: 212,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84471,7 +84471,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 177,
-                attrMin: 177,
+                attrMin: 71,
                 attrMax: 177,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -84865,7 +84865,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 375,
-                attrMin: 375,
+                attrMin: 208,
                 attrMax: 375,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84883,7 +84883,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 354,
-                attrMin: 354,
+                attrMin: 187,
                 attrMax: 354,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84901,7 +84901,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 333,
-                attrMin: 333,
+                attrMin: 104,
                 attrMax: 333,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84919,7 +84919,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 291,
-                attrMin: 291,
+                attrMin: 166,
                 attrMax: 291,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84937,7 +84937,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 250,
-                attrMin: 250,
+                attrMin: 125,
                 attrMax: 250,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -84955,7 +84955,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 83,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -85343,7 +85343,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 214,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85361,7 +85361,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 364,
-                attrMin: 364,
+                attrMin: 193,
                 attrMax: 364,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85379,7 +85379,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 343,
-                attrMin: 343,
+                attrMin: 107,
                 attrMax: 343,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85397,7 +85397,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 300,
-                attrMin: 300,
+                attrMin: 171,
                 attrMax: 300,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85415,7 +85415,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 257,
-                attrMin: 257,
+                attrMin: 129,
                 attrMax: 257,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85433,7 +85433,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 214,
-                attrMin: 214,
+                attrMin: 86,
                 attrMax: 214,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -85821,7 +85821,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 325,
-                attrMin: 325,
+                attrMin: 180,
                 attrMax: 325,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85839,7 +85839,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 307,
-                attrMin: 307,
+                attrMin: 162,
                 attrMax: 307,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85857,7 +85857,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 90,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85875,7 +85875,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 252,
-                attrMin: 252,
+                attrMin: 144,
                 attrMax: 252,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85893,7 +85893,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 216,
-                attrMin: 216,
+                attrMin: 108,
                 attrMax: 216,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -85911,7 +85911,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 180,
-                attrMin: 180,
+                attrMin: 72,
                 attrMax: 180,
                 attrTypeId: AttrTypeId.Ice
             })
@@ -86311,7 +86311,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 473,
-                attrMin: 473,
+                attrMin: 263,
                 attrMax: 473,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -86329,7 +86329,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 446,
-                attrMin: 446,
+                attrMin: 236,
                 attrMax: 446,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -86347,7 +86347,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 420,
-                attrMin: 420,
+                attrMin: 131,
                 attrMax: 420,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -86365,7 +86365,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 368,
-                attrMin: 368,
+                attrMin: 210,
                 attrMax: 368,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -86383,7 +86383,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 315,
-                attrMin: 315,
+                attrMin: 158,
                 attrMax: 315,
                 attrTypeId: AttrTypeId.Gravity
             }),
@@ -86401,7 +86401,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 263,
-                attrMin: 263,
+                attrMin: 105,
                 attrMax: 263,
                 attrTypeId: AttrTypeId.Gravity
             })
@@ -86789,7 +86789,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 309,
-                attrMin: 309,
+                attrMin: 172,
                 attrMax: 309,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -86807,7 +86807,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 292,
-                attrMin: 292,
+                attrMin: 155,
                 attrMax: 292,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -86825,7 +86825,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 275,
-                attrMin: 275,
+                attrMin: 86,
                 attrMax: 275,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -86843,7 +86843,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 240,
-                attrMin: 240,
+                attrMin: 137,
                 attrMax: 240,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -86861,7 +86861,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 206,
-                attrMin: 206,
+                attrMin: 103,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Fire
             }),
@@ -86879,7 +86879,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Slash,
                 attr: 172,
-                attrMin: 172,
+                attrMin: 69,
                 attrMax: 172,
                 attrTypeId: AttrTypeId.Fire
             })
@@ -87273,7 +87273,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 434,
-                attrMin: 434,
+                attrMin: 241,
                 attrMax: 434,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -87291,7 +87291,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 410,
-                attrMin: 410,
+                attrMin: 217,
                 attrMax: 410,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -87309,7 +87309,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 386,
-                attrMin: 386,
+                attrMin: 120,
                 attrMax: 386,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -87327,7 +87327,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 337,
-                attrMin: 337,
+                attrMin: 193,
                 attrMax: 337,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -87345,7 +87345,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 289,
-                attrMin: 289,
+                attrMin: 145,
                 attrMax: 289,
                 attrTypeId: AttrTypeId.Volt
             }),
@@ -87363,7 +87363,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 241,
-                attrMin: 241,
+                attrMin: 96,
                 attrMax: 241,
                 attrTypeId: AttrTypeId.Volt
             })
@@ -87757,7 +87757,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 312,
-                attrMin: 312,
+                attrMin: 173,
                 attrMax: 312,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -87775,7 +87775,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 295,
-                attrMin: 295,
+                attrMin: 156,
                 attrMax: 295,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -87793,7 +87793,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 277,
-                attrMin: 277,
+                attrMin: 87,
                 attrMax: 277,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -87811,7 +87811,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 243,
-                attrMin: 243,
+                attrMin: 139,
                 attrMax: 243,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -87829,7 +87829,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 208,
-                attrMin: 208,
+                attrMin: 104,
                 attrMax: 208,
                 attrTypeId: AttrTypeId.Ice
             }),
@@ -87847,7 +87847,7 @@ export const ActressGears = {
                 atkTypeId: AttrTypeId.Close,
                 atkAmmoTypeId: AttrTypeId.Impact,
                 attr: 173,
-                attrMin: 173,
+                attrMin: 69,
                 attrMax: 173,
                 attrTypeId: AttrTypeId.Ice
             })

@@ -378,20 +378,41 @@ export class Character extends Unit {
         this.atkClose = result;
     }
     updateAttrClose(): void {
+        const chrBaseVal = 0;
         const gear = this.weaponClose;
-
-        let enigmaValue = this.attrCloseEnigma;
+        const gearBaseVal = gear.base.attr;
+        const masterVal = 0;
+        let enigmaStatusVal = this.attrCloseEnigma;
         if (this.isCustomEnigmaStatus) {
-            enigmaValue = this.attrCloseEnigmaCustom;
+            enigmaStatusVal = this.attrCloseEnigmaCustom;
         }
 
-        const attrSum = gear.attr
-            + enigmaValue
-            ;
-        const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
-        const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
-        const result = Math.floor(attrSum * buffValuePct);
+        const tuneVal = gear.tuneAttr;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+
+        let result = baseVal;
+
+        const buffs = [];
+        this.allUnits.forEach(u => {
+            const buffs_ = u.buffs.filter(b => b.type === gear.base.attrTypeId);
+            buffs.push(...buffs_);
+        });
+        const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
+        result += totalBuffVal;
+
         this.attrClose = result;
+        // let enigmaValue = this.attrCloseEnigma;
+        // if (this.isCustomEnigmaStatus) {
+        //     enigmaValue = this.attrCloseEnigmaCustom;
+        // }
+
+        // const attrSum = gear.attr
+        //     + enigmaValue
+        //     ;
+        // const buffs = this.allBuffs.filter(b => b.type === gear.base.attrTypeId);
+        // const buffValuePct = buffs.map(v => v.value).reduce((p, c) => p + c, 0) + 1;
+        // const result = Math.floor(attrSum * buffValuePct);
+        // this.attrClose = result;
     }
     updateSPD(): void {
         const targetAttrTypeId = AttrTypeId.SPD;
