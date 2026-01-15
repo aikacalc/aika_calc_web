@@ -268,10 +268,10 @@ export class AikaGachaCalcComponent implements OnInit {
             if (characterType === 'backup' && !this.filterSettings.backup) return false;
 
             // 檢查屬性篩選
-            if (cm.attrTypeId === AttrTypeId.Volt && !this.filterSettings.volt) return false;
-            if (cm.attrTypeId === AttrTypeId.Gravity && !this.filterSettings.gravity) return false;
-            if (cm.attrTypeId === AttrTypeId.Fire && !this.filterSettings.fire) return false;
-            if (cm.attrTypeId === AttrTypeId.Ice && !this.filterSettings.ice) return false;
+            if (cm.chrAttrTypeId === AttrTypeId.Volt && !this.filterSettings.volt) return false;
+            if (cm.chrAttrTypeId === AttrTypeId.Gravity && !this.filterSettings.gravity) return false;
+            if (cm.chrAttrTypeId === AttrTypeId.Fire && !this.filterSettings.fire) return false;
+            if (cm.chrAttrTypeId === AttrTypeId.Ice && !this.filterSettings.ice) return false;
 
             // 檢查 emission 類型篩選
             const characterEmissionType = this.characterEmissionTypeMap.get(cm);

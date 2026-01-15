@@ -68,10 +68,10 @@
                     <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
                     <span>ST</span>
                 </label>
-                <label>
+                <!-- <label>
                     <input type="checkbox" [(ngModel)]="filterSettings.backup" (change)="onFilterChange()">
                     <span>BU</span>
-                </label>
+                </label> -->
             </div>
         </div>
 
@@ -140,7 +140,7 @@
         <!-- 擅長武器 -->
         <div class="filter-category">
             <div class="category-header">
-                <span class="category-title">擅長武器</span>
+                <span class="category-title">主要擅長武器</span>
                 <div class="category-controls">
                     <button class="mini-btn" (click)="selectAllInCategory('weapon')">全選</button>
                     <button class="mini-btn" (click)="deselectAllInCategory('weapon')">取消</button>
