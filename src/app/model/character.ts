@@ -180,6 +180,8 @@ export class Character extends Unit {
     levelGrowthPct: number = 0;
     psvSkillSlots: AikaPsvSkillSlot[] = [];
 
+    birthdayMonth: number = 0;
+    bloodType: string = '';
 
     updateStatus(): void {
         if (!this.isCustomEnigmaStatus) {

@@ -51,6 +51,8 @@ class HirasakaYotsuyu01 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class HirasakaYotsuyu02 extends Character {
@@ -100,6 +102,8 @@ class HirasakaYotsuyu02 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class HirasakaYotsuyu04 extends Character {
@@ -149,6 +153,8 @@ class HirasakaYotsuyu04 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class HirasakaYotsuyu05 extends Character {
@@ -198,6 +204,8 @@ class HirasakaYotsuyu05 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class HirasakaYotsuyu70 extends Character {
@@ -247,6 +255,8 @@ class HirasakaYotsuyu70 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class HirasakaYotsuyu80 extends Character {
@@ -296,6 +306,8 @@ class HirasakaYotsuyu80 extends Character {
     weaponCloses: Gear[] = ActressGears.HirasakaYotsuyu.short;
     equipmentTops: Gear[] = ActressGears.HirasakaYotsuyu.top;
     equipmentBottoms: Gear[] = ActressGears.HirasakaYotsuyu.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class KaneshiyaSitara01 extends Character {
@@ -345,6 +357,8 @@ class KaneshiyaSitara01 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KaneshiyaSitara02 extends Character {
@@ -394,6 +408,8 @@ class KaneshiyaSitara02 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KaneshiyaSitara04 extends Character {
@@ -443,6 +459,8 @@ class KaneshiyaSitara04 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KaneshiyaSitara05 extends Character {
@@ -492,6 +510,8 @@ class KaneshiyaSitara05 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KaneshiyaSitara70 extends Character {
@@ -540,6 +560,8 @@ class KaneshiyaSitara70 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KaneshiyaSitara80 extends Character {
@@ -589,6 +611,8 @@ class KaneshiyaSitara80 extends Character {
     weaponCloses: Gear[] = ActressGears.KaneshiyaSitara.short;
     equipmentTops: Gear[] = ActressGears.KaneshiyaSitara.top;
     equipmentBottoms: Gear[] = ActressGears.KaneshiyaSitara.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MomoshinaFumika01 extends Character {
@@ -637,6 +661,8 @@ class MomoshinaFumika01 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class MomoshinaFumika02 extends Character {
@@ -685,6 +711,8 @@ class MomoshinaFumika02 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class MomoshinaFumika04 extends Character {
@@ -733,6 +761,8 @@ class MomoshinaFumika04 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class MomoshinaFumika05 extends Character {
@@ -781,6 +811,8 @@ class MomoshinaFumika05 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class MomoshinaFumika70 extends Character {
@@ -830,6 +862,8 @@ class MomoshinaFumika70 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class MomoshinaFumika80 extends Character {
@@ -879,6 +913,8 @@ class MomoshinaFumika80 extends Character {
     weaponCloses: Gear[] = ActressGears.MomoshinaFumika.short;
     equipmentTops: Gear[] = ActressGears.MomoshinaFumika.top;
     equipmentBottoms: Gear[] = ActressGears.MomoshinaFumika.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class AgatsumaKaede01 extends Character {
@@ -927,6 +963,8 @@ class AgatsumaKaede01 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKaede02 extends Character {
@@ -975,6 +1013,8 @@ class AgatsumaKaede02 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKaede04 extends Character {
@@ -1023,6 +1063,8 @@ class AgatsumaKaede04 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKaede05 extends Character {
@@ -1071,6 +1113,8 @@ class AgatsumaKaede05 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKaede70 extends Character {
@@ -1120,6 +1164,8 @@ class AgatsumaKaede70 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKaede80 extends Character {
@@ -1168,6 +1214,8 @@ class AgatsumaKaede80 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKaede.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKaede.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKaede.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class HimukaiRin01 extends Character {
@@ -1216,6 +1264,8 @@ class HimukaiRin01 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin02 extends Character {
@@ -1264,6 +1314,8 @@ class HimukaiRin02 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin04 extends Character {
@@ -1312,6 +1364,8 @@ class HimukaiRin04 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin05 extends Character {
@@ -1360,6 +1414,8 @@ class HimukaiRin05 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin70 extends Character {
@@ -1409,6 +1465,8 @@ class HimukaiRin70 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin80 extends Character {
@@ -1458,6 +1516,8 @@ class HimukaiRin80 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class HimukaiRin60 extends Character {
@@ -1507,6 +1567,8 @@ class HimukaiRin60 extends Character {
     weaponCloses: Gear[] = ActressGears.HimukaiRin.short;
     equipmentTops: Gear[] = ActressGears.HimukaiRin.top;
     equipmentBottoms: Gear[] = ActressGears.HimukaiRin.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class TakanashiRei01 extends Character {
@@ -1556,6 +1618,8 @@ class TakanashiRei01 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei02 extends Character {
@@ -1605,6 +1669,8 @@ class TakanashiRei02 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei04 extends Character {
@@ -1654,6 +1720,8 @@ class TakanashiRei04 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei05 extends Character {
@@ -1703,6 +1771,8 @@ class TakanashiRei05 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei70 extends Character {
@@ -1751,6 +1821,8 @@ class TakanashiRei70 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei80 extends Character {
@@ -1800,6 +1872,8 @@ class TakanashiRei80 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TakanashiRei60 extends Character {
@@ -1848,6 +1922,8 @@ class TakanashiRei60 extends Character {
     weaponCloses: Gear[] = ActressGears.TakanashiRei.short;
     equipmentTops: Gear[] = ActressGears.TakanashiRei.top;
     equipmentBottoms: Gear[] = ActressGears.TakanashiRei.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka01 extends Character {
@@ -1896,6 +1972,8 @@ class IchijoAyaka01 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka02 extends Character {
@@ -1944,6 +2022,8 @@ class IchijoAyaka02 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka04 extends Character {
@@ -1992,6 +2072,8 @@ class IchijoAyaka04 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka05 extends Character {
@@ -2040,6 +2122,8 @@ class IchijoAyaka05 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka70 extends Character {
@@ -2089,6 +2173,8 @@ class IchijoAyaka70 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class IchijoAyaka80 extends Character {
@@ -2138,6 +2224,8 @@ class IchijoAyaka80 extends Character {
     weaponCloses: Gear[] = ActressGears.IchijoAyaka.short;
     equipmentTops: Gear[] = ActressGears.IchijoAyaka.top;
     equipmentBottoms: Gear[] = ActressGears.IchijoAyaka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class AikawaAika01 extends Character {
@@ -2187,6 +2275,8 @@ class AikawaAika01 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class AikawaAika02 extends Character {
@@ -2236,6 +2326,8 @@ class AikawaAika02 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class AikawaAika04 extends Character {
@@ -2285,6 +2377,8 @@ class AikawaAika04 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class AikawaAika05 extends Character {
@@ -2334,6 +2428,8 @@ class AikawaAika05 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class AikawaAika70 extends Character {
@@ -2382,6 +2478,8 @@ class AikawaAika70 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class AikawaAika80 extends Character {
@@ -2431,6 +2529,8 @@ class AikawaAika80 extends Character {
     weaponCloses: Gear[] = ActressGears.AikawaAika.short;
     equipmentTops: Gear[] = ActressGears.AikawaAika.top;
     equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class KoashiMutsumi01 extends Character {
@@ -2479,6 +2579,8 @@ class KoashiMutsumi01 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi02 extends Character {
@@ -2527,6 +2629,8 @@ class KoashiMutsumi02 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi04 extends Character {
@@ -2575,6 +2679,8 @@ class KoashiMutsumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi05 extends Character {
@@ -2623,6 +2729,8 @@ class KoashiMutsumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi70 extends Character {
@@ -2672,6 +2780,8 @@ class KoashiMutsumi70 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi80 extends Character {
@@ -2721,6 +2831,8 @@ class KoashiMutsumi80 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KoashiMutsumi60 extends Character {
@@ -2770,6 +2882,8 @@ class KoashiMutsumi60 extends Character {
     weaponCloses: Gear[] = ActressGears.KoashiMutsumi.short;
     equipmentTops: Gear[] = ActressGears.KoashiMutsumi.top;
     equipmentBottoms: Gear[] = ActressGears.KoashiMutsumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class NikotamaMai01 extends Character {
@@ -2818,6 +2932,8 @@ class NikotamaMai01 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai02 extends Character {
@@ -2866,6 +2982,8 @@ class NikotamaMai02 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai04 extends Character {
@@ -2914,6 +3032,8 @@ class NikotamaMai04 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai05 extends Character {
@@ -2962,6 +3082,8 @@ class NikotamaMai05 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai70 extends Character {
@@ -3011,6 +3133,8 @@ class NikotamaMai70 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai80 extends Character {
@@ -3060,6 +3184,8 @@ class NikotamaMai80 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NikotamaMai60 extends Character {
@@ -3109,6 +3235,8 @@ class NikotamaMai60 extends Character {
     weaponCloses: Gear[] = ActressGears.NikotamaMai.short;
     equipmentTops: Gear[] = ActressGears.NikotamaMai.top;
     equipmentBottoms: Gear[] = ActressGears.NikotamaMai.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class VirginiaGlynnberets01 extends Character {
@@ -3157,6 +3285,8 @@ class VirginiaGlynnberets01 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets02 extends Character {
@@ -3205,6 +3335,8 @@ class VirginiaGlynnberets02 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets04 extends Character {
@@ -3253,6 +3385,8 @@ class VirginiaGlynnberets04 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets05 extends Character {
@@ -3301,6 +3435,8 @@ class VirginiaGlynnberets05 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets70 extends Character {
@@ -3350,6 +3486,8 @@ class VirginiaGlynnberets70 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets80 extends Character {
@@ -3399,6 +3537,8 @@ class VirginiaGlynnberets80 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class VirginiaGlynnberets60 extends Character {
@@ -3448,6 +3588,8 @@ class VirginiaGlynnberets60 extends Character {
     weaponCloses: Gear[] = ActressGears.VirginiaGlynnberets.short;
     equipmentTops: Gear[] = ActressGears.VirginiaGlynnberets.top;
     equipmentBottoms: Gear[] = ActressGears.VirginiaGlynnberets.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class FatimaBetrorum01 extends Character {
@@ -3497,6 +3639,8 @@ class FatimaBetrorum01 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class FatimaBetrorum02 extends Character {
@@ -3546,6 +3690,8 @@ class FatimaBetrorum02 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class FatimaBetrorum04 extends Character {
@@ -3595,6 +3741,8 @@ class FatimaBetrorum04 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class FatimaBetrorum05 extends Character {
@@ -3644,6 +3792,8 @@ class FatimaBetrorum05 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class FatimaBetrorum70 extends Character {
@@ -3692,6 +3842,8 @@ class FatimaBetrorum70 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class FatimaBetrorum80 extends Character {
@@ -3741,6 +3893,8 @@ class FatimaBetrorum80 extends Character {
     weaponCloses: Gear[] = ActressGears.FatimaBetrorum.short;
     equipmentTops: Gear[] = ActressGears.FatimaBetrorum.top;
     equipmentBottoms: Gear[] = ActressGears.FatimaBetrorum.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class YotsuyaYumi01 extends Character {
@@ -3790,6 +3944,8 @@ class YotsuyaYumi01 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class YotsuyaYumi02 extends Character {
@@ -3839,6 +3995,8 @@ class YotsuyaYumi02 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class YotsuyaYumi04 extends Character {
@@ -3888,6 +4046,8 @@ class YotsuyaYumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class YotsuyaYumi05 extends Character {
@@ -3937,6 +4097,8 @@ class YotsuyaYumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class YotsuyaYumi70 extends Character {
@@ -3985,6 +4147,8 @@ class YotsuyaYumi70 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class YotsuyaYumi60 extends Character {
@@ -4034,6 +4198,8 @@ class YotsuyaYumi60 extends Character {
     weaponCloses: Gear[] = ActressGears.YotsuyaYumi.short;
     equipmentTops: Gear[] = ActressGears.YotsuyaYumi.top;
     equipmentBottoms: Gear[] = ActressGears.YotsuyaYumi.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'B';
 }
 
 class FujinoYayoi01 extends Character {
@@ -4083,6 +4249,8 @@ class FujinoYayoi01 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi02 extends Character {
@@ -4132,6 +4300,8 @@ class FujinoYayoi02 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi04 extends Character {
@@ -4181,6 +4351,8 @@ class FujinoYayoi04 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi05 extends Character {
@@ -4230,6 +4402,8 @@ class FujinoYayoi05 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi70 extends Character {
@@ -4278,6 +4452,8 @@ class FujinoYayoi70 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi80 extends Character {
@@ -4327,6 +4503,8 @@ class FujinoYayoi80 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class FujinoYayoi60 extends Character {
@@ -4376,6 +4554,8 @@ class FujinoYayoi60 extends Character {
     weaponCloses: Gear[] = ActressGears.FujinoYayoi.short;
     equipmentTops: Gear[] = ActressGears.FujinoYayoi.top;
     equipmentBottoms: Gear[] = ActressGears.FujinoYayoi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka01 extends Character {
@@ -4425,6 +4605,8 @@ class ShimoochiaiToka01 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka02 extends Character {
@@ -4474,6 +4656,8 @@ class ShimoochiaiToka02 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka04 extends Character {
@@ -4523,6 +4707,8 @@ class ShimoochiaiToka04 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka05 extends Character {
@@ -4572,6 +4758,8 @@ class ShimoochiaiToka05 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka70 extends Character {
@@ -4620,6 +4808,8 @@ class ShimoochiaiToka70 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka80 extends Character {
@@ -4669,6 +4859,8 @@ class ShimoochiaiToka80 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShimoochiaiToka60 extends Character {
@@ -4718,6 +4910,8 @@ class ShimoochiaiToka60 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimoochiaiToka.short;
     equipmentTops: Gear[] = ActressGears.ShimoochiaiToka.top;
     equipmentBottoms: Gear[] = ActressGears.ShimoochiaiToka.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class ShirleyOakley01 extends Character {
@@ -4766,6 +4960,8 @@ class ShirleyOakley01 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ShirleyOakley02 extends Character {
@@ -4814,6 +5010,8 @@ class ShirleyOakley02 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ShirleyOakley04 extends Character {
@@ -4862,6 +5060,8 @@ class ShirleyOakley04 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ShirleyOakley05 extends Character {
@@ -4910,6 +5110,8 @@ class ShirleyOakley05 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ShirleyOakley70 extends Character {
@@ -4959,6 +5161,8 @@ class ShirleyOakley70 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ShirleyOakley60 extends Character {
@@ -5008,6 +5212,8 @@ class ShirleyOakley60 extends Character {
     weaponCloses: Gear[] = ActressGears.ShirleyOakley.short;
     equipmentTops: Gear[] = ActressGears.ShirleyOakley.top;
     equipmentBottoms: Gear[] = ActressGears.ShirleyOakley.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class ItokuraNeo01 extends Character {
@@ -5057,6 +5263,8 @@ class ItokuraNeo01 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class ItokuraNeo02 extends Character {
@@ -5106,6 +5314,8 @@ class ItokuraNeo02 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class ItokuraNeo04 extends Character {
@@ -5155,6 +5365,8 @@ class ItokuraNeo04 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class ItokuraNeo05 extends Character {
@@ -5204,6 +5416,8 @@ class ItokuraNeo05 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class ItokuraNeo70 extends Character {
@@ -5253,6 +5467,8 @@ class ItokuraNeo70 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class ItokuraNeo80 extends Character {
@@ -5301,6 +5517,8 @@ class ItokuraNeo80 extends Character {
     weaponCloses: Gear[] = ActressGears.ItokuraNeo.short;
     equipmentTops: Gear[] = ActressGears.ItokuraNeo.top;
     equipmentBottoms: Gear[] = ActressGears.ItokuraNeo.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class YorishiroEri01 extends Character {
@@ -5350,6 +5568,8 @@ class YorishiroEri01 extends Character {
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
     equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'AB';
 }
 
 class YorishiroEri02 extends Character {
@@ -5399,6 +5619,8 @@ class YorishiroEri02 extends Character {
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
     equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'AB';
 }
 
 class YorishiroEri04 extends Character {
@@ -5448,6 +5670,8 @@ class YorishiroEri04 extends Character {
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
     equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'AB';
 }
 
 class YorishiroEri05 extends Character {
@@ -5497,6 +5721,8 @@ class YorishiroEri05 extends Character {
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
     equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'AB';
 }
 
 class YorishiroEri70 extends Character {
@@ -5546,6 +5772,8 @@ class YorishiroEri70 extends Character {
     weaponCloses: Gear[] = ActressGears.YorishiroEri.short;
     equipmentTops: Gear[] = ActressGears.YorishiroEri.top;
     equipmentBottoms: Gear[] = ActressGears.YorishiroEri.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'AB';
 }
 
 class FumishimaAsuka01 extends Character {
@@ -5595,6 +5823,8 @@ class FumishimaAsuka01 extends Character {
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
     equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
     equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'B';
 }
 
 class FumishimaAsuka02 extends Character {
@@ -5644,6 +5874,8 @@ class FumishimaAsuka02 extends Character {
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
     equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
     equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'B';
 }
 
 class FumishimaAsuka04 extends Character {
@@ -5693,6 +5925,8 @@ class FumishimaAsuka04 extends Character {
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
     equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
     equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'B';
 }
 
 class FumishimaAsuka05 extends Character {
@@ -5742,6 +5976,8 @@ class FumishimaAsuka05 extends Character {
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
     equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
     equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'B';
 }
 
 class FumishimaAsuka70 extends Character {
@@ -5790,6 +6026,8 @@ class FumishimaAsuka70 extends Character {
     weaponCloses: Gear[] = ActressGears.FumishimaAsuka.short;
     equipmentTops: Gear[] = ActressGears.FumishimaAsuka.top;
     equipmentBottoms: Gear[] = ActressGears.FumishimaAsuka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'B';
 }
 
 class OhzekiKoyui01 extends Character {
@@ -5838,6 +6076,8 @@ class OhzekiKoyui01 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OhzekiKoyui02 extends Character {
@@ -5886,6 +6126,8 @@ class OhzekiKoyui02 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OhzekiKoyui04 extends Character {
@@ -5934,6 +6176,8 @@ class OhzekiKoyui04 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OhzekiKoyui05 extends Character {
@@ -5982,6 +6226,8 @@ class OhzekiKoyui05 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OhzekiKoyui70 extends Character {
@@ -6031,6 +6277,8 @@ class OhzekiKoyui70 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OhzekiKoyui60 extends Character {
@@ -6080,6 +6328,8 @@ class OhzekiKoyui60 extends Character {
     weaponCloses: Gear[] = ActressGears.OhzekiKoyui.short;
     equipmentTops: Gear[] = ActressGears.OhzekiKoyui.top;
     equipmentBottoms: Gear[] = ActressGears.OhzekiKoyui.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class UsamotoAnna01 extends Character {
@@ -6129,6 +6379,8 @@ class UsamotoAnna01 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class UsamotoAnna02 extends Character {
@@ -6178,6 +6430,8 @@ class UsamotoAnna02 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class UsamotoAnna04 extends Character {
@@ -6227,6 +6481,8 @@ class UsamotoAnna04 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class UsamotoAnna05 extends Character {
@@ -6276,6 +6532,8 @@ class UsamotoAnna05 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class UsamotoAnna70 extends Character {
@@ -6325,6 +6583,8 @@ class UsamotoAnna70 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class UsamotoAnna80 extends Character {
@@ -6373,6 +6633,8 @@ class UsamotoAnna80 extends Character {
     weaponCloses: Gear[] = ActressGears.UsamotoAnna.short;
     equipmentTops: Gear[] = ActressGears.UsamotoAnna.top;
     equipmentBottoms: Gear[] = ActressGears.UsamotoAnna.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class JingujiMari01 extends Character {
@@ -6421,6 +6683,8 @@ class JingujiMari01 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class JingujiMari02 extends Character {
@@ -6469,6 +6733,8 @@ class JingujiMari02 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class JingujiMari04 extends Character {
@@ -6517,6 +6783,8 @@ class JingujiMari04 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class JingujiMari05 extends Character {
@@ -6565,6 +6833,8 @@ class JingujiMari05 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class JingujiMari70 extends Character {
@@ -6614,6 +6884,8 @@ class JingujiMari70 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class JingujiMari80 extends Character {
@@ -6663,6 +6935,8 @@ class JingujiMari80 extends Character {
     weaponCloses: Gear[] = ActressGears.JingujiMari.short;
     equipmentTops: Gear[] = ActressGears.JingujiMari.top;
     equipmentBottoms: Gear[] = ActressGears.JingujiMari.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina01 extends Character {
@@ -6711,6 +6985,8 @@ class NiiyaSerina01 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina02 extends Character {
@@ -6759,6 +7035,8 @@ class NiiyaSerina02 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina04 extends Character {
@@ -6807,6 +7085,8 @@ class NiiyaSerina04 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina05 extends Character {
@@ -6855,6 +7135,8 @@ class NiiyaSerina05 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina70 extends Character {
@@ -6904,6 +7186,8 @@ class NiiyaSerina70 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class NiiyaSerina80 extends Character {
@@ -6953,6 +7237,8 @@ class NiiyaSerina80 extends Character {
     weaponCloses: Gear[] = ActressGears.NiiyaSerina.short;
     equipmentTops: Gear[] = ActressGears.NiiyaSerina.top;
     equipmentBottoms: Gear[] = ActressGears.NiiyaSerina.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class KaeruzakaRaiya01 extends Character {
@@ -7001,6 +7287,8 @@ class KaeruzakaRaiya01 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya02 extends Character {
@@ -7049,6 +7337,8 @@ class KaeruzakaRaiya02 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya04 extends Character {
@@ -7097,6 +7387,8 @@ class KaeruzakaRaiya04 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya05 extends Character {
@@ -7145,6 +7437,8 @@ class KaeruzakaRaiya05 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya70 extends Character {
@@ -7194,6 +7488,8 @@ class KaeruzakaRaiya70 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya80 extends Character {
@@ -7243,6 +7539,8 @@ class KaeruzakaRaiya80 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KaeruzakaRaiya60 extends Character {
@@ -7292,6 +7590,8 @@ class KaeruzakaRaiya60 extends Character {
     weaponCloses: Gear[] = ActressGears.KaeruzakaRaiya.short;
     equipmentTops: Gear[] = ActressGears.KaeruzakaRaiya.top;
     equipmentBottoms: Gear[] = ActressGears.KaeruzakaRaiya.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class KagomeMisaki01 extends Character {
@@ -7341,6 +7641,8 @@ class KagomeMisaki01 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KagomeMisaki02 extends Character {
@@ -7390,6 +7692,8 @@ class KagomeMisaki02 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KagomeMisaki04 extends Character {
@@ -7439,6 +7743,8 @@ class KagomeMisaki04 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KagomeMisaki05 extends Character {
@@ -7488,6 +7794,8 @@ class KagomeMisaki05 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KagomeMisaki70 extends Character {
@@ -7537,6 +7845,8 @@ class KagomeMisaki70 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KagomeMisaki80 extends Character {
@@ -7585,6 +7895,8 @@ class KagomeMisaki80 extends Character {
     weaponCloses: Gear[] = ActressGears.KagomeMisaki.short;
     equipmentTops: Gear[] = ActressGears.KagomeMisaki.top;
     equipmentBottoms: Gear[] = ActressGears.KagomeMisaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class KondohChieri01 extends Character {
@@ -7634,6 +7946,8 @@ class KondohChieri01 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class KondohChieri02 extends Character {
@@ -7683,6 +7997,8 @@ class KondohChieri02 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class KondohChieri04 extends Character {
@@ -7732,6 +8048,8 @@ class KondohChieri04 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class KondohChieri05 extends Character {
@@ -7781,6 +8099,8 @@ class KondohChieri05 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class KondohChieri70 extends Character {
@@ -7830,6 +8150,8 @@ class KondohChieri70 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class KondohChieri60 extends Character {
@@ -7879,6 +8201,8 @@ class KondohChieri60 extends Character {
     weaponCloses: Gear[] = ActressGears.KondohChieri.short;
     equipmentTops: Gear[] = ActressGears.KondohChieri.top;
     equipmentBottoms: Gear[] = ActressGears.KondohChieri.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class SutegoroShiina01 extends Character {
@@ -7927,6 +8251,8 @@ class SutegoroShiina01 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class SutegoroShiina02 extends Character {
@@ -7975,6 +8301,8 @@ class SutegoroShiina02 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class SutegoroShiina04 extends Character {
@@ -8023,6 +8351,8 @@ class SutegoroShiina04 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class SutegoroShiina05 extends Character {
@@ -8071,6 +8401,8 @@ class SutegoroShiina05 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class SutegoroShiina70 extends Character {
@@ -8120,6 +8452,8 @@ class SutegoroShiina70 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class SutegoroShiina80 extends Character {
@@ -8169,6 +8503,8 @@ class SutegoroShiina80 extends Character {
     weaponCloses: Gear[] = ActressGears.SutegoroShiina.short;
     equipmentTops: Gear[] = ActressGears.SutegoroShiina.top;
     equipmentBottoms: Gear[] = ActressGears.SutegoroShiina.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class NikitohKanade01 extends Character {
@@ -8218,6 +8554,8 @@ class NikitohKanade01 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class NikitohKanade02 extends Character {
@@ -8267,6 +8605,8 @@ class NikitohKanade02 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class NikitohKanade04 extends Character {
@@ -8316,6 +8656,8 @@ class NikitohKanade04 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class NikitohKanade05 extends Character {
@@ -8365,6 +8707,8 @@ class NikitohKanade05 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class NikitohKanade70 extends Character {
@@ -8414,6 +8758,8 @@ class NikitohKanade70 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class NikitohKanade80 extends Character {
@@ -8462,6 +8808,8 @@ class NikitohKanade80 extends Character {
     weaponCloses: Gear[] = ActressGears.NikitohKanade.short;
     equipmentTops: Gear[] = ActressGears.NikitohKanade.top;
     equipmentBottoms: Gear[] = ActressGears.NikitohKanade.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class MuraoMira01 extends Character {
@@ -8511,6 +8859,8 @@ class MuraoMira01 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class MuraoMira02 extends Character {
@@ -8560,6 +8910,8 @@ class MuraoMira02 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class MuraoMira04 extends Character {
@@ -8609,6 +8961,8 @@ class MuraoMira04 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class MuraoMira05 extends Character {
@@ -8658,6 +9012,8 @@ class MuraoMira05 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class MuraoMira70 extends Character {
@@ -8706,6 +9062,8 @@ class MuraoMira70 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class MuraoMira80 extends Character {
@@ -8755,6 +9113,8 @@ class MuraoMira80 extends Character {
     weaponCloses: Gear[] = ActressGears.MuraoMira.short;
     equipmentTops: Gear[] = ActressGears.MuraoMira.top;
     equipmentBottoms: Gear[] = ActressGears.MuraoMira.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class KimikageYui01 extends Character {
@@ -8804,6 +9164,8 @@ class KimikageYui01 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KimikageYui02 extends Character {
@@ -8853,6 +9215,8 @@ class KimikageYui02 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KimikageYui04 extends Character {
@@ -8902,6 +9266,8 @@ class KimikageYui04 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KimikageYui05 extends Character {
@@ -8951,6 +9317,8 @@ class KimikageYui05 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KimikageYui70 extends Character {
@@ -9000,6 +9368,8 @@ class KimikageYui70 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KimikageYui80 extends Character {
@@ -9048,6 +9418,8 @@ class KimikageYui80 extends Character {
     weaponCloses: Gear[] = ActressGears.KimikageYui.short;
     equipmentTops: Gear[] = ActressGears.KimikageYui.top;
     equipmentBottoms: Gear[] = ActressGears.KimikageYui.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class SugaItsuri01 extends Character {
@@ -9096,6 +9468,8 @@ class SugaItsuri01 extends Character {
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
     equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class SugaItsuri02 extends Character {
@@ -9144,6 +9518,8 @@ class SugaItsuri02 extends Character {
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
     equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class SugaItsuri04 extends Character {
@@ -9192,6 +9568,8 @@ class SugaItsuri04 extends Character {
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
     equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class SugaItsuri05 extends Character {
@@ -9240,6 +9618,8 @@ class SugaItsuri05 extends Character {
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
     equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class SugaItsuri70 extends Character {
@@ -9289,6 +9669,8 @@ class SugaItsuri70 extends Character {
     weaponCloses: Gear[] = ActressGears.SugaItsuri.short;
     equipmentTops: Gear[] = ActressGears.SugaItsuri.top;
     equipmentBottoms: Gear[] = ActressGears.SugaItsuri.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class YorozubaMeika01 extends Character {
@@ -9338,6 +9720,8 @@ class YorozubaMeika01 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class YorozubaMeika02 extends Character {
@@ -9387,6 +9771,8 @@ class YorozubaMeika02 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class YorozubaMeika04 extends Character {
@@ -9436,6 +9822,8 @@ class YorozubaMeika04 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class YorozubaMeika05 extends Character {
@@ -9485,6 +9873,8 @@ class YorozubaMeika05 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class YorozubaMeika70 extends Character {
@@ -9534,6 +9924,8 @@ class YorozubaMeika70 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class YorozubaMeika60 extends Character {
@@ -9582,6 +9974,8 @@ class YorozubaMeika60 extends Character {
     weaponCloses: Gear[] = ActressGears.YorozubaMeika.short;
     equipmentTops: Gear[] = ActressGears.YorozubaMeika.top;
     equipmentBottoms: Gear[] = ActressGears.YorozubaMeika.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'B';
 }
 
 class KuroganeYuto01 extends Character {
@@ -9630,6 +10024,8 @@ class KuroganeYuto01 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KuroganeYuto02 extends Character {
@@ -9678,6 +10074,8 @@ class KuroganeYuto02 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KuroganeYuto04 extends Character {
@@ -9726,6 +10124,8 @@ class KuroganeYuto04 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KuroganeYuto05 extends Character {
@@ -9774,6 +10174,8 @@ class KuroganeYuto05 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KuroganeYuto70 extends Character {
@@ -9823,6 +10225,8 @@ class KuroganeYuto70 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KuroganeYuto60 extends Character {
@@ -9872,6 +10276,8 @@ class KuroganeYuto60 extends Character {
     weaponCloses: Gear[] = ActressGears.KuroganeYuto.short;
     equipmentTops: Gear[] = ActressGears.KuroganeYuto.top;
     equipmentBottoms: Gear[] = ActressGears.KuroganeYuto.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane01 extends Character {
@@ -9921,6 +10327,8 @@ class KotomuraAkane01 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane02 extends Character {
@@ -9970,6 +10378,8 @@ class KotomuraAkane02 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane04 extends Character {
@@ -10019,6 +10429,8 @@ class KotomuraAkane04 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane05 extends Character {
@@ -10068,6 +10480,8 @@ class KotomuraAkane05 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane70 extends Character {
@@ -10117,6 +10531,8 @@ class KotomuraAkane70 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane80 extends Character {
@@ -10165,6 +10581,8 @@ class KotomuraAkane80 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAkane60 extends Character {
@@ -10214,6 +10632,8 @@ class KotomuraAkane60 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAkane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAkane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAkane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane01 extends Character {
@@ -10263,6 +10683,8 @@ class KotomuraAmane01 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane02 extends Character {
@@ -10312,6 +10734,8 @@ class KotomuraAmane02 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane04 extends Character {
@@ -10361,6 +10785,8 @@ class KotomuraAmane04 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane05 extends Character {
@@ -10410,6 +10836,8 @@ class KotomuraAmane05 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane70 extends Character {
@@ -10459,6 +10887,8 @@ class KotomuraAmane70 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane80 extends Character {
@@ -10507,6 +10937,8 @@ class KotomuraAmane80 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class KotomuraAmane60 extends Character {
@@ -10556,6 +10988,8 @@ class KotomuraAmane60 extends Character {
     weaponCloses: Gear[] = ActressGears.KotomuraAmane.short;
     equipmentTops: Gear[] = ActressGears.KotomuraAmane.top;
     equipmentBottoms: Gear[] = ActressGears.KotomuraAmane.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class ShantiRana01 extends Character {
@@ -10605,6 +11039,8 @@ class ShantiRana01 extends Character {
     weaponCloses: Gear[] = ActressGears.ShantiRana.short;
     equipmentTops: Gear[] = ActressGears.ShantiRana.top;
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ShantiRana02 extends Character {
@@ -10654,6 +11090,8 @@ class ShantiRana02 extends Character {
     weaponCloses: Gear[] = ActressGears.ShantiRana.short;
     equipmentTops: Gear[] = ActressGears.ShantiRana.top;
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ShantiRana04 extends Character {
@@ -10703,6 +11141,8 @@ class ShantiRana04 extends Character {
     weaponCloses: Gear[] = ActressGears.ShantiRana.short;
     equipmentTops: Gear[] = ActressGears.ShantiRana.top;
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ShantiRana05 extends Character {
@@ -10752,6 +11192,8 @@ class ShantiRana05 extends Character {
     weaponCloses: Gear[] = ActressGears.ShantiRana.short;
     equipmentTops: Gear[] = ActressGears.ShantiRana.top;
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ShantiRana70 extends Character {
@@ -10801,6 +11243,8 @@ class ShantiRana70 extends Character {
     weaponCloses: Gear[] = ActressGears.ShantiRana.short;
     equipmentTops: Gear[] = ActressGears.ShantiRana.top;
     equipmentBottoms: Gear[] = ActressGears.ShantiRana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class NinaKalinina01 extends Character {
@@ -10850,6 +11294,8 @@ class NinaKalinina01 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NinaKalinina02 extends Character {
@@ -10899,6 +11345,8 @@ class NinaKalinina02 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NinaKalinina04 extends Character {
@@ -10948,6 +11396,8 @@ class NinaKalinina04 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NinaKalinina05 extends Character {
@@ -10997,6 +11447,8 @@ class NinaKalinina05 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NinaKalinina70 extends Character {
@@ -11046,6 +11498,8 @@ class NinaKalinina70 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class NinaKalinina60 extends Character {
@@ -11094,6 +11548,8 @@ class NinaKalinina60 extends Character {
     weaponCloses: Gear[] = ActressGears.NinaKalinina.short;
     equipmentTops: Gear[] = ActressGears.NinaKalinina.top;
     equipmentBottoms: Gear[] = ActressGears.NinaKalinina.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class WangHonghua01 extends Character {
@@ -11142,6 +11598,8 @@ class WangHonghua01 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class WangHonghua02 extends Character {
@@ -11190,6 +11648,8 @@ class WangHonghua02 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class WangHonghua04 extends Character {
@@ -11238,6 +11698,8 @@ class WangHonghua04 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class WangHonghua05 extends Character {
@@ -11286,6 +11748,8 @@ class WangHonghua05 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class WangHonghua70 extends Character {
@@ -11335,6 +11799,8 @@ class WangHonghua70 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class WangHonghua60 extends Character {
@@ -11384,6 +11850,8 @@ class WangHonghua60 extends Character {
     weaponCloses: Gear[] = ActressGears.WangHonghua.short;
     equipmentTops: Gear[] = ActressGears.WangHonghua.top;
     equipmentBottoms: Gear[] = ActressGears.WangHonghua.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MiaVoisin01 extends Character {
@@ -11433,6 +11901,8 @@ class MiaVoisin01 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiaVoisin02 extends Character {
@@ -11482,6 +11952,8 @@ class MiaVoisin02 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiaVoisin04 extends Character {
@@ -11531,6 +12003,8 @@ class MiaVoisin04 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiaVoisin05 extends Character {
@@ -11580,6 +12054,8 @@ class MiaVoisin05 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiaVoisin70 extends Character {
@@ -11629,6 +12105,8 @@ class MiaVoisin70 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiaVoisin60 extends Character {
@@ -11677,6 +12155,8 @@ class MiaVoisin60 extends Character {
     weaponCloses: Gear[] = ActressGears.MiaVoisin.short;
     equipmentTops: Gear[] = ActressGears.MiaVoisin.top;
     equipmentBottoms: Gear[] = ActressGears.MiaVoisin.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ChishimaMiyuki01 extends Character {
@@ -11726,6 +12206,8 @@ class ChishimaMiyuki01 extends Character {
     weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
     equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class ChishimaMiyuki02 extends Character {
@@ -11775,6 +12257,8 @@ class ChishimaMiyuki02 extends Character {
     weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
     equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class ChishimaMiyuki04 extends Character {
@@ -11824,6 +12308,8 @@ class ChishimaMiyuki04 extends Character {
     weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
     equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class ChishimaMiyuki05 extends Character {
@@ -11873,6 +12359,8 @@ class ChishimaMiyuki05 extends Character {
     weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
     equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class ChishimaMiyuki70 extends Character {
@@ -11921,6 +12409,8 @@ class ChishimaMiyuki70 extends Character {
     weaponCloses: Gear[] = ActressGears.ChishimaMiyuki.short;
     equipmentTops: Gear[] = ActressGears.ChishimaMiyuki.top;
     equipmentBottoms: Gear[] = ActressGears.ChishimaMiyuki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class ShinonomeChie01 extends Character {
@@ -11969,6 +12459,8 @@ class ShinonomeChie01 extends Character {
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
     equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
     equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class ShinonomeChie02 extends Character {
@@ -12017,6 +12509,8 @@ class ShinonomeChie02 extends Character {
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
     equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
     equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class ShinonomeChie04 extends Character {
@@ -12065,6 +12559,8 @@ class ShinonomeChie04 extends Character {
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
     equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
     equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class ShinonomeChie05 extends Character {
@@ -12113,6 +12609,8 @@ class ShinonomeChie05 extends Character {
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
     equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
     equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class ShinonomeChie70 extends Character {
@@ -12162,6 +12660,8 @@ class ShinonomeChie70 extends Character {
     weaponCloses: Gear[] = ActressGears.ShinonomeChie.short;
     equipmentTops: Gear[] = ActressGears.ShinonomeChie.top;
     equipmentBottoms: Gear[] = ActressGears.ShinonomeChie.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class MikurazaAzuki01 extends Character {
@@ -12211,6 +12711,8 @@ class MikurazaAzuki01 extends Character {
     weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
     equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MikurazaAzuki02 extends Character {
@@ -12260,6 +12762,8 @@ class MikurazaAzuki02 extends Character {
     weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
     equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MikurazaAzuki04 extends Character {
@@ -12309,6 +12813,8 @@ class MikurazaAzuki04 extends Character {
     weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
     equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MikurazaAzuki05 extends Character {
@@ -12358,6 +12864,8 @@ class MikurazaAzuki05 extends Character {
     weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
     equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class MikurazaAzuki70 extends Character {
@@ -12406,6 +12914,8 @@ class MikurazaAzuki70 extends Character {
     weaponCloses: Gear[] = ActressGears.MikurazaAzuki.short;
     equipmentTops: Gear[] = ActressGears.MikurazaAzuki.top;
     equipmentBottoms: Gear[] = ActressGears.MikurazaAzuki.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class YamanoKaoruko01 extends Character {
@@ -12455,6 +12965,8 @@ class YamanoKaoruko01 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class YamanoKaoruko02 extends Character {
@@ -12504,6 +13016,8 @@ class YamanoKaoruko02 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class YamanoKaoruko04 extends Character {
@@ -12553,6 +13067,8 @@ class YamanoKaoruko04 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class YamanoKaoruko05 extends Character {
@@ -12602,6 +13118,8 @@ class YamanoKaoruko05 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class YamanoKaoruko70 extends Character {
@@ -12651,6 +13169,8 @@ class YamanoKaoruko70 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class YamanoKaoruko60 extends Character {
@@ -12700,6 +13220,8 @@ class YamanoKaoruko60 extends Character {
     weaponCloses: Gear[] = ActressGears.YamanoKaoruko.short;
     equipmentTops: Gear[] = ActressGears.YamanoKaoruko.top;
     equipmentBottoms: Gear[] = ActressGears.YamanoKaoruko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class NikaidohTsukasa01 extends Character {
@@ -12748,6 +13270,8 @@ class NikaidohTsukasa01 extends Character {
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
     equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class NikaidohTsukasa02 extends Character {
@@ -12796,6 +13320,8 @@ class NikaidohTsukasa02 extends Character {
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
     equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class NikaidohTsukasa04 extends Character {
@@ -12844,6 +13370,8 @@ class NikaidohTsukasa04 extends Character {
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
     equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class NikaidohTsukasa05 extends Character {
@@ -12892,6 +13420,8 @@ class NikaidohTsukasa05 extends Character {
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
     equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class NikaidohTsukasa70 extends Character {
@@ -12941,6 +13471,8 @@ class NikaidohTsukasa70 extends Character {
     weaponCloses: Gear[] = ActressGears.NikaidohTsukasa.short;
     equipmentTops: Gear[] = ActressGears.NikaidohTsukasa.top;
     equipmentBottoms: Gear[] = ActressGears.NikaidohTsukasa.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'AB';
 }
 
 class OchanomizuMirie01 extends Character {
@@ -12990,6 +13522,8 @@ class OchanomizuMirie01 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OchanomizuMirie02 extends Character {
@@ -13039,6 +13573,8 @@ class OchanomizuMirie02 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OchanomizuMirie04 extends Character {
@@ -13088,6 +13624,8 @@ class OchanomizuMirie04 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OchanomizuMirie05 extends Character {
@@ -13137,6 +13675,8 @@ class OchanomizuMirie05 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OchanomizuMirie70 extends Character {
@@ -13185,6 +13725,8 @@ class OchanomizuMirie70 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class OchanomizuMirie60 extends Character {
@@ -13234,6 +13776,8 @@ class OchanomizuMirie60 extends Character {
     weaponCloses: Gear[] = ActressGears.OchanomizuMirie.short;
     equipmentTops: Gear[] = ActressGears.OchanomizuMirie.top;
     equipmentBottoms: Gear[] = ActressGears.OchanomizuMirie.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MerabuchiKanami01 extends Character {
@@ -13282,6 +13826,8 @@ class MerabuchiKanami01 extends Character {
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
     equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MerabuchiKanami02 extends Character {
@@ -13330,6 +13876,8 @@ class MerabuchiKanami02 extends Character {
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
     equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MerabuchiKanami04 extends Character {
@@ -13378,6 +13926,8 @@ class MerabuchiKanami04 extends Character {
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
     equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MerabuchiKanami05 extends Character {
@@ -13426,6 +13976,8 @@ class MerabuchiKanami05 extends Character {
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
     equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MerabuchiKanami70 extends Character {
@@ -13475,6 +14027,8 @@ class MerabuchiKanami70 extends Character {
     weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
     equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
     equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class KomazoiEden01 extends Character {
@@ -13524,6 +14078,8 @@ class KomazoiEden01 extends Character {
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
     equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KomazoiEden02 extends Character {
@@ -13573,6 +14129,8 @@ class KomazoiEden02 extends Character {
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
     equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KomazoiEden04 extends Character {
@@ -13622,6 +14180,8 @@ class KomazoiEden04 extends Character {
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
     equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KomazoiEden05 extends Character {
@@ -13671,6 +14231,8 @@ class KomazoiEden05 extends Character {
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
     equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KomazoiEden70 extends Character {
@@ -13720,6 +14282,8 @@ class KomazoiEden70 extends Character {
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
     equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
     equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KanayaNeri01 extends Character {
@@ -13769,6 +14333,8 @@ class KanayaNeri01 extends Character {
     weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
     equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
     equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'A';
 }
 
 class KanayaNeri02 extends Character {
@@ -13818,6 +14384,8 @@ class KanayaNeri02 extends Character {
     weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
     equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
     equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'A';
 }
 
 class KanayaNeri04 extends Character {
@@ -13867,6 +14435,8 @@ class KanayaNeri04 extends Character {
     weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
     equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
     equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'A';
 }
 
 class KanayaNeri05 extends Character {
@@ -13916,6 +14486,8 @@ class KanayaNeri05 extends Character {
     weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
     equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
     equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'A';
 }
 
 class KanayaNeri70 extends Character {
@@ -13965,6 +14537,8 @@ class KanayaNeri70 extends Character {
     weaponCloses: Gear[] = ActressGears.KanayaNeri.short;
     equipmentTops: Gear[] = ActressGears.KanayaNeri.top;
     equipmentBottoms: Gear[] = ActressGears.KanayaNeri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'A';
 }
 
 class RitaHenschel01 extends Character {
@@ -14013,6 +14587,8 @@ class RitaHenschel01 extends Character {
     weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
     equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class RitaHenschel02 extends Character {
@@ -14061,6 +14637,8 @@ class RitaHenschel02 extends Character {
     weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
     equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class RitaHenschel04 extends Character {
@@ -14109,6 +14687,8 @@ class RitaHenschel04 extends Character {
     weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
     equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class RitaHenschel05 extends Character {
@@ -14157,6 +14737,8 @@ class RitaHenschel05 extends Character {
     weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
     equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class RitaHenschel70 extends Character {
@@ -14206,6 +14788,8 @@ class RitaHenschel70 extends Character {
     weaponCloses: Gear[] = ActressGears.RitaHenschel.short;
     equipmentTops: Gear[] = ActressGears.RitaHenschel.top;
     equipmentBottoms: Gear[] = ActressGears.RitaHenschel.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class OnagaAkino01 extends Character {
@@ -14255,6 +14839,8 @@ class OnagaAkino01 extends Character {
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
     equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class OnagaAkino02 extends Character {
@@ -14304,6 +14890,8 @@ class OnagaAkino02 extends Character {
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
     equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class OnagaAkino04 extends Character {
@@ -14353,6 +14941,8 @@ class OnagaAkino04 extends Character {
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
     equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class OnagaAkino05 extends Character {
@@ -14402,6 +14992,8 @@ class OnagaAkino05 extends Character {
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
     equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class OnagaAkino70 extends Character {
@@ -14450,6 +15042,8 @@ class OnagaAkino70 extends Character {
     weaponCloses: Gear[] = ActressGears.OnagaAkino.short;
     equipmentTops: Gear[] = ActressGears.OnagaAkino.top;
     equipmentBottoms: Gear[] = ActressGears.OnagaAkino.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class TatsumiRyuko01 extends Character {
@@ -14498,6 +15092,8 @@ class TatsumiRyuko01 extends Character {
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
     equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
     equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'B';
 }
 
 class TatsumiRyuko02 extends Character {
@@ -14546,6 +15142,8 @@ class TatsumiRyuko02 extends Character {
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
     equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
     equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'B';
 }
 
 class TatsumiRyuko04 extends Character {
@@ -14594,6 +15192,8 @@ class TatsumiRyuko04 extends Character {
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
     equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
     equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'B';
 }
 
 class TatsumiRyuko05 extends Character {
@@ -14642,6 +15242,8 @@ class TatsumiRyuko05 extends Character {
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
     equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
     equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'B';
 }
 
 class TatsumiRyuko70 extends Character {
@@ -14691,6 +15293,8 @@ class TatsumiRyuko70 extends Character {
     weaponCloses: Gear[] = ActressGears.TatsumiRyuko.short;
     equipmentTops: Gear[] = ActressGears.TatsumiRyuko.top;
     equipmentBottoms: Gear[] = ActressGears.TatsumiRyuko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'B';
 }
 
 class OhtoriKasumi01 extends Character {
@@ -14740,6 +15344,8 @@ class OhtoriKasumi01 extends Character {
     weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
     equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class OhtoriKasumi02 extends Character {
@@ -14789,6 +15395,8 @@ class OhtoriKasumi02 extends Character {
     weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
     equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class OhtoriKasumi04 extends Character {
@@ -14838,6 +15446,8 @@ class OhtoriKasumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
     equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class OhtoriKasumi05 extends Character {
@@ -14887,6 +15497,8 @@ class OhtoriKasumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
     equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class OhtoriKasumi70 extends Character {
@@ -14935,6 +15547,8 @@ class OhtoriKasumi70 extends Character {
     weaponCloses: Gear[] = ActressGears.OhtoriKasumi.short;
     equipmentTops: Gear[] = ActressGears.OhtoriKasumi.top;
     equipmentBottoms: Gear[] = ActressGears.OhtoriKasumi.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class AgatsumaKei01 extends Character {
@@ -14983,6 +15597,8 @@ class AgatsumaKei01 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKei02 extends Character {
@@ -15031,6 +15647,8 @@ class AgatsumaKei02 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKei04 extends Character {
@@ -15079,6 +15697,8 @@ class AgatsumaKei04 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKei05 extends Character {
@@ -15127,6 +15747,8 @@ class AgatsumaKei05 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AgatsumaKei70 extends Character {
@@ -15176,6 +15798,8 @@ class AgatsumaKei70 extends Character {
     weaponCloses: Gear[] = ActressGears.AgatsumaKei.short;
     equipmentTops: Gear[] = ActressGears.AgatsumaKei.top;
     equipmentBottoms: Gear[] = ActressGears.AgatsumaKei.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AngelicaGlazunova01 extends Character {
@@ -15225,6 +15849,8 @@ class AngelicaGlazunova01 extends Character {
     weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
     equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
     equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AngelicaGlazunova02 extends Character {
@@ -15274,6 +15900,8 @@ class AngelicaGlazunova02 extends Character {
     weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
     equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
     equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AngelicaGlazunova04 extends Character {
@@ -15323,6 +15951,8 @@ class AngelicaGlazunova04 extends Character {
     weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
     equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
     equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AngelicaGlazunova05 extends Character {
@@ -15372,6 +16002,8 @@ class AngelicaGlazunova05 extends Character {
     weaponCloses: Gear[] = ActressGears.AngelicaGlazunova.short;
     equipmentTops: Gear[] = ActressGears.AngelicaGlazunova.top;
     equipmentBottoms: Gear[] = ActressGears.AngelicaGlazunova.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi01 extends Character {
@@ -15421,6 +16053,8 @@ class KanagataSugumi01 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi02 extends Character {
@@ -15470,6 +16104,8 @@ class KanagataSugumi02 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi04 extends Character {
@@ -15519,6 +16155,8 @@ class KanagataSugumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi05 extends Character {
@@ -15568,6 +16206,8 @@ class KanagataSugumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi70 extends Character {
@@ -15616,6 +16256,8 @@ class KanagataSugumi70 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class KanagataSugumi80 extends Character {
@@ -15665,6 +16307,8 @@ class KanagataSugumi80 extends Character {
     weaponCloses: Gear[] = ActressGears.KanagataSugumi.short;
     equipmentTops: Gear[] = ActressGears.KanagataSugumi.top;
     equipmentBottoms: Gear[] = ActressGears.KanagataSugumi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class AraimeYasuri01 extends Character {
@@ -15713,6 +16357,8 @@ class AraimeYasuri01 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class AraimeYasuri02 extends Character {
@@ -15761,6 +16407,8 @@ class AraimeYasuri02 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class AraimeYasuri04 extends Character {
@@ -15809,6 +16457,8 @@ class AraimeYasuri04 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class AraimeYasuri05 extends Character {
@@ -15857,6 +16507,8 @@ class AraimeYasuri05 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class AraimeYasuri70 extends Character {
@@ -15906,6 +16558,8 @@ class AraimeYasuri70 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class AraimeYasuri80 extends Character {
@@ -15955,6 +16609,8 @@ class AraimeYasuri80 extends Character {
     weaponCloses: Gear[] = ActressGears.AraimeYasuri.short;
     equipmentTops: Gear[] = ActressGears.AraimeYasuri.top;
     equipmentBottoms: Gear[] = ActressGears.AraimeYasuri.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class MatobaAoi01 extends Character {
@@ -16003,6 +16659,8 @@ class MatobaAoi01 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class MatobaAoi02 extends Character {
@@ -16051,6 +16709,8 @@ class MatobaAoi02 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class MatobaAoi04 extends Character {
@@ -16099,6 +16759,8 @@ class MatobaAoi04 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class MatobaAoi05 extends Character {
@@ -16147,6 +16809,8 @@ class MatobaAoi05 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class MatobaAoi70 extends Character {
@@ -16196,6 +16860,8 @@ class MatobaAoi70 extends Character {
     weaponCloses: Gear[] = ActressGears.MatobaAoi.short;
     equipmentTops: Gear[] = ActressGears.MatobaAoi.top;
     equipmentBottoms: Gear[] = ActressGears.MatobaAoi.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'A';
 }
 
 class ArugaNana01 extends Character {
@@ -16245,6 +16911,8 @@ class ArugaNana01 extends Character {
     weaponCloses: Gear[] = ActressGears.ArugaNana.short;
     equipmentTops: Gear[] = ActressGears.ArugaNana.top;
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ArugaNana02 extends Character {
@@ -16294,6 +16962,8 @@ class ArugaNana02 extends Character {
     weaponCloses: Gear[] = ActressGears.ArugaNana.short;
     equipmentTops: Gear[] = ActressGears.ArugaNana.top;
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ArugaNana04 extends Character {
@@ -16343,6 +17013,8 @@ class ArugaNana04 extends Character {
     weaponCloses: Gear[] = ActressGears.ArugaNana.short;
     equipmentTops: Gear[] = ActressGears.ArugaNana.top;
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ArugaNana05 extends Character {
@@ -16392,6 +17064,8 @@ class ArugaNana05 extends Character {
     weaponCloses: Gear[] = ActressGears.ArugaNana.short;
     equipmentTops: Gear[] = ActressGears.ArugaNana.top;
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class ArugaNana70 extends Character {
@@ -16441,6 +17115,8 @@ class ArugaNana70 extends Character {
     weaponCloses: Gear[] = ActressGears.ArugaNana.short;
     equipmentTops: Gear[] = ActressGears.ArugaNana.top;
     equipmentBottoms: Gear[] = ActressGears.ArugaNana.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class MiyaminamiHikari01 extends Character {
@@ -16490,6 +17166,8 @@ class MiyaminamiHikari01 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
     equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
     equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'AB';
 }
 
 class MiyaminamiHikari02 extends Character {
@@ -16539,6 +17217,8 @@ class MiyaminamiHikari02 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
     equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
     equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'AB';
 }
 
 class MiyaminamiHikari04 extends Character {
@@ -16588,6 +17268,8 @@ class MiyaminamiHikari04 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
     equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
     equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'AB';
 }
 
 class MiyaminamiHikari05 extends Character {
@@ -16637,6 +17319,8 @@ class MiyaminamiHikari05 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
     equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
     equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'AB';
 }
 
 class MiyaminamiHikari70 extends Character {
@@ -16685,6 +17369,8 @@ class MiyaminamiHikari70 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyaminamiHikari.short;
     equipmentTops: Gear[] = ActressGears.MiyaminamiHikari.top;
     equipmentBottoms: Gear[] = ActressGears.MiyaminamiHikari.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'AB';
 }
 
 class GaryuEmi01 extends Character {
@@ -16734,6 +17420,8 @@ class GaryuEmi01 extends Character {
     weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
     equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class GaryuEmi02 extends Character {
@@ -16783,6 +17471,8 @@ class GaryuEmi02 extends Character {
     weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
     equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class GaryuEmi04 extends Character {
@@ -16832,6 +17522,8 @@ class GaryuEmi04 extends Character {
     weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
     equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class GaryuEmi05 extends Character {
@@ -16881,6 +17573,8 @@ class GaryuEmi05 extends Character {
     weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
     equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class GaryuEmi70 extends Character {
@@ -16929,6 +17623,8 @@ class GaryuEmi70 extends Character {
     weaponCloses: Gear[] = ActressGears.GaryuEmi.short;
     equipmentTops: Gear[] = ActressGears.GaryuEmi.top;
     equipmentBottoms: Gear[] = ActressGears.GaryuEmi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'O';
 }
 
 class TenkoSora01 extends Character {
@@ -16977,6 +17673,8 @@ class TenkoSora01 extends Character {
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
     equipmentTops: Gear[] = ActressGears.TenkoSora.top;
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TenkoSora02 extends Character {
@@ -17025,6 +17723,8 @@ class TenkoSora02 extends Character {
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
     equipmentTops: Gear[] = ActressGears.TenkoSora.top;
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TenkoSora04 extends Character {
@@ -17073,6 +17773,8 @@ class TenkoSora04 extends Character {
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
     equipmentTops: Gear[] = ActressGears.TenkoSora.top;
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TenkoSora05 extends Character {
@@ -17121,6 +17823,8 @@ class TenkoSora05 extends Character {
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
     equipmentTops: Gear[] = ActressGears.TenkoSora.top;
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class TenkoSora70 extends Character {
@@ -17170,6 +17874,8 @@ class TenkoSora70 extends Character {
     weaponCloses: Gear[] = ActressGears.TenkoSora.short;
     equipmentTops: Gear[] = ActressGears.TenkoSora.top;
     equipmentBottoms: Gear[] = ActressGears.TenkoSora.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class HasamiRika01 extends Character {
@@ -17219,6 +17925,8 @@ class HasamiRika01 extends Character {
     weaponCloses: Gear[] = ActressGears.HasamiRika.short;
     equipmentTops: Gear[] = ActressGears.HasamiRika.top;
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class HasamiRika02 extends Character {
@@ -17268,6 +17976,8 @@ class HasamiRika02 extends Character {
     weaponCloses: Gear[] = ActressGears.HasamiRika.short;
     equipmentTops: Gear[] = ActressGears.HasamiRika.top;
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class HasamiRika04 extends Character {
@@ -17317,6 +18027,8 @@ class HasamiRika04 extends Character {
     weaponCloses: Gear[] = ActressGears.HasamiRika.short;
     equipmentTops: Gear[] = ActressGears.HasamiRika.top;
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class HasamiRika05 extends Character {
@@ -17366,6 +18078,8 @@ class HasamiRika05 extends Character {
     weaponCloses: Gear[] = ActressGears.HasamiRika.short;
     equipmentTops: Gear[] = ActressGears.HasamiRika.top;
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class HasamiRika70 extends Character {
@@ -17415,6 +18129,8 @@ class HasamiRika70 extends Character {
     weaponCloses: Gear[] = ActressGears.HasamiRika.short;
     equipmentTops: Gear[] = ActressGears.HasamiRika.top;
     equipmentBottoms: Gear[] = ActressGears.HasamiRika.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class KasugaokaMoe01 extends Character {
@@ -17464,6 +18180,8 @@ class KasugaokaMoe01 extends Character {
     weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
     equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class KasugaokaMoe02 extends Character {
@@ -17513,6 +18231,8 @@ class KasugaokaMoe02 extends Character {
     weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
     equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class KasugaokaMoe04 extends Character {
@@ -17562,6 +18282,8 @@ class KasugaokaMoe04 extends Character {
     weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
     equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class KasugaokaMoe05 extends Character {
@@ -17611,6 +18333,8 @@ class KasugaokaMoe05 extends Character {
     weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
     equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class KasugaokaMoe70 extends Character {
@@ -17660,6 +18384,8 @@ class KasugaokaMoe70 extends Character {
     weaponCloses: Gear[] = ActressGears.KasugaokaMoe.short;
     equipmentTops: Gear[] = ActressGears.KasugaokaMoe.top;
     equipmentBottoms: Gear[] = ActressGears.KasugaokaMoe.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class AsumaIsami01 extends Character {
@@ -17708,6 +18434,8 @@ class AsumaIsami01 extends Character {
     weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
     equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
     equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class AsumaIsami02 extends Character {
@@ -17756,6 +18484,8 @@ class AsumaIsami02 extends Character {
     weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
     equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
     equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class AsumaIsami04 extends Character {
@@ -17804,6 +18534,8 @@ class AsumaIsami04 extends Character {
     weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
     equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
     equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class AsumaIsami05 extends Character {
@@ -17852,6 +18584,8 @@ class AsumaIsami05 extends Character {
     weaponCloses: Gear[] = ActressGears.AsumaIsami.short;
     equipmentTops: Gear[] = ActressGears.AsumaIsami.top;
     equipmentBottoms: Gear[] = ActressGears.AsumaIsami.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class AdelaideBluthausen01 extends Character {
@@ -17901,6 +18635,8 @@ class AdelaideBluthausen01 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AdelaideBluthausen02 extends Character {
@@ -17950,6 +18686,8 @@ class AdelaideBluthausen02 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AdelaideBluthausen04 extends Character {
@@ -17999,6 +18737,8 @@ class AdelaideBluthausen04 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AdelaideBluthausen05 extends Character {
@@ -18048,6 +18788,8 @@ class AdelaideBluthausen05 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AdelaideBluthausen70 extends Character {
@@ -18097,6 +18839,8 @@ class AdelaideBluthausen70 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class AdelaideBluthausen60 extends Character {
@@ -18146,6 +18890,8 @@ class AdelaideBluthausen60 extends Character {
     weaponCloses: Gear[] = ActressGears.AdelaideBluthausen.short;
     equipmentTops: Gear[] = ActressGears.AdelaideBluthausen.top;
     equipmentBottoms: Gear[] = ActressGears.AdelaideBluthausen.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = 'A';
 }
 
 class LiliShahar01 extends Character {
@@ -18194,6 +18940,8 @@ class LiliShahar01 extends Character {
     weaponCloses: Gear[] = ActressGears.LiliShahar.short;
     equipmentTops: Gear[] = ActressGears.LiliShahar.top;
     equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class LiliShahar02 extends Character {
@@ -18242,6 +18990,8 @@ class LiliShahar02 extends Character {
     weaponCloses: Gear[] = ActressGears.LiliShahar.short;
     equipmentTops: Gear[] = ActressGears.LiliShahar.top;
     equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class LiliShahar04 extends Character {
@@ -18290,6 +19040,8 @@ class LiliShahar04 extends Character {
     weaponCloses: Gear[] = ActressGears.LiliShahar.short;
     equipmentTops: Gear[] = ActressGears.LiliShahar.top;
     equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class LiliShahar05 extends Character {
@@ -18338,6 +19090,8 @@ class LiliShahar05 extends Character {
     weaponCloses: Gear[] = ActressGears.LiliShahar.short;
     equipmentTops: Gear[] = ActressGears.LiliShahar.top;
     equipmentBottoms: Gear[] = ActressGears.LiliShahar.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = 'B';
 }
 
 class EmmaAshfield01 extends Character {
@@ -18387,6 +19141,8 @@ class EmmaAshfield01 extends Character {
     weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
     equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
     equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'AB';
 }
 
 class EmmaAshfield02 extends Character {
@@ -18436,6 +19192,8 @@ class EmmaAshfield02 extends Character {
     weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
     equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
     equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'AB';
 }
 
 class EmmaAshfield04 extends Character {
@@ -18485,6 +19243,8 @@ class EmmaAshfield04 extends Character {
     weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
     equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
     equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'AB';
 }
 
 class EmmaAshfield05 extends Character {
@@ -18534,6 +19294,8 @@ class EmmaAshfield05 extends Character {
     weaponCloses: Gear[] = ActressGears.EmmaAshfield.short;
     equipmentTops: Gear[] = ActressGears.EmmaAshfield.top;
     equipmentBottoms: Gear[] = ActressGears.EmmaAshfield.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'AB';
 }
 
 class NicoleFrancisca01 extends Character {
@@ -18583,6 +19345,8 @@ class NicoleFrancisca01 extends Character {
     weaponCloses: Gear[] = ActressGears.NicoleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NicoleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NicoleFrancisca.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class NicoleFrancisca02 extends Character {
@@ -18632,6 +19396,8 @@ class NicoleFrancisca02 extends Character {
     weaponCloses: Gear[] = ActressGears.NicoleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NicoleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NicoleFrancisca.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class NicoleFrancisca04 extends Character {
@@ -18681,6 +19447,8 @@ class NicoleFrancisca04 extends Character {
     weaponCloses: Gear[] = ActressGears.NicoleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NicoleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NicoleFrancisca.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class NicoleFrancisca05 extends Character {
@@ -18730,6 +19498,8 @@ class NicoleFrancisca05 extends Character {
     weaponCloses: Gear[] = ActressGears.NicoleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NicoleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NicoleFrancisca.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
 }
 
 class NoelleFrancisca01 extends Character {
@@ -18779,6 +19549,8 @@ class NoelleFrancisca01 extends Character {
     weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'O';
 }
 
 class NoelleFrancisca02 extends Character {
@@ -18828,6 +19600,8 @@ class NoelleFrancisca02 extends Character {
     weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'O';
 }
 
 class NoelleFrancisca04 extends Character {
@@ -18877,6 +19651,8 @@ class NoelleFrancisca04 extends Character {
     weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'O';
 }
 
 class NoelleFrancisca05 extends Character {
@@ -18926,6 +19702,8 @@ class NoelleFrancisca05 extends Character {
     weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
     equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
     equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'O';
 }
 
 class RakuhanaMeru04 extends Character {
@@ -18975,6 +19753,8 @@ class RakuhanaMeru04 extends Character {
     weaponCloses: Gear[] = ActressGears.RakuhanaMeru.short;
     equipmentTops: Gear[] = ActressGears.RakuhanaMeru.top;
     equipmentBottoms: Gear[] = ActressGears.RakuhanaMeru.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class RakuhanaMeru05 extends Character {
@@ -19024,6 +19804,8 @@ class RakuhanaMeru05 extends Character {
     weaponCloses: Gear[] = ActressGears.RakuhanaMeru.short;
     equipmentTops: Gear[] = ActressGears.RakuhanaMeru.top;
     equipmentBottoms: Gear[] = ActressGears.RakuhanaMeru.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class SuiseiTsumugi04 extends Character {
@@ -19072,6 +19854,8 @@ class SuiseiTsumugi04 extends Character {
     weaponCloses: Gear[] = ActressGears.SuiseiTsumugi.short;
     equipmentTops: Gear[] = ActressGears.SuiseiTsumugi.top;
     equipmentBottoms: Gear[] = ActressGears.SuiseiTsumugi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class SuiseiTsumugi05 extends Character {
@@ -19120,6 +19904,8 @@ class SuiseiTsumugi05 extends Character {
     weaponCloses: Gear[] = ActressGears.SuiseiTsumugi.short;
     equipmentTops: Gear[] = ActressGears.SuiseiTsumugi.top;
     equipmentBottoms: Gear[] = ActressGears.SuiseiTsumugi.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class SashiharaNanami04 extends Character {
@@ -19168,6 +19954,8 @@ class SashiharaNanami04 extends Character {
     weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
     equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
     equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class SashiharaNanami05 extends Character {
@@ -19216,6 +20004,8 @@ class SashiharaNanami05 extends Character {
     weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
     equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
     equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class SashiharaNanami70 extends Character {
@@ -19265,6 +20055,8 @@ class SashiharaNanami70 extends Character {
     weaponCloses: Gear[] = ActressGears.SashiharaNanami.short;
     equipmentTops: Gear[] = ActressGears.SashiharaNanami.top;
     equipmentBottoms: Gear[] = ActressGears.SashiharaNanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'B';
 }
 
 class AohamaMakuri04 extends Character {
@@ -19314,6 +20106,8 @@ class AohamaMakuri04 extends Character {
     weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
     equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
     equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AohamaMakuri05 extends Character {
@@ -19363,6 +20157,8 @@ class AohamaMakuri05 extends Character {
     weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
     equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
     equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class AohamaMakuri70 extends Character {
@@ -19411,6 +20207,8 @@ class AohamaMakuri70 extends Character {
     weaponCloses: Gear[] = ActressGears.AohamaMakuri.short;
     equipmentTops: Gear[] = ActressGears.AohamaMakuri.top;
     equipmentBottoms: Gear[] = ActressGears.AohamaMakuri.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class TakahataNodoka01 extends Character {
@@ -19459,6 +20257,8 @@ class TakahataNodoka01 extends Character {
     weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
     equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
     equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class TakahataNodoka04 extends Character {
@@ -19507,6 +20307,8 @@ class TakahataNodoka04 extends Character {
     weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
     equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
     equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class TakahataNodoka05 extends Character {
@@ -19555,6 +20357,8 @@ class TakahataNodoka05 extends Character {
     weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
     equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
     equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class TakahataNodoka70 extends Character {
@@ -19604,6 +20408,8 @@ class TakahataNodoka70 extends Character {
     weaponCloses: Gear[] = ActressGears.TakahataNodoka.short;
     equipmentTops: Gear[] = ActressGears.TakahataNodoka.top;
     equipmentBottoms: Gear[] = ActressGears.TakahataNodoka.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'A';
 }
 
 class Gourai04 extends Character {
@@ -19652,6 +20458,8 @@ class Gourai04 extends Character {
     weaponCloses: Gear[] = ActressGears.Gourai.short;
     equipmentTops: Gear[] = ActressGears.Gourai.top;
     equipmentBottoms: Gear[] = ActressGears.Gourai.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = '？';
 }
 
 class Gourai05 extends Character {
@@ -19700,6 +20508,8 @@ class Gourai05 extends Character {
     weaponCloses: Gear[] = ActressGears.Gourai.short;
     equipmentTops: Gear[] = ActressGears.Gourai.top;
     equipmentBottoms: Gear[] = ActressGears.Gourai.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = '？';
 }
 
 class Gourai70 extends Character {
@@ -19749,6 +20559,8 @@ class Gourai70 extends Character {
     weaponCloses: Gear[] = ActressGears.Gourai.short;
     equipmentTops: Gear[] = ActressGears.Gourai.top;
     equipmentBottoms: Gear[] = ActressGears.Gourai.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = '？';
 }
 
 class Stylet04 extends Character {
@@ -19797,6 +20609,8 @@ class Stylet04 extends Character {
     weaponCloses: Gear[] = ActressGears.Stylet.short;
     equipmentTops: Gear[] = ActressGears.Stylet.top;
     equipmentBottoms: Gear[] = ActressGears.Stylet.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Stylet05 extends Character {
@@ -19845,6 +20659,8 @@ class Stylet05 extends Character {
     weaponCloses: Gear[] = ActressGears.Stylet.short;
     equipmentTops: Gear[] = ActressGears.Stylet.top;
     equipmentBottoms: Gear[] = ActressGears.Stylet.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Baselard04 extends Character {
@@ -19894,6 +20710,8 @@ class Baselard04 extends Character {
     weaponCloses: Gear[] = ActressGears.Baselard.short;
     equipmentTops: Gear[] = ActressGears.Baselard.top;
     equipmentBottoms: Gear[] = ActressGears.Baselard.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Baselard05 extends Character {
@@ -19943,6 +20761,8 @@ class Baselard05 extends Character {
     weaponCloses: Gear[] = ActressGears.Baselard.short;
     equipmentTops: Gear[] = ActressGears.Baselard.top;
     equipmentBottoms: Gear[] = ActressGears.Baselard.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Hresvelgr04 extends Character {
@@ -19992,6 +20812,8 @@ class Hresvelgr04 extends Character {
     weaponCloses: Gear[] = ActressGears.Hresvelgr.short;
     equipmentTops: Gear[] = ActressGears.Hresvelgr.top;
     equipmentBottoms: Gear[] = ActressGears.Hresvelgr.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Hresvelgr05 extends Character {
@@ -20041,6 +20863,8 @@ class Hresvelgr05 extends Character {
     weaponCloses: Gear[] = ActressGears.Hresvelgr.short;
     equipmentTops: Gear[] = ActressGears.Hresvelgr.top;
     equipmentBottoms: Gear[] = ActressGears.Hresvelgr.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class GennaiAo04 extends Character {
@@ -20090,6 +20914,8 @@ class GennaiAo04 extends Character {
     weaponCloses: Gear[] = ActressGears.GennaiAo.short;
     equipmentTops: Gear[] = ActressGears.GennaiAo.top;
     equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class GennaiAo05 extends Character {
@@ -20139,6 +20965,8 @@ class GennaiAo05 extends Character {
     weaponCloses: Gear[] = ActressGears.GennaiAo.short;
     equipmentTops: Gear[] = ActressGears.GennaiAo.top;
     equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class GennaiAo70 extends Character {
@@ -20187,6 +21015,8 @@ class GennaiAo70 extends Character {
     weaponCloses: Gear[] = ActressGears.GennaiAo.short;
     equipmentTops: Gear[] = ActressGears.GennaiAo.top;
     equipmentBottoms: Gear[] = ActressGears.GennaiAo.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class KotobukiBukiko04 extends Character {
@@ -20236,6 +21066,8 @@ class KotobukiBukiko04 extends Character {
     weaponCloses: Gear[] = ActressGears.KotobukiBukiko.short;
     equipmentTops: Gear[] = ActressGears.KotobukiBukiko.top;
     equipmentBottoms: Gear[] = ActressGears.KotobukiBukiko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class KotobukiBukiko05 extends Character {
@@ -20285,6 +21117,8 @@ class KotobukiBukiko05 extends Character {
     weaponCloses: Gear[] = ActressGears.KotobukiBukiko.short;
     equipmentTops: Gear[] = ActressGears.KotobukiBukiko.top;
     equipmentBottoms: Gear[] = ActressGears.KotobukiBukiko.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class SaekiRitsuka04 extends Character {
@@ -20334,6 +21168,8 @@ class SaekiRitsuka04 extends Character {
     weaponCloses: Gear[] = ActressGears.SaekiRitsuka.short;
     equipmentTops: Gear[] = ActressGears.SaekiRitsuka.top;
     equipmentBottoms: Gear[] = ActressGears.SaekiRitsuka.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class SaekiRitsuka05 extends Character {
@@ -20383,6 +21219,8 @@ class SaekiRitsuka05 extends Character {
     weaponCloses: Gear[] = ActressGears.SaekiRitsuka.short;
     equipmentTops: Gear[] = ActressGears.SaekiRitsuka.top;
     equipmentBottoms: Gear[] = ActressGears.SaekiRitsuka.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
 }
 
 class KoishikawaEmma04 extends Character {
@@ -20431,6 +21269,8 @@ class KoishikawaEmma04 extends Character {
     weaponCloses: Gear[] = ActressGears.KoishikawaEmma.short;
     equipmentTops: Gear[] = ActressGears.KoishikawaEmma.top;
     equipmentBottoms: Gear[] = ActressGears.KoishikawaEmma.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class KoishikawaEmma05 extends Character {
@@ -20479,6 +21319,8 @@ class KoishikawaEmma05 extends Character {
     weaponCloses: Gear[] = ActressGears.KoishikawaEmma.short;
     equipmentTops: Gear[] = ActressGears.KoishikawaEmma.top;
     equipmentBottoms: Gear[] = ActressGears.KoishikawaEmma.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = 'AB';
 }
 
 class SolRaptor04 extends Character {
@@ -20527,6 +21369,8 @@ class SolRaptor04 extends Character {
     weaponCloses: Gear[] = ActressGears.SolRaptor.short;
     equipmentTops: Gear[] = ActressGears.SolRaptor.top;
     equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class SolRaptor05 extends Character {
@@ -20575,6 +21419,8 @@ class SolRaptor05 extends Character {
     weaponCloses: Gear[] = ActressGears.SolRaptor.short;
     equipmentTops: Gear[] = ActressGears.SolRaptor.top;
     equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class SolRaptor70 extends Character {
@@ -20624,6 +21470,8 @@ class SolRaptor70 extends Character {
     weaponCloses: Gear[] = ActressGears.SolRaptor.short;
     equipmentTops: Gear[] = ActressGears.SolRaptor.top;
     equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class SolRaptor60 extends Character {
@@ -20673,6 +21521,8 @@ class SolRaptor60 extends Character {
     weaponCloses: Gear[] = ActressGears.SolRaptor.short;
     equipmentTops: Gear[] = ActressGears.SolRaptor.top;
     equipmentBottoms: Gear[] = ActressGears.SolRaptor.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class MiyafujiYoshika04 extends Character {
@@ -20722,6 +21572,8 @@ class MiyafujiYoshika04 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyafujiYoshika.short;
     equipmentTops: Gear[] = ActressGears.MiyafujiYoshika.top;
     equipmentBottoms: Gear[] = ActressGears.MiyafujiYoshika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class MiyafujiYoshika05 extends Character {
@@ -20771,6 +21623,8 @@ class MiyafujiYoshika05 extends Character {
     weaponCloses: Gear[] = ActressGears.MiyafujiYoshika.short;
     equipmentTops: Gear[] = ActressGears.MiyafujiYoshika.top;
     equipmentBottoms: Gear[] = ActressGears.MiyafujiYoshika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class SakamotoMio04 extends Character {
@@ -20820,6 +21674,8 @@ class SakamotoMio04 extends Character {
     weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
     equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
     equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class SakamotoMio05 extends Character {
@@ -20869,6 +21725,8 @@ class SakamotoMio05 extends Character {
     weaponCloses: Gear[] = ActressGears.SakamotoMio.short;
     equipmentTops: Gear[] = ActressGears.SakamotoMio.top;
     equipmentBottoms: Gear[] = ActressGears.SakamotoMio.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class LynetteBishop04 extends Character {
@@ -20918,6 +21776,8 @@ class LynetteBishop04 extends Character {
     weaponCloses: Gear[] = ActressGears.LynetteBishop.short;
     equipmentTops: Gear[] = ActressGears.LynetteBishop.top;
     equipmentBottoms: Gear[] = ActressGears.LynetteBishop.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = '？';
 }
 
 class LynetteBishop05 extends Character {
@@ -20967,6 +21827,8 @@ class LynetteBishop05 extends Character {
     weaponCloses: Gear[] = ActressGears.LynetteBishop.short;
     equipmentTops: Gear[] = ActressGears.LynetteBishop.top;
     equipmentBottoms: Gear[] = ActressGears.LynetteBishop.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = '？';
 }
 
 class PerrineHClostermann04 extends Character {
@@ -21016,6 +21878,8 @@ class PerrineHClostermann04 extends Character {
     weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
     equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
     equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class PerrineHClostermann05 extends Character {
@@ -21065,6 +21929,8 @@ class PerrineHClostermann05 extends Character {
     weaponCloses: Gear[] = ActressGears.PerrineHClostermann.short;
     equipmentTops: Gear[] = ActressGears.PerrineHClostermann.top;
     equipmentBottoms: Gear[] = ActressGears.PerrineHClostermann.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class MinnaDietlindeWilcke04 extends Character {
@@ -21114,6 +21980,8 @@ class MinnaDietlindeWilcke04 extends Character {
     weaponCloses: Gear[] = ActressGears.MinnaDietlindeWilcke.short;
     equipmentTops: Gear[] = ActressGears.MinnaDietlindeWilcke.top;
     equipmentBottoms: Gear[] = ActressGears.MinnaDietlindeWilcke.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class MinnaDietlindeWilcke05 extends Character {
@@ -21163,6 +22031,8 @@ class MinnaDietlindeWilcke05 extends Character {
     weaponCloses: Gear[] = ActressGears.MinnaDietlindeWilcke.short;
     equipmentTops: Gear[] = ActressGears.MinnaDietlindeWilcke.top;
     equipmentBottoms: Gear[] = ActressGears.MinnaDietlindeWilcke.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class GertrudBarkhorn04 extends Character {
@@ -21211,6 +22081,8 @@ class GertrudBarkhorn04 extends Character {
     weaponCloses: Gear[] = ActressGears.GertrudBarkhorn.short;
     equipmentTops: Gear[] = ActressGears.GertrudBarkhorn.top;
     equipmentBottoms: Gear[] = ActressGears.GertrudBarkhorn.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class GertrudBarkhorn05 extends Character {
@@ -21259,6 +22131,8 @@ class GertrudBarkhorn05 extends Character {
     weaponCloses: Gear[] = ActressGears.GertrudBarkhorn.short;
     equipmentTops: Gear[] = ActressGears.GertrudBarkhorn.top;
     equipmentBottoms: Gear[] = ActressGears.GertrudBarkhorn.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class EricaHartmann04 extends Character {
@@ -21308,6 +22182,8 @@ class EricaHartmann04 extends Character {
     weaponCloses: Gear[] = ActressGears.EricaHartmann.short;
     equipmentTops: Gear[] = ActressGears.EricaHartmann.top;
     equipmentBottoms: Gear[] = ActressGears.EricaHartmann.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = '？';
 }
 
 class EricaHartmann05 extends Character {
@@ -21357,6 +22233,8 @@ class EricaHartmann05 extends Character {
     weaponCloses: Gear[] = ActressGears.EricaHartmann.short;
     equipmentTops: Gear[] = ActressGears.EricaHartmann.top;
     equipmentBottoms: Gear[] = ActressGears.EricaHartmann.bottom;
+    birthdayMonth: number = 4;
+    bloodType: string = '？';
 }
 
 class FrancescaLucchini04 extends Character {
@@ -21405,6 +22283,8 @@ class FrancescaLucchini04 extends Character {
     weaponCloses: Gear[] = ActressGears.FrancescaLucchini.short;
     equipmentTops: Gear[] = ActressGears.FrancescaLucchini.top;
     equipmentBottoms: Gear[] = ActressGears.FrancescaLucchini.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class FrancescaLucchini05 extends Character {
@@ -21453,6 +22333,8 @@ class FrancescaLucchini05 extends Character {
     weaponCloses: Gear[] = ActressGears.FrancescaLucchini.short;
     equipmentTops: Gear[] = ActressGears.FrancescaLucchini.top;
     equipmentBottoms: Gear[] = ActressGears.FrancescaLucchini.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class CharlotteEYeager04 extends Character {
@@ -21502,6 +22384,8 @@ class CharlotteEYeager04 extends Character {
     weaponCloses: Gear[] = ActressGears.CharlotteEYeager.short;
     equipmentTops: Gear[] = ActressGears.CharlotteEYeager.top;
     equipmentBottoms: Gear[] = ActressGears.CharlotteEYeager.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class CharlotteEYeager05 extends Character {
@@ -21551,6 +22435,8 @@ class CharlotteEYeager05 extends Character {
     weaponCloses: Gear[] = ActressGears.CharlotteEYeager.short;
     equipmentTops: Gear[] = ActressGears.CharlotteEYeager.top;
     equipmentBottoms: Gear[] = ActressGears.CharlotteEYeager.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class SanyaVLitvyak04 extends Character {
@@ -21599,6 +22485,8 @@ class SanyaVLitvyak04 extends Character {
     weaponCloses: Gear[] = ActressGears.SanyaVLitvyak.short;
     equipmentTops: Gear[] = ActressGears.SanyaVLitvyak.top;
     equipmentBottoms: Gear[] = ActressGears.SanyaVLitvyak.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class SanyaVLitvyak05 extends Character {
@@ -21647,6 +22535,8 @@ class SanyaVLitvyak05 extends Character {
     weaponCloses: Gear[] = ActressGears.SanyaVLitvyak.short;
     equipmentTops: Gear[] = ActressGears.SanyaVLitvyak.top;
     equipmentBottoms: Gear[] = ActressGears.SanyaVLitvyak.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class EilaIlmatarJuutilainen04 extends Character {
@@ -21696,6 +22586,8 @@ class EilaIlmatarJuutilainen04 extends Character {
     weaponCloses: Gear[] = ActressGears.EilaIlmatarJuutilainen.short;
     equipmentTops: Gear[] = ActressGears.EilaIlmatarJuutilainen.top;
     equipmentBottoms: Gear[] = ActressGears.EilaIlmatarJuutilainen.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class EilaIlmatarJuutilainen05 extends Character {
@@ -21745,6 +22637,8 @@ class EilaIlmatarJuutilainen05 extends Character {
     weaponCloses: Gear[] = ActressGears.EilaIlmatarJuutilainen.short;
     equipmentTops: Gear[] = ActressGears.EilaIlmatarJuutilainen.top;
     equipmentBottoms: Gear[] = ActressGears.EilaIlmatarJuutilainen.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = '？';
 }
 
 class HoshitsukiMiki04 extends Character {
@@ -21793,6 +22687,8 @@ class HoshitsukiMiki04 extends Character {
     weaponCloses: Gear[] = ActressGears.HoshitsukiMiki.short;
     equipmentTops: Gear[] = ActressGears.HoshitsukiMiki.top;
     equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class HoshitsukiMiki05 extends Character {
@@ -21841,6 +22737,8 @@ class HoshitsukiMiki05 extends Character {
     weaponCloses: Gear[] = ActressGears.HoshitsukiMiki.short;
     equipmentTops: Gear[] = ActressGears.HoshitsukiMiki.top;
     equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class HoshitsukiMiki70 extends Character {
@@ -21890,6 +22788,8 @@ class HoshitsukiMiki70 extends Character {
     weaponCloses: Gear[] = ActressGears.HoshitsukiMiki.short;
     equipmentTops: Gear[] = ActressGears.HoshitsukiMiki.top;
     equipmentBottoms: Gear[] = ActressGears.HoshitsukiMiki.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'O';
 }
 
 class NarumiHaruka04 extends Character {
@@ -21939,6 +22839,8 @@ class NarumiHaruka04 extends Character {
     weaponCloses: Gear[] = ActressGears.NarumiHaruka.short;
     equipmentTops: Gear[] = ActressGears.NarumiHaruka.top;
     equipmentBottoms: Gear[] = ActressGears.NarumiHaruka.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class NarumiHaruka05 extends Character {
@@ -21988,6 +22890,8 @@ class NarumiHaruka05 extends Character {
     weaponCloses: Gear[] = ActressGears.NarumiHaruka.short;
     equipmentTops: Gear[] = ActressGears.NarumiHaruka.top;
     equipmentBottoms: Gear[] = ActressGears.NarumiHaruka.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'A';
 }
 
 class AmanoNozomi04 extends Character {
@@ -22036,6 +22940,8 @@ class AmanoNozomi04 extends Character {
     weaponCloses: Gear[] = ActressGears.AmanoNozomi.short;
     equipmentTops: Gear[] = ActressGears.AmanoNozomi.top;
     equipmentBottoms: Gear[] = ActressGears.AmanoNozomi.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class AmanoNozomi05 extends Character {
@@ -22084,6 +22990,8 @@ class AmanoNozomi05 extends Character {
     weaponCloses: Gear[] = ActressGears.AmanoNozomi.short;
     equipmentTops: Gear[] = ActressGears.AmanoNozomi.top;
     equipmentBottoms: Gear[] = ActressGears.AmanoNozomi.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'O';
 }
 
 class TokiwaKurumi04 extends Character {
@@ -22132,6 +23040,8 @@ class TokiwaKurumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.TokiwaKurumi.short;
     equipmentTops: Gear[] = ActressGears.TokiwaKurumi.top;
     equipmentBottoms: Gear[] = ActressGears.TokiwaKurumi.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'AB';
 }
 
 class TokiwaKurumi05 extends Character {
@@ -22180,6 +23090,8 @@ class TokiwaKurumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.TokiwaKurumi.short;
     equipmentTops: Gear[] = ActressGears.TokiwaKurumi.top;
     equipmentBottoms: Gear[] = ActressGears.TokiwaKurumi.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'AB';
 }
 
 class TsubuzakiAnko04 extends Character {
@@ -22229,6 +23141,8 @@ class TsubuzakiAnko04 extends Character {
     weaponCloses: Gear[] = ActressGears.TsubuzakiAnko.short;
     equipmentTops: Gear[] = ActressGears.TsubuzakiAnko.top;
     equipmentBottoms: Gear[] = ActressGears.TsubuzakiAnko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class TsubuzakiAnko05 extends Character {
@@ -22278,6 +23192,8 @@ class TsubuzakiAnko05 extends Character {
     weaponCloses: Gear[] = ActressGears.TsubuzakiAnko.short;
     equipmentTops: Gear[] = ActressGears.TsubuzakiAnko.top;
     equipmentBottoms: Gear[] = ActressGears.TsubuzakiAnko.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'B';
 }
 
 class SerizawaRenge04 extends Character {
@@ -22327,6 +23243,8 @@ class SerizawaRenge04 extends Character {
     weaponCloses: Gear[] = ActressGears.SerizawaRenge.short;
     equipmentTops: Gear[] = ActressGears.SerizawaRenge.top;
     equipmentBottoms: Gear[] = ActressGears.SerizawaRenge.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class SerizawaRenge05 extends Character {
@@ -22376,6 +23294,8 @@ class SerizawaRenge05 extends Character {
     weaponCloses: Gear[] = ActressGears.SerizawaRenge.short;
     equipmentTops: Gear[] = ActressGears.SerizawaRenge.top;
     equipmentBottoms: Gear[] = ActressGears.SerizawaRenge.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'B';
 }
 
 class KusunokiAsuha04 extends Character {
@@ -22425,6 +23345,8 @@ class KusunokiAsuha04 extends Character {
     weaponCloses: Gear[] = ActressGears.KusunokiAsuha.short;
     equipmentTops: Gear[] = ActressGears.KusunokiAsuha.top;
     equipmentBottoms: Gear[] = ActressGears.KusunokiAsuha.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class KusunokiAsuha05 extends Character {
@@ -22474,6 +23396,8 @@ class KusunokiAsuha05 extends Character {
     weaponCloses: Gear[] = ActressGears.KusunokiAsuha.short;
     equipmentTops: Gear[] = ActressGears.KusunokiAsuha.top;
     equipmentBottoms: Gear[] = ActressGears.KusunokiAsuha.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'A';
 }
 
 class WatagiMichelle04 extends Character {
@@ -22523,6 +23447,8 @@ class WatagiMichelle04 extends Character {
     weaponCloses: Gear[] = ActressGears.WatagiMichelle.short;
     equipmentTops: Gear[] = ActressGears.WatagiMichelle.top;
     equipmentBottoms: Gear[] = ActressGears.WatagiMichelle.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class WatagiMichelle05 extends Character {
@@ -22572,6 +23498,8 @@ class WatagiMichelle05 extends Character {
     weaponCloses: Gear[] = ActressGears.WatagiMichelle.short;
     equipmentTops: Gear[] = ActressGears.WatagiMichelle.top;
     equipmentBottoms: Gear[] = ActressGears.WatagiMichelle.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'O';
 }
 
 class Sadone04 extends Character {
@@ -22621,6 +23549,8 @@ class Sadone04 extends Character {
     weaponCloses: Gear[] = ActressGears.Sadone.short;
     equipmentTops: Gear[] = ActressGears.Sadone.top;
     equipmentBottoms: Gear[] = ActressGears.Sadone.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class Sadone05 extends Character {
@@ -22670,6 +23600,8 @@ class Sadone05 extends Character {
     weaponCloses: Gear[] = ActressGears.Sadone.short;
     equipmentTops: Gear[] = ActressGears.Sadone.top;
     equipmentBottoms: Gear[] = ActressGears.Sadone.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class KougamiKanon04 extends Character {
@@ -22719,6 +23651,8 @@ class KougamiKanon04 extends Character {
     weaponCloses: Gear[] = ActressGears.KougamiKanon.short;
     equipmentTops: Gear[] = ActressGears.KougamiKanon.top;
     equipmentBottoms: Gear[] = ActressGears.KougamiKanon.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'AB';
 }
 
 class KougamiKanon05 extends Character {
@@ -22768,6 +23702,8 @@ class KougamiKanon05 extends Character {
     weaponCloses: Gear[] = ActressGears.KougamiKanon.short;
     equipmentTops: Gear[] = ActressGears.KougamiKanon.top;
     equipmentBottoms: Gear[] = ActressGears.KougamiKanon.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'AB';
 }
 
 class KuniedaShiho04 extends Character {
@@ -22817,6 +23753,8 @@ class KuniedaShiho04 extends Character {
     weaponCloses: Gear[] = ActressGears.KuniedaShiho.short;
     equipmentTops: Gear[] = ActressGears.KuniedaShiho.top;
     equipmentBottoms: Gear[] = ActressGears.KuniedaShiho.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class KuniedaShiho05 extends Character {
@@ -22866,6 +23804,8 @@ class KuniedaShiho05 extends Character {
     weaponCloses: Gear[] = ActressGears.KuniedaShiho.short;
     equipmentTops: Gear[] = ActressGears.KuniedaShiho.top;
     equipmentBottoms: Gear[] = ActressGears.KuniedaShiho.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
 }
 
 class Misaki04 extends Character {
@@ -22914,6 +23854,8 @@ class Misaki04 extends Character {
     weaponCloses: Gear[] = ActressGears.Misaki.short;
     equipmentTops: Gear[] = ActressGears.Misaki.top;
     equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'O';
 }
 
 class Misaki05 extends Character {
@@ -22962,6 +23904,8 @@ class Misaki05 extends Character {
     weaponCloses: Gear[] = ActressGears.Misaki.short;
     equipmentTops: Gear[] = ActressGears.Misaki.top;
     equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'O';
 }
 
 class Misaki70 extends Character {
@@ -23011,6 +23955,8 @@ class Misaki70 extends Character {
     weaponCloses: Gear[] = ActressGears.Misaki.short;
     equipmentTops: Gear[] = ActressGears.Misaki.top;
     equipmentBottoms: Gear[] = ActressGears.Misaki.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'O';
 }
 
 class Kasumi04 extends Character {
@@ -23059,6 +24005,8 @@ class Kasumi04 extends Character {
     weaponCloses: Gear[] = ActressGears.Kasumi.short;
     equipmentTops: Gear[] = ActressGears.Kasumi.top;
     equipmentBottoms: Gear[] = ActressGears.Kasumi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class Kasumi05 extends Character {
@@ -23107,6 +24055,8 @@ class Kasumi05 extends Character {
     weaponCloses: Gear[] = ActressGears.Kasumi.short;
     equipmentTops: Gear[] = ActressGears.Kasumi.top;
     equipmentBottoms: Gear[] = ActressGears.Kasumi.bottom;
+    birthdayMonth: number = 2;
+    bloodType: string = 'A';
 }
 
 class MarieRose04 extends Character {
@@ -23155,6 +24105,8 @@ class MarieRose04 extends Character {
     weaponCloses: Gear[] = ActressGears.MarieRose.short;
     equipmentTops: Gear[] = ActressGears.MarieRose.top;
     equipmentBottoms: Gear[] = ActressGears.MarieRose.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class MarieRose05 extends Character {
@@ -23203,6 +24155,8 @@ class MarieRose05 extends Character {
     weaponCloses: Gear[] = ActressGears.MarieRose.short;
     equipmentTops: Gear[] = ActressGears.MarieRose.top;
     equipmentBottoms: Gear[] = ActressGears.MarieRose.bottom;
+    birthdayMonth: number = 6;
+    bloodType: string = 'AB';
 }
 
 class Nyotengu04 extends Character {
@@ -23252,6 +24206,8 @@ class Nyotengu04 extends Character {
     weaponCloses: Gear[] = ActressGears.Nyotengu.short;
     equipmentTops: Gear[] = ActressGears.Nyotengu.top;
     equipmentBottoms: Gear[] = ActressGears.Nyotengu.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Nyotengu05 extends Character {
@@ -23301,6 +24257,8 @@ class Nyotengu05 extends Character {
     weaponCloses: Gear[] = ActressGears.Nyotengu.short;
     equipmentTops: Gear[] = ActressGears.Nyotengu.top;
     equipmentBottoms: Gear[] = ActressGears.Nyotengu.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class SylphyII04 extends Character {
@@ -23349,6 +24307,8 @@ class SylphyII04 extends Character {
     weaponCloses: Gear[] = ActressGears.SylphyII.short;
     equipmentTops: Gear[] = ActressGears.SylphyII.top;
     equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class SylphyII05 extends Character {
@@ -23397,6 +24357,8 @@ class SylphyII05 extends Character {
     weaponCloses: Gear[] = ActressGears.SylphyII.short;
     equipmentTops: Gear[] = ActressGears.SylphyII.top;
     equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class SylphyII70 extends Character {
@@ -23446,6 +24408,8 @@ class SylphyII70 extends Character {
     weaponCloses: Gear[] = ActressGears.SylphyII.short;
     equipmentTops: Gear[] = ActressGears.SylphyII.top;
     equipmentBottoms: Gear[] = ActressGears.SylphyII.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = '？';
 }
 
 class Aya04 extends Character {
@@ -23495,6 +24459,8 @@ class Aya04 extends Character {
     weaponCloses: Gear[] = ActressGears.Aya.short;
     equipmentTops: Gear[] = ActressGears.Aya.top;
     equipmentBottoms: Gear[] = ActressGears.Aya.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class Aya05 extends Character {
@@ -23544,6 +24510,8 @@ class Aya05 extends Character {
     weaponCloses: Gear[] = ActressGears.Aya.short;
     equipmentTops: Gear[] = ActressGears.Aya.top;
     equipmentBottoms: Gear[] = ActressGears.Aya.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class Aya70 extends Character {
@@ -23593,6 +24561,8 @@ class Aya70 extends Character {
     weaponCloses: Gear[] = ActressGears.Aya.short;
     equipmentTops: Gear[] = ActressGears.Aya.top;
     equipmentBottoms: Gear[] = ActressGears.Aya.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class Yuki04 extends Character {
@@ -23641,6 +24611,8 @@ class Yuki04 extends Character {
     weaponCloses: Gear[] = ActressGears.Yuki.short;
     equipmentTops: Gear[] = ActressGears.Yuki.top;
     equipmentBottoms: Gear[] = ActressGears.Yuki.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class Yuki05 extends Character {
@@ -23689,6 +24661,8 @@ class Yuki05 extends Character {
     weaponCloses: Gear[] = ActressGears.Yuki.short;
     equipmentTops: Gear[] = ActressGears.Yuki.top;
     equipmentBottoms: Gear[] = ActressGears.Yuki.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class Yuki70 extends Character {
@@ -23738,6 +24712,8 @@ class Yuki70 extends Character {
     weaponCloses: Gear[] = ActressGears.Yuki.short;
     equipmentTops: Gear[] = ActressGears.Yuki.top;
     equipmentBottoms: Gear[] = ActressGears.Yuki.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class Yamada04 extends Character {
@@ -23787,6 +24763,8 @@ class Yamada04 extends Character {
     weaponCloses: Gear[] = ActressGears.Yamada.short;
     equipmentTops: Gear[] = ActressGears.Yamada.top;
     equipmentBottoms: Gear[] = ActressGears.Yamada.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = '？';
 }
 
 class Yamada05 extends Character {
@@ -23836,6 +24814,8 @@ class Yamada05 extends Character {
     weaponCloses: Gear[] = ActressGears.Yamada.short;
     equipmentTops: Gear[] = ActressGears.Yamada.top;
     equipmentBottoms: Gear[] = ActressGears.Yamada.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = '？';
 }
 
 class Yamada70 extends Character {
@@ -23884,6 +24864,8 @@ class Yamada70 extends Character {
     weaponCloses: Gear[] = ActressGears.Yamada.short;
     equipmentTops: Gear[] = ActressGears.Yamada.top;
     equipmentBottoms: Gear[] = ActressGears.Yamada.bottom;
+    birthdayMonth: number = 5;
+    bloodType: string = '？';
 }
 
 class AIT04 extends Character {
@@ -23933,6 +24915,8 @@ class AIT04 extends Character {
     weaponCloses: Gear[] = ActressGears.AIT.short;
     equipmentTops: Gear[] = ActressGears.AIT.top;
     equipmentBottoms: Gear[] = ActressGears.AIT.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class AIT05 extends Character {
@@ -23982,6 +24966,8 @@ class AIT05 extends Character {
     weaponCloses: Gear[] = ActressGears.AIT.short;
     equipmentTops: Gear[] = ActressGears.AIT.top;
     equipmentBottoms: Gear[] = ActressGears.AIT.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class AIT70 extends Character {
@@ -24031,6 +25017,8 @@ class AIT70 extends Character {
     weaponCloses: Gear[] = ActressGears.AIT.short;
     equipmentTops: Gear[] = ActressGears.AIT.top;
     equipmentBottoms: Gear[] = ActressGears.AIT.bottom;
+    birthdayMonth: number = 12;
+    bloodType: string = '？';
 }
 
 class IvryHadd04 extends Character {
@@ -24080,6 +25068,8 @@ class IvryHadd04 extends Character {
     weaponCloses: Gear[] = ActressGears.IvryHadd.short;
     equipmentTops: Gear[] = ActressGears.IvryHadd.top;
     equipmentBottoms: Gear[] = ActressGears.IvryHadd.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class IvryHadd05 extends Character {
@@ -24129,6 +25119,8 @@ class IvryHadd05 extends Character {
     weaponCloses: Gear[] = ActressGears.IvryHadd.short;
     equipmentTops: Gear[] = ActressGears.IvryHadd.top;
     equipmentBottoms: Gear[] = ActressGears.IvryHadd.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class MakiseKurisu04 extends Character {
@@ -24178,6 +25170,8 @@ class MakiseKurisu04 extends Character {
     weaponCloses: Gear[] = ActressGears.MakiseKurisu.short;
     equipmentTops: Gear[] = ActressGears.MakiseKurisu.top;
     equipmentBottoms: Gear[] = ActressGears.MakiseKurisu.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MakiseKurisu05 extends Character {
@@ -24227,6 +25221,8 @@ class MakiseKurisu05 extends Character {
     weaponCloses: Gear[] = ActressGears.MakiseKurisu.short;
     equipmentTops: Gear[] = ActressGears.MakiseKurisu.top;
     equipmentBottoms: Gear[] = ActressGears.MakiseKurisu.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class MakiseKurisu70 extends Character {
@@ -24275,6 +25271,8 @@ class MakiseKurisu70 extends Character {
     weaponCloses: Gear[] = ActressGears.MakiseKurisu.short;
     equipmentTops: Gear[] = ActressGears.MakiseKurisu.top;
     equipmentBottoms: Gear[] = ActressGears.MakiseKurisu.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
 }
 
 class AmaneSuzuha04 extends Character {
@@ -24323,6 +25321,8 @@ class AmaneSuzuha04 extends Character {
     weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
     equipmentTops: Gear[] = ActressGears.AmaneSuzuha.top;
     equipmentBottoms: Gear[] = ActressGears.AmaneSuzuha.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'O';
 }
 
 class AmaneSuzuha05 extends Character {
@@ -24371,6 +25371,8 @@ class AmaneSuzuha05 extends Character {
     weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
     equipmentTops: Gear[] = ActressGears.AmaneSuzuha.top;
     equipmentBottoms: Gear[] = ActressGears.AmaneSuzuha.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'O';
 }
 
 class AmaneSuzuha70 extends Character {
@@ -24420,6 +25422,8 @@ class AmaneSuzuha70 extends Character {
     weaponCloses: Gear[] = ActressGears.AmaneSuzuha.short;
     equipmentTops: Gear[] = ActressGears.AmaneSuzuha.top;
     equipmentBottoms: Gear[] = ActressGears.AmaneSuzuha.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = 'O';
 }
 
 class TanyaDegurechaff04 extends Character {
@@ -24469,6 +25473,8 @@ class TanyaDegurechaff04 extends Character {
     weaponCloses: Gear[] = ActressGears.TanyaDegurechaff.short;
     equipmentTops: Gear[] = ActressGears.TanyaDegurechaff.top;
     equipmentBottoms: Gear[] = ActressGears.TanyaDegurechaff.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class TanyaDegurechaff05 extends Character {
@@ -24518,6 +25524,8 @@ class TanyaDegurechaff05 extends Character {
     weaponCloses: Gear[] = ActressGears.TanyaDegurechaff.short;
     equipmentTops: Gear[] = ActressGears.TanyaDegurechaff.top;
     equipmentBottoms: Gear[] = ActressGears.TanyaDegurechaff.bottom;
+    birthdayMonth: number = 9;
+    bloodType: string = '？';
 }
 
 class ViktoriyaIvanovnaSerebryakov04 extends Character {
@@ -24566,6 +25574,8 @@ class ViktoriyaIvanovnaSerebryakov04 extends Character {
     weaponCloses: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.short;
     equipmentTops: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.top;
     equipmentBottoms: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class ViktoriyaIvanovnaSerebryakov05 extends Character {
@@ -24614,6 +25624,8 @@ class ViktoriyaIvanovnaSerebryakov05 extends Character {
     weaponCloses: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.short;
     equipmentTops: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.top;
     equipmentBottoms: Gear[] = ActressGears.ViktoriyaIvanovnaSerebryakov.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class Kei04 extends Character {
@@ -24663,6 +25675,8 @@ class Kei04 extends Character {
     weaponCloses: Gear[] = ActressGears.Kei.short;
     equipmentTops: Gear[] = ActressGears.Kei.top;
     equipmentBottoms: Gear[] = ActressGears.Kei.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class Kei05 extends Character {
@@ -24712,6 +25726,8 @@ class Kei05 extends Character {
     weaponCloses: Gear[] = ActressGears.Kei.short;
     equipmentTops: Gear[] = ActressGears.Kei.top;
     equipmentBottoms: Gear[] = ActressGears.Kei.bottom;
+    birthdayMonth: number = 11;
+    bloodType: string = 'A';
 }
 
 class Yuri04 extends Character {
@@ -24761,6 +25777,8 @@ class Yuri04 extends Character {
     weaponCloses: Gear[] = ActressGears.Yuri.short;
     equipmentTops: Gear[] = ActressGears.Yuri.top;
     equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class Yuri05 extends Character {
@@ -24810,6 +25828,8 @@ class Yuri05 extends Character {
     weaponCloses: Gear[] = ActressGears.Yuri.short;
     equipmentTops: Gear[] = ActressGears.Yuri.top;
     equipmentBottoms: Gear[] = ActressGears.Yuri.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'A';
 }
 
 class HatsuneMiku04 extends Character {
@@ -24858,6 +25878,8 @@ class HatsuneMiku04 extends Character {
     weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
     equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class HatsuneMiku05 extends Character {
@@ -24906,6 +25928,8 @@ class HatsuneMiku05 extends Character {
     weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
     equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class HatsuneMiku70 extends Character {
@@ -24955,6 +25979,8 @@ class HatsuneMiku70 extends Character {
     weaponCloses: Gear[] = ActressGears.HatsuneMiku.short;
     equipmentTops: Gear[] = ActressGears.HatsuneMiku.top;
     equipmentBottoms: Gear[] = ActressGears.HatsuneMiku.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = '？';
 }
 
 class CC04 extends Character {
@@ -25004,6 +26030,8 @@ class CC04 extends Character {
     weaponCloses: Gear[] = ActressGears.CC.short;
     equipmentTops: Gear[] = ActressGears.CC.top;
     equipmentBottoms: Gear[] = ActressGears.CC.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class CC05 extends Character {
@@ -25053,6 +26081,8 @@ class CC05 extends Character {
     weaponCloses: Gear[] = ActressGears.CC.short;
     equipmentTops: Gear[] = ActressGears.CC.top;
     equipmentBottoms: Gear[] = ActressGears.CC.bottom;
+    birthdayMonth: number = 0;
+    bloodType: string = '？';
 }
 
 class KouzukiKallen04 extends Character {
@@ -25101,6 +26131,8 @@ class KouzukiKallen04 extends Character {
     weaponCloses: Gear[] = ActressGears.KouzukiKallen.short;
     equipmentTops: Gear[] = ActressGears.KouzukiKallen.top;
     equipmentBottoms: Gear[] = ActressGears.KouzukiKallen.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'B';
 }
 
 class KouzukiKallen05 extends Character {
@@ -25149,6 +26181,8 @@ class KouzukiKallen05 extends Character {
     weaponCloses: Gear[] = ActressGears.KouzukiKallen.short;
     equipmentTops: Gear[] = ActressGears.KouzukiKallen.top;
     equipmentBottoms: Gear[] = ActressGears.KouzukiKallen.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = 'B';
 }
 
 class KagamiharaNadeshiko04 extends Character {
@@ -25198,6 +26232,8 @@ class KagamiharaNadeshiko04 extends Character {
     weaponCloses: Gear[] = ActressGears.KagamiharaNadeshiko.short;
     equipmentTops: Gear[] = ActressGears.KagamiharaNadeshiko.top;
     equipmentBottoms: Gear[] = ActressGears.KagamiharaNadeshiko.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class KagamiharaNadeshiko05 extends Character {
@@ -25247,6 +26283,8 @@ class KagamiharaNadeshiko05 extends Character {
     weaponCloses: Gear[] = ActressGears.KagamiharaNadeshiko.short;
     equipmentTops: Gear[] = ActressGears.KagamiharaNadeshiko.top;
     equipmentBottoms: Gear[] = ActressGears.KagamiharaNadeshiko.bottom;
+    birthdayMonth: number = 3;
+    bloodType: string = '？';
 }
 
 class ShimaRin04 extends Character {
@@ -25295,6 +26333,8 @@ class ShimaRin04 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimaRin.short;
     equipmentTops: Gear[] = ActressGears.ShimaRin.top;
     equipmentBottoms: Gear[] = ActressGears.ShimaRin.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = '？';
 }
 
 class ShimaRin05 extends Character {
@@ -25343,6 +26383,8 @@ class ShimaRin05 extends Character {
     weaponCloses: Gear[] = ActressGears.ShimaRin.short;
     equipmentTops: Gear[] = ActressGears.ShimaRin.top;
     equipmentBottoms: Gear[] = ActressGears.ShimaRin.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = '？';
 }
 
 export const ActressNames: string[] = [

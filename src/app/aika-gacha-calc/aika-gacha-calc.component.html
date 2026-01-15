@@ -14,49 +14,278 @@
             <span class="selection-info">{{selectedCharacterId.size}} / {{filteredCharacterModels.length}} ({{getSelectionPercentage()}}%)</span>
         </div>
     </div>
-    <div class="filter-panel">
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
-            <span>本家</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
-            <span>聯動</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
-            <span>一般</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
-            <span>AN</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
-            <span>FA</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
-            <span>ST</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.volt" (change)="onFilterChange()">
-            <span [style.color]="getAttrTypeColor('volt')">電擊</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.gravity" (change)="onFilterChange()">
-            <span [style.color]="getAttrTypeColor('gravity')">重力</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.fire" (change)="onFilterChange()">
-            <span [style.color]="getAttrTypeColor('fire')">燒夷</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filterSettings.ice" (change)="onFilterChange()">
-            <span [style.color]="getAttrTypeColor('ice')">冷擊</span>
-        </label>
-    </div>
-    <div class="character-list">
+    <div class="content-wrapper">
+        <div class="filter-panel">
+            <div class="filter-panel-header" (click)="toggleFilterPanel()">
+                <span class="filter-panel-title">篩選條件</span>
+                <span class="filter-panel-toggle">{{ isFilterPanelExpanded ? '▲ 收起' : '▼ 展開' }}</span>
+            </div>
+            <div class="filter-panel-content" *ngIf="isFilterPanelExpanded">
+                <!-- 來源 -->
+                <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">來源</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('source')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('source')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
+                    <span>本家</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
+                    <span>聯動</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 角色類型 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">角色類型</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('characterType')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('characterType')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
+                    <span>一般</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
+                    <span>AN</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
+                    <span>FA</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
+                    <span>ST</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.backup" (change)="onFilterChange()">
+                    <span>BU</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 屬性 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">屬性</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('attribute')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('attribute')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.volt" (change)="onFilterChange()">
+                    <span [style.color]="getAttrTypeColor('volt')">電擊</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.gravity" (change)="onFilterChange()">
+                    <span [style.color]="getAttrTypeColor('gravity')">重力</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.fire" (change)="onFilterChange()">
+                    <span [style.color]="getAttrTypeColor('fire')">燒夷</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.ice" (change)="onFilterChange()">
+                    <span [style.color]="getAttrTypeColor('ice')">冷擊</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 放出類型 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">放出類型</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('emission')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('emission')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.emission1" (change)="onFilterChange()">
+                    <span>出力特性</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.emission2" (change)="onFilterChange()">
+                    <span>出力変性</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.emission3" (change)="onFilterChange()">
+                    <span>変質放出</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.emission4" (change)="onFilterChange()">
+                    <span>特質放出</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.emission5" (change)="onFilterChange()">
+                    <span>放出特化</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 擅長武器 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">擅長武器</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('weapon')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('weapon')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.weprif" (change)="onFilterChange()">
+                    <span>步槍</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepbaz" (change)="onFilterChange()">
+                    <span>筒子</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.weptwn" (change)="onFilterChange()">
+                    <span>雙槍</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepsnp" (change)="onFilterChange()">
+                    <span>狙擊</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepswr" (change)="onFilterChange()">
+                    <span>雙手劍</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wephmr" (change)="onFilterChange()">
+                    <span>錘子</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepsqr" (change)="onFilterChange()">
+                    <span>長槍</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepdgr" (change)="onFilterChange()">
+                    <span>單手劍</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.wepcqc" (change)="onFilterChange()">
+                    <span>手槍</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 生日月份 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">生日月份</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('birthday')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('birthday')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd1" (change)="onFilterChange()">
+                    <span>1月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd2" (change)="onFilterChange()">
+                    <span>2月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd3" (change)="onFilterChange()">
+                    <span>3月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd4" (change)="onFilterChange()">
+                    <span>4月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd5" (change)="onFilterChange()">
+                    <span>5月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd6" (change)="onFilterChange()">
+                    <span>6月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd7" (change)="onFilterChange()">
+                    <span>7月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd8" (change)="onFilterChange()">
+                    <span>8月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd9" (change)="onFilterChange()">
+                    <span>9月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd10" (change)="onFilterChange()">
+                    <span>10月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd11" (change)="onFilterChange()">
+                    <span>11月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bd12" (change)="onFilterChange()">
+                    <span>12月</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bdunk" (change)="onFilterChange()">
+                    <span>不明</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- 血型 -->
+        <div class="filter-category">
+            <div class="category-header">
+                <span class="category-title">血型</span>
+                <div class="category-controls">
+                    <button class="mini-btn" (click)="selectAllInCategory('bloodType')">全選</button>
+                    <button class="mini-btn" (click)="deselectAllInCategory('bloodType')">取消</button>
+                </div>
+            </div>
+            <div class="category-items">
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.blooda" (change)="onFilterChange()">
+                    <span>A型</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bloodb" (change)="onFilterChange()">
+                    <span>B型</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bloodo" (change)="onFilterChange()">
+                    <span>O型</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bloodab" (change)="onFilterChange()">
+                    <span>AB型</span>
+                </label>
+                <label>
+                    <input type="checkbox" [(ngModel)]="filterSettings.bloodunk" (change)="onFilterChange()">
+                    <span>不明</span>
+                </label>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="character-list">
         <div class="character" *ngFor="let cm of filteredCharacterModels"
         [ngClass]="{
             'selected': selectedCharacterId.has(cm.cid),
@@ -78,5 +307,6 @@
                  draggable="false" />
             <span class="name">{{cm.name}}</span>
         </div>
+    </div>
     </div>
 </div>

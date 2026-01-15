@@ -64,13 +64,12 @@
             border-radius: 4px;
             background-color: #fff;
             cursor: pointer;
-            transition: background-color 0.2s ease;
             white-space: nowrap; // 按鈕文字不換行
             flex-shrink: 0; // 按鈕不會被壓縮
 
             &:hover {
                 background-color: #e7f1ff;
-                border-color: #007bff;
+                border-color: #EC9294;
             }
 
             &:active {
@@ -97,50 +96,11 @@
         }
     }
 
-    .filter-panel {
+    .content-wrapper {
+        flex: 1;
         display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 10px;
-        background-color: #f0f0f0;
-        border-radius: 5px;
-        margin-bottom: 10px;
-        flex-shrink: 0;
-
-        label {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            white-space: nowrap;
-
-            input[type="checkbox"] {
-                cursor: pointer;
-                margin: 0;
-            }
-
-            span {
-                cursor: pointer;
-                user-select: none;
-            }
-
-            &:hover {
-                color: #007bff;
-            }
-        }
-    }
-
-    .character-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        overflow-y: auto; // 垂直滾動
-        border: 1px solid #ccc;
-        padding: 10px;
-        background-color: #f9f9f9;
-        // flex: 1; // 佔據剩餘空間
-        max-height: calc(100vh - 120px); // 限制最大高度，預留上方控制面板的空間
+        flex-direction: column;
+        overflow-y: auto;
         scrollbar-width: thin;
 
         &::-webkit-scrollbar {
@@ -162,6 +122,143 @@
         }
     }
 
+    .filter-panel {
+        flex-shrink: 0;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin: 10px 10px 0 10px;
+        max-width: 800px;
+        align-self: center;
+        width: calc(100% - 20px);
+
+        .filter-panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #EC9294;
+            color: white;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                background-color: #e97a7b;
+            }
+
+            .filter-panel-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .filter-panel-toggle {
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
+
+        .filter-panel-content {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 4px;
+        }
+
+        .filter-category {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 4px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+
+            .category-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 2px;
+                border-bottom: 1px solid #EC9294;
+
+                .category-title {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .category-controls {
+                    display: flex;
+                    gap: 5px;
+
+                    .mini-btn {
+                        padding: 4px 10px;
+                        font-size: 12px;
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        cursor: pointer;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background-color: #e7f1ff;
+                            border-color: #EC9294;
+                            color: #EC9294;
+                        }
+
+                        &:active {
+                            background-color: #cde1ff;
+                        }
+                    }
+                }
+            }
+
+            .category-items {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    white-space: nowrap;
+
+                    input[type="checkbox"] {
+                        cursor: pointer;
+                        margin: 0;
+                    }
+
+                    span {
+                        cursor: pointer;
+                        user-select: none;
+                    }
+
+                    &:hover {
+                        color: #EC9294;
+                    }
+                }
+            }
+        }
+    }
+
+    .character-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+
     .character {
         display: flex;
         flex-direction: column;
@@ -171,7 +268,6 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         opacity: 0.5;
-        transition: opacity 0.1s ease;
 
         // 防止雙擊縮放和長按選單
         touch-action: manipulation;
@@ -184,7 +280,7 @@
         }
 
         &.selected {
-            border-color: #007bff;
+            border-color: #EC9294;
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
             background-color: #e7f1ff;
             opacity: 1;
@@ -202,7 +298,7 @@
                     inset 0 0 0 3px #ff6b35, // 內邊框：橙色
                     0 0 10px rgba(0, 123, 255, 0.5), // 外陰影：藍色（選中）
                     0 0 15px rgba(255, 107, 53, 0.3); // 額外橙色陰影
-                border-color: #007bff;
+                border-color: #EC9294;
                 background-color: #e7f1ff;
             }
         }
