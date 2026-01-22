@@ -1,6 +1,6 @@
 import { Unit } from './unit';
 import { Buff } from './buff';
-import { AttrType, AttrTypeId } from './attr-type';
+import { AttrType, AttrTypeId, AttrTypeIdCloses, AttrTypeIdShots } from './attr-type';
 import { Gear } from './gear';
 import { AikaPsvSkillSlot } from './skill';
 
@@ -448,11 +448,14 @@ export class Character extends Unit {
         let spAdd2 = masterVal * this.spDmgRatio;
 
         const baseVal = spAdd1 + spAdd2;
+        const spRangeTypeId_ = Number(this.spRangeTypeId);
+        const spHitTypeId_ = Number(this.spHitTypeId);
 
         let result = baseVal;
         this.allUnits.forEach(u => {
-            const buffs = u.buffs.filter(b => b.type === this.spRangeTypeId
-                || b.type === this.spHitTypeId);
+            const buffs = u.buffs.filter(b => AttrTypeIdShots.indexOf(b.type) > -1
+                || b.type === spRangeTypeId_
+                || b.type === spHitTypeId_);
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
@@ -473,10 +476,15 @@ export class Character extends Unit {
 
         const baseVal = spAdd1 + spAdd2;
 
+        const spRangeTypeId_ = Number(this.spRangeTypeId);
+        const spHitTypeId_ = Number(this.spHitTypeId);
+
         let result = baseVal;
         this.allUnits.forEach(u => {
-            const buffs = u.buffs.filter(b => b.type === this.spRangeTypeId
-                || b.type === this.spHitTypeId);
+            const buffs = u.buffs.filter(b =>
+                AttrTypeIdCloses.indexOf(b.type) > -1
+                || b.type === spRangeTypeId_
+                || b.type === spHitTypeId_);
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });

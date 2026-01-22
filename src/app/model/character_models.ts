@@ -14031,6 +14031,57 @@ class MerabuchiKanami70 extends Character {
     bloodType: string = 'A';
 }
 
+class MerabuchiKanami80 extends Character {
+    name: string = '米良渕 花浪 / ブレイブ ★4';
+    aid:number = 525;
+    cid: number = 531;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3208;
+    hpMin: number = 861;
+    hpMax: number = 3208;
+    atkClose: number = 630;
+    atkCloseMin: number = 175;
+    atkCloseMax: number = 630;
+    attrClose: number = 0;
+    atkShot: number = 624;
+    atkShotMin: number = 173;
+    atkShotMax: number = 624;
+    attrShot: number = 0;
+    def: number = 891;
+    defMin: number = 248;
+    defMax: number = 891;
+    spd: number = 163;
+    spdMin: number = 163;
+    spdMax: number = 163;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 100;
+    attrMax: number = 360;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.7),
+        new Buff(AttrTypeId.ResistIce, -0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Fire, 0.86),
+        new Buff(AttrTypeId.Hammer, 0.3),
+        new Buff(AttrTypeId.Sniper, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.MerabuchiKanami.long;
+    weaponCloses: Gear[] = ActressGears.MerabuchiKanami.short;
+    equipmentTops: Gear[] = ActressGears.MerabuchiKanami.top;
+    equipmentBottoms: Gear[] = ActressGears.MerabuchiKanami.bottom;
+    birthdayMonth: number = 7;
+    bloodType: string = 'A';
+}
+
 class KomazoiEden01 extends Character {
     name: string = '駒添 絵伝 ★1';
     aid:number = 533;
@@ -14277,6 +14328,56 @@ class KomazoiEden70 extends Character {
         new Buff(AttrTypeId.Fire, 0.96),
         new Buff(AttrTypeId.Bazooka, 0.3),
         new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.KomazoiEden.long;
+    weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
+    equipmentTops: Gear[] = ActressGears.KomazoiEden.top;
+    equipmentBottoms: Gear[] = ActressGears.KomazoiEden.bottom;
+    birthdayMonth: number = 10;
+    bloodType: string = 'O';
+}
+
+class KomazoiEden80 extends Character {
+    name: string = '駒添 絵伝 / クリエイト ★4';
+    aid:number = 533;
+    cid: number = 539;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3272;
+    hpMin: number = 879;
+    hpMax: number = 3272;
+    atkClose: number = 796;
+    atkCloseMin: number = 221;
+    atkCloseMax: number = 796;
+    attrClose: number = 0;
+    atkShot: number = 765;
+    atkShotMin: number = 213;
+    atkShotMax: number = 765;
+    attrShot: number = 0;
+    def: number = 900;
+    defMin: number = 250;
+    defMax: number = 900;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Close;
+    spHitTypeId: AttrTypeId = AttrTypeId.Impact;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Fire;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistFire, 0.6),
+        new Buff(AttrTypeId.ResistIce, -0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.3),
+        new Buff(AttrTypeId.Fire, 0.5),
+        new Buff(AttrTypeId.Dagger, 0.3),
+        new Buff(AttrTypeId.Bazooka, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.KomazoiEden.long;
     weaponCloses: Gear[] = ActressGears.KomazoiEden.short;
@@ -26794,11 +26895,13 @@ export const CharacterModels = {
     MerabuchiKanami04: new MerabuchiKanami04(),
     MerabuchiKanami05: new MerabuchiKanami05(),
     MerabuchiKanami70: new MerabuchiKanami70(),
+    MerabuchiKanami80: new MerabuchiKanami80(),
     KomazoiEden01: new KomazoiEden01(),
     KomazoiEden02: new KomazoiEden02(),
     KomazoiEden04: new KomazoiEden04(),
     KomazoiEden05: new KomazoiEden05(),
     KomazoiEden70: new KomazoiEden70(),
+    KomazoiEden80: new KomazoiEden80(),
     KanayaNeri01: new KanayaNeri01(),
     KanayaNeri02: new KanayaNeri02(),
     KanayaNeri04: new KanayaNeri04(),
