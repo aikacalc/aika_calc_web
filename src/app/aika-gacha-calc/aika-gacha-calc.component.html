@@ -2,10 +2,17 @@
     <div class="control-panel">
         <div class="control-buttons-wrapper">
             <div class="control-buttons">
-                <button (click)="selectAll()">全選</button>
-                <button (click)="selectNone()">取消全選</button>
-                <button (click)="invertSelection()">反選</button>
-                <button (click)="clearSavedSelection()" title="清除儲存的選擇記錄">清除儲存</button>
+                <!-- <button (click)="selectAll()">全選</button> -->
+                <!-- <button (click)="selectNone()">取消全選</button> -->
+                <!-- <button (click)="invertSelection()">反選</button> -->
+                <label class="checkbox-button">
+                    <input type="checkbox" [(ngModel)]="tempBrightAll">
+                    <span>暫時全亮</span>
+                </label>
+                <label class="checkbox-button">
+                    <input type="checkbox" [(ngModel)]="onlyShowOwned">
+                    <span>只顯示持有角色</span>
+                </label>
                 <button (click)="copyShareUrl()" title="複製分享網址到剪貼簿">複製分享網址</button>
                 <p>shift多選/取消 - 依照第一個選擇的角色(橘框)</p>
             </div>
@@ -21,292 +28,181 @@
                 <span class="filter-panel-toggle">{{ isFilterPanelExpanded ? '▲ 收起' : '▼ 展開' }}</span>
             </div>
             <div class="filter-panel-content" *ngIf="isFilterPanelExpanded">
-                <!-- 來源 -->
-                <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">來源</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('source')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('source')">取消</button>
-                </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
-                    <span>本家</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
-                    <span>聯動</span>
-                </label>
-            </div>
-        </div>
+                <!-- 第一區塊：基本篩選（來源、角色類型） -->
+                <div class="basic-filters-section">
+                    <!-- 來源 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">來源</span>
+                        </div>
+                        <div class="category-items">
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
+                                <span>本家</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
+                                <span>聯動</span>
+                            </label>
+                        </div>
+                    </div>
 
-        <!-- 角色類型 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">角色類型</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('characterType')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('characterType')">取消</button>
+                    <!-- 角色類型 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">角色類型</span>
+                        </div>
+                        <div class="category-items">
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
+                                <span>一般</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
+                                <span>AN</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
+                                <span>FA</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
+                                <span>ST</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
-                    <span>一般</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
-                    <span>AN</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
-                    <span>FA</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
-                    <span>ST</span>
-                </label>
-                <!-- <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.backup" (change)="onFilterChange()">
-                    <span>BU</span>
-                </label> -->
-            </div>
-        </div>
 
-        <!-- 屬性 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">屬性</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('attribute')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('attribute')">取消</button>
-                </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.volt" (change)="onFilterChange()">
-                    <span [style.color]="getAttrTypeColor('volt')">電擊</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.gravity" (change)="onFilterChange()">
-                    <span [style.color]="getAttrTypeColor('gravity')">重力</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.fire" (change)="onFilterChange()">
-                    <span [style.color]="getAttrTypeColor('fire')">燒夷</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.ice" (change)="onFilterChange()">
-                    <span [style.color]="getAttrTypeColor('ice')">冷擊</span>
-                </label>
-            </div>
-        </div>
+                <!-- 篩選內容 -->
+                <div class="filter-content">
+                    <!-- 屬性 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">屬性</span>
+                        </div>
+                        <div class="category-filters">
+                            <div class="filter-item" *ngFor="let filter of filterCriteria.attribute; let i = index">
+                                <select [(ngModel)]="filter.value" (change)="onFilterChange()" class="filter-select">
+                                    <option value="all">全部</option>
+                                    <option value="volt">電擊</option>
+                                    <option value="gravity">重力</option>
+                                    <option value="fire">燒夷</option>
+                                    <option value="ice">冷擊</option>
+                                </select>
+                                <button class="remove-btn" *ngIf="filterCriteria.attribute.length > 1" (click)="removeFilter('attribute', i)" title="移除此條件">×</button>
+                            </div>
+                            <button class="add-btn" (click)="addFilter('attribute')" title="新增屬性篩選條件">[+]</button>
+                        </div>
+                    </div>
 
-        <!-- 放出類型 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">放出類型</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('emission')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('emission')">取消</button>
-                </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.emission1" (change)="onFilterChange()">
-                    <span>出力特性</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.emission2" (change)="onFilterChange()">
-                    <span>出力変性</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.emission3" (change)="onFilterChange()">
-                    <span>変質放出</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.emission4" (change)="onFilterChange()">
-                    <span>特質放出</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.emission5" (change)="onFilterChange()">
-                    <span>放出特化</span>
-                </label>
-            </div>
-        </div>
+                    <!-- 放出類型 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">放出類型</span>
+                        </div>
+                        <div class="category-filters">
+                            <div class="filter-item" *ngFor="let filter of filterCriteria.emission; let i = index">
+                                <select [(ngModel)]="filter.value" (change)="onFilterChange()" class="filter-select">
+                                    <option value="all">全部</option>
+                                    <option value="emission1">出力特性</option>
+                                    <option value="emission2">出力変性</option>
+                                    <option value="emission3">変質放出</option>
+                                    <option value="emission4">特質放出</option>
+                                    <option value="emission5">放出特化</option>
+                                </select>
+                                <button class="remove-btn" *ngIf="filterCriteria.emission.length > 1" (click)="removeFilter('emission', i)" title="移除此條件">×</button>
+                            </div>
+                            <button class="add-btn" (click)="addFilter('emission')" title="新增放出類型篩選條件">[+]</button>
+                        </div>
+                    </div>
 
-        <!-- 擅長武器 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">主要擅長武器</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('weapon')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('weapon')">取消</button>
-                </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.weprif" (change)="onFilterChange()">
-                    <span>步槍</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepbaz" (change)="onFilterChange()">
-                    <span>筒子</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.weptwn" (change)="onFilterChange()">
-                    <span>雙槍</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepsnp" (change)="onFilterChange()">
-                    <span>狙擊</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepswr" (change)="onFilterChange()">
-                    <span>雙手劍</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wephmr" (change)="onFilterChange()">
-                    <span>錘子</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepsqr" (change)="onFilterChange()">
-                    <span>長槍</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepdgr" (change)="onFilterChange()">
-                    <span>單手劍</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.wepcqc" (change)="onFilterChange()">
-                    <span>手槍</span>
-                </label>
-            </div>
-        </div>
+                    <!-- 擅長武器 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">主擅長武器</span>
+                        </div>
+                        <div class="category-filters">
+                            <div class="filter-item" *ngFor="let filter of filterCriteria.weapon; let i = index">
+                                <select [(ngModel)]="filter.value" (change)="onFilterChange()" class="filter-select">
+                                    <option value="all">全部</option>
+                                    <option value="weprif">步槍</option>
+                                    <option value="wepbaz">筒子</option>
+                                    <option value="weptwn">雙槍</option>
+                                    <option value="wepsnp">狙擊</option>
+                                    <option value="wepswr">雙手劍</option>
+                                    <option value="wephmr">錘子</option>
+                                    <option value="wepsqr">長槍</option>
+                                    <option value="wepdgr">單手劍</option>
+                                    <option value="wepcqc">手槍</option>
+                                </select>
+                                <button class="remove-btn" *ngIf="filterCriteria.weapon.length > 1" (click)="removeFilter('weapon', i)" title="移除此條件">×</button>
+                            </div>
+                            <button class="add-btn" (click)="addFilter('weapon')" title="新增武器篩選條件">[+]</button>
+                        </div>
+                    </div>
 
-        <!-- 生日月份 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">生日月份</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('birthday')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('birthday')">取消</button>
-                </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd1" (change)="onFilterChange()">
-                    <span>1月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd2" (change)="onFilterChange()">
-                    <span>2月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd3" (change)="onFilterChange()">
-                    <span>3月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd4" (change)="onFilterChange()">
-                    <span>4月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd5" (change)="onFilterChange()">
-                    <span>5月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd6" (change)="onFilterChange()">
-                    <span>6月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd7" (change)="onFilterChange()">
-                    <span>7月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd8" (change)="onFilterChange()">
-                    <span>8月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd9" (change)="onFilterChange()">
-                    <span>9月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd10" (change)="onFilterChange()">
-                    <span>10月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd11" (change)="onFilterChange()">
-                    <span>11月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bd12" (change)="onFilterChange()">
-                    <span>12月</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bdunk" (change)="onFilterChange()">
-                    <span>不明</span>
-                </label>
-            </div>
-        </div>
+                    <!-- 生日月份 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">生日月份</span>
+                        </div>
+                        <div class="category-filters">
+                            <div class="filter-item" *ngFor="let filter of filterCriteria.birthday; let i = index">
+                                <select [(ngModel)]="filter.value" (change)="onFilterChange()" class="filter-select">
+                                    <option value="all">全部</option>
+                                    <option value="bd1">1月</option>
+                                    <option value="bd2">2月</option>
+                                    <option value="bd3">3月</option>
+                                    <option value="bd4">4月</option>
+                                    <option value="bd5">5月</option>
+                                    <option value="bd6">6月</option>
+                                    <option value="bd7">7月</option>
+                                    <option value="bd8">8月</option>
+                                    <option value="bd9">9月</option>
+                                    <option value="bd10">10月</option>
+                                    <option value="bd11">11月</option>
+                                    <option value="bd12">12月</option>
+                                    <option value="bdunk">不明</option>
+                                </select>
+                                <button class="remove-btn" *ngIf="filterCriteria.birthday.length > 1" (click)="removeFilter('birthday', i)" title="移除此條件">×</button>
+                            </div>
+                            <button class="add-btn" (click)="addFilter('birthday')" title="新增生日篩選條件">[+]</button>
+                        </div>
+                    </div>
 
-        <!-- 血型 -->
-        <div class="filter-category">
-            <div class="category-header">
-                <span class="category-title">血型</span>
-                <div class="category-controls">
-                    <button class="mini-btn" (click)="selectAllInCategory('bloodType')">全選</button>
-                    <button class="mini-btn" (click)="deselectAllInCategory('bloodType')">取消</button>
+                    <!-- 血型 -->
+                    <div class="filter-category">
+                        <div class="category-header">
+                            <span class="category-title">血型</span>
+                        </div>
+                        <div class="category-filters">
+                            <div class="filter-item" *ngFor="let filter of filterCriteria.bloodType; let i = index">
+                                <select [(ngModel)]="filter.value" (change)="onFilterChange()" class="filter-select">
+                                    <option value="all">全部</option>
+                                    <option value="blooda">A型</option>
+                                    <option value="bloodb">B型</option>
+                                    <option value="bloodo">O型</option>
+                                    <option value="bloodab">AB型</option>
+                                    <option value="bloodunk">不明</option>
+                                </select>
+                                <button class="remove-btn" *ngIf="filterCriteria.bloodType.length > 1" (click)="removeFilter('bloodType', i)" title="移除此條件">×</button>
+                            </div>
+                            <button class="add-btn" (click)="addFilter('bloodType')" title="新增血型篩選條件">[+]</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="category-items">
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.blooda" (change)="onFilterChange()">
-                    <span>A型</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bloodb" (change)="onFilterChange()">
-                    <span>B型</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bloodo" (change)="onFilterChange()">
-                    <span>O型</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bloodab" (change)="onFilterChange()">
-                    <span>AB型</span>
-                </label>
-                <label>
-                    <input type="checkbox" [(ngModel)]="filterSettings.bloodunk" (change)="onFilterChange()">
-                    <span>不明</span>
-                </label>
-            </div>
-        </div>
+
             </div>
         </div>
         <div class="character-list">
-        <div class="character" *ngFor="let cm of filteredCharacterModels"
-        [ngClass]="{
-            'selected': selectedCharacterId.has(cm.cid),
+            <div class="character" *ngFor="let cm of displayedCharacterModels" [ngClass]="{
+            'selected': selectedCharacterId.has(cm.cid) || tempBrightAll,
             'shift-anchor': isLastSelectedCharacter(cm)
-        }"
-        (click)="toggleSelectCharacter(cm, $event)"
-        (mouseenter)="onCharacterMouseEnter(cm)"
-        (mouseleave)="onCharacterMouseLeave()"
-        (contextmenu)="preventDefault($event)"
-        (dblclick)="preventDefault($event)"
-        (touchstart)="onTouchStart($event)"
-        (touchend)="onTouchEnd($event)"
-        [title]="cm.name + (checkIsCollaboCharacter(cm) ? ' (Collabo)' : '')">
-            <!-- w192, h360 -->
-            <img class="picture" *ngIf="getCharacterPicture(cm)"
-                 [src]="getCharacterPicture(cm)?.imageUrl"
-                 (contextmenu)="preventDefault($event)"
-                 (dragstart)="preventDefault($event)"
-                 draggable="false" />
-            <span class="name">{{cm.name}}</span>
+        }" (click)="toggleSelectCharacter(cm, $event)" (mouseenter)="onCharacterMouseEnter(cm)" (mouseleave)="onCharacterMouseLeave()" (contextmenu)="preventDefault($event)" (dblclick)="preventDefault($event)" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)" [title]="cm.name + (checkIsCollaboCharacter(cm) ? ' (Collabo)' : '')">
+                <!-- w192, h360 -->
+                <img class="picture" *ngIf="getCharacterPicture(cm)" [src]="getCharacterPicture(cm)?.imageUrl" (contextmenu)="preventDefault($event)" (dragstart)="preventDefault($event)" draggable="false" />
+                <span class="name">{{cm.name}}</span>
+            </div>
         </div>
-    </div>
     </div>
 </div>

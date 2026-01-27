@@ -65,6 +65,21 @@ export class AikaGachaCalcComponent implements OnInit {
     // 篩選面板展開狀態
     isFilterPanelExpanded: boolean = true;
 
+    // 暫時全亮：讓所有角色顯示為選中狀態
+    tempBrightAll: boolean = false;
+
+    // 只顯示持有角色：只顯示已選中的角色
+    onlyShowOwned: boolean = false;
+
+    // 多條件篩選設定（陣列形式，支援同類型多條件 OR 篩選）
+    filterCriteria = {
+        attribute: [{ value: 'all' }],    // 屬性篩選
+        emission: [{ value: 'all' }],     // 放出類型篩選
+        weapon: [{ value: 'all' }],       // 擅長武器篩選
+        birthday: [{ value: 'all' }],     // 生日月份篩選
+        bloodType: [{ value: 'all' }]     // 血型篩選
+    };
+
     // 篩選設定
     filterSettings = {
         home: true,        // 本家
@@ -267,60 +282,106 @@ export class AikaGachaCalcComponent implements OnInit {
             if (characterType === 'stellar' && !this.filterSettings.stellar) return false;
             if (characterType === 'backup' && !this.filterSettings.backup) return false;
 
+            // 使用新的多條件 OR 篩選邏輯
             // 檢查屬性篩選
-            if (cm.chrAttrTypeId === AttrTypeId.Volt && !this.filterSettings.volt) return false;
-            if (cm.chrAttrTypeId === AttrTypeId.Gravity && !this.filterSettings.gravity) return false;
-            if (cm.chrAttrTypeId === AttrTypeId.Fire && !this.filterSettings.fire) return false;
-            if (cm.chrAttrTypeId === AttrTypeId.Ice && !this.filterSettings.ice) return false;
+            if (!this.checkFilterCriteria(cm, 'attribute', this.filterCriteria.attribute, (cm, value) => {
+                if (value === 'all') return true;
+                const attrMap: {[key: string]: AttrTypeId} = {
+                    'volt': AttrTypeId.Volt,
+                    'gravity': AttrTypeId.Gravity,
+                    'fire': AttrTypeId.Fire,
+                    'ice': AttrTypeId.Ice
+                };
+                return cm.chrAttrTypeId === attrMap[value];
+            })) return false;
 
             // 檢查 emission 類型篩選
-            const characterEmissionType = this.characterEmissionTypeMap.get(cm);
-            if (characterEmissionType) {
-                if (characterEmissionType === 1 && !this.filterSettings.emission1) return false;
-                if (characterEmissionType === 2 && !this.filterSettings.emission2) return false;
-                if (characterEmissionType === 3 && !this.filterSettings.emission3) return false;
-                if (characterEmissionType === 4 && !this.filterSettings.emission4) return false;
-                if (characterEmissionType === 5 && !this.filterSettings.emission5) return false;
-            }
+            if (!this.checkFilterCriteria(cm, 'emission', this.filterCriteria.emission, (cm, value) => {
+                if (value === 'all') return true;
+                const characterEmissionType = this.characterEmissionTypeMap.get(cm);
+                const emissionValue = parseInt(value.replace('emission', ''));
+                return characterEmissionType === emissionValue;
+            })) return false;
 
             // 檢查擅長武器篩選
-            const characterWepType = this.characterWepTypeMap.get(cm);
-            if (characterWepType) {
-                if (characterWepType === AttrTypeId.Rifle && !this.filterSettings.weprif) return false;
-                if (characterWepType === AttrTypeId.Bazooka && !this.filterSettings.wepbaz) return false;
-                if (characterWepType === AttrTypeId.Twin && !this.filterSettings.weptwn) return false;
-                if (characterWepType === AttrTypeId.Sniper && !this.filterSettings.wepsnp) return false;
-                if (characterWepType === AttrTypeId.Sword && !this.filterSettings.wepswr) return false;
-                if (characterWepType === AttrTypeId.Hammer && !this.filterSettings.wephmr) return false;
-                if (characterWepType === AttrTypeId.Spear && !this.filterSettings.wepsqr) return false;
-                if (characterWepType === AttrTypeId.Dagger && !this.filterSettings.wepdgr) return false;
-                if (characterWepType === AttrTypeId.HandGun && !this.filterSettings.wepcqc) return false;
-            }
+            if (!this.checkFilterCriteria(cm, 'weapon', this.filterCriteria.weapon, (cm, value) => {
+                if (value === 'all') return true;
+                const characterWepType = this.characterWepTypeMap.get(cm);
+                const wepMap: {[key: string]: AttrTypeId} = {
+                    'weprif': AttrTypeId.Rifle,
+                    'wepbaz': AttrTypeId.Bazooka,
+                    'weptwn': AttrTypeId.Twin,
+                    'wepsnp': AttrTypeId.Sniper,
+                    'wepswr': AttrTypeId.Sword,
+                    'wephmr': AttrTypeId.Hammer,
+                    'wepsqr': AttrTypeId.Spear,
+                    'wepdgr': AttrTypeId.Dagger,
+                    'wepcqc': AttrTypeId.HandGun
+                };
+                return characterWepType === wepMap[value];
+            })) return false;
 
             // 檢查生日月份篩選
-            if(cm.birthdayMonth === 1 && !this.filterSettings.bd1) return false;
-            else if(cm.birthdayMonth === 2 && !this.filterSettings.bd2) return false;
-            else if(cm.birthdayMonth === 3 && !this.filterSettings.bd3) return false;
-            else if(cm.birthdayMonth === 4 && !this.filterSettings.bd4) return false;
-            else if(cm.birthdayMonth === 5 && !this.filterSettings.bd5) return false;
-            else if(cm.birthdayMonth === 6 && !this.filterSettings.bd6) return false;
-            else if(cm.birthdayMonth === 7 && !this.filterSettings.bd7) return false;
-            else if(cm.birthdayMonth === 8 && !this.filterSettings.bd8) return false;
-            else if(cm.birthdayMonth === 9 && !this.filterSettings.bd9) return false;
-            else if(cm.birthdayMonth === 10 && !this.filterSettings.bd10) return false;
-            else if(cm.birthdayMonth === 11 && !this.filterSettings.bd11) return false;
-            else if(cm.birthdayMonth === 12 && !this.filterSettings.bd12) return false;
-            else if((cm.birthdayMonth < 1 || cm.birthdayMonth > 12) && !this.filterSettings.bdunk) return false;
+            if (!this.checkFilterCriteria(cm, 'birthday', this.filterCriteria.birthday, (cm, value) => {
+                if (value === 'all') return true;
+                if (value === 'bdunk') {
+                    return cm.birthdayMonth < 1 || cm.birthdayMonth > 12;
+                } else {
+                    const month = parseInt(value.replace('bd', ''));
+                    return cm.birthdayMonth === month;
+                }
+            })) return false;
 
             // 檢查血型篩選
-            if(cm.bloodType === 'A' && !this.filterSettings.blooda) return false;
-            else if(cm.bloodType === 'B' && !this.filterSettings.bloodb) return false;
-            else if(cm.bloodType === 'O' && !this.filterSettings.bloodo) return false;
-            else if(cm.bloodType === 'AB' && !this.filterSettings.bloodab) return false;
-            else if((cm.bloodType !== 'A' && cm.bloodType !== 'B' && cm.bloodType !== 'O' && cm.bloodType !== 'AB') && !this.filterSettings.bloodunk) return false;
+            if (!this.checkFilterCriteria(cm, 'bloodType', this.filterCriteria.bloodType, (cm, value) => {
+                if (value === 'all') return true;
+                if (value === 'bloodunk') {
+                    return !['A', 'B', 'O', 'AB'].includes(cm.bloodType);
+                } else {
+                    const bloodTypeMap: {[key: string]: string} = {
+                        'blooda': 'A',
+                        'bloodb': 'B',
+                        'bloodo': 'O',
+                        'bloodab': 'AB'
+                    };
+                    return cm.bloodType === bloodTypeMap[value];
+                }
+            })) return false;
 
             return true;
         });
+    }
+
+    // 檢查篩選條件（支援多條件 OR 邏輯）
+    private checkFilterCriteria(
+        cm: Character,
+        filterType: string,
+        filters: { value: string }[],
+        checkFn: (cm: Character, value: string) => boolean
+    ): boolean {
+        // 取得所有非 'all' 的篩選條件
+        const activeFilters = filters.filter(f => f.value !== 'all');
+
+        // 如果沒有任何非 'all' 的篩選條件，表示全選，通過篩選
+        if (activeFilters.length === 0) {
+            return true;
+        }
+
+        // 如果有多個條件，使用 OR 邏輯：任一條件符合即通過
+        return activeFilters.some(filter => checkFn(cm, filter.value));
+    }
+
+    // 新增篩選條件
+    addFilter(filterType: 'attribute' | 'emission' | 'weapon' | 'birthday' | 'bloodType'): void {
+        this.filterCriteria[filterType].push({ value: 'all' });
+    }
+
+    // 移除篩選條件
+    removeFilter(filterType: 'attribute' | 'emission' | 'weapon' | 'birthday' | 'bloodType', index: number): void {
+        if (this.filterCriteria[filterType].length > 1) {
+            this.filterCriteria[filterType].splice(index, 1);
+            this.onFilterChange();
+        }
     }
 
     // 篩選設定變更處理
@@ -331,48 +392,6 @@ export class AikaGachaCalcComponent implements OnInit {
     // 切換篩選面板展開/收起
     toggleFilterPanel(): void {
         this.isFilterPanelExpanded = !this.isFilterPanelExpanded;
-    }
-
-    // 選擇某個分類的所有項目
-    selectAllInCategory(category: string): void {
-        const categoryMap: { [key: string]: string[] } = {
-            source: ['home', 'collabo'],
-            characterType: ['normal', 'another', 'factor', 'stellar', 'backup'],
-            attribute: ['volt', 'gravity', 'fire', 'ice'],
-            emission: ['emission1', 'emission2', 'emission3', 'emission4', 'emission5'],
-            weapon: ['weprif', 'wepbaz', 'weptwn', 'wepsnp', 'wepswr', 'wephmr', 'wepsqr', 'wepdgr', 'wepcqc'],
-            birthday: ['bd1', 'bd2', 'bd3', 'bd4', 'bd5', 'bd6', 'bd7', 'bd8', 'bd9', 'bd10', 'bd11', 'bd12', 'bdunk'],
-            bloodType: ['blooda', 'bloodb', 'bloodo', 'bloodab', 'bloodunk']
-        };
-
-        const filters = categoryMap[category];
-        if (filters) {
-            filters.forEach(filter => {
-                (this.filterSettings as any)[filter] = true;
-            });
-            this.onFilterChange();
-        }
-    }
-
-    // 取消選擇某個分類的所有項目
-    deselectAllInCategory(category: string): void {
-        const categoryMap: { [key: string]: string[] } = {
-            source: ['home', 'collabo'],
-            characterType: ['normal', 'another', 'factor', 'stellar', 'backup'],
-            attribute: ['volt', 'gravity', 'fire', 'ice'],
-            emission: ['emission1', 'emission2', 'emission3', 'emission4', 'emission5'],
-            weapon: ['weprif', 'wepbaz', 'weptwn', 'wepsnp', 'wepswr', 'wephmr', 'wepsqr', 'wepdgr', 'wepcqc'],
-            birthday: ['bd1', 'bd2', 'bd3', 'bd4', 'bd5', 'bd6', 'bd7', 'bd8', 'bd9', 'bd10', 'bd11', 'bd12', 'bdunk'],
-            bloodType: ['blooda', 'bloodb', 'bloodo', 'bloodab', 'bloodunk']
-        };
-
-        const filters = categoryMap[category];
-        if (filters) {
-            filters.forEach(filter => {
-                (this.filterSettings as any)[filter] = false;
-            });
-            this.onFilterChange();
-        }
     }
 
     // 獲取屬性類型對應的顏色
@@ -473,6 +492,14 @@ export class AikaGachaCalcComponent implements OnInit {
 
     onCharacterMouseLeave() {
         this.currentHoveredCharacter = null;
+    }
+
+    // 取得要顯示的角色列表（根據只顯示持有角色設定）
+    get displayedCharacterModels(): Character[] {
+        if (this.onlyShowOwned) {
+            return this.filteredCharacterModels.filter(cm => this.selectedCharacterId.has(cm.cid));
+        }
+        return this.filteredCharacterModels;
     }
 
     getSelectionPercentage(): string {
