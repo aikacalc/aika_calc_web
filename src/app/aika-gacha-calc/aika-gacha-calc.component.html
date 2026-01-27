@@ -28,48 +28,70 @@
                 <span class="filter-panel-toggle">{{ isFilterPanelExpanded ? '▲ 收起' : '▼ 展開' }}</span>
             </div>
             <div class="filter-panel-content" *ngIf="isFilterPanelExpanded">
-                <!-- 第一區塊：基本篩選（來源、角色類型） -->
+                <!-- 第一區塊：基本篩選（來源、角色類型、清除按鈕） -->
                 <div class="basic-filters-section">
-                    <!-- 來源 -->
-                    <div class="filter-category">
-                        <div class="category-header">
-                            <span class="category-title">來源</span>
+                    <div class="basic-filters-row">
+                        <!-- 來源 -->
+                        <div class="filter-category">
+                            <div class="category-header">
+                                <span class="category-title">來源</span>
+                            </div>
+                            <div class="category-items">
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
+                                    <span>本家</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
+                                    <span>聯動</span>
+                                </label>
+                            </div>
                         </div>
-                        <div class="category-items">
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.home" (change)="onFilterChange()">
-                                <span>本家</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.collabo" (change)="onFilterChange()">
-                                <span>聯動</span>
-                            </label>
+
+                        <!-- 角色類型 -->
+                        <div class="filter-category">
+                            <div class="category-header">
+                                <span class="category-title">角色類型</span>
+                            </div>
+                            <div class="category-items">
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
+                                    <span>一般</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
+                                    <span>AN</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
+                                    <span>FA</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
+                                    <span>ST</span>
+                                </label>
+                            </div>
                         </div>
+
+                        <!-- 清除全部篩選按鈕 -->
+                        <button class="clear-all-filters-btn" (click)="clearAllFilters()" title="清除全部篩選條件並恢復全選">清除全部篩選</button>
                     </div>
 
-                    <!-- 角色類型 -->
-                    <div class="filter-category">
-                        <div class="category-header">
-                            <span class="category-title">角色類型</span>
-                        </div>
-                        <div class="category-items">
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.normal" (change)="onFilterChange()">
-                                <span>一般</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.another" (change)="onFilterChange()">
-                                <span>AN</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.factor" (change)="onFilterChange()">
-                                <span>FA</span>
-                            </label>
-                            <label>
-                                <input type="checkbox" [(ngModel)]="filterSettings.stellar" (change)="onFilterChange()">
-                                <span>ST</span>
-                            </label>
-                        </div>
+                    <!-- 底下區塊的標題 -->
+                    <div class="section-title">支援角色共鳴篩選</div>
+
+                    <!-- 預設篩選選項 -->
+                    <div class="preset-filters-section">
+                        <label class="preset-label">支援角色：</label>
+                        <select class="preset-select" [(ngModel)]="selectedPresetFilter" (change)="onPresetFilterChange()">
+                            <!-- <option value="custom">自訂</option> -->
+                            <!-- 更多預設選項將在 .ts 中動態添加 -->
+                            <option *ngFor="let preset of presetFilters" [value]="preset.value">{{preset.name}}</option>
+                        </select>
+                        <label class="hide-zero-match-checkbox">
+                            <input type="checkbox" [(ngModel)]="hideZeroMatch" (change)="onFilterChange()">
+                            <span>隱藏0匹配</span>
+                        </label>
                     </div>
                 </div>
 
@@ -162,7 +184,7 @@
                                     <option value="bd10">10月</option>
                                     <option value="bd11">11月</option>
                                     <option value="bd12">12月</option>
-                                    <option value="bdunk">不明</option>
+                                    <option value="bdunk">生日不明</option>
                                 </select>
                                 <button class="remove-btn" *ngIf="filterCriteria.birthday.length > 1" (click)="removeFilter('birthday', i)" title="移除此條件">×</button>
                             </div>
@@ -183,7 +205,7 @@
                                     <option value="bloodb">B型</option>
                                     <option value="bloodo">O型</option>
                                     <option value="bloodab">AB型</option>
-                                    <option value="bloodunk">不明</option>
+                                    <option value="bloodunk">血型不明</option>
                                 </select>
                                 <button class="remove-btn" *ngIf="filterCriteria.bloodType.length > 1" (click)="removeFilter('bloodType', i)" title="移除此條件">×</button>
                             </div>
@@ -202,6 +224,7 @@
                 <!-- w192, h360 -->
                 <img class="picture" *ngIf="getCharacterPicture(cm)" [src]="getCharacterPicture(cm)?.imageUrl" (contextmenu)="preventDefault($event)" (dragstart)="preventDefault($event)" draggable="false" />
                 <span class="name">{{cm.name}}</span>
+                <div class="match-count" *ngIf="getCharacterMatchCount(cm) > 0">{{getCharacterMatchCount(cm)}}</div>
             </div>
         </div>
     </div>

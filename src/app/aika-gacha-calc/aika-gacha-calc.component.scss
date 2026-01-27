@@ -1,18 +1,8 @@
 .aika-gacha-calc {
-    // 防止雙擊縮放
     touch-action: manipulation;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
-
-    // 使用 flexbox 垂直佈局
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     display: flex;
     flex-direction: column;
 
@@ -21,18 +11,17 @@
         align-items: center;
         gap: 10px;
         padding: 10px;
-        background-color: #f5f5f5;
+        background: #f5f5f5;
         border-radius: 5px;
-        flex-shrink: 0; // 固定高度，不會被壓縮
+        flex-shrink: 0;
     }
 
-    .control-buttons-wrapper {
-        flex: 1;
-        overflow-x: auto; // 水平滾動
-        overflow-y: hidden;
+    .control-buttons-wrapper,
+    .content-wrapper {
         scrollbar-width: thin;
 
         &::-webkit-scrollbar {
+            width: 8px;
             height: 6px;
         }
 
@@ -51,28 +40,35 @@
         }
     }
 
+    .control-buttons-wrapper {
+        flex: 1;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
     .control-buttons {
         display: flex;
         gap: 10px;
         align-items: center;
-        min-width: max-content; // 確保不會被壓縮
-        padding-right: 10px; // 右側留一些空間
+        min-width: max-content;
+        padding-right: 10px;
 
-        button {
+        button,
+        .checkbox-button {
             padding: 8px 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            background-color: #fff;
+            background: #fff;
             cursor: pointer;
-            white-space: nowrap; // 按鈕文字不換行
-            flex-shrink: 0; // 按鈕不會被壓縮
+            white-space: nowrap;
+            flex-shrink: 0;
 
             &:hover {
-                background-color: #e7f1ff;
+                background: #e7f1ff;
             }
 
             &:active {
-                background-color: #cde1ff;
+                background: #cde1ff;
             }
         }
 
@@ -80,45 +76,30 @@
             display: flex;
             align-items: center;
             gap: 5px;
-            padding: 8px 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fff;
-            cursor: pointer;
-            white-space: nowrap;
-            flex-shrink: 0;
-            user-select: none;
 
-            &:hover {
-                background-color: #e7f1ff;
-            }
-
-            input[type="checkbox"] {
-                cursor: pointer;
-                margin: 0;
-            }
-
+            input[type="checkbox"],
             span {
                 cursor: pointer;
+                margin: 0;
             }
         }
 
         p {
             margin: 0;
-            white-space: nowrap; // 說明文字不換行
-            flex-shrink: 0; // 不會被壓縮
+            white-space: nowrap;
+            flex-shrink: 0;
         }
     }
 
     .selection-info-fixed {
-        flex-shrink: 0; // 固定寬度，不會被壓縮
+        flex-shrink: 0;
         margin-left: 10px;
 
         .selection-info {
             font-size: 18px;
             font-weight: bold;
             color: #333;
-            white-space: nowrap; // 文字不換行
+            white-space: nowrap;
         }
     }
 
@@ -127,32 +108,13 @@
         display: flex;
         flex-direction: column;
         overflow-y: auto;
-        scrollbar-width: thin;
-
-        &::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        &::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: #c1c1c1;
-            border-radius: 4px;
-
-            &:hover {
-                background: #a8a8a8;
-            }
-        }
     }
 
     .filter-panel {
         flex-shrink: 0;
-        background-color: #f0f0f0;
+        background: #f0f0f0;
         border-radius: 5px;
-        margin: 10px 10px 0 10px;
+        margin: 10px 10px 0;
         max-width: 800px;
         align-self: center;
         width: calc(100% - 20px);
@@ -162,14 +124,14 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 15px;
-            background-color: #EC9294;
+            background: #EC9294;
             color: white;
             border-radius: 5px 5px 0 0;
             cursor: pointer;
             user-select: none;
 
             &:hover {
-                background-color: #e97a7b;
+                background: #e97a7b;
             }
 
             .filter-panel-title {
@@ -189,34 +151,138 @@
             padding: 10px;
         }
 
-        // 第一區塊：基本篩選
         .basic-filters-section {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 10px;
+
+            .basic-filters-row {
+                display: flex;
+                gap: 10px;
+                align-items: stretch;
+
+                .filter-category {
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                .clear-all-filters-btn {
+                    padding: 8px 16px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: 2px solid #e74c3c;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    color: #e74c3c;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    align-self: center;
+
+                    &:hover {
+                        background-color: #e74c3c;
+                        color: #fff;
+                    }
+
+                    &:active {
+                        background-color: #c0392b;
+                        border-color: #c0392b;
+                    }
+                }
+            }
+
+            .section-title {
+                margin-top: 5px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 4px;
+                text-align: center;
+            }
+
+            .preset-filters-section {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 8px 12px;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+
+                .preset-label {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #333;
+                    white-space: nowrap;
+                }
+
+                .preset-select {
+                    flex: 1;
+                    padding: 8px 12px;
+                    font-size: 14px;
+                    border: 2px solid #ddd;
+                    border-radius: 4px;
+                    background: #fff;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-color: #EC9294;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border-color: #EC9294;
+                        box-shadow: 0 0 0 3px rgba(236, 146, 148, 0.1);
+                    }
+                }
+
+                .hide-zero-match-checkbox {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 6px 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    background: #fff;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    user-select: none;
+
+                    &:hover {
+                        background: #e7f1ff;
+                    }
+
+                    input[type="checkbox"],
+                    span {
+                        cursor: pointer;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        color: #333;
+                    }
+                }
+            }
         }
 
-        // 篩選內容（原本的單選內容）
         .filter-content {
             display: flex;
             gap: 10px;
-            background-color: #ffffff;
-            border: 2px solid #EC9294;
+            background: #fff;
+            border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
             margin-top: 8px;
         }
 
-        // 單選分頁中的 select 元素樣式
         .filter-select {
             width: 100%;
             padding: 8px 12px;
             font-size: 14px;
             border: 2px solid #ddd;
             border-radius: 4px;
-            background-color: #fff;
+            background: #fff;
             cursor: pointer;
-            // transition: all 0.2s ease;
 
             &:hover {
                 border-color: #EC9294;
@@ -239,12 +305,12 @@
             flex-direction: column;
             gap: 6px;
             padding: 4px;
-            background-color: #ffffff;
+            background: #fff;
             border: 1px solid #ccc;
             border-radius: 5px;
 
             &:hover {
-                border: 1px solid #777;
+                border-color: #777;
             }
 
             .category-header {
@@ -269,18 +335,18 @@
                         font-size: 12px;
                         border: 1px solid #ccc;
                         border-radius: 3px;
-                        background-color: #fff;
+                        background: #fff;
                         cursor: pointer;
                         white-space: nowrap;
 
                         &:hover {
-                            background-color: #e7f1ff;
+                            background: #e7f1ff;
                             border-color: #EC9294;
                             color: #EC9294;
                         }
 
                         &:active {
-                            background-color: #cde1ff;
+                            background: #cde1ff;
                         }
                     }
                 }
@@ -306,7 +372,7 @@
                         font-weight: bold;
                         border: 1px solid #ccc;
                         border-radius: 3px;
-                        background-color: #fff;
+                        background: #fff;
                         color: #e74c3c;
                         cursor: pointer;
                         min-width: 32px;
@@ -316,12 +382,12 @@
                         justify-content: center;
 
                         &:hover {
-                            background-color: #ffe5e5;
+                            background: #ffe5e5;
                             border-color: #e74c3c;
                         }
 
                         &:active {
-                            background-color: #ffcccc;
+                            background: #ffcccc;
                         }
                     }
                 }
@@ -332,17 +398,16 @@
                     font-weight: bold;
                     border: 1px solid #ccc;
                     border-radius: 4px;
-                    background-color: #fff;
+                    background: #fff;
                     cursor: pointer;
                     text-align: center;
-                    // transition: all 0.2s ease;
 
                     &:hover {
-                        background-color: #f1f1f1;
+                        background: #f1f1f1;
                     }
 
                     &:active {
-                        background-color: #ffd4d6;
+                        background: #ffd4d6;
                     }
                 }
             }
@@ -384,7 +449,7 @@
         gap: 10px;
         padding: 10px;
         margin: 10px;
-        background-color: #f9f9f9;
+        background: #f9f9f9;
         border: 1px solid #ccc;
         border-radius: 5px;
         flex-shrink: 0;
@@ -399,11 +464,8 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         opacity: 0.5;
-
-        // 防止雙擊縮放和長按選單
+        position: relative;
         touch-action: manipulation;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
         user-select: none;
 
         .name {
@@ -413,31 +475,45 @@
         &.selected {
             border-color: #EC9294;
             box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-            background-color: #e7f1ff;
+            background: #e7f1ff;
             opacity: 1;
         }
 
         &.shift-anchor {
-            // Shift 選擇起始點的特殊樣式
             box-shadow:
-                inset 0 0 0 3px #ff6b35, // 內邊框：橙色
-                0 0 10px rgba(255, 107, 53, 0.5); // 外陰影：橙色
+                inset 0 0 0 3px #ff6b35,
+                0 0 10px rgba(255, 107, 53, 0.5);
 
             &.selected {
-                // 如果同時是選中狀態，組合兩種效果
                 box-shadow:
-                    inset 0 0 0 3px #ff6b35, // 內邊框：橙色
-                    0 0 10px rgba(0, 123, 255, 0.5), // 外陰影：藍色（選中）
-                    0 0 15px rgba(255, 107, 53, 0.3); // 額外橙色陰影
+                    inset 0 0 0 3px #ff6b35,
+                    0 0 10px rgba(0, 123, 255, 0.5),
+                    0 0 15px rgba(255, 107, 53, 0.3);
                 border-color: #EC9294;
-                background-color: #e7f1ff;
+                background: #e7f1ff;
             }
         }
 
         &:hover {
             cursor: pointer;
             opacity: 1;
-            background-color: #eef6ff;
+            background: #eef6ff;
+        }
+
+        .match-count {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background: #EC9294;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 12px;
+            min-width: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
     }
 
@@ -450,18 +526,13 @@
     }
 
     .picture {
-        width: 192px * 0.5;
-        height: 360px * 0.5;
+        width: 96px;
+        height: 180px;
         object-fit: cover;
         border-radius: 10%;
         margin-top: 5px;
-
-        // 防止圖片拖拽和長按儲存
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        pointer-events: none;
         user-select: none;
+        pointer-events: none;
     }
 
     .name {
