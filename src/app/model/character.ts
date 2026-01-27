@@ -69,9 +69,30 @@ export const attrTypeEnigmaStatus = {
     },
 }
 
+export class AssistPreset {
+    hp: number = 0;
+    hpPct: number = 0;
+    def: number = 0;
+    defPct: number = 0;
+    shotAtk: number = 0;
+    shotAtkPct: number = 0;
+    shotAttr: number = 0;
+    shotAttrPct: number = 0;
+    closeAtk: number = 0;
+    closeAtkPct: number = 0;
+    closeAttr: number = 0;
+    closeAttrPct: number = 0;
+
+    toArray(): number[] {
+        return [ this.hp, this.hpPct, this.def, this.defPct,
+            this.shotAtk, this.shotAtkPct, this.shotAttr, this.shotAttrPct,
+            this.closeAtk, this.closeAtkPct, this.closeAttr, this.closeAttrPct ];
+        }
+}
+
 export class Character extends Unit {
     id: number = -1; // Local ID
-    aid:number = -1; // Actress ID
+    aid: number = -1; // Actress ID
     cid: number = -1; // Character ID
     // characterType: string = ''; // Character ID
 
@@ -148,6 +169,8 @@ export class Character extends Unit {
     set equipmentTopIndex(value) { this._equipmentTopIndex = Number(value); }
     set equipmentBottomIndex(value) { this._equipmentBottomIndex = Number(value); }
 
+    assistPresets: AssistPreset[] = [new AssistPreset(), new AssistPreset(), new AssistPreset(), new AssistPreset()];
+    assist: AssistPreset = this.assistPresets[0];
 
     isApplyGears: boolean = false;
     get gears(): Gear[] {
@@ -274,7 +297,7 @@ export class Character extends Unit {
         this.hpEnigma = this.masterPlus;
         const enigmaStatusVal = this.hpEnigma;
         const tuneVal = this.gears.reduce((v, c) => v + c.tuneHp, 0);
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.hp;
 
         let result = baseVal;
 
@@ -284,6 +307,8 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.hpPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.hp = result;
     }
@@ -293,7 +318,7 @@ export class Character extends Unit {
         const masterVal = masterLevelStatus[this.masterLevel].def;
         const enigmaStatusVal = this.defEnigma;
         const tuneVal = this.gears.reduce((v, c) => v + c.tuneDef, 0);
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.def;
 
         let result = baseVal;
         const targetAttrTypeId = AttrTypeId.DEF;
@@ -302,6 +327,8 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.defPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.def = result;
     }
@@ -315,7 +342,7 @@ export class Character extends Unit {
             enigmaStatusVal = this.atkShotEnigmaCustom;
         }
         const tuneVal = gear.tuneAtk;
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.shotAtk;
 
         let result = baseVal;
 
@@ -326,6 +353,8 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.shotAtkPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.atkShot = result;
     }
@@ -339,7 +368,7 @@ export class Character extends Unit {
             enigmaStatusVal = this.attrShotEnigmaCustom;
         }
         const tuneVal = gear.tuneAttr;
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.shotAttr;
 
         let result = baseVal;
 
@@ -349,7 +378,8 @@ export class Character extends Unit {
             buffs.push(...buffs_);
         });
         const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
-        result += totalBuffVal;
+        const assistBuffVal = Math.floor(this.assist.shotAttrPct * baseVal / 100);
+        result += totalBuffVal + assistBuffVal;
 
         this.attrShot = result;
 
@@ -365,7 +395,7 @@ export class Character extends Unit {
         }
 
         const tuneVal = gear.tuneAtk;
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.closeAtk;
 
         let result = baseVal;
 
@@ -376,6 +406,8 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.closeAtkPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.atkClose = result;
     }
@@ -390,7 +422,7 @@ export class Character extends Unit {
         }
 
         const tuneVal = gear.tuneAttr;
-        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal;
+        const baseVal = chrBaseVal + gearBaseVal + masterVal + enigmaStatusVal + tuneVal + this.assist.closeAttr;
 
         let result = baseVal;
 
@@ -400,7 +432,8 @@ export class Character extends Unit {
             buffs.push(...buffs_);
         });
         const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
-        result += totalBuffVal;
+        const assistBuffVal = Math.floor(this.assist.closeAttrPct * baseVal / 100);
+        result += totalBuffVal + assistBuffVal;
 
         this.attrClose = result;
         // let enigmaValue = this.attrCloseEnigma;
@@ -447,7 +480,9 @@ export class Character extends Unit {
         masterVal += enigmaStatusVal;
         let spAdd2 = masterVal * this.spDmgRatio;
 
-        const baseVal = spAdd1 + spAdd2;
+        let spAdd3 = this.assist.shotAtk * this.spDmgRatio;
+
+        const baseVal = spAdd1 + spAdd2 + spAdd3;
         const spRangeTypeId_ = Number(this.spRangeTypeId);
         const spHitTypeId_ = Number(this.spHitTypeId);
 
@@ -459,6 +494,8 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.shotAtkPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.atkShotSp = Math.floor(result);
     }
@@ -474,7 +511,9 @@ export class Character extends Unit {
         masterVal += enigmaStatusVal;
         let spAdd2 = masterVal * this.spDmgRatio;
 
-        const baseVal = spAdd1 + spAdd2;
+        let spAdd3 = this.assist.closeAtk * this.spDmgRatio;
+
+        const baseVal = spAdd1 + spAdd2 + spAdd3;
 
         const spRangeTypeId_ = Number(this.spRangeTypeId);
         const spHitTypeId_ = Number(this.spHitTypeId);
@@ -488,18 +527,28 @@ export class Character extends Unit {
             const totalBuffVal = Math.floor(buffs.reduce((p, c) => p + (baseVal * c.valuePct / 100), 0));
             result += totalBuffVal;
         });
+        const assistBuffVal = Math.floor(this.assist.closeAtkPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.atkCloseSp = Math.floor(result);
     }
     updateAttrSp(): void {
         const chrBaseVal = this.calcValue(this.attrMin, this.attrMax);
 
-
         let enigmaStatusVal = this.attrShotEnigma;
         if (this.isCustomEnigmaStatus) {
             enigmaStatusVal = this.attrShotEnigmaCustom;
         }
-        const baseVal = chrBaseVal + enigmaStatusVal;
+
+        let assistVal = this.assist.shotAttr;
+        let assistPct = this.assist.shotAttrPct;
+        if (this.spRangeTypeId == AttrTypeId.Close) {
+            assistVal = this.assist.closeAttr;
+            assistPct = this.assist.closeAttrPct;
+        }
+
+
+        const baseVal = chrBaseVal + enigmaStatusVal + assistVal;
 
         let result = baseVal;
         this.allUnits.forEach(u => {
@@ -509,6 +558,8 @@ export class Character extends Unit {
                 result += totalBuffVal;
             }
         });
+        const assistBuffVal = Math.floor(assistPct * baseVal / 100);
+        result += assistBuffVal;
 
         this.attrSp = result;
     }

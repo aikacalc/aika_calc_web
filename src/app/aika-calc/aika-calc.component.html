@@ -566,6 +566,103 @@
                 </table>
             </div>
         </div>
+        <div class="block assist-chara">
+            <div class="row assist">
+                <table class="unit assist">
+                    <tbody>
+                        <tr>
+                            <td class="title-cell" colspan="2">
+                                <span>支援角色</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="assist-preset-button" [ngClass]="{selected: character.assist==character.assistPresets[0]}"(click)="selectAssistPreset(0)">1</button>
+                                <button class="assist-preset-button" [ngClass]="{selected: character.assist==character.assistPresets[1]}"(click)="selectAssistPreset(1)">2</button>
+                                <button class="assist-preset-button" [ngClass]="{selected: character.assist==character.assistPresets[2]}"(click)="selectAssistPreset(2)">3</button>
+                                <button class="assist-preset-button" [ngClass]="{selected: character.assist==character.assistPresets[3]}"(click)="selectAssistPreset(3)">4</button>
+                                <button class="assist-preset-button" [ngClass]="{copyed: copyedAssistSetting==character.assist}" (click)="copyAssistSetting()" title="複製">C</button>
+                                <button class="assist-preset-button paste" (click)="pasteAssistSetting()" title="貼上">P{{' '+copyedAssistName}}</button>
+                                <button class="assist-preset-button paste" (click)="saveAllCharacterAssistSavedata()" title="保存所有角色的支援角色設定">存</button>
+                                <button class="assist-preset-button paste" (click)="loadAllCharacterAssistSavedata()" title="讀取所有角色的支援角色設定">讀</button>
+                            </td>
+                        </tr>
+                        <tr class="hp">
+                            <td class="name">HP</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.hpPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.hp"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="def">
+                            <td class="name">DEF</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.defPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.def"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="atk">
+                            <td class="name">射擊ATK</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.shotAtkPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.shotAtk"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="attr">
+                            <td class="name">射擊屬性</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.shotAttrPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.shotAttr"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="atk">
+                            <td class="name">近身ATK</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.closeAtkPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.closeAtk"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="attr">
+                            <td class="name">近身屬性</td>
+                            <td>
+                                <div class="wrapper-row">
+                                    <input type="number" [(ngModel)]="character.assist.closeAttrPct"
+                                        (ngModelChange)="character.updateStatus()">
+                                    <span>% +</span>
+                                    <input type="number" [(ngModel)]="character.assist.closeAttr"
+                                        (ngModelChange)="character.updateStatus()">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 <ng-template #gearCustomRow let-data="data">

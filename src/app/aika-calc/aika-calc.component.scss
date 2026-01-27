@@ -278,6 +278,24 @@
             >.row.weapon {}
 
             >.row.equipment {}
+
+            .assist-preset-button {
+                &.selected {
+                    border: 2px solid #00f;
+                }
+                &.copyed {
+                    background-color: #0c0;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #0e0;
+                    }
+                }
+
+                &.paste {
+                    font-size: 12px;
+                }
+            }
         }
     }
 

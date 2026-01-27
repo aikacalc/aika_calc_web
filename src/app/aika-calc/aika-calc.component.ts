@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AttrTypeId, AttrTypeIdAttrs, AttrTypeIdCloses, AttrTypeIdList, AttrTypeIdShots, AttrTypeName, getTypeColor } from '../model/attr-type';
-import { attrTypeEnigmaStatus, Character } from '../model/character';
+import { AssistPreset, attrTypeEnigmaStatus, Character } from '../model/character';
 import { Buff } from '../model/buff';
 import { AppService } from '../app.service';
 import { CharacterModels } from '../model/character_models';
@@ -64,6 +64,9 @@ DEF+200
 射擊/近戰+100`
     }
     loadingSettingError: boolean = false;
+
+    copyedAssistSetting: AssistPreset;
+    copyedAssistName: string = '';
 
     constructor(
         public service: AppService
@@ -222,10 +225,10 @@ DEF+200
 
                 let closeAmmoType = AttrTypeId.None;
                 let shotAmmoType = AttrTypeId.None;
-                if(closeTypeBuff != null) {
+                if (closeTypeBuff != null) {
                     closeAmmoType = [AttrTypeId.Hammer, AttrTypeId.HandGun].indexOf(closeType) > -1 ? AttrTypeId.Impact : AttrTypeId.Slash;
                 }
-                if(shotTypeBuff != null) {
+                if (shotTypeBuff != null) {
                     shotAmmoType = shotType == AttrTypeId.Rifle ? AttrTypeId.Energy : AttrTypeId.Physical;
                 }
 
@@ -678,5 +681,89 @@ DEF+200
         }
 
         return success;
+    }
+
+    copyAssistSetting(): void {
+        if (this.copyedAssistSetting == null) {
+            this.copyedAssistSetting = this.character.assist;
+            const assistIndex = this.character.assistPresets.findIndex(ap => ap == this.character.assist);
+            this.copyedAssistName = this.character.name + '-' + (assistIndex + 1);
+        } else {
+            this.copyedAssistSetting = null;
+            this.copyedAssistName = '';
+        }
+    }
+    pasteAssistSetting(): void {
+        if (this.copyedAssistSetting) {
+            this.character.assist.hp = this.copyedAssistSetting.hp;
+            this.character.assist.hpPct = this.copyedAssistSetting.hpPct;
+            this.character.assist.def = this.copyedAssistSetting.def;
+            this.character.assist.defPct = this.copyedAssistSetting.defPct;
+            this.character.assist.shotAtk = this.copyedAssistSetting.shotAtk;
+            this.character.assist.shotAtkPct = this.copyedAssistSetting.shotAtkPct;
+            this.character.assist.shotAttr = this.copyedAssistSetting.shotAttr;
+            this.character.assist.shotAttrPct = this.copyedAssistSetting.shotAttrPct;
+            this.character.assist.closeAtk = this.copyedAssistSetting.closeAtk;
+            this.character.assist.closeAtkPct = this.copyedAssistSetting.closeAtkPct;
+            this.character.assist.closeAttr = this.copyedAssistSetting.closeAttr;
+            this.character.assist.closeAttrPct = this.copyedAssistSetting.closeAttrPct;
+            this.character.updateStatus();
+        }
+    }
+    selectAssistPreset(index: number): void {
+        // const targetAssist = this.character.assistPresets[index];
+        // this.character.assist.hp = targetAssist.hp;
+        // this.character.assist.hpPct = targetAssist.hpPct;
+        // this.character.assist.def = targetAssist.def;
+        // this.character.assist.defPct = targetAssist.defPct;
+        // this.character.assist.shotAtk = targetAssist.shotAtk;
+        // this.character.assist.shotAtkPct = targetAssist.shotAtkPct;
+        // this.character.assist.shotAttr = targetAssist.shotAttr;
+        // this.character.assist.shotAttrPct = targetAssist.shotAttrPct;
+        // this.character.assist.closeAtk = targetAssist.closeAtk;
+        // this.character.assist.closeAtkPct = targetAssist.closeAtkPct;
+        // this.character.assist.closeAttr = targetAssist.closeAttr;
+        // this.character.assist.closeAttrPct = targetAssist.closeAttrPct;
+        this.character.assist = this.character.assistPresets[index];
+        this.character.updateStatus();
+    }
+
+    saveAllCharacterAssistSavedata(): void {
+        const assistDatas = {};
+        Object.keys(this.characterDict).forEach(charaName => {
+            const chara = this.characterDict[charaName];
+            assistDatas[charaName] = chara.assistPresets.map(ap => ap.toArray());
+        });
+        const assistDataString = encodeURIComponent(JSON.stringify(assistDatas));
+        localStorage.setItem('aikaCalcCharacterAssistSavedata', assistDataString);
+    }
+    loadAllCharacterAssistSavedata(): void {
+        const assistDataString = localStorage.getItem('aikaCalcCharacterAssistSavedata');
+        if (assistDataString) {
+            const assistDatas = JSON.parse(decodeURIComponent(assistDataString));
+            Object.keys(assistDatas).forEach(charaName => {
+                const chara = this.characterDict[charaName];
+                if (chara) {
+                    const charaAssistDatas = assistDatas[charaName];
+                    charaAssistDatas.forEach((ad, index) => {
+                        const assistPreset = chara.assistPresets[index];
+                        if (assistPreset) {
+                            assistPreset.hp = ad[0];
+                            assistPreset.hpPct = ad[1];
+                            assistPreset.def = ad[2];
+                            assistPreset.defPct = ad[3];
+                            assistPreset.shotAtk = ad[4];
+                            assistPreset.shotAtkPct = ad[5];
+                            assistPreset.shotAttr = ad[6];
+                            assistPreset.shotAttrPct = ad[7];
+                            assistPreset.closeAtk = ad[8];
+                            assistPreset.closeAtkPct = ad[9];
+                            assistPreset.closeAttr = ad[10];
+                            assistPreset.closeAttrPct = ad[11];
+                        }
+                    });
+                }
+            });
+        }
     }
 }
