@@ -21,7 +21,12 @@
                 <table class="status-table">
                     <tbody>
                         <tr>
-                            <td class="title-cell" colspan="3">{{character.name}}</td>
+                            <td class="title-cell" colspan="3">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span>{{character.name}}</span>
+                                    <span>評價:{{character.rating}}</span>
+                                </div>
+                            </td>
                         </tr>
                         <tr class="level">
                             <td class="name">Lv</td>

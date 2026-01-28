@@ -84,10 +84,10 @@ export class AssistPreset {
     closeAttrPct: number = 0;
 
     toArray(): number[] {
-        return [ this.hp, this.hpPct, this.def, this.defPct,
-            this.shotAtk, this.shotAtkPct, this.shotAttr, this.shotAttrPct,
-            this.closeAtk, this.closeAtkPct, this.closeAttr, this.closeAttrPct ];
-        }
+        return [this.hp, this.hpPct, this.def, this.defPct,
+        this.shotAtk, this.shotAtkPct, this.shotAttr, this.shotAttrPct,
+        this.closeAtk, this.closeAtkPct, this.closeAttr, this.closeAttrPct];
+    }
 }
 
 export class Character extends Unit {
@@ -171,6 +171,17 @@ export class Character extends Unit {
 
     assistPresets: AssistPreset[] = [new AssistPreset(), new AssistPreset(), new AssistPreset(), new AssistPreset()];
     assist: AssistPreset = this.assistPresets[0];
+
+    rating: number = 0;
+    static ratingRate = {
+        hp: 1,
+        shotAtk: 8.2,
+        shotAttr: 12.5,
+        closeAtk: 8.2,
+        closeAttr: 12.5,
+        def: 4.6,
+        spd: 16,
+    };
 
     isApplyGears: boolean = false;
     get gears(): Gear[] {
@@ -265,6 +276,8 @@ export class Character extends Unit {
         } else {
             this.atkSp = 0;
         }
+
+        this.updateRating();
     }
     setLevelGrowthVal(): void {
         let level = this.level;
@@ -562,6 +575,18 @@ export class Character extends Unit {
         result += assistBuffVal;
 
         this.attrSp = result;
+    }
+
+    updateRating():void{
+        let totalRating = 0;
+        totalRating += this.hp * Character.ratingRate.hp;
+        totalRating += this.atkShot * Character.ratingRate.shotAtk;
+        totalRating += this.attrShot * Character.ratingRate.shotAttr;
+        totalRating += this.atkClose * Character.ratingRate.closeAtk;
+        totalRating += this.attrClose * Character.ratingRate.closeAttr;
+        totalRating += this.def * Character.ratingRate.def;
+        totalRating += this.spd * Character.ratingRate.spd;
+        this.rating = Math.floor(totalRating);
     }
 
     serialSavedata(): string {
