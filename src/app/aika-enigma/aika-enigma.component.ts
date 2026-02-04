@@ -595,5 +595,8 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
                 selectedPsvSkillGids.add(selectedPsvSkill.gid);
             }
         }
+
+        this.updatePsvSkillStatus();
+        this.updateEffectSummary();
     }
 }
