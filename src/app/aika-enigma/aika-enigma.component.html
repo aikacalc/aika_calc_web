@@ -12,6 +12,19 @@
         </select>
     </div>
     <div class="character">
+        <div class="auto-psv">
+            <span>自動test:</span>
+            <label *ngFor="let area of selectedSectionAreasWithoutCommon">
+                <input type="checkbox" [(ngModel)]="autoAssignPsvSectionAreas[area.name]">
+                <span>{{area.name}}</span>
+            </label>
+            <button type="button" (click)="autoAssignPsvSkills('SP')">SP</button>
+            <button type="button" (click)="autoAssignPsvSkills('ShotATK')">射擊ATK</button>
+            <button type="button" (click)="autoAssignPsvSkills('CloseATK')">近戰ATK</button>
+            <button type="button" (click)="autoAssignPsvSkills('Attr')">屬性</button>
+            <button type="button" (click)="autoAssignPsvSkills('DamageCut')">減傷</button>
+            <button type="button" (click)="autoAssignPsvSkills('Heal')">奶</button>
+        </div>
         <h1 class="name">{{getSelectedCharacterName()}}</h1>
         <div class="effect-summary">{{selectedCharacterEffectSummary}}</div>
         <div class="character-psvskill-list">
@@ -50,6 +63,10 @@
             <div class="row">
                 <span>過濾:</span>
                 <button type="button" (click)="setEffectFilter('ALL',$event)">ALL</button>
+                <label>
+                    <input type="checkbox" [(ngModel)]="showLv3PsvOnly" (change)="onFilterLv3PsvOnlyChanged()">
+                    <span>只顯示Lv.3/固有</span>
+                </label>
                 <label *ngFor="let area of selectedSectionAreas">
                     <input type="checkbox" [(ngModel)]="showAreaPsvSkills[area.name]" (change)="onFilterAreaCheckboxChanged(area.name)">
                     <span>{{area.name}}</span>

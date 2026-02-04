@@ -71,7 +71,10 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
     selectedSection: AikaEnigmaSection | null = null;
     selectedSectionId: number = -1;
     selectedSectionAreas: AikaEnigmaArea[] = [];
+    selectedSectionAreasWithoutCommon: AikaEnigmaArea[] = [];
+    showLv3PsvOnly: boolean = true;
     showAreaPsvSkills: { [key: number]: boolean } = {};
+    autoAssignPsvSectionAreas: { [key: string]: boolean } = {};
 
     errorMessage: string = '';
     gid: number = 1;
@@ -239,9 +242,13 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
                 });
 
                 this.selectedSectionAreas = this.selectedSection.area;
+                this.selectedSectionAreasWithoutCommon = this.selectedSectionAreas.filter(v => v.name != 'common');
                 this.selectedSectionId = this.selectedSection.id;
                 for (const area of this.selectedSectionAreas) {
                     this.showAreaPsvSkills[area.name] = true;
+                }
+                for (const area of this.selectedSectionAreasWithoutCommon) {
+                    this.autoAssignPsvSectionAreas[area.name] = true;
                 }
                 console.log('Selected Section Areas:', this.selectedSectionAreas);
             }
@@ -287,17 +294,7 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             return;
         }
         this.selectedSlot = slot;
-        this.slotSelectablePsvSkills = [];
-        this.selectedActressPsvSkills.forEach((psvSkill) => {
-            if (this.selectedSlot.tagName == '[ALL]') {
-                this.slotSelectablePsvSkills.push(psvSkill);
-            }
-            else if (psvSkill.tags
-                && psvSkill.tags.includes(this.selectedSlot.tag)
-                && psvSkill.cost <= this.selectedSlot.cost) {
-                this.slotSelectablePsvSkills.push(psvSkill);
-            }
-        });
+        this.slotSelectablePsvSkills = this.getSlotSelectablePsvSkill(slot);
 
         this.slotSelectablePsvSkillEffectNames = [];
         this.slotSelectablePsvSkills.forEach((psvSkill) => {
@@ -329,6 +326,20 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         //     slot.psvSkill = null;
         // }
         // console.log('Selected Psv Skill:', slot.psvSkill);
+    }
+    getSlotSelectablePsvSkill(slot: AikaPsvSkillSlot): AikaEnigmaPsvSkill[] {
+        const slotSelectablePsvSkills: AikaEnigmaPsvSkill[] = [];
+        this.selectedActressPsvSkills.forEach((psvSkill) => {
+            if (slot.tagName == '[ALL]') {
+                slotSelectablePsvSkills.push(psvSkill);
+            }
+            else if (psvSkill.tags
+                && psvSkill.tags.includes(slot.tag)
+                && psvSkill.cost <= slot.cost) {
+                slotSelectablePsvSkills.push(psvSkill);
+            }
+        });
+        return slotSelectablePsvSkills;
     }
     selectPsvSkill(psvSkill: AikaEnigmaPsvSkill): void {
         // console.log('Selected Psv Skill:', psvSkill);
@@ -457,6 +468,7 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
     setEffectFilter(effectName: string, $event_: Event): void {
         if (effectName == 'ALL') {
             this.filterEffectNames = [];
+            this.showLv3PsvOnly = true;
             for (const area of this.selectedSectionAreas) {
                 this.showAreaPsvSkills[area.name] = true;
             }
@@ -485,16 +497,27 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
         if (!this.showAreaPsvSkills[this.selectedActressPsvSkillAreaName[psvSkill.gid]]) {
             return true; // Area is hidden
         }
+        if (this.showLv3PsvOnly) {
+            if (psvSkill.maxLv > 1 && psvSkill.level < 3) {
+                return true; // Hide non-Lv.3 skills
+            }
+        }
+
         if (this.filterEffectNames.length == 0) {
             return false; // No filter, show all
         }
-        // if (psvSkill.effects.some(effect =>
-        //     this.filterEffectNames.every((filterEffectName) => effect.name && effect.name.includes(filterEffectName)
-        //     ))) {
-        //     return false; // At least one effect matches the filter
-        // }
+
         if (this.filterEffectNames.every(filterEffectName => {
-            return psvSkill.effects.some(effect => effect.name && effect.name.includes(filterEffectName));
+            return psvSkill.effects.some(effect => {
+                if (!effect.name) return false;
+
+                // 精確匹配特殊情況：避免 'SP' 匹配到 'SPD'
+                if (filterEffectName === 'SP') {
+                    return effect.name.includes('SP') && !effect.name.includes('SPD');
+                }
+
+                return effect.name.includes(filterEffectName);
+            });
         }
         )) {
             return false; // At least one effect matches the filter
@@ -504,9 +527,94 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
     onFilterAreaCheckboxChanged(areaName: string): void {
         console.log('Area checkbox changed:', areaName, this.showAreaPsvSkills[areaName]);
-        // const slot_ = this.selectedSlot;
-        // this.selectedSlot = null;
-        // this.selectSlot(slot_);
+    }
+    onFilterLv3PsvOnlyChanged(): void {
+        console.log('Lv.3 Psv Only checkbox changed:', this.showLv3PsvOnly);
     }
 
+    autoAssignPsvSkills(type: string): void {
+        //type: SP ShotATK CloseATK Attr DamageCut Heal
+        const slotLength = this.selectedCharacterSlots.length;
+        const selectedPsvSkillGids: Set<number> = new Set();
+        for (let i = slotLength - 1; i >= 0; i--) {
+            const slot = this.selectedCharacterSlots[i];
+            const selectablePsvSkills = this.getSlotSelectablePsvSkill(slot)
+                .filter(psvSkill => {
+                    const areaName = this.selectedActressPsvSkillAreaName[psvSkill.gid];
+                    if (areaName == 'common') {
+                        if (psvSkill.maxLv > 1 && psvSkill.level < 3) {
+                            return false; // Hide non-Lv.3 skills
+                        }
+                        return true;
+                    }
+                    if (!this.autoAssignPsvSectionAreas[areaName]) {
+                        return false;
+                    }
+                    if (psvSkill.maxLv > 1 && psvSkill.level < 3) {
+                        return false; // Hide non-Lv.3 skills
+                    }
+                    return true;
+                });
+            if (selectablePsvSkills.length == 0) {
+                continue;
+            }
+            const filteredPsvSkills = selectablePsvSkills.filter(v => {
+                if (selectedPsvSkillGids.has(v.gid)) {
+                    return false;
+                }
+                if (type == 'SP') {
+                    return v.effects.some(e => {
+                        if (e.name && e.name.includes('SP') && !e.name.includes('SPD')) {
+                            return true;
+                        }
+                        return false;
+                    });
+                } else if (type == 'ShotATK') {
+                    return v.effects.some(e => {
+                        if (e.name && (e.name.includes('射擊ATK'))) {
+                            return true;
+                        }
+                        return false;
+                    });
+                } else if (type == 'CloseATK') {
+                    return v.effects.some(e => {
+                        if (e.name && (e.name.includes('近戰ATK'))) {
+                            return true;
+                        }
+                        return false;
+                    });
+                } else if (type == 'Attr') {
+                    return v.effects.some(e => {
+                        if (e.name && (e.name.includes('屬性'))) {
+                            return true;
+                        }
+                        return false;
+                    });
+                } else if (type == 'DamageCut') {
+                    return v.effects.some(e => {
+                        if (e.name && (e.name.includes('減傷'))) {
+                            return true;
+                        }
+                        return false;
+                    });
+                } else if (type == 'Heal') {
+                    return v.effects.some(e => {
+                        if (e.name && (e.name.includes('HP'))) {
+                            return true;
+                        }
+                        return false;
+                    });
+                }
+
+                return false;
+            });
+            // console.log(`Slot ${i} selectable Psv Skills:`, filteredPsvSkills);
+            if (filteredPsvSkills.length > 0) {
+                const selectedPsvSkill = filteredPsvSkills[0];
+                slot.selectedPsvSkillGid = selectedPsvSkill.gid;
+                slot.selectedPsvSkill = selectedPsvSkill;
+                selectedPsvSkillGids.add(selectedPsvSkill.gid);
+            }
+        }
+    }
 }
