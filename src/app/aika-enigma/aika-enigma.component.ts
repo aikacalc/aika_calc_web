@@ -558,59 +558,38 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
             if (selectablePsvSkills.length == 0) {
                 continue;
             }
-            const filteredPsvSkills = selectablePsvSkills.filter(v => {
-                if (selectedPsvSkillGids.has(v.gid)) {
-                    return false;
-                }
-                if (type == 'SP') {
-                    return v.effects.some(e => {
-                        if (e.name && e.name.includes('SP') && !e.name.includes('SPD')) {
-                            return true;
-                        }
-                        return false;
-                    });
-                } else if (type == 'ShotATK') {
-                    return v.effects.some(e => {
-                        if (e.name && (e.name.includes('射擊ATK'))) {
-                            return true;
-                        }
-                        return false;
-                    });
-                } else if (type == 'CloseATK') {
-                    return v.effects.some(e => {
-                        if (e.name && (e.name.includes('近戰ATK'))) {
-                            return true;
-                        }
-                        return false;
-                    });
-                } else if (type == 'Attr') {
-                    return v.effects.some(e => {
-                        if (e.name && (e.name.includes('屬性'))) {
-                            return true;
-                        }
-                        return false;
-                    });
-                } else if (type == 'DamageCut') {
-                    return v.effects.some(e => {
-                        if (e.name && (e.name.includes('減傷'))) {
-                            return true;
-                        }
-                        return false;
-                    });
-                } else if (type == 'Heal') {
-                    return v.effects.some(e => {
-                        if (e.name && (e.name.includes('HP'))) {
-                            return true;
-                        }
-                        return false;
-                    });
-                }
+            const filteredPsvSkills = selectablePsvSkills
+                .map(v => {
+                    if (selectedPsvSkillGids.has(v.gid)) {
+                        return null;
+                    }
 
-                return false;
-            });
-            // console.log(`Slot ${i} selectable Psv Skills:`, filteredPsvSkills);
+                    let matchedEffect = null;
+                    if (type == 'SP') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('SP') && !e.name.includes('SPD'));
+                    } else if (type == 'ShotATK') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('射擊ATK'));
+                    } else if (type == 'CloseATK') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('近戰ATK'));
+                    } else if (type == 'Attr') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('屬性'));
+                    } else if (type == 'DamageCut') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('減傷'));
+                    } else if (type == 'Heal') {
+                        matchedEffect = v.effects.find(e => e.name && e.name.includes('HP'));
+                    }
+
+                    if (matchedEffect) {
+                        return { psvSkill: v, matchedEffect };
+                    }
+                    return null;
+                })
+                .filter(v => v !== null)
+                .sort((a, b) => (b.matchedEffect.valuePct || 0) - (a.matchedEffect.valuePct || 0));
+
+            console.log(`Slot ${i} selectable Psv Skills:`, filteredPsvSkills);
             if (filteredPsvSkills.length > 0) {
-                const selectedPsvSkill = filteredPsvSkills[0];
+                const selectedPsvSkill = filteredPsvSkills[0].psvSkill;
                 slot.selectedPsvSkillGid = selectedPsvSkill.gid;
                 slot.selectedPsvSkill = selectedPsvSkill;
                 selectedPsvSkillGids.add(selectedPsvSkill.gid);
