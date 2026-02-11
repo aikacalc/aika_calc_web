@@ -26,6 +26,7 @@ export class AikaMergeImageComponent implements OnInit {
   imagesPerRow: number = 2;
   scaleFactor: number = 1;
   backgroundColor: string = '#ffffff';
+  sizeMode: 'fixed' | 'dynamic' = 'fixed'; // fixed: 固定網格, dynamic: 動態尺寸
 
   mergedImageUrl: string = '';
   mergedImageWidth: number = 0;
@@ -168,27 +169,69 @@ export class AikaMergeImageComponent implements OnInit {
   private calculateMergedSize(canvas: HTMLCanvasElement) {
     if (this.images.length === 0) return;
 
-    let maxWidth = 0;
-    let maxHeight = 0;
-    let totalWidth = 0;
-    let totalHeight = 0;
+    if (this.sizeMode === 'fixed') {
+      // 固定網格模式：每個格子大小相同
+      let maxWidth = 0;
+      let maxHeight = 0;
 
-    // 找出最大尺寸作為基準
-    this.images.forEach(img => {
-      const scaledWidth = img.width * this.scaleFactor;
-      const scaledHeight = img.height * this.scaleFactor;
-      maxWidth = Math.max(maxWidth, scaledWidth);
-      maxHeight = Math.max(maxHeight, scaledHeight);
-    });
+      // 找出最大尺寸作為基準
+      this.images.forEach(img => {
+        const scaledWidth = img.width * this.scaleFactor;
+        const scaledHeight = img.height * this.scaleFactor;
+        maxWidth = Math.max(maxWidth, scaledWidth);
+        maxHeight = Math.max(maxHeight, scaledHeight);
+      });
 
-    if (this.mergeDirection === 'horizontal') {
-      const rows = Math.ceil(this.images.length / this.imagesPerRow);
-      canvas.width = maxWidth * this.imagesPerRow;
-      canvas.height = maxHeight * rows;
+      if (this.mergeDirection === 'horizontal') {
+        const rows = Math.ceil(this.images.length / this.imagesPerRow);
+        canvas.width = maxWidth * this.imagesPerRow;
+        canvas.height = maxHeight * rows;
+      } else {
+        const cols = Math.ceil(this.images.length / this.imagesPerRow);
+        canvas.width = maxWidth * cols;
+        canvas.height = maxHeight * this.imagesPerRow;
+      }
     } else {
-      const cols = Math.ceil(this.images.length / this.imagesPerRow);
-      canvas.width = maxWidth * cols;
-      canvas.height = maxHeight * this.imagesPerRow;
+      // 動態尺寸模式：由每行圖片的實際尺寸決定
+      const rowCount = Math.ceil(this.images.length / this.imagesPerRow);
+      let canvasWidth = 0;
+      let canvasHeight = 0;
+
+      if (this.mergeDirection === 'horizontal') {
+        // 水平排列：計算每行的寬度和高度
+        for (let row = 0; row < rowCount; row++) {
+          const startIdx = row * this.imagesPerRow;
+          const endIdx = Math.min(startIdx + this.imagesPerRow, this.images.length);
+          const rowImages = this.images.slice(startIdx, endIdx);
+
+          // 該行的總寬度
+          const rowWidth = rowImages.reduce((sum, img) => sum + img.width * this.scaleFactor, 0);
+          // 該行的最大高度
+          const rowHeight = Math.max(...rowImages.map(img => img.height * this.scaleFactor));
+
+          canvasWidth = Math.max(canvasWidth, rowWidth);
+          canvasHeight += rowHeight;
+        }
+      } else {
+        // 垂直排列：計算每列的寬度和高度
+        for (let col = 0; col < rowCount; col++) {
+          const colImages: ImageItem[] = [];
+          for (let i = col; i < this.images.length; i += this.imagesPerRow) {
+            colImages.push(this.images[i]);
+          }
+
+          // 該列的最大寬度
+          const colWidth = Math.max(...colImages.map(img => img.width * this.scaleFactor));
+          // 該列的總高度
+          const colHeight = colImages.reduce((sum, img) => sum + img.height * this.scaleFactor, 0);
+
+          canvasWidth += colWidth;
+          canvasHeight = Math.max(canvasHeight, colHeight);
+        }
+      }
+
+      canvas.width = canvasWidth;
+      canvas.height = canvasHeight;
     }
   }
 
@@ -207,20 +250,85 @@ export class AikaMergeImageComponent implements OnInit {
       row = index % this.imagesPerRow;
     }
 
-    // 找出該行/列的最大尺寸
-    let maxWidth = 0;
-    let maxHeight = 0;
-    this.images.forEach(img => {
-      maxWidth = Math.max(maxWidth, img.width * this.scaleFactor);
-      maxHeight = Math.max(maxHeight, img.height * this.scaleFactor);
-    });
+    if (this.sizeMode === 'fixed') {
+      // 固定網格模式：居中對齊
+      let maxWidth = 0;
+      let maxHeight = 0;
+      this.images.forEach(img => {
+        maxWidth = Math.max(maxWidth, img.width * this.scaleFactor);
+        maxHeight = Math.max(maxHeight, img.height * this.scaleFactor);
+      });
 
-    return {
-      x: col * maxWidth + (maxWidth - scaledWidth) / 2,
-      y: row * maxHeight + (maxHeight - scaledHeight) / 2,
-      width: scaledWidth,
-      height: scaledHeight
-    };
+      return {
+        x: col * maxWidth + (maxWidth - scaledWidth) / 2,
+        y: row * maxHeight + (maxHeight - scaledHeight) / 2,
+        width: scaledWidth,
+        height: scaledHeight
+      };
+    } else {
+      // 動態尺寸模式：緊密排列
+      let x = 0;
+      let y = 0;
+
+      if (this.mergeDirection === 'horizontal') {
+        // 計算前面行的累積高度
+        for (let r = 0; r < row; r++) {
+          const startIdx = r * this.imagesPerRow;
+          const endIdx = Math.min(startIdx + this.imagesPerRow, this.images.length);
+          const rowImages = this.images.slice(startIdx, endIdx);
+          const rowHeight = Math.max(...rowImages.map(img => img.height * this.scaleFactor));
+          y += rowHeight;
+        }
+
+        // 計算同一行前面圖片的累積寬度
+        const rowStartIdx = row * this.imagesPerRow;
+        for (let c = 0; c < col; c++) {
+          const imgIdx = rowStartIdx + c;
+          if (imgIdx < this.images.length) {
+            x += this.images[imgIdx].width * this.scaleFactor;
+          }
+        }
+
+        // 垂直居中對齊（在該行的最大高度內）
+        const rowImages = this.images.slice(rowStartIdx, Math.min(rowStartIdx + this.imagesPerRow, this.images.length));
+        const rowHeight = Math.max(...rowImages.map(img => img.height * this.scaleFactor));
+        y += (rowHeight - scaledHeight) / 2;
+      } else {
+        // 垂直排列模式
+        // 計算前面列的累積寬度
+        for (let c = 0; c < col; c++) {
+          const colImages: ImageItem[] = [];
+          for (let i = c; i < this.images.length; i += this.imagesPerRow) {
+            colImages.push(this.images[i]);
+          }
+          const colWidth = Math.max(...colImages.map(img => img.width * this.scaleFactor));
+          x += colWidth;
+        }
+
+        // 計算同一列前面圖片的累積高度
+        for (let r = 0; r < row; r++) {
+          const imgIdx = col * this.imagesPerRow + r;
+          if (imgIdx < this.images.length) {
+            y += this.images[imgIdx].height * this.scaleFactor;
+          }
+        }
+
+        // 水平居中對齊（在該列的最大寬度內）
+        const colImages: ImageItem[] = [];
+        for (let i = col; i < this.images.length; i += this.imagesPerRow) {
+          colImages.push(this.images[i]);
+        }
+        const colWidth = Math.max(...colImages.map(img => img.width * this.scaleFactor));
+        x += (colWidth - scaledWidth) / 2;
+      }
+
+      return {
+        x,
+        y,
+        width: scaledWidth,
+        height: scaledHeight
+      };
+    }
   }
 
   // 下載合併後的圖片

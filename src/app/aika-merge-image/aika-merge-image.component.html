@@ -42,9 +42,17 @@
       <div class="settings-grid">
         <div class="setting-group">
           <label>合併方向：</label>
-          <select [(ngModel)]="mergeDirection">
+          <select [(ngModel)]="mergeDirection" (change)="updateMerge()">
             <option value="horizontal">水平排列</option>
             <option value="vertical">垂直排列</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>尺寸模式：</label>
+          <select [(ngModel)]="sizeMode" (change)="updateMerge()">
+            <option value="fixed">固定網格（圖片居中）</option>
+            <option value="dynamic">動態尺寸（緊密排列）</option>
           </select>
         </div>
 

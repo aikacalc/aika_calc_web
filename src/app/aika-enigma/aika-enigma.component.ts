@@ -242,13 +242,13 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
                 });
 
                 this.selectedSectionAreas = this.selectedSection.area;
-                this.selectedSectionAreasWithoutCommon = this.selectedSectionAreas.filter(v => v.name != 'common');
                 this.selectedSectionId = this.selectedSection.id;
                 for (const area of this.selectedSectionAreas) {
                     this.showAreaPsvSkills[area.name] = true;
-                }
-                for (const area of this.selectedSectionAreasWithoutCommon) {
-                    this.autoAssignPsvSectionAreas[area.name] = true;
+                    if (area.name != 'common') {
+                        this.selectedSectionAreasWithoutCommon.push(area);
+                        this.autoAssignPsvSectionAreas[area.name] = true;
+                    }
                 }
                 console.log('Selected Section Areas:', this.selectedSectionAreas);
             }
