@@ -30,9 +30,9 @@
         <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
             <span>愛花被動搭配</span>
         </button>
-        <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
+        <!-- <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
             <span>愛花時間線</span>
-        </button>
+        </button> -->
         <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
             <span>愛花誘拐率</span>
         </button>
@@ -45,11 +45,14 @@
         <button class="aika-merge-image" [ngClass]="{selected:page=='ami'}" (click)="selectPage('ami')">
             <span>愛花合併圖</span>
         </button>
-        <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
+        <!-- <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
             <span>愛花精靈GIF</span>
-        </button>
+        </button> -->
         <button class="aika-kawaii" [ngClass]="{selected:page=='ak'}" (click)="selectPage('ak')">
             <span>愛花可愛</span>
+        </button>
+        <button class="aika-model-viewer" [ngClass]="{selected:page=='amv'}" (click)="selectPage('amv')">
+            <span>愛花看3D</span>
         </button>
     </div>
     <div class="body">
@@ -92,6 +95,9 @@
         </div>
         <div class="aika-kawaii" [hidden]="page!='ak'">
             <app-aika-kawaii></app-aika-kawaii>
+        </div>
+        <div class="aika-model-viewer" [hidden]="page!='amv'">
+            <app-aika-model-viewer></app-aika-model-viewer>
         </div>
     </div>
     <div class="msg" *ngIf="service.showMessage">

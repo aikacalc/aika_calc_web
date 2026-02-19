@@ -19,9 +19,11 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@angular/service-worker": "^18.0.0",
+    "@types/three": "^0.183.0",
     "gif.js": "^0.2.0",
     "pako": "^2.1.0",
     "rxjs": "~7.8.0",
+    "three": "^0.183.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
