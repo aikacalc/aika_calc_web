@@ -1262,6 +1262,132 @@ export const ActressGears = {
                 attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Gravity
+            }),
+            new Gear({
+                name: 'ヴィグネーシュヴァラS',
+                unitType: AttrTypeId.Sniper,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 530,
+                atkMin: 295,
+                atkMax: 530,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'アンクーシャSMk3',
+                unitType: AttrTypeId.Sniper,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 530,
+                atkMin: 295,
+                atkMax: 530,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'アンクーシャSMk2',
+                unitType: AttrTypeId.Sniper,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 501,
+                atkMin: 265,
+                atkMax: 501,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'アンクーシャS',
+                unitType: AttrTypeId.Sniper,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 471,
+                atkMin: 147,
+                atkMax: 471,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 371,
+                attrMin: 116,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ダークシャークKSsSG2',
+                unitType: AttrTypeId.Sniper,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 412,
+                atkMin: 236,
+                atkMax: 412,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 324,
+                attrMin: 185,
+                attrMax: 324,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ダークシャークKSsSG1',
+                unitType: AttrTypeId.Sniper,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 353,
+                atkMin: 177,
+                atkMax: 353,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 278,
+                attrMin: 139,
+                attrMax: 278,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ダークシャークKSsS',
+                unitType: AttrTypeId.Sniper,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 295,
+                atkMin: 118,
+                atkMax: 295,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 232,
+                attrMin: 93,
+                attrMax: 232,
+                attrTypeId: AttrTypeId.Volt
             })
         ],
         short: [
@@ -1570,6 +1696,168 @@ export const ActressGears = {
                 attrMin: 70,
                 attrMax: 175,
                 attrTypeId: AttrTypeId.Gravity
+            }),
+            new Gear({
+                name: 'エーカダンタ・ギーS',
+                unitType: AttrTypeId.Spear,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 505,
+                atkMin: 281,
+                atkMax: 505,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'マホーダラSMk3',
+                unitType: AttrTypeId.Spear,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 505,
+                atkMin: 281,
+                atkMax: 505,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'マホーダラSMk2',
+                unitType: AttrTypeId.Spear,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 477,
+                atkMin: 252,
+                atkMax: 477,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'エーカダンタSMk3',
+                unitType: AttrTypeId.Spear,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 505,
+                atkMin: 281,
+                atkMax: 505,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'エーカダンタSMk2',
+                unitType: AttrTypeId.Spear,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 477,
+                atkMin: 252,
+                atkMax: 477,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'エーカダンタS',
+                unitType: AttrTypeId.Spear,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 449,
+                atkMin: 140,
+                atkMax: 449,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 371,
+                attrMin: 116,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ベノムKSsSMk3',
+                unitType: AttrTypeId.Spear,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 393,
+                atkMin: 224,
+                atkMax: 393,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 324,
+                attrMin: 185,
+                attrMax: 324,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ベノムKSsSMk2',
+                unitType: AttrTypeId.Spear,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 337,
+                atkMin: 168,
+                atkMax: 337,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 278,
+                attrMin: 139,
+                attrMax: 278,
+                attrTypeId: AttrTypeId.Volt
+            }),
+            new Gear({
+                name: 'ベノムKSsS',
+                unitType: AttrTypeId.Spear,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 281,
+                atkMin: 112,
+                atkMax: 281,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 232,
+                attrMin: 93,
+                attrMax: 232,
+                attrTypeId: AttrTypeId.Volt
             })
         ],
         top: [
@@ -1851,6 +2139,146 @@ export const ActressGears = {
                 new Buff(AttrTypeId.ResistGravity, 0.1),
                 new Buff(AttrTypeId.ResistVolt, -0.1),
                 new Buff(AttrTypeId.Gravity, 0.05)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャカルバチョートS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2041,
+                hpMin: 1121,
+                hpMax: 2041,
+                def: 567,
+                defMin: 315,
+                defMax: 567,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャSMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2000,
+                hpMin: 1099,
+                hpMax: 2000,
+                def: 578,
+                defMin: 321,
+                defMax: 578,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャSMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1889,
+                hpMin: 988,
+                hpMax: 1889,
+                def: 546,
+                defMin: 289,
+                defMax: 546,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1772,
+                hpMin: 537,
+                hpMax: 1772,
+                def: 514,
+                defMin: 161,
+                defMax: 514,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '一〇式KSsS乙/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1550,
+                hpMin: 877,
+                hpMax: 1550,
+                def: 450,
+                defMin: 257,
+                defMax: 450,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '一〇式KSsS甲/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1327,
+                hpMin: 654,
+                hpMax: 1327,
+                def: 386,
+                defMin: 193,
+                defMax: 386,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.07)
+            ]
+            }),
+            new Gear({
+                name: '一〇式KSsS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1099,
+                hpMin: 426,
+                hpMax: 1099,
+                def: 321,
+                defMin: 129,
+                defMax: 321,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.Volt, 0.05)
             ]
             })
         ],
@@ -2183,6 +2611,168 @@ export const ActressGears = {
                 new Buff(AttrTypeId.SPD, 0.1),
                 new Buff(AttrTypeId.DEF, -0.1)
             ]
+            }),
+            new Gear({
+                name: 'ガネーシャカルバチョートS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1361,
+                hpMin: 748,
+                hpMax: 1361,
+                def: 378,
+                defMin: 210,
+                defMax: 378,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.SPD, 0.1),
+                new Buff(AttrTypeId.DEF, -0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャSMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1334,
+                hpMin: 733,
+                hpMax: 1334,
+                def: 386,
+                defMin: 214,
+                defMax: 386,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャSMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1259,
+                hpMin: 659,
+                hpMax: 1259,
+                def: 364,
+                defMin: 193,
+                defMax: 364,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
+            }),
+            new Gear({
+                name: 'ガネーシャS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1181,
+                hpMin: 358,
+                hpMax: 1181,
+                def: 343,
+                defMin: 107,
+                defMax: 343,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
+            }),
+            new Gear({
+                name: '七七式KSsS甲/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1033,
+                hpMin: 584,
+                hpMax: 1033,
+                def: 300,
+                defMin: 171,
+                defMax: 300,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
+            }),
+            new Gear({
+                name: '七七式KSsS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 885,
+                hpMin: 436,
+                hpMax: 885,
+                def: 257,
+                defMin: 129,
+                defMax: 257,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
+            }),
+            new Gear({
+                name: '七七式KSsS乙/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 733,
+                hpMin: 284,
+                hpMax: 733,
+                def: 214,
+                defMin: 86,
+                defMax: 214,
+                spd: 200,
+                spdMin: 200,
+                spdMax: 200,
+                buffs: [
+                new Buff(AttrTypeId.ResistVolt, 0.15),
+                new Buff(AttrTypeId.ResistGravity, -0.15),
+                new Buff(AttrTypeId.HP, 0.1)
+            ]
             })
         ]
     },
@@ -2475,6 +3065,150 @@ export const ActressGears = {
                 attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
+                name: 'エンチクロペディSMk3',
+                unitType: AttrTypeId.Bazooka,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'エンチクロペディSMk2',
+                unitType: AttrTypeId.Bazooka,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヘーゲルSMk3',
+                unitType: AttrTypeId.Bazooka,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヘーゲルSMk2',
+                unitType: AttrTypeId.Bazooka,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヘーゲルS',
+                unitType: AttrTypeId.Bazooka,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 462,
+                atkMin: 144,
+                atkMax: 462,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 371,
+                attrMin: 116,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヴァリアントMFsSMk3',
+                unitType: AttrTypeId.Bazooka,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 404,
+                atkMin: 231,
+                atkMax: 404,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 324,
+                attrMin: 185,
+                attrMax: 324,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヴァリアントMFsSMk2',
+                unitType: AttrTypeId.Bazooka,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 347,
+                atkMin: 173,
+                atkMax: 347,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 278,
+                attrMin: 139,
+                attrMax: 278,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヴァリアントMFsS',
+                unitType: AttrTypeId.Bazooka,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 289,
+                atkMin: 116,
+                atkMax: 289,
+                atkTypeId: AttrTypeId.Shot,
+                atkAmmoTypeId: AttrTypeId.Energy,
+                attr: 232,
+                attrMin: 93,
+                attrMax: 232,
+                attrTypeId: AttrTypeId.Fire
             })
         ],
         short: [
@@ -2711,6 +3445,168 @@ export const ActressGears = {
                 attrMin: 82,
                 attrMax: 206,
                 attrTypeId: AttrTypeId.Ice
+            }),
+            new Gear({
+                name: 'デモティックS',
+                unitType: AttrTypeId.Sword,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヒエラティックSMk2',
+                unitType: AttrTypeId.Sword,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'ヒエラティックS',
+                unitType: AttrTypeId.Sword,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 462,
+                atkMin: 144,
+                atkMax: 462,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 371,
+                attrMin: 116,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'シャンポリオンSMk3',
+                unitType: AttrTypeId.Sword,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 520,
+                atkMin: 289,
+                atkMax: 520,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 417,
+                attrMin: 232,
+                attrMax: 417,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'シャンポリオンSMk2',
+                unitType: AttrTypeId.Sword,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 491,
+                atkMin: 260,
+                atkMax: 491,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 394,
+                attrMin: 209,
+                attrMax: 394,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'シャンポリオンS',
+                unitType: AttrTypeId.Sword,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 462,
+                atkMin: 144,
+                atkMax: 462,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 371,
+                attrMin: 116,
+                attrMax: 371,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'TS32-MFsS極',
+                unitType: AttrTypeId.Sword,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 404,
+                atkMin: 231,
+                atkMax: 404,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 324,
+                attrMin: 185,
+                attrMax: 324,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'TS32-MFsS改',
+                unitType: AttrTypeId.Sword,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 347,
+                atkMin: 173,
+                atkMax: 347,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 278,
+                attrMin: 139,
+                attrMax: 278,
+                attrTypeId: AttrTypeId.Fire
+            }),
+            new Gear({
+                name: 'TS32-MFsS',
+                unitType: AttrTypeId.Sword,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                atk: 289,
+                atkMin: 116,
+                atkMax: 289,
+                atkTypeId: AttrTypeId.Close,
+                atkAmmoTypeId: AttrTypeId.Slash,
+                attr: 232,
+                attrMin: 93,
+                attrMax: 232,
+                attrTypeId: AttrTypeId.Fire
             })
         ],
         top: [
@@ -2902,6 +3798,120 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアSMk3/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 2022,
+                hpMin: 1111,
+                hpMax: 2022,
+                def: 556,
+                defMin: 309,
+                defMax: 556,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアSMk2/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1909,
+                hpMin: 998,
+                hpMax: 1909,
+                def: 525,
+                defMin: 278,
+                defMax: 525,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1791,
+                hpMin: 543,
+                hpMax: 1791,
+                def: 494,
+                defMin: 155,
+                defMax: 494,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: '七四式MFsS乙/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1566,
+                hpMin: 886,
+                hpMax: 1566,
+                def: 433,
+                defMin: 247,
+                defMax: 433,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: '七四式MFsS甲/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1342,
+                hpMin: 661,
+                hpMax: 1342,
+                def: 371,
+                defMin: 185,
+                defMax: 371,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: '七四式MFsS/T',
+                unitType: AttrTypeId.EquipmentTop,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1111,
+                hpMin: 431,
+                hpMax: 1111,
+                def: 309,
+                defMin: 124,
+                defMax: 309,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
             ]
             })
         ],
@@ -3146,6 +4156,138 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistIce, 0.15),
                 new Buff(AttrTypeId.ResistFire, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアSMk3/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 80,
+                levelMin: 1,
+                levelMax: 80,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1348,
+                hpMin: 740,
+                hpMax: 1348,
+                def: 371,
+                defMin: 206,
+                defMax: 371,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアSMk2/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 75,
+                levelMin: 1,
+                levelMax: 75,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1273,
+                hpMin: 666,
+                hpMax: 1273,
+                def: 350,
+                defMin: 185,
+                defMax: 350,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'ブリガンティアS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 70,
+                levelMin: 1,
+                levelMax: 70,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1194,
+                hpMin: 362,
+                hpMax: 1194,
+                def: 330,
+                defMin: 103,
+                defMax: 330,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'G12-MFsS極/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 60,
+                levelMin: 1,
+                levelMax: 60,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 1044,
+                hpMin: 591,
+                hpMax: 1044,
+                def: 288,
+                defMin: 165,
+                defMax: 288,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'G12-MFsS改/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 50,
+                levelMin: 1,
+                levelMax: 50,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 894,
+                hpMin: 441,
+                hpMax: 894,
+                def: 247,
+                defMin: 124,
+                defMax: 247,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
+            ]
+            }),
+            new Gear({
+                name: 'G12-MFsS/B',
+                unitType: AttrTypeId.EquipmentBottom,
+                level: 40,
+                levelMin: 1,
+                levelMax: 40,
+                gradeUp: 0,
+                gradeUpLimit: 99,
+                hp: 740,
+                hpMin: 287,
+                hpMax: 740,
+                def: 206,
+                defMin: 82,
+                defMax: 206,
+                spd: 240,
+                spdMin: 240,
+                spdMax: 240,
+                buffs: [
+                new Buff(AttrTypeId.ResistFire, 0.15),
+                new Buff(AttrTypeId.ResistIce, -0.15)
             ]
             })
         ]
@@ -34650,7 +35792,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34673,7 +35815,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34696,7 +35838,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34719,7 +35861,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34742,7 +35884,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34765,7 +35907,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34788,7 +35930,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
@@ -34811,7 +35953,7 @@ export const ActressGears = {
                 buffs: [
                 new Buff(AttrTypeId.ResistGravity, 0.15),
                 new Buff(AttrTypeId.ResistVolt, -0.15),
-                new Buff(AttrTypeId.HP, 0.1)
+                new Buff(AttrTypeId.HP, -0.1)
             ]
             }),
             new Gear({
