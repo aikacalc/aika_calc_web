@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AttrTypeId, AttrTypeIdAttrs, AttrTypeIdCloses, AttrTypeIdList, AttrTypeIdShots, AttrTypeName, getTypeColor } from '../model/attr-type';
-import { AssistPreset, attrTypeEnigmaStatus, Character } from '../model/character';
+import { AssistPreset, attrTypeEnigmaStatus, Character, CharacterPreset } from '../model/character';
 import { Buff } from '../model/buff';
 import { AppService } from '../app.service';
 import { CharacterModels } from '../model/character_models';
@@ -69,7 +69,9 @@ DEF+200
     copyedAssistName: string = '';
 
 
-
+    presetDict: { [key: string]: CharacterPreset } = {};
+    selectedCharacterPresets: CharacterPreset[] = [];
+    selectedPreset: CharacterPreset;
 
     constructor(
         public service: AppService
@@ -197,10 +199,6 @@ DEF+200
                         chara.attrShotEnigma = upStatus.attrShot;
                         chara.atkCloseEnigma = upStatus.atkClose;
                         chara.attrCloseEnigma = upStatus.attrClose;
-                        // chara.atkShotEnigmaCustom = upStatus.atkShot;
-                        // chara.attrShotEnigmaCustom = upStatus.attrShot;
-                        // chara.atkCloseEnigmaCustom = upStatus.atkClose;
-                        // chara.attrCloseEnigmaCustom = upStatus.attrClose;
                     }
                 }
             }
@@ -341,30 +339,6 @@ DEF+200
 
             this.character.updateStatus();
         }
-        // console.log(this.character);
-
-
-        // this.character.weaponShot.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        // this.character.weaponClose.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        // this.character.equipmentTop.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        // this.character.equipmentBottom.buffs.push(new Buff(AttrTypeId.HP, 0.07));
-        // // this.character.EquipmentBottom.buffs.push(new Buff(AttrTypeId.HP, 0.15));
-
-        // // this.character.EquipmentTop.base.hp = 2041 + (99 * 4);
-        // // this.character.EquipmentBottom.base.hp = 1361;
-        // this.character.EquipmentTop.base.hp = 1808 + (99 * 4);
-        // this.character.EquipmentBottom.base.hp = 1205;
-
-        // this.character.EquipmentTop.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-        // this.character.EquipmentTop.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-        // this.character.EquipmentTop.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-        // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-        // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-        // this.character.EquipmentBottom.tunes.push(new Buff(AttrTypeId.HP, 0.12));
-
-        // this.character.updateStatus();
-
-
     }
     public idToAttrType(atid: AttrTypeId): { id: AttrTypeId, name: string } {
         return { id: atid, name: AttrTypeName[AttrTypeId[atid]] };

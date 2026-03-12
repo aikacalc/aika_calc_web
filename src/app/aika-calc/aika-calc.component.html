@@ -10,9 +10,17 @@
             <input type="checkbox" [(ngModel)]="hideChrRawVal" (ngModelChange)="character.updateStatus()">
             <span style="color:#f0f0f0">隱藏SP值</span>
         </label>
+        <div class="preset">
+            <label>配置</label>
+            <select>
+                <option value="0">預設</option>
+            </select>
+            <button>新配置</button>
+            <button>另存</button>
+        </div>
         <!-- <button (click)="setCharacterTemplateToCharacter()">SET</button> -->
-        <button (click)="saveCharacterSavedata()">更新當前角色設定到網址</button>
-        <span class="load-setting-error" *ngIf="loadingSettingError">網址設定似乎有錯? <a href="/">返回</a></span>
+        <!-- <button (click)="saveCharacterSavedata()">更新當前角色設定到網址</button> -->
+        <!-- <span class="load-setting-error" *ngIf="loadingSettingError">網址設定似乎有錯? <a href="/">返回</a></span> -->
         <!-- <button (click)="loadCharacterSavedata()">從網址讀取設定</button> -->
     </div>
     <div class="character" *ngIf="character">

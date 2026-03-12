@@ -18,6 +18,7 @@ import { AikaMergeImageComponent } from './aika-merge-image/aika-merge-image.com
 import { AikaSpriteSheetGifComponent } from './aika-sprite-sheet-gif/aika-sprite-sheet-gif.component';
 import { AikaKawaiiComponent } from './aika-kawaii/aika-kawaii.component';
 import { AikaModelViewerComponent } from './aika-model-viewer/aika-model-viewer.component';
+import { AikaSupporterComponent } from './aika-supporter/aika-supporter.component';
 
 @Component({
     selector: 'app-root',
@@ -38,6 +39,7 @@ import { AikaModelViewerComponent } from './aika-model-viewer/aika-model-viewer.
         AikaSpriteSheetGifComponent,
         AikaKawaiiComponent,
         AikaModelViewerComponent,
+        AikaSupporterComponent,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'

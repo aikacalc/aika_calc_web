@@ -577,7 +577,7 @@ export class Character extends Unit {
         this.attrSp = result;
     }
 
-    updateRating():void{
+    updateRating(): void {
         let totalRating = 0;
         totalRating += this.hp * Character.ratingRate.hp;
         totalRating += this.atkShot * Character.ratingRate.shotAtk;
@@ -595,4 +595,8 @@ export class Character extends Unit {
     setSavedata(): void {
 
     }
+}
+
+export class CharacterPreset {
+    character: Character;
 }

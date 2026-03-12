@@ -64,13 +64,21 @@
             white-space: nowrap;
         }
 
-        >.fan-calc {
-            margin-left: auto;
+        .preset {
+            margin-left: 10px;
             display: flex;
             align-items: center;
-            cursor: pointer;
-            color: #00f;
-            font-size: 16px;
+
+            label {}
+
+            >select {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            >button {
+                font-size: 14px;
+            }
         }
     }
 
@@ -283,6 +291,7 @@
                 &.selected {
                     border: 2px solid #00f;
                 }
+
                 &.copyed {
                     background-color: #0c0;
                     color: #fff;

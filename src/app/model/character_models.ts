@@ -2635,6 +2635,57 @@ class AikawaAika80 extends Character {
     bloodType: string = 'B';
 }
 
+class AikawaAika60 extends Character {
+    name: string = '相河 愛花 / プリーステス ★4';
+    aid:number = 69;
+    cid: number = 73;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 533;
+    atkCloseMin: number = 148;
+    atkCloseMax: number = 533;
+    attrClose: number = 0;
+    atkShot: number = 584;
+    atkShotMin: number = 162;
+    atkShotMax: number = 584;
+    attrShot: number = 0;
+    def: number = 936;
+    defMin: number = 260;
+    defMax: number = 936;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.94;
+    attrMin: number = 113;
+    attrMax: number = 405;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.7),
+        new Buff(AttrTypeId.ResistVolt, -0.7),
+        new Buff(AttrTypeId.ResistIce, -0.35),
+        new Buff(AttrTypeId.DEF, -0.1),
+        new Buff(AttrTypeId.Gravity, 0.9),
+        new Buff(AttrTypeId.Rifle, 0.35),
+        new Buff(AttrTypeId.Hammer, 0.05)
+    ];
+    weaponShots: Gear[] = ActressGears.AikawaAika.long;
+    weaponCloses: Gear[] = ActressGears.AikawaAika.short;
+    equipmentTops: Gear[] = ActressGears.AikawaAika.top;
+    equipmentBottoms: Gear[] = ActressGears.AikawaAika.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'B';
+}
+
 class KoashiMutsumi01 extends Character {
     name: string = '小芦 睦海 ★1';
     aid:number = 101;
@@ -26823,6 +26874,7 @@ export const CharacterModels = {
     AikawaAika05: new AikawaAika05(),
     AikawaAika70: new AikawaAika70(),
     AikawaAika80: new AikawaAika80(),
+    AikawaAika60: new AikawaAika60(),
     KoashiMutsumi01: new KoashiMutsumi01(),
     KoashiMutsumi02: new KoashiMutsumi02(),
     KoashiMutsumi04: new KoashiMutsumi04(),

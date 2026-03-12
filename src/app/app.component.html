@@ -3,42 +3,33 @@
         <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
         <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
         <div class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</div>
-        <!-- <a class="aika-calc" [ngClass]="{selected:page==''}" [routerLink]="['/']">
-          <span>愛花版面計算</span>
-      </a>
-      <a class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" [routerLink]="['/afrc']">
-          <span>愛花粉絲計算</span>
-      </a>
-      <a class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" [routerLink]="['/adc']">
-          <span>愛花輸出計算</span>
-      </a> -->
         <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="selectPage('')">
             <span>愛花版面計算</span>
         </button>
-        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
-            <span>愛花粉絲計算</span>
-        </button>
+        <!-- <button class="aika-supporter" [ngClass]="{selected:page=='ast'}" (click)="selectPage('ast')">
+            <span>愛花支援</span>
+        </button> -->
         <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="selectPage('adc')">
             <span>愛花輸出計算</span>
         </button>
-        <!-- <button class="aika-skill" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
-          <span>愛花技能</span>
-      </button> -->
         <button class="aika-enigma-txt" [ngClass]="{selected:page=='aet'}" (click)="selectPage('aet')">
             <span>愛花ENIGMA</span>
         </button>
         <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
             <span>愛花被動搭配</span>
         </button>
-        <!-- <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
-            <span>愛花時間線</span>
-        </button> -->
         <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
             <span>愛花誘拐率</span>
+        </button>
+        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
+            <span>愛花粉絲計算</span>
         </button>
         <button class="aika-moon" [ngClass]="{selected:page=='amc'}" (click)="selectPage('amc')">
             <span>愛花月</span>
         </button>
+        <!-- <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
+            <span>愛花時間線</span>
+        </button> -->
         <!-- <button class="aika-spin" [ngClass]="{selected:page=='asp'}" (click)="selectPage('asp')">
             <span>*愛花轉圈圈*</span>
         </button> -->
