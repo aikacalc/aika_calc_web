@@ -243,6 +243,7 @@ export class AikaEnigmaComponent implements OnInit, AfterViewInit {
 
                 this.selectedSectionAreas = this.selectedSection.area;
                 this.selectedSectionId = this.selectedSection.id;
+                this.selectedSectionAreasWithoutCommon = [];
                 for (const area of this.selectedSectionAreas) {
                     this.showAreaPsvSkills[area.name] = true;
                     if (area.name != 'common') {
