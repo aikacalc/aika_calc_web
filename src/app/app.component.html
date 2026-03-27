@@ -21,6 +21,9 @@
         <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
             <span>愛花誘拐率</span>
         </button>
+        <button class="aika-fate" [ngClass]="{selected:page=='af'}" (click)="selectPage('af')">
+            <span>愛花算命</span>
+        </button>
         <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
             <span>愛花粉絲計算</span>
         </button>
@@ -71,6 +74,9 @@
         </div>
         <div class="aika-gacha-calc" [hidden]="page!='agc'">
             <app-aika-gacha-calc></app-aika-gacha-calc>
+        </div>
+        <div class="aika-fate" [hidden]="page!='af'">
+            <app-aika-fate></app-aika-fate>
         </div>
         <div class="aika-moon" [hidden]="page!='amc'">
             <app-aika-moon></app-aika-moon>

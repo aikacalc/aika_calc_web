@@ -19,6 +19,7 @@ import { AikaSpriteSheetGifComponent } from './aika-sprite-sheet-gif/aika-sprite
 import { AikaKawaiiComponent } from './aika-kawaii/aika-kawaii.component';
 import { AikaModelViewerComponent } from './aika-model-viewer/aika-model-viewer.component';
 import { AikaSupporterComponent } from './aika-supporter/aika-supporter.component';
+import { AikaFateComponent } from './aika-fate/aika-fate.component';
 
 @Component({
     selector: 'app-root',
@@ -40,6 +41,7 @@ import { AikaSupporterComponent } from './aika-supporter/aika-supporter.componen
         AikaKawaiiComponent,
         AikaModelViewerComponent,
         AikaSupporterComponent,
+        AikaFateComponent,
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
