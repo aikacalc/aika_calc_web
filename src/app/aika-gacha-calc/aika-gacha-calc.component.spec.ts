@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 import { AikaGachaCalcComponent } from './aika-gacha-calc.component';
 
@@ -8,7 +10,8 @@ describe('AikaGachaCalcComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AikaGachaCalcComponent]
+      imports: [AikaGachaCalcComponent],
+      providers: [provideHttpClient(), provideHttpClientTesting()]
     })
     .compileComponents();
 
