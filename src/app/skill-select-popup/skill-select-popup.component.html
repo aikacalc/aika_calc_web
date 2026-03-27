@@ -1,28 +1,33 @@
 <div class="root" (click)="close()">
-    <div class="head">
-        <button class="close" (click)="close()">X</button>
-    </div>
-    <div class="list">
-        <div class="skill"
-            *ngFor="let skill of skills"
-            (click)="select(skill)"
-            (dblclick)="decideSelect()"
-            [class.selected]="skill === selectedSkill"
+  <div class="head">
+    <button class="close" (click)="close()">X</button>
+  </div>
+  <div class="list">
+    @for (skill of skills; track skill) {
+      <div class="skill"
+        (click)="select(skill)"
+        (dblclick)="decideSelect()"
+        [class.selected]="skill === selectedSkill"
         >
-            <div class="select-button-row" *ngIf="skill === selectedSkill">
-                <button class="select" (click)="decideSelect()">O</button>
-                <button class="unselect" (click)="unSelect()">X</button>
-            </div>
-            <div class="skill-head">
-                <div class="name">{{skill.name}}</div>
-                <div class="description">{{skill.description}}</div>
-            </div>
-            <div class="buffs">
-                <div class="buff" *ngFor="let buff of skill.buffs">
-                    <div class="name">{{buff.attrTypeName}}</div>
-                    <div class="value">{{buff.valuePct}}</div>
-                </div>
-            </div>
+        @if (skill === selectedSkill) {
+          <div class="select-button-row">
+            <button class="select" (click)="decideSelect()">O</button>
+            <button class="unselect" (click)="unSelect()">X</button>
+          </div>
+        }
+        <div class="skill-head">
+          <div class="name">{{skill.name}}</div>
+          <div class="description">{{skill.description}}</div>
         </div>
-    </div>
+        <div class="buffs">
+          @for (buff of skill.buffs; track buff) {
+            <div class="buff">
+              <div class="name">{{buff.attrTypeName}}</div>
+              <div class="value">{{buff.valuePct}}</div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
 </div>

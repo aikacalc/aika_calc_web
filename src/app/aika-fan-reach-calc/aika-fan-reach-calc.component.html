@@ -1,114 +1,126 @@
 <div class="root">
-    <div class="content">
-        <div class="column config">
-            <div class="head">持有角色★</div>
-            <div class="config">
-                <div *ngFor="let rare of [1,2,3,4]">
-                    <label>
-                        <input type="checkbox" [attr.checked]="enableActressRare[rare]"
-                        [(ngModel)]="enableActressRare[rare]"
-                            (ngModelChange)="updateStageCharacterRare()">
-                        <div>★{{rare}}</div>
-                    </label>
-                </div>
+  <div class="content">
+    <div class="column config">
+      <div class="head">持有角色★</div>
+      <div class="config">
+        @for (rare of [1,2,3,4]; track rare) {
+          <div>
+            <label>
+              <input type="checkbox" [attr.checked]="enableActressRare[rare]"
+                [(ngModel)]="enableActressRare[rare]"
+                (ngModelChange)="updateStageCharacterRare()">
+                <div>★{{rare}}</div>
+              </label>
             </div>
-            <div class="stage-list">
-                <div class="name">★ -- fan -- Stage</div>
-                <select name="stageSelected" [(ngModel)]="stageSelected" multiple aria-multiselectable="true">
-                    <option *ngFor="let stage of stageRewardFans" [ngValue]="stage">★{{stage.characterRare}} --
-                        {{stage.fan}} -- {{stage.stageName}}</option>
-                </select>
-                <!-- <div class="stage" *ngFor="let stage of stageRewardFans">
-                    <label>
-                        <input type="checkbox" [attr.checked]="stage.enable">
-                        <div>{{stage.stageName}}</div>
-                        <hr>
-                        <div>★{{stage.characterRare}}</div>
-                    </label>
-                    <hr *ngIf="stage.characterRare==4">
-                </div> -->
-            </div>
+          }
         </div>
-        <div class="column actress">
-            <div class="actress" *ngFor="let a of actress">
-                <div class="row input">
-                    <div>
-                        <span>現有fan</span>
-                        <input type="number" [(ngModel)]="a.fan">
-                    </div>
-                    <div>
-                        <span>目標fan</span>
-                        <input type="number" [(ngModel)]="a.fanTarget">
-                    </div>
-                    <div>
-                        <span style="text-decoration: underline dashed;" [title]="tipClacDeep">計算深度</span>
-                        <input type="number" [(ngModel)]="maxCalcDeep">
-                    </div>
-                </div>
-                <div class="row calc">
-                    <button (click)="runCalc(a)">CALC!</button>
-                </div>
-                <div class="row result">
-                    <div>每日任務方案: {{a.fanReachRoads.length}}</div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>-</th>
-                                <th>Stage</th>
-                                <th>角色★</th>
-                                <th>回數</th>
-                                <th>變化</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <ng-container *ngFor="let roads of a.fanReachRoads;let i=index">
-                                <tr *ngFor="let road of roads;let last=last;let j=index">
-                                    <td>
-                                        <span *ngIf="j==0">{{i+1}}</span>
-                                    </td>
-                                    <td>{{road.stage.stageName}}</td>
-                                    <!-- <td class="chara-rare">{{road.stage.characterRare}}★</td> -->
-                                    <td class="chara-rare">{{charaRareStar[road.stage.characterRare]}}</td>
-                                    <td>{{road.count}}</td>
-                                    <td [ngClass]="{last: last}">{{road.fanChange}}</td>
-                                </tr>
-                                <tr class="line">
-                                    <td colspan="5"></td>
-                                </tr>
-                            </ng-container>
-                        </tbody>
-                    </table>
-                    <!-- <div class="road-lists">
-                        <div class="road-block" *ngFor="let roads of a.fanReachRoads">
-                            <div class="road" *ngFor="let road of roads">
-                                {{road.stage.stageName+', 用 '+road.stage.characterRare+' 星角色, 打 '+road.count+' 場'}}
-                            </div>
-                            <hr>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="actress empty" *ngIf="false">
-                <div class="head" (click)="addActress()">
-                    <div class="add">
-                        <div class="circle"></div>
-                        <div class="plus"></div>
-                    </div>
-                </div>
-            </div>
+        <div class="stage-list">
+          <div class="name">★ -- fan -- Stage</div>
+          <select name="stageSelected" [(ngModel)]="stageSelected" multiple aria-multiselectable="true">
+            @for (stage of stageRewardFans; track stage) {
+              <option [ngValue]="stage">★{{stage.characterRare}} --
+              {{stage.fan}} -- {{stage.stageName}}</option>
+            }
+          </select>
+          <!-- <div class="stage" *ngFor="let stage of stageRewardFans">
+          <label>
+            <input type="checkbox" [attr.checked]="stage.enable">
+            <div>{{stage.stageName}}</div>
+            <hr>
+              <div>★{{stage.characterRare}}</div>
+            </label>
+            <hr *ngIf="stage.characterRare==4">
+          </div> -->
         </div>
+      </div>
+      <div class="column actress">
+        @for (a of actress; track a) {
+          <div class="actress">
+            <div class="row input">
+              <div>
+                <span>現有fan</span>
+                <input type="number" [(ngModel)]="a.fan">
+              </div>
+              <div>
+                <span>目標fan</span>
+                <input type="number" [(ngModel)]="a.fanTarget">
+              </div>
+              <div>
+                <span style="text-decoration: underline dashed;" [title]="tipClacDeep">計算深度</span>
+                <input type="number" [(ngModel)]="maxCalcDeep">
+              </div>
+            </div>
+            <div class="row calc">
+              <button (click)="runCalc(a)">CALC!</button>
+            </div>
+            <div class="row result">
+              <div>每日任務方案: {{a.fanReachRoads.length}}</div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>-</th>
+                    <th>Stage</th>
+                    <th>角色★</th>
+                    <th>回數</th>
+                    <th>變化</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (roads of a.fanReachRoads; track roads; let i = $index) {
+                    @for (road of roads; track road; let last = $last; let j = $index) {
+                      <tr>
+                        <td>
+                          @if (j==0) {
+                            <span>{{i+1}}</span>
+                          }
+                        </td>
+                        <td>{{road.stage.stageName}}</td>
+                        <!-- <td class="chara-rare">{{road.stage.characterRare}}★</td> -->
+                        <td class="chara-rare">{{charaRareStar[road.stage.characterRare]}}</td>
+                        <td>{{road.count}}</td>
+                        <td [ngClass]="{last: last}">{{road.fanChange}}</td>
+                      </tr>
+                    }
+                    <tr class="line">
+                      <td colspan="5"></td>
+                    </tr>
+                  }
+                </tbody>
+              </table>
+              <!-- <div class="road-lists">
+              <div class="road-block" *ngFor="let roads of a.fanReachRoads">
+                <div class="road" *ngFor="let road of roads">
+                  {{road.stage.stageName+', 用 '+road.stage.characterRare+' 星角色, 打 '+road.count+' 場'}}
+                </div>
+                <hr>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        }
+        @if (false) {
+          <div class="actress empty">
+            <div class="head" (click)="addActress()">
+              <div class="add">
+                <div class="circle"></div>
+                <div class="plus"></div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
     </div>
-</div>
+  </div>
 
 
-<!-- <button (click)="runCalc()">RUN</button>
-<div>
+  <!-- <button (click)="runCalc()">RUN</button>
+  <div>
     <div>每日任務方案 ({{resultRoads.length}})</div>
     <div class="road-lists">
-        <div class="road-block" *ngFor="let roads of resultRoads">
-            <div class="road" *ngFor="let road of roads">
-                {{road.stage.stageName+', 用 '+road.stage.characterRare+' 星角色, 打 '+road.count+' 場'}}</div>
-            <hr>
+      <div class="road-block" *ngFor="let roads of resultRoads">
+        <div class="road" *ngFor="let road of roads">
+        {{road.stage.stageName+', 用 '+road.stage.characterRare+' 星角色, 打 '+road.count+' 場'}}</div>
+        <hr>
         </div>
-    </div>
-</div> -->
+      </div>
+    </div> -->

@@ -1,106 +1,112 @@
 <div class="aika-app">
-    <div class="top">
-        <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
-        <div class="new-update" *ngIf="service.hasNewUpdate">*NEW UPDATE*</div>
-        <div class="version" *ngIf="!service.hasNewUpdate">build.aika.{{buildTimeString}}</div>
-        <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="selectPage('')">
-            <span>愛花版面計算</span>
-        </button>
-        <!-- <button class="aika-supporter" [ngClass]="{selected:page=='ast'}" (click)="selectPage('ast')">
-            <span>愛花支援</span>
-        </button> -->
-        <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="selectPage('adc')">
-            <span>愛花輸出計算</span>
-        </button>
-        <button class="aika-enigma-txt" [ngClass]="{selected:page=='aet'}" (click)="selectPage('aet')">
-            <span>愛花ENIGMA</span>
-        </button>
-        <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
-            <span>愛花被動搭配</span>
-        </button>
-        <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
-            <span>愛花誘拐率</span>
-        </button>
-        <button class="aika-fate" [ngClass]="{selected:page=='af'}" (click)="selectPage('af')">
-            <span>愛花算命</span>
-        </button>
-        <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
-            <span>愛花粉絲計算</span>
-        </button>
-        <button class="aika-moon" [ngClass]="{selected:page=='amc'}" (click)="selectPage('amc')">
-            <span>愛花月</span>
-        </button>
-        <!-- <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
-            <span>愛花時間線</span>
-        </button> -->
-        <!-- <button class="aika-spin" [ngClass]="{selected:page=='asp'}" (click)="selectPage('asp')">
-            <span>*愛花轉圈圈*</span>
-        </button> -->
-        <button class="aika-merge-image" [ngClass]="{selected:page=='ami'}" (click)="selectPage('ami')">
-            <span>愛花合併圖</span>
-        </button>
-        <!-- <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
-            <span>愛花精靈GIF</span>
-        </button> -->
-        <button class="aika-kawaii" [ngClass]="{selected:page=='ak'}" (click)="selectPage('ak')">
-            <span>愛花可愛</span>
-        </button>
-        <button class="aika-model-viewer" [ngClass]="{selected:page=='amv'}" (click)="selectPage('amv')">
-            <span>愛花看3D</span>
-        </button>
-    </div>
-    <div class="body">
-        <div class="aika-calc-container" [hidden]="page!=''">
-            <app-aika-calc></app-aika-calc>
-            <!-- <app-aika-calc2></app-aika-calc2> -->
-        </div>
-        <div class="aika-fan-reach-calc" [hidden]="page!='afrc'">
-            <app-aika-fan-reach-calc></app-aika-fan-reach-calc>
-        </div>
-        <div class="aika-damage-calc" [hidden]="page!='adc'">
-            <app-aika-damage-calc></app-aika-damage-calc>
-        </div>
-        <!-- <div class="aika-skill" [hidden]="page!='ask'">
-          <app-aika-skill></app-aika-skill>
-      </div> -->
-        <div class="aika-enigma" [hidden]="page!='ask'">
-            <app-aika-enigma></app-aika-enigma>
-        </div>
-        <div class="aika-enigma-txt" [hidden]="page!='aet'">
-            <app-aika-enigma-txt></app-aika-enigma-txt>
-        </div>
-        <div class="aika-damage-calc" [hidden]="page!='atl'">
-            <app-aika-timeline></app-aika-timeline>
-        </div>
-        <div class="aika-gacha-calc" [hidden]="page!='agc'">
-            <app-aika-gacha-calc></app-aika-gacha-calc>
-        </div>
-        <div class="aika-fate" [hidden]="page!='af'">
-            <app-aika-fate></app-aika-fate>
-        </div>
-        <div class="aika-moon" [hidden]="page!='amc'">
-            <app-aika-moon></app-aika-moon>
-        </div>
-        <div class="aika-spin" [hidden]="page!='asp'">
-            <app-aika-spin></app-aika-spin>
-        </div>
-        <div class="aika-merge-image" [hidden]="page!='ami'">
-            <app-aika-merge-image></app-aika-merge-image>
-        </div>
-        <div class="aika-sprite-sheet-gif" [hidden]="page!='assg'">
-            <app-aika-sprite-sheet-gif></app-aika-sprite-sheet-gif>
-        </div>
-        <div class="aika-kawaii" [hidden]="page!='ak'">
-            <app-aika-kawaii></app-aika-kawaii>
-        </div>
-        <div class="aika-model-viewer" [hidden]="page!='amv'">
-            <app-aika-model-viewer></app-aika-model-viewer>
-        </div>
-    </div>
-    <div class="msg" *ngIf="service.showMessage">
-        <div class="mask" (click)="service.showMessage=false"></div>
-        <div class="message">{{service.messageWindowContent}}</div>
-    </div>
+  <div class="top">
+    <!-- <img class="aika" src="/favicon.ico" width="16" height="16"> -->
+    @if (service.hasNewUpdate) {
+      <div class="new-update">*NEW UPDATE*</div>
+    }
+    @if (!service.hasNewUpdate) {
+      <div class="version">build.aika.{{buildTimeString}}</div>
+    }
+    <button class="aika-calc" [ngClass]="{selected:page==''}" (click)="selectPage('')">
+      <span>愛花版面計算</span>
+    </button>
+    <!-- <button class="aika-supporter" [ngClass]="{selected:page=='ast'}" (click)="selectPage('ast')">
+    <span>愛花支援</span>
+  </button> -->
+  <button class="aika-damage-calc" [ngClass]="{selected:page=='adc'}" (click)="selectPage('adc')">
+    <span>愛花輸出計算</span>
+  </button>
+  <button class="aika-enigma-txt" [ngClass]="{selected:page=='aet'}" (click)="selectPage('aet')">
+    <span>愛花ENIGMA</span>
+  </button>
+  <button class="aika-enigma" [ngClass]="{selected:page=='ask'}" (click)="selectPage('ask')">
+    <span>愛花被動搭配</span>
+  </button>
+  <button class="aika-gacha-calc" [ngClass]="{selected:page=='agc'}" (click)="selectPage('agc')">
+    <span>愛花誘拐率</span>
+  </button>
+  <button class="aika-fate" [ngClass]="{selected:page=='af'}" (click)="selectPage('af')">
+    <span>愛花算命</span>
+  </button>
+  <button class="aika-fan-calc" [ngClass]="{selected:page=='afrc'}" (click)="selectPage('afrc')">
+    <span>愛花粉絲計算</span>
+  </button>
+  <button class="aika-moon" [ngClass]="{selected:page=='amc'}" (click)="selectPage('amc')">
+    <span>愛花月</span>
+  </button>
+  <!-- <button class="aika-timeline" [ngClass]="{selected:page=='atl'}" (click)="selectPage('atl')">
+  <span>愛花時間線</span>
+</button> -->
+<!-- <button class="aika-spin" [ngClass]="{selected:page=='asp'}" (click)="selectPage('asp')">
+<span>*愛花轉圈圈*</span>
+</button> -->
+<button class="aika-merge-image" [ngClass]="{selected:page=='ami'}" (click)="selectPage('ami')">
+  <span>愛花合併圖</span>
+</button>
+<!-- <button class="aika-sprite-sheet-gif" [ngClass]="{selected:page=='assg'}" (click)="selectPage('assg')">
+<span>愛花精靈GIF</span>
+</button> -->
+<button class="aika-kawaii" [ngClass]="{selected:page=='ak'}" (click)="selectPage('ak')">
+  <span>愛花可愛</span>
+</button>
+<button class="aika-model-viewer" [ngClass]="{selected:page=='amv'}" (click)="selectPage('amv')">
+  <span>愛花看3D</span>
+</button>
+</div>
+<div class="body">
+  <div class="aika-calc-container" [hidden]="page!=''">
+    <app-aika-calc></app-aika-calc>
+    <!-- <app-aika-calc2></app-aika-calc2> -->
+  </div>
+  <div class="aika-fan-reach-calc" [hidden]="page!='afrc'">
+    <app-aika-fan-reach-calc></app-aika-fan-reach-calc>
+  </div>
+  <div class="aika-damage-calc" [hidden]="page!='adc'">
+    <app-aika-damage-calc></app-aika-damage-calc>
+  </div>
+  <!-- <div class="aika-skill" [hidden]="page!='ask'">
+  <app-aika-skill></app-aika-skill>
+</div> -->
+<div class="aika-enigma" [hidden]="page!='ask'">
+  <app-aika-enigma></app-aika-enigma>
+</div>
+<div class="aika-enigma-txt" [hidden]="page!='aet'">
+  <app-aika-enigma-txt></app-aika-enigma-txt>
+</div>
+<div class="aika-damage-calc" [hidden]="page!='atl'">
+  <app-aika-timeline></app-aika-timeline>
+</div>
+<div class="aika-gacha-calc" [hidden]="page!='agc'">
+  <app-aika-gacha-calc></app-aika-gacha-calc>
+</div>
+<div class="aika-fate" [hidden]="page!='af'">
+  <app-aika-fate></app-aika-fate>
+</div>
+<div class="aika-moon" [hidden]="page!='amc'">
+  <app-aika-moon></app-aika-moon>
+</div>
+<div class="aika-spin" [hidden]="page!='asp'">
+  <app-aika-spin></app-aika-spin>
+</div>
+<div class="aika-merge-image" [hidden]="page!='ami'">
+  <app-aika-merge-image></app-aika-merge-image>
+</div>
+<div class="aika-sprite-sheet-gif" [hidden]="page!='assg'">
+  <app-aika-sprite-sheet-gif></app-aika-sprite-sheet-gif>
+</div>
+<div class="aika-kawaii" [hidden]="page!='ak'">
+  <app-aika-kawaii></app-aika-kawaii>
+</div>
+<div class="aika-model-viewer" [hidden]="page!='amv'">
+  <app-aika-model-viewer></app-aika-model-viewer>
+</div>
+</div>
+@if (service.showMessage) {
+  <div class="msg">
+    <div class="mask" (click)="service.showMessage=false"></div>
+    <div class="message">{{service.messageWindowContent}}</div>
+  </div>
+}
 </div>
 
 <!-- <router-outlet></router-outlet> -->

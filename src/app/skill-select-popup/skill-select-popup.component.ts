@@ -2,13 +2,11 @@ import { Component } from '@angular/core';
 import { Input } from '@angular/core';
 import { Skill } from '../model/skill';
 import { AppService } from '../app.service';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
     selector: 'app-skill-select-popup',
-    imports: [
-        CommonModule,
-    ],
+    imports: [],
     templateUrl: './skill-select-popup.component.html',
     styleUrl: './skill-select-popup.component.scss'
 })

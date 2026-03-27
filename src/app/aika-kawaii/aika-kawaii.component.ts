@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 interface Sticker {
   image: HTMLImageElement;
@@ -15,7 +15,7 @@ interface Sticker {
 
 @Component({
     selector: 'app-aika-kawaii',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './aika-kawaii.component.html',
     styleUrl: './aika-kawaii.component.scss'
 })

@@ -1,124 +1,141 @@
 <div class="aika-enigma-txt">
-    <div class="toolbar">
-        <span>顯示:</span>
-        <label>
-            <input type="checkbox" [(ngModel)]="filter.showUpgradeMaterials">
-            <span>升級素材</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filter.showPassiveDescription">
-            <span>被動說明</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filter.showPassiveEffect">
-            <span>被動效果</span>
-        </label>
-        <label>
-            <input type="checkbox" [(ngModel)]="filter.showAllCharacterPsvSkills" (change)="onShowAllCharacterPsvSkillsChange($event)">
-            <span>全員被動(會卡一下)</span>
-        </label>
-        <hr class="vert">
-        <label>
-            <span>搜尋技能</span>
-            <input type="text" placeholder="搜尋技能名稱或效果" [(ngModel)]="filter.keyword" (input)="onKeywordChange($event)">
-        </label>
-        <button (click)="resetSearch()">重置搜尋</button>
-        <label>
-            <input type="checkbox" [(ngModel)]="filter.showSearchResultOnly">
-            <span>僅顯示搜尋結果</span>
-        </label>
-    </div>
-    <div class="body">
-        <div class="index1">
-            <div class="selected-item">{{selectedIndex1.name}}</div>
-            <div class="list">
-                <div class="index-item"
-                    *ngFor="let item of indexes1; trackBy: trackById"
+  <div class="toolbar">
+    <span>顯示:</span>
+    <label>
+      <input type="checkbox" [(ngModel)]="filter.showUpgradeMaterials">
+      <span>升級素材</span>
+    </label>
+    <label>
+      <input type="checkbox" [(ngModel)]="filter.showPassiveDescription">
+      <span>被動說明</span>
+    </label>
+    <label>
+      <input type="checkbox" [(ngModel)]="filter.showPassiveEffect">
+      <span>被動效果</span>
+    </label>
+    <label>
+      <input type="checkbox" [(ngModel)]="filter.showAllCharacterPsvSkills" (change)="onShowAllCharacterPsvSkillsChange($event)">
+      <span>全員被動(會卡一下)</span>
+    </label>
+    <hr class="vert">
+    <label>
+      <span>搜尋技能</span>
+      <input type="text" placeholder="搜尋技能名稱或效果" [(ngModel)]="filter.keyword" (input)="onKeywordChange($event)">
+    </label>
+    <button (click)="resetSearch()">重置搜尋</button>
+    <label>
+      <input type="checkbox" [(ngModel)]="filter.showSearchResultOnly">
+      <span>僅顯示搜尋結果</span>
+    </label>
+  </div>
+  <div class="body">
+    <div class="index1">
+      <div class="selected-item">{{selectedIndex1.name}}</div>
+      <div class="list">
+        @for (item of indexes1; track trackById($index, item)) {
+          <div class="index-item"
                     [ngClass]="{
                         disabled:!item.enable,
                         selected:selectedIndex1==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
                         'hide': filter.showSearchResultOnly && enableSearchHightlight && !searchResultShow[item.id]
                         }"
-                    (click)="selectIndex1(item)"
-                    #index1Item
-                    [attr.data-id]="item.id">
-                    <span>{{item.name}}</span>
-                </div>
-            </div>
-        </div>
-        <div class="index2">
-            <div class="selected-item">{{selectedIndex2.name}}</div>
-            <div class="list">
-                <div class="index-item"
-                    *ngFor="let item of indexes2; trackBy: trackById"
+            (click)="selectIndex1(item)"
+            #index1Item
+            [attr.data-id]="item.id">
+            <span>{{item.name}}</span>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="index2">
+      <div class="selected-item">{{selectedIndex2.name}}</div>
+      <div class="list">
+        @for (item of indexes2; track trackById($index, item)) {
+          <div class="index-item"
                     [ngClass]="{
                         disabled:!item.enable,
                         selected:selectedIndex2==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
                         'hide': filter.showSearchResultOnly && enableSearchHightlight && (!searchResultShow[item.parent.id] || (item.enable && !searchResultShow[item.id]))
                         }"
-                    (click)="selectIndex2(item)"
-                    #index2Item
-                    [attr.data-id]="item.id">
-                    <span>{{item.name}}</span>
-                </div>
-            </div>
-        </div>
-        <div class="index3">
-            <div class="selected-item">{{selectedIndex3.name}}</div>
-            <div class="list">
-                <div class="index-item"
-                    *ngFor="let item of indexes3; trackBy: trackById"
+            (click)="selectIndex2(item)"
+            #index2Item
+            [attr.data-id]="item.id">
+            <span>{{item.name}}</span>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="index3">
+      <div class="selected-item">{{selectedIndex3.name}}</div>
+      <div class="list">
+        @for (item of indexes3; track trackById($index, item)) {
+          <div class="index-item"
                     [ngClass]="{
                         disabled:!item.enable,
                         selected:selectedIndex3==item,
                         'search-highlight':enableSearchHightlight && searchResultShow[item.id],
                         'hide': filter.showSearchResultOnly && enableSearchHightlight && (!searchResultShow[item.parent.id] || (item.enable && !searchResultShow[item.id]))
                         }"
-                    (click)="selectIndex3(item)"
-                    #index3Item
-                    [attr.data-id]="item.id">
-                    <span>{{item.name}}</span>
-                </div>
-            </div>
-        </div>
-        <div class="psv-list">
-            <div class="section-item"
-            *ngFor="let item of selectedSections; trackBy: trackById"
-            #sectionItem
-            [attr.data-id]="item.id"
-            [ngClass]="{hide:!searchResultShow[item.id]}">
-                <h2 class="character-name"
-                (click)="selectIndex1(item.index);scrollAllIndexesIntoView()">{{item.name}}</h2>
-                <div class="total-cost" *ngIf="filter.showUpgradeMaterials">
-                    <div>升級總素材:</div>
-                    <div>{{sectionCosts[item.id]}}</div>
-                </div>
-                <div *ngFor="let area of item.area; trackBy: trackById" #areaItem [attr.data-id]="area.id">
-                    <h3 [ngClass]="{hide:!searchResultShow[area.id]}">{{area.name}}</h3>
-                    <div
-                    *ngFor="let psvSkill of area.psvskills; trackBy: trackById"
-                    #psvSkillItem [attr.data-id]="psvSkill.id"
-                    [ngClass]="{hide:!searchResultShow[psvSkill.id]}"
-                    >
-                        <h4>{{psvSkill.name}}</h4>
-                        <!-- <div class="grade">
-                            <span>G:{{psvSkill.uc}} </span>
-                            <span *ngFor="let tag of psvSkill.tags;let last = last">{{TagName[tag]}} </span>
-                        </div> -->
-                        <!-- <div class="tag" *ngIf="psvSkill.tags.length > 0">
-                            <span *ngFor="let tag of psvSkill.tags;let last = last">{{tag}} </span>
-                        </div> -->
-                        <div class="desc" *ngIf="filter.showPassiveDescription">{{psvSkill.desc}}</div>
-                        <div class="effect" *ngIf="filter.showPassiveEffect">{{psvSkill.effect}}</div>
-                        <div *ngIf="psvSkill.upgrade && filter.showUpgradeMaterials" class="upgrade">
-                            <div>升級: {{psvSkill.level}} -> {{psvSkill.upgrade.level}}</div>
-                            <div class="cost" *ngFor="let cost of psvSkill.upgrade.cost">{{cost}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            (click)="selectIndex3(item)"
+            #index3Item
+            [attr.data-id]="item.id">
+            <span>{{item.name}}</span>
+          </div>
+        }
+      </div>
     </div>
+    <div class="psv-list">
+      @for (item of selectedSections; track trackById($index, item)) {
+        <div class="section-item"
+          #sectionItem
+          [attr.data-id]="item.id"
+          [ngClass]="{hide:!searchResultShow[item.id]}">
+          <h2 class="character-name"
+          (click)="selectIndex1(item.index);scrollAllIndexesIntoView()">{{item.name}}</h2>
+          @if (filter.showUpgradeMaterials) {
+            <div class="total-cost">
+              <div>升級總素材:</div>
+              <div>{{sectionCosts[item.id]}}</div>
+            </div>
+          }
+          @for (area of item.area; track trackById($index, area)) {
+            <div #areaItem [attr.data-id]="area.id">
+              <h3 [ngClass]="{hide:!searchResultShow[area.id]}">{{area.name}}</h3>
+              @for (psvSkill of area.psvskills; track trackById($index, psvSkill)) {
+                <div
+                  #psvSkillItem [attr.data-id]="psvSkill.id"
+                  [ngClass]="{hide:!searchResultShow[psvSkill.id]}"
+                  >
+                  <h4>{{psvSkill.name}}</h4>
+                  <!-- <div class="grade">
+                  <span>G:{{psvSkill.uc}} </span>
+                  <span *ngFor="let tag of psvSkill.tags;let last = last">{{TagName[tag]}} </span>
+                </div> -->
+                <!-- <div class="tag" *ngIf="psvSkill.tags.length > 0">
+                <span *ngFor="let tag of psvSkill.tags;let last = last">{{tag}} </span>
+              </div> -->
+              @if (filter.showPassiveDescription) {
+                <div class="desc">{{psvSkill.desc}}</div>
+              }
+              @if (filter.showPassiveEffect) {
+                <div class="effect">{{psvSkill.effect}}</div>
+              }
+              @if (psvSkill.upgrade && filter.showUpgradeMaterials) {
+                <div class="upgrade">
+                  <div>升級: {{psvSkill.level}} -> {{psvSkill.upgrade.level}}</div>
+                  @for (cost of psvSkill.upgrade.cost; track cost) {
+                    <div class="cost">{{cost}}</div>
+                  }
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>
+</div>
 </div>

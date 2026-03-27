@@ -8,200 +8,210 @@
   </section>
 
   <!-- 步驟 2: 自動偵測或手動設定裁切區域 -->
-  <section class="section" *ngIf="sourceImage">
-    <h2>步驟 2: 設定裁切區域</h2>
-
-    <!-- 自動偵測 -->
-    <div class="auto-detect">
-      <h3>自動偵測黑線</h3>
-      <div class="controls">
-        <label>
-          黑線閾值:
-          <input type="number" [(ngModel)]="blackThreshold" min="0" max="255" />
-        </label>
-        <label>
-          最小格子大小:
-          <input type="number" [(ngModel)]="minCellSize" min="1" />
-        </label>
-        <button (click)="autoDetectCells()">自動偵測</button>
-      </div>
-    </div>
-
-    <!-- 手動新增裁切區域 -->
-    <div class="manual-crop">
-      <h3>手動新增裁切區域</h3>
-      <div class="controls">
-        <label>
-          名稱:
-          <input type="text" [(ngModel)]="newCropRegion.name" />
-        </label>
-        <label>
-          X:
-          <input type="number" [(ngModel)]="newCropRegion.x" />
-        </label>
-        <label>
-          Y:
-          <input type="number" [(ngModel)]="newCropRegion.y" />
-        </label>
-        <label>
-          寬度:
-          <input type="number" [(ngModel)]="newCropRegion.width" />
-        </label>
-        <label>
-          高度:
-          <input type="number" [(ngModel)]="newCropRegion.height" />
-        </label>
-        <button (click)="addManualCropRegion()">新增區域</button>
-      </div>
-    </div>
-
-    <!-- 原始圖片 Canvas -->
-    <div class="canvas-container">
-      <canvas #sourceCanvas></canvas>
-    </div>
-
-    <!-- 裁切區域列表 -->
-    <div class="crop-regions-list" *ngIf="cropRegions.length > 0">
-      <h3>裁切區域 ({{ cropRegions.length }})</h3>
-      <div class="region-item" *ngFor="let region of cropRegions">
-        <span>{{ region.name }} - ({{ region.x }}, {{ region.y }}, {{ region.width }}×{{ region.height }})</span>
-        <div class="region-actions">
-          <button (click)="editCropRegion(region)">編輯</button>
-          <button (click)="generateFramesFromRegion(region.id)">生成圖框</button>
-          <button (click)="deleteCropRegion(region.id)">刪除</button>
-        </div>
-      </div>
-      <button class="btn-primary" (click)="generateAllFrames()">從所有區域生成圖框</button>
-    </div>
-
-    <!-- 編輯裁切區域彈窗 -->
-    <div class="modal" *ngIf="editingCropRegion">
-      <div class="modal-content">
-        <h3>編輯裁切區域</h3>
-        <label>
-          名稱:
-          <input type="text" [(ngModel)]="editingCropRegion.name" />
-        </label>
-        <label>
-          X:
-          <input type="number" [(ngModel)]="editingCropRegion.x" />
-        </label>
-        <label>
-          Y:
-          <input type="number" [(ngModel)]="editingCropRegion.y" />
-        </label>
-        <label>
-          寬度:
-          <input type="number" [(ngModel)]="editingCropRegion.width" />
-        </label>
-        <label>
-          高度:
-          <input type="number" [(ngModel)]="editingCropRegion.height" />
-        </label>
-        <div class="modal-actions">
-          <button (click)="saveCropRegion()">儲存</button>
-          <button (click)="cancelEdit()">取消</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 步驟 3: 管理圖框 -->
-  <section class="section" *ngIf="frames.length > 0">
-    <h2>步驟 3: 管理圖框</h2>
-
-    <!-- 全域設定 -->
-    <div class="global-settings">
-      <h3>全域設定</h3>
-      <div class="controls">
-        <label>
-          延遲時間 (毫秒):
-          <input type="number" [(ngModel)]="globalDelay" min="10" />
-        </label>
-        <button (click)="applyGlobalDelay()">套用到選中圖框</button>
-      </div>
-      <div class="controls">
-        <label>
-          錨點 X (0-1):
-          <input type="number" [(ngModel)]="globalAnchorX" min="0" max="1" step="0.1" />
-        </label>
-        <label>
-          錨點 Y (0-1):
-          <input type="number" [(ngModel)]="globalAnchorY" min="0" max="1" step="0.1" />
-        </label>
-        <button (click)="applyGlobalAnchor()">套用到選中圖框</button>
-      </div>
-      <div class="controls">
-        <button (click)="selectAllFrames()">全選</button>
-        <button (click)="deselectAllFrames()">全不選</button>
-      </div>
-    </div>
-
-    <!-- 圖框列表 -->
-    <div class="frames-list">
-      <h3>圖框列表 ({{ frames.length }})</h3>
-      <div class="frame-item" *ngFor="let frame of frames; let i = index"
-           [class.selected]="frame.selected"
-           [class.editing]="selectedFrameId === frame.id">
-        <div class="frame-preview">
-          <canvas [width]="frame.canvas.width" [height]="frame.canvas.height"
-                  #frameCanvas></canvas>
-          <img [src]="frame.canvas.toDataURL()" />
-        </div>
-        <div class="frame-info">
+  @if (sourceImage) {
+    <section class="section">
+      <h2>步驟 2: 設定裁切區域</h2>
+      <!-- 自動偵測 -->
+      <div class="auto-detect">
+        <h3>自動偵測黑線</h3>
+        <div class="controls">
           <label>
-            <input type="checkbox" [checked]="frame.selected"
-                   (change)="toggleFrameSelection(frame.id)" />
-            圖框 {{ i + 1 }}
+            黑線閾值:
+            <input type="number" [(ngModel)]="blackThreshold" min="0" max="255" />
           </label>
-          <div class="frame-details">
+          <label>
+            最小格子大小:
+            <input type="number" [(ngModel)]="minCellSize" min="1" />
+          </label>
+          <button (click)="autoDetectCells()">自動偵測</button>
+        </div>
+      </div>
+      <!-- 手動新增裁切區域 -->
+      <div class="manual-crop">
+        <h3>手動新增裁切區域</h3>
+        <div class="controls">
+          <label>
+            名稱:
+            <input type="text" [(ngModel)]="newCropRegion.name" />
+          </label>
+          <label>
+            X:
+            <input type="number" [(ngModel)]="newCropRegion.x" />
+          </label>
+          <label>
+            Y:
+            <input type="number" [(ngModel)]="newCropRegion.y" />
+          </label>
+          <label>
+            寬度:
+            <input type="number" [(ngModel)]="newCropRegion.width" />
+          </label>
+          <label>
+            高度:
+            <input type="number" [(ngModel)]="newCropRegion.height" />
+          </label>
+          <button (click)="addManualCropRegion()">新增區域</button>
+        </div>
+      </div>
+      <!-- 原始圖片 Canvas -->
+      <div class="canvas-container">
+        <canvas #sourceCanvas></canvas>
+      </div>
+      <!-- 裁切區域列表 -->
+      @if (cropRegions.length > 0) {
+        <div class="crop-regions-list">
+          <h3>裁切區域 ({{ cropRegions.length }})</h3>
+          @for (region of cropRegions; track region) {
+            <div class="region-item">
+              <span>{{ region.name }} - ({{ region.x }}, {{ region.y }}, {{ region.width }}×{{ region.height }})</span>
+              <div class="region-actions">
+                <button (click)="editCropRegion(region)">編輯</button>
+                <button (click)="generateFramesFromRegion(region.id)">生成圖框</button>
+                <button (click)="deleteCropRegion(region.id)">刪除</button>
+              </div>
+            </div>
+          }
+          <button class="btn-primary" (click)="generateAllFrames()">從所有區域生成圖框</button>
+        </div>
+      }
+      <!-- 編輯裁切區域彈窗 -->
+      @if (editingCropRegion) {
+        <div class="modal">
+          <div class="modal-content">
+            <h3>編輯裁切區域</h3>
             <label>
-              延遲 (ms):
-              <input type="number" [(ngModel)]="frame.delay" min="10" />
+              名稱:
+              <input type="text" [(ngModel)]="editingCropRegion.name" />
             </label>
             <label>
-              錨點 X:
-              <input type="number" [(ngModel)]="frame.anchorX" min="0" max="1" step="0.1" />
+              X:
+              <input type="number" [(ngModel)]="editingCropRegion.x" />
             </label>
             <label>
-              錨點 Y:
-              <input type="number" [(ngModel)]="frame.anchorY" min="0" max="1" step="0.1" />
+              Y:
+              <input type="number" [(ngModel)]="editingCropRegion.y" />
             </label>
+            <label>
+              寬度:
+              <input type="number" [(ngModel)]="editingCropRegion.width" />
+            </label>
+            <label>
+              高度:
+              <input type="number" [(ngModel)]="editingCropRegion.height" />
+            </label>
+            <div class="modal-actions">
+              <button (click)="saveCropRegion()">儲存</button>
+              <button (click)="cancelEdit()">取消</button>
+            </div>
           </div>
         </div>
-        <div class="frame-actions">
-          <button (click)="moveFrameUp(i)" [disabled]="i === 0">↑</button>
-          <button (click)="moveFrameDown(i)" [disabled]="i === frames.length - 1">↓</button>
-          <button (click)="deleteFrame(frame.id)">刪除</button>
+      }
+    </section>
+  }
+
+  <!-- 步驟 3: 管理圖框 -->
+  @if (frames.length > 0) {
+    <section class="section">
+      <h2>步驟 3: 管理圖框</h2>
+      <!-- 全域設定 -->
+      <div class="global-settings">
+        <h3>全域設定</h3>
+        <div class="controls">
+          <label>
+            延遲時間 (毫秒):
+            <input type="number" [(ngModel)]="globalDelay" min="10" />
+          </label>
+          <button (click)="applyGlobalDelay()">套用到選中圖框</button>
+        </div>
+        <div class="controls">
+          <label>
+            錨點 X (0-1):
+            <input type="number" [(ngModel)]="globalAnchorX" min="0" max="1" step="0.1" />
+          </label>
+          <label>
+            錨點 Y (0-1):
+            <input type="number" [(ngModel)]="globalAnchorY" min="0" max="1" step="0.1" />
+          </label>
+          <button (click)="applyGlobalAnchor()">套用到選中圖框</button>
+        </div>
+        <div class="controls">
+          <button (click)="selectAllFrames()">全選</button>
+          <button (click)="deselectAllFrames()">全不選</button>
         </div>
       </div>
-    </div>
-  </section>
+      <!-- 圖框列表 -->
+      <div class="frames-list">
+        <h3>圖框列表 ({{ frames.length }})</h3>
+        @for (frame of frames; track frame; let i = $index) {
+          <div class="frame-item"
+            [class.selected]="frame.selected"
+            [class.editing]="selectedFrameId === frame.id">
+            <div class="frame-preview">
+              <canvas [width]="frame.canvas.width" [height]="frame.canvas.height"
+              #frameCanvas></canvas>
+              <img [src]="frame.canvas.toDataURL()" />
+            </div>
+            <div class="frame-info">
+              <label>
+                <input type="checkbox" [checked]="frame.selected"
+                  (change)="toggleFrameSelection(frame.id)" />
+                  圖框 {{ i + 1 }}
+                </label>
+                <div class="frame-details">
+                  <label>
+                    延遲 (ms):
+                    <input type="number" [(ngModel)]="frame.delay" min="10" />
+                  </label>
+                  <label>
+                    錨點 X:
+                    <input type="number" [(ngModel)]="frame.anchorX" min="0" max="1" step="0.1" />
+                  </label>
+                  <label>
+                    錨點 Y:
+                    <input type="number" [(ngModel)]="frame.anchorY" min="0" max="1" step="0.1" />
+                  </label>
+                </div>
+              </div>
+              <div class="frame-actions">
+                <button (click)="moveFrameUp(i)" [disabled]="i === 0">↑</button>
+                <button (click)="moveFrameDown(i)" [disabled]="i === frames.length - 1">↓</button>
+                <button (click)="deleteFrame(frame.id)">刪除</button>
+              </div>
+            </div>
+          }
+        </div>
+      </section>
+    }
 
-  <!-- 步驟 4: 預覽和生成 GIF -->
-  <section class="section" *ngIf="frames.length > 0">
-    <h2>步驟 4: 預覽和生成 GIF</h2>
-
-    <!-- 預覽控制 -->
-    <div class="preview-controls">
-      <button *ngIf="!isPreviewPlaying" (click)="startPreview()">開始預覽</button>
-      <button *ngIf="isPreviewPlaying" (click)="stopPreview()">停止預覽</button>
-      <button (click)="generateGif()" [disabled]="isGenerating">
-        {{ isGenerating ? '生成中...' : '生成 GIF' }}
-      </button>
-    </div>
-
-    <!-- 預覽 Canvas -->
-    <div class="preview-container">
-      <h3>動畫預覽</h3>
-      <canvas #previewCanvas></canvas>
-    </div>
-
-    <!-- 生成的 GIF -->
-    <div class="generated-gif" *ngIf="generatedGifUrl">
-      <h3>生成的 GIF</h3>
-      <img [src]="generatedGifUrl" alt="Generated GIF" />
-      <button (click)="downloadGif()">下載 GIF</button>
-    </div>
-  </section>
-</div>
+    <!-- 步驟 4: 預覽和生成 GIF -->
+    @if (frames.length > 0) {
+      <section class="section">
+        <h2>步驟 4: 預覽和生成 GIF</h2>
+        <!-- 預覽控制 -->
+        <div class="preview-controls">
+          @if (!isPreviewPlaying) {
+            <button (click)="startPreview()">開始預覽</button>
+          }
+          @if (isPreviewPlaying) {
+            <button (click)="stopPreview()">停止預覽</button>
+          }
+          <button (click)="generateGif()" [disabled]="isGenerating">
+            {{ isGenerating ? '生成中...' : '生成 GIF' }}
+          </button>
+        </div>
+        <!-- 預覽 Canvas -->
+        <div class="preview-container">
+          <h3>動畫預覽</h3>
+          <canvas #previewCanvas></canvas>
+        </div>
+        <!-- 生成的 GIF -->
+        @if (generatedGifUrl) {
+          <div class="generated-gif">
+            <h3>生成的 GIF</h3>
+            <img [src]="generatedGifUrl" alt="Generated GIF" />
+            <button (click)="downloadGif()">下載 GIF</button>
+          </div>
+        }
+      </section>
+    }
+  </div>

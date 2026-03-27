@@ -1,108 +1,127 @@
 <div class="aika-enigma">
-    <div class="column">
-        <select #characterList class="character-list" name="character-list" size="10"
-        [(ngModel)]="selectedCharacterId"
-        (change)="onCharacterChange()">
-            <option
-            #characterOption
-            *ngFor="let character of characters"
-            [value]="character.id"
-            [ngStyle]="getCharacterOptionStyle(character)"
-            >{{character.name}}</option>
-        </select>
+  <div class="column">
+    <select #characterList class="character-list" name="character-list" size="10"
+      [(ngModel)]="selectedCharacterId"
+      (change)="onCharacterChange()">
+      @for (character of characters; track character) {
+        <option
+          #characterOption
+          [value]="character.id"
+          [ngStyle]="getCharacterOptionStyle(character)"
+        >{{character.name}}</option>
+      }
+    </select>
+  </div>
+  <div class="character">
+    <div class="auto-psv">
+      <span>自動test:</span>
+      @for (area of selectedSectionAreasWithoutCommon; track area) {
+        <label>
+          <input type="checkbox" [(ngModel)]="autoAssignPsvSectionAreas[area.name]">
+          <span>{{area.name}}</span>
+        </label>
+      }
+      <button type="button" (click)="autoAssignPsvSkills('SP')">SP</button>
+      <button type="button" (click)="autoAssignPsvSkills('ShotATK')">射擊ATK</button>
+      <button type="button" (click)="autoAssignPsvSkills('CloseATK')">近戰ATK</button>
+      <button type="button" (click)="autoAssignPsvSkills('Attr')">屬性</button>
+      <button type="button" (click)="autoAssignPsvSkills('DamageCut')">減傷</button>
+      <button type="button" (click)="autoAssignPsvSkills('Heal')">奶</button>
     </div>
-    <div class="character">
-        <div class="auto-psv">
-            <span>自動test:</span>
-            <label *ngFor="let area of selectedSectionAreasWithoutCommon">
-                <input type="checkbox" [(ngModel)]="autoAssignPsvSectionAreas[area.name]">
-                <span>{{area.name}}</span>
-            </label>
-            <button type="button" (click)="autoAssignPsvSkills('SP')">SP</button>
-            <button type="button" (click)="autoAssignPsvSkills('ShotATK')">射擊ATK</button>
-            <button type="button" (click)="autoAssignPsvSkills('CloseATK')">近戰ATK</button>
-            <button type="button" (click)="autoAssignPsvSkills('Attr')">屬性</button>
-            <button type="button" (click)="autoAssignPsvSkills('DamageCut')">減傷</button>
-            <button type="button" (click)="autoAssignPsvSkills('Heal')">奶</button>
-        </div>
-        <h1 class="name">{{getSelectedCharacterName()}}</h1>
-        <div class="effect-summary">{{selectedCharacterEffectSummary}}</div>
-        <div class="character-psvskill-list">
-            <div class="slot"
-            *ngFor="let slot of selectedCharacterSlots;"
-            [ngClass]="{selected:selectedSlot==slot}">
-                <div class="index">{{slot.index}}</div>
-                <div class="head" *ngIf="slot.enable">
-                    <div class="type">{{slot.tagStyle.name}}</div>
-                    <div class="cost">{{slot.costPoint}}</div>
-                </div>
-                <div class="body" *ngIf="slot.selectedPsvSkill != null">
-                    <div class="tag-info">
-                        <div class="tags">
-                            <span class="area-tag">{{selectedActressPsvSkillAreaTagName[slot.selectedPsvSkill.gid]}}</span>
-                            <span class="tag" *ngFor="let tagStyle of slot.selectedPsvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
-                        </div>
-                        <span class="cost">{{slot.selectedPsvSkill.costPoint}}</span>
-                    </div>
-                    <div class="name">{{slot.selectedPsvSkill.name}}</div>
-                    <div class="description">{{slot.selectedPsvSkill.desc}}</div>
-                    <div class="effect">{{slot.selectedPsvSkill.effect}}</div>
-                </div>
-                <div class="body" *ngIf="slot.selectedPsvSkill==null">
-                    <span>--</span>
-                </div>
-                <button type="button" class="change-psvskill"
-                *ngIf="slot.enable"
-                (click)="selectSlot(slot)"
-                >[>]</button>
+    <h1 class="name">{{getSelectedCharacterName()}}</h1>
+    <div class="effect-summary">{{selectedCharacterEffectSummary}}</div>
+    <div class="character-psvskill-list">
+      @for (slot of selectedCharacterSlots; track slot) {
+        <div class="slot"
+          [ngClass]="{selected:selectedSlot==slot}">
+          <div class="index">{{slot.index}}</div>
+          @if (slot.enable) {
+            <div class="head">
+              <div class="type">{{slot.tagStyle.name}}</div>
+              <div class="cost">{{slot.costPoint}}</div>
             </div>
+          }
+          @if (slot.selectedPsvSkill != null) {
+            <div class="body">
+              <div class="tag-info">
+                <div class="tags">
+                  <span class="area-tag">{{selectedActressPsvSkillAreaTagName[slot.selectedPsvSkill.gid]}}</span>
+                  @for (tagStyle of slot.selectedPsvSkill.tagStyles; track tagStyle; let last = $last) {
+                    <span class="tag">{{tagStyle.name}}</span>
+                  }
+                </div>
+                <span class="cost">{{slot.selectedPsvSkill.costPoint}}</span>
+              </div>
+              <div class="name">{{slot.selectedPsvSkill.name}}</div>
+              <div class="description">{{slot.selectedPsvSkill.desc}}</div>
+              <div class="effect">{{slot.selectedPsvSkill.effect}}</div>
+            </div>
+          }
+          @if (slot.selectedPsvSkill==null) {
+            <div class="body">
+              <span>--</span>
+            </div>
+          }
+          @if (slot.enable) {
+            <button type="button" class="change-psvskill"
+              (click)="selectSlot(slot)"
+            >[>]</button>
+          }
         </div>
+      }
     </div>
-    <div class="psvskill-list-column">
-        <div class="toolbar">
-            <div class="row">
-                <span>過濾:</span>
-                <button type="button" (click)="setEffectFilter('ALL',$event)">ALL</button>
-                <label>
-                    <input type="checkbox" [(ngModel)]="showLv3PsvOnly" (change)="onFilterLv3PsvOnlyChanged()">
-                    <span>只顯示Lv.3/固有</span>
-                </label>
-                <label *ngFor="let area of selectedSectionAreas">
-                    <input type="checkbox" [(ngModel)]="showAreaPsvSkills[area.name]" (change)="onFilterAreaCheckboxChanged(area.name)">
-                    <span>{{area.name}}</span>
-                </label>
-                <button type="button"
-                    [ngClass]="{selected:filterEffectNames.includes(effectName)}"
-                    *ngFor="let effectName of slotSelectablePsvSkillEffectNames"
-                    (click)="setEffectFilter(effectName,$event)">{{effectName}}</button>
-            </div>
-        </div>
-        <div class="psvskill-list" #psvSkillList>
-            <div class="psvskill"
-                #psvSkillItem
-                *ngFor="let psvSkill of slotSelectablePsvSkills;"
-                [attr.data-gid]="psvSkill.gid"
+  </div>
+  <div class="psvskill-list-column">
+    <div class="toolbar">
+      <div class="row">
+        <span>過濾:</span>
+        <button type="button" (click)="setEffectFilter('ALL',$event)">ALL</button>
+        <label>
+          <input type="checkbox" [(ngModel)]="showLv3PsvOnly" (change)="onFilterLv3PsvOnlyChanged()">
+          <span>只顯示Lv.3/固有</span>
+        </label>
+        @for (area of selectedSectionAreas; track area) {
+          <label>
+            <input type="checkbox" [(ngModel)]="showAreaPsvSkills[area.name]" (change)="onFilterAreaCheckboxChanged(area.name)">
+            <span>{{area.name}}</span>
+          </label>
+        }
+        @for (effectName of slotSelectablePsvSkillEffectNames; track effectName) {
+          <button type="button"
+            [ngClass]="{selected:filterEffectNames.includes(effectName)}"
+          (click)="setEffectFilter(effectName,$event)">{{effectName}}</button>
+        }
+      </div>
+    </div>
+    <div class="psvskill-list" #psvSkillList>
+      @for (psvSkill of slotSelectablePsvSkills; track psvSkill) {
+        <div class="psvskill"
+          #psvSkillItem
+          [attr.data-gid]="psvSkill.gid"
                 [ngClass]="{
                     hide: checkPsvSkillHide(psvSkill),
                     selected:selectedSlot && selectedSlot.selectedPsvSkillGid == psvSkill.gid,
                     'other-selected': slotsSelectedPsvSkills[psvSkill.gid] != null && selectedSlot && selectedSlot.selectedPsvSkillGid != psvSkill.gid,
                 }">
-                <div class="head">
-                    <button type="button" class="change-psvskill" (click)="selectPsvSkill(psvSkill)">[<]</button>
-                </div>
-                <div class="body">
-                    <div class="tag-info">
-                        <div class="tags">
-                            <span class="area-tag">{{selectedActressPsvSkillAreaTagName[psvSkill.gid]}}</span>
-                            <span class="tag" *ngFor="let tagStyle of psvSkill.tagStyles; let last = last">{{tagStyle.name}}</span>
-                        </div>
-                        <span class="cost">{{psvSkill.costPoint}}</span>
-                    </div>
-                    <div class="name">{{psvSkill.name}}</div>
-                    <div class="description">{{psvSkill.desc}}</div>
-                    <div class="effect">{{psvSkill.effect}}</div>
-                </div>
+          <div class="head">
+            <button type="button" class="change-psvskill" (click)="selectPsvSkill(psvSkill)">[<]</button>
+          </div>
+          <div class="body">
+            <div class="tag-info">
+              <div class="tags">
+                <span class="area-tag">{{selectedActressPsvSkillAreaTagName[psvSkill.gid]}}</span>
+                @for (tagStyle of psvSkill.tagStyles; track tagStyle; let last = $last) {
+                  <span class="tag">{{tagStyle.name}}</span>
+                }
+              </div>
+              <span class="cost">{{psvSkill.costPoint}}</span>
             </div>
+            <div class="name">{{psvSkill.name}}</div>
+            <div class="description">{{psvSkill.desc}}</div>
+            <div class="effect">{{psvSkill.effect}}</div>
+          </div>
         </div>
+      }
     </div>
+  </div>
 </div>

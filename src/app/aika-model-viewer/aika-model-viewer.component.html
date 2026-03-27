@@ -1,13 +1,15 @@
 <div class="viewer-root" [style.background]="bgColor"
-     (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
+  (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)">
 
   <!-- 3D 渲染畫布容器 -->
   <div class="canvas-container" #canvasContainer></div>
 
   <!-- 輸出範圍標示框 -->
-  <div class="export-preview" *ngIf="showExportPreview" [ngStyle]="exportPreviewStyle">
-    <span class="export-preview-label">{{ exportWidth }} &times; {{ exportHeight }}</span>
-  </div>
+  @if (showExportPreview) {
+    <div class="export-preview" [ngStyle]="exportPreviewStyle">
+      <span class="export-preview-label">{{ exportWidth }} &times; {{ exportHeight }}</span>
+    </div>
+  }
 
   <!-- 拖曳提示覆蓋層 -->
   <div class="drop-overlay" [class.active]="isDragging">
@@ -18,12 +20,14 @@
   </div>
 
   <!-- 空白提示 -->
-  <div class="empty-hint" *ngIf="models.length === 0 && !isDragging" (click)="onEmptyHintClick()">
-    <div class="empty-icon">&#9670;</div>
-    <p>拖曳 <strong>.obj</strong> 或 <strong>.fbx</strong> 檔案至此處載入3D模型</p>
-    <p class="sub">可同時拖入貼圖圖片（.jpg / .png）</p>
-    <p class="sub click-hint">點擊此處選擇檔案</p>
-  </div>
+  @if (models.length === 0 && !isDragging) {
+    <div class="empty-hint" (click)="onEmptyHintClick()">
+      <div class="empty-icon">&#9670;</div>
+      <p>拖曳 <strong>.obj</strong> 或 <strong>.fbx</strong> 檔案至此處載入3D模型</p>
+      <p class="sub">可同時拖入貼圖圖片（.jpg / .png）</p>
+      <p class="sub click-hint">點擊此處選擇檔案</p>
+    </div>
+  }
 
   <!-- 側邊面板 -->
   <div class="side-panel" [class.collapsed]="panelCollapsed">
@@ -42,8 +46,10 @@
         <div class="bg-row">
           <input type="color" [(ngModel)]="bgColor" (ngModelChange)="onBgColorChange()" />
           <span class="bg-val">{{ bgColor }}</span>
-          <button class="btn-preset" *ngFor="let c of bgPresets"
-                  [style.background]="c" [title]="c" (click)="setBgColor(c)"></button>
+          @for (c of bgPresets; track c) {
+            <button class="btn-preset"
+            [style.background]="c" [title]="c" (click)="setBgColor(c)"></button>
+          }
         </div>
       </div>
 
@@ -64,7 +70,7 @@
         </div>
         <div class="export-row" style="margin-top:4px;">
           <button class="btn-preview" [class.active]="showExportPreview"
-                  (click)="showExportPreview = !showExportPreview">&#9634; 顯示範圍</button>
+          (click)="showExportPreview = !showExportPreview">&#9634; 顯示範圍</button>
           <button class="btn-export" (click)="exportImage()">&#128247; 儲存 JPG</button>
         </div>
       </div>
@@ -77,146 +83,156 @@
 
         <!-- 模型列表 -->
         <div class="asset-list">
-          <div class="asset-item"
-               *ngFor="let m of models"
-               [class.selected]="selectedModel === m"
-               (click)="selectModel(m)">
-            <label class="asset-check" (click)="$event.stopPropagation()">
-              <input type="checkbox" [checked]="m.enabled" (change)="toggleModelEnabled(m)" />
-            </label>
-            <span class="asset-icon model-icon">&#9679;</span>
-            <span class="asset-name" [title]="m.name">{{ m.name }}</span>
-          </div>
+          @for (m of models; track m) {
+            <div class="asset-item"
+              [class.selected]="selectedModel === m"
+              (click)="selectModel(m)">
+              <label class="asset-check" (click)="$event.stopPropagation()">
+                <input type="checkbox" [checked]="m.enabled" (change)="toggleModelEnabled(m)" />
+              </label>
+              <span class="asset-icon model-icon">&#9679;</span>
+              <span class="asset-name" [title]="m.name">{{ m.name }}</span>
+            </div>
+          }
 
           <!-- 貼圖列表 -->
-          <div class="asset-item tex-item" *ngFor="let t of textures">
-            <label class="asset-check">
-              <input type="checkbox" [checked]="t.enabled" (change)="toggleTextureEnabled(t)" />
-            </label>
-            <span class="asset-icon tex-icon">&#9632;</span>
-            <span class="asset-name" [title]="t.name">{{ t.name }}</span>
-          </div>
+          @for (t of textures; track t) {
+            <div class="asset-item tex-item">
+              <label class="asset-check">
+                <input type="checkbox" [checked]="t.enabled" (change)="toggleTextureEnabled(t)" />
+              </label>
+              <span class="asset-icon tex-icon">&#9632;</span>
+              <span class="asset-name" [title]="t.name">{{ t.name }}</span>
+            </div>
+          }
 
-          <div class="no-asset" *ngIf="models.length === 0 && textures.length === 0">尚無資產</div>
+          @if (models.length === 0 && textures.length === 0) {
+            <div class="no-asset">尚無資產</div>
+          }
         </div>
       </div>
 
       <!-- ⑤ 選取中模型控制 -->
-      <ng-container *ngIf="selectedModel">
+      @if (selectedModel) {
         <div class="section selected-model-section">
           <div class="section-title selected-label">&#9654; {{ selectedModel.name }}</div>
-
           <!-- 亮度 -->
           <div class="sub-section">
             <div class="sub-title">亮度</div>
             <div class="brightness-row">
               <input type="range" min="0" max="4" step="0.05"
-                     [(ngModel)]="selectedModel.brightness"
-                     (ngModelChange)="onBrightnessChange()" />
-              <span class="val-display">{{ selectedModel.brightness | number:'1.2-2' }}</span>
-              <button class="btn-sm" (click)="selectedModel.brightness = 1.6; onBrightnessChange()">預設</button>
-            </div>
-          </div>
-
-          <!-- Preset 配置 -->
-          <div class="sub-section">
-            <div class="sub-title">Preset</div>
-            <div class="preset-list">
-              <div class="preset-item" *ngFor="let p of selectedModel.presets; let i = index"
-                   (click)="applyPreset(p)" [title]="p.name">
-                <span class="preset-name">{{ p.name }}</span>
-                <span class="preset-info">{{ p.posX }},{{ p.posY }},{{ p.posZ }}</span>
-                <span class="preset-info">{{ p.rotX }},{{ p.rotY }},{{ p.rotZ }}</span>
-                <button class="btn-del" (click)="$event.stopPropagation(); deletePreset(selectedModel!, i)"
-                        title="刪除">&#x2715;</button>
+                [(ngModel)]="selectedModel.brightness"
+                (ngModelChange)="onBrightnessChange()" />
+                <span class="val-display">{{ selectedModel.brightness | number:'1.2-2' }}</span>
+                <button class="btn-sm" (click)="selectedModel.brightness = 1.6; onBrightnessChange()">預設</button>
               </div>
-              <div class="no-preset" *ngIf="selectedModel.presets.length === 0">尚無配置</div>
             </div>
-            <button class="btn-sm btn-save-preset" (click)="savePreset()">&#128190; 儲存當前配置</button>
-          </div>
-
-          <!-- 位置 -->
-          <div class="sub-section">
-            <div class="sub-title">位置</div>
-            <div class="pos-grid">
-              <label class="axis-label x">X</label>
-              <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosX" (ngModelChange)="onPositionChange()" />
-              <label class="axis-label y">Y</label>
-              <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosY" (ngModelChange)="onPositionChange()" />
-              <label class="axis-label z">Z</label>
-              <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosZ" (ngModelChange)="onPositionChange()" />
+            <!-- Preset 配置 -->
+            <div class="sub-section">
+              <div class="sub-title">Preset</div>
+              <div class="preset-list">
+                @for (p of selectedModel.presets; track p; let i = $index) {
+                  <div class="preset-item"
+                    (click)="applyPreset(p)" [title]="p.name">
+                    <span class="preset-name">{{ p.name }}</span>
+                    <span class="preset-info">{{ p.posX }},{{ p.posY }},{{ p.posZ }}</span>
+                    <span class="preset-info">{{ p.rotX }},{{ p.rotY }},{{ p.rotZ }}</span>
+                    <button class="btn-del" (click)="$event.stopPropagation(); deletePreset(selectedModel!, i)"
+                    title="刪除">&#x2715;</button>
+                  </div>
+                }
+                @if (selectedModel.presets.length === 0) {
+                  <div class="no-preset">尚無配置</div>
+                }
+              </div>
+              <button class="btn-sm btn-save-preset" (click)="savePreset()">&#128190; 儲存當前配置</button>
             </div>
-            <button class="btn-sm btn-reset-pos" (click)="resetPosition()">重置位置</button>
-          </div>
-
-          <!-- 旋轉 -->
-          <div class="sub-section">
-            <div class="sub-title">旋轉</div>
-            <div class="rot-row">
-              <span class="axis-label x">X</span>
-              <button class="btn-step" (click)="stepRotation('x', -90)">-90</button>
-              <input type="range" min="-180" max="180" step="1"
-                     [(ngModel)]="selRotX" (ngModelChange)="onRotationChange()" />
-              <button class="btn-step" (click)="stepRotation('x', 90)">+90</button>
-              <span class="axis-val">{{ selRotX }}°</span>
+            <!-- 位置 -->
+            <div class="sub-section">
+              <div class="sub-title">位置</div>
+              <div class="pos-grid">
+                <label class="axis-label x">X</label>
+                <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosX" (ngModelChange)="onPositionChange()" />
+                <label class="axis-label y">Y</label>
+                <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosY" (ngModelChange)="onPositionChange()" />
+                <label class="axis-label z">Z</label>
+                <input type="number" class="pos-input" step="0.1" [(ngModel)]="selPosZ" (ngModelChange)="onPositionChange()" />
+              </div>
+              <button class="btn-sm btn-reset-pos" (click)="resetPosition()">重置位置</button>
             </div>
-            <div class="rot-row">
-              <span class="axis-label y">Y</span>
-              <button class="btn-step" (click)="stepRotation('y', -90)">-90</button>
-              <input type="range" min="-180" max="180" step="1"
-                     [(ngModel)]="selRotY" (ngModelChange)="onRotationChange()" />
-              <button class="btn-step" (click)="stepRotation('y', 90)">+90</button>
-              <span class="axis-val">{{ selRotY }}°</span>
-            </div>
-            <div class="rot-row">
-              <span class="axis-label z">Z</span>
-              <button class="btn-step" (click)="stepRotation('z', -90)">-90</button>
-              <input type="range" min="-180" max="180" step="1"
-                     [(ngModel)]="selRotZ" (ngModelChange)="onRotationChange()" />
-              <button class="btn-step" (click)="stepRotation('z', 90)">+90</button>
-              <span class="axis-val">{{ selRotZ }}°</span>
-            </div>
-            <button class="btn-sm btn-reset-rot" (click)="resetRotation()">重置旋轉</button>
-          </div>
-
-          <!-- Mesh 清單 -->
-          <div class="sub-section mesh-sub-section">
-            <div class="sub-title">Mesh 清單</div>
-            <div class="mesh-filter-row">
-              <input class="mesh-filter-input" type="text" placeholder="篩選..."
-                     [(ngModel)]="selectedModel.meshFilter" />
-              <button class="btn-sm" (click)="setAllMeshVisible(selectedModel!, true)">全顯</button>
-              <button class="btn-sm" (click)="setAllMeshVisible(selectedModel!, false)">全隱</button>
-            </div>
-            <div class="mesh-list">
-              <div class="mesh-item"
-                   *ngFor="let item of filteredMeshItems(selectedModel)"
-                   [style.padding-left.px]="10 + item.depth * 14">
-                <label class="mesh-row">
-                  <input type="checkbox" [checked]="item.visible" (change)="toggleVisibility(item)" />
-                  <span class="mesh-name" [title]="item.fullPath">{{ item.label }}</span>
-                </label>
-                <div class="texture-tags" *ngIf="item.textures.length > 0">
-                  <span class="tex-tag" *ngFor="let tex of item.textures" [title]="tex">{{ tex }}</span>
+            <!-- 旋轉 -->
+            <div class="sub-section">
+              <div class="sub-title">旋轉</div>
+              <div class="rot-row">
+                <span class="axis-label x">X</span>
+                <button class="btn-step" (click)="stepRotation('x', -90)">-90</button>
+                <input type="range" min="-180" max="180" step="1"
+                  [(ngModel)]="selRotX" (ngModelChange)="onRotationChange()" />
+                  <button class="btn-step" (click)="stepRotation('x', 90)">+90</button>
+                  <span class="axis-val">{{ selRotX }}°</span>
                 </div>
-              </div>
-              <div class="no-mesh"
-                   *ngIf="filteredMeshItems(selectedModel).length === 0">無符合項目</div>
+                <div class="rot-row">
+                  <span class="axis-label y">Y</span>
+                  <button class="btn-step" (click)="stepRotation('y', -90)">-90</button>
+                  <input type="range" min="-180" max="180" step="1"
+                    [(ngModel)]="selRotY" (ngModelChange)="onRotationChange()" />
+                    <button class="btn-step" (click)="stepRotation('y', 90)">+90</button>
+                    <span class="axis-val">{{ selRotY }}°</span>
+                  </div>
+                  <div class="rot-row">
+                    <span class="axis-label z">Z</span>
+                    <button class="btn-step" (click)="stepRotation('z', -90)">-90</button>
+                    <input type="range" min="-180" max="180" step="1"
+                      [(ngModel)]="selRotZ" (ngModelChange)="onRotationChange()" />
+                      <button class="btn-step" (click)="stepRotation('z', 90)">+90</button>
+                      <span class="axis-val">{{ selRotZ }}°</span>
+                    </div>
+                    <button class="btn-sm btn-reset-rot" (click)="resetRotation()">重置旋轉</button>
+                  </div>
+                  <!-- Mesh 清單 -->
+                  <div class="sub-section mesh-sub-section">
+                    <div class="sub-title">Mesh 清單</div>
+                    <div class="mesh-filter-row">
+                      <input class="mesh-filter-input" type="text" placeholder="篩選..."
+                        [(ngModel)]="selectedModel.meshFilter" />
+                        <button class="btn-sm" (click)="setAllMeshVisible(selectedModel!, true)">全顯</button>
+                        <button class="btn-sm" (click)="setAllMeshVisible(selectedModel!, false)">全隱</button>
+                      </div>
+                      <div class="mesh-list">
+                        @for (item of filteredMeshItems(selectedModel); track item) {
+                          <div class="mesh-item"
+                            [style.padding-left.px]="10 + item.depth * 14">
+                            <label class="mesh-row">
+                              <input type="checkbox" [checked]="item.visible" (change)="toggleVisibility(item)" />
+                              <span class="mesh-name" [title]="item.fullPath">{{ item.label }}</span>
+                            </label>
+                            @if (item.textures.length > 0) {
+                              <div class="texture-tags">
+                                @for (tex of item.textures; track tex) {
+                                  <span class="tex-tag" [title]="tex">{{ tex }}</span>
+                                }
+                              </div>
+                            }
+                          </div>
+                        }
+                        @if (filteredMeshItems(selectedModel).length === 0) {
+                          <div class="no-mesh"
+                          >無符合項目</div>
+                        }
+                      </div>
+                    </div>
+                  </div>
+                }
+
+              </div><!-- /panel-body -->
             </div>
-          </div>
 
-        </div>
-      </ng-container>
+            <!-- 隱藏 file input -->
+            <input type="file" #fileInput style="display:none"
+              multiple accept=".obj,.fbx,.png,.jpg,.jpeg,.webp,.bmp,.gif"
+              (change)="onFileInputChange($event)" />
 
-    </div><!-- /panel-body -->
-  </div>
-
-  <!-- 隱藏 file input -->
-  <input type="file" #fileInput style="display:none"
-         multiple accept=".obj,.fbx,.png,.jpg,.jpeg,.webp,.bmp,.gif"
-         (change)="onFileInputChange($event)" />
-
-</div>
+            </div>
 
 
 

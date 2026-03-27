@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -13,9 +13,8 @@ interface ImageItem {
 @Component({
     selector: 'app-aika-merge-image',
     imports: [
-        CommonModule,
-        FormsModule,
-    ],
+    FormsModule
+],
     templateUrl: './aika-merge-image.component.html',
     styleUrl: './aika-merge-image.component.scss'
 })

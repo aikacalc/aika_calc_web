@@ -1,27 +1,29 @@
 <div class="root">
-    <!-- <div class="timeline-road">
-        <div class="timeline-road-line">
-            <div class="time"></div>
-            <div class="timeline">
-                <div class="text"></div>
-                <div class="source"></div>
-            </div>
-        </div>
-    </div> -->
-    <table class="timeline-table">
-        <thead>
-            <tr>
-                <th class="time">時間</th>
-                <th class="text">事件</th>
-                <th class="source">來源</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let timeline of timelines" [ngClass]="[timeline.type]">
-                <td class="time">{{timeline.time}}</td>
-                <td class="text">{{timeline.text}}</td>
-                <td class="source">{{timeline.source}}</td>
-            </tr>
-        </tbody>
-    </table>
+  <!-- <div class="timeline-road">
+  <div class="timeline-road-line">
+    <div class="time"></div>
+    <div class="timeline">
+      <div class="text"></div>
+      <div class="source"></div>
+    </div>
+  </div>
+</div> -->
+<table class="timeline-table">
+  <thead>
+    <tr>
+      <th class="time">時間</th>
+      <th class="text">事件</th>
+      <th class="source">來源</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (timeline of timelines; track timeline) {
+      <tr [ngClass]="[timeline.type]">
+        <td class="time">{{timeline.time}}</td>
+        <td class="text">{{timeline.text}}</td>
+        <td class="source">{{timeline.source}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
 </div>

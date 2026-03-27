@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, ChangeDetectorRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import GIF from 'gif.js';
 
@@ -25,7 +25,7 @@ interface Frame {
 
 @Component({
     selector: 'app-aika-sprite-sheet-gif',
-    imports: [CommonModule, FormsModule],
+    imports: [FormsModule],
     templateUrl: './aika-sprite-sheet-gif.component.html',
     styleUrl: './aika-sprite-sheet-gif.component.scss'
 })
