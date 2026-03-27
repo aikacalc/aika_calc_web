@@ -589,14 +589,39 @@ export class Character extends Unit {
         this.rating = Math.floor(totalRating);
     }
 
-    serialSavedata(): string {
-        return '';
-    }
-    setSavedata(): void {
+    static parseCharacterDataCsv(csvString: string): Character[] {
+        const result: Character[] = [];
 
+
+        return result;
     }
 }
 
 export class CharacterPreset {
     character: Character;
+}
+
+export class BackupCharacter {
+    id: number = -1;
+
+    // hp: number = 0;
+    // def: number = 0;
+    // atkShot: number = 0;
+    // attrShot: number = 0;
+    // atkClose: number = 0;
+    // attrClose: number = 0;
+
+    hpPercent: number = 0;
+    defPercent: number = 0;
+    atkShotPercent: number = 0;
+    attrShotPercent: number = 0;
+    atkClosePercent: number = 0;
+    attrClosePercent: number = 0;
+
+    hpAdd: number = 0;
+    defAdd: number = 0;
+    atkShotAdd: number = 0;
+    attrShotAdd: number = 0;
+    atkCloseAdd: number = 0;
+    attrCloseAdd: number = 0;
 }

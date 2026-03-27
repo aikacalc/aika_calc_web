@@ -19807,6 +19807,56 @@ class NicoleFrancisca05 extends Character {
     bloodType: string = 'O';
 }
 
+class NicoleFrancisca70 extends Character {
+    name: string = 'ニコル / 凱歌 ★4';
+    aid:number = 573;
+    cid: number = 578;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3305;
+    hpMin: number = 887;
+    hpMax: number = 3305;
+    atkClose: number = 803;
+    atkCloseMin: number = 223;
+    atkCloseMax: number = 803;
+    attrClose: number = 0;
+    atkShot: number = 788;
+    atkShotMin: number = 219;
+    atkShotMax: number = 788;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 75;
+    attrMax: number = 270;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Ice;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistIce, 0.6),
+        new Buff(AttrTypeId.ResistFire, -0.6),
+        new Buff(AttrTypeId.ResistGravity, -0.3),
+        new Buff(AttrTypeId.Ice, 0.5),
+        new Buff(AttrTypeId.Twin, 0.3),
+        new Buff(AttrTypeId.Dagger, 0.1)
+    ];
+    weaponShots: Gear[] = ActressGears.NicoleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NicoleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NicoleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NicoleFrancisca.bottom;
+    birthdayMonth: number = 8;
+    bloodType: string = 'O';
+}
+
 class NoelleFrancisca01 extends Character {
     name: string = 'ノエル・F ★1';
     aid:number = 581;
@@ -20002,6 +20052,56 @@ class NoelleFrancisca05 extends Character {
         new Buff(AttrTypeId.Gravity, 0.9),
         new Buff(AttrTypeId.Bazooka, 0.25),
         new Buff(AttrTypeId.Spear, 0.15)
+    ];
+    weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
+    weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
+    equipmentTops: Gear[] = ActressGears.NoelleFrancisca.top;
+    equipmentBottoms: Gear[] = ActressGears.NoelleFrancisca.bottom;
+    birthdayMonth: number = 1;
+    bloodType: string = 'O';
+}
+
+class NoelleFrancisca70 extends Character {
+    name: string = 'ノエル / 友愛 ★4';
+    aid:number = 581;
+    cid: number = 586;
+    rare: number = 4;
+    level: number = 80;
+    levelMin: number = 1;
+    levelMax: number = 80;
+    gradeUpLimit: number = 10;
+    gradeupPowUpRate: number = 100;
+    hp: number = 3337;
+    hpMin: number = 896;
+    hpMax: number = 3337;
+    atkClose: number = 736;
+    atkCloseMin: number = 205;
+    atkCloseMax: number = 736;
+    attrClose: number = 0;
+    atkShot: number = 736;
+    atkShotMin: number = 205;
+    atkShotMax: number = 736;
+    attrShot: number = 0;
+    def: number = 918;
+    defMin: number = 255;
+    defMax: number = 918;
+    spd: number = 160;
+    spdMin: number = 160;
+    spdMax: number = 160;
+    spDmgRatio: number = 1.82;
+    attrMin: number = 85;
+    attrMax: number = 306;
+    chrAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    spRangeTypeId: AttrTypeId = AttrTypeId.Shot;
+    spHitTypeId: AttrTypeId = AttrTypeId.Energy;
+    spAttrTypeId: AttrTypeId = AttrTypeId.Gravity;
+    buffs: Buff[] = [
+        new Buff(AttrTypeId.ResistGravity, 0.6),
+        new Buff(AttrTypeId.ResistVolt, -0.6),
+        new Buff(AttrTypeId.ResistIce, -0.3),
+        new Buff(AttrTypeId.Gravity, 0.56),
+        new Buff(AttrTypeId.Bazooka, 0.3),
+        new Buff(AttrTypeId.Spear, 0.1)
     ];
     weaponShots: Gear[] = ActressGears.NoelleFrancisca.long;
     weaponCloses: Gear[] = ActressGears.NoelleFrancisca.short;
@@ -27213,10 +27313,12 @@ export const CharacterModels = {
     NicoleFrancisca02: new NicoleFrancisca02(),
     NicoleFrancisca04: new NicoleFrancisca04(),
     NicoleFrancisca05: new NicoleFrancisca05(),
+    NicoleFrancisca70: new NicoleFrancisca70(),
     NoelleFrancisca01: new NoelleFrancisca01(),
     NoelleFrancisca02: new NoelleFrancisca02(),
     NoelleFrancisca04: new NoelleFrancisca04(),
     NoelleFrancisca05: new NoelleFrancisca05(),
+    NoelleFrancisca70: new NoelleFrancisca70(),
     RakuhanaMeru04: new RakuhanaMeru04(),
     RakuhanaMeru05: new RakuhanaMeru05(),
     SuiseiTsumugi04: new SuiseiTsumugi04(),

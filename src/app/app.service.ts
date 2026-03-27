@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Skill } from './model/skill';
-import { Character } from './model/character';
+import { BackupCharacter, Character } from './model/character';
 import { Gear } from './model/gear';
 import { CharacterModels } from './model/character_models';
 
@@ -27,9 +27,10 @@ export class AppService {
 
     isInited: boolean = false;
     characters: Character[] = [];
-    backupCharacters: Character[] = [];
+    backupCharacters: BackupCharacter[] = [];
     // Character.cid
     ownedCharacterIds: number[] = [];
+    ownedBackupCharacterIds: number[] = [];
 
 
 
@@ -53,6 +54,7 @@ export class AppService {
         this.characters = [];
         this.backupCharacters = [];
         this.ownedCharacterIds = [];
+        this.ownedBackupCharacterIds = [];
         this.initCharacters(Object.values(CharacterModels));
         this.isInited = true;
     }
