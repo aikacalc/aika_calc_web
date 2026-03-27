@@ -18,7 +18,6 @@ class Result {
 
 @Component({
     selector: 'app-aika-fate',
-    standalone: true,
     imports: [],
     templateUrl: './aika-fate.component.html',
     styleUrl: './aika-fate.component.scss'

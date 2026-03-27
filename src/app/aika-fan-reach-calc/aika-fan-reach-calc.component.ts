@@ -8,7 +8,6 @@ import { StageRewardFan } from '../model/stage-reward-fan';
 
 @Component({
     selector: 'app-aika-fan-reach-calc',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

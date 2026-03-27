@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-aika-calc',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

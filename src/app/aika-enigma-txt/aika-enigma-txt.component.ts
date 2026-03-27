@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-aika-enigma-txt',
-    standalone: true,
     imports: [
         CommonModule,
         HttpClientModule,

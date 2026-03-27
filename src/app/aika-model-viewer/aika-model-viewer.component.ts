@@ -49,11 +49,10 @@ export interface TextureEntry {
  * 操作: 左鍵旋轉, 右鍵平移, 滾輪縮放
  */
 @Component({
-  selector: 'app-aika-model-viewer',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './aika-model-viewer.component.html',
-  styleUrl: './aika-model-viewer.component.scss'
+    selector: 'app-aika-model-viewer',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './aika-model-viewer.component.html',
+    styleUrl: './aika-model-viewer.component.scss'
 })
 export class AikaModelViewerComponent implements AfterViewInit, OnDestroy {
 

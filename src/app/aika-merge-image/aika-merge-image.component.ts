@@ -12,7 +12,6 @@ interface ImageItem {
 
 @Component({
     selector: 'app-aika-merge-image',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

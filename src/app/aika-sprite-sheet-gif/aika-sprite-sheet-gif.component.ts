@@ -25,7 +25,6 @@ interface Frame {
 
 @Component({
     selector: 'app-aika-sprite-sheet-gif',
-    standalone: true,
     imports: [CommonModule, FormsModule],
     templateUrl: './aika-sprite-sheet-gif.component.html',
     styleUrl: './aika-sprite-sheet-gif.component.scss'

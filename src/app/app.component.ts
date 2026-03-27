@@ -23,7 +23,6 @@ import { AikaFateComponent } from './aika-fate/aika-fate.component';
 
 @Component({
     selector: 'app-root',
-    standalone: true,
     imports: [
         CommonModule,
         // RouterOutlet,

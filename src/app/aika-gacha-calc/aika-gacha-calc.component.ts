@@ -10,7 +10,6 @@ import { AttrTypeId, AttrTypeColor } from '../model/attr-type';
 
 @Component({
     selector: 'app-aika-gacha-calc',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

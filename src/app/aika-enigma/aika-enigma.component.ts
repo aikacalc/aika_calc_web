@@ -12,7 +12,6 @@ import { AttrTypeBackgroundColor, AttrTypeId } from '../model/attr-type';
 
 @Component({
     selector: 'app-aika-enigma',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

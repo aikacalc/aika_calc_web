@@ -45,7 +45,6 @@ class MoonAgeChangeResult {
 // 月齡更新時間，以服務器時間為: UTC+9
 @Component({
     selector: 'app-aika-moon',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

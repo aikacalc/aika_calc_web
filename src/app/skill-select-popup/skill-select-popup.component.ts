@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-skill-select-popup',
-    standalone: true,
     imports: [
         CommonModule,
     ],

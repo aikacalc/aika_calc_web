@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-aika-supporter',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

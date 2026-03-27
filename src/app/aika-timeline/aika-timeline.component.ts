@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-aika-timeline',
-    standalone: true,
     imports: [
         CommonModule,
     ],

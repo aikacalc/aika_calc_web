@@ -362,7 +362,6 @@ class ViceAARCalcCase {
 
 @Component({
     selector: 'app-aika-damage-calc',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

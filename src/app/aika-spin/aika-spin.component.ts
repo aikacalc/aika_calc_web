@@ -68,7 +68,6 @@ class AikaActionSetting {
 
 @Component({
     selector: 'app-aika-spin',
-    standalone: true,
     imports: [
         CommonModule,
         FormsModule,

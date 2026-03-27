@@ -14,11 +14,10 @@ interface Sticker {
 }
 
 @Component({
-  selector: 'app-aika-kawaii',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './aika-kawaii.component.html',
-  styleUrl: './aika-kawaii.component.scss'
+    selector: 'app-aika-kawaii',
+    imports: [CommonModule],
+    templateUrl: './aika-kawaii.component.html',
+    styleUrl: './aika-kawaii.component.scss'
 })
 export class AikaKawaiiComponent implements AfterViewInit {
   @ViewChild('editCanvas') editCanvasRef!: ElementRef<HTMLCanvasElement>;
