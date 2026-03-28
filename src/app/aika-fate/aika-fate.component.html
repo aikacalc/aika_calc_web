@@ -1,1 +1,101 @@
-<p>aika-fate works!</p>
+<div class="aika-fate">
+    <div class="input-block">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="name">角色票</td>
+                    <td class="input">
+                        <input type="number" [(ngModel)]="config.ticket">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">克拉</td>
+                    <td class="input">
+                        <input type="number" [(ngModel)]="config.caret">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">等級</td>
+                    <td class="input">
+                        <input type="number" [(ngModel)]="config.lv">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">EXP</td>
+                    <td class="input">
+                        <input type="number" [(ngModel)]="config.exp">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">開始時間</td>
+                    <td class="input">
+                        <input type="datetime-local" [(ngModel)]="config.startTime" (change)="logConfig()">
+                        <button (click)="setStartDateToday()">設為現在</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">池子結束時間</td>
+                    <td class="input">
+                        <input type="datetime-local" [(ngModel)]="config.endTime" (change)="logConfig()">
+                        <button (click)="setEndTime1459()">設為當天14:59</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">池子有每日特價?</td>
+                    <td class="input">
+                        <input type="checkbox" [(ngModel)]="config.enableDailyCaretPull">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">初日抽過當日特價?</td>
+                    <td class="input">
+                        <input type="checkbox" [(ngModel)]="config.dailyCaretPulled">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name">最大模擬次數</td>
+                    <td class="input">
+                        <input type="number" [(ngModel)]="config.maxSimulations">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="run">
+                        <button (click)="run()">Run</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="output-block">
+        <h3>模擬結果 - 平均抽卡率前10名路徑</h3>
+        <div class="result" *ngFor="let action of resultTop10Actions">
+            <p>{{action.score}} 抽卡: {{ action.totalPullCount }}次, 平均: {{ action.avgPullRate | percent:'1.2-2' }}, {{ action.totalCostTicket }}票, {{ action.totalCostCaret }}克拉</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>時間</th>
+                        <th>消耗票</th>
+                        <th>消耗克拉</th>
+                        <th>次數</th>
+                        <th>抽卡等級</th>
+                        <th>目標出貨率</th>
+                        <th>歪出貨率</th>
+                        <th>出貨</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pull of action.validPulls">
+                        <td>{{ pull.date | date:'short' }}</td>
+                        <td [ngClass]="{empty: pull.costTicket === 0}">{{ pull.costTicket }}</td>
+                        <td [ngClass]="{empty: pull.costCaret === 0}">{{ pull.costCaret }}</td>
+                        <td>{{ pull.count }}</td>
+                        <td>{{ pull.pullLv }}</td>
+                        <td>{{ (pull.pullTargetRate * 100).toFixed(2) }}%</td>
+                        <td>{{ (pull.pullMissRate * 100).toFixed(2) }}%</td>
+                        <td>{{ pull.pullSuccess ? '是' : '否' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
